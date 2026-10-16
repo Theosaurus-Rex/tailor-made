@@ -189,9 +189,9 @@ The check before keeping one: imagine it deleted. If nothing is lost, delete it.
 
 ## Game data
 
-Sources: dressmakerwiki.site (fan wiki, build 410), cross-checked with cozygameguides.com. If
-`docs/notes/build-443-check.md` exists, it records what changed in build 443. Read it before
-freezing v1.
+Sources: dressmakerwiki.site (fan wiki, build 410), cross-checked with cozygameguides.com.
+`docs/notes/build-443-check.md` records what build 443 changed. It added no new fabric type,
+accessory type, tag or colour. Read it before freezing v1.
 
 - The data works at fabric-type level, not individual fabrics.
 - Credit both sources in the data file header and on the About page.
