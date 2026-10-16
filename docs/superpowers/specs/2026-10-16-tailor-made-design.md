@@ -154,6 +154,7 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 
 - The same tag, fabric type, colour or accessory type both asked for and avoided
 - A `colourOnly` alongside a `colour` or `colourAvoid` on a different colour, or a `coloursMin`
+- A `fabricOnly` alongside a `fabric` on a different fabric type
 - A `coloursMin` higher than the colours left after avoids
 - More than one `colourOnly` or `fabricOnly`
 - More than one count on the same accessory type
