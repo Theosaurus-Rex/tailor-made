@@ -4,7 +4,6 @@ import type { Direction } from "./direction";
 export type ConflictReason =
   | "askedAndAvoided"
   | "onlyColourClash"
-  | "onlyFabricClash"
   | "tooFewColoursLeft"
   | "moreThanOneOnly"
   | "moreThanOneCount"
@@ -29,7 +28,6 @@ const askedFor = (d: Direction): string | undefined => {
     case "style":
       return `style:${d.tag}`;
     case "fabric":
-    case "fabricOnly":
       return `fabric:${d.fabric}`;
     case "colour":
     case "colourOnly":
@@ -60,7 +58,7 @@ const avoided = (d: Direction): string | undefined => {
 
 const isCount = (d: Direction) => d.type === "accessoryMin" || d.type === "accessoryExact";
 
-const isOnly = (d: Direction) => d.type === "colourOnly" || d.type === "fabricOnly";
+const isOnly = (d: Direction) => d.type === "colourOnly";
 
 function eachPair(
   directions: readonly Direction[],
@@ -102,16 +100,6 @@ const onlyColourClash: Rule = (directions) =>
       }
       return false;
     }),
-  );
-
-const onlyFabricClash: Rule = (directions) =>
-  eachPair(
-    directions,
-    "onlyFabricClash",
-    eitherWay(
-      (only, other) =>
-        only.type === "fabricOnly" && other.type === "fabric" && other.fabric !== only.fabric,
-    ),
   );
 
 const tooFewColoursLeft: Rule = (directions, { data }) => {
@@ -169,7 +157,6 @@ const askedTwice: Rule = (directions) =>
 const rules: readonly Rule[] = [
   askedAndAvoided,
   onlyColourClash,
-  onlyFabricClash,
   tooFewColoursLeft,
   moreThanOneOnly,
   moreThanOneCount,

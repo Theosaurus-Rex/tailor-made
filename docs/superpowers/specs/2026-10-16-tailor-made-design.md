@@ -154,12 +154,13 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 
 - The same tag, fabric type, colour or accessory type both asked for and avoided
 - A `colourOnly` alongside a `colour` or `colourAvoid` on a different colour, or a `coloursMin`
-- A `fabricOnly` alongside a `fabric` on a different fabric type
 - A `coloursMin` higher than the colours left after avoids
-- More than one `colourOnly` or `fabricOnly`
+- More than one `colourOnly`
 - More than one count on the same accessory type
 - Both sides of an opposing pair, outside Chaos (see §7)
 - The same item asked for twice
+
+Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the card free of other fabric and colour directions.
 
 ### Reroll
 

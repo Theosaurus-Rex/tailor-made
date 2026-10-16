@@ -65,11 +65,6 @@ describe("asked for and avoided", () => {
     ["style then style avoid", [cute, notCute], conflict(1, 0, "askedAndAvoided")],
     ["style avoid then style", [notCute, cute], conflict(1, 0, "askedAndAvoided")],
     ["fabric", [silk, { type: "fabricAvoid", fabric: "Silk" }], conflict(1, 0, "askedAndAvoided")],
-    [
-      "fabric only and avoid",
-      [burlapOnly, { type: "fabricAvoid", fabric: "Burlap" }],
-      conflict(1, 0, "askedAndAvoided"),
-    ],
     ["colour", [red, noRed], conflict(1, 0, "askedAndAvoided")],
     [
       "colour only and avoid on the same colour",
@@ -90,10 +85,6 @@ describe("asked for and avoided", () => {
   it.each<NearMiss>([
     ["style and a different style avoid", [cute, notGothic]],
     ["fabric and a different fabric avoid", [silk, { type: "fabricAvoid", fabric: "Wool" }]],
-    [
-      "fabric only and a different fabric avoid",
-      [burlapOnly, { type: "fabricAvoid", fabric: "Silk" }],
-    ],
     ["colour and a different colour avoid", [red, noBlue]],
     [
       "accessory and a different accessory avoid",
@@ -128,14 +119,14 @@ describe("only colour clashes", () => {
   });
 });
 
-describe("only fabric clashes", () => {
-  it("rejects a fabric only with a different fabric", () => {
-    expectConflict([burlapOnly, silk], conflict(1, 0, "onlyFabricClash"));
-    expectConflict([silk, burlapOnly], conflict(1, 0, "onlyFabricClash"));
-  });
-
-  it("allows a fabric only with the same fabric", () => {
+describe("fabric only", () => {
+  it("never conflicts with anything", () => {
+    expectAllowed([burlapOnly, silk]);
+    expectAllowed([silk, burlapOnly]);
     expectAllowed([burlapOnly, { type: "fabric", fabric: "Burlap" }]);
+    expectAllowed([burlapOnly, { type: "fabricAvoid", fabric: "Burlap" }]);
+    expectAllowed([burlapOnly, burlapOnly]);
+    expectAllowed([burlapOnly, onlyWhite]);
   });
 });
 
@@ -193,13 +184,12 @@ describe("more than one only", () => {
       conflict(1, 0, "moreThanOneOnly"),
     ],
     ["the same colour only twice", [onlyWhite, onlyWhite], conflict(1, 0, "moreThanOneOnly")],
-    ["fabric only twice", [burlapOnly, burlapOnly], conflict(1, 0, "moreThanOneOnly")],
   ])("rejects %s", (_name, directions, expected) => {
     expectConflict(directions, expected);
   });
 
-  it("allows one colour only and one fabric only", () => {
-    expectAllowed([onlyWhite, burlapOnly]);
+  it("allows one colour only", () => {
+    expectAllowed([onlyWhite, bows]);
   });
 });
 
