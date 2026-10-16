@@ -136,7 +136,7 @@ export const nonHumanClients = [
   { name: "Baroness Dandelion Fluff", kind: "sheep" },
   { name: "Old Tom Mossback", kind: "tortoise" },
   { name: "Lady Hortensia Puddlewick", kind: "frog" },
-  { name: "Wilbur Thistledown", kind: "friendly ghost" },
+  { name: "Wilbur Hollowmere", kind: "friendly ghost" },
   { name: "Miss Pepper Tuppence", kind: "pony" },
   { name: "Grandmother Moon-Mutterings", kind: "tea-loving moth" },
   { name: "Sir Cornelius Bumbleford", kind: "bumblebee" },

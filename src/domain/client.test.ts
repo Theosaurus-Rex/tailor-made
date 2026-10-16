@@ -20,7 +20,7 @@ describe("clientFromSeed", () => {
     expect(clientFromSeed("2026-10-16")).toEqual({ name: "Cecil Oakhurst", human: true });
     expect(clientFromSeed("k7m2qx9a")).toEqual({ name: "Ffion Lindqvist", human: true });
     expect(clientFromSeed("w9x8y7v6")).toEqual({
-      name: "Wilbur Thistledown",
+      name: "Wilbur Hollowmere",
       human: false,
       kind: "friendly ghost",
     });
