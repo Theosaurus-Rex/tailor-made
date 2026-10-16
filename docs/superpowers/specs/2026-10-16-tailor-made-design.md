@@ -132,7 +132,9 @@ nothing is scored, and the player is trusted to call it.
 Counts stay small (roughly 2 to 8) so they are quick to check. `accessoryMin` and
 `accessoryExact` only use per-piece accessory types.
 
-The "only" lists (`colourOnly`, `fabricsOnly`) hold one to three items. Fabric counts run 2 to 4
+The "only" lists (`colourOnly`, `fabricsOnly`) hold one to three items. "Only" means every fabric
+on the dress must be one of the listed colours or fabric types. The player need not use them all,
+so "Only orange, yellow and green" is met by an all-orange dress. Fabric counts run 2 to 4
 and never count Burlap. `burlapOnly` is a modifier, not a direction to pick or reroll. It is
 pinned on the card and has no client line.
 
