@@ -125,7 +125,7 @@ export const surnames = [
 ] as const;
 
 export const nonHumanClients = [
-  { name: "Lady Barnaby Whiskers", kind: "cat" },
+  { name: "Lady Pearl Whiskers", kind: "cat" },
   { name: "Madame Pomme", kind: "talking apple tree" },
   { name: "Lady Regina Crumpet", kind: "very proper hedgehog" },
   { name: "Duchess Marigold Quackenbush", kind: "duck" },
