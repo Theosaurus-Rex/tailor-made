@@ -314,6 +314,6 @@ checklist item to save screenshots to `docs/case-study/`.
 
 ## 16. Open questions
 
-- **Game updates.** Build 443 added fabrics, accessories and skirts after the wiki's build 410
-  data. Check whether any new accessory type or fabric type appeared before freezing v1.
+- **Game updates.** Resolved. Build 443 added no new fabric type, accessory type, tag or
+  colour. See `docs/notes/build-443-check.md`.
 - **Domain.** Netlify subdomain to start. Decide on a custom domain at launch.

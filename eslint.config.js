@@ -49,7 +49,7 @@ export default tseslint.config(
     rules: { "react-refresh/only-export-components": "off" },
   },
   {
-    files: ["src/game/**/*.{ts,tsx}"],
+    files: ["src/game/**/*.{ts,tsx,js,jsx,mjs,cjs}"],
     rules: {
       "no-restricted-imports": banLayers("game", [
         "domain",
@@ -61,19 +61,19 @@ export default tseslint.config(
     },
   },
   {
-    files: ["src/domain/**/*.{ts,tsx}"],
+    files: ["src/domain/**/*.{ts,tsx,js,jsx,mjs,cjs}"],
     rules: {
       "no-restricted-imports": banLayers("domain", ["links", "features", "components", "lib"]),
     },
   },
   {
-    files: ["src/links/**/*.{ts,tsx}"],
+    files: ["src/links/**/*.{ts,tsx,js,jsx,mjs,cjs}"],
     rules: {
       "no-restricted-imports": banLayers("links", ["features", "components", "lib"]),
     },
   },
   {
-    files: ["src/domain/**/*.{ts,tsx}", "src/game/**/*.{ts,tsx}"],
+    files: ["src/domain/**/*.{ts,tsx,js,jsx,mjs,cjs}", "src/game/**/*.{ts,tsx,js,jsx,mjs,cjs}"],
     rules: {
       "no-restricted-properties": [
         "error",
