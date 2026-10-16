@@ -126,6 +126,7 @@ Things I inferred, or chose between options. Please check these in the game.
    scores. The spec has Piping as its own type, so I kept it, per centimetre. Its leanings (Simple,
    Elegant) are a guess. Check whether the game's accessory filter shows Piping as a type, and whether
    piping has any tag effect.
+   Confirmed by Theo on 2026-10-17: Piping stays its own per-centimetre type, with Simple and Elegant.
 2. **Velvet and Gothic.** Velvet's average Gothic score is only 14. I added Gothic as a fifth leaning
    because the spec example says a Gothic theme reaches for velvet, and 3 of the 4 cards that ask for
    Velvet are Gothic cards (9, 25, 41). Drop it if you want leanings to be wiki-only.
