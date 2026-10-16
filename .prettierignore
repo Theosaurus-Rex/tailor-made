@@ -4,3 +4,4 @@ test-results
 playwright-report
 pnpm-lock.yaml
 *.md
+docs/wireframes/tailor-made-wireframes.html
