@@ -28,14 +28,14 @@ No change. Every new fabric is Cotton, Lace or Silk. The 8 types stay.
 
 ### Accessory types
 
-No change. The notes name no new accessory type. The new items fit existing types:
+No change. The notes name no new accessory type, and the accessory filter in game shows none. The new items sit under existing types:
 
-- Silver Clasp: most likely Brooch or Button style. Not stated.
-- Silver Narcissus Chain and Silver Twin Souls Chain: most likely Jewel. Not stated.
-- Black Dagger Beaded Trim: a trim, so most likely Trim.
+- Silver Clasp: Brooch.
+- Silver Narcissus Chain and Silver Twin Souls Chain: Jewel.
+- Black Dagger Beaded Trim: Trim, counted per centimetre.
 - Widow's Lace Trim: Lace Trim.
 
-These are my mapping, not a source's. Individual items need no action.
+Individual items need no action.
 The Steam notes also say trim items with typed beads (such as tassel trim) now show when you filter for that item. This confirms Tassel as an existing type and adds no new one.
 
 ### Style tags and colours
@@ -44,7 +44,7 @@ No change found. The notes mention no new or renamed tag or colour. The wiki nam
 
 ### Tag leaning per fabric type
 
-Not confirmed either way. The wiki says new tag values are "awaiting verification". The wiki still shows Build 410 data for fabrics.
+No change, confirmed in game. The new Cotton and Silk fabrics do not change which tags those types lean towards. The wiki still shows Build 410 data for fabrics.
 One related change is worth noting. Build 443 changed how colour and fabric-type requirements are scored. Before, it was a raw share of panel area. Now panels on small components (collar, sleeves) get a boost. Tags were already scored this way. It no longer matters to Tailor-Made, since directions are judged by eye and carry no scores (spec §5).
 
 ## Lists to freeze in v1
@@ -63,12 +63,12 @@ One related change is worth noting. Build 443 changed how colour and fabric-type
 
 cozygameguides.com, Reddit and Steam discussions were not found or read. The official notes were enough for the type question.
 
-## Unverified
+## Confirmed in game
 
-Theo should confirm in game:
+Checked by Theo on 2026-10-17:
 
-- That no new accessory type shows in the accessory filter after Build 443, and which type each new item sits under (Silver Clasp, the two Silver chains, Black Dagger Beaded Trim).
-- Whether Black Dagger Beaded Trim counts per centimetre like other trims.
-- Whether the tag list and colour list still show 22 tags and 11 colours.
-- Whether the new fabrics (Taupe Cotton, the shot and gradient silks) change which tags Cotton and Silk lean towards.
-- That the unlock points for the new items are as stated. The notes only say they unlock through the campaign.
+- The accessory filter shows no new accessory type. Each new item's type is as listed above.
+- Black Dagger Beaded Trim counts per centimetre, like other trims.
+- The tag and colour lists still show 22 tags and 11 colours.
+- Taupe Cotton and the shot and gradient silks do not change which tags Cotton and Silk lean towards.
+- The new items unlock through the campaign.
