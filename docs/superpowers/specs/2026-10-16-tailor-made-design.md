@@ -162,8 +162,8 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
   counts as asking for each item in it
 - A `colourOnly` alongside a `colour` or `colourAvoid` outside its list
 - A `fabricsOnly` alongside a `fabric` or `fabricAvoid` outside its list
-- A `coloursMin` or `fabricsMin` higher than the length of the only list beside it. Equal or lower
-  is fine
+- A `coloursMin` beside a `colourOnly`, or a `fabricsMin` beside a `fabricsOnly`. The list already
+  sets which colours or fabrics to use, so a count beside it only repeats or fights it
 - A `coloursMin` higher than the colours left after avoids
 - A `fabricsMin` higher than the general fabrics left after avoids
 - More than one `colourOnly`, or more than one `fabricsOnly`. One of each is fine

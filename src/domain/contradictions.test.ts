@@ -145,6 +145,16 @@ describe("only colour clashes", () => {
       [atLeastColours(3), onlyColours("White", "Grey")],
       conflict(1, 0, "onlyColourClash"),
     ],
+    [
+      "a colours minimum equal to the list length",
+      [orangeYellowGreen, atLeastColours(3)],
+      conflict(1, 0, "onlyColourClash"),
+    ],
+    [
+      "a colours minimum below the list length",
+      [orangeYellowGreen, atLeastColours(2)],
+      conflict(1, 0, "onlyColourClash"),
+    ],
   ])("rejects an only colour with %s", (_name, directions, expected) => {
     expectConflict(directions, expected);
   });
@@ -152,8 +162,6 @@ describe("only colour clashes", () => {
   it.each<NearMiss>([
     ["the same colour", [onlyWhite, { type: "colour", colour: "White" }]],
     ["a colour in the list", [orangeYellowGreen, { type: "colour", colour: "Green" }]],
-    ["a colours minimum equal to the list length", [orangeYellowGreen, atLeastColours(3)]],
-    ["a colours minimum below the list length", [orangeYellowGreen, atLeastColours(2)]],
     ["an accessory", [onlyWhite, bows]],
     ["a colour with no only colour", [red, noBlue, atLeastColours(3)]],
   ])("allows an only colour with %s", (_name, directions) => {
@@ -184,6 +192,16 @@ describe("only fabric clashes", () => {
       [atLeastFabrics(3), onlyLinenCotton],
       conflict(1, 0, "onlyFabricClash"),
     ],
+    [
+      "a fabrics minimum equal to the list length",
+      [onlyLinenCotton, atLeastFabrics(2)],
+      conflict(1, 0, "onlyFabricClash"),
+    ],
+    [
+      "a fabrics minimum below the list length",
+      [onlyFabrics("Linen", "Cotton", "Wool"), atLeastFabrics(2)],
+      conflict(1, 0, "onlyFabricClash"),
+    ],
   ])("rejects an only fabric with %s", (_name, directions, expected) => {
     expectConflict(directions, expected);
   });
@@ -192,11 +210,6 @@ describe("only fabric clashes", () => {
     [
       "a fabric in the list",
       [onlyFabrics("Linen", "Cotton", "Wool"), { type: "fabric", fabric: "Cotton" }],
-    ],
-    ["a fabrics minimum equal to the list length", [onlyLinenCotton, atLeastFabrics(2)]],
-    [
-      "a fabrics minimum below the list length",
-      [onlyFabrics("Linen", "Cotton", "Wool"), atLeastFabrics(2)],
     ],
     ["a colour", [onlyLinenCotton, red]],
     ["a colours minimum", [onlyLinenCotton, atLeastColours(3)]],
@@ -214,7 +227,7 @@ describe("burlap only", () => {
     expectAllowed([burlapOnly, onlyWhite]);
     expectAllowed([burlapOnly, onlyLinenCotton]);
     expectAllowed([burlapOnly, atLeastFabrics(4)]);
-    expectAllowed([onlyLinenCotton, burlapOnly, atLeastFabrics(2)]);
+    expectAllowed([onlyLinenCotton, burlapOnly, red]);
   });
 });
 

@@ -110,7 +110,7 @@ const onlyListClash = (reason: ConflictReason, onlyType: "colourOnly" | "fabrics
       reason,
       eitherWay((only, other) => {
         if (only.type !== onlyType) return false;
-        if (other.type === minType) return other.count > listed(only).length;
+        if (other.type === minType) return true;
         const key = askedFor(other) ?? avoided(other);
         return key !== undefined && key.startsWith(prefix) && !listed(only).includes(key);
       }),
