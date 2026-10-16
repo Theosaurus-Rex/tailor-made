@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { accessoryTypes, fabricTypes } from "@/game/data/v1";
-import { shortLine } from "./short-line";
+import { joinWithAnd, shortLine } from "./short-line";
 
 const cleanLine = (line: string) => line !== "" && !/ {2}|^ | $/.test(line);
 
@@ -30,8 +30,22 @@ describe("shortLine", () => {
     expect(shortLine({ type: "fabricAvoid", fabric: "Velvet" })).toBe("No velvet");
   });
 
-  it("fabricOnly is Burlap only", () => {
-    expect(shortLine({ type: "fabricOnly", fabric: "Burlap" })).toBe("Burlap only");
+  it("burlapOnly is Burlap only", () => {
+    expect(shortLine({ type: "burlapOnly" })).toBe("Burlap only");
+  });
+
+  it("fabricsOnly lists the fabric nouns", () => {
+    expect(shortLine({ type: "fabricsOnly", fabrics: ["Silk"] })).toBe("Only silk");
+    expect(shortLine({ type: "fabricsOnly", fabrics: ["Sequin", "Silk"] })).toBe(
+      "Only sequins and silk",
+    );
+    expect(shortLine({ type: "fabricsOnly", fabrics: ["Linen", "Cotton", "Wool"] })).toBe(
+      "Only linen, cotton and wool",
+    );
+  });
+
+  it("fabricsMin is At least a count of fabrics", () => {
+    expect(shortLine({ type: "fabricsMin", count: 3 })).toBe("At least 3 fabrics");
   });
 
   it("colour is the colour", () => {
@@ -42,8 +56,14 @@ describe("shortLine", () => {
     expect(shortLine({ type: "colourAvoid", colour: "Black" })).toBe("No black");
   });
 
-  it("colourOnly is Only plus the lowercase colour", () => {
-    expect(shortLine({ type: "colourOnly", colour: "White" })).toBe("Only white");
+  it("colourOnly is Only plus the lowercase colours", () => {
+    expect(shortLine({ type: "colourOnly", colours: ["White"] })).toBe("Only white");
+    expect(shortLine({ type: "colourOnly", colours: ["White", "Grey"] })).toBe(
+      "Only white and grey",
+    );
+    expect(shortLine({ type: "colourOnly", colours: ["Orange", "Yellow", "Green"] })).toBe(
+      "Only orange, yellow and green",
+    );
   });
 
   it("accessory is the capitalised plural", () => {
@@ -94,5 +114,20 @@ describe("shortLine", () => {
       expect(cleanLine(shortLine({ type: "accessory", accessory }))).toBe(true);
       expect(cleanLine(shortLine({ type: "accessoryAvoid", accessory }))).toBe(true);
     }
+  });
+});
+
+describe("joinWithAnd", () => {
+  it("returns one item as is", () => {
+    expect(joinWithAnd(["a"])).toBe("a");
+  });
+
+  it("joins two items with and", () => {
+    expect(joinWithAnd(["a", "b"])).toBe("a and b");
+  });
+
+  it("joins three or more with commas and a final and", () => {
+    expect(joinWithAnd(["a", "b", "c"])).toBe("a, b and c");
+    expect(joinWithAnd(["a", "b", "c", "d"])).toBe("a, b, c and d");
   });
 });

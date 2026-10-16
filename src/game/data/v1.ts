@@ -115,7 +115,7 @@ const tagWeights = {
   Workwear: 2,
 } satisfies Record<StyleTag, number>;
 
-const fabrics = {
+export const fabrics = {
   Burlap: { leansTowards: ["Uncomfortable"], modifierOnly: true },
   Cotton: { leansTowards: ["Daywear", "Cool", "Casual", "Workwear"] },
   Lace: {
@@ -131,7 +131,7 @@ const fabrics = {
     leansTowards: ["Glamour", "Eveningwear", "Elegant", "Warm", "Gothic"],
   },
   Wool: { leansTowards: ["Professional", "Warm", "Simple"] },
-} satisfies Record<FabricType, FabricInfo>;
+} as const satisfies Record<FabricType, FabricInfo>;
 
 const colourLeanings = {
   Black: ["Gothic"],
