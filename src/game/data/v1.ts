@@ -138,7 +138,7 @@ const colourLeanings = {
   Pink: ["Cute", "Romantic"],
 } satisfies Partial<Record<Colour, readonly StyleTag[]>>;
 
-const accessories = {
+export const accessories = {
   Appliqué: { unit: "piece", leansTowards: ["Flowers", "Eclectic", "Gothic"] },
   Bell: { unit: "piece", leansTowards: ["Cute", "Playful"] },
   Bow: { unit: "piece", leansTowards: ["Cute", "Playful", "Romantic"] },
@@ -172,7 +172,7 @@ const accessories = {
     unit: "cm",
     leansTowards: ["Eclectic", "Cute", "Gothic", "Elaborate"],
   },
-} satisfies Record<AccessoryType, AccessoryInfo>;
+} as const satisfies Record<AccessoryType, AccessoryInfo>;
 
 export const dataV1: GameData = {
   version: DATA_VERSION,
