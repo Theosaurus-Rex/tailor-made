@@ -51,6 +51,18 @@ describe("direction types", () => {
     expect(burlap.type).toBe("fabricsOnly");
   });
 
+  it("rejects Burlap in a fabric direction", () => {
+    // @ts-expect-error Burlap is a modifier, not a general fabric
+    const burlap: Direction = { type: "fabric", fabric: "Burlap" };
+    expect(burlap.type).toBe("fabric");
+  });
+
+  it("rejects Burlap in a fabricAvoid direction", () => {
+    // @ts-expect-error Burlap is a modifier, not a general fabric
+    const burlap: Direction = { type: "fabricAvoid", fabric: "Burlap" };
+    expect(burlap.type).toBe("fabricAvoid");
+  });
+
   it("accepts general fabrics in a fabricsOnly list", () => {
     const only: Direction = { type: "fabricsOnly", fabrics: ["Linen", "Cotton"] };
     expect(only.type).toBe("fabricsOnly");

@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { accessoryTypes, fabricTypes } from "@/game/data/v1";
+import { accessoryTypes, fabricTypes, fabrics } from "@/game/data/v1";
+import type { GeneralFabric } from "./direction";
 import { joinWithAnd, shortLine } from "./short-line";
+
+const generalFabrics = fabricTypes.filter(
+  (fabric): fabric is GeneralFabric => !("modifierOnly" in fabrics[fabric]),
+);
 
 const cleanLine = (line: string) => line !== "" && !/ {2}|^ | $/.test(line);
 
@@ -103,7 +108,7 @@ describe("shortLine", () => {
   });
 
   it("renders every fabric cleanly", () => {
-    for (const fabric of fabricTypes) {
+    for (const fabric of generalFabrics) {
       expect(cleanLine(shortLine({ type: "fabric", fabric }))).toBe(true);
       expect(cleanLine(shortLine({ type: "fabricAvoid", fabric }))).toBe(true);
     }

@@ -18,8 +18,8 @@ export type GeneralFabric = {
 export type Direction =
   | { type: "style"; tag: StyleTag }
   | { type: "styleAvoid"; tag: StyleTag }
-  | { type: "fabric"; fabric: FabricType }
-  | { type: "fabricAvoid"; fabric: FabricType }
+  | { type: "fabric"; fabric: GeneralFabric }
+  | { type: "fabricAvoid"; fabric: GeneralFabric }
   | { type: "burlapOnly" }
   | { type: "fabricsOnly"; fabrics: readonly GeneralFabric[] }
   | { type: "fabricsMin"; count: number }
