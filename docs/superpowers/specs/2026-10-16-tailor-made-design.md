@@ -222,7 +222,9 @@ Hand-written content in `src/game/briefs/`, versioned with the data.
 - **About 25 occasion themes.** Each has tag, fabric, colour and accessory weights and 3–4
   templates with slots. Example: *"{name} is attending {occasion} and wants to look {adjective}
   without {worry}."*
-- **Names** from first-name and surname lists, with a small share of non-human clients.
+- **Names** from first-name and surname lists, with a small share of non-human clients, about 10%.
+  The name draws from its own sub-seed, so changes to how directions are drawn never change who
+  the client is.
 - **Direction phrasing**: several client lines per direction type, filled with the item named.
   Specific lines for common items ("I adore velvet") beat generic ones ("Use {fabric}").
 - All original. No game characters, names or card text.
