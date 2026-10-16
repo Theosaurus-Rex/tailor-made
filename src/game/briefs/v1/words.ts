@@ -1,4 +1,4 @@
-import type { AccessoryType, FabricType } from "@/game/data/v1";
+import type { AccessoryType, FabricType, StyleTag } from "@/game/data/v1";
 
 export const fabricNouns: Record<FabricType, string> = {
   Burlap: "burlap",
@@ -24,4 +24,8 @@ export const accessoryNouns: Record<AccessoryType, { singular: string; plural: s
   Piping: { singular: "piping", plural: "piping" },
   Tassel: { singular: "tassel", plural: "tassels" },
   Trim: { singular: "trim", plural: "trim" },
+};
+
+export const styleAvoidLines: Partial<Record<StyleTag, string>> = {
+  Flowers: "No florals",
 };

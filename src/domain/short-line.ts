@@ -1,4 +1,4 @@
-import { accessoryNouns, fabricNouns } from "@/game/briefs/v1/words";
+import { accessoryNouns, fabricNouns, styleAvoidLines } from "@/game/briefs/v1/words";
 import type { Direction, DirectionType } from "./direction";
 
 type DirectionOf<T extends DirectionType> = Extract<Direction, { type: T }>;
@@ -14,7 +14,7 @@ const countedNoun = (accessory: keyof typeof accessoryNouns, count: number) => {
 
 const writers: Writers = {
   style: (d) => d.tag,
-  styleAvoid: (d) => `Not ${d.tag.toLowerCase()}`,
+  styleAvoid: (d) => styleAvoidLines[d.tag] ?? `Not ${d.tag.toLowerCase()}`,
   fabric: (d) => d.fabric,
   fabricAvoid: (d) => `No ${fabricNouns[d.fabric]}`,
   fabricOnly: (d) => `${d.fabric} only`,
