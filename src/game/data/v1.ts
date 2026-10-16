@@ -1,4 +1,4 @@
-// Fan-wiki data from dressmakerwiki.site (build 410) and cozygameguides.com, checked against build 443
+// Fan-wiki data from dressmakerwiki.site (build 410), checked against build 443
 // (docs/notes/build-443-check.md). Where each value came from: docs/notes/data-v1-leanings.md.
 
 export const DATA_VERSION = 1;
