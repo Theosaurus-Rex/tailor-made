@@ -87,3 +87,19 @@ describe("versions", () => {
     expect(dataV1.version).toBe(DATA_VERSION);
   });
 });
+
+describe("opposing pairs", () => {
+  it("lists the five hand-written pairs", () => {
+    expect(dataV1.opposingPairs).toEqual([
+      ["Cute", "Gothic"],
+      ["Simple", "Elaborate"],
+      ["Casual", "Formal"],
+      ["Warm", "Cool"],
+      ["Daywear", "Eveningwear"],
+    ]);
+  });
+
+  it("uses no tag twice", () => {
+    expect(unique(dataV1.opposingPairs.flat())).toBe(true);
+  });
+});

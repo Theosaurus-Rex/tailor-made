@@ -132,7 +132,9 @@ nothing is scored, and the player is trusted to call it.
 Counts stay small (roughly 2 to 8) so they are quick to check. `accessoryMin` and
 `accessoryExact` only use per-piece accessory types.
 
-The "only" lists (`colourOnly`, `fabricsOnly`) hold one to three items. Fabric counts run 2 to 4
+The "only" lists (`colourOnly`, `fabricsOnly`) hold one to three items. "Only" means every fabric
+on the dress must be one of the listed colours or fabric types. The player need not use them all,
+so "Only orange, yellow and green" is met by an all-orange dress. Fabric counts run 2 to 4
 and never count Burlap. `burlapOnly` is a modifier, not a direction to pick or reroll. It is
 pinned on the card and has no client line.
 
@@ -158,13 +160,21 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 
 ### Contradictions rejected
 
-- The same tag, fabric type, colour or accessory type both asked for and avoided
-- A `colourOnly` alongside a `colour` or `colourAvoid` on a different colour, or a `coloursMin`
+- The same tag, fabric type, colour or accessory type both asked for and avoided. An only list
+  counts as asking for each item in it
+- A `colourOnly` alongside a `colour` or `colourAvoid` outside its list
+- A `fabricsOnly` alongside a `fabric` or `fabricAvoid` outside its list
+- A `coloursMin` beside a `colourOnly`, or a `fabricsMin` beside a `fabricsOnly`. The list already
+  sets which colours or fabrics to use, so a count beside it only repeats or fights it
 - A `coloursMin` higher than the colours left after avoids
-- More than one `colourOnly` or `fabricsOnly`
+- A `fabricsMin` higher than the general fabrics left after avoids
+- More than one `colourOnly`, or more than one `fabricsOnly`. One of each is fine
 - More than one count on the same accessory type
 - Both sides of an opposing pair, outside Chaos (see §7)
-- The same item asked for twice
+- The same item asked for twice, including two `coloursMin` or two `fabricsMin`
+
+Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the
+card free of other fabric and colour directions.
 
 ### Reroll
 
