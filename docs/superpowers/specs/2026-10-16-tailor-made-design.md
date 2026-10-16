@@ -117,10 +117,12 @@ nothing is scored, and the player is trusted to call it.
 | `styleAvoid` | Not cute | "Nothing sweet, please. I'm not a cupcake." |
 | `fabric` | Velvet | "I adore velvet." |
 | `fabricAvoid` | No sequins | "Sequins make me itch." |
-| `fabricOnly` | Burlap only | Modifier only |
+| `burlapOnly` | Burlap only | Modifier only |
+| `fabricsOnly` | Only linen, cotton and wool | "Nothing but honest fabrics. Linen, cotton and wool." |
+| `fabricsMin` | At least 3 fabrics | "Mix it up. Three fabrics at least." |
 | `colour` | Red | "Red, wherever you can." |
 | `colourAvoid` | No black | "No black. I'm not in mourning." |
-| `colourOnly` | Only white | "All white, head to toe." |
+| `colourOnly` | Only white / Only orange, yellow and green | "All white, head to toe." |
 | `accessory` | Bows | "Bows! I love a bow." |
 | `accessoryAvoid` | No feathers | "No feathers, I sneeze." |
 | `accessoryMin` | At least 5 bows | "Bows everywhere. Five at the very least." |
@@ -129,6 +131,10 @@ nothing is scored, and the player is trusted to call it.
 
 Counts stay small (roughly 2 to 8) so they are quick to check. `accessoryMin` and
 `accessoryExact` only use per-piece accessory types.
+
+The "only" lists (`colourOnly`, `fabricsOnly`) hold one to three items. Fabric counts run 2 to 4
+and never count Burlap. `burlapOnly` is a modifier, not a direction to pick or reroll. It is
+pinned on the card and has no client line.
 
 A `Direction` is a tagged union on `type`. Each direction renders to a short line for the
 checklist and a plain-English client line for the brief.
@@ -155,7 +161,7 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 - The same tag, fabric type, colour or accessory type both asked for and avoided
 - A `colourOnly` alongside a `colour` or `colourAvoid` on a different colour, or a `coloursMin`
 - A `coloursMin` higher than the colours left after avoids
-- More than one `colourOnly` or `fabricOnly`
+- More than one `colourOnly` or `fabricsOnly`
 - More than one count on the same accessory type
 - Both sides of an opposing pair, outside Chaos (see §7)
 - The same item asked for twice
@@ -192,9 +198,9 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 | | Directions | Shape |
 |---|---|---|
 | Easy | 2–3 | Styles, fabrics and colours to use. No avoids or counts. |
-| Medium | 3–4 | Adds accessories, one avoid, and one "at least" count |
-| Hard | 4–5 | Up to two avoids and two counts. `colourOnly` possible. Styles may pull apart (see below) |
-| Chaos | 5–6 | One opposing pair. `colourOnly` likely. Exact counts. Picks may ignore the theme's leanings |
+| Medium | 3–4 | Adds accessories, one avoid, and one "at least" count, which may be a fabric count |
+| Hard | 4–5 | Up to two avoids and two counts. `colourOnly` or `fabricsOnly` possible. Styles may pull apart (see below) |
+| Chaos | 5–6 | One opposing pair. an "only" list likely. Exact counts. Picks may ignore the theme's leanings |
 
 **Opposing pairs**, hand-written: Cute/Gothic, Simple/Elaborate, Casual/Formal, Warm/Cool,
 Daywear/Eveningwear.
@@ -208,8 +214,8 @@ Daywear/Eveningwear.
 **Burlap only** (`m=burlap`). Burlap is the free mock-up fabric and is excluded from every other
 challenge. With the modifier on:
 
-- Adds `fabricOnly: Burlap`
-- Removes other fabric and colour directions
+- Adds `burlapOnly`
+- Removes other fabric and colour directions, including `fabricsOnly` and `fabricsMin`
 - Favours accessory directions, since they carry most of the look
 
 Never used for the daily challenge. Modifiers are a list, so others (Monochrome, No accessories)

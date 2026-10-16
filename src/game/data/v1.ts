@@ -115,7 +115,7 @@ const tagWeights = {
   Workwear: 2,
 } satisfies Record<StyleTag, number>;
 
-const fabrics = {
+export const fabrics = {
   Burlap: { leansTowards: ["Uncomfortable"], modifierOnly: true },
   Cotton: { leansTowards: ["Daywear", "Cool", "Casual", "Workwear"] },
   Lace: {
@@ -131,14 +131,14 @@ const fabrics = {
     leansTowards: ["Glamour", "Eveningwear", "Elegant", "Warm", "Gothic"],
   },
   Wool: { leansTowards: ["Professional", "Warm", "Simple"] },
-} satisfies Record<FabricType, FabricInfo>;
+} as const satisfies Record<FabricType, FabricInfo>;
 
 const colourLeanings = {
   Black: ["Gothic"],
   Pink: ["Cute", "Romantic"],
 } satisfies Partial<Record<Colour, readonly StyleTag[]>>;
 
-const accessories = {
+export const accessories = {
   Appliqué: { unit: "piece", leansTowards: ["Flowers", "Eclectic", "Gothic"] },
   Bell: { unit: "piece", leansTowards: ["Cute", "Playful"] },
   Bow: { unit: "piece", leansTowards: ["Cute", "Playful", "Romantic"] },
@@ -172,7 +172,7 @@ const accessories = {
     unit: "cm",
     leansTowards: ["Eclectic", "Cute", "Gothic", "Elaborate"],
   },
-} satisfies Record<AccessoryType, AccessoryInfo>;
+} as const satisfies Record<AccessoryType, AccessoryInfo>;
 
 export const dataV1: GameData = {
   version: DATA_VERSION,
