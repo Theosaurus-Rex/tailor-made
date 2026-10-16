@@ -2,7 +2,7 @@
 
 A challenge generator for off-rack dresses in *Dressmaker*. Story clients hand you a card of
 requirements. Off-rack dresses have none, so Tailor-Made makes one up: a client, a short brief and
-a list of rules. Share a challenge as a link, or take the daily one that everyone gets.
+a few directions to design towards. Share a challenge as a link, or take the daily one that everyone gets.
 
 There is no backend and no account. Nothing is stored.
 
@@ -75,7 +75,7 @@ CI runs the same gate on every pull request and on main.
 ```
 src/
   game/        data and brief content, versioned        (no logic)
-  domain/      rules, PRNG, generate, reroll, validate   (pure)
+  domain/      directions, PRNG, generate, reroll, validate (pure)
   links/       share link encode and decode
   features/    screens, one directory each
   components/  shared UI, including the client card

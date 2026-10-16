@@ -2,7 +2,7 @@
 
 A challenge generator for off-rack dresses in *Dressmaker* (Cozy Lives / Free Lives). Story clients
 hand the player a card of requirements. Off-rack dresses have none. Tailor-Made supplies a
-generated client, a short brief, and a list of rules in the same shape as the game's own cards.
+generated client, a short brief, and a few directions to design towards, checked by eye.
 A challenge can be shared as a link that rebuilds the exact same challenge. There is also one
 daily challenge, the same for everyone.
 
@@ -10,7 +10,7 @@ It is a public tool, for the Dressmaker community first. There is no backend and
 
 **Status: M1 in progress.** Scaffold, gate and CI are in. Generator core is next. See
 `docs/superpowers/specs/2026-10-16-tailor-made-design.md` for the design this is built to. It is
-the source of truth for scope, rules, the generator, the link format and the milestones.
+the source of truth for scope, directions, the generator, the link format and the milestones.
 
 **Wireframes live in `docs/wireframes/`** (M0, in progress). Every Linear issue names its frames
 in a `**Wireframe:**` line. `—` means none were drawn. Build to the hi-fi frames when they exist.
