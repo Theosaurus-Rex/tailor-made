@@ -1,13 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { createRng, subSeed, weightedPick } from "./random";
+import { randomFromSeed, deriveSeed, weightedPick } from "./random";
 
 function draw(seed: string, count: number): number[] {
-  const rng = createRng(seed);
-  return Array.from({ length: count }, () => rng.next());
+  const random = randomFromSeed(seed);
+  return Array.from({ length: count }, () => random.fraction());
 }
 
-describe("createRng", () => {
+describe("randomFromSeed", () => {
   it("gives the pinned sequence for a generated-style seed", () => {
     expect(draw("abc23456", 5)).toEqual([
       0.7295095690060407, 0.9651020397432148, 0.7482347623445094, 0.8338864124380052,
@@ -29,9 +29,9 @@ describe("createRng", () => {
     ]);
   });
 
-  it("gives the pinned int results", () => {
-    const rng = createRng("abc23456");
-    expect(Array.from({ length: 6 }, () => rng.int(1, 6))).toEqual([5, 6, 5, 6, 3, 1]);
+  it("gives the pinned between results", () => {
+    const random = randomFromSeed("abc23456");
+    expect(Array.from({ length: 6 }, () => random.between(1, 6))).toEqual([5, 6, 5, 6, 3, 1]);
   });
 
   it("repeats for the same seed", () => {
@@ -43,7 +43,7 @@ describe("createRng", () => {
     expect(draw("abc23456", 5)).not.toEqual(draw("2026-10-16", 5));
   });
 
-  it("keeps next in [0, 1)", () => {
+  it("keeps fraction in [0, 1)", () => {
     for (const value of draw("range", 5000)) {
       expect(value).toBeGreaterThanOrEqual(0);
       expect(value).toBeLessThan(1);
@@ -51,12 +51,12 @@ describe("createRng", () => {
   });
 });
 
-describe("int", () => {
+describe("between", () => {
   it("stays in range and hits both ends", () => {
-    const rng = createRng("ends");
+    const random = randomFromSeed("ends");
     const seen = new Set<number>();
     for (let i = 0; i < 2000; i++) {
-      const value = rng.int(3, 7);
+      const value = random.between(3, 7);
       expect(value).toBeGreaterThanOrEqual(3);
       expect(value).toBeLessThanOrEqual(7);
       seen.add(value);
@@ -65,46 +65,46 @@ describe("int", () => {
   });
 
   it("returns the only value when min equals max", () => {
-    expect(createRng("x").int(4, 4)).toBe(4);
+    expect(randomFromSeed("x").between(4, 4)).toBe(4);
   });
 
   it("handles negative ranges", () => {
-    const rng = createRng("neg");
+    const random = randomFromSeed("neg");
     for (let i = 0; i < 200; i++) {
-      const value = rng.int(-3, -1);
+      const value = random.between(-3, -1);
       expect(value).toBeGreaterThanOrEqual(-3);
       expect(value).toBeLessThanOrEqual(-1);
     }
   });
 
   it("throws when min is above max", () => {
-    expect(() => createRng("x").int(5, 4)).toThrow();
+    expect(() => randomFromSeed("x").between(5, 4)).toThrow();
   });
 
   it("throws on non-integers", () => {
-    expect(() => createRng("x").int(1.5, 4)).toThrow();
-    expect(() => createRng("x").int(1, 4.5)).toThrow();
-    expect(() => createRng("x").int(Number.NaN, 4)).toThrow();
+    expect(() => randomFromSeed("x").between(1.5, 4)).toThrow();
+    expect(() => randomFromSeed("x").between(1, 4.5)).toThrow();
+    expect(() => randomFromSeed("x").between(Number.NaN, 4)).toThrow();
   });
 });
 
 describe("pick", () => {
   it("returns every item eventually and only items", () => {
-    const rng = createRng("pick");
+    const random = randomFromSeed("pick");
     const items = ["a", "b", "c"];
     const seen = new Set<string>();
-    for (let i = 0; i < 200; i++) seen.add(rng.pick(items));
+    for (let i = 0; i < 200; i++) seen.add(random.pick(items));
     expect([...seen].sort()).toEqual(items);
   });
 
   it("throws on an empty list", () => {
-    expect(() => createRng("x").pick([])).toThrow();
+    expect(() => randomFromSeed("x").pick([])).toThrow();
   });
 });
 
 describe("weightedPick", () => {
   it("lands near each weight", () => {
-    const rng = createRng("weights");
+    const random = randomFromSeed("weights");
     const entries = [
       { value: "a", weight: 1 },
       { value: "b", weight: 3 },
@@ -112,63 +112,63 @@ describe("weightedPick", () => {
     ];
     const draws = 20000;
     const counts: Record<string, number> = { a: 0, b: 0, c: 0 };
-    for (let i = 0; i < draws; i++) counts[weightedPick(rng, entries)]++;
+    for (let i = 0; i < draws; i++) counts[weightedPick(random, entries)]++;
     expect(Math.abs(counts.a / draws - 0.1)).toBeLessThan(0.02);
     expect(Math.abs(counts.b / draws - 0.3)).toBeLessThan(0.02);
     expect(Math.abs(counts.c / draws - 0.6)).toBeLessThan(0.02);
   });
 
   it("never picks a zero-weight entry", () => {
-    const rng = createRng("zero");
+    const random = randomFromSeed("zero");
     const entries = [
       { value: "never", weight: 0 },
       { value: "yes", weight: 1 },
       { value: "never2", weight: 0 },
     ];
     for (let i = 0; i < 2000; i++) {
-      expect(weightedPick(rng, entries)).toBe("yes");
+      expect(weightedPick(random, entries)).toBe("yes");
     }
   });
 
   it("throws on bad weights", () => {
-    const rng = createRng("x");
-    expect(() => weightedPick(rng, [])).toThrow();
-    expect(() => weightedPick(rng, [{ value: 1, weight: 0 }])).toThrow();
+    const random = randomFromSeed("x");
+    expect(() => weightedPick(random, [])).toThrow();
+    expect(() => weightedPick(random, [{ value: 1, weight: 0 }])).toThrow();
     expect(() =>
-      weightedPick(rng, [
+      weightedPick(random, [
         { value: 1, weight: -1 },
         { value: 2, weight: 2 },
       ]),
     ).toThrow();
-    expect(() => weightedPick(rng, [{ value: 1, weight: Number.NaN }])).toThrow();
-    expect(() => weightedPick(rng, [{ value: 1, weight: Infinity }])).toThrow();
+    expect(() => weightedPick(random, [{ value: 1, weight: Number.NaN }])).toThrow();
+    expect(() => weightedPick(random, [{ value: 1, weight: Infinity }])).toThrow();
   });
 });
 
-describe("subSeed", () => {
+describe("deriveSeed", () => {
   it("is stable", () => {
-    expect(subSeed("abc23456", 3, 0)).toBe("cjim271tr5y9y1xw2ysvg52ngm");
+    expect(deriveSeed("abc23456", 3, 0)).toBe("cjim271tr5y9y1xw2ysvg52ngm");
   });
 
   it("repeats for the same parts", () => {
-    const seed = subSeed("abc23456", 3, 0);
-    expect(draw(seed, 5)).toEqual(draw(subSeed("abc23456", 3, 0), 5));
+    const seed = deriveSeed("abc23456", 3, 0);
+    expect(draw(seed, 5)).toEqual(draw(deriveSeed("abc23456", 3, 0), 5));
   });
 
   it("differs by rule index", () => {
-    expect(draw(subSeed("a", 0, 0), 5)).not.toEqual(draw(subSeed("a", 1, 0), 5));
+    expect(draw(deriveSeed("a", 0, 0), 5)).not.toEqual(draw(deriveSeed("a", 1, 0), 5));
   });
 
   it("differs by reroll count", () => {
-    expect(draw(subSeed("a", 2, 0), 5)).not.toEqual(draw(subSeed("a", 2, 1), 5));
+    expect(draw(deriveSeed("a", 2, 0), 5)).not.toEqual(draw(deriveSeed("a", 2, 1), 5));
   });
 
   it("differs from the parent seed", () => {
-    expect(draw(subSeed("a", 0, 0), 5)).not.toEqual(draw("a", 5));
+    expect(draw(deriveSeed("a", 0, 0), 5)).not.toEqual(draw("a", 5));
   });
 
   it("keeps part boundaries", () => {
-    expect(subSeed("a", 1, 2)).not.toBe(subSeed("a", 12));
-    expect(draw(subSeed("a", 1, 2), 5)).not.toEqual(draw(subSeed("a", 12), 5));
+    expect(deriveSeed("a", 1, 2)).not.toBe(deriveSeed("a", 12));
+    expect(draw(deriveSeed("a", 1, 2), 5)).not.toEqual(draw(deriveSeed("a", 12), 5));
   });
 });

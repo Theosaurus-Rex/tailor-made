@@ -166,8 +166,8 @@ with a "make a new one" button, never a blank page.
 
 A random seed is 8 characters from `23456789abcdefghjkmnpqrstuvwxyz` (lowercase, no `0 1 i l o`,
 URL-safe, about 39 bits), made with `crypto.getRandomValues` outside `src/domain/`. A daily seed is
-the UTC date as `YYYY-MM-DD`, which must be a real calendar date. The PRNG is cyrb128 (seed hash)
-into sfc32, with the first 15 draws thrown away, using only 32-bit integer maths. It must never
+the UTC date as `YYYY-MM-DD`, which must be a real calendar date. The PRNG is cyrb128 (seed hash,
+`scrambleSeed`) into sfc32 (`numberStream`), with the first 15 draws thrown away, using only 32-bit integer maths. It must never
 change for data version 1, because any change moves every challenge and breaks every share link.
 `docs/notes/seeds.md` explains it in plain English.
 

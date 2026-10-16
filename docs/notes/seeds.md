@@ -42,14 +42,14 @@ and lint stops it using real randomness or the clock.
 
 ## From seed to numbers
 
-`createRng(seed)` turns a seed into a source of numbers in three steps.
+`randomFromSeed(seed)` turns a seed into a source of numbers in three steps.
 
-1. **Hash the seed.** A hash function called cyrb128 scrambles the text into four 32-bit numbers.
+1. **Scramble the seed.** `scrambleSeed` turns the text into four 32-bit numbers.
    A small change to the text, even one character, gives completely different numbers.
-2. **Start the generator.** Those four numbers become the starting state of sfc32, a small, fast
-   and well-tested random number generator. Each time it is asked for a number, it mixes its state
+2. **Start the stream.** Those four numbers start `numberStream`, a small, fast and well-tested
+   random number generator. Each time it is asked for a number, it mixes its state
    and hands back the result.
-3. **Warm up.** The first 15 numbers are thrown away. sfc32's first few outputs still carry traces
+3. **Warm up.** The first 15 numbers are thrown away. The stream's first few outputs still carry traces
    of its starting state. Without the warm-up, seeds that differ by one character would start out
    with similar numbers. Consecutive daily dates are exactly that kind of seed.
 
@@ -57,12 +57,16 @@ Everything uses whole-number maths on 32-bit values only. Floating-point maths c
 ways between browsers and devices. Whole-number maths cannot, so the numbers are identical
 everywhere.
 
+The two steps are standard, public algorithms. In the code they have plain names, and a comment
+gives the real name for anyone who wants to look them up: `scrambleSeed` is the cyrb128 hash and
+`numberStream` is the sfc32 generator.
+
 ## Using the numbers
 
 The generator gives the rest of the code four ways to make a choice.
 
-- `next()` gives a number from 0 up to, but not including, 1. The other three are built on it.
-- `int(min, max)` gives a whole number between `min` and `max`, including both ends. For example,
+- `fraction()` gives a number from 0 up to, but not including, 1. The other three are built on it.
+- `between(min, max)` gives a whole number between `min` and `max`, including both ends. For example,
   how many directions a challenge gets.
 - `pick(list)` chooses one item from a list, each equally likely.
 - `weightedPick(rng, entries)` chooses one item where some are more likely than others. A tag with
@@ -73,7 +77,7 @@ The generator gives the rest of the code four ways to make a choice.
 Rerolling one direction must change that direction only and leave the rest of the challenge alone.
 It must also survive a share link.
 
-`subSeed(seed, ...parts)` makes a new seed from the original plus some extra details, such as which
+`deriveSeed(seed, ...parts)` makes a new seed from the original plus some extra details, such as which
 direction is being rerolled and how many times. For example, the first reroll of direction 2
 could use a sub-seed built from the seed, `2` and `1`. Each reroll gets its own run of numbers. Nothing else in
 the challenge changes, because the main seed and its numbers stay the same.
