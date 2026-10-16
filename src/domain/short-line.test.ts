@@ -15,6 +15,11 @@ describe("shortLine", () => {
     expect(shortLine({ type: "styleAvoid", tag: "Risqué" })).toBe("Not risqué");
   });
 
+  it("styleAvoid on Flowers reads No florals", () => {
+    expect(shortLine({ type: "styleAvoid", tag: "Flowers" })).toBe("No florals");
+    expect(shortLine({ type: "styleAvoid", tag: "Patterned" })).toBe("Not patterned");
+  });
+
   it("fabric is the type as is", () => {
     expect(shortLine({ type: "fabric", fabric: "Velvet" })).toBe("Velvet");
     expect(shortLine({ type: "fabric", fabric: "Sequin" })).toBe("Sequin");
