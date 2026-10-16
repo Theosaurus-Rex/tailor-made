@@ -1,4 +1,4 @@
-import { colours, dataV1 } from "@/game/data/v1";
+import type { GameData } from "@/game/data/v1";
 import type { Direction } from "./direction";
 
 export type ConflictReason =
@@ -18,6 +18,7 @@ export interface Conflict {
 }
 
 export interface ConflictOptions {
+  data: GameData;
   allowOpposingPair?: boolean;
 }
 
@@ -113,7 +114,7 @@ const onlyFabricClash: Rule = (directions) =>
     ),
   );
 
-const tooFewColoursLeft: Rule = (directions) => {
+const tooFewColoursLeft: Rule = (directions, { data }) => {
   const found: Conflict[] = [];
   directions.forEach((direction, minimumIndex) => {
     if (direction.type !== "coloursMin") return;
@@ -126,7 +127,7 @@ const tooFewColoursLeft: Rule = (directions) => {
         if (index !== minimumIndex) lastAvoidIndex = index;
       }
       if (index < minimumIndex || lastAvoidIndex === undefined) continue;
-      if (direction.count <= colours.length - avoidedColours.size) continue;
+      if (direction.count <= data.colours.length - avoidedColours.size) continue;
       const conflictsWith = index === minimumIndex ? lastAvoidIndex : minimumIndex;
       found.push({ index, conflictsWith, reason: "tooFewColoursLeft" });
       return;
@@ -149,7 +150,7 @@ const opposingPair: Rule = (directions, options) => {
   if (options.allowOpposingPair) return [];
   return eachPair(directions, "opposingPair", (a, b) => {
     if (a.type !== "style" || b.type !== "style") return false;
-    return dataV1.opposingPairs.some(
+    return options.data.opposingPairs.some(
       ([x, y]) => (a.tag === x && b.tag === y) || (a.tag === y && b.tag === x),
     );
   });
@@ -178,7 +179,7 @@ const rules: readonly Rule[] = [
 
 export function findConflicts(
   directions: readonly Direction[],
-  options: ConflictOptions = {},
+  options: ConflictOptions,
 ): Conflict[] {
   return rules
     .flatMap((rule) => rule(directions, options))
@@ -188,7 +189,7 @@ export function findConflicts(
 export function conflictsWithAny(
   candidate: Direction,
   existing: readonly Direction[],
-  options: ConflictOptions = {},
+  options: ConflictOptions,
 ): Conflict | undefined {
   return findConflicts([...existing, candidate], options).find(
     (conflict) => conflict.index === existing.length,

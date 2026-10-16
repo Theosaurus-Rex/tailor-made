@@ -1,6 +1,21 @@
 import { describe, expect, it } from "vitest";
-import { type Conflict, conflictsWithAny, findConflicts } from "./contradictions";
+import {
+  type Conflict,
+  type ConflictOptions,
+  conflictsWithAny as conflictsWithAnyIn,
+  findConflicts as findConflictsIn,
+} from "./contradictions";
 import type { Direction } from "./direction";
+import { dataV1, type GameData } from "@/game/data/v1";
+
+type Options = Omit<ConflictOptions, "data">;
+const findConflicts = (directions: readonly Direction[], options: Options = {}) =>
+  findConflictsIn(directions, { data: dataV1, ...options });
+const conflictsWithAny = (
+  candidate: Direction,
+  existing: readonly Direction[],
+  options: Options = {},
+) => conflictsWithAnyIn(candidate, existing, { data: dataV1, ...options });
 
 type Case = [name: string, directions: Direction[], expected: Conflict];
 type NearMiss = [name: string, directions: Direction[]];
@@ -335,5 +350,22 @@ describe("conflictsWithAny", () => {
     expect(conflictsWithAny(noBlue, [atLeastColours(10), noRed])).toEqual(
       conflict(2, 0, "tooFewColoursLeft"),
     );
+  });
+});
+
+describe("game data", () => {
+  const data: GameData = { ...dataV1, opposingPairs: [["Cute", "Simple"]] };
+  const simple: Direction = { type: "style", tag: "Simple" };
+
+  it("takes the opposing pairs from the data it is given", () => {
+    expect(findConflictsIn([cute, simple], { data })).toEqual([conflict(1, 0, "opposingPair")]);
+    expect(findConflictsIn([cute, gothic], { data })).toEqual([]);
+  });
+
+  it("takes the colour count from the data it is given", () => {
+    const twoColours: GameData = { ...dataV1, colours: ["Red", "Blue"] };
+    expect(findConflictsIn([atLeastColours(2), noRed], { data: twoColours })).toEqual([
+      conflict(1, 0, "tooFewColoursLeft"),
+    ]);
   });
 });
