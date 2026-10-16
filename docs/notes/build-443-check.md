@@ -45,7 +45,7 @@ No change found. The notes mention no new or renamed tag or colour. The wiki nam
 ### Tag leaning per fabric type
 
 Not confirmed either way. The wiki says new tag values are "awaiting verification". The wiki still shows Build 410 data for fabrics.
-One related change matters for later. Build 443 changed how colour and fabric-type requirements are scored. Before, it was a raw share of panel area. Now panels on small components (collar, sleeves) get a boost. Tags were already scored this way. This affects the scoring model (spec §5), not the type lists.
+One related change is worth noting. Build 443 changed how colour and fabric-type requirements are scored. Before, it was a raw share of panel area. Now panels on small components (collar, sleeves) get a boost. Tags were already scored this way. It no longer matters to Tailor-Made, since directions are judged by eye and carry no scores (spec §5).
 
 ## Lists to freeze in v1
 
