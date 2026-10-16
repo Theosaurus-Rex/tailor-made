@@ -160,7 +160,8 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 - Both sides of an opposing pair, outside Chaos (see §7)
 - The same item asked for twice
 
-Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the card free of other fabric and colour directions.
+Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the
+card free of other fabric and colour directions.
 
 ### Reroll
 
