@@ -48,8 +48,12 @@ function sfc32([a0, b0, c0, d0]: Words): () => number {
   };
 }
 
+const WARM_UP_DRAWS = 15;
+
 export function createRng(seed: string): Rng {
   const nextFloat = sfc32(cyrb128(seed));
+  // sfc32's first outputs still track the seed, so similar seeds like dates start alike.
+  for (let i = 0; i < WARM_UP_DRAWS; i++) nextFloat();
   const rng: Rng = {
     next: nextFloat,
     int(min, max) {

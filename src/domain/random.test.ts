@@ -10,28 +10,28 @@ function draw(seed: string, count: number): number[] {
 describe("createRng", () => {
   it("gives the pinned sequence for a generated-style seed", () => {
     expect(draw("abc23456", 5)).toEqual([
-      0.08754691435024142, 0.7160968182142824, 0.014535586582496762, 0.19394707446917892,
-      0.5051622411701828,
+      0.7295095690060407, 0.9651020397432148, 0.7482347623445094, 0.8338864124380052,
+      0.41499249497428536,
     ]);
   });
 
   it("gives the pinned sequence for a daily seed", () => {
     expect(draw("2026-10-16", 5)).toEqual([
-      0.5267649225424975, 0.9368185517378151, 0.5307445162907243, 0.4416662307921797,
-      0.03621750371530652,
+      0.9880204573273659, 0.7215682649984956, 0.6125541301444173, 0.6507308951113373,
+      0.8994907066226006,
     ]);
   });
 
   it("gives the pinned sequence for the empty seed", () => {
     expect(draw("", 5)).toEqual([
-      0.7160958384629339, 0.4519506278447807, 0.2912008506245911, 0.45941809425130486,
-      0.005715326406061649,
+      0.8911180282011628, 0.15628127637319267, 0.1256390509661287, 0.14473771443590522,
+      0.9103766717016697,
     ]);
   });
 
   it("gives the pinned int results", () => {
     const rng = createRng("abc23456");
-    expect(Array.from({ length: 6 }, () => rng.int(1, 6))).toEqual([1, 5, 1, 2, 4, 5]);
+    expect(Array.from({ length: 6 }, () => rng.int(1, 6))).toEqual([5, 6, 5, 6, 3, 1]);
   });
 
   it("repeats for the same seed", () => {
