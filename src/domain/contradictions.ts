@@ -4,7 +4,9 @@ import type { Direction } from "./direction";
 export type ConflictReason =
   | "askedAndAvoided"
   | "onlyColourClash"
+  | "onlyFabricClash"
   | "tooFewColoursLeft"
+  | "tooFewFabricsLeft"
   | "moreThanOneOnly"
   | "moreThanOneCount"
   | "opposingPair"
@@ -30,7 +32,6 @@ const askedFor = (d: Direction): string | undefined => {
     case "fabric":
       return `fabric:${d.fabric}`;
     case "colour":
-    case "colourOnly":
       return `colour:${d.colour}`;
     case "accessory":
     case "accessoryMin":
@@ -56,9 +57,20 @@ const avoided = (d: Direction): string | undefined => {
   }
 };
 
+const listed = (d: Direction): readonly string[] => {
+  switch (d.type) {
+    case "colourOnly":
+      return d.colours.map((colour) => `colour:${colour}`);
+    case "fabricsOnly":
+      return d.fabrics.map((fabric) => `fabric:${fabric}`);
+    default:
+      return [];
+  }
+};
+
 const isCount = (d: Direction) => d.type === "accessoryMin" || d.type === "accessoryExact";
 
-const isOnly = (d: Direction) => d.type === "colourOnly";
+const isOnly = (d: Direction) => d.type === "colourOnly" || d.type === "fabricsOnly";
 
 function eachPair(
   directions: readonly Direction[],
@@ -83,46 +95,75 @@ const askedAndAvoided: Rule = (directions) =>
     directions,
     "askedAndAvoided",
     eitherWay((a, b) => {
-      const asked = askedFor(a);
-      return asked !== undefined && asked === avoided(b);
+      const avoid = avoided(b);
+      if (avoid === undefined) return false;
+      return askedFor(a) === avoid || listed(a).includes(avoid);
     }),
   );
 
-const onlyColourClash: Rule = (directions) =>
-  eachPair(
-    directions,
-    "onlyColourClash",
-    eitherWay((only, other) => {
-      if (only.type !== "colourOnly") return false;
-      if (other.type === "coloursMin") return true;
-      if (other.type === "colour" || other.type === "colourAvoid") {
-        return other.colour !== only.colour;
-      }
-      return false;
-    }),
-  );
-
-const tooFewColoursLeft: Rule = (directions, { data }) => {
-  const found: Conflict[] = [];
-  directions.forEach((direction, minimumIndex) => {
-    if (direction.type !== "coloursMin") return;
-    const avoidedColours = new Set<string>();
-    let lastAvoidIndex: number | undefined;
-    for (let index = 0; index < directions.length; index++) {
-      const current = directions[index];
-      if (current?.type === "colourAvoid") {
-        avoidedColours.add(current.colour);
-        if (index !== minimumIndex) lastAvoidIndex = index;
-      }
-      if (index < minimumIndex || lastAvoidIndex === undefined) continue;
-      if (direction.count <= data.colours.length - avoidedColours.size) continue;
-      const conflictsWith = index === minimumIndex ? lastAvoidIndex : minimumIndex;
-      found.push({ index, conflictsWith, reason: "tooFewColoursLeft" });
-      return;
-    }
-  });
-  return found;
+const onlyListClash = (reason: ConflictReason, onlyType: "colourOnly" | "fabricsOnly"): Rule => {
+  const minType = onlyType === "colourOnly" ? "coloursMin" : "fabricsMin";
+  const prefix = onlyType === "colourOnly" ? "colour:" : "fabric:";
+  return (directions) =>
+    eachPair(
+      directions,
+      reason,
+      eitherWay((only, other) => {
+        if (only.type !== onlyType) return false;
+        if (other.type === minType) return other.count > listed(only).length;
+        const key = askedFor(other) ?? avoided(other);
+        return key !== undefined && key.startsWith(prefix) && !listed(only).includes(key);
+      }),
+    );
 };
+
+const onlyColourClash = onlyListClash("onlyColourClash", "colourOnly");
+
+const onlyFabricClash = onlyListClash("onlyFabricClash", "fabricsOnly");
+
+const tooFewLeft = (
+  reason: ConflictReason,
+  minType: "coloursMin" | "fabricsMin",
+  avoidKey: (d: Direction) => string | undefined,
+  available: (data: GameData) => number,
+): Rule => {
+  return (directions, { data }) => {
+    const found: Conflict[] = [];
+    directions.forEach((direction, minimumIndex) => {
+      if (direction.type !== minType) return;
+      const avoidedItems = new Set<string>();
+      let lastAvoidIndex: number | undefined;
+      for (let index = 0; index < directions.length; index++) {
+        const current = directions[index];
+        const key = current && avoidKey(current);
+        if (key !== undefined) {
+          avoidedItems.add(key);
+          if (index !== minimumIndex) lastAvoidIndex = index;
+        }
+        if (index < minimumIndex || lastAvoidIndex === undefined) continue;
+        if (direction.count <= available(data) - avoidedItems.size) continue;
+        const conflictsWith = index === minimumIndex ? lastAvoidIndex : minimumIndex;
+        found.push({ index, conflictsWith, reason });
+        return;
+      }
+    });
+    return found;
+  };
+};
+
+const tooFewColoursLeft = tooFewLeft(
+  "tooFewColoursLeft",
+  "coloursMin",
+  (d) => (d.type === "colourAvoid" ? d.colour : undefined),
+  (data) => data.colours.length,
+);
+
+const tooFewFabricsLeft = tooFewLeft(
+  "tooFewFabricsLeft",
+  "fabricsMin",
+  (d) => (d.type === "fabricAvoid" ? d.fabric : undefined),
+  (data) => Object.values(data.fabrics).filter((fabric) => !fabric.modifierOnly).length,
+);
 
 const moreThanOneOnly: Rule = (directions) =>
   eachPair(directions, "moreThanOneOnly", (a, b) => isOnly(a) && a.type === b.type);
@@ -148,7 +189,7 @@ const askedTwice: Rule = (directions) =>
   eachPair(directions, "askedTwice", (a, b) => {
     if (isOnly(a) || isOnly(b)) return false;
     if (isCount(a) && isCount(b)) return false;
-    if (a.type === "coloursMin") return b.type === "coloursMin";
+    if (a.type === "coloursMin" || a.type === "fabricsMin") return a.type === b.type;
     const sameAsk = askedFor(a) !== undefined && askedFor(a) === askedFor(b);
     const sameAvoid = avoided(a) !== undefined && avoided(a) === avoided(b);
     return sameAsk || sameAvoid;
@@ -157,7 +198,9 @@ const askedTwice: Rule = (directions) =>
 const rules: readonly Rule[] = [
   askedAndAvoided,
   onlyColourClash,
+  onlyFabricClash,
   tooFewColoursLeft,
+  tooFewFabricsLeft,
   moreThanOneOnly,
   moreThanOneCount,
   opposingPair,
