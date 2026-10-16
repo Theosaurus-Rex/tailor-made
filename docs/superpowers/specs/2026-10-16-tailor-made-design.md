@@ -64,7 +64,7 @@ Same as nuzlocke-tracker, minus the storage layer.
 | Styling / components | Tailwind 4, shadcn/ui |
 | Routing | React Router, declarative mode |
 | Tests | Vitest, React Testing Library, Playwright, axe |
-| Hosting | Netlify, static |
+| Hosting | Netlify, static (deployed in M6) |
 | Package manager | pnpm |
 
 There is no storage and no backend in v1. The only server-side piece is a Netlify function for
@@ -281,12 +281,12 @@ Dependencies point one way: `features` → `links` → `domain` → `game`.
 | | Milestone | Done when |
 |---|---|---|
 | M0 | Design | Lo-fi flows, moodboard, 3–4 directions, a pick, hi-fi frames in `docs/wireframes/` |
-| M1 | Scaffold | Repo, toolchain, commit gate, CI, Netlify deploy, CLAUDE.md, README |
+| M1 | Scaffold | Repo, toolchain, commit gate, CI, CLAUDE.md, README |
 | M2 | Generator core | Data v1, direction types, PRNG, generate, validation, property tests, a debug page |
 | M3 | Briefs and difficulty | Themes, names, templates, difficulty table, opposing pairs, Burlap only |
 | M4 | Screens | Generator, shared link, reroll, copy link and text, tick-off, About |
 | M5 | Daily | UTC date seed, weekday difficulty, countdown |
-| M6 | Tune and launch | Playtest about 5 per difficulty in game, retune, axe and Playwright, link previews, community post |
+| M6 | Tune and launch | Netlify deploy, playtest about 5 per difficulty in game, retune, axe and Playwright, link previews, community post |
 
 M2 can start alongside M0, since it has no UI.
 
