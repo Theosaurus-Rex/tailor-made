@@ -26,6 +26,17 @@ export const accessoryNouns: Record<AccessoryType, { singular: string; plural: s
   Trim: { singular: "trim", plural: "trim" },
 };
 
+export const countWords: Record<number, string> = {
+  1: "one",
+  2: "two",
+  3: "three",
+  4: "four",
+  5: "five",
+  6: "six",
+  7: "seven",
+  8: "eight",
+};
+
 export const styleAvoidLines: Partial<Record<StyleTag, string>> = {
   Flowers: "No florals",
 };
