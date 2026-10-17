@@ -245,6 +245,9 @@ Hand-written content in `src/game/briefs/`, versioned with the data.
   the client is.
 - **Direction phrasing**: several client lines per direction type, filled with the item named.
   Specific lines for common items ("I adore velvet") beat generic ones ("Use {fabric}").
+  Each client has a personality, picked from the seed on its own sub-seed, and each personality
+  has its own lines per direction. Deadpan, Gushing and Brisk come first. Issue 44 adds Grand,
+  Anxious and Theatrical. "Only" lines say only those colours or fabrics, never "use all of them".
 - All original. No game characters, names or card text.
 
 This is most of the writing effort. If it runs long, cut themes before cutting anything else.
