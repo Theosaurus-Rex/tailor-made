@@ -40,3 +40,7 @@ export const countWords: Record<number, string> = {
 export const styleAvoidLines: Partial<Record<StyleTag, string>> = {
   Flowers: "No florals",
 };
+
+export const tagWords: Partial<Record<StyleTag, string>> = {
+  Flowers: "floral",
+};

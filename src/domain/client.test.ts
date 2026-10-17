@@ -38,6 +38,16 @@ describe("clientFromSeed", () => {
       kind: "friendly ghost",
       personality: "gushing",
     });
+    expect(clientFromSeed("hello")).toEqual({
+      name: "Gwendolyn Nakamura",
+      human: true,
+      personality: "brisk",
+    });
+    expect(clientFromSeed("zzzzzzzz")).toEqual({
+      name: "Philippa Tremaine",
+      human: true,
+      personality: "deadpan",
+    });
   });
 
   it("makes non-human clients at about the chosen share, with names from the lists", () => {

@@ -64,7 +64,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "{accessory}. Somewhere on there.",
         "Add {accessory}. I'll pretend I'm not excited.",
       ],
-      accessoryAvoid: ["No {accessory}. I've had enough of them.", "Keep the {accessory} off me."],
+      accessoryAvoid: ["No {accessory}. I've had my fill.", "Keep the {accessory} off me."],
       accessoryMin: [
         "{countWord} {accessory}, at the very least.",
         "At least {countWord} {accessory}. Subtlety is not the goal.",
@@ -152,11 +152,11 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       accessory: [
         "Oh, {accessory}! Add as many as you like, darling.",
-        "Do add {accessory}, dear. They make me so happy!",
+        "Do add {accessory}, dear. What a treat!",
       ],
       accessoryAvoid: [
         "Oh, no {accessory}, darling. I'm so sorry to be fussy!",
-        "Please keep the {accessory} away, dear. They don't suit me, I'm afraid.",
+        "Please keep the {accessory} away, dear. It's just not me, I'm afraid.",
       ],
       accessoryMin: [
         "Oh, {countWord} {accessory} at the very least, darling!",
@@ -221,7 +221,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       colour: ["{colour}. That's it.", "Make it {colour}."],
       colourAvoid: ["No {colour}.", "Not {colour}. Thanks."],
       colourOnly: ["{list} only.", "Nothing but {list}. Quick as you can."],
-      accessory: ["{accessory}. A few will do.", "Add {accessory}."],
+      accessory: ["{accessory}. Keep it tidy.", "Add {accessory}."],
       accessoryAvoid: ["No {accessory}.", "Leave off the {accessory}."],
       accessoryMin: [
         "At least {countWord} {accessory}.",

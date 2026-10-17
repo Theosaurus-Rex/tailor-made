@@ -107,6 +107,20 @@ describe("client lines content", () => {
 });
 
 describe("clientLine", () => {
+  it("calls the Flowers style floral in a sentence", () => {
+    for (const personality of personalities) {
+      for (let i = 0; i < 40; i++) {
+        const line = clientLine(
+          { type: "style", tag: "Flowers" },
+          personality,
+          randomFromSeed(deriveSeed("floral", i)),
+        );
+        expect(line).toMatch(/floral/i);
+        expect(line).not.toMatch(/flowers/i);
+      }
+    }
+  });
+
   it("has no line for burlapOnly", () => {
     for (const personality of personalities) {
       expect(lineFor({ type: "burlapOnly" }, personality)).toBeUndefined();

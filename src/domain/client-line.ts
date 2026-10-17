@@ -4,7 +4,7 @@ import {
   type SpecificClientLineKey,
 } from "@/game/briefs/v1/client-lines";
 import type { Personality } from "@/game/briefs/v1/personalities";
-import { accessoryNouns, countWords, fabricNouns } from "@/game/briefs/v1/words";
+import { accessoryNouns, countWords, fabricNouns, tagWords } from "@/game/briefs/v1/words";
 import type { AccessoryType } from "@/game/data/v1";
 import type { Direction, DirectionType } from "./direction";
 import { deriveSeed, randomFromSeed, type Random } from "./random";
@@ -37,7 +37,7 @@ function slotsFor(direction: Exclude<Direction, { type: "burlapOnly" }>): {
     case "styleAvoid":
       return {
         specificKey: `${direction.type}:${direction.tag}`,
-        slots: { tag: direction.tag.toLowerCase() },
+        slots: { tag: tagWords[direction.tag] ?? direction.tag.toLowerCase() },
       };
     case "fabric":
     case "fabricAvoid":
