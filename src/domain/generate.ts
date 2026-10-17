@@ -1,5 +1,5 @@
 import { dataVersions } from "@/game/data";
-import { accessoryTypes, fabricTypes, styleTags, type GameData } from "@/game/data/v1";
+import type { GameData } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
 import { shapes, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
@@ -43,16 +43,16 @@ function someOf<T>(random: Random, items: readonly T[], count: number): T[] {
 }
 
 function drawCandidate(type: PlannedType, random: Random, data: GameData): Direction {
-  const generalFabrics = fabricTypes.filter(
+  const generalFabrics = data.fabricTypes.filter(
     (fabric) => !data.fabrics[fabric].modifierOnly,
   ) as GeneralFabric[];
-  const perPiece = accessoryTypes.filter(
+  const perPiece = data.accessoryTypes.filter(
     (accessory) => data.accessories[accessory].unit === "piece",
   ) as PerPieceAccessory[];
   const tag = () =>
     weightedPick(
       random,
-      styleTags.map((value) => ({ value, weight: data.tagWeights[value] })),
+      data.styleTags.map((value) => ({ value, weight: data.tagWeights[value] })),
     );
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
   switch (type) {
@@ -74,7 +74,7 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
       return { type, colours: someOf(random, data.colours, onlyCount()) };
     case "accessory":
     case "accessoryAvoid":
-      return { type, accessory: random.pick(accessoryTypes) };
+      return { type, accessory: random.pick(data.accessoryTypes) };
     case "accessoryMin":
     case "accessoryExact":
       return {
@@ -128,8 +128,8 @@ export function drawDirection({
 export function generate(
   { seed, difficulty, modifiers, dataVersion }: GenerateInput,
   shape: DifficultyShape = shapes[difficulty],
+  data: GameData | undefined = dataVersions[dataVersion],
 ): Challenge {
-  const data = dataVersions[dataVersion];
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");

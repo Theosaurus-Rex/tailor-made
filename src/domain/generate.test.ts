@@ -131,6 +131,23 @@ describe("generate", () => {
     expect(redraw(2, 0)).toEqual(challenge.directions[2]);
   });
 
+  it("draws from the lists of the data it is given", () => {
+    const data = {
+      ...dataV1,
+      styleTags: ["Gothic"] as const,
+      tagWeights: { ...dataV1.tagWeights },
+    };
+    let styles = 0;
+    for (const seed of samples.slice(0, 50)) {
+      for (const d of placedDirections(generate(input(seed), mediumShape, data))) {
+        if (d.type !== "style" && d.type !== "styleAvoid") continue;
+        expect(d.tag).toBe("Gothic");
+        styles++;
+      }
+    }
+    expect(styles).toBeGreaterThan(0);
+  });
+
   it("refuses the burlap modifier and unknown data versions", () => {
     expect(() => generate({ ...input("k7m2qx9a"), modifiers: ["burlap"] })).toThrow(/burlap/i);
     expect(() => generate({ ...input("k7m2qx9a"), dataVersion: 99 })).toThrow(RangeError);
