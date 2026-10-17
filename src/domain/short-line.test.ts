@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { accessoryTypes, fabricTypes, fabrics } from "@/game/data/v1";
 import type { GeneralFabric } from "./direction";
-import { joinWithAnd, shortLine } from "./short-line";
+import { joinWithAnd, joinWithOr, shortLine } from "./short-line";
 
 const generalFabrics = fabricTypes.filter(
   (fabric): fabric is GeneralFabric => !("modifierOnly" in fabrics[fabric]),
@@ -134,5 +134,13 @@ describe("joinWithAnd", () => {
   it("joins three or more with commas and a final and", () => {
     expect(joinWithAnd(["a", "b", "c"])).toBe("a, b and c");
     expect(joinWithAnd(["a", "b", "c", "d"])).toBe("a, b, c and d");
+  });
+});
+
+describe("joinWithOr", () => {
+  it("joins like joinWithAnd, with or and no Oxford comma", () => {
+    expect(joinWithOr(["a"])).toBe("a");
+    expect(joinWithOr(["a", "b"])).toBe("a or b");
+    expect(joinWithOr(["a", "b", "c"])).toBe("a, b or c");
   });
 });

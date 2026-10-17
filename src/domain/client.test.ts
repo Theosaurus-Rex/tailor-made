@@ -17,9 +17,21 @@ describe("clientFromSeed", () => {
   });
 
   it("pins the client for fixed seeds", () => {
-    expect(clientFromSeed("abc23456")).toEqual({ name: "Noor Ibarra", human: true, personality: "gushing" });
-    expect(clientFromSeed("2026-10-16")).toEqual({ name: "Cecily Oakhurst", human: true, personality: "gushing" });
-    expect(clientFromSeed("k7m2qx9a")).toEqual({ name: "Freya Lindqvist", human: true, personality: "gushing" });
+    expect(clientFromSeed("abc23456")).toEqual({
+      name: "Noor Ibarra",
+      human: true,
+      personality: "gushing",
+    });
+    expect(clientFromSeed("2026-10-16")).toEqual({
+      name: "Cecily Oakhurst",
+      human: true,
+      personality: "gushing",
+    });
+    expect(clientFromSeed("k7m2qx9a")).toEqual({
+      name: "Freya Lindqvist",
+      human: true,
+      personality: "gushing",
+    });
     expect(clientFromSeed("w9x8y7v6")).toEqual({
       name: "Winnie Hollowmere",
       human: false,

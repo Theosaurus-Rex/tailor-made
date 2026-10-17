@@ -7,8 +7,12 @@ type Writers = { [T in DirectionType]: (direction: DirectionOf<T>) => string };
 
 const capitalise = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
 
-export const joinWithAnd = (items: readonly string[]) =>
-  items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items.at(-1)}`;
+const joinList = (items: readonly string[], joiner: string) =>
+  items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} ${joiner} ${items.at(-1)}`;
+
+export const joinWithAnd = (items: readonly string[]) => joinList(items, "and");
+
+export const joinWithOr = (items: readonly string[]) => joinList(items, "or");
 
 const countedNoun = (accessory: keyof typeof accessoryNouns, count: number) => {
   const noun = accessoryNouns[accessory];
