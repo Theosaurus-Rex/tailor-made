@@ -67,8 +67,8 @@ const isClean = (line: string) =>
   line !== "" &&
   !/[{}]/.test(line) &&
   !/ {2}|^ | $/.test(line) &&
-  line.charAt(0) === line.charAt(0).toUpperCase() &&
-  line.charAt(0) !== line.charAt(0).toLowerCase();
+  !/[.!?] [a-z]/.test(line) &&
+  /^\p{Lu}/u.test(line);
 
 const lineFor = (direction: Direction, personality: (typeof personalities)[number], n = 0) =>
   clientLine(direction, personality, randomFromSeed(deriveSeed("pick", n)));
@@ -77,7 +77,7 @@ describe("client lines content", () => {
   it("gives every personality at least two generic lines for every direction type", () => {
     for (const personality of personalities) {
       const { generic } = clientLines[personality];
-      for (const [type, lines] of Object.entries(generic)) {
+      for (const [type, lines] of Object.entries(generic) as [string, readonly string[]][]) {
         expect(lines.length, `${personality} ${type}`).toBeGreaterThanOrEqual(2);
       }
     }

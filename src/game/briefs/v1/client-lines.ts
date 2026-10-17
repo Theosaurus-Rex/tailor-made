@@ -50,11 +50,11 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       fabric: ["{fabric}. It'll do nicely.", "I'd like {fabric}. Don't read into it."],
       fabricAvoid: ["No {fabric}. We don't talk about it.", "Not {fabric}. It knows what it did."],
       fabricsOnly: [
-        "Nothing but honest fabrics. {list} only.",
+        "Nothing but honest fabrics, please. Only {list}.",
         "{list} only. Surprise me within that.",
       ],
       fabricsMin: [
-        "I get bored easily. {countWord} fabrics, at least.",
+        "I get bored easily. At least {countWord} fabrics.",
         "At least {countWord} fabrics. I like options.",
       ],
       colour: ["{colour}, please. It matches my mood.", "Make it {colour}. Don't ask me why."],
@@ -74,7 +74,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "{countWord} {accessory}. I counted.",
       ],
       coloursMin: [
-        "I want colour, and lots of it. {countWord} at least.",
+        "I want colour, and lots of it. At least {countWord}.",
         "At least {countWord} colours. I'm tired of beige.",
       ],
     },
@@ -102,7 +102,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       "accessoryAvoid:Feather": ["No feathers, I sneeze.", "No feathers. They end up in my tea."],
       "accessoryMin:Bow": [
-        "Bows everywhere. {countWord} at the very least.",
+        "Bows everywhere. At the very least, {countWord}.",
         "{countWord} {accessory}, minimum. Subtlety is not the goal.",
       ],
       "accessoryExact:Brooch": [
@@ -136,7 +136,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       fabricsMin: [
         "Oh, {countWord} fabrics at least, darling! The more, the merrier.",
-        "Mix it up, dear! {countWord} fabrics or more would be heavenly.",
+        "Mix it up, dear! At least {countWord} fabrics would be heavenly.",
       ],
       colour: [
         "Oh, {colour}, darling! I'm glowing at the thought.",
@@ -168,7 +168,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       coloursMin: [
         "Oh, at least {countWord} colours, darling! Make it a rainbow.",
-        "Colour, dear, colour! {countWord} at the very least.",
+        "Colour, dear, colour! At the very least, {countWord}.",
       ],
     },
     specific: {
@@ -201,7 +201,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "No feathers, dear. I'm so sorry, I do sneeze so!",
       ],
       "accessoryMin:Bow": [
-        "Oh, bows everywhere, darling! {countWord} at the very least.",
+        "Oh, bows everywhere, darling! At the very least, {countWord}.",
         "{countWord} {accessory} at least, dear! I can't have too many.",
       ],
       "accessoryExact:Brooch": [

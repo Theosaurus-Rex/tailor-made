@@ -88,8 +88,10 @@ export function clientLine(
   if (direction.type === "burlapOnly") return undefined;
   const { specificKey, slots } = slotsFor(direction);
   const { generic, specific } = clientLines[personality];
-  const lines = (specificKey && specific[specificKey]) || generic[direction.type];
-  const filled = random.pick(lines).replace(/\{(\w+)\}/g, (slot, name) => slots[name] ?? slot);
+  const lines = (specificKey && specific[specificKey]) ?? generic[direction.type];
+  const filled = random
+    .pick(lines)
+    .replace(/\{(\w+)\}/g, (slot: string, name: string) => slots[name] ?? slot);
   return filled.charAt(0).toUpperCase() + filled.slice(1);
 }
 
