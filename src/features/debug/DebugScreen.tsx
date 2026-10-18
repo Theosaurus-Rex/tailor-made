@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import { briefFor } from "@/domain/brief";
 import { rerollCountOf, type Challenge } from "@/domain/challenge";
 import { clientFromSeed } from "@/domain/client";
 import { clientLine, lineRandomFor } from "@/domain/client-line";
@@ -33,6 +34,7 @@ function SingleView({ seed }: { seed: string }) {
   const client = clientFromSeed(seed);
   return (
     <div className="space-y-4">
+      <p>Brief: {briefFor(challenge, client)}</p>
       <p>
         Client: {client.name}, personality {client.personality}
         {client.kind ? `, kind ${client.kind}` : ""}

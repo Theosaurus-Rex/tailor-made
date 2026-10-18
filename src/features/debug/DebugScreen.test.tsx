@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
+import { briefFor } from "@/domain/brief";
 import { clientFromSeed } from "@/domain/client";
 import { generate } from "@/domain/generate";
 import { shortLine } from "@/domain/short-line";
@@ -22,6 +23,13 @@ describe("DebugScreen", () => {
     for (const line of shortLinesFor(SEED)) {
       expect(within(single).getAllByText(`Short line: ${line}`).length).toBeGreaterThan(0);
     }
+  });
+
+  it("shows the brief for the seed", () => {
+    render(<DebugScreen />);
+    const challenge = generate({ seed: SEED, difficulty: "medium", modifiers: [], dataVersion: 1 });
+    const brief = briefFor(challenge, clientFromSeed(SEED));
+    expect(screen.getByText(`Brief: ${brief}`)).toBeInTheDocument();
   });
 
   it("shows a message for an invalid seed", () => {

@@ -168,6 +168,7 @@ describe("pinned burlap challenges", () => {
     history: [],
     pairSlots: null,
     pullApartSlot: null,
+    themeId: "garden-party",
     ...rest,
   });
   const dealt = (difficulty: Difficulty) => generate(input("k7m2qx9a", difficulty, true));
@@ -178,7 +179,7 @@ describe("pinned burlap challenges", () => {
         plan: ["burlapOnly", "accessory", "style", "accessory"],
         directions: [
           { type: "burlapOnly" },
-          { type: "accessory", accessory: "Trim" },
+          { type: "accessory", accessory: "Tassel" },
           { type: "style", tag: "Daywear" },
           { type: "accessory", accessory: "Button" },
         ],
@@ -194,7 +195,7 @@ describe("pinned burlap challenges", () => {
           { type: "burlapOnly" },
           { type: "accessoryAvoid", accessory: "Trim" },
           { type: "style", tag: "Daywear" },
-          { type: "accessoryMin", accessory: "Brooch", count: 7 },
+          { type: "accessoryMin", accessory: "Bow", count: 7 },
           { type: "accessory", accessory: "Appliqué" },
         ],
       }),
@@ -209,7 +210,7 @@ describe("pinned burlap challenges", () => {
           { type: "burlapOnly" },
           { type: "styleAvoid", tag: "Warm" },
           { type: "accessoryAvoid", accessory: "Bell" },
-          { type: "style", tag: "Eveningwear" },
+          { type: "style", tag: "Flowers" },
           { type: "accessoryMin", accessory: "Appliqué", count: 6 },
           { type: "style", tag: "Cute" },
         ],

@@ -20,6 +20,7 @@ import {
   type PerPieceAccessory,
 } from "./direction";
 import { deriveSeed, randomFromSeed, weightedPick, type Random } from "./random";
+import { leaningsFor, themeFor, type Leanings } from "./theme";
 
 export const MAX_TRIES = 25;
 
@@ -41,15 +42,29 @@ export interface DrawInput {
   pairs: PairRule;
   allowedPair?: readonly [StyleTag, StyleTag];
   pullApartSlot?: number | null;
+  ignoreTheme?: boolean;
   data: GameData;
 }
 
 // The order of draws below is frozen for data version 1. Changing it moves every challenge.
-function someOf<T>(random: Random, items: readonly T[], count: number): T[] {
+function weighted<T>(random: Random, items: readonly T[], weight: (item: T) => number): T {
+  return weightedPick(
+    random,
+    items.map((value) => ({ value, weight: weight(value) })),
+  );
+}
+
+function someOf<T>(
+  random: Random,
+  items: readonly T[],
+  count: number,
+  weight: (item: T) => number,
+): T[] {
   const left = [...items];
   const chosen: T[] = [];
   for (let i = 0; i < count; i++) {
-    const [item] = left.splice(random.between(0, left.length - 1), 1);
+    const item = weighted(random, left, weight);
+    left.splice(left.indexOf(item), 1);
     chosen.push(item);
   }
   return chosen;
@@ -71,6 +86,7 @@ function drawCandidate(
   data: GameData,
   others: readonly Direction[],
   towards: StyleTag | undefined,
+  leanings: Leanings,
 ): Direction {
   const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
   const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
@@ -80,52 +96,66 @@ function drawCandidate(
   const perPiece = data.accessoryTypes.filter(
     (accessory) => data.accessories[accessory].unit === "piece",
   ) as PerPieceAccessory[];
-  const tag = () =>
-    weightedPick(
-      random,
-      data.styleTags.map((value) => ({ value, weight: data.tagWeights[value] })),
-    );
+  const tag = (avoid: boolean) =>
+    weighted(random, data.styleTags, (value) => leanings.tag(value, avoid));
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
   switch (type) {
     case "burlapOnly":
       return { type };
     case "style":
+      return { type, tag: tag(false) };
     case "styleAvoid":
-      return { type, tag: tag() };
+      return { type, tag: tag(true) };
     case "fabric":
       return {
         type,
-        fabric: random.pick(
+        fabric: weighted(
+          random,
           leaning(onlyFabrics ?? generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
+          (f) => leanings.fabric(f, false),
         ),
       };
     case "fabricAvoid":
-      return { type, fabric: random.pick(generalFabrics) };
+      return { type, fabric: weighted(random, generalFabrics, (f) => leanings.fabric(f, true)) };
     case "fabricsOnly":
-      return { type, fabrics: someOf(random, generalFabrics, onlyCount()) };
+      return {
+        type,
+        fabrics: someOf(random, generalFabrics, onlyCount(), (f) => leanings.fabric(f, false)),
+      };
     case "fabricsMin":
     case "coloursMin":
       return { type, count: random.between(FABRICS_MIN_RANGE.min, FABRICS_MIN_RANGE.max) };
     case "colour":
-      return { type, colour: random.pick(onlyColours ?? data.colours) };
+      return {
+        type,
+        colour: weighted(random, onlyColours ?? data.colours, (c) => leanings.colour(c, false)),
+      };
     case "colourAvoid":
-      return { type, colour: random.pick(data.colours) };
+      return { type, colour: weighted(random, data.colours, (c) => leanings.colour(c, true)) };
     case "colourOnly":
-      return { type, colours: someOf(random, data.colours, onlyCount()) };
+      return {
+        type,
+        colours: someOf(random, data.colours, onlyCount(), (c) => leanings.colour(c, false)),
+      };
     case "accessory":
       return {
         type,
-        accessory: random.pick(
+        accessory: weighted(
+          random,
           leaning(data.accessoryTypes, towards, (a) => data.accessories[a].leansTowards),
+          (a) => leanings.accessory(a, false),
         ),
       };
     case "accessoryAvoid":
-      return { type, accessory: random.pick(data.accessoryTypes) };
+      return {
+        type,
+        accessory: weighted(random, data.accessoryTypes, (a) => leanings.accessory(a, true)),
+      };
     case "accessoryMin":
     case "accessoryExact":
       return {
         type,
-        accessory: random.pick(perPiece),
+        accessory: weighted(random, perPiece, (a) => leanings.accessory(a, false)),
         count: random.between(COUNT_RANGE.min, COUNT_RANGE.max),
       };
   }
@@ -203,6 +233,7 @@ export function drawDirection({
   pairs,
   allowedPair,
   pullApartSlot,
+  ignoreTheme,
   data,
 }: DrawInput): Direction | null {
   const type = plan[slot];
@@ -213,8 +244,9 @@ export function drawDirection({
       ? others.find((d): d is Extract<Direction, { type: "styleAvoid" }> => d.type === "styleAvoid")
           ?.tag
       : undefined;
+  const leanings = leaningsFor(data, ignoreTheme ? undefined : themeFor(seed, data));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(type, random, data, others, towards);
+    const candidate = drawCandidate(type, random, data, others, towards, leanings);
     if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }
   return null;
@@ -270,6 +302,7 @@ export function generate(
       pairs: shape.pairs,
       allowedPair,
       pullApartSlot,
+      ignoreTheme: shape.ignoreTheme,
       data,
     });
   }
@@ -278,6 +311,7 @@ export function generate(
     difficulty,
     modifiers: [...modifiers],
     dataVersion,
+    themeId: themeFor(seed, data).id,
     plan,
     history: [],
     directions: directions.map((direction) => direction ?? null),

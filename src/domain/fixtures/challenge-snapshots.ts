@@ -1,4 +1,5 @@
 import { dataV1 } from "@/game/data/v1";
+import { briefFor } from "../brief";
 import { rerollCountOf } from "../challenge";
 import { clientFromSeed } from "../client";
 import { clientLine, lineRandomFor } from "../client-line";
@@ -67,7 +68,7 @@ export function snapshotEntry(input: SnapshotInput) {
         lineRandomFor(input.seed, slot, rerollCountOf(challenge, slot)),
       ),
   }));
-  return { input, challenge, client, lines };
+  return { input, challenge, client, brief: briefFor(challenge, client), lines };
 }
 
 export const buildSnapshots = () =>

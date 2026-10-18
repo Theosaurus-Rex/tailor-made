@@ -10,6 +10,7 @@ export interface Challenge {
   difficulty: Difficulty;
   modifiers: readonly Modifier[];
   dataVersion: number;
+  themeId: string;
   plan: DirectionType[];
   history: number[];
   directions: (Direction | null)[];

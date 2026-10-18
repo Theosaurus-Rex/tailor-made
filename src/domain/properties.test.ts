@@ -3,6 +3,7 @@ import fc from "fast-check";
 import { describe, expect, it } from "vitest";
 import { dataV1 } from "@/game/data/v1";
 import { placedDirections, rerollCountOf, type Challenge } from "./challenge";
+import { briefFor } from "./brief";
 import { clientFromSeed } from "./client";
 import { clientLine, lineRandomFor } from "./client-line";
 import { findConflicts } from "./contradictions";
@@ -196,12 +197,16 @@ describe("generated challenges", () => {
     });
   });
 
-  it("fill every client line cleanly", () => {
+  it("fill every client line and the brief cleanly", () => {
     check(
       fc.tuple(caseOf(anyDifficulty), fc.nat(3)),
       ([input, rerolls]) => {
         const challenge = generateCase(input);
-        const { personality } = clientFromSeed(input.seed);
+        const client = clientFromSeed(input.seed);
+        const { personality } = client;
+        const brief = briefFor(challenge, client);
+        expect(brief).not.toMatch(/[{}]/);
+        expect(brief).toMatch(/^\p{Lu}.*[.!?]$/u);
         challenge.directions.forEach((direction, slot) => {
           if (!direction || direction.type === "burlapOnly") return;
           const line = clientLine(direction, personality, lineRandomFor(input.seed, slot, rerolls));

@@ -51,20 +51,22 @@ describe("generate", () => {
     expect(generate(input("k7m2qx9a"))).toEqual({
       ...base,
       seed: "k7m2qx9a",
+      themeId: "garden-party",
       plan: ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       history: [],
       pairSlots: null,
       pullApartSlot: null,
       directions: [
-        { type: "accessoryAvoid", accessory: "Feather" },
-        { type: "style", tag: "Warm" },
-        { type: "accessoryMin", accessory: "Bell", count: 4 },
+        { type: "accessoryAvoid", accessory: "Jewel" },
+        { type: "style", tag: "Uncomfortable" },
+        { type: "accessoryMin", accessory: "Appliqué", count: 4 },
         { type: "accessory", accessory: "Button" },
       ],
     });
     expect(generate(input("2026-10-16"))).toEqual({
       ...base,
       seed: "2026-10-16",
+      themeId: "costume-party",
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       pairSlots: null,
@@ -78,13 +80,14 @@ describe("generate", () => {
     expect(generate(input("23456789"))).toEqual({
       ...base,
       seed: "23456789",
+      themeId: "winter-gala",
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       pairSlots: null,
       pullApartSlot: null,
       directions: [
-        { type: "accessoryAvoid", accessory: "Bell" },
-        { type: "colour", colour: "White" },
+        { type: "accessoryAvoid", accessory: "Appliqué" },
+        { type: "colour", colour: "Yellow" },
         { type: "coloursMin", count: 3 },
       ],
     });
