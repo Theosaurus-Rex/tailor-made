@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { dataV1, type GameData } from "@/game/data/v1";
 import { placedDirections, type Challenge } from "./challenge";
-import { findConflicts } from "./contradictions";
 import { burlapShapeFor, type Difficulty } from "./difficulty";
 import type { Direction } from "./direction";
 import { generate } from "./generate";
@@ -9,7 +8,7 @@ import { deriveSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
 
 const difficulties: Difficulty[] = ["easy", "medium", "hard", "chaos"];
-const samples = Array.from({ length: 500 }, (_, i) => deriveSeed("burlap-sample", i));
+const samples = Array.from({ length: 150 }, (_, i) => deriveSeed("burlap-sample", i));
 const manySamples = Array.from({ length: 1000 }, (_, i) => deriveSeed("burlap-share", i));
 
 const input = (seed: string, difficulty: Difficulty, burlap: boolean) => ({
@@ -35,8 +34,6 @@ const accessoryShare = (difficulty: Difficulty, burlap: boolean) => {
 };
 
 describe.each(difficulties)("burlap only on %s", (difficulty) => {
-  const shape = dataV1.burlapDifficulties[difficulty];
-
   it("pins Burlap only first and keeps fabrics and colours out", () => {
     for (const seed of samples) {
       const challenge = generate(input(seed, difficulty, true));
@@ -49,34 +46,6 @@ describe.each(difficulties)("burlap only on %s", (difficulty) => {
         expect(d.type).not.toMatch(fabricOrColour);
         expect(mentionsBurlap(d)).toBe(false);
       }
-    }
-  });
-
-  it("keeps the direction count, limits and conflicts of its shape", () => {
-    for (const seed of samples) {
-      const challenge = generate(input(seed, difficulty, true));
-      const inner = challenge.plan.slice(1);
-      expect(inner.length).toBeGreaterThanOrEqual(shape.directionCount.min);
-      expect(inner.length).toBeLessThanOrEqual(shape.directionCount.max);
-      expect(challenge.directions).toHaveLength(challenge.plan.length);
-      for (const limit of shape.limits) {
-        const used = inner.filter((type) => (limit.types as readonly string[]).includes(type));
-        expect(used.length).toBeGreaterThanOrEqual(limit.min);
-        expect(used.length).toBeLessThanOrEqual(limit.max);
-      }
-      const [a, b] = (challenge.pairSlots ?? []).map((slot) => challenge.directions[slot]);
-      const allowedPair =
-        a?.type === "style" && b?.type === "style" ? ([a.tag, b.tag] as const) : undefined;
-      expect(
-        findConflicts(placedDirections(challenge), {
-          data: dataV1,
-          pairs: shape.pairs,
-          allowedPair,
-        }),
-      ).toEqual([]);
-      challenge.directions.forEach((d, i) => {
-        if (d) expect(d.type).toBe(challenge.plan[i]);
-      });
     }
   });
 

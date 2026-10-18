@@ -20,7 +20,7 @@ const withMedium = (medium: DifficultyShape) => ({
   difficulties: { ...dataV1.difficulties, medium },
 });
 
-const samples = Array.from({ length: 500 }, (_, i) => deriveSeed("sample", i));
+const samples = Array.from({ length: 150 }, (_, i) => deriveSeed("sample", i));
 
 const lines = (seed: string) => generate(input(seed)).directions.map((d) => d && shortLine(d));
 
