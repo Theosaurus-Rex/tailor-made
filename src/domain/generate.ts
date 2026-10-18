@@ -2,7 +2,7 @@ import { dataVersions } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
-import { shapes, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
+import { shapeFor, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
 import {
   COUNT_RANGE,
   FABRICS_MIN_RANGE,
@@ -17,7 +17,7 @@ export const MAX_TRIES = 25;
 
 export interface GenerateInput {
   seed: string;
-  difficulty: keyof typeof shapes;
+  difficulty: Difficulty;
   modifiers: readonly Modifier[];
   dataVersion: number;
 }
@@ -42,7 +42,14 @@ function someOf<T>(random: Random, items: readonly T[], count: number): T[] {
   return chosen;
 }
 
-function drawCandidate(type: PlannedType, random: Random, data: GameData): Direction {
+function drawCandidate(
+  type: PlannedType,
+  random: Random,
+  data: GameData,
+  others: readonly Direction[],
+): Direction {
+  const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
+  const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
   const generalFabrics = data.fabricTypes.filter(
     (fabric) => !data.fabrics[fabric].modifierOnly,
   ) as GeneralFabric[];
@@ -60,6 +67,7 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
     case "styleAvoid":
       return { type, tag: tag() };
     case "fabric":
+      return { type, fabric: random.pick(onlyFabrics ?? generalFabrics) };
     case "fabricAvoid":
       return { type, fabric: random.pick(generalFabrics) };
     case "fabricsOnly":
@@ -68,6 +76,7 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
     case "coloursMin":
       return { type, count: random.between(FABRICS_MIN_RANGE.min, FABRICS_MIN_RANGE.max) };
     case "colour":
+      return { type, colour: random.pick(onlyColours ?? data.colours) };
     case "colourAvoid":
       return { type, colour: random.pick(data.colours) };
     case "colourOnly":
@@ -85,17 +94,26 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
   }
 }
 
-export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
+export function drawPlan(
+  seed: string,
+  shape: DifficultyShape,
+  neverTogether: GameData["kindsNeverTogether"],
+): PlannedType[] {
   const random = randomFromSeed(deriveSeed(seed, "plan"));
   const total = random.between(shape.directionCount.min, shape.directionCount.max);
   const plan: PlannedType[] = [];
-  for (let slot = 0; slot < total; slot++) {
-    const open = shape.types.filter(({ type }) =>
-      shape.limits.every(
-        (limit) =>
-          !limit.types.includes(type) ||
-          plan.filter((used) => limit.types.includes(used)).length < limit.max,
-      ),
+  const pickFrom = (allowed: (type: PlannedType) => boolean) => {
+    const open = shape.types.filter(
+      ({ type }) =>
+        allowed(type) &&
+        !neverTogether.some(
+          ([a, b]) => (type === a && plan.includes(b)) || (type === b && plan.includes(a)),
+        ) &&
+        shape.limits.every(
+          (limit) =>
+            !limit.types.includes(type) ||
+            plan.filter((used) => limit.types.includes(used)).length < limit.max,
+        ),
     );
     plan.push(
       weightedPick(
@@ -103,6 +121,14 @@ export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
         open.map(({ type, weight }) => ({ value: type, weight })),
       ),
     );
+  };
+  for (const limit of shape.limits) {
+    for (let i = 0; i < limit.min; i++) pickFrom((type) => limit.types.includes(type));
+  }
+  while (plan.length < total) pickFrom(() => true);
+  for (let i = plan.length - 1; i > 0; i--) {
+    const j = random.between(0, i);
+    [plan[i], plan[j]] = [plan[j], plan[i]];
   }
   return plan;
 }
@@ -119,7 +145,7 @@ export function drawDirection({
   if (type === undefined) throw new RangeError(`slot ${slot} is not in the plan`);
   const random = randomFromSeed(deriveSeed(seed, "direction", slot, rerollCount));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(type, random, data);
+    const candidate = drawCandidate(type, random, data, others);
     if (!conflictsWithAny(candidate, others, { data })) return candidate;
   }
   return null;
@@ -127,13 +153,12 @@ export function drawDirection({
 
 export function generate(
   { seed, difficulty, modifiers, dataVersion }: GenerateInput,
-  shape: DifficultyShape = shapes[difficulty],
   data: GameData | undefined = dataVersions[dataVersion],
 ): Challenge {
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");
-  const plan = drawPlan(seed, shape);
+  const plan = drawPlan(seed, shapeFor(data, difficulty), data.kindsNeverTogether);
   const directions: (Direction | null)[] = [];
   plan.forEach((_, slot) => {
     const placed = directions.filter((direction) => direction !== null);
@@ -141,7 +166,7 @@ export function generate(
   });
   return {
     seed,
-    difficulty: difficulty satisfies Difficulty,
+    difficulty,
     modifiers: [...modifiers],
     dataVersion,
     plan,

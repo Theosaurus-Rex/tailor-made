@@ -39,7 +39,7 @@ export function rebuild(
   data?: GameData,
 ): Challenge {
   const { history, ...generateInput } = input;
-  const start = generate(generateInput, undefined, data);
+  const start = generate(generateInput, data);
   for (const slot of history) {
     if (!Number.isInteger(slot) || slot < 0 || slot >= start.plan.length) {
       throw new RangeError(`reroll ${slot} is not a slot in the plan`);

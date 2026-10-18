@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { dataV1 } from "@/game/data/v1";
 import { placedDirections } from "./challenge";
 import { findConflicts } from "./contradictions";
-import { AT_LEAST_TYPES, AVOID_TYPES, mediumShape, type DifficultyShape } from "./difficulty";
+import { AT_LEAST_TYPES, AVOID_TYPES, type DifficultyShape } from "./difficulty";
 import { COUNT_RANGE, FABRICS_MIN_RANGE, ONLY_LIST_SIZE, type Direction } from "./direction";
 import { drawDirection, drawPlan, generate, MAX_TRIES } from "./generate";
 import { deriveSeed } from "./random";
@@ -13,6 +13,11 @@ const input = (seed: string) => ({
   difficulty: "medium" as const,
   modifiers: [],
   dataVersion: 1,
+});
+
+const withMedium = (medium: DifficultyShape) => ({
+  ...dataV1,
+  difficulties: { ...dataV1.difficulties, medium },
 });
 
 const samples = Array.from({ length: 500 }, (_, i) => deriveSeed("sample", i));
@@ -46,35 +51,35 @@ describe("generate", () => {
     expect(generate(input("k7m2qx9a"))).toEqual({
       ...base,
       seed: "k7m2qx9a",
-      plan: ["accessoryAvoid", "style", "coloursMin", "style"],
+      plan: ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       history: [],
       directions: [
         { type: "accessoryAvoid", accessory: "Feather" },
         { type: "style", tag: "Warm" },
-        { type: "coloursMin", count: 2 },
-        { type: "style", tag: "Eveningwear" },
+        { type: "accessoryMin", accessory: "Bell", count: 4 },
+        { type: "accessory", accessory: "Button" },
       ],
     });
     expect(generate(input("2026-10-16"))).toEqual({
       ...base,
       seed: "2026-10-16",
-      plan: ["colourAvoid", "colour", "accessory"],
+      plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       directions: [
-        { type: "colourAvoid", colour: "White" },
+        { type: "accessoryAvoid", accessory: "Tassel" },
         { type: "colour", colour: "Yellow" },
-        { type: "accessory", accessory: "Tassel" },
+        { type: "coloursMin", count: 4 },
       ],
     });
     expect(generate(input("23456789"))).toEqual({
       ...base,
       seed: "23456789",
-      plan: ["colourAvoid", "colour", "accessory"],
+      plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       directions: [
-        { type: "colourAvoid", colour: "Black" },
+        { type: "accessoryAvoid", accessory: "Bell" },
         { type: "colour", colour: "White" },
-        { type: "accessory", accessory: "Flower" },
+        { type: "coloursMin", count: 3 },
       ],
     });
   });
@@ -87,10 +92,8 @@ describe("generate", () => {
       expect(challenge.directions).toHaveLength(challenge.plan.length);
       expect(challenge.plan.length).toBeGreaterThanOrEqual(3);
       expect(challenge.plan.length).toBeLessThanOrEqual(4);
-      expect(directions.filter((d) => AVOID_TYPES.includes(d.type)).length).toBeLessThanOrEqual(1);
-      expect(directions.filter((d) => AT_LEAST_TYPES.includes(d.type)).length).toBeLessThanOrEqual(
-        1,
-      );
+      expect(challenge.plan.filter((t) => AVOID_TYPES.includes(t))).toHaveLength(1);
+      expect(challenge.plan.filter((t) => AT_LEAST_TYPES.includes(t))).toHaveLength(1);
       for (const d of directions) {
         expect(["burlapOnly", "fabricsOnly", "colourOnly", "accessoryExact"]).not.toContain(d.type);
         if (d.type === "accessoryMin") {
@@ -127,7 +130,9 @@ describe("generate", () => {
       rerolled.some((d) => JSON.stringify(d) !== JSON.stringify(challenge.directions[0])),
     ).toBe(true);
     for (const d of rerolled) expect(d?.type).toBe(challenge.plan[0]);
-    expect(drawPlan(seed, mediumShape)).toEqual(challenge.plan);
+    expect(drawPlan(seed, dataV1.difficulties.medium, dataV1.kindsNeverTogether)).toEqual(
+      challenge.plan,
+    );
     expect(redraw(2, 0)).toEqual(challenge.directions[2]);
   });
 
@@ -139,7 +144,7 @@ describe("generate", () => {
     };
     let styles = 0;
     for (const seed of samples.slice(0, 50)) {
-      for (const d of placedDirections(generate(input(seed), mediumShape, data))) {
+      for (const d of placedDirections(generate(input(seed), data))) {
         if (d.type !== "style" && d.type !== "styleAvoid") continue;
         expect(d.tag).toBe("Gothic");
         styles++;
@@ -159,13 +164,13 @@ describe("generate", () => {
       types: [{ type: "colourOnly", weight: 1 }],
       limits: [],
     };
-    const challenge = generate(input("k7m2qx9a"), stuck);
+    const challenge = generate(input("k7m2qx9a"), withMedium(stuck));
     expect(challenge.plan).toEqual(["colourOnly", "colourOnly", "colourOnly"]);
     expect(challenge.directions[0]?.type).toBe("colourOnly");
     expect(challenge.directions[1]).toBeNull();
     expect(challenge.directions[2]).toBeNull();
     expect(challenge.history).toEqual([]);
-    expect(generate(input("k7m2qx9a"), stuck)).toEqual(challenge);
+    expect(generate(input("k7m2qx9a"), withMedium(stuck))).toEqual(challenge);
     expect(MAX_TRIES).toBe(25);
   });
 
@@ -180,7 +185,7 @@ describe("generate", () => {
     };
     const sizes = new Set<number>();
     for (const seed of samples.slice(0, 100)) {
-      for (const d of placedDirections(generate(input(seed), only))) {
+      for (const d of placedDirections(generate(input(seed), withMedium(only)))) {
         const size =
           d.type === "colourOnly"
             ? d.colours.length

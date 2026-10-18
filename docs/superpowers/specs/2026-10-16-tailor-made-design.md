@@ -213,9 +213,13 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 | | Directions | Shape |
 |---|---|---|
 | Easy | 2–3 | Styles, fabrics and colours to use. No avoids or counts. |
-| Medium | 3–4 | Adds accessories, one avoid, and one "at least" count, which may be a fabric count |
-| Hard | 4–5 | Up to two avoids and two counts. `colourOnly` or `fabricsOnly` possible. Styles may pull apart (see below) |
-| Chaos | 5–6 | One opposing pair. an "only" list likely. Exact counts. Picks may ignore the theme's leanings |
+| Medium | 3–4 | Adds accessories, exactly one avoid, exactly one "at least" count |
+| Hard | 4–5 | Up to two avoids and two "at least" counts. One `colourOnly` or `fabricsOnly` possible. |
+| Chaos | 5–6 | Always one "only" list and an exact count. Up to two avoids, three counts. |
+
+Hard's "styles may pull apart" and Chaos's pair and theme-ignoring picks are still to come (see
+below). Chaos's "only" list is always there for now, and M6 tuning may make it "likely" again.
+The table lives in the game data (`difficulties`) and is versioned with it.
 
 **Opposing pairs**, hand-written: Cute/Gothic, Simple/Elaborate, Casual/Formal, Warm/Cool,
 Daywear/Eveningwear.
