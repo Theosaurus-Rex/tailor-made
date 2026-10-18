@@ -13,6 +13,7 @@ export interface Challenge {
   plan: PlannedType[];
   history: number[];
   directions: (Direction | null)[];
+  pairSlots: [number, number] | null;
 }
 
 export const placedDirections = (challenge: Challenge): Direction[] =>

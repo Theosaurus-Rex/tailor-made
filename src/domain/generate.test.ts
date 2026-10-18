@@ -53,6 +53,7 @@ describe("generate", () => {
       seed: "k7m2qx9a",
       plan: ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       history: [],
+      pairSlots: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Feather" },
         { type: "style", tag: "Warm" },
@@ -65,6 +66,7 @@ describe("generate", () => {
       seed: "2026-10-16",
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
+      pairSlots: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Tassel" },
         { type: "colour", colour: "Yellow" },
@@ -76,6 +78,7 @@ describe("generate", () => {
       seed: "23456789",
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
+      pairSlots: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Bell" },
         { type: "colour", colour: "White" },

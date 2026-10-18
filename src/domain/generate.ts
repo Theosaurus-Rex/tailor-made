@@ -1,6 +1,6 @@
 import { dataVersions } from "@/game/data";
 import type { PairRule } from "@/game/data/difficulty-shapes";
-import type { GameData } from "@/game/data/v1";
+import type { GameData, StyleTag } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
 import { shapeFor, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
@@ -30,6 +30,7 @@ export interface DrawInput {
   rerollCount: number;
   others: readonly Direction[];
   pairs: PairRule;
+  allowedPair?: readonly [StyleTag, StyleTag];
   data: GameData;
 }
 
@@ -142,6 +143,7 @@ export function drawDirection({
   rerollCount,
   others,
   pairs,
+  allowedPair,
   data,
 }: DrawInput): Direction | null {
   const type = plan[slot];
@@ -149,9 +151,21 @@ export function drawDirection({
   const random = randomFromSeed(deriveSeed(seed, "direction", slot, rerollCount));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
     const candidate = drawCandidate(type, random, data, others);
-    if (!conflictsWithAny(candidate, others, { data, pairs })) return candidate;
+    if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }
   return null;
+}
+
+function drawChaosPair(seed: string, data: GameData): [StyleTag, StyleTag] | null {
+  if (data.opposingPairs.length === 0) return null;
+  const random = randomFromSeed(deriveSeed(seed, "pair"));
+  const [first, second] = data.opposingPairs[random.between(0, data.opposingPairs.length - 1)];
+  return random.between(0, 1) === 0 ? [first, second] : [second, first];
+}
+
+function pairSlotsIn(plan: readonly PlannedType[]): [number, number] | null {
+  const styleSlots = plan.flatMap((type, slot) => (type === "style" ? [slot] : []));
+  return styleSlots.length >= 2 ? [styleSlots[0], styleSlots[1]] : null;
 }
 
 export function generate(
@@ -163,20 +177,27 @@ export function generate(
     throw new RangeError("the burlap modifier is not supported yet");
   const shape = shapeFor(data, difficulty);
   const plan = drawPlan(seed, shape, data.kindsNeverTogether);
-  const directions: (Direction | null)[] = [];
+  const directions: (Direction | null | undefined)[] = plan.map(() => undefined);
+  const chosenPair = shape.pairs === "oneStylePair" ? drawChaosPair(seed, data) : null;
+  const pairSlots = chosenPair ? pairSlotsIn(plan) : null;
+  const allowedPair = pairSlots && chosenPair ? chosenPair : undefined;
+  if (pairSlots && chosenPair) {
+    directions[pairSlots[0]] = { type: "style", tag: chosenPair[0] };
+    directions[pairSlots[1]] = { type: "style", tag: chosenPair[1] };
+  }
   plan.forEach((_, slot) => {
-    const placed = directions.filter((direction) => direction !== null);
-    directions.push(
-      drawDirection({
-        seed,
-        plan,
-        slot,
-        rerollCount: 0,
-        others: placed,
-        pairs: shape.pairs,
-        data,
-      }),
-    );
+    if (directions[slot] !== undefined) return;
+    const placed = directions.filter((direction) => direction != null);
+    directions[slot] = drawDirection({
+      seed,
+      plan,
+      slot,
+      rerollCount: 0,
+      others: placed,
+      pairs: shape.pairs,
+      allowedPair,
+      data,
+    });
   });
   return {
     seed,
@@ -185,6 +206,7 @@ export function generate(
     dataVersion,
     plan,
     history: [],
-    directions,
+    directions: directions.map((direction) => direction ?? null),
+    pairSlots,
   };
 }

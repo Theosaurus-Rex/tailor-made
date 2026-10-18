@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
+import type { PairRule } from "@/game/data/difficulty-shapes";
 import { dataV1, type GameData } from "@/game/data/v1";
-import { placedDirections } from "./challenge";
-import { findConflicts } from "./contradictions";
+import { placedDirections, type Challenge } from "./challenge";
+import { findConflicts, type ConflictOptions } from "./contradictions";
 import type { Direction } from "./direction";
 import { AT_LEAST_TYPES, AVOID_TYPES, shapeFor, type Difficulty } from "./difficulty";
 import { drawDirection, generate } from "./generate";
@@ -29,6 +30,13 @@ const input = (seed: string, difficulty: Difficulty) => ({
   dataVersion: 1,
 });
 
+const optionsFor = (challenge: Challenge, pairs: PairRule): ConflictOptions => {
+  const [a, b] = (challenge.pairSlots ?? []).map((slot) => challenge.directions[slot]);
+  const allowedPair =
+    a?.type === "style" && b?.type === "style" ? ([a.tag, b.tag] as const) : undefined;
+  return { data: dataV1, pairs, allowedPair };
+};
+
 const countIn = (plan: readonly string[], types: readonly string[]) =>
   plan.filter((type) => types.includes(type)).length;
 
@@ -51,7 +59,7 @@ describe.each(difficulties)("%s", (difficulty) => {
         expect(used).toBeLessThanOrEqual(limit.max);
       }
       const placed = placedDirections(challenge);
-      expect(findConflicts(placed, { data: dataV1, pairs: shape.pairs })).toEqual([]);
+      expect(findConflicts(placed, optionsFor(challenge, shape.pairs))).toEqual([]);
       expect(placed.map((d) => d.type)).not.toContain("burlapOnly");
       challenge.directions.forEach((d, i) => {
         if (d) expect(d.type).toBe(challenge.plan[i]);
@@ -236,6 +244,83 @@ describe("pair rules in the game data", () => {
       if (sides(placed, "any").length > 0) touched++;
     }
     expect(touched).toBeGreaterThan(0);
+  });
+});
+
+describe("chaos pair", () => {
+  const chaos = (seed: string, data?: GameData) => generate(input(seed, "chaos"), data);
+
+  it("has exactly one opposing pair, as the first two style slots", () => {
+    for (const seed of pairSamples) {
+      const challenge = chaos(seed);
+      const styleSlots = challenge.plan.flatMap((type, slot) => (type === "style" ? [slot] : []));
+      expect(challenge.pairSlots).toEqual([styleSlots[0], styleSlots[1]]);
+      const placed = placedDirections(challenge);
+      const found = sides(placed, "style");
+      expect(found).toHaveLength(1);
+      const [a, b] = (challenge.pairSlots ?? []).map((slot) => challenge.directions[slot]);
+      expect(a?.type).toBe("style");
+      expect(b?.type).toBe("style");
+      const tags = placed.flatMap((d) => (d.type === "style" ? [d.tag] : []));
+      const pairTags = [a, b].flatMap((d) => (d?.type === "style" ? [d.tag] : []));
+      expect(found[0].map((i) => tags[i]).sort()).toEqual(pairTags.sort());
+    }
+  });
+
+  it("has no conflicts beside the pair", () => {
+    for (const seed of pairSamples) {
+      const challenge = chaos(seed);
+      const options = optionsFor(challenge, "oneStylePair");
+      expect(findConflicts(placedDirections(challenge), options)).toEqual([]);
+    }
+  });
+
+  it("uses every pair and both orders", () => {
+    const seen = new Set<string>();
+    for (const seed of pairSamples) {
+      const { pairSlots, directions } = chaos(seed);
+      const [a, b] = (pairSlots ?? []).map((slot) => directions[slot]);
+      if (a?.type === "style" && b?.type === "style") seen.add(`${a.tag}/${b.tag}`);
+    }
+    expect(seen.size).toBe(dataV1.opposingPairs.length * 2);
+  });
+
+  it("is the same for the same seed", () => {
+    expect(chaos("k7m2qx9a")).toEqual(chaos("k7m2qx9a"));
+  });
+
+  it("comes from the pairs in the game data", () => {
+    const data: GameData = { ...dataV1, opposingPairs: [["Cute", "Simple"]] };
+    for (const seed of pairSamples.slice(0, 100)) {
+      const { pairSlots, directions } = chaos(seed, data);
+      const tags = (pairSlots ?? []).map((slot) => {
+        const d = directions[slot];
+        return d?.type === "style" ? d.tag : undefined;
+      });
+      expect(tags.sort()).toEqual(["Cute", "Simple"]);
+    }
+  });
+
+  it("never forms a second pair, even when every slot is a style", () => {
+    const allStyles: GameData = {
+      ...dataV1,
+      difficulties: {
+        ...dataV1.difficulties,
+        chaos: {
+          ...dataV1.difficulties.chaos,
+          directionCount: { min: 4, max: 4 },
+          types: [{ type: "style", weight: 1 }],
+          limits: [{ types: ["style"], min: 2, max: 4 }],
+        },
+      },
+    };
+    let fourStyles = 0;
+    for (const seed of pairSamples) {
+      const placed = placedDirections(chaos(seed, allStyles));
+      expect(sides(placed, "style")).toHaveLength(1);
+      if (placed.length === 4) fourStyles++;
+    }
+    expect(fourStyles).toBeGreaterThan(100);
   });
 });
 
