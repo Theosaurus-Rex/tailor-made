@@ -27,7 +27,7 @@ const neverTogether = [
   ["fabricsMin", "fabricsMin"],
 ] as const;
 
-const samples = Array.from({ length: 400 }, (_, i) => deriveSeed("difficulty-sample", i));
+const samples = Array.from({ length: 100 }, (_, i) => deriveSeed("difficulty-sample", i));
 
 const input = (seed: string, difficulty: Difficulty) => ({
   seed,

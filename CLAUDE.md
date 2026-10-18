@@ -34,6 +34,7 @@ pnpm only. `packageManager` is pinned, so use corepack rather than a global pnpm
 | `pnpm lint:fix` | ESLint with `--fix` |
 | `pnpm format` / `pnpm format:check` | Prettier write / verify |
 | `pnpm test` | Vitest once |
+| `pnpm snapshots:rewrite` | Rewrites the pinned challenges in `src/domain/fixtures/`. Rewriting breaks old share links. Do not run it to make a test pass |
 | `pnpm test:watch` | Vitest in watch mode |
 | `pnpm test:coverage` | Vitest with v8 coverage |
 | `pnpm test:e2e` | Playwright on a production build, desktop and mobile |

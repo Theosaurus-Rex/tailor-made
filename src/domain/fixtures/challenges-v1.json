@@ -1,0 +1,6689 @@
+[
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colour", "style", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colour",
+          "colour": "Orange"
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "colour",
+          "colour": "Blue"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Orange",
+        "client": "Oh, orange, darling! I'm glowing at the thought."
+      },
+      {
+        "short": "Warm",
+        "client": "Oh, warm! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Blue",
+        "client": "Oh, blue, darling! I'm glowing at the thought."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Trim",
+        "client": "Oh, trim! Add as many as you like, darling."
+      },
+      {
+        "short": "Daywear",
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+      },
+      {
+        "short": "Buttons",
+        "client": "Do add buttons, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Feather"
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 4
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No feathers",
+        "client": "Oh, no feathers, darling! They make me sneeze terribly."
+      },
+      {
+        "short": "Warm",
+        "client": "Oh, warm! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "At least 4 bells",
+        "client": "Oh, four bells at the very least, darling!"
+      },
+      {
+        "short": "Buttons",
+        "client": "Do add buttons, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Brooch",
+          "count": 7
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No trim",
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Daywear",
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+      },
+      {
+        "short": "At least 7 brooches",
+        "client": "Please, at least seven brooches, dear! Oh, the joy."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Do add appliqués, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessory",
+          "accessory": "Feather"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "fabricsMin",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Feathers",
+        "client": "Oh, feathers! Add as many as you like, darling."
+      },
+      {
+        "short": "At least 3 tassels",
+        "client": "Oh, three tassels at the very least, darling!"
+      },
+      {
+        "short": "Daywear",
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+      },
+      {
+        "short": "At least 3 fabrics",
+        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+      },
+      {
+        "short": "Cool",
+        "client": "Oh, cool, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 6
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not warm",
+        "client": "Oh, not warm, darling. I couldn't bear it."
+      },
+      {
+        "short": "No bells",
+        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Eveningwear",
+        "client": "Oh, eveningwear, please! I can't wait to see it."
+      },
+      {
+        "short": "At least 6 appliqués",
+        "client": "Please, at least six appliqués, dear! Oh, the joy."
+      },
+      {
+        "short": "Cute",
+        "client": "I'm dreaming of cute, darling. Truly dreaming."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Tassel",
+          "count": 3
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Velvet", "Cotton"]
+        },
+        {
+          "type": "fabric",
+          "fabric": "Velvet"
+        },
+        {
+          "type": "style",
+          "tag": "Formal"
+        }
+      ],
+      "pairSlots": [0, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Casual",
+        "client": "I'm dreaming of casual, darling. Truly dreaming."
+      },
+      {
+        "short": "Exactly 3 tassels",
+        "client": "Exactly three tassels, darling. Perfection!"
+      },
+      {
+        "short": "Bells",
+        "client": "Oh, bells! Add as many as you like, darling."
+      },
+      {
+        "short": "Only velvet and cotton",
+        "client": "Just velvet or cotton, dear. Only those, and I'll be delighted."
+      },
+      {
+        "short": "Velvet",
+        "client": "Velvet, dear? Oh, you've read my mind!"
+      },
+      {
+        "short": "Formal",
+        "client": "I'm dreaming of formal, darling. Truly dreaming."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": [
+        "burlapOnly",
+        "style",
+        "style",
+        "accessoryAvoid",
+        "accessoryExact",
+        "accessory",
+        "style"
+      ],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "style",
+          "tag": "Formal"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Button"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Appliqué",
+          "count": 6
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        }
+      ],
+      "pairSlots": [1, 2],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Casual",
+        "client": "Oh, casual! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Formal",
+        "client": "I'm dreaming of formal, darling. Truly dreaming."
+      },
+      {
+        "short": "No buttons",
+        "client": "Please keep the buttons away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Exactly 6 appliqués",
+        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Flowers",
+        "client": "Oh, flowers! Add as many as you like, darling."
+      },
+      {
+        "short": "Elegant",
+        "client": "Oh, elegant, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colour", "fabric"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colour",
+          "colour": "Black"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Velvet"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Black",
+        "client": "Oh, black, darling! I'm glowing at the thought."
+      },
+      {
+        "short": "Velvet",
+        "client": "Velvet, dear? Oh, you've read my mind!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Tassels",
+        "client": "Do add tassels, dear. What a treat!"
+      },
+      {
+        "short": "Flowers",
+        "client": "Oh, flowers! Add as many as you like, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "colour",
+          "colour": "White"
+        },
+        {
+          "type": "coloursMin",
+          "count": 3
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No bells",
+        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "White",
+        "client": "Make it white, dear! It's my favourite today."
+      },
+      {
+        "short": "At least 3 colours",
+        "client": "Oh, at least three colours, darling! Make it a rainbow."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Button",
+          "count": 6
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No tassels",
+        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Flowers",
+        "client": "Oh, flowers! Add as many as you like, darling."
+      },
+      {
+        "short": "At least 6 buttons",
+        "client": "Oh, six buttons at the very least, darling!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 6
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Gothic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 6 appliqués",
+        "client": "Oh, six appliqués at the very least, darling!"
+      },
+      {
+        "short": "No tassels",
+        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Flowers",
+        "client": "Oh, flowers! Add as many as you like, darling."
+      },
+      {
+        "short": "Not gothic",
+        "client": "Oh, not gothic, darling. I couldn't bear it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Flower"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Jewel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No tassels",
+        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "No flowers",
+        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Jewels",
+        "client": "Oh, jewels! Add as many as you like, darling."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Do add appliqués, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Silk"]
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 5
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Appliqué",
+          "count": 6
+        }
+      ],
+      "pairSlots": [1, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Only silk",
+        "client": "Oh, nothing but silk, please, darling!"
+      },
+      {
+        "short": "Cute",
+        "client": "Oh, cute, please! I can't wait to see it."
+      },
+      {
+        "short": "At least 5 feathers",
+        "client": "Oh, five feathers at the very least, darling!"
+      },
+      {
+        "short": "Gothic",
+        "client": "Oh, something gothic, darling! Dark and dreamy."
+      },
+      {
+        "short": "Exactly 6 appliqués",
+        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryExact", "styleAvoid", "accessoryExact", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Jewel",
+          "count": 6
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Romantic"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Button",
+          "count": 6
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        }
+      ],
+      "pairSlots": [4, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Exactly 6 jewels",
+        "client": "Six jewels, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Not romantic",
+        "client": "Oh, not romantic, darling. I couldn't bear it."
+      },
+      {
+        "short": "Exactly 6 buttons",
+        "client": "Exactly six buttons, darling. Perfection!"
+      },
+      {
+        "short": "Cute",
+        "client": "Oh, cute, please! I can't wait to see it."
+      },
+      {
+        "short": "Gothic",
+        "client": "Gothic, please, dear! Moody and magnificent."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colour", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
+          "type": "colour",
+          "colour": "White"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Playful",
+        "client": "Playful. That's the whole request."
+      },
+      {
+        "short": "White",
+        "client": "Make it white. Don't ask me why."
+      },
+      {
+        "short": "Elegant",
+        "client": "Think elegant. I'll know it when I see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Simple",
+        "client": "Make it simple. I've had a long week."
+      },
+      {
+        "short": "Brooches",
+        "client": "Brooches. Somewhere on there."
+      },
+      {
+        "short": "Warm",
+        "client": "Warm. That's the whole request."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bow",
+          "count": 8
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Playful",
+        "client": "Playful. That's the whole request."
+      },
+      {
+        "short": "Tassels",
+        "client": "Add tassels. I'll pretend I'm not excited."
+      },
+      {
+        "short": "At least 8 bows",
+        "client": "Bows everywhere. At the very least, eight."
+      },
+      {
+        "short": "No trim",
+        "client": "No trim. I've had my fill."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 6
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Jewel"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Simple",
+        "client": "Make it simple. I've had a long week."
+      },
+      {
+        "short": "Brooches",
+        "client": "Brooches. Somewhere on there."
+      },
+      {
+        "short": "At least 6 tassels",
+        "client": "Six tassels, at the very least."
+      },
+      {
+        "short": "No jewels",
+        "client": "Keep the jewels off me."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Wool"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "coloursMin",
+          "count": 4
+        },
+        {
+          "type": "fabric",
+          "fabric": "Silk"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "No lace trim",
+        "client": "No lace trim. I've had my fill."
+      },
+      {
+        "short": "Wool",
+        "client": "I'd like wool. Don't read into it."
+      },
+      {
+        "short": "Elegant",
+        "client": "Think elegant. I'll know it when I see it."
+      },
+      {
+        "short": "At least 4 colours",
+        "client": "I want colour, and lots of it. At least four."
+      },
+      {
+        "short": "Silk",
+        "client": "I'd like silk. Don't read into it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessoryAvoid", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 8
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Jewel"
+        },
+        {
+          "type": "style",
+          "tag": "Professional"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 8 tassels",
+        "client": "At least eight tassels. Subtlety is not the goal."
+      },
+      {
+        "short": "Elegant",
+        "client": "Think elegant. I'll know it when I see it."
+      },
+      {
+        "short": "Warm",
+        "client": "Warm. That's the whole request."
+      },
+      {
+        "short": "No jewels",
+        "client": "Keep the jewels off me."
+      },
+      {
+        "short": "Professional",
+        "client": "Make it professional. I've had a long week."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colour", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colour",
+          "colour": "Purple"
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Wool", "Sequin", "Lace"]
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Lace"
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Flower",
+          "count": 6
+        }
+      ],
+      "pairSlots": [2, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Purple",
+        "client": "Purple, please. It matches my mood."
+      },
+      {
+        "short": "Only wool, sequins and lace",
+        "client": "Wool, sequins or lace only. Surprise me within that."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Think elaborate. I'll know it when I see it."
+      },
+      {
+        "short": "Lace",
+        "client": "Lace. It'll do nicely."
+      },
+      {
+        "short": "Simple",
+        "client": "Make it simple. I've had a long week."
+      },
+      {
+        "short": "Exactly 6 flowers",
+        "client": "Six flowers. I counted."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessoryExact",
+        "style",
+        "accessory",
+        "accessoryMin",
+        "style"
+      ],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bow",
+          "count": 8
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Flower",
+          "count": 6
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        }
+      ],
+      "pairSlots": [3, 6],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not warm",
+        "client": "Not warm. I have my reasons."
+      },
+      {
+        "short": "Exactly 8 bows",
+        "client": "Exactly eight bows. Not one more."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Elaborate. That's the whole request."
+      },
+      {
+        "short": "Tassels",
+        "client": "Add tassels. I'll pretend I'm not excited."
+      },
+      {
+        "short": "At least 6 flowers",
+        "client": "At least six flowers. Subtlety is not the goal."
+      },
+      {
+        "short": "Simple",
+        "client": "Think simple. I'll know it when I see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Cotton"
+        },
+        {
+          "type": "colour",
+          "colour": "White"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Cotton",
+        "client": "I'd like cotton. Don't read into it."
+      },
+      {
+        "short": "White",
+        "client": "Make it white. Don't ask me why."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Romantic",
+        "client": "Make it romantic. I've had a long week."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués. I'll pretend I'm not excited."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabricAvoid", "fabric", "fabricsMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabricAvoid",
+          "fabric": "Cotton"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Wool"
+        },
+        {
+          "type": "fabricsMin",
+          "count": 2
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "No cotton",
+        "client": "Not cotton. It knows what it did."
+      },
+      {
+        "short": "Wool",
+        "client": "I'd like wool. Don't read into it."
+      },
+      {
+        "short": "At least 2 fabrics",
+        "client": "At least two fabrics. I like options."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Brooch",
+          "count": 5
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No tassels",
+        "client": "Keep the tassels off me."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués. I'll pretend I'm not excited."
+      },
+      {
+        "short": "At least 5 brooches",
+        "client": "Five brooches, at the very least."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessory", "colourAvoid", "accessory", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "colourAvoid",
+          "colour": "White"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "colour",
+          "colour": "Grey"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
+      },
+      {
+        "short": "No white",
+        "client": "Anything but white. Long story."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués. I'll pretend I'm not excited."
+      },
+      {
+        "short": "Grey",
+        "client": "Grey, please. It matches my mood."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessory", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Tassels",
+        "client": "Add tassels. I'll pretend I'm not excited."
+      },
+      {
+        "short": "No appliqués",
+        "client": "Keep the appliqués off me."
+      },
+      {
+        "short": "Buttons",
+        "client": "Buttons. Somewhere on there."
+      },
+      {
+        "short": "Bows",
+        "client": "A bow, or several. Restraint is overrated."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colourOnly", "accessoryExact", "style", "style", "fabricsMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colourOnly",
+          "colours": ["Orange"]
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Jewel",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "fabricsMin",
+          "count": 2
+        }
+      ],
+      "pairSlots": [2, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Only orange",
+        "client": "Orange only. Only means only."
+      },
+      {
+        "short": "Exactly 7 jewels",
+        "client": "Seven jewels. I counted."
+      },
+      {
+        "short": "Cute",
+        "client": "Make it cute. I've had a long week."
+      },
+      {
+        "short": "Gothic",
+        "client": "Something with a little darkness to it."
+      },
+      {
+        "short": "At least 2 fabrics",
+        "client": "At least two fabrics. I like options."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "hn4v8r2e",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "hn4v8r2e",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryExact", "style", "style", "accessory", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Jewel",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Button",
+          "count": 4
+        }
+      ],
+      "pairSlots": [2, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Nadia Nightingale",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Exactly 7 jewels",
+        "client": "Seven jewels. I counted."
+      },
+      {
+        "short": "Cute",
+        "client": "Make it cute. I've had a long week."
+      },
+      {
+        "short": "Gothic",
+        "client": "Something with a little darkness to it."
+      },
+      {
+        "short": "Bows",
+        "client": "A bow, or several. Restraint is overrated."
+      },
+      {
+        "short": "Exactly 4 buttons",
+        "client": "Exactly four buttons. Not one more."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Velvet"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Velvet",
+        "client": "Velvet, dear? Oh, you've read my mind!"
+      },
+      {
+        "short": "Gothic",
+        "client": "Gothic, please, dear! Moody and magnificent."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Flowers",
+        "client": "Do add flowers, dear. What a treat!"
+      },
+      {
+        "short": "Cute",
+        "client": "Oh, cute! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessory", "accessoryMin", "colourAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessory",
+          "accessory": "Piping"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 4
+        },
+        {
+          "type": "colourAvoid",
+          "colour": "Black"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Piping",
+        "client": "Do add piping, dear. What a treat!"
+      },
+      {
+        "short": "At least 4 feathers",
+        "client": "Please, at least four feathers, dear! Oh, the joy."
+      },
+      {
+        "short": "No black",
+        "client": "Oh, no black, darling! I'm feeling far too sunny."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessoryAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 5
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Lace Trim"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Flowers",
+        "client": "Do add flowers, dear. What a treat!"
+      },
+      {
+        "short": "At least 5 appliqués",
+        "client": "Oh, five appliqués at the very least, darling!"
+      },
+      {
+        "short": "No lace trim",
+        "client": "Please keep the lace trim away, dear. It's just not me, I'm afraid."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["coloursMin", "fabricAvoid", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "coloursMin",
+          "count": 4
+        },
+        {
+          "type": "fabricAvoid",
+          "fabric": "Sequin"
+        },
+        {
+          "type": "style",
+          "tag": "Cute"
+        },
+        {
+          "type": "style",
+          "tag": "Professional"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 4 colours",
+        "client": "Colour, dear, colour! At the very least, four."
+      },
+      {
+        "short": "No sequins",
+        "client": "Sequins, dear? Lovely on others, but not on me."
+      },
+      {
+        "short": "Cute",
+        "client": "Oh, cute! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Professional",
+        "client": "Oh, professional, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "styleAvoid", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 4
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Cute"
+        },
+        {
+          "type": "style",
+          "tag": "Professional"
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 4 feathers",
+        "client": "Please, at least four feathers, dear! Oh, the joy."
+      },
+      {
+        "short": "Not cute",
+        "client": "Oh, not cute, darling! I'm feeling far too grand today."
+      },
+      {
+        "short": "Professional",
+        "client": "Oh, professional, please! I can't wait to see it."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryMin",
+          "accessory": "Flower",
+          "count": 4
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Sequin"]
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Appliqué",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        }
+      ],
+      "pairSlots": [1, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 4 flowers",
+        "client": "Please, at least four flowers, dear! Oh, the joy."
+      },
+      {
+        "short": "Simple",
+        "client": "I'm dreaming of simple, darling. Truly dreaming."
+      },
+      {
+        "short": "Only sequins",
+        "client": "Oh, nothing but sequins, please, darling!"
+      },
+      {
+        "short": "Exactly 3 appliqués",
+        "client": "Three appliqués, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "b9c5d3fg",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "b9c5d3fg",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryExact", "style", "accessoryExact", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Feather",
+          "count": 4
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Flower",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "style",
+          "tag": "Workwear"
+        }
+      ],
+      "pairSlots": [2, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Thea Ibarra",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Exactly 4 feathers",
+        "client": "Four feathers, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Simple",
+        "client": "Oh, simple! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Exactly 7 flowers",
+        "client": "Seven flowers, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Workwear",
+        "client": "Oh, workwear! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Sequin"
+        },
+        {
+          "type": "style",
+          "tag": "Playful"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Sequin",
+        "client": "Sequins, please! I'm already imagining it."
+      },
+      {
+        "short": "Playful",
+        "client": "Oh, playful, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Lace trim",
+        "client": "Do add lace trim, dear. What a treat!"
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["coloursMin", "style", "fabricAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "coloursMin",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
+          "type": "fabricAvoid",
+          "fabric": "Lace"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 3 colours",
+        "client": "Colour, dear, colour! At the very least, three."
+      },
+      {
+        "short": "Playful",
+        "client": "Oh, playful, please! I can't wait to see it."
+      },
+      {
+        "short": "No lace",
+        "client": "Oh, no lace, darling. It just isn't me."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "style", "styleAvoid"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Flower",
+          "count": 5
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Gothic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 5 flowers",
+        "client": "Please, at least five flowers, dear! Oh, the joy."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Not gothic",
+        "client": "Anything but gothic, my dear. Everything else is wonderful!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "style", "fabric", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Sequin"
+        },
+        {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Lace"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Sequin",
+        "client": "Sequins, please! I'm already imagining it."
+      },
+      {
+        "short": "Playful",
+        "client": "Oh, playful, please! I can't wait to see it."
+      },
+      {
+        "short": "Lace",
+        "client": "Oh, lace! What a lovely idea, darling."
+      },
+      {
+        "short": "Flowers",
+        "client": "Do add flowers, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "style", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Lace trim",
+        "client": "Do add lace trim, dear. What a treat!"
+      },
+      {
+        "short": "Elaborate",
+        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Gothic",
+        "client": "Gothic, please, dear! Moody and magnificent."
+      },
+      {
+        "short": "Buttons",
+        "client": "Oh, buttons! Add as many as you like, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colourOnly", "accessoryExact", "fabric", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "colourOnly",
+          "colours": ["Orange", "Grey", "Blue"]
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bow",
+          "count": 7
+        },
+        {
+          "type": "fabric",
+          "fabric": "Sequin"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": [0, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Eveningwear",
+        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
+      },
+      {
+        "short": "Only orange, grey and blue",
+        "client": "Only orange, grey or blue, dear. Isn't that lovely?"
+      },
+      {
+        "short": "Exactly 7 bows",
+        "client": "Exactly seven bows, darling. Perfection!"
+      },
+      {
+        "short": "Sequin",
+        "client": "Sequins, please! I'm already imagining it."
+      },
+      {
+        "short": "Daywear",
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "m3p7t6w2",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "m3p7t6w2",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bow",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": [3, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Zelda Hollis",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Lace trim",
+        "client": "Do add lace trim, dear. What a treat!"
+      },
+      {
+        "short": "Exactly 7 bows",
+        "client": "Exactly seven bows, darling. Perfection!"
+      },
+      {
+        "short": "Eveningwear",
+        "client": "Oh, eveningwear, please! I can't wait to see it."
+      },
+      {
+        "short": "Buttons",
+        "client": "Oh, buttons! Add as many as you like, darling."
+      },
+      {
+        "short": "Daywear",
+        "client": "Oh, daywear, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "colour", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Wool"
+        },
+        {
+          "type": "colour",
+          "colour": "Brown"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Wool",
+        "client": "Use wool. Thanks."
+      },
+      {
+        "short": "Brown",
+        "client": "Make it brown."
+      },
+      {
+        "short": "Daywear",
+        "client": "Daywear. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Bows",
+        "client": "Bows, please. Neat ones."
+      },
+      {
+        "short": "Bells",
+        "client": "Bells. Keep it tidy."
+      },
+      {
+        "short": "Romantic",
+        "client": "Romantic. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colourAvoid", "colour", "fabricsMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colourAvoid",
+          "colour": "White"
+        },
+        {
+          "type": "colour",
+          "colour": "Brown"
+        },
+        {
+          "type": "fabricsMin",
+          "count": 2
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "No white",
+        "client": "Not white. Thanks."
+      },
+      {
+        "short": "Brown",
+        "client": "Make it brown."
+      },
+      {
+        "short": "At least 2 fabrics",
+        "client": "At least two fabrics."
+      },
+      {
+        "short": "Romantic",
+        "client": "Romantic. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 2
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No bows",
+        "client": "Leave off the bows."
+      },
+      {
+        "short": "Bells",
+        "client": "Bells. Keep it tidy."
+      },
+      {
+        "short": "At least 2 jewels",
+        "client": "At least two jewels."
+      },
+      {
+        "short": "Romantic",
+        "client": "Romantic. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colour", "coloursMin", "accessory", "accessoryAvoid", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colour",
+          "colour": "White"
+        },
+        {
+          "type": "coloursMin",
+          "count": 2
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "White",
+        "client": "Make it white."
+      },
+      {
+        "short": "At least 2 colours",
+        "client": "Two colours, minimum. Thanks."
+      },
+      {
+        "short": "Bells",
+        "client": "Bells. Keep it tidy."
+      },
+      {
+        "short": "No tassels",
+        "client": "No tassels."
+      },
+      {
+        "short": "Romantic",
+        "client": "Romantic. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessory", "accessoryMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 8
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 4
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Bows",
+        "client": "Bows, please. Neat ones."
+      },
+      {
+        "short": "At least 8 bells",
+        "client": "At least eight bells."
+      },
+      {
+        "short": "Tassels",
+        "client": "Tassels. Keep it tidy."
+      },
+      {
+        "short": "At least 4 jewels",
+        "client": "At least four jewels."
+      },
+      {
+        "short": "Simple",
+        "client": "Make it simple."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Formal"
+        },
+        {
+          "type": "colour",
+          "colour": "Brown"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bell",
+          "count": 8
+        },
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Linen", "Velvet", "Sequin"]
+        },
+        {
+          "type": "colour",
+          "colour": "Yellow"
+        }
+      ],
+      "pairSlots": [0, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Formal",
+        "client": "Go formal. Keep it practical."
+      },
+      {
+        "short": "Brown",
+        "client": "Make it brown."
+      },
+      {
+        "short": "Exactly 8 bells",
+        "client": "Exactly eight bells."
+      },
+      {
+        "short": "Casual",
+        "client": "Casual. No fuss."
+      },
+      {
+        "short": "Only linen, velvet and sequins",
+        "client": "Linen, velvet or sequins only."
+      },
+      {
+        "short": "Yellow",
+        "client": "Yellow. That's it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "q8s4j2xy",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "q8s4j2xy",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "accessory",
+        "style",
+        "style",
+        "accessoryExact",
+        "accessory"
+      ],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 7
+        },
+        {
+          "type": "accessory",
+          "accessory": "Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Formal"
+        },
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Tassel",
+          "count": 5
+        },
+        {
+          "type": "accessory",
+          "accessory": "Flower"
+        }
+      ],
+      "pairSlots": [3, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Beatrix Garrow",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 7 bells",
+        "client": "Seven bells, minimum. Thanks."
+      },
+      {
+        "short": "Trim",
+        "client": "Trim. Keep it tidy."
+      },
+      {
+        "short": "Formal",
+        "client": "Formal. No fuss."
+      },
+      {
+        "short": "Casual",
+        "client": "Casual. No fuss."
+      },
+      {
+        "short": "Exactly 5 tassels",
+        "client": "Exactly five tassels."
+      },
+      {
+        "short": "Flowers",
+        "client": "Flowers. Keep it tidy."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "fabric"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Sequin"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Gothic",
+        "client": "Gothic, please, dear! Moody and magnificent."
+      },
+      {
+        "short": "Sequin",
+        "client": "Oh, sequins! What a lovely idea, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Glamour"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Glamour",
+        "client": "Oh, glamour! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Daywear",
+        "client": "Oh, daywear, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryMin", "fabricAvoid", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryMin",
+          "accessory": "Button",
+          "count": 2
+        },
+        {
+          "type": "fabricAvoid",
+          "fabric": "Sequin"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 2 buttons",
+        "client": "Please, at least two buttons, dear! Oh, the joy."
+      },
+      {
+        "short": "No sequins",
+        "client": "Oh, no sequins, darling. They make me itch dreadfully."
+      },
+      {
+        "short": "Daywear",
+        "client": "Oh, daywear, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Button",
+          "count": 4
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "style",
+          "tag": "Glamour"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 4 buttons",
+        "client": "Oh, four buttons at the very least, darling!"
+      },
+      {
+        "short": "No bells",
+        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Glamour",
+        "client": "Oh, glamour! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "accessoryAvoid", "fabric", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Flower"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Cotton"
+        },
+        {
+          "type": "colour",
+          "colour": "Orange"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Gothic",
+        "client": "Gothic, please, dear! Moody and magnificent."
+      },
+      {
+        "short": "No flowers",
+        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Cotton",
+        "client": "Cotton, please! I'm already imagining it."
+      },
+      {
+        "short": "Orange",
+        "client": "Oh, orange, darling! I'm glowing at the thought."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessoryAvoid", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Glamour"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "style",
+          "tag": "Gothic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Glamour",
+        "client": "Oh, glamour! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "No bells",
+        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Gothic",
+        "client": "Oh, something gothic, darling! Dark and dreamy."
+      },
+      {
+        "short": "Brooches",
+        "client": "Oh, brooches! Add as many as you like, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colourOnly", "style", "accessoryExact", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "colourOnly",
+          "colours": ["Green", "Grey"]
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Button",
+          "count": 5
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        }
+      ],
+      "pairSlots": [0, 2],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Warm",
+        "client": "I'm dreaming of warm, darling. Truly dreaming."
+      },
+      {
+        "short": "Only green and grey",
+        "client": "Oh, nothing but green or grey, please, darling!"
+      },
+      {
+        "short": "Cool",
+        "client": "Oh, cool, please! I can't wait to see it."
+      },
+      {
+        "short": "Exactly 5 buttons",
+        "client": "Exactly five buttons, darling. Perfection!"
+      },
+      {
+        "short": "Elegant",
+        "client": "Oh, elegant! That's exactly what I'm after, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "w5e9a7kn",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "w5e9a7kn",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "accessoryExact", "style", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Button",
+          "count": 4
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bell",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        },
+        {
+          "type": "style",
+          "tag": "Workwear"
+        }
+      ],
+      "pairSlots": [3, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lavinia Fairweather",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 4 buttons",
+        "client": "Oh, four buttons at the very least, darling!"
+      },
+      {
+        "short": "Exactly 7 bells",
+        "client": "Seven bells, dear, no more, no fewer. I just know it's right."
+      },
+      {
+        "short": "Warm",
+        "client": "Oh, warm! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Cool",
+        "client": "Oh, cool! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Workwear",
+        "client": "I'm dreaming of workwear, darling. Truly dreaming."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Velvet"
+        },
+        {
+          "type": "style",
+          "tag": "Glamour"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Velvet",
+        "client": "I adore velvet. Don't tell anyone."
+      },
+      {
+        "short": "Glamour",
+        "client": "Think glamour. I'll know it when I see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Feather"
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Feathers",
+        "client": "Feathers. Somewhere on there."
+      },
+      {
+        "short": "Warm",
+        "client": "Warm. That's the whole request."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryMin", "colourAvoid", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 3
+        },
+        {
+          "type": "colourAvoid",
+          "colour": "Orange"
+        },
+        {
+          "type": "colour",
+          "colour": "Yellow"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "At least 3 jewels",
+        "client": "Three jewels, at the very least."
+      },
+      {
+        "short": "No orange",
+        "client": "No orange. We've fallen out."
+      },
+      {
+        "short": "Yellow",
+        "client": "Yellow, please. It matches my mood."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Button",
+          "count": 5
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Jewel"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 5 buttons",
+        "client": "Five buttons, at the very least."
+      },
+      {
+        "short": "No trim",
+        "client": "No trim. I've had my fill."
+      },
+      {
+        "short": "Jewels",
+        "client": "Jewels. Somewhere on there."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colourAvoid", "accessory", "styleAvoid", "fabric"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colourAvoid",
+          "colour": "White"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Feather"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Warm"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Silk"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "No white",
+        "client": "No white. We've fallen out."
+      },
+      {
+        "short": "Feathers",
+        "client": "Feathers. Somewhere on there."
+      },
+      {
+        "short": "Not warm",
+        "client": "Anything but warm. I'll be fine."
+      },
+      {
+        "short": "Silk",
+        "client": "Silk. It'll do nicely."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Glamour"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Jewel"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not glamour",
+        "client": "Anything but glamour. I'll be fine."
+      },
+      {
+        "short": "No trim",
+        "client": "No trim. I've had my fill."
+      },
+      {
+        "short": "Jewels",
+        "client": "Jewels. Somewhere on there."
+      },
+      {
+        "short": "Bells",
+        "client": "Bells. Somewhere on there."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Lace", "Cotton", "Wool"]
+        },
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "colour",
+          "colour": "Yellow"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Appliqué",
+          "count": 7
+        }
+      ],
+      "pairSlots": [1, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Only lace, cotton and wool",
+        "client": "Nothing but honest fabrics, please. Only lace, cotton or wool."
+      },
+      {
+        "short": "Eveningwear",
+        "client": "Think eveningwear. I'll know it when I see it."
+      },
+      {
+        "short": "Yellow",
+        "client": "Yellow, please. It matches my mood."
+      },
+      {
+        "short": "Daywear",
+        "client": "Daywear. That's the whole request."
+      },
+      {
+        "short": "Exactly 7 appliqués",
+        "client": "Exactly seven appliqués. Not one more."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "r2d6h8cu",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "r2d6h8cu",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryExact", "style", "accessory", "accessoryMin", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Button",
+          "count": 5
+        },
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Jewel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 7
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": [2, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Odette Underhill",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Exactly 5 buttons",
+        "client": "Exactly five buttons. Not one more."
+      },
+      {
+        "short": "Eveningwear",
+        "client": "Eveningwear. That's the whole request."
+      },
+      {
+        "short": "Jewels",
+        "client": "Jewels. Somewhere on there."
+      },
+      {
+        "short": "At least 7 appliqués",
+        "client": "Seven appliqués, at the very least."
+      },
+      {
+        "short": "Daywear",
+        "client": "Daywear. That's the whole request."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "style",
+          "tag": "Playful"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Simple",
+        "client": "Go simple. Keep it practical."
+      },
+      {
+        "short": "Playful",
+        "client": "Make it playful."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Playful",
+        "client": "Make it playful."
+      },
+      {
+        "short": "Cool",
+        "client": "Go cool. Keep it practical."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabricAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabricAvoid",
+          "fabric": "Wool"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Jewel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 3
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "No wool",
+        "client": "Skip the wool. Thanks."
+      },
+      {
+        "short": "Jewels",
+        "client": "Add jewels."
+      },
+      {
+        "short": "At least 3 appliqués",
+        "client": "Three appliqués, minimum. Thanks."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Playful"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 6
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not playful",
+        "client": "No playful. Moving on."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués."
+      },
+      {
+        "short": "At least 6 jewels",
+        "client": "At least six jewels."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["coloursMin", "fabric", "style", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "coloursMin",
+          "count": 4
+        },
+        {
+          "type": "fabric",
+          "fabric": "Silk"
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        },
+        {
+          "type": "colour",
+          "colour": "Red"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "At least 4 colours",
+        "client": "Four colours, minimum. Thanks."
+      },
+      {
+        "short": "Silk",
+        "client": "Use silk. Thanks."
+      },
+      {
+        "short": "Cool",
+        "client": "Go cool. Keep it practical."
+      },
+      {
+        "short": "Red",
+        "client": "Red. That's it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 6
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "style",
+          "tag": "Risqué"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 6 feathers",
+        "client": "Six feathers, minimum. Thanks."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués."
+      },
+      {
+        "short": "Risqué",
+        "client": "Risqué. No fuss."
+      },
+      {
+        "short": "Lace trim",
+        "client": "Lace trim. Keep it tidy."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "colourOnly",
+          "colours": ["Brown"]
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 6
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Flower",
+          "count": 3
+        }
+      ],
+      "pairSlots": [0, 1],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Eveningwear",
+        "client": "Go eveningwear. Keep it practical."
+      },
+      {
+        "short": "Daywear",
+        "client": "Make it daywear."
+      },
+      {
+        "short": "Only brown",
+        "client": "Nothing but brown. Quick as you can."
+      },
+      {
+        "short": "At least 6 jewels",
+        "client": "At least six jewels."
+      },
+      {
+        "short": "Exactly 3 flowers",
+        "client": "Exactly three flowers."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "x4g3b9vm",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "x4g3b9vm",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory", "accessoryExact", "accessoryExact", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Eveningwear"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Appliqué"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Jewel",
+          "count": 6
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Flower",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        }
+      ],
+      "pairSlots": [1, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Imogen Kettleby",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Eveningwear",
+        "client": "Make it eveningwear."
+      },
+      {
+        "short": "Appliqués",
+        "client": "Add appliqués."
+      },
+      {
+        "short": "Exactly 6 jewels",
+        "client": "Exactly six jewels."
+      },
+      {
+        "short": "Exactly 3 flowers",
+        "client": "Exactly three flowers."
+      },
+      {
+        "short": "Daywear",
+        "client": "Daywear. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colour", "fabric"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colour",
+          "colour": "White"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Wool"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "White",
+        "client": "Oh, white, darling! I'm glowing at the thought."
+      },
+      {
+        "short": "Wool",
+        "client": "Oh, wool! What a lovely idea, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Trim",
+        "client": "Oh, trim! Add as many as you like, darling."
+      },
+      {
+        "short": "Tassels",
+        "client": "Oh, tassels! Add as many as you like, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "colour",
+          "colour": "Yellow"
+        },
+        {
+          "type": "coloursMin",
+          "count": 4
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No tassels",
+        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Yellow",
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
+      },
+      {
+        "short": "At least 4 colours",
+        "client": "Oh, at least four colours, darling! Make it a rainbow."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 6
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "No trim",
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Tassels",
+        "client": "Oh, tassels! Add as many as you like, darling."
+      },
+      {
+        "short": "At least 6 feathers",
+        "client": "Oh, six feathers at the very least, darling!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabricAvoid", "accessoryAvoid", "accessoryMin", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabricAvoid",
+          "fabric": "Wool"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 3
+        },
+        {
+          "type": "colour",
+          "colour": "Yellow"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No wool",
+        "client": "Oh, no wool, darling. It just isn't me."
+      },
+      {
+        "short": "No trim",
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "At least 3 tassels",
+        "client": "Oh, three tassels at the very least, darling!"
+      },
+      {
+        "short": "Yellow",
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessoryMin", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Tassel"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 6
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not warm",
+        "client": "Oh, not warm, darling. I couldn't bear it."
+      },
+      {
+        "short": "No tassels",
+        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "At least 6 feathers",
+        "client": "Oh, six feathers at the very least, darling!"
+      },
+      {
+        "short": "Bows",
+        "client": "Bows, dear! Add every one you can find."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Cool"
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Silk", "Linen", "Cotton"]
+        },
+        {
+          "type": "colourAvoid",
+          "colour": "Yellow"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Tassel",
+          "count": 2
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        }
+      ],
+      "pairSlots": [0, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Cool",
+        "client": "Oh, cool! That's exactly what I'm after, darling."
+      },
+      {
+        "short": "Only silk, linen and cotton",
+        "client": "Oh, nothing but silk, linen or cotton, please, darling!"
+      },
+      {
+        "short": "No yellow",
+        "client": "Oh, not yellow, darling! It isn't my day for it."
+      },
+      {
+        "short": "Exactly 2 tassels",
+        "client": "Exactly two tassels, darling. Perfection!"
+      },
+      {
+        "short": "Warm",
+        "client": "Oh, warm, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-10-16",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-10-16",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessoryExact", "accessoryMin", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Tassel",
+          "count": 3
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 6
+        },
+        {
+          "type": "style",
+          "tag": "Warm"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        }
+      ],
+      "pairSlots": [1, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Cecily Oakhurst",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Cool",
+        "client": "I'm dreaming of cool, darling. Truly dreaming."
+      },
+      {
+        "short": "Exactly 3 tassels",
+        "client": "Exactly three tassels, darling. Perfection!"
+      },
+      {
+        "short": "At least 6 feathers",
+        "client": "Oh, six feathers at the very least, darling!"
+      },
+      {
+        "short": "Warm",
+        "client": "Oh, warm, please! I can't wait to see it."
+      },
+      {
+        "short": "Bows",
+        "client": "Oh, bows! I simply adore a bow, darling."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Glamour"
+        },
+        {
+          "type": "style",
+          "tag": "Eclectic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Glamour",
+        "client": "Go glamour. Keep it practical."
+      },
+      {
+        "short": "Eclectic",
+        "client": "Eclectic. No fuss."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Eclectic"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Eclectic",
+        "client": "Eclectic. No fuss."
+      },
+      {
+        "short": "Elegant",
+        "client": "Go elegant. Keep it practical."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["styleAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "styleAvoid",
+          "tag": "Glamour"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 2
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Not glamour",
+        "client": "No glamour. Moving on."
+      },
+      {
+        "short": "Bows",
+        "client": "Bows. A few."
+      },
+      {
+        "short": "At least 2 feathers",
+        "client": "Two feathers, minimum. Thanks."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Eclectic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bow",
+          "count": 7
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Not eclectic",
+        "client": "Not eclectic."
+      },
+      {
+        "short": "Brooches",
+        "client": "Add brooches."
+      },
+      {
+        "short": "At least 7 bows",
+        "client": "Seven bows at least. Neat."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["coloursMin", "style", "style", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "coloursMin",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Eclectic"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "colour",
+          "colour": "Green"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "At least 3 colours",
+        "client": "Three colours, minimum. Thanks."
+      },
+      {
+        "short": "Eclectic",
+        "client": "Eclectic. No fuss."
+      },
+      {
+        "short": "Elegant",
+        "client": "Go elegant. Keep it practical."
+      },
+      {
+        "short": "Green",
+        "client": "Green. That's it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 8
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "style",
+          "tag": "Romantic"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "At least 8 bells",
+        "client": "At least eight bells."
+      },
+      {
+        "short": "Elegant",
+        "client": "Go elegant. Keep it practical."
+      },
+      {
+        "short": "Romantic",
+        "client": "Romantic. No fuss."
+      },
+      {
+        "short": "Brooches",
+        "client": "Add brooches."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["colourOnly", "accessoryMin", "style", "style", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "colourOnly",
+          "colours": ["Grey", "Green"]
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 8
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bow",
+          "count": 4
+        }
+      ],
+      "pairSlots": [2, 3],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Only grey and green",
+        "client": "Nothing but grey or green. Quick as you can."
+      },
+      {
+        "short": "At least 8 bells",
+        "client": "At least eight bells."
+      },
+      {
+        "short": "Simple",
+        "client": "Go simple. Keep it practical."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Elaborate. No fuss."
+      },
+      {
+        "short": "Exactly 4 bows",
+        "client": "Four bows. No more, no fewer."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2026-12-31",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2026-12-31",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessoryExact", "accessoryExact", "style", "accessory", "style"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bell",
+          "count": 8
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Bow",
+          "count": 6
+        },
+        {
+          "type": "style",
+          "tag": "Simple"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "style",
+          "tag": "Elaborate"
+        }
+      ],
+      "pairSlots": [3, 5],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Linnea Fenwick",
+      "human": true,
+      "personality": "brisk"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Exactly 8 bells",
+        "client": "Exactly eight bells."
+      },
+      {
+        "short": "Exactly 6 bows",
+        "client": "Six bows. No more, no fewer."
+      },
+      {
+        "short": "Simple",
+        "client": "Simple. No fuss."
+      },
+      {
+        "short": "Brooches",
+        "client": "Add brooches."
+      },
+      {
+        "short": "Elaborate",
+        "client": "Go elaborate. Keep it practical."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "easy",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "easy",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colour"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "colour",
+          "colour": "Purple"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Daywear",
+        "client": "Make it daywear. I've had a long week."
+      },
+      {
+        "short": "Purple",
+        "client": "Make it purple. Don't ask me why."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "easy",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "easy",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Professional"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Professional",
+        "client": "Professional. That's the whole request."
+      },
+      {
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["fabric", "accessoryAvoid", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "fabric",
+          "fabric": "Cotton"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 6
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Cotton",
+        "client": "I'd like cotton. Don't read into it."
+      },
+      {
+        "short": "No lace trim",
+        "client": "Keep the lace trim off me."
+      },
+      {
+        "short": "At least 6 appliqués",
+        "client": "At least six appliqués. Subtlety is not the goal."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "medium",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "medium",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Flower",
+          "count": 2
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Lace trim",
+        "client": "Add lace trim. I'll pretend I'm not excited."
+      },
+      {
+        "short": "No bells",
+        "client": "Keep the bells off me."
+      },
+      {
+        "short": "At least 2 flowers",
+        "client": "At least two flowers. Subtlety is not the goal."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "colour", "colour", "colourOnly"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "colour",
+          "colour": "Purple"
+        },
+        {
+          "type": "colour",
+          "colour": "Blue"
+        },
+        {
+          "type": "colourOnly",
+          "colours": ["Blue", "Purple"]
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Daywear",
+        "client": "Make it daywear. I've had a long week."
+      },
+      {
+        "short": "Purple",
+        "client": "Make it purple. Don't ask me why."
+      },
+      {
+        "short": "Blue",
+        "client": "Make it blue. Don't ask me why."
+      },
+      {
+        "short": "Only blue and purple",
+        "client": "Blue or purple only. Only means only."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "hard",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "hard",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory", "accessory", "accessoryMin"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Professional"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 4
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Professional",
+        "client": "Professional. That's the whole request."
+      },
+      {
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
+      },
+      {
+        "short": "Lace trim",
+        "client": "Add lace trim. I'll pretend I'm not excited."
+      },
+      {
+        "short": "At least 4 feathers",
+        "client": "At least four feathers. Subtlety is not the goal."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "chaos",
+      "burlap": false,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "chaos",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
+      "history": [],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Formal"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Velvet"
+        },
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Flower",
+          "count": 2
+        },
+        {
+          "type": "fabricsOnly",
+          "fabrics": ["Lace", "Velvet"]
+        }
+      ],
+      "pairSlots": [0, 2],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Formal",
+        "client": "Make it formal. I've had a long week."
+      },
+      {
+        "short": "Velvet",
+        "client": "Velvet. It's the only thing that's ever understood me."
+      },
+      {
+        "short": "Casual",
+        "client": "Make it casual. I've had a long week."
+      },
+      {
+        "short": "Exactly 2 flowers",
+        "client": "Two flowers. I counted."
+      },
+      {
+        "short": "Only lace and velvet",
+        "client": "Lace or velvet only. Surprise me within that."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "2028-02-29",
+      "difficulty": "chaos",
+      "burlap": true,
+      "history": []
+    },
+    "challenge": {
+      "seed": "2028-02-29",
+      "difficulty": "chaos",
+      "modifiers": ["burlap"],
+      "dataVersion": 1,
+      "plan": ["burlapOnly", "style", "accessory", "accessory", "style", "accessoryExact"],
+      "history": [],
+      "directions": [
+        {
+          "type": "burlapOnly"
+        },
+        {
+          "type": "style",
+          "tag": "Formal"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Bell"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Lace Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Casual"
+        },
+        {
+          "type": "accessoryExact",
+          "accessory": "Appliqué",
+          "count": 7
+        }
+      ],
+      "pairSlots": [1, 4],
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Lottie Rosales",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Burlap only"
+      },
+      {
+        "short": "Formal",
+        "client": "Formal. That's the whole request."
+      },
+      {
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
+      },
+      {
+        "short": "Lace trim",
+        "client": "Add lace trim. I'll pretend I'm not excited."
+      },
+      {
+        "short": "Casual",
+        "client": "Make it casual. I've had a long week."
+      },
+      {
+        "short": "Exactly 7 appliqués",
+        "client": "Exactly seven appliqués. Not one more."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": [0, 1, 0]
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "history": [0, 1, 0],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        },
+        {
+          "type": "style",
+          "tag": "Eclectic"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 4
+        },
+        {
+          "type": "accessory",
+          "accessory": "Button"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No trim",
+        "client": "Please keep the trim away, dear. It's just not me, I'm afraid."
+      },
+      {
+        "short": "Eclectic",
+        "client": "I'm dreaming of eclectic, darling. Truly dreaming."
+      },
+      {
+        "short": "At least 4 bells",
+        "client": "Oh, four bells at the very least, darling!"
+      },
+      {
+        "short": "Buttons",
+        "client": "Do add buttons, dear. What a treat!"
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": [2, 1, 2]
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "history": [2, 1, 2],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bell"
+        },
+        {
+          "type": "colour",
+          "colour": "Blue"
+        },
+        {
+          "type": "coloursMin",
+          "count": 2
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "No bells",
+        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Blue",
+        "client": "Oh, blue, darling! I'm glowing at the thought."
+      },
+      {
+        "short": "At least 2 colours",
+        "client": "Oh, at least two colours, darling! Make it a rainbow."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "burlap": false,
+      "history": [1, 0, 1, 0]
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "medium",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "history": [1, 0, 1, 0],
+      "directions": [
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bow",
+          "count": 8
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Trim"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "Elegant",
+        "client": "Make it elegant. I've had a long week."
+      },
+      {
+        "short": "Brooches",
+        "client": "Brooches. Somewhere on there."
+      },
+      {
+        "short": "At least 8 bows",
+        "client": "Bows everywhere. At the very least, eight."
+      },
+      {
+        "short": "No trim",
+        "client": "No trim. I've had my fill."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": [0, 1, 0]
+    },
+    "challenge": {
+      "seed": "k7m2qx9a",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
+      "history": [0, 1, 0],
+      "directions": [
+        {
+          "type": "accessory",
+          "accessory": "Trim"
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Bell",
+          "count": 4
+        },
+        {
+          "type": "style",
+          "tag": "Daywear"
+        },
+        {
+          "type": "fabricsMin",
+          "count": 3
+        },
+        {
+          "type": "style",
+          "tag": "Cool"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Freya Lindqvist",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "Trim",
+        "client": "Do add trim, dear. What a treat!"
+      },
+      {
+        "short": "At least 4 bells",
+        "client": "Please, at least four bells, dear! Oh, the joy."
+      },
+      {
+        "short": "Daywear",
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+      },
+      {
+        "short": "At least 3 fabrics",
+        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+      },
+      {
+        "short": "Cool",
+        "client": "Oh, cool, please! I can't wait to see it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": [2, 1, 2]
+    },
+    "challenge": {
+      "seed": "23456789",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
+      "history": [2, 1, 2],
+      "directions": [
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 6
+        },
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Bow"
+        },
+        {
+          "type": "accessory",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "styleAvoid",
+          "tag": "Gothic"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Ursula Thistlewood",
+      "human": true,
+      "personality": "gushing"
+    },
+    "lines": [
+      {
+        "short": "At least 6 appliqués",
+        "client": "Oh, six appliqués at the very least, darling!"
+      },
+      {
+        "short": "No bows",
+        "client": "Oh, no bows, darling. I'm so sorry to be fussy!"
+      },
+      {
+        "short": "Brooches",
+        "client": "Oh, brooches! Add as many as you like, darling."
+      },
+      {
+        "short": "Not gothic",
+        "client": "Oh, not gothic, darling. I couldn't bear it."
+      }
+    ]
+  },
+  {
+    "input": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "burlap": false,
+      "history": [1, 0, 1, 0]
+    },
+    "challenge": {
+      "seed": "zzzzzzzz",
+      "difficulty": "hard",
+      "modifiers": [],
+      "dataVersion": 1,
+      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "history": [1, 0, 1, 0],
+      "directions": [
+        {
+          "type": "accessoryAvoid",
+          "accessory": "Brooch"
+        },
+        {
+          "type": "fabric",
+          "fabric": "Lace"
+        },
+        {
+          "type": "style",
+          "tag": "Elegant"
+        },
+        {
+          "type": "coloursMin",
+          "count": 4
+        },
+        {
+          "type": "fabric",
+          "fabric": "Silk"
+        }
+      ],
+      "pairSlots": null,
+      "pullApartSlot": null
+    },
+    "client": {
+      "name": "Philippa Tremaine",
+      "human": true,
+      "personality": "deadpan"
+    },
+    "lines": [
+      {
+        "short": "No brooches",
+        "client": "Keep the brooches off me."
+      },
+      {
+        "short": "Lace",
+        "client": "Lace. It'll do nicely."
+      },
+      {
+        "short": "Elegant",
+        "client": "Think elegant. I'll know it when I see it."
+      },
+      {
+        "short": "At least 4 colours",
+        "client": "I want colour, and lots of it. At least four."
+      },
+      {
+        "short": "Silk",
+        "client": "I'd like silk. Don't read into it."
+      }
+    ]
+  }
+]
