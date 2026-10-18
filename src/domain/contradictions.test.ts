@@ -8,14 +8,14 @@ import {
 import type { Direction, GeneralFabric } from "./direction";
 import { dataV1, type Colour, type GameData } from "@/game/data/v1";
 
-type Options = Omit<ConflictOptions, "data">;
+type Options = Partial<Omit<ConflictOptions, "data">>;
 const findConflicts = (directions: readonly Direction[], options: Options = {}) =>
-  findConflictsIn(directions, { data: dataV1, ...options });
+  findConflictsIn(directions, { data: dataV1, pairs: "noBothStyles", ...options });
 const conflictsWithAny = (
   candidate: Direction,
   existing: readonly Direction[],
   options: Options = {},
-) => conflictsWithAnyIn(candidate, existing, { data: dataV1, ...options });
+) => conflictsWithAnyIn(candidate, existing, { data: dataV1, pairs: "noBothStyles", ...options });
 
 type Case = [name: string, directions: Direction[], expected: Conflict];
 type NearMiss = [name: string, directions: Direction[]];
@@ -385,14 +385,55 @@ describe("opposing pairs", () => {
     expectConflict([b, a], conflict(1, 0, "opposingPair"));
   });
 
-  it("allows both sides when the caller allows opposing pairs", () => {
-    expect(findConflicts([cute, gothic], { allowOpposingPair: true })).toEqual([]);
+  it("allows the one designated pair under oneStylePair", () => {
+    const options: Options = { pairs: "oneStylePair", allowedPair: ["Cute", "Gothic"] };
+    expect(findConflicts([cute, gothic], options)).toEqual([]);
+    expect(findConflicts([gothic, cute], options)).toEqual([]);
   });
 
-  it("still rejects other contradictions when opposing pairs are allowed", () => {
-    expect(findConflicts([cute, notCute], { allowOpposingPair: true })).toEqual([
-      conflict(1, 0, "askedAndAvoided"),
+  it("rejects every other pair under oneStylePair", () => {
+    const options: Options = { pairs: "oneStylePair", allowedPair: ["Cute", "Gothic"] };
+    const simple: Direction = { type: "style", tag: "Simple" };
+    const elaborate: Direction = { type: "style", tag: "Elaborate" };
+    expect(findConflicts([simple, elaborate], options)).toEqual([conflict(1, 0, "opposingPair")]);
+    expect(findConflicts([cute, gothic, simple, elaborate], options)).toEqual([
+      conflict(3, 2, "opposingPair"),
     ]);
+  });
+
+  it("treats oneStylePair without a designated pair like noBothStyles", () => {
+    expect(findConflicts([cute, gothic], { pairs: "oneStylePair" })).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+  });
+
+  it("still rejects other contradictions beside the allowed pair", () => {
+    const options: Options = { pairs: "oneStylePair", allowedPair: ["Cute", "Gothic"] };
+    expect(findConflicts([cute, notCute], options)).toEqual([conflict(1, 0, "askedAndAvoided")]);
+  });
+
+  it.each<NearMiss>([
+    ["an avoid on one side and a style on the other", [notCute, gothic]],
+    ["a style on one side and an avoid on the other", [cute, notGothic]],
+    ["an avoid on each side", [notCute, notGothic]],
+  ])("rejects %s under never", (_name, directions) => {
+    const [first, second] = directions;
+    expect(findConflicts(directions, { pairs: "never" })).toEqual([conflict(1, 0, "opposingPair")]);
+    expect(findConflicts([second, first], { pairs: "never" })).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+  });
+
+  it("rejects two styles on opposite sides under never", () => {
+    expect(findConflicts([cute, gothic], { pairs: "never" })).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+  });
+
+  it("allows an avoid with a style on the same side under never", () => {
+    expect(findConflicts([notCute, { type: "style", tag: "Simple" }], { pairs: "never" })).toEqual(
+      [],
+    );
   });
 
   it.each<NearMiss>([
@@ -434,10 +475,9 @@ describe("asked twice", () => {
     expectConflict(directions, expected);
   });
 
-  it("rejects a repeat even when opposing pairs are allowed", () => {
-    expect(findConflicts([cute, cute], { allowOpposingPair: true })).toEqual([
-      conflict(1, 0, "askedTwice"),
-    ]);
+  it("rejects a repeat even beside the allowed pair", () => {
+    const options: Options = { pairs: "oneStylePair", allowedPair: ["Cute", "Gothic"] };
+    expect(findConflicts([cute, cute], options)).toEqual([conflict(1, 0, "askedTwice")]);
   });
 
   it.each<NearMiss>([
@@ -487,7 +527,8 @@ describe("conflictsWithAny", () => {
 
   it("passes the options through", () => {
     expect(conflictsWithAny(gothic, [cute])).toEqual(conflict(1, 0, "opposingPair"));
-    expect(conflictsWithAny(gothic, [cute], { allowOpposingPair: true })).toBeUndefined();
+    const allowed: Options = { pairs: "oneStylePair", allowedPair: ["Cute", "Gothic"] };
+    expect(conflictsWithAny(gothic, [cute], allowed)).toBeUndefined();
   });
 
   it("catches a candidate that tips the colours left too low", () => {
@@ -502,15 +543,17 @@ describe("game data", () => {
   const simple: Direction = { type: "style", tag: "Simple" };
 
   it("takes the opposing pairs from the data it is given", () => {
-    expect(findConflictsIn([cute, simple], { data })).toEqual([conflict(1, 0, "opposingPair")]);
-    expect(findConflictsIn([cute, gothic], { data })).toEqual([]);
+    expect(findConflictsIn([cute, simple], { data, pairs: "noBothStyles" })).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+    expect(findConflictsIn([cute, gothic], { data, pairs: "noBothStyles" })).toEqual([]);
   });
 
   it("takes the colour count from the data it is given", () => {
     const twoColours: GameData = { ...dataV1, colours: ["Red", "Blue"] };
-    expect(findConflictsIn([atLeastColours(2), noRed], { data: twoColours })).toEqual([
-      conflict(1, 0, "tooFewColoursLeft"),
-    ]);
+    expect(
+      findConflictsIn([atLeastColours(2), noRed], { data: twoColours, pairs: "noBothStyles" }),
+    ).toEqual([conflict(1, 0, "tooFewColoursLeft")]);
   });
 
   it("takes the general fabric count from the data it is given", () => {
@@ -529,9 +572,9 @@ describe("game data", () => {
       },
     };
     const directions = [atLeastFabrics(3), avoidFabric("Cotton")];
-    expect(findConflictsIn(directions, { data: fewFabrics })).toEqual([
+    expect(findConflictsIn(directions, { data: fewFabrics, pairs: "noBothStyles" })).toEqual([
       conflict(1, 0, "tooFewFabricsLeft"),
     ]);
-    expect(findConflictsIn(directions, { data: dataV1 })).toEqual([]);
+    expect(findConflictsIn(directions, { data: dataV1, pairs: "noBothStyles" })).toEqual([]);
   });
 });
