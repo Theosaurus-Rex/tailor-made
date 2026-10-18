@@ -170,7 +170,11 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 - A `fabricsMin` higher than the general fabrics left after avoids
 - More than one `colourOnly`, or more than one `fabricsOnly`. One of each is fine
 - More than one count on the same accessory type
-- Both sides of an opposing pair, outside Chaos (see §7)
+- Opposing pairs (see §7), by the difficulty's pair rule from the data:
+  - `never` (Easy, Medium): any two directions on opposite sides of a pair, whether asked for or
+    avoided, in any mix
+  - `noBothStyles` (Hard): two `style` directions on opposite sides of a pair
+  - `oneStylePair` (Chaos): the same, except the one pair the card was built around
 - The same item asked for twice, including two `coloursMin` or two `fabricsMin`
 
 Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the
@@ -181,7 +185,7 @@ card free of other fabric and colour directions.
 Rerolling direction *i* draws from a sub-seed of `seed`, `i` and that direction's reroll count,
 and keeps its kind. The new draw is checked against every other direction on the card. The rest
 of the challenge stays the same. A challenge keeps its reroll history, the slots in the order they
-were rerolled. A slot's count is how many times it appears. Burlap only cannot be rerolled.
+were rerolled. A slot's count is how many times it appears. Burlap only cannot be rerolled, and neither can anything on a Chaos card.
 
 ### Share link format
 
@@ -217,16 +221,23 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 | Hard | 4–5 | Up to two avoids and two "at least" counts. One `colourOnly` or `fabricsOnly` possible. |
 | Chaos | 5–6 | Always one "only" list and an exact count. Up to two avoids, three counts. |
 
-Hard's "styles may pull apart" and Chaos's pair and theme-ignoring picks are still to come (see
-below). Chaos's "only" list is always there for now, and M6 tuning may make it "likely" again.
+Chaos's theme-ignoring picks are still to come. Chaos's "only" list is always there for now, and M6 tuning may make it "likely" again.
 The table lives in the game data (`difficulties`) and is versioned with it.
 
 **Opposing pairs**, hand-written: Cute/Gothic, Simple/Elaborate, Casual/Formal, Warm/Cool,
 Daywear/Eveningwear.
 
-- Chaos includes exactly one pair as two `style` directions ("cute **and** gothic").
-- Hard may avoid one side of a pair while asking for something that leans towards it.
-- Easy and Medium never touch a pair.
+- Each difficulty has a pair rule in the data (`pairs`), versioned with the shapes. Easy and
+  Medium use `never`, Hard `noBothStyles`, Chaos `oneStylePair`.
+- Chaos includes exactly one pair as two `style` directions ("cute **and** gothic"). The pair is
+  drawn from its own seed stream and fills the first two `style` slots. No second pair can form.
+- Hard may "pull apart": avoid one side of a pair while asking for a fabric or accessory that
+  leans towards it, such as "Not cute" with "Bows". It happens about half the time a plan has a
+  style avoid and a fabric or accessory (`pullApartChance`). The tension is the point.
+- Easy and Medium never touch a pair, in any form. "Cute" with "Gothic", "Not cute" with
+  "Gothic" and "Not cute" with "Not gothic" are all out.
+- Chaos cards cannot be rerolled, to keep the difficulty. A share link for a Chaos card with
+  a reroll history is invalid.
 
 ## 8. Modifiers
 
