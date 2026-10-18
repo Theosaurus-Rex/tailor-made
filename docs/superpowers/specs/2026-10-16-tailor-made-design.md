@@ -248,6 +248,21 @@ challenge. With the modifier on:
 - Removes other fabric and colour directions, including `fabricsOnly` and `fabricsMin`
 - Favours accessory directions, since they carry most of the look
 
+The card pins `burlapOnly` first, in the plan and in the directions. It is tagged "Modifier", has
+no client line and cannot be rerolled. Every other slot is dealt from a hand-written Burlap shape
+(`burlapDifficulties` in the game data, beside `difficulties`), versioned with them. Each is its
+difficulty's shape without fabric and colour kinds, and with higher accessory weights:
+
+- Easy deals 2–3 styles and accessories. Burlap only may add accessories, so an Easy Burlap card
+  is not styles alone.
+- Medium meets its avoid with `styleAvoid` or `accessoryAvoid`, and its "at least" with
+  `accessoryMin`.
+- Hard has no "only" lists. Chaos drops its "only" list too and keeps the exact count and the
+  pair rule.
+
+Burlap only does not count towards the direction count. Easy is Burlap only plus 2–3 directions.
+An unknown or repeated modifier is a `RangeError`.
+
 Never used for the daily challenge. Modifiers are a list, so others (Monochrome, No accessories)
 can be added later without changing the link format.
 
