@@ -221,7 +221,8 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 | Hard | 4–5 | Up to two avoids and two "at least" counts. One `colourOnly` or `fabricsOnly` possible. |
 | Chaos | 5–6 | Always one "only" list and an exact count. Up to two avoids, three counts. |
 
-Chaos's theme-ignoring picks are still to come. Chaos's "only" list is always there for now, and M6 tuning may make it "likely" again.
+Chaos ignores the theme's leanings (see section 9). Its "only" list is always there for now, and M6
+tuning may make it "likely" again.
 The table lives in the game data (`difficulties`) and is versioned with it.
 
 **Opposing pairs**, hand-written: Cute/Gothic, Simple/Elaborate, Casual/Formal, Warm/Cool,
@@ -273,6 +274,26 @@ Hand-written content in `src/game/briefs/`, versioned with the data.
 - **About 25 occasion themes.** Each has tag, fabric, colour and accessory weights and 3–4
   templates with slots. Example: *"{name} is attending {occasion} and wants to look {adjective}
   without {worry}."*
+  **Theme format** (`src/game/briefs/v1/themes.ts`, typed with the game's unions, so a misspelt tag,
+  colour, fabric or accessory fails typecheck):
+  - `favouredTags` (2 to 4), `favouredColours` (1 to 3), and optional `favouredFabrics` and
+    `favouredAccessories`.
+  - `occasions` (2 to 3), `adjectives` (2 to 4) and `worries` (2 to 3) are short phrases.
+  - `templates` (3 to 4) use the slots `{name}`, `{occasion}`, `{adjective}` and `{worry}`. A template
+    need not use every slot. Brief wording is a gerund after "without", such as "outshining the bride".
+  - The theme is picked first, uniformly, from its own seed stream, and its id is kept on the challenge.
+- **The boost rule.** The numbers sit in the data (`themeBoosts`), beside the themes.
+  - A favoured tag's weight is multiplied by 4.
+  - A fabric, accessory or colour gets 3 added to its weight of 1 if it is listed as favoured, or if
+    it leans towards a favoured tag (colours through `colourLeanings`).
+  - Item draws keep the data's order, so a share link rebuilds the same card.
+- **Avoids lean the other way.** In `styleAvoid`, `fabricAvoid`, `colourAvoid` and `accessoryAvoid`, a
+  favoured item gets a low weight (0.25), so a Gothic client rarely says "Not gothic". It is never
+  zero, so nothing becomes impossible.
+- **Chaos ignores the leanings.** Its shape sets `ignoreTheme`, and Chaos draws use the plain data
+  weights. The brief still uses the theme, so Chaos cards still read as an occasion.
+- **The brief** is filled from the client and the theme on its own seed stream. A human client gives
+  her first name, a non-human client her full name.
 - **Names** from first-name and surname lists, with a small share of non-human clients, about 10%.
   First names are women's names or names anyone can have, never only men's, since every client
   commissions a dress. Non-human clients follow the same rule.
