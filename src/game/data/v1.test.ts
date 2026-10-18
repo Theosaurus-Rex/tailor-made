@@ -88,6 +88,35 @@ describe("versions", () => {
   });
 });
 
+describe("themes", () => {
+  const { themes } = dataV1;
+  const within = (list: readonly unknown[], min: number, max: number) => {
+    expect(list.length).toBeGreaterThanOrEqual(min);
+    expect(list.length).toBeLessThanOrEqual(max);
+  };
+
+  it("have unique ids", () => {
+    expect(unique(themes.map((theme) => theme.id))).toBe(true);
+  });
+
+  it("keep each list to its size", () => {
+    for (const theme of themes) {
+      within(theme.favouredTags, 2, 4);
+      within(theme.favouredColours, 1, 3);
+      within(theme.occasions, 2, 3);
+      within(theme.adjectives, 2, 4);
+      within(theme.worries, 2, 3);
+      within(theme.templates, 3, 4);
+    }
+  });
+
+  it("cover most style tags, including a rarely asked one", () => {
+    const covered = new Set<string>(themes.flatMap((theme) => theme.favouredTags));
+    expect(covered.size).toBeGreaterThanOrEqual(16);
+    expect(["Uncomfortable", "Casual", "Shimmering"].some((tag) => covered.has(tag))).toBe(true);
+  });
+});
+
 describe("opposing pairs", () => {
   it("lists the five hand-written pairs", () => {
     expect(dataV1.opposingPairs).toEqual([

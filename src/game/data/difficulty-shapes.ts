@@ -39,6 +39,7 @@ export interface DifficultyShape {
   limits: readonly { types: readonly ShapeDirectionType[]; min: number; max: number }[];
   pairs: PairRule;
   pullApartChance?: number;
+  ignoreTheme?: true;
 }
 
 const avoids = [
@@ -123,6 +124,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["style"], min: 2, max: 4 },
     ],
     pairs: "oneStylePair",
+    ignoreTheme: true,
   },
 };
 
@@ -186,6 +188,7 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["style"], min: 2, max: 4 },
     ],
     pairs: "oneStylePair",
+    ignoreTheme: true,
   },
 };
 
