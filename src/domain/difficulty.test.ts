@@ -4,18 +4,20 @@ import { placedDirections } from "./challenge";
 import { findConflicts } from "./contradictions";
 import type { Direction } from "./direction";
 import { AT_LEAST_TYPES, AVOID_TYPES, shapeFor, type Difficulty } from "./difficulty";
-import { generate } from "./generate";
+import { drawDirection, generate } from "./generate";
 import { deriveSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
 
 const difficulties: Difficulty[] = ["easy", "medium", "hard", "chaos"];
-const maxEmptyShare: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0.01, chaos: 0.01 };
+const maxEmptyShare: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0.005, chaos: 0.01 };
 
 const neverTogether = [
   ["colourOnly", "colourAvoid"],
   ["colourOnly", "coloursMin"],
   ["fabricsOnly", "fabricAvoid"],
   ["fabricsOnly", "fabricsMin"],
+  ["coloursMin", "coloursMin"],
+  ["fabricsMin", "fabricsMin"],
 ] as const;
 
 const samples = Array.from({ length: 400 }, (_, i) => deriveSeed("difficulty-sample", i));
@@ -73,7 +75,8 @@ describe.each(difficulties)("%s", (difficulty) => {
     for (const seed of samples) {
       const { plan } = generate(input(seed, difficulty));
       for (const [a, b] of neverTogether) {
-        expect(plan.includes(a) && plan.includes(b)).toBe(false);
+        if (a === b) expect(countIn(plan, [a])).toBeLessThanOrEqual(1);
+        else expect(plan.includes(a) && plan.includes(b)).toBe(false);
       }
     }
   });
@@ -215,6 +218,31 @@ describe.each(["hard", "chaos"] as const)("reroll and rebuild on %s", (difficult
       }
       expect(rebuild({ ...input(seed, difficulty), history })).toEqual(live);
       expect(live.plan).toEqual(start.plan);
+    }
+  });
+});
+
+describe("a colour or fabric beside an only list", () => {
+  const draw = (plan: "colour" | "fabric", other: Direction, seed: string) =>
+    drawDirection({
+      seed,
+      plan: [plan],
+      slot: 0,
+      rerollCount: 0,
+      others: [other],
+      data: dataV1,
+    });
+
+  it("always fills from the list", () => {
+    for (const seed of samples) {
+      expect(draw("colour", { type: "colourOnly", colours: ["Red"] }, seed)).toEqual({
+        type: "colour",
+        colour: "Red",
+      });
+      expect(draw("fabric", { type: "fabricsOnly", fabrics: ["Wool"] }, seed)).toEqual({
+        type: "fabric",
+        fabric: "Wool",
+      });
     }
   });
 });

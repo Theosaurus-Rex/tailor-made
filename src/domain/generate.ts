@@ -42,7 +42,14 @@ function someOf<T>(random: Random, items: readonly T[], count: number): T[] {
   return chosen;
 }
 
-function drawCandidate(type: PlannedType, random: Random, data: GameData): Direction {
+function drawCandidate(
+  type: PlannedType,
+  random: Random,
+  data: GameData,
+  others: readonly Direction[],
+): Direction {
+  const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
+  const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
   const generalFabrics = data.fabricTypes.filter(
     (fabric) => !data.fabrics[fabric].modifierOnly,
   ) as GeneralFabric[];
@@ -60,6 +67,7 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
     case "styleAvoid":
       return { type, tag: tag() };
     case "fabric":
+      return { type, fabric: random.pick(onlyFabrics ?? generalFabrics) };
     case "fabricAvoid":
       return { type, fabric: random.pick(generalFabrics) };
     case "fabricsOnly":
@@ -68,6 +76,7 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
     case "coloursMin":
       return { type, count: random.between(FABRICS_MIN_RANGE.min, FABRICS_MIN_RANGE.max) };
     case "colour":
+      return { type, colour: random.pick(onlyColours ?? data.colours) };
     case "colourAvoid":
       return { type, colour: random.pick(data.colours) };
     case "colourOnly":
@@ -136,7 +145,7 @@ export function drawDirection({
   if (type === undefined) throw new RangeError(`slot ${slot} is not in the plan`);
   const random = randomFromSeed(deriveSeed(seed, "direction", slot, rerollCount));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(type, random, data);
+    const candidate = drawCandidate(type, random, data, others);
     if (!conflictsWithAny(candidate, others, { data })) return candidate;
   }
   return null;

@@ -108,4 +108,6 @@ export const kindsNeverTogether = [
   ["colourOnly", "coloursMin"],
   ["fabricsOnly", "fabricAvoid"],
   ["fabricsOnly", "fabricsMin"],
+  ["coloursMin", "coloursMin"],
+  ["fabricsMin", "fabricsMin"],
 ] as const satisfies readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];
