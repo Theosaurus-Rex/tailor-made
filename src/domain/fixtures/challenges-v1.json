@@ -11,11 +11,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colour",
-        "style",
-        "colour"
-      ],
+      "plan": ["colour", "style", "colour"],
       "history": [],
       "directions": [
         {
@@ -64,16 +60,9 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessory", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -130,12 +119,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "style",
-        "accessoryMin",
-        "accessory"
-      ],
+      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
         {
@@ -193,17 +177,9 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "style",
-        "accessoryMin",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "style", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
         {
@@ -269,13 +245,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessory",
-        "accessoryMin",
-        "style",
-        "fabricsMin",
-        "style"
-      ],
+      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
       "history": [],
       "directions": [
         {
@@ -341,18 +311,9 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "styleAvoid",
-        "accessoryAvoid",
-        "style",
-        "accessoryMin",
-        "style"
-      ],
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
@@ -426,14 +387,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "accessoryExact",
-        "accessory",
-        "fabricsOnly",
-        "fabric",
-        "style"
-      ],
+      "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
       "history": [],
       "directions": [
         {
@@ -451,10 +405,7 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Velvet",
-            "Cotton"
-          ]
+          "fabrics": ["Velvet", "Cotton"]
         },
         {
           "type": "fabric",
@@ -465,10 +416,7 @@
           "tag": "Formal"
         }
       ],
-      "pairSlots": [
-        0,
-        5
-      ],
+      "pairSlots": [0, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -513,9 +461,7 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -557,10 +503,7 @@
           "tag": "Elegant"
         }
       ],
-      "pairSlots": [
-        1,
-        2
-      ],
+      "pairSlots": [1, 2],
       "pullApartSlot": null
     },
     "client": {
@@ -610,10 +553,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colour",
-        "fabric"
-      ],
+      "plan": ["colour", "fabric"],
       "history": [],
       "directions": [
         {
@@ -654,15 +594,9 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessory"],
       "history": [],
       "directions": [
         {
@@ -711,11 +645,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "colour",
-        "coloursMin"
-      ],
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
       "history": [],
       "directions": [
         {
@@ -764,16 +694,9 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -831,12 +754,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryMin",
-        "accessoryAvoid",
-        "accessory",
-        "styleAvoid"
-      ],
+      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
       "history": [],
       "directions": [
         {
@@ -894,17 +812,9 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "accessoryAvoid",
-        "accessory",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
         {
@@ -969,20 +879,12 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabricsOnly",
-        "style",
-        "accessoryMin",
-        "style",
-        "accessoryExact"
-      ],
+      "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Silk"
-          ]
+          "fabrics": ["Silk"]
         },
         {
           "type": "style",
@@ -1003,10 +905,7 @@
           "count": 6
         }
       ],
-      "pairSlots": [
-        1,
-        3
-      ],
+      "pairSlots": [1, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -1047,18 +946,9 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryExact",
-        "styleAvoid",
-        "accessoryExact",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryExact", "styleAvoid", "accessoryExact", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -1087,10 +977,7 @@
           "tag": "Gothic"
         }
       ],
-      "pairSlots": [
-        4,
-        5
-      ],
+      "pairSlots": [4, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -1136,11 +1023,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colour",
-        "style"
-      ],
+      "plan": ["style", "colour", "style"],
       "history": [],
       "directions": [
         {
@@ -1189,16 +1072,9 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "style", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -1255,12 +1131,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "accessory",
-        "accessoryMin",
-        "accessoryAvoid"
-      ],
+      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
         {
@@ -1318,17 +1189,9 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory",
-        "accessoryMin",
-        "accessoryAvoid"
-      ],
+      "plan": ["burlapOnly", "style", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
         {
@@ -1394,13 +1257,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "fabric",
-        "style",
-        "coloursMin",
-        "fabric"
-      ],
+      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
       "history": [],
       "directions": [
         {
@@ -1465,18 +1322,9 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "style",
-        "style",
-        "accessoryAvoid",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -1550,14 +1398,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colour",
-        "fabricsOnly",
-        "style",
-        "fabric",
-        "style",
-        "accessoryExact"
-      ],
+      "plan": ["colour", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -1566,11 +1407,7 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Wool",
-            "Sequin",
-            "Lace"
-          ]
+          "fabrics": ["Wool", "Sequin", "Lace"]
         },
         {
           "type": "style",
@@ -1590,10 +1427,7 @@
           "count": 6
         }
       ],
-      "pairSlots": [
-        2,
-        4
-      ],
+      "pairSlots": [2, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -1638,9 +1472,7 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -1683,10 +1515,7 @@
           "tag": "Simple"
         }
       ],
-      "pairSlots": [
-        3,
-        6
-      ],
+      "pairSlots": [3, 6],
       "pullApartSlot": null
     },
     "client": {
@@ -1736,10 +1565,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "colour"
-      ],
+      "plan": ["fabric", "colour"],
       "history": [],
       "directions": [
         {
@@ -1780,15 +1606,9 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -1837,11 +1657,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabricAvoid",
-        "fabric",
-        "fabricsMin"
-      ],
+      "plan": ["fabricAvoid", "fabric", "fabricsMin"],
       "history": [],
       "directions": [
         {
@@ -1890,16 +1706,9 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -1957,12 +1766,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessory",
-        "colourAvoid",
-        "accessory",
-        "colour"
-      ],
+      "plan": ["accessory", "colourAvoid", "accessory", "colour"],
       "history": [],
       "directions": [
         {
@@ -2019,17 +1823,9 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessoryAvoid",
-        "accessory",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
         {
@@ -2094,20 +1890,12 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colourOnly",
-        "accessoryExact",
-        "style",
-        "style",
-        "fabricsMin"
-      ],
+      "plan": ["colourOnly", "accessoryExact", "style", "style", "fabricsMin"],
       "history": [],
       "directions": [
         {
           "type": "colourOnly",
-          "colours": [
-            "Orange"
-          ]
+          "colours": ["Orange"]
         },
         {
           "type": "accessoryExact",
@@ -2127,10 +1915,7 @@
           "count": 2
         }
       ],
-      "pairSlots": [
-        2,
-        3
-      ],
+      "pairSlots": [2, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -2171,18 +1956,9 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryExact",
-        "style",
-        "style",
-        "accessory",
-        "accessoryExact"
-      ],
+      "plan": ["burlapOnly", "accessoryExact", "style", "style", "accessory", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -2211,10 +1987,7 @@
           "count": 4
         }
       ],
-      "pairSlots": [
-        2,
-        3
-      ],
+      "pairSlots": [2, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -2260,10 +2033,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "style"
-      ],
+      "plan": ["fabric", "style"],
       "history": [],
       "directions": [
         {
@@ -2304,15 +2074,9 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -2361,11 +2125,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessory",
-        "accessoryMin",
-        "colourAvoid"
-      ],
+      "plan": ["accessory", "accessoryMin", "colourAvoid"],
       "history": [],
       "directions": [
         {
@@ -2415,16 +2175,9 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessoryMin",
-        "accessoryAvoid"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
         {
@@ -2482,12 +2235,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "coloursMin",
-        "fabricAvoid",
-        "style",
-        "style"
-      ],
+      "plan": ["coloursMin", "fabricAvoid", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -2544,17 +2292,9 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "styleAvoid",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "styleAvoid", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -2620,13 +2360,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryMin",
-        "style",
-        "fabricsOnly",
-        "accessoryExact",
-        "style"
-      ],
+      "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -2640,9 +2374,7 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Sequin"
-          ]
+          "fabrics": ["Sequin"]
         },
         {
           "type": "accessoryExact",
@@ -2654,10 +2386,7 @@
           "tag": "Elaborate"
         }
       ],
-      "pairSlots": [
-        1,
-        4
-      ],
+      "pairSlots": [1, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -2698,18 +2427,9 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryExact",
-        "style",
-        "accessoryExact",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryExact", "style", "accessoryExact", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -2738,10 +2458,7 @@
           "tag": "Workwear"
         }
       ],
-      "pairSlots": [
-        2,
-        4
-      ],
+      "pairSlots": [2, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -2787,10 +2504,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "style"
-      ],
+      "plan": ["fabric", "style"],
       "history": [],
       "directions": [
         {
@@ -2831,15 +2545,9 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -2888,11 +2596,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "coloursMin",
-        "style",
-        "fabricAvoid"
-      ],
+      "plan": ["coloursMin", "style", "fabricAvoid"],
       "history": [],
       "directions": [
         {
@@ -2941,16 +2645,9 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "style",
-        "styleAvoid"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "style", "styleAvoid"],
       "history": [],
       "directions": [
         {
@@ -3008,12 +2705,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "style",
-        "fabric",
-        "accessory"
-      ],
+      "plan": ["fabric", "style", "fabric", "accessory"],
       "history": [],
       "directions": [
         {
@@ -3070,17 +2762,9 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "style",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessory", "style", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -3145,13 +2829,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colourOnly",
-        "accessoryExact",
-        "fabric",
-        "style"
-      ],
+      "plan": ["style", "colourOnly", "accessoryExact", "fabric", "style"],
       "history": [],
       "directions": [
         {
@@ -3160,11 +2838,7 @@
         },
         {
           "type": "colourOnly",
-          "colours": [
-            "Orange",
-            "Grey",
-            "Blue"
-          ]
+          "colours": ["Orange", "Grey", "Blue"]
         },
         {
           "type": "accessoryExact",
@@ -3180,10 +2854,7 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [
-        0,
-        4
-      ],
+      "pairSlots": [0, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -3224,18 +2895,9 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessoryExact",
-        "style",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -3263,10 +2925,7 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [
-        3,
-        5
-      ],
+      "pairSlots": [3, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -3312,11 +2971,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "colour",
-        "style"
-      ],
+      "plan": ["fabric", "colour", "style"],
       "history": [],
       "directions": [
         {
@@ -3365,16 +3020,9 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -3431,12 +3079,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colourAvoid",
-        "colour",
-        "fabricsMin",
-        "style"
-      ],
+      "plan": ["colourAvoid", "colour", "fabricsMin", "style"],
       "history": [],
       "directions": [
         {
@@ -3493,17 +3136,9 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "accessory",
-        "accessoryMin",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
@@ -3569,13 +3204,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colour",
-        "coloursMin",
-        "accessory",
-        "accessoryAvoid",
-        "style"
-      ],
+      "plan": ["colour", "coloursMin", "accessory", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -3640,18 +3269,9 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessoryMin",
-        "accessory",
-        "accessoryMin",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
@@ -3726,14 +3346,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colour",
-        "accessoryExact",
-        "style",
-        "fabricsOnly",
-        "colour"
-      ],
+      "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "colour"],
       "history": [],
       "directions": [
         {
@@ -3755,21 +3368,14 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Linen",
-            "Velvet",
-            "Sequin"
-          ]
+          "fabrics": ["Linen", "Velvet", "Sequin"]
         },
         {
           "type": "colour",
           "colour": "Yellow"
         }
       ],
-      "pairSlots": [
-        0,
-        3
-      ],
+      "pairSlots": [0, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -3814,9 +3420,7 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -3859,10 +3463,7 @@
           "accessory": "Flower"
         }
       ],
-      "pairSlots": [
-        3,
-        4
-      ],
+      "pairSlots": [3, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -3912,10 +3513,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "fabric"
-      ],
+      "plan": ["style", "fabric"],
       "history": [],
       "directions": [
         {
@@ -3956,15 +3554,9 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -4013,11 +3605,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryMin",
-        "fabricAvoid",
-        "style"
-      ],
+      "plan": ["accessoryMin", "fabricAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -4067,16 +3655,9 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "accessoryAvoid",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -4134,12 +3715,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "accessoryAvoid",
-        "fabric",
-        "colour"
-      ],
+      "plan": ["style", "accessoryAvoid", "fabric", "colour"],
       "history": [],
       "directions": [
         {
@@ -4196,17 +3772,9 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessoryAvoid",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "style", "accessoryAvoid", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -4271,13 +3839,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colourOnly",
-        "style",
-        "accessoryExact",
-        "style"
-      ],
+      "plan": ["style", "colourOnly", "style", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -4286,10 +3848,7 @@
         },
         {
           "type": "colourOnly",
-          "colours": [
-            "Green",
-            "Grey"
-          ]
+          "colours": ["Green", "Grey"]
         },
         {
           "type": "style",
@@ -4305,10 +3864,7 @@
           "tag": "Elegant"
         }
       ],
-      "pairSlots": [
-        0,
-        2
-      ],
+      "pairSlots": [0, 2],
       "pullApartSlot": null
     },
     "client": {
@@ -4349,18 +3905,9 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "accessoryExact",
-        "style",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "accessoryExact", "style", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -4389,10 +3936,7 @@
           "tag": "Workwear"
         }
       ],
-      "pairSlots": [
-        3,
-        4
-      ],
+      "pairSlots": [3, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -4438,10 +3982,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "style"
-      ],
+      "plan": ["fabric", "style"],
       "history": [],
       "directions": [
         {
@@ -4482,15 +4023,9 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -4539,11 +4074,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryMin",
-        "colourAvoid",
-        "colour"
-      ],
+      "plan": ["accessoryMin", "colourAvoid", "colour"],
       "history": [],
       "directions": [
         {
@@ -4593,16 +4124,9 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "accessoryAvoid",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "accessory"],
       "history": [],
       "directions": [
         {
@@ -4660,12 +4184,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colourAvoid",
-        "accessory",
-        "styleAvoid",
-        "fabric"
-      ],
+      "plan": ["colourAvoid", "accessory", "styleAvoid", "fabric"],
       "history": [],
       "directions": [
         {
@@ -4722,17 +4241,9 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "styleAvoid",
-        "accessoryAvoid",
-        "accessory",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
         {
@@ -4797,22 +4308,12 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabricsOnly",
-        "style",
-        "colour",
-        "style",
-        "accessoryExact"
-      ],
+      "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Lace",
-            "Cotton",
-            "Wool"
-          ]
+          "fabrics": ["Lace", "Cotton", "Wool"]
         },
         {
           "type": "style",
@@ -4832,10 +4333,7 @@
           "count": 7
         }
       ],
-      "pairSlots": [
-        1,
-        3
-      ],
+      "pairSlots": [1, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -4876,18 +4374,9 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryExact",
-        "style",
-        "accessory",
-        "accessoryMin",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryExact", "style", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
@@ -4916,10 +4405,7 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [
-        2,
-        5
-      ],
+      "pairSlots": [2, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -4965,10 +4451,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "style"
-      ],
+      "plan": ["style", "style"],
       "history": [],
       "directions": [
         {
@@ -5009,15 +4492,9 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -5066,11 +4543,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabricAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["fabricAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -5120,16 +4593,9 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "styleAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -5187,12 +4653,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "coloursMin",
-        "fabric",
-        "style",
-        "colour"
-      ],
+      "plan": ["coloursMin", "fabric", "style", "colour"],
       "history": [],
       "directions": [
         {
@@ -5249,17 +4710,9 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "accessory",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -5325,13 +4778,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "style",
-        "colourOnly",
-        "accessoryMin",
-        "accessoryExact"
-      ],
+      "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -5344,9 +4791,7 @@
         },
         {
           "type": "colourOnly",
-          "colours": [
-            "Brown"
-          ]
+          "colours": ["Brown"]
         },
         {
           "type": "accessoryMin",
@@ -5359,10 +4804,7 @@
           "count": 3
         }
       ],
-      "pairSlots": [
-        0,
-        1
-      ],
+      "pairSlots": [0, 1],
       "pullApartSlot": null
     },
     "client": {
@@ -5403,18 +4845,9 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory",
-        "accessoryExact",
-        "accessoryExact",
-        "style"
-      ],
+      "plan": ["burlapOnly", "style", "accessory", "accessoryExact", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -5443,10 +4876,7 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [
-        1,
-        5
-      ],
+      "pairSlots": [1, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -5492,10 +4922,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colour",
-        "fabric"
-      ],
+      "plan": ["colour", "fabric"],
       "history": [],
       "directions": [
         {
@@ -5536,15 +4963,9 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessory"],
       "history": [],
       "directions": [
         {
@@ -5593,11 +5014,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "colour",
-        "coloursMin"
-      ],
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
       "history": [],
       "directions": [
         {
@@ -5646,16 +5063,9 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -5713,12 +5123,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabricAvoid",
-        "accessoryAvoid",
-        "accessoryMin",
-        "colour"
-      ],
+      "plan": ["fabricAvoid", "accessoryAvoid", "accessoryMin", "colour"],
       "history": [],
       "directions": [
         {
@@ -5776,17 +5181,9 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "styleAvoid",
-        "accessoryAvoid",
-        "accessoryMin",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
         {
@@ -5852,13 +5249,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "fabricsOnly",
-        "colourAvoid",
-        "accessoryExact",
-        "style"
-      ],
+      "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -5867,11 +5258,7 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Silk",
-            "Linen",
-            "Cotton"
-          ]
+          "fabrics": ["Silk", "Linen", "Cotton"]
         },
         {
           "type": "colourAvoid",
@@ -5887,10 +5274,7 @@
           "tag": "Warm"
         }
       ],
-      "pairSlots": [
-        0,
-        4
-      ],
+      "pairSlots": [0, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -5931,18 +5315,9 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessoryExact",
-        "accessoryMin",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "style", "accessoryExact", "accessoryMin", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -5971,10 +5346,7 @@
           "accessory": "Bow"
         }
       ],
-      "pairSlots": [
-        1,
-        4
-      ],
+      "pairSlots": [1, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -6020,10 +5392,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "style"
-      ],
+      "plan": ["style", "style"],
       "history": [],
       "directions": [
         {
@@ -6064,15 +5433,9 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "style"
-      ],
+      "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -6121,11 +5484,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "styleAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6175,16 +5534,9 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "styleAvoid",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6242,12 +5594,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "coloursMin",
-        "style",
-        "style",
-        "colour"
-      ],
+      "plan": ["coloursMin", "style", "style", "colour"],
       "history": [],
       "directions": [
         {
@@ -6304,17 +5651,9 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryMin",
-        "style",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -6380,21 +5719,12 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "colourOnly",
-        "accessoryMin",
-        "style",
-        "style",
-        "accessoryExact"
-      ],
+      "plan": ["colourOnly", "accessoryMin", "style", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
           "type": "colourOnly",
-          "colours": [
-            "Grey",
-            "Green"
-          ]
+          "colours": ["Grey", "Green"]
         },
         {
           "type": "accessoryMin",
@@ -6415,10 +5745,7 @@
           "count": 4
         }
       ],
-      "pairSlots": [
-        2,
-        3
-      ],
+      "pairSlots": [2, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -6459,18 +5786,9 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessoryExact",
-        "accessoryExact",
-        "style",
-        "accessory",
-        "style"
-      ],
+      "plan": ["burlapOnly", "accessoryExact", "accessoryExact", "style", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -6499,10 +5817,7 @@
           "tag": "Elaborate"
         }
       ],
-      "pairSlots": [
-        3,
-        5
-      ],
+      "pairSlots": [3, 5],
       "pullApartSlot": null
     },
     "client": {
@@ -6548,10 +5863,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colour"
-      ],
+      "plan": ["style", "colour"],
       "history": [],
       "directions": [
         {
@@ -6592,15 +5904,9 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "easy",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory"
-      ],
+      "plan": ["burlapOnly", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -6649,11 +5955,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "fabric",
-        "accessoryAvoid",
-        "accessoryMin"
-      ],
+      "plan": ["fabric", "accessoryAvoid", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6703,16 +6005,9 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "medium",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "accessory",
-        "accessoryAvoid",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6770,12 +6065,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "colour",
-        "colour",
-        "colourOnly"
-      ],
+      "plan": ["style", "colour", "colour", "colourOnly"],
       "history": [],
       "directions": [
         {
@@ -6792,10 +6082,7 @@
         },
         {
           "type": "colourOnly",
-          "colours": [
-            "Blue",
-            "Purple"
-          ]
+          "colours": ["Blue", "Purple"]
         }
       ],
       "pairSlots": null,
@@ -6835,17 +6122,9 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "hard",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory",
-        "accessory",
-        "accessoryMin"
-      ],
+      "plan": ["burlapOnly", "style", "accessory", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6911,13 +6190,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "fabric",
-        "style",
-        "accessoryExact",
-        "fabricsOnly"
-      ],
+      "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
       "history": [],
       "directions": [
         {
@@ -6939,16 +6212,10 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": [
-            "Lace",
-            "Velvet"
-          ]
+          "fabrics": ["Lace", "Velvet"]
         }
       ],
-      "pairSlots": [
-        0,
-        2
-      ],
+      "pairSlots": [0, 2],
       "pullApartSlot": null
     },
     "client": {
@@ -6989,18 +6256,9 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "chaos",
-      "modifiers": [
-        "burlap"
-      ],
+      "modifiers": ["burlap"],
       "dataVersion": 1,
-      "plan": [
-        "burlapOnly",
-        "style",
-        "accessory",
-        "accessory",
-        "style",
-        "accessoryExact"
-      ],
+      "plan": ["burlapOnly", "style", "accessory", "accessory", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -7028,10 +6286,7 @@
           "count": 7
         }
       ],
-      "pairSlots": [
-        1,
-        4
-      ],
+      "pairSlots": [1, 4],
       "pullApartSlot": null
     },
     "client": {
@@ -7070,28 +6325,15 @@
       "seed": "k7m2qx9a",
       "difficulty": "medium",
       "burlap": false,
-      "history": [
-        0,
-        1,
-        0
-      ]
+      "history": [0, 1, 0]
     },
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "style",
-        "accessoryMin",
-        "accessory"
-      ],
-      "history": [
-        0,
-        1,
-        0
-      ],
+      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "history": [0, 1, 0],
       "directions": [
         {
           "type": "accessoryAvoid",
@@ -7143,27 +6385,15 @@
       "seed": "23456789",
       "difficulty": "medium",
       "burlap": false,
-      "history": [
-        2,
-        1,
-        2
-      ]
+      "history": [2, 1, 2]
     },
     "challenge": {
       "seed": "23456789",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "colour",
-        "coloursMin"
-      ],
-      "history": [
-        2,
-        1,
-        2
-      ],
+      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "history": [2, 1, 2],
       "directions": [
         {
           "type": "accessoryAvoid",
@@ -7206,30 +6436,15 @@
       "seed": "zzzzzzzz",
       "difficulty": "medium",
       "burlap": false,
-      "history": [
-        1,
-        0,
-        1,
-        0
-      ]
+      "history": [1, 0, 1, 0]
     },
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "style",
-        "accessory",
-        "accessoryMin",
-        "accessoryAvoid"
-      ],
-      "history": [
-        1,
-        0,
-        1,
-        0
-      ],
+      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "history": [1, 0, 1, 0],
       "directions": [
         {
           "type": "style",
@@ -7281,29 +6496,15 @@
       "seed": "k7m2qx9a",
       "difficulty": "hard",
       "burlap": false,
-      "history": [
-        0,
-        1,
-        0
-      ]
+      "history": [0, 1, 0]
     },
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessory",
-        "accessoryMin",
-        "style",
-        "fabricsMin",
-        "style"
-      ],
-      "history": [
-        0,
-        1,
-        0
-      ],
+      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
+      "history": [0, 1, 0],
       "directions": [
         {
           "type": "accessory",
@@ -7363,28 +6564,15 @@
       "seed": "23456789",
       "difficulty": "hard",
       "burlap": false,
-      "history": [
-        2,
-        1,
-        2
-      ]
+      "history": [2, 1, 2]
     },
     "challenge": {
       "seed": "23456789",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryMin",
-        "accessoryAvoid",
-        "accessory",
-        "styleAvoid"
-      ],
-      "history": [
-        2,
-        1,
-        2
-      ],
+      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
+      "history": [2, 1, 2],
       "directions": [
         {
           "type": "accessoryMin",
@@ -7436,31 +6624,15 @@
       "seed": "zzzzzzzz",
       "difficulty": "hard",
       "burlap": false,
-      "history": [
-        1,
-        0,
-        1,
-        0
-      ]
+      "history": [1, 0, 1, 0]
     },
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": [
-        "accessoryAvoid",
-        "fabric",
-        "style",
-        "coloursMin",
-        "fabric"
-      ],
-      "history": [
-        1,
-        0,
-        1,
-        0
-      ],
+      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "history": [1, 0, 1, 0],
       "directions": [
         {
           "type": "accessoryAvoid",
