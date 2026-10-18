@@ -11,7 +11,11 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colour", "style", "colour"],
+      "plan": [
+        "colour",
+        "style",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -33,20 +37,20 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Orange",
-        "client": "Oh, orange, darling! I'm glowing at the thought."
+        "client": "Orange. That's it."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "Blue",
-        "client": "Oh, blue, darling! I'm glowing at the thought."
+        "client": "Blue. That's it."
       }
     ]
   },
@@ -60,9 +64,16 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -87,7 +98,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -95,15 +106,15 @@
       },
       {
         "short": "Trim",
-        "client": "Oh, trim! Add as many as you like, darling."
+        "client": "Trim. Keep it tidy."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -119,7 +130,12 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "plan": [
+        "accessoryAvoid",
+        "style",
+        "accessoryMin",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -146,24 +162,24 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "No feathers",
-        "client": "Oh, no feathers, darling! They make me sneeze terribly."
+        "client": "No feathers."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "At least 4 bells",
-        "client": "Oh, four bells at the very least, darling!"
+        "client": "At least four bells."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -177,9 +193,17 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "style", "accessoryMin", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "style",
+        "accessoryMin",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -209,7 +233,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -217,19 +241,19 @@
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 7 brooches",
-        "client": "Please, at least seven brooches, dear! Oh, the joy."
+        "client": "Seven brooches, minimum. Thanks."
       },
       {
         "short": "Appliqués",
-        "client": "Do add appliqués, dear. What a treat!"
+        "client": "Add appliqués."
       }
     ]
   },
@@ -245,7 +269,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
+      "plan": [
+        "accessory",
+        "accessoryMin",
+        "style",
+        "fabricsMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -276,28 +306,28 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Feathers",
-        "client": "Oh, feathers! Add as many as you like, darling."
+        "client": "Feathers. Keep it tidy."
       },
       {
         "short": "At least 3 tassels",
-        "client": "Oh, three tassels at the very least, darling!"
+        "client": "At least three tassels."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 3 fabrics",
-        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+        "client": "Three fabrics, minimum. Thanks."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       }
     ]
   },
@@ -311,9 +341,18 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessoryAvoid",
+        "style",
+        "accessoryMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -347,7 +386,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -355,23 +394,23 @@
       },
       {
         "short": "Not warm",
-        "client": "Oh, not warm, darling. I couldn't bear it."
+        "client": "Not warm."
       },
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells."
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear, please! I can't wait to see it."
+        "client": "Go eveningwear. Keep it practical."
       },
       {
         "short": "At least 6 appliqués",
-        "client": "Please, at least six appliqués, dear! Oh, the joy."
+        "client": "Six appliqués, minimum. Thanks."
       },
       {
         "short": "Cute",
-        "client": "I'm dreaming of cute, darling. Truly dreaming."
+        "client": "Make it cute."
       }
     ]
   },
@@ -387,7 +426,14 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
+      "plan": [
+        "style",
+        "accessoryExact",
+        "accessory",
+        "fabricsOnly",
+        "fabric",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -405,7 +451,10 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Velvet", "Cotton"]
+          "fabrics": [
+            "Velvet",
+            "Cotton"
+          ]
         },
         {
           "type": "fabric",
@@ -416,38 +465,41 @@
           "tag": "Formal"
         }
       ],
-      "pairSlots": [0, 5],
+      "pairSlots": [
+        0,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Casual",
-        "client": "I'm dreaming of casual, darling. Truly dreaming."
+        "client": "Make it casual."
       },
       {
         "short": "Exactly 3 tassels",
-        "client": "Exactly three tassels, darling. Perfection!"
+        "client": "Exactly three tassels."
       },
       {
         "short": "Bells",
-        "client": "Oh, bells! Add as many as you like, darling."
+        "client": "Bells. Keep it tidy."
       },
       {
         "short": "Only velvet and cotton",
-        "client": "Just velvet or cotton, dear. Only those, and I'll be delighted."
+        "client": "Nothing but velvet or cotton. That's all."
       },
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, please. Thanks."
       },
       {
         "short": "Formal",
-        "client": "I'm dreaming of formal, darling. Truly dreaming."
+        "client": "Make it formal."
       }
     ]
   },
@@ -461,7 +513,9 @@
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -503,13 +557,16 @@
           "tag": "Elegant"
         }
       ],
-      "pairSlots": [1, 2],
+      "pairSlots": [
+        1,
+        2
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -517,27 +574,27 @@
       },
       {
         "short": "Casual",
-        "client": "Oh, casual! That's exactly what I'm after, darling."
+        "client": "Casual. No fuss."
       },
       {
         "short": "Formal",
-        "client": "I'm dreaming of formal, darling. Truly dreaming."
+        "client": "Make it formal."
       },
       {
         "short": "No buttons",
-        "client": "Please keep the buttons away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the buttons."
       },
       {
         "short": "Exactly 6 appliqués",
-        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Six appliqués. No more, no fewer."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "Flowers. Keep it tidy."
       },
       {
         "short": "Elegant",
-        "client": "Oh, elegant, please! I can't wait to see it."
+        "client": "Go elegant. Keep it practical."
       }
     ]
   },
@@ -553,7 +610,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colour", "fabric"],
+      "plan": [
+        "colour",
+        "fabric"
+      ],
       "history": [],
       "directions": [
         {
@@ -571,16 +631,16 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Black",
-        "client": "Oh, black, darling! I'm glowing at the thought."
+        "client": "Black, naturally. It has always suited me."
       },
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, naturally. I could not possibly wear anything else."
       }
     ]
   },
@@ -594,9 +654,15 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -617,7 +683,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -625,11 +691,11 @@
       },
       {
         "short": "Tassels",
-        "client": "Do add tassels, dear. What a treat!"
+        "client": "One expects tassels. It is a matter of form."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       }
     ]
   },
@@ -645,7 +711,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "plan": [
+        "accessoryAvoid",
+        "colour",
+        "coloursMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -667,20 +737,20 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "White",
-        "client": "Make it white, dear! It's my favourite today."
+        "client": "One expects white. I have worn it for years."
       },
       {
         "short": "At least 3 colours",
-        "client": "Oh, at least three colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least three, I think."
       }
     ]
   },
@@ -694,9 +764,16 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -722,7 +799,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -730,15 +807,15 @@
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
         "short": "At least 6 buttons",
-        "client": "Oh, six buttons at the very least, darling!"
+        "client": "I shall require at least six buttons. A lady must be noticed."
       }
     ]
   },
@@ -754,7 +831,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
+      "plan": [
+        "accessoryMin",
+        "accessoryAvoid",
+        "accessory",
+        "styleAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -781,24 +863,24 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 6 appliqués",
-        "client": "Oh, six appliqués at the very least, darling!"
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
         "short": "Not gothic",
-        "client": "Oh, not gothic, darling. I couldn't bear it."
+        "client": "One cannot abide gothic. Kindly avoid it."
       }
     ]
   },
@@ -812,9 +894,17 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "accessoryAvoid",
+        "accessory",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -843,7 +933,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -851,19 +941,19 @@
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "No flowers",
-        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+        "client": "No flowers, please. It is not for me."
       },
       {
         "short": "Jewels",
-        "client": "Oh, jewels! Add as many as you like, darling."
+        "client": "A touch of jewels, I think. Tastefully, of course."
       },
       {
         "short": "Appliqués",
-        "client": "Do add appliqués, dear. What a treat!"
+        "client": "One expects appliqués. It is a matter of form."
       }
     ]
   },
@@ -879,12 +969,20 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
+      "plan": [
+        "fabricsOnly",
+        "style",
+        "accessoryMin",
+        "style",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
           "type": "fabricsOnly",
-          "fabrics": ["Silk"]
+          "fabrics": [
+            "Silk"
+          ]
         },
         {
           "type": "style",
@@ -905,34 +1003,37 @@
           "count": 6
         }
       ],
-      "pairSlots": [1, 3],
+      "pairSlots": [
+        1,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Only silk",
-        "client": "Oh, nothing but silk, please, darling!"
+        "client": "One will accept only silk. I trust that is not too taxing."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute, please! I can't wait to see it."
+        "client": "I shall require cute. Do try to rise to it."
       },
       {
         "short": "At least 5 feathers",
-        "client": "Oh, five feathers at the very least, darling!"
+        "client": "I shall require at least five feathers. A lady must be noticed."
       },
       {
         "short": "Gothic",
-        "client": "Oh, something gothic, darling! Dark and dreamy."
+        "client": "Something gothic, I think. One does favour a little gloom."
       },
       {
         "short": "Exactly 6 appliqués",
-        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Six appliqués, precisely. I shall be counting."
       }
     ]
   },
@@ -946,9 +1047,18 @@
     "challenge": {
       "seed": "23456789",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryExact", "styleAvoid", "accessoryExact", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryExact",
+        "styleAvoid",
+        "accessoryExact",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -977,13 +1087,16 @@
           "tag": "Gothic"
         }
       ],
-      "pairSlots": [4, 5],
+      "pairSlots": [
+        4,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -991,23 +1104,23 @@
       },
       {
         "short": "Exactly 6 jewels",
-        "client": "Six jewels, dear, no more, no fewer. I just know it's right."
+        "client": "Six jewels, precisely. I shall be counting."
       },
       {
         "short": "Not romantic",
-        "client": "Oh, not romantic, darling. I couldn't bear it."
+        "client": "One cannot abide romantic. Kindly avoid it."
       },
       {
         "short": "Exactly 6 buttons",
-        "client": "Exactly six buttons, darling. Perfection!"
+        "client": "Exactly six buttons, no more, no fewer. One is particular."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute, please! I can't wait to see it."
+        "client": "I shall require cute. Do try to rise to it."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -1023,7 +1136,11 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colour", "style"],
+      "plan": [
+        "style",
+        "colour",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -1072,9 +1189,16 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -1131,7 +1255,12 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "plan": [
+        "style",
+        "accessory",
+        "accessoryMin",
+        "accessoryAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -1189,9 +1318,17 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory", "accessoryMin", "accessoryAvoid"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory",
+        "accessoryMin",
+        "accessoryAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -1257,7 +1394,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "plan": [
+        "accessoryAvoid",
+        "fabric",
+        "style",
+        "coloursMin",
+        "fabric"
+      ],
       "history": [],
       "directions": [
         {
@@ -1322,9 +1465,18 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessoryAvoid", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "style",
+        "style",
+        "accessoryAvoid",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -1398,7 +1550,14 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colour", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
+      "plan": [
+        "colour",
+        "fabricsOnly",
+        "style",
+        "fabric",
+        "style",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
@@ -1407,7 +1566,11 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Wool", "Sequin", "Lace"]
+          "fabrics": [
+            "Wool",
+            "Sequin",
+            "Lace"
+          ]
         },
         {
           "type": "style",
@@ -1427,7 +1590,10 @@
           "count": 6
         }
       ],
-      "pairSlots": [2, 4],
+      "pairSlots": [
+        2,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -1472,7 +1638,9 @@
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -1515,7 +1683,10 @@
           "tag": "Simple"
         }
       ],
-      "pairSlots": [3, 6],
+      "pairSlots": [
+        3,
+        6
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -1565,7 +1736,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "colour"],
+      "plan": [
+        "fabric",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -1606,9 +1780,15 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -1657,7 +1837,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabricAvoid", "fabric", "fabricsMin"],
+      "plan": [
+        "fabricAvoid",
+        "fabric",
+        "fabricsMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -1706,9 +1890,16 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -1766,7 +1957,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessory", "colourAvoid", "accessory", "colour"],
+      "plan": [
+        "accessory",
+        "colourAvoid",
+        "accessory",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -1823,9 +2019,17 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessory", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessoryAvoid",
+        "accessory",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -1890,12 +2094,20 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colourOnly", "accessoryExact", "style", "style", "fabricsMin"],
+      "plan": [
+        "colourOnly",
+        "accessoryExact",
+        "style",
+        "style",
+        "fabricsMin"
+      ],
       "history": [],
       "directions": [
         {
           "type": "colourOnly",
-          "colours": ["Orange"]
+          "colours": [
+            "Orange"
+          ]
         },
         {
           "type": "accessoryExact",
@@ -1915,7 +2127,10 @@
           "count": 2
         }
       ],
-      "pairSlots": [2, 3],
+      "pairSlots": [
+        2,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -1956,9 +2171,18 @@
     "challenge": {
       "seed": "hn4v8r2e",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryExact", "style", "style", "accessory", "accessoryExact"],
+      "plan": [
+        "burlapOnly",
+        "accessoryExact",
+        "style",
+        "style",
+        "accessory",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
@@ -1987,7 +2211,10 @@
           "count": 4
         }
       ],
-      "pairSlots": [2, 3],
+      "pairSlots": [
+        2,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -2033,7 +2260,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "style"],
+      "plan": [
+        "fabric",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2051,16 +2281,16 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, naturally. I could not possibly wear anything else."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -2074,9 +2304,15 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2097,7 +2333,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2105,11 +2341,11 @@
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That's exactly what I'm after, darling."
+        "client": "One expects cute. I trust that is clear."
       }
     ]
   },
@@ -2125,7 +2361,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessory", "accessoryMin", "colourAvoid"],
+      "plan": [
+        "accessory",
+        "accessoryMin",
+        "colourAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -2148,20 +2388,20 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Piping",
-        "client": "Do add piping, dear. What a treat!"
+        "client": "One expects piping. It is a matter of form."
       },
       {
         "short": "At least 4 feathers",
-        "client": "Please, at least four feathers, dear! Oh, the joy."
+        "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
         "short": "No black",
-        "client": "Oh, no black, darling! I'm feeling far too sunny."
+        "client": "No black, please. One is not in mourning today."
       }
     ]
   },
@@ -2175,9 +2415,16 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessoryAvoid"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessoryMin",
+        "accessoryAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -2203,7 +2450,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2211,15 +2458,15 @@
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       },
       {
         "short": "At least 5 appliqués",
-        "client": "Oh, five appliqués at the very least, darling!"
+        "client": "I shall require at least five appliqués. A lady must be noticed."
       },
       {
         "short": "No lace trim",
-        "client": "Please keep the lace trim away, dear. It's just not me, I'm afraid."
+        "client": "One finds lace trim rather tiresome. Leave it off."
       }
     ]
   },
@@ -2235,7 +2482,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["coloursMin", "fabricAvoid", "style", "style"],
+      "plan": [
+        "coloursMin",
+        "fabricAvoid",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2261,24 +2513,24 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 4 colours",
-        "client": "Colour, dear, colour! At the very least, four."
+        "client": "At least four colours, if you please. I do not do plain."
       },
       {
         "short": "No sequins",
-        "client": "Sequins, dear? Lovely on others, but not on me."
+        "client": "Sequins are for lesser occasions. Kindly leave them out."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That's exactly what I'm after, darling."
+        "client": "One expects cute. I trust that is clear."
       },
       {
         "short": "Professional",
-        "client": "Oh, professional, please! I can't wait to see it."
+        "client": "I shall require professional. Do try to rise to it."
       }
     ]
   },
@@ -2292,9 +2544,17 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "styleAvoid", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "styleAvoid",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2324,7 +2584,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2332,19 +2592,19 @@
       },
       {
         "short": "At least 4 feathers",
-        "client": "Please, at least four feathers, dear! Oh, the joy."
+        "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
         "short": "Not cute",
-        "client": "Oh, not cute, darling! I'm feeling far too grand today."
+        "client": "Nothing cute, please. One is not a kitten."
       },
       {
         "short": "Professional",
-        "client": "Oh, professional, please! I can't wait to see it."
+        "client": "I shall require professional. Do try to rise to it."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2360,7 +2620,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
+      "plan": [
+        "accessoryMin",
+        "style",
+        "fabricsOnly",
+        "accessoryExact",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2374,7 +2640,9 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Sequin"]
+          "fabrics": [
+            "Sequin"
+          ]
         },
         {
           "type": "accessoryExact",
@@ -2386,34 +2654,37 @@
           "tag": "Elaborate"
         }
       ],
-      "pairSlots": [1, 4],
+      "pairSlots": [
+        1,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 4 flowers",
-        "client": "Please, at least four flowers, dear! Oh, the joy."
+        "client": "At least four flowers, if you please. One does like to be seen."
       },
       {
         "short": "Simple",
-        "client": "I'm dreaming of simple, darling. Truly dreaming."
+        "client": "Make it simple. One has standards, after all."
       },
       {
         "short": "Only sequins",
-        "client": "Oh, nothing but sequins, please, darling!"
+        "client": "One will accept only sequins. I trust that is not too taxing."
       },
       {
         "short": "Exactly 3 appliqués",
-        "client": "Three appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Three appliqués, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2427,9 +2698,18 @@
     "challenge": {
       "seed": "b9c5d3fg",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryExact", "style", "accessoryExact", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryExact",
+        "style",
+        "accessoryExact",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2458,13 +2738,16 @@
           "tag": "Workwear"
         }
       ],
-      "pairSlots": [2, 4],
+      "pairSlots": [
+        2,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2472,23 +2755,23 @@
       },
       {
         "short": "Exactly 4 feathers",
-        "client": "Four feathers, dear, no more, no fewer. I just know it's right."
+        "client": "Four feathers, precisely. I shall be counting."
       },
       {
         "short": "Simple",
-        "client": "Oh, simple! That's exactly what I'm after, darling."
+        "client": "One expects simple. I trust that is clear."
       },
       {
         "short": "Exactly 7 flowers",
-        "client": "Seven flowers, dear, no more, no fewer. I just know it's right."
+        "client": "Seven flowers, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Workwear",
-        "client": "Oh, workwear! That's exactly what I'm after, darling."
+        "client": "One expects workwear. I trust that is clear."
       }
     ]
   },
@@ -2504,7 +2787,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "style"],
+      "plan": [
+        "fabric",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2522,16 +2808,16 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       }
     ]
   },
@@ -2545,9 +2831,15 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2568,7 +2860,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2576,11 +2868,11 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2596,7 +2888,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["coloursMin", "style", "fabricAvoid"],
+      "plan": [
+        "coloursMin",
+        "style",
+        "fabricAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -2618,20 +2914,20 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 3 colours",
-        "client": "Colour, dear, colour! At the very least, three."
+        "client": "At least three colours, if you please. I do not do plain."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       },
       {
         "short": "No lace",
-        "client": "Oh, no lace, darling. It just isn't me."
+        "client": "No lace, please. It is not done."
       }
     ]
   },
@@ -2645,9 +2941,16 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "style", "styleAvoid"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "style",
+        "styleAvoid"
+      ],
       "history": [],
       "directions": [
         {
@@ -2673,7 +2976,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2681,15 +2984,15 @@
       },
       {
         "short": "At least 5 flowers",
-        "client": "Please, at least five flowers, dear! Oh, the joy."
+        "client": "At least five flowers, if you please. One does like to be seen."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Not gothic",
-        "client": "Anything but gothic, my dear. Everything else is wonderful!"
+        "client": "Not gothic, I think. It would not be fitting."
       }
     ]
   },
@@ -2705,7 +3008,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "style", "fabric", "accessory"],
+      "plan": [
+        "fabric",
+        "style",
+        "fabric",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -2731,24 +3039,24 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       },
       {
         "short": "Lace",
-        "client": "Oh, lace! What a lovely idea, darling."
+        "client": "One expects lace. Nothing less will do."
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       }
     ]
   },
@@ -2762,9 +3070,17 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "style", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "style",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -2793,7 +3109,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2801,19 +3117,19 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
         "short": "Buttons",
-        "client": "Oh, buttons! Add as many as you like, darling."
+        "client": "A touch of buttons, I think. Tastefully, of course."
       }
     ]
   },
@@ -2829,7 +3145,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colourOnly", "accessoryExact", "fabric", "style"],
+      "plan": [
+        "style",
+        "colourOnly",
+        "accessoryExact",
+        "fabric",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2838,7 +3160,11 @@
         },
         {
           "type": "colourOnly",
-          "colours": ["Orange", "Grey", "Blue"]
+          "colours": [
+            "Orange",
+            "Grey",
+            "Blue"
+          ]
         },
         {
           "type": "accessoryExact",
@@ -2854,34 +3180,37 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [0, 4],
+      "pairSlots": [
+        0,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
+        "client": "Make it eveningwear. One has standards, after all."
       },
       {
         "short": "Only orange, grey and blue",
-        "client": "Only orange, grey or blue, dear. Isn't that lovely?"
+        "client": "Orange, grey or blue only. Anything else would be vulgar."
       },
       {
         "short": "Exactly 7 bows",
-        "client": "Exactly seven bows, darling. Perfection!"
+        "client": "Exactly seven bows, no more, no fewer. One is particular."
       },
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear. One has standards, after all."
       }
     ]
   },
@@ -2895,9 +3224,18 @@
     "challenge": {
       "seed": "m3p7t6w2",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessoryExact",
+        "style",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2925,13 +3263,16 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [3, 5],
+      "pairSlots": [
+        3,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2939,23 +3280,23 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Exactly 7 bows",
-        "client": "Exactly seven bows, darling. Perfection!"
+        "client": "Exactly seven bows, no more, no fewer. One is particular."
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear, please! I can't wait to see it."
+        "client": "I shall require eveningwear. Do try to rise to it."
       },
       {
         "short": "Buttons",
-        "client": "Oh, buttons! Add as many as you like, darling."
+        "client": "A touch of buttons, I think. Tastefully, of course."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "I shall require daywear. Do try to rise to it."
       }
     ]
   },
@@ -2971,7 +3312,11 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "colour", "style"],
+      "plan": [
+        "fabric",
+        "colour",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -2993,20 +3338,20 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Wool",
-        "client": "Use wool. Thanks."
+        "client": "Give me wool, darling! Let it sweep the stage!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. No fuss."
+        "client": "Daywear! It must be daywear! I can see the curtain rising!"
       }
     ]
   },
@@ -3020,9 +3365,16 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3047,7 +3399,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3055,15 +3407,15 @@
       },
       {
         "short": "Bows",
-        "client": "Bows, please. Neat ones."
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3079,7 +3431,12 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colourAvoid", "colour", "fabricsMin", "style"],
+      "plan": [
+        "colourAvoid",
+        "colour",
+        "fabricsMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3105,24 +3462,24 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "No white",
-        "client": "Not white. Thanks."
+        "client": "Not a drop of white, darling! The scene cannot bear it!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "At least 2 fabrics",
-        "client": "At least two fabrics."
+        "client": "At least two fabrics! A star needs a full wardrobe!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3136,9 +3493,17 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "accessory",
+        "accessoryMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3168,7 +3533,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3176,19 +3541,19 @@
       },
       {
         "short": "No bows",
-        "client": "Leave off the bows."
+        "client": "Away with the bows, darling! It steals my moment!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "At least 2 jewels",
-        "client": "At least two jewels."
+        "client": "At least two jewels! More, if the drama demands it!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3204,7 +3569,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colour", "coloursMin", "accessory", "accessoryAvoid", "style"],
+      "plan": [
+        "colour",
+        "coloursMin",
+        "accessory",
+        "accessoryAvoid",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3234,28 +3605,28 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "White",
-        "client": "Make it white."
+        "client": "Make it white, darling! Let it blaze across the stage!"
       },
       {
         "short": "At least 2 colours",
-        "client": "Two colours, minimum. Thanks."
+        "client": "Give me two colours at the very least! A grand finale needs a rainbow!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "No tassels",
-        "client": "No tassels."
+        "client": "No tassels! I will not be upstaged!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3269,9 +3640,18 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessory", "accessoryMin", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessoryMin",
+        "accessory",
+        "accessoryMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3306,7 +3686,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3314,23 +3694,23 @@
       },
       {
         "short": "Bows",
-        "client": "Bows, please. Neat ones."
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "At least eight bells! More, if the drama demands it!"
       },
       {
         "short": "Tassels",
-        "client": "Tassels. Keep it tidy."
+        "client": "Tassels! I must have tassels! It is the finishing flourish!"
       },
       {
         "short": "At least 4 jewels",
-        "client": "At least four jewels."
+        "client": "At least four jewels! More, if the drama demands it!"
       },
       {
         "short": "Simple",
-        "client": "Make it simple."
+        "client": "I demand simple, darling! The stage is set!"
       }
     ]
   },
@@ -3346,7 +3726,14 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "colour"],
+      "plan": [
+        "style",
+        "colour",
+        "accessoryExact",
+        "style",
+        "fabricsOnly",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -3368,45 +3755,52 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Linen", "Velvet", "Sequin"]
+          "fabrics": [
+            "Linen",
+            "Velvet",
+            "Sequin"
+          ]
         },
         {
           "type": "colour",
           "colour": "Yellow"
         }
       ],
-      "pairSlots": [0, 3],
+      "pairSlots": [
+        0,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Formal",
-        "client": "Go formal. Keep it practical."
+        "client": "Make it formal! Let the whole world gasp!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "Exactly 8 bells",
-        "client": "Exactly eight bells."
+        "client": "Exactly eight bells! Not one more, or the whole act collapses!"
       },
       {
         "short": "Casual",
-        "client": "Casual. No fuss."
+        "client": "Casual! It must be casual! I can see the curtain rising!"
       },
       {
         "short": "Only linen, velvet and sequins",
-        "client": "Linen, velvet or sequins only."
+        "client": "Linen, velvet or sequins only! Let those be my entire cast!"
       },
       {
         "short": "Yellow",
-        "client": "Yellow. That's it."
+        "client": "Yellow! Pure, glorious yellow! Light the spotlights!"
       }
     ]
   },
@@ -3420,7 +3814,9 @@
     "challenge": {
       "seed": "q8s4j2xy",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
       "plan": [
         "burlapOnly",
@@ -3463,13 +3859,16 @@
           "accessory": "Flower"
         }
       ],
-      "pairSlots": [3, 4],
+      "pairSlots": [
+        3,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3477,27 +3876,27 @@
       },
       {
         "short": "At least 7 bells",
-        "client": "Seven bells, minimum. Thanks."
+        "client": "Give me seven bells at the very least, darling! I want to dazzle!"
       },
       {
         "short": "Trim",
-        "client": "Trim. Keep it tidy."
+        "client": "Trim! I must have trim! It is the finishing flourish!"
       },
       {
         "short": "Formal",
-        "client": "Formal. No fuss."
+        "client": "Formal! It must be formal! I can see the curtain rising!"
       },
       {
         "short": "Casual",
-        "client": "Casual. No fuss."
+        "client": "Casual! It must be casual! I can see the curtain rising!"
       },
       {
         "short": "Exactly 5 tassels",
-        "client": "Exactly five tassels."
+        "client": "Exactly five tassels! Not one more, or the whole act collapses!"
       },
       {
         "short": "Flowers",
-        "client": "Flowers. Keep it tidy."
+        "client": "Flowers! I must have flowers! It is the finishing flourish!"
       }
     ]
   },
@@ -3513,7 +3912,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "fabric"],
+      "plan": [
+        "style",
+        "fabric"
+      ],
       "history": [],
       "directions": [
         {
@@ -3531,16 +3933,16 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. Nothing flimsy."
       },
       {
         "short": "Sequin",
-        "client": "Oh, sequins! What a lovely idea, darling."
+        "client": "Sequins, please. Keep it simple."
       }
     ]
   },
@@ -3554,9 +3956,15 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3577,7 +3985,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3585,11 +3993,11 @@
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3605,7 +4013,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryMin", "fabricAvoid", "style"],
+      "plan": [
+        "accessoryMin",
+        "fabricAvoid",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3628,20 +4040,20 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "At least 2 buttons",
-        "client": "Please, at least two buttons, dear! Oh, the joy."
+        "client": "Two buttons, minimum. Thanks."
       },
       {
         "short": "No sequins",
-        "client": "Oh, no sequins, darling. They make me itch dreadfully."
+        "client": "No sequins."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3655,9 +4067,16 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "accessoryAvoid",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3683,7 +4102,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3691,15 +4110,15 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "Oh, four buttons at the very least, darling!"
+        "client": "At least four buttons."
       },
       {
         "short": "No bells",
-        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the bells."
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       }
     ]
   },
@@ -3715,7 +4134,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "accessoryAvoid", "fabric", "colour"],
+      "plan": [
+        "style",
+        "accessoryAvoid",
+        "fabric",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -3741,24 +4165,24 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. Nothing flimsy."
       },
       {
         "short": "No flowers",
-        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+        "client": "No flowers."
       },
       {
         "short": "Cotton",
-        "client": "Cotton, please! I'm already imagining it."
+        "client": "Use cotton. Thanks."
       },
       {
         "short": "Orange",
-        "client": "Oh, orange, darling! I'm glowing at the thought."
+        "client": "Orange. That's it."
       }
     ]
   },
@@ -3772,9 +4196,17 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessoryAvoid", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessoryAvoid",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -3803,7 +4235,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3811,19 +4243,19 @@
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       },
       {
         "short": "No bells",
-        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the bells."
       },
       {
         "short": "Gothic",
-        "client": "Oh, something gothic, darling! Dark and dreamy."
+        "client": "Gothic. Dark, simple, done."
       },
       {
         "short": "Brooches",
-        "client": "Oh, brooches! Add as many as you like, darling."
+        "client": "Brooches. Keep it tidy."
       }
     ]
   },
@@ -3839,7 +4271,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colourOnly", "style", "accessoryExact", "style"],
+      "plan": [
+        "style",
+        "colourOnly",
+        "style",
+        "accessoryExact",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3848,7 +4286,10 @@
         },
         {
           "type": "colourOnly",
-          "colours": ["Green", "Grey"]
+          "colours": [
+            "Green",
+            "Grey"
+          ]
         },
         {
           "type": "style",
@@ -3864,34 +4305,37 @@
           "tag": "Elegant"
         }
       ],
-      "pairSlots": [0, 2],
+      "pairSlots": [
+        0,
+        2
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Warm",
-        "client": "I'm dreaming of warm, darling. Truly dreaming."
+        "client": "Make it warm."
       },
       {
         "short": "Only green and grey",
-        "client": "Oh, nothing but green or grey, please, darling!"
+        "client": "Green or grey only."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       },
       {
         "short": "Exactly 5 buttons",
-        "client": "Exactly five buttons, darling. Perfection!"
+        "client": "Exactly five buttons."
       },
       {
         "short": "Elegant",
-        "client": "Oh, elegant! That's exactly what I'm after, darling."
+        "client": "Elegant. No fuss."
       }
     ]
   },
@@ -3905,9 +4349,18 @@
     "challenge": {
       "seed": "w5e9a7kn",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "accessoryExact", "style", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "accessoryExact",
+        "style",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -3936,13 +4389,16 @@
           "tag": "Workwear"
         }
       ],
-      "pairSlots": [3, 4],
+      "pairSlots": [
+        3,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3950,23 +4406,23 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "Oh, four buttons at the very least, darling!"
+        "client": "At least four buttons."
       },
       {
         "short": "Exactly 7 bells",
-        "client": "Seven bells, dear, no more, no fewer. I just know it's right."
+        "client": "Seven bells. No more, no fewer."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool! That's exactly what I'm after, darling."
+        "client": "Cool. No fuss."
       },
       {
         "short": "Workwear",
-        "client": "I'm dreaming of workwear, darling. Truly dreaming."
+        "client": "Make it workwear."
       }
     ]
   },
@@ -3982,7 +4438,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "style"],
+      "plan": [
+        "fabric",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4000,16 +4459,16 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "Velvet",
-        "client": "I adore velvet. Don't tell anyone."
+        "client": "Oh, velvet! I simply adore it, darling."
       },
       {
         "short": "Glamour",
-        "client": "Think glamour. I'll know it when I see it."
+        "client": "Oh, glamour! That's exactly what I'm after, darling."
       }
     ]
   },
@@ -4023,9 +4482,15 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4046,7 +4511,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4054,11 +4519,11 @@
       },
       {
         "short": "Feathers",
-        "client": "Feathers. Somewhere on there."
+        "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
         "short": "Warm",
-        "client": "Warm. That's the whole request."
+        "client": "I'm dreaming of warm, darling. Truly dreaming."
       }
     ]
   },
@@ -4074,7 +4539,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryMin", "colourAvoid", "colour"],
+      "plan": [
+        "accessoryMin",
+        "colourAvoid",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -4097,20 +4566,20 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "At least 3 jewels",
-        "client": "Three jewels, at the very least."
+        "client": "Oh, three jewels at the very least, darling!"
       },
       {
         "short": "No orange",
-        "client": "No orange. We've fallen out."
+        "client": "Oh, not orange, darling! It isn't my day for it."
       },
       {
         "short": "Yellow",
-        "client": "Yellow, please. It matches my mood."
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
       }
     ]
   },
@@ -4124,9 +4593,16 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "accessoryAvoid",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -4152,7 +4628,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4160,15 +4636,15 @@
       },
       {
         "short": "At least 5 buttons",
-        "client": "Five buttons, at the very least."
+        "client": "Oh, five buttons at the very least, darling!"
       },
       {
         "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       }
     ]
   },
@@ -4184,7 +4660,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colourAvoid", "accessory", "styleAvoid", "fabric"],
+      "plan": [
+        "colourAvoid",
+        "accessory",
+        "styleAvoid",
+        "fabric"
+      ],
       "history": [],
       "directions": [
         {
@@ -4210,24 +4691,24 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "No white",
-        "client": "No white. We've fallen out."
+        "client": "Oh, not white, darling! It isn't my day for it."
       },
       {
         "short": "Feathers",
-        "client": "Feathers. Somewhere on there."
+        "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
         "short": "Not warm",
-        "client": "Anything but warm. I'll be fine."
+        "client": "Oh, not warm, darling. I couldn't bear it."
       },
       {
         "short": "Silk",
-        "client": "Silk. It'll do nicely."
+        "client": "Oh, silk! What a lovely idea, darling."
       }
     ]
   },
@@ -4241,9 +4722,17 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessoryAvoid",
+        "accessory",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -4272,7 +4761,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4280,19 +4769,19 @@
       },
       {
         "short": "Not glamour",
-        "client": "Anything but glamour. I'll be fine."
+        "client": "Oh, not glamour, darling. I couldn't bear it."
       },
       {
         "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       },
       {
         "short": "Bells",
-        "client": "Bells. Somewhere on there."
+        "client": "Oh, bells! Add as many as you like, darling."
       }
     ]
   },
@@ -4308,12 +4797,22 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
+      "plan": [
+        "fabricsOnly",
+        "style",
+        "colour",
+        "style",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
           "type": "fabricsOnly",
-          "fabrics": ["Lace", "Cotton", "Wool"]
+          "fabrics": [
+            "Lace",
+            "Cotton",
+            "Wool"
+          ]
         },
         {
           "type": "style",
@@ -4333,34 +4832,37 @@
           "count": 7
         }
       ],
-      "pairSlots": [1, 3],
+      "pairSlots": [
+        1,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "Only lace, cotton and wool",
-        "client": "Nothing but honest fabrics, please. Only lace, cotton or wool."
+        "client": "Oh, nothing but lace, cotton or wool, please, darling!"
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Oh, eveningwear! That's exactly what I'm after, darling."
       },
       {
         "short": "Yellow",
-        "client": "Yellow, please. It matches my mood."
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
       },
       {
         "short": "Daywear",
-        "client": "Daywear. That's the whole request."
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
       },
       {
         "short": "Exactly 7 appliqués",
-        "client": "Exactly seven appliqués. Not one more."
+        "client": "Exactly seven appliqués, darling. Perfection!"
       }
     ]
   },
@@ -4374,9 +4876,18 @@
     "challenge": {
       "seed": "r2d6h8cu",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryExact", "style", "accessory", "accessoryMin", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryExact",
+        "style",
+        "accessory",
+        "accessoryMin",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4405,13 +4916,16 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [2, 5],
+      "pairSlots": [
+        2,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4419,23 +4933,23 @@
       },
       {
         "short": "Exactly 5 buttons",
-        "client": "Exactly five buttons. Not one more."
+        "client": "Exactly five buttons, darling. Perfection!"
       },
       {
         "short": "Eveningwear",
-        "client": "Eveningwear. That's the whole request."
+        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       },
       {
         "short": "At least 7 appliqués",
-        "client": "Seven appliqués, at the very least."
+        "client": "Oh, seven appliqués at the very least, darling!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. That's the whole request."
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
       }
     ]
   },
@@ -4451,7 +4965,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "style"],
+      "plan": [
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4469,16 +4986,16 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Simple",
-        "client": "Go simple. Keep it practical."
+        "client": "Make it simple! Let the whole world gasp!"
       },
       {
         "short": "Playful",
-        "client": "Make it playful."
+        "client": "I demand playful, darling! The stage is set!"
       }
     ]
   },
@@ -4492,9 +5009,15 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4515,7 +5038,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4523,11 +5046,11 @@
       },
       {
         "short": "Playful",
-        "client": "Make it playful."
+        "client": "I demand playful, darling! The stage is set!"
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Make it cool! Let the whole world gasp!"
       }
     ]
   },
@@ -4543,7 +5066,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabricAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "fabricAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -4566,20 +5093,20 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "No wool",
-        "client": "Skip the wool. Thanks."
+        "client": "Banish the wool, darling! It ruins the whole scene!"
       },
       {
         "short": "Jewels",
-        "client": "Add jewels."
+        "client": "Add jewels, darling! Let it catch the light!"
       },
       {
         "short": "At least 3 appliqués",
-        "client": "Three appliqués, minimum. Thanks."
+        "client": "Give me three appliqués at the very least, darling! I want to dazzle!"
       }
     ]
   },
@@ -4593,9 +5120,16 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -4621,7 +5155,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4629,15 +5163,15 @@
       },
       {
         "short": "Not playful",
-        "client": "No playful. Moving on."
+        "client": "Banish playful, darling! It will not play tonight!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "At least 6 jewels",
-        "client": "At least six jewels."
+        "client": "At least six jewels! More, if the drama demands it!"
       }
     ]
   },
@@ -4653,7 +5187,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["coloursMin", "fabric", "style", "colour"],
+      "plan": [
+        "coloursMin",
+        "fabric",
+        "style",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -4679,24 +5218,24 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "At least 4 colours",
-        "client": "Four colours, minimum. Thanks."
+        "client": "Give me four colours at the very least! A grand finale needs a rainbow!"
       },
       {
         "short": "Silk",
-        "client": "Use silk. Thanks."
+        "client": "Give me silk, darling! Let it sweep the stage!"
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Make it cool! Let the whole world gasp!"
       },
       {
         "short": "Red",
-        "client": "Red. That's it."
+        "client": "Red! Pure, glorious red! Light the spotlights!"
       }
     ]
   },
@@ -4710,9 +5249,17 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "accessory",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -4742,7 +5289,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4750,19 +5297,19 @@
       },
       {
         "short": "At least 6 feathers",
-        "client": "Six feathers, minimum. Thanks."
+        "client": "Give me six feathers at the very least, darling! I want to dazzle!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "Risqué",
-        "client": "Risqué. No fuss."
+        "client": "Risqué! It must be risqué! I can see the curtain rising!"
       },
       {
         "short": "Lace trim",
-        "client": "Lace trim. Keep it tidy."
+        "client": "Lace trim! I must have lace trim! It is the finishing flourish!"
       }
     ]
   },
@@ -4778,7 +5325,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
+      "plan": [
+        "style",
+        "style",
+        "colourOnly",
+        "accessoryMin",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
@@ -4791,7 +5344,9 @@
         },
         {
           "type": "colourOnly",
-          "colours": ["Brown"]
+          "colours": [
+            "Brown"
+          ]
         },
         {
           "type": "accessoryMin",
@@ -4804,34 +5359,37 @@
           "count": 3
         }
       ],
-      "pairSlots": [0, 1],
+      "pairSlots": [
+        0,
+        1
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "Go eveningwear. Keep it practical."
+        "client": "Make it eveningwear! Let the whole world gasp!"
       },
       {
         "short": "Daywear",
-        "client": "Make it daywear."
+        "client": "I demand daywear, darling! The stage is set!"
       },
       {
         "short": "Only brown",
-        "client": "Nothing but brown. Quick as you can."
+        "client": "Brown only, darling! Let those be my whole palette!"
       },
       {
         "short": "At least 6 jewels",
-        "client": "At least six jewels."
+        "client": "At least six jewels! More, if the drama demands it!"
       },
       {
         "short": "Exactly 3 flowers",
-        "client": "Exactly three flowers."
+        "client": "Exactly three flowers! Not one more, or the whole act collapses!"
       }
     ]
   },
@@ -4845,9 +5403,18 @@
     "challenge": {
       "seed": "x4g3b9vm",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory", "accessoryExact", "accessoryExact", "style"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory",
+        "accessoryExact",
+        "accessoryExact",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -4876,13 +5443,16 @@
           "tag": "Daywear"
         }
       ],
-      "pairSlots": [1, 5],
+      "pairSlots": [
+        1,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4890,23 +5460,23 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Make it eveningwear."
+        "client": "I demand eveningwear, darling! The stage is set!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "Exactly 6 jewels",
-        "client": "Exactly six jewels."
+        "client": "Exactly six jewels! Not one more, or the whole act collapses!"
       },
       {
         "short": "Exactly 3 flowers",
-        "client": "Exactly three flowers."
+        "client": "Exactly three flowers! Not one more, or the whole act collapses!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. No fuss."
+        "client": "Daywear! It must be daywear! I can see the curtain rising!"
       }
     ]
   },
@@ -4922,7 +5492,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colour", "fabric"],
+      "plan": [
+        "colour",
+        "fabric"
+      ],
       "history": [],
       "directions": [
         {
@@ -4940,16 +5513,16 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "White",
-        "client": "Oh, white, darling! I'm glowing at the thought."
+        "client": "White, naturally. It has always suited me."
       },
       {
         "short": "Wool",
-        "client": "Oh, wool! What a lovely idea, darling."
+        "client": "One expects wool. Nothing less will do."
       }
     ]
   },
@@ -4963,9 +5536,15 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -4986,7 +5565,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -4994,11 +5573,11 @@
       },
       {
         "short": "Trim",
-        "client": "Oh, trim! Add as many as you like, darling."
+        "client": "A touch of trim, I think. Tastefully, of course."
       },
       {
         "short": "Tassels",
-        "client": "Oh, tassels! Add as many as you like, darling."
+        "client": "A touch of tassels, I think. Tastefully, of course."
       }
     ]
   },
@@ -5014,7 +5593,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "colour", "coloursMin"],
+      "plan": [
+        "accessoryAvoid",
+        "colour",
+        "coloursMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -5036,20 +5619,20 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No tassels",
-        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+        "client": "No tassels, please. It is not for me."
       },
       {
         "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "client": "Yellow, naturally. It has always suited me."
       },
       {
         "short": "At least 4 colours",
-        "client": "Oh, at least four colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least four, I think."
       }
     ]
   },
@@ -5063,9 +5646,16 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "accessoryAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -5091,7 +5681,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5099,15 +5689,15 @@
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim, please. It is not for me."
       },
       {
         "short": "Tassels",
-        "client": "Oh, tassels! Add as many as you like, darling."
+        "client": "A touch of tassels, I think. Tastefully, of course."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       }
     ]
   },
@@ -5123,7 +5713,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabricAvoid", "accessoryAvoid", "accessoryMin", "colour"],
+      "plan": [
+        "fabricAvoid",
+        "accessoryAvoid",
+        "accessoryMin",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -5150,24 +5745,24 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No wool",
-        "client": "Oh, no wool, darling. It just isn't me."
+        "client": "No wool, please. It is not done."
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim, please. It is not for me."
       },
       {
         "short": "At least 3 tassels",
-        "client": "Oh, three tassels at the very least, darling!"
+        "client": "I shall require at least three tassels. A lady must be noticed."
       },
       {
         "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "client": "Yellow, naturally. It has always suited me."
       }
     ]
   },
@@ -5181,9 +5776,17 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessoryMin", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessoryAvoid",
+        "accessoryMin",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -5213,7 +5816,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5221,19 +5824,19 @@
       },
       {
         "short": "Not warm",
-        "client": "Oh, not warm, darling. I couldn't bear it."
+        "client": "One cannot abide warm. Kindly avoid it."
       },
       {
         "short": "No tassels",
-        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+        "client": "No tassels, please. It is not for me."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       },
       {
         "short": "Bows",
-        "client": "Bows, dear! Add every one you can find."
+        "client": "One expects bows. Tastefully placed, of course."
       }
     ]
   },
@@ -5249,7 +5852,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
+      "plan": [
+        "style",
+        "fabricsOnly",
+        "colourAvoid",
+        "accessoryExact",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -5258,7 +5867,11 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Silk", "Linen", "Cotton"]
+          "fabrics": [
+            "Silk",
+            "Linen",
+            "Cotton"
+          ]
         },
         {
           "type": "colourAvoid",
@@ -5274,34 +5887,37 @@
           "tag": "Warm"
         }
       ],
-      "pairSlots": [0, 4],
+      "pairSlots": [
+        0,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Cool",
-        "client": "Oh, cool! That's exactly what I'm after, darling."
+        "client": "One expects cool. I trust that is clear."
       },
       {
         "short": "Only silk, linen and cotton",
-        "client": "Oh, nothing but silk, linen or cotton, please, darling!"
+        "client": "One will accept only silk, linen or cotton. I trust that is not too taxing."
       },
       {
         "short": "No yellow",
-        "client": "Oh, not yellow, darling! It isn't my day for it."
+        "client": "No yellow, please. One has never trusted it."
       },
       {
         "short": "Exactly 2 tassels",
-        "client": "Exactly two tassels, darling. Perfection!"
+        "client": "Exactly two tassels, no more, no fewer. One is particular."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm, please! I can't wait to see it."
+        "client": "I shall require warm. Do try to rise to it."
       }
     ]
   },
@@ -5315,9 +5931,18 @@
     "challenge": {
       "seed": "2026-10-16",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessoryExact", "accessoryMin", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessoryExact",
+        "accessoryMin",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -5346,13 +5971,16 @@
           "accessory": "Bow"
         }
       ],
-      "pairSlots": [1, 4],
+      "pairSlots": [
+        1,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5360,23 +5988,23 @@
       },
       {
         "short": "Cool",
-        "client": "I'm dreaming of cool, darling. Truly dreaming."
+        "client": "Make it cool. One has standards, after all."
       },
       {
         "short": "Exactly 3 tassels",
-        "client": "Exactly three tassels, darling. Perfection!"
+        "client": "Exactly three tassels, no more, no fewer. One is particular."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm, please! I can't wait to see it."
+        "client": "I shall require warm. Do try to rise to it."
       },
       {
         "short": "Bows",
-        "client": "Oh, bows! I simply adore a bow, darling."
+        "client": "Bows, I think. A lady may indulge in a ribbon or two."
       }
     ]
   },
@@ -5392,7 +6020,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "style"],
+      "plan": [
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -5410,16 +6041,16 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Glamour",
-        "client": "Go glamour. Keep it practical."
+        "client": "I was thinking glamour. Sorry, is that silly?"
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       }
     ]
   },
@@ -5433,9 +6064,15 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "style"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -5456,7 +6093,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5464,11 +6101,11 @@
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       }
     ]
   },
@@ -5484,7 +6121,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["styleAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "styleAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -5507,20 +6148,20 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Not glamour",
-        "client": "No glamour. Moving on."
+        "client": "If possible, maybe not glamour? I'm so sorry to ask."
       },
       {
         "short": "Bows",
-        "client": "Bows. A few."
+        "client": "Might there be a bow? Sorry, I do find them comforting."
       },
       {
         "short": "At least 2 feathers",
-        "client": "Two feathers, minimum. Thanks."
+        "client": "Maybe two feathers, or more? I'm so sorry to ask."
       }
     ]
   },
@@ -5534,9 +6175,16 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "styleAvoid",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -5562,7 +6210,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5570,15 +6218,15 @@
       },
       {
         "short": "Not eclectic",
-        "client": "Not eclectic."
+        "client": "Sorry, could it not be eclectic? I'm sure it's lovely, really."
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       },
       {
         "short": "At least 7 bows",
-        "client": "Seven bows at least. Neat."
+        "client": "Sorry, could there be bows? At least seven, if that's all right."
       }
     ]
   },
@@ -5594,7 +6242,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["coloursMin", "style", "style", "colour"],
+      "plan": [
+        "coloursMin",
+        "style",
+        "style",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -5620,24 +6273,24 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "At least 3 colours",
-        "client": "Three colours, minimum. Thanks."
+        "client": "Maybe three colours, or more? I'm so sorry to ask."
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
         "short": "Green",
-        "client": "Green. That's it."
+        "client": "Might it be green? Sorry, I do hope that's all right."
       }
     ]
   },
@@ -5651,9 +6304,17 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "accessoryMin",
+        "style",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -5683,7 +6344,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5691,19 +6352,19 @@
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "Sorry, could there be at least eight bells? Only if it's not too much."
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "If it's not too much trouble, maybe something romantic?"
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       }
     ]
   },
@@ -5719,12 +6380,21 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["colourOnly", "accessoryMin", "style", "style", "accessoryExact"],
+      "plan": [
+        "colourOnly",
+        "accessoryMin",
+        "style",
+        "style",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
           "type": "colourOnly",
-          "colours": ["Grey", "Green"]
+          "colours": [
+            "Grey",
+            "Green"
+          ]
         },
         {
           "type": "accessoryMin",
@@ -5745,34 +6415,37 @@
           "count": 4
         }
       ],
-      "pairSlots": [2, 3],
+      "pairSlots": [
+        2,
+        3
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Only grey and green",
-        "client": "Nothing but grey or green. Quick as you can."
+        "client": "If it's no trouble, grey or green only? I'm so sorry to be fussy."
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "Sorry, could there be at least eight bells? Only if it's not too much."
       },
       {
         "short": "Simple",
-        "client": "Go simple. Keep it practical."
+        "client": "I was thinking simple. Sorry, is that silly?"
       },
       {
         "short": "Elaborate",
-        "client": "Elaborate. No fuss."
+        "client": "If it's not too much trouble, maybe something elaborate?"
       },
       {
         "short": "Exactly 4 bows",
-        "client": "Four bows. No more, no fewer."
+        "client": "Exactly four bows, if that's all right. Sorry to be particular."
       }
     ]
   },
@@ -5786,9 +6459,18 @@
     "challenge": {
       "seed": "2026-12-31",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessoryExact", "accessoryExact", "style", "accessory", "style"],
+      "plan": [
+        "burlapOnly",
+        "accessoryExact",
+        "accessoryExact",
+        "style",
+        "accessory",
+        "style"
+      ],
       "history": [],
       "directions": [
         {
@@ -5817,13 +6499,16 @@
           "tag": "Elaborate"
         }
       ],
-      "pairSlots": [3, 5],
+      "pairSlots": [
+        3,
+        5
+      ],
       "pullApartSlot": null
     },
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5831,23 +6516,23 @@
       },
       {
         "short": "Exactly 8 bells",
-        "client": "Exactly eight bells."
+        "client": "Sorry, could it be exactly eight bells? I'd be so grateful."
       },
       {
         "short": "Exactly 6 bows",
-        "client": "Six bows. No more, no fewer."
+        "client": "Exactly six bows, if that's all right. Sorry to be particular."
       },
       {
         "short": "Simple",
-        "client": "Simple. No fuss."
+        "client": "If it's not too much trouble, maybe something simple?"
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       },
       {
         "short": "Elaborate",
-        "client": "Go elaborate. Keep it practical."
+        "client": "I was thinking elaborate. Sorry, is that silly?"
       }
     ]
   },
@@ -5863,7 +6548,10 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colour"],
+      "plan": [
+        "style",
+        "colour"
+      ],
       "history": [],
       "directions": [
         {
@@ -5904,9 +6592,15 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "easy",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory"
+      ],
       "history": [],
       "directions": [
         {
@@ -5955,7 +6649,11 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["fabric", "accessoryAvoid", "accessoryMin"],
+      "plan": [
+        "fabric",
+        "accessoryAvoid",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -6005,9 +6703,16 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "medium",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "accessory",
+        "accessoryAvoid",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -6065,7 +6770,12 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "colour", "colour", "colourOnly"],
+      "plan": [
+        "style",
+        "colour",
+        "colour",
+        "colourOnly"
+      ],
       "history": [],
       "directions": [
         {
@@ -6082,7 +6792,10 @@
         },
         {
           "type": "colourOnly",
-          "colours": ["Blue", "Purple"]
+          "colours": [
+            "Blue",
+            "Purple"
+          ]
         }
       ],
       "pairSlots": null,
@@ -6122,9 +6835,17 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "hard",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory", "accessory", "accessoryMin"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory",
+        "accessory",
+        "accessoryMin"
+      ],
       "history": [],
       "directions": [
         {
@@ -6190,7 +6911,13 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
+      "plan": [
+        "style",
+        "fabric",
+        "style",
+        "accessoryExact",
+        "fabricsOnly"
+      ],
       "history": [],
       "directions": [
         {
@@ -6212,10 +6939,16 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Lace", "Velvet"]
+          "fabrics": [
+            "Lace",
+            "Velvet"
+          ]
         }
       ],
-      "pairSlots": [0, 2],
+      "pairSlots": [
+        0,
+        2
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -6256,9 +6989,18 @@
     "challenge": {
       "seed": "2028-02-29",
       "difficulty": "chaos",
-      "modifiers": ["burlap"],
+      "modifiers": [
+        "burlap"
+      ],
       "dataVersion": 1,
-      "plan": ["burlapOnly", "style", "accessory", "accessory", "style", "accessoryExact"],
+      "plan": [
+        "burlapOnly",
+        "style",
+        "accessory",
+        "accessory",
+        "style",
+        "accessoryExact"
+      ],
       "history": [],
       "directions": [
         {
@@ -6286,7 +7028,10 @@
           "count": 7
         }
       ],
-      "pairSlots": [1, 4],
+      "pairSlots": [
+        1,
+        4
+      ],
       "pullApartSlot": null
     },
     "client": {
@@ -6325,15 +7070,28 @@
       "seed": "k7m2qx9a",
       "difficulty": "medium",
       "burlap": false,
-      "history": [0, 1, 0]
+      "history": [
+        0,
+        1,
+        0
+      ]
     },
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
-      "history": [0, 1, 0],
+      "plan": [
+        "accessoryAvoid",
+        "style",
+        "accessoryMin",
+        "accessory"
+      ],
+      "history": [
+        0,
+        1,
+        0
+      ],
       "directions": [
         {
           "type": "accessoryAvoid",
@@ -6359,24 +7117,24 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "No trim",
-        "client": "Please keep the trim away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the trim."
       },
       {
         "short": "Eclectic",
-        "client": "I'm dreaming of eclectic, darling. Truly dreaming."
+        "client": "Make it eclectic."
       },
       {
         "short": "At least 4 bells",
-        "client": "Oh, four bells at the very least, darling!"
+        "client": "At least four bells."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -6385,15 +7143,27 @@
       "seed": "23456789",
       "difficulty": "medium",
       "burlap": false,
-      "history": [2, 1, 2]
+      "history": [
+        2,
+        1,
+        2
+      ]
     },
     "challenge": {
       "seed": "23456789",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "colour", "coloursMin"],
-      "history": [2, 1, 2],
+      "plan": [
+        "accessoryAvoid",
+        "colour",
+        "coloursMin"
+      ],
+      "history": [
+        2,
+        1,
+        2
+      ],
       "directions": [
         {
           "type": "accessoryAvoid",
@@ -6414,20 +7184,20 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "Blue",
-        "client": "Oh, blue, darling! I'm glowing at the thought."
+        "client": "Blue, naturally. It has always suited me."
       },
       {
         "short": "At least 2 colours",
-        "client": "Oh, at least two colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least two, I think."
       }
     ]
   },
@@ -6436,15 +7206,30 @@
       "seed": "zzzzzzzz",
       "difficulty": "medium",
       "burlap": false,
-      "history": [1, 0, 1, 0]
+      "history": [
+        1,
+        0,
+        1,
+        0
+      ]
     },
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
-      "history": [1, 0, 1, 0],
+      "plan": [
+        "style",
+        "accessory",
+        "accessoryMin",
+        "accessoryAvoid"
+      ],
+      "history": [
+        1,
+        0,
+        1,
+        0
+      ],
       "directions": [
         {
           "type": "style",
@@ -6496,15 +7281,29 @@
       "seed": "k7m2qx9a",
       "difficulty": "hard",
       "burlap": false,
-      "history": [0, 1, 0]
+      "history": [
+        0,
+        1,
+        0
+      ]
     },
     "challenge": {
       "seed": "k7m2qx9a",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
-      "history": [0, 1, 0],
+      "plan": [
+        "accessory",
+        "accessoryMin",
+        "style",
+        "fabricsMin",
+        "style"
+      ],
+      "history": [
+        0,
+        1,
+        0
+      ],
       "directions": [
         {
           "type": "accessory",
@@ -6534,28 +7333,28 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Trim",
-        "client": "Do add trim, dear. What a treat!"
+        "client": "Add trim."
       },
       {
         "short": "At least 4 bells",
-        "client": "Please, at least four bells, dear! Oh, the joy."
+        "client": "Four bells, minimum. Thanks."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 3 fabrics",
-        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+        "client": "Three fabrics, minimum. Thanks."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       }
     ]
   },
@@ -6564,15 +7363,28 @@
       "seed": "23456789",
       "difficulty": "hard",
       "burlap": false,
-      "history": [2, 1, 2]
+      "history": [
+        2,
+        1,
+        2
+      ]
     },
     "challenge": {
       "seed": "23456789",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
-      "history": [2, 1, 2],
+      "plan": [
+        "accessoryMin",
+        "accessoryAvoid",
+        "accessory",
+        "styleAvoid"
+      ],
+      "history": [
+        2,
+        1,
+        2
+      ],
       "directions": [
         {
           "type": "accessoryMin",
@@ -6598,24 +7410,24 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 6 appliqués",
-        "client": "Oh, six appliqués at the very least, darling!"
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
         "short": "No bows",
-        "client": "Oh, no bows, darling. I'm so sorry to be fussy!"
+        "client": "No bows, please. It is not for me."
       },
       {
         "short": "Brooches",
-        "client": "Oh, brooches! Add as many as you like, darling."
+        "client": "A touch of brooches, I think. Tastefully, of course."
       },
       {
         "short": "Not gothic",
-        "client": "Oh, not gothic, darling. I couldn't bear it."
+        "client": "One cannot abide gothic. Kindly avoid it."
       }
     ]
   },
@@ -6624,15 +7436,31 @@
       "seed": "zzzzzzzz",
       "difficulty": "hard",
       "burlap": false,
-      "history": [1, 0, 1, 0]
+      "history": [
+        1,
+        0,
+        1,
+        0
+      ]
     },
     "challenge": {
       "seed": "zzzzzzzz",
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
-      "history": [1, 0, 1, 0],
+      "plan": [
+        "accessoryAvoid",
+        "fabric",
+        "style",
+        "coloursMin",
+        "fabric"
+      ],
+      "history": [
+        1,
+        0,
+        1,
+        0
+      ],
       "directions": [
         {
           "type": "accessoryAvoid",
