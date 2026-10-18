@@ -3,18 +3,27 @@ import type { PairRule } from "@/game/data/difficulty-shapes";
 import type { GameData, StyleTag } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
-import { shapeFor, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
+import {
+  burlapShapeFor,
+  shapeFor,
+  type Difficulty,
+  type DifficultyShape,
+  type PlannedType,
+} from "./difficulty";
 import {
   COUNT_RANGE,
   FABRICS_MIN_RANGE,
   ONLY_LIST_SIZE,
   type Direction,
+  type DirectionType,
   type GeneralFabric,
   type PerPieceAccessory,
 } from "./direction";
 import { deriveSeed, randomFromSeed, weightedPick, type Random } from "./random";
 
 export const MAX_TRIES = 25;
+
+const MODIFIERS: readonly Modifier[] = ["burlap"];
 
 export interface GenerateInput {
   seed: string;
@@ -25,7 +34,7 @@ export interface GenerateInput {
 
 export interface DrawInput {
   seed: string;
-  plan: readonly PlannedType[];
+  plan: readonly DirectionType[];
   slot: number;
   rerollCount: number;
   others: readonly Direction[];
@@ -57,7 +66,7 @@ function leaning<T>(
 }
 
 function drawCandidate(
-  type: PlannedType,
+  type: DirectionType,
   random: Random,
   data: GameData,
   others: readonly Direction[],
@@ -78,6 +87,8 @@ function drawCandidate(
     );
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
   switch (type) {
+    case "burlapOnly":
+      return { type };
     case "style":
     case "styleAvoid":
       return { type, tag: tag() };
@@ -170,7 +181,7 @@ export const drawPlan = (
 ): PlannedType[] => planFor(seed, shape, neverTogether).plan;
 
 function fillOrder(
-  plan: readonly PlannedType[],
+  plan: readonly DirectionType[],
   pairSlots: readonly number[],
   pullApartSlot: number | null,
 ): number[] {
@@ -216,7 +227,7 @@ function drawChaosPair(seed: string, data: GameData): [StyleTag, StyleTag] | nul
   return random.between(0, 1) === 0 ? [first, second] : [second, first];
 }
 
-function pairSlotsIn(plan: readonly PlannedType[]): [number, number] | null {
+function pairSlotsIn(plan: readonly DirectionType[]): [number, number] | null {
   const styleSlots = plan.flatMap((type, slot) => (type === "style" ? [slot] : []));
   return styleSlots.length >= 2 ? [styleSlots[0], styleSlots[1]] : null;
 }
@@ -226,10 +237,18 @@ export function generate(
   data: GameData | undefined = dataVersions[dataVersion],
 ): Challenge {
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
-  if (modifiers.includes("burlap"))
-    throw new RangeError("the burlap modifier is not supported yet");
-  const shape = shapeFor(data, difficulty);
-  const { plan, pullApartSlot } = planFor(seed, shape, data.kindsNeverTogether);
+  for (const modifier of modifiers) {
+    if (!MODIFIERS.includes(modifier)) throw new RangeError(`unknown modifier ${modifier}`);
+  }
+  if (new Set(modifiers).size !== modifiers.length) {
+    throw new RangeError("a modifier can only be used once");
+  }
+  const burlap = modifiers.includes("burlap");
+  const shape = burlap ? burlapShapeFor(data, difficulty) : shapeFor(data, difficulty);
+  const planned = planFor(seed, shape, data.kindsNeverTogether);
+  const plan: DirectionType[] = burlap ? ["burlapOnly", ...planned.plan] : planned.plan;
+  const pullApartSlot =
+    burlap && planned.pullApartSlot !== null ? planned.pullApartSlot + 1 : planned.pullApartSlot;
   const directions: (Direction | null | undefined)[] = plan.map(() => undefined);
   const chosenPair = shape.pairs === "oneStylePair" ? drawChaosPair(seed, data) : null;
   const pairSlots = chosenPair ? pairSlotsIn(plan) : null;
@@ -238,6 +257,7 @@ export function generate(
     directions[pairSlots[0]] = { type: "style", tag: chosenPair[0] };
     directions[pairSlots[1]] = { type: "style", tag: chosenPair[1] };
   }
+  if (burlap) directions[0] = { type: "burlapOnly" };
   for (const slot of fillOrder(plan, pairSlots ?? [], pullApartSlot)) {
     if (directions[slot] !== undefined) continue;
     const placed = directions.filter((direction) => direction != null);

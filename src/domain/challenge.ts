@@ -1,5 +1,5 @@
-import type { Difficulty, PlannedType } from "./difficulty";
-import type { Direction } from "./direction";
+import type { Difficulty } from "./difficulty";
+import type { Direction, DirectionType } from "./direction";
 
 export type Modifier = "burlap";
 
@@ -10,7 +10,7 @@ export interface Challenge {
   difficulty: Difficulty;
   modifiers: readonly Modifier[];
   dataVersion: number;
-  plan: PlannedType[];
+  plan: DirectionType[];
   history: number[];
   directions: (Direction | null)[];
   pairSlots: [number, number] | null;

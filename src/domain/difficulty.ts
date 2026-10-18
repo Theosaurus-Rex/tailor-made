@@ -35,3 +35,8 @@ export function shapeFor(data: GameData, difficulty: string): DifficultyShape {
   }
   return data.difficulties[difficulty as Difficulty];
 }
+
+export function burlapShapeFor(data: GameData, difficulty: string): DifficultyShape {
+  shapeFor(data, difficulty);
+  return data.burlapDifficulties[difficulty as Difficulty];
+}
