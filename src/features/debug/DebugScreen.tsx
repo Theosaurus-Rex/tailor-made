@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import type { Challenge } from "@/domain/challenge";
+import { rerollCountOf, type Challenge } from "@/domain/challenge";
 import { clientFromSeed } from "@/domain/client";
 import { clientLine, lineRandomFor } from "@/domain/client-line";
 import { generate } from "@/domain/generate";
@@ -12,8 +12,6 @@ import { newSeed } from "@/lib/new-seed";
 
 const BATCH_SIZE = 50;
 const START_SEED = "k7m2qx9a";
-
-const rerollCountOf = (challenge: Challenge, slot: number) => challenge.rerolls[slot] ?? 0;
 
 const batchSeed = (start: number, index: number) =>
   Array.from(deriveSeed("debug-batch", start + index).slice(0, SEED_LENGTH))
