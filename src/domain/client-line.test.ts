@@ -167,6 +167,17 @@ describe("clientLine", () => {
     }
   });
 
+  it("gives grand, anxious and theatrical their own Velvet lines", () => {
+    const velvet = (personality: (typeof personalities)[number]) =>
+      clientLines[personality].specific["fabric:Velvet"] ?? [];
+    for (const personality of ["grand", "anxious", "theatrical"] as const) {
+      expect(velvet(personality).length, personality).toBeGreaterThan(0);
+      for (const other of personalities.filter((p) => p !== personality)) {
+        for (const line of velvet(personality)) expect(velvet(other)).not.toContain(line);
+      }
+    }
+  });
+
   it("falls back to generic lines when there is no specific line", () => {
     for (const personality of personalities) {
       const line = lineFor({ type: "fabricAvoid", fabric: "Wool" }, personality);
