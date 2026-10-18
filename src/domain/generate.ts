@@ -145,7 +145,7 @@ export function generate(
     modifiers: [...modifiers],
     dataVersion,
     plan,
-    rerolls: plan.map(() => 0),
+    history: [],
     directions,
   };
 }
