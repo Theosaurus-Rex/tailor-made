@@ -132,8 +132,9 @@ describe.each(difficulties)("%s burlap shape", (difficulty) => {
     expect(shape.pullApartChance).toBe(normal.pullApartChance);
   });
 
-  it("weights accessories more than the normal shape", () => {
-    expect(share(shape.types)).toBeGreaterThan(share(normal.types));
+  it("weights accessories more than the normal shape does without fabrics and colours", () => {
+    const withoutThem = normal.types.filter(({ type }) => !/^(fabric|colour)/.test(type));
+    expect(share(shape.types)).toBeGreaterThan(share(withoutThem) + 0.1);
   });
 });
 
