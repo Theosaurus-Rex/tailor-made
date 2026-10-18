@@ -3,7 +3,7 @@ import type { Direction } from "./direction";
 
 export type Modifier = "burlap";
 
-// plan, rerolls and directions all have one entry per slot. A null direction is a slot that
+// plan and directions have one entry per slot. A null direction is a slot that
 // could not be filled.
 export interface Challenge {
   seed: string;
@@ -11,9 +11,12 @@ export interface Challenge {
   modifiers: readonly Modifier[];
   dataVersion: number;
   plan: PlannedType[];
-  rerolls: number[];
+  history: number[];
   directions: (Direction | null)[];
 }
 
 export const placedDirections = (challenge: Challenge): Direction[] =>
   challenge.directions.filter((direction) => direction !== null);
+
+export const rerollCountOf = (challenge: Challenge, slot: number): number =>
+  challenge.history.filter((rerolled) => rerolled === slot).length;

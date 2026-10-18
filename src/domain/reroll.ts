@@ -1,0 +1,35 @@
+import { dataVersions } from "@/game/data";
+import type { GameData } from "@/game/data/v1";
+import { rerollCountOf, type Challenge } from "./challenge";
+import type { Direction } from "./direction";
+import { drawDirection } from "./generate";
+
+export function reroll(
+  challenge: Challenge,
+  slot: number,
+  data: GameData | undefined = dataVersions[challenge.dataVersion],
+): Challenge {
+  if (!data) throw new RangeError(`unknown data version ${challenge.dataVersion}`);
+  if (!Number.isInteger(slot) || slot < 0 || slot >= challenge.plan.length) {
+    throw new RangeError(`slot ${slot} is not in the plan`);
+  }
+  if (challenge.directions[slot]?.type === "burlapOnly") {
+    throw new Error("burlap only cannot be rerolled");
+  }
+  const others = challenge.directions.filter(
+    (direction, i): direction is Direction => i !== slot && direction !== null,
+  );
+  const redrawn = drawDirection({
+    seed: challenge.seed,
+    plan: challenge.plan,
+    slot,
+    rerollCount: rerollCountOf(challenge, slot) + 1,
+    others,
+    data,
+  });
+  return {
+    ...challenge,
+    history: [...challenge.history, slot],
+    directions: challenge.directions.map((direction, i) => (i === slot ? redrawn : direction)),
+  };
+}
