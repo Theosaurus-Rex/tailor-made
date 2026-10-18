@@ -1,7 +1,13 @@
 // Fan-wiki data from dressmakerwiki.site (build 410), checked against build 443
 // (docs/notes/build-443-check.md). Where each value came from: docs/notes/data-v1-leanings.md.
 
-import { difficultyShapes, type DifficultyName, type DifficultyShape } from "./difficulty-shapes";
+import {
+  difficultyShapes,
+  kindsNeverTogether,
+  type ShapeDirectionType,
+  type DifficultyName,
+  type DifficultyShape,
+} from "./difficulty-shapes";
 
 export const DATA_VERSION = 1;
 
@@ -86,6 +92,7 @@ export interface AccessoryInfo {
 
 export interface GameData {
   difficulties: Record<DifficultyName, DifficultyShape>;
+  kindsNeverTogether: readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];
   version: number;
   tagWeights: Record<StyleTag, number>;
   fabrics: Record<FabricType, FabricInfo>;
@@ -192,6 +199,7 @@ const opposingPairs = [
 
 export const dataV1: GameData = {
   difficulties: difficultyShapes,
+  kindsNeverTogether,
   version: DATA_VERSION,
   tagWeights,
   styleTags,

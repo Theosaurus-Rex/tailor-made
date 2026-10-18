@@ -2,13 +2,21 @@ import { describe, expect, it } from "vitest";
 import { dataV1, type GameData } from "@/game/data/v1";
 import { placedDirections } from "./challenge";
 import { findConflicts } from "./contradictions";
+import type { Direction } from "./direction";
 import { AT_LEAST_TYPES, AVOID_TYPES, shapeFor, type Difficulty } from "./difficulty";
 import { generate } from "./generate";
 import { deriveSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
 
 const difficulties: Difficulty[] = ["easy", "medium", "hard", "chaos"];
-const maxEmptyShare: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0.06, chaos: 0.1 };
+const maxEmptyShare: Record<Difficulty, number> = { easy: 0, medium: 0, hard: 0.01, chaos: 0.01 };
+
+const neverTogether = [
+  ["colourOnly", "colourAvoid"],
+  ["colourOnly", "coloursMin"],
+  ["fabricsOnly", "fabricAvoid"],
+  ["fabricsOnly", "fabricsMin"],
+] as const;
 
 const samples = Array.from({ length: 400 }, (_, i) => deriveSeed("difficulty-sample", i));
 
@@ -61,9 +69,60 @@ describe.each(difficulties)("%s", (difficulty) => {
     }
   });
 
+  it("never plans both kinds of a pair that can never share a card", () => {
+    for (const seed of samples) {
+      const { plan } = generate(input(seed, difficulty));
+      for (const [a, b] of neverTogether) {
+        expect(plan.includes(a) && plan.includes(b)).toBe(false);
+      }
+    }
+  });
+
   it("does not always put the same kind first", () => {
     const firsts = new Set(samples.map((seed) => generate(input(seed, difficulty)).plan[0]));
     expect(firsts.size).toBeGreaterThan(1);
+  });
+});
+
+const examples: Record<string, Direction[]> = {
+  colourOnly: [
+    { type: "colourOnly", colours: ["Red", "Blue"] },
+    { type: "colourOnly", colours: ["Green"] },
+  ],
+  colourAvoid: [
+    { type: "colourAvoid", colour: "Red" },
+    { type: "colourAvoid", colour: "Yellow" },
+  ],
+  coloursMin: [
+    { type: "coloursMin", count: 2 },
+    { type: "coloursMin", count: 4 },
+  ],
+  fabricsOnly: [
+    { type: "fabricsOnly", fabrics: ["Cotton", "Silk"] },
+    { type: "fabricsOnly", fabrics: ["Wool"] },
+  ],
+  fabricAvoid: [
+    { type: "fabricAvoid", fabric: "Cotton" },
+    { type: "fabricAvoid", fabric: "Velvet" },
+  ],
+  fabricsMin: [
+    { type: "fabricsMin", count: 2 },
+    { type: "fabricsMin", count: 4 },
+  ],
+};
+
+describe("kinds that never share a card", () => {
+  it("are all listed in the game data", () => {
+    for (const pair of neverTogether) expect(dataV1.kindsNeverTogether).toContainEqual(pair);
+  });
+
+  it.each(neverTogether)("%s and %s always conflict", (a, b) => {
+    for (const first of examples[a]) {
+      for (const second of examples[b]) {
+        expect(findConflicts([first, second], { data: dataV1 })).not.toEqual([]);
+        expect(findConflicts([second, first], { data: dataV1 })).not.toEqual([]);
+      }
+    }
   });
 });
 

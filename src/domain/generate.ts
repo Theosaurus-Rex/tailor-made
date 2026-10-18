@@ -85,7 +85,11 @@ function drawCandidate(type: PlannedType, random: Random, data: GameData): Direc
   }
 }
 
-export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
+export function drawPlan(
+  seed: string,
+  shape: DifficultyShape,
+  neverTogether: GameData["kindsNeverTogether"],
+): PlannedType[] {
   const random = randomFromSeed(deriveSeed(seed, "plan"));
   const total = random.between(shape.directionCount.min, shape.directionCount.max);
   const plan: PlannedType[] = [];
@@ -93,6 +97,9 @@ export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
     const open = shape.types.filter(
       ({ type }) =>
         allowed(type) &&
+        !neverTogether.some(
+          ([a, b]) => (type === a && plan.includes(b)) || (type === b && plan.includes(a)),
+        ) &&
         shape.limits.every(
           (limit) =>
             !limit.types.includes(type) ||
@@ -142,7 +149,7 @@ export function generate(
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");
-  const plan = drawPlan(seed, shapeFor(data, difficulty));
+  const plan = drawPlan(seed, shapeFor(data, difficulty), data.kindsNeverTogether);
   const directions: (Direction | null)[] = [];
   plan.forEach((_, slot) => {
     const placed = directions.filter((direction) => direction !== null);

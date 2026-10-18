@@ -130,7 +130,9 @@ describe("generate", () => {
       rerolled.some((d) => JSON.stringify(d) !== JSON.stringify(challenge.directions[0])),
     ).toBe(true);
     for (const d of rerolled) expect(d?.type).toBe(challenge.plan[0]);
-    expect(drawPlan(seed, dataV1.difficulties.medium)).toEqual(challenge.plan);
+    expect(drawPlan(seed, dataV1.difficulties.medium, dataV1.kindsNeverTogether)).toEqual(
+      challenge.plan,
+    );
     expect(redraw(2, 0)).toEqual(challenge.directions[2]);
   });
 

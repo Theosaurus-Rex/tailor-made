@@ -102,3 +102,10 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
     ],
   },
 };
+
+export const kindsNeverTogether = [
+  ["colourOnly", "colourAvoid"],
+  ["colourOnly", "coloursMin"],
+  ["fabricsOnly", "fabricAvoid"],
+  ["fabricsOnly", "fabricsMin"],
+] as const satisfies readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];
