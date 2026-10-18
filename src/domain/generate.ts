@@ -2,7 +2,7 @@ import { dataVersions } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
-import { shapes, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
+import { shapeFor, type Difficulty, type DifficultyShape, type PlannedType } from "./difficulty";
 import {
   COUNT_RANGE,
   FABRICS_MIN_RANGE,
@@ -17,7 +17,7 @@ export const MAX_TRIES = 25;
 
 export interface GenerateInput {
   seed: string;
-  difficulty: keyof typeof shapes;
+  difficulty: Difficulty;
   modifiers: readonly Modifier[];
   dataVersion: number;
 }
@@ -89,13 +89,15 @@ export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
   const random = randomFromSeed(deriveSeed(seed, "plan"));
   const total = random.between(shape.directionCount.min, shape.directionCount.max);
   const plan: PlannedType[] = [];
-  for (let slot = 0; slot < total; slot++) {
-    const open = shape.types.filter(({ type }) =>
-      shape.limits.every(
-        (limit) =>
-          !limit.types.includes(type) ||
-          plan.filter((used) => limit.types.includes(used)).length < limit.max,
-      ),
+  const pickFrom = (allowed: (type: PlannedType) => boolean) => {
+    const open = shape.types.filter(
+      ({ type }) =>
+        allowed(type) &&
+        shape.limits.every(
+          (limit) =>
+            !limit.types.includes(type) ||
+            plan.filter((used) => limit.types.includes(used)).length < limit.max,
+        ),
     );
     plan.push(
       weightedPick(
@@ -103,6 +105,14 @@ export function drawPlan(seed: string, shape: DifficultyShape): PlannedType[] {
         open.map(({ type, weight }) => ({ value: type, weight })),
       ),
     );
+  };
+  for (const limit of shape.limits) {
+    for (let i = 0; i < limit.min; i++) pickFrom((type) => limit.types.includes(type));
+  }
+  while (plan.length < total) pickFrom(() => true);
+  for (let i = plan.length - 1; i > 0; i--) {
+    const j = random.between(0, i);
+    [plan[i], plan[j]] = [plan[j], plan[i]];
   }
   return plan;
 }
@@ -127,13 +137,12 @@ export function drawDirection({
 
 export function generate(
   { seed, difficulty, modifiers, dataVersion }: GenerateInput,
-  shape: DifficultyShape = shapes[difficulty],
   data: GameData | undefined = dataVersions[dataVersion],
 ): Challenge {
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");
-  const plan = drawPlan(seed, shape);
+  const plan = drawPlan(seed, shapeFor(data, difficulty));
   const directions: (Direction | null)[] = [];
   plan.forEach((_, slot) => {
     const placed = directions.filter((direction) => direction !== null);
@@ -141,7 +150,7 @@ export function generate(
   });
   return {
     seed,
-    difficulty: difficulty satisfies Difficulty,
+    difficulty,
     modifiers: [...modifiers],
     dataVersion,
     plan,

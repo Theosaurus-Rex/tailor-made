@@ -1,14 +1,20 @@
+import type {
+  DifficultyName,
+  DifficultyShape,
+  ShapeDirectionType,
+} from "@/game/data/difficulty-shapes";
+import type { GameData } from "@/game/data/v1";
 import type { DirectionType } from "./direction";
 
-export type Difficulty = "easy" | "medium" | "hard" | "chaos";
+export type Difficulty = DifficultyName;
+export type { DifficultyShape };
 
 export type PlannedType = Exclude<DirectionType, "burlapOnly">;
 
-export interface DifficultyShape {
-  directionCount: { min: number; max: number };
-  types: readonly { type: PlannedType; weight: number }[];
-  limits: readonly { types: readonly DirectionType[]; max: number }[];
-}
+type SameKeys<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false;
+
+// Fails typecheck if a shape can name a type that is not a direction, or cannot name one that is.
+export const shapeTypesMatchDirections: SameKeys<ShapeDirectionType, PlannedType> = true;
 
 export const AVOID_TYPES: readonly DirectionType[] = [
   "styleAvoid",
@@ -23,25 +29,9 @@ export const AT_LEAST_TYPES: readonly DirectionType[] = [
   "fabricsMin",
 ];
 
-export const mediumShape: DifficultyShape = {
-  directionCount: { min: 3, max: 4 },
-  types: [
-    { type: "style", weight: 4 },
-    { type: "fabric", weight: 3 },
-    { type: "colour", weight: 3 },
-    { type: "accessory", weight: 2 },
-    { type: "styleAvoid", weight: 1 },
-    { type: "fabricAvoid", weight: 1 },
-    { type: "colourAvoid", weight: 1 },
-    { type: "accessoryAvoid", weight: 1 },
-    { type: "accessoryMin", weight: 1 },
-    { type: "coloursMin", weight: 1 },
-    { type: "fabricsMin", weight: 1 },
-  ],
-  limits: [
-    { types: AVOID_TYPES, max: 1 },
-    { types: AT_LEAST_TYPES, max: 1 },
-  ],
-};
-
-export const shapes = { medium: mediumShape } as const;
+export function shapeFor(data: GameData, difficulty: string): DifficultyShape {
+  if (!Object.hasOwn(data.difficulties, difficulty)) {
+    throw new RangeError(`unknown difficulty ${difficulty}`);
+  }
+  return data.difficulties[difficulty as Difficulty];
+}
