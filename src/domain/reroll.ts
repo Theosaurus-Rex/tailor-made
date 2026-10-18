@@ -11,6 +11,7 @@ export function reroll(
   data: GameData | undefined = dataVersions[challenge.dataVersion],
 ): Challenge {
   if (!data) throw new RangeError(`unknown data version ${challenge.dataVersion}`);
+  if (challenge.difficulty === "chaos") throw new Error("chaos cards cannot be rerolled");
   if (!Number.isInteger(slot) || slot < 0 || slot >= challenge.plan.length) {
     throw new RangeError(`slot ${slot} is not in the plan`);
   }
@@ -42,6 +43,9 @@ export function rebuild(
   data?: GameData,
 ): Challenge {
   const { history, ...generateInput } = input;
+  if (generateInput.difficulty === "chaos" && history.length > 0) {
+    throw new RangeError("chaos cards cannot be rerolled, so their history must be empty");
+  }
   const start = generate(generateInput, data);
   for (const slot of history) {
     if (!Number.isInteger(slot) || slot < 0 || slot >= start.plan.length) {

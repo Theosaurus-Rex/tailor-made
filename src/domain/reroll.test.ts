@@ -128,6 +128,32 @@ describe("reroll", () => {
   });
 });
 
+describe("chaos", () => {
+  const chaosInput = (seed: string): GenerateInput => ({ ...inputFor(seed), difficulty: "chaos" });
+
+  it("cannot be rerolled in any slot", () => {
+    for (const seed of samples.slice(0, 50)) {
+      const challenge = generate(chaosInput(seed));
+      challenge.plan.forEach((_, slot) => {
+        expect(() => reroll(challenge, slot)).toThrow(/chaos/i);
+      });
+    }
+  });
+
+  it("rebuilds with an empty history, and refuses any history", () => {
+    const start = generate(chaosInput("k7m2qx9a"));
+    expect(rebuild({ ...chaosInput("k7m2qx9a"), history: [] })).toEqual(start);
+    expect(() => rebuild({ ...chaosInput("k7m2qx9a"), history: [0] })).toThrow(RangeError);
+  });
+
+  it("still rerolls on the other difficulties", () => {
+    for (const difficulty of ["easy", "medium", "hard"] as const) {
+      const start = generate({ ...inputFor("k7m2qx9a"), difficulty });
+      expect(reroll(start, 0).history).toEqual([0]);
+    }
+  });
+});
+
 describe("rebuild", () => {
   it("equals the live challenge after any run of rerolls", () => {
     samples.forEach((seed, i) => {

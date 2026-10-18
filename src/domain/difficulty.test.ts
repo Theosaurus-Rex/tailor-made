@@ -469,7 +469,7 @@ describe("shapes come from the game data", () => {
   });
 });
 
-describe.each(["hard", "chaos"] as const)("reroll and rebuild on %s", (difficulty) => {
+describe.each(["hard"] as const)("reroll and rebuild on %s", (difficulty) => {
   it("rebuild equals the live challenge", () => {
     for (const seed of samples.slice(0, 60)) {
       const start = generate(input(seed, difficulty));
