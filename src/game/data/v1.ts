@@ -86,7 +86,10 @@ export interface GameData {
   version: number;
   tagWeights: Record<StyleTag, number>;
   fabrics: Record<FabricType, FabricInfo>;
+  styleTags: readonly StyleTag[];
+  fabricTypes: readonly FabricType[];
   colours: readonly Colour[];
+  accessoryTypes: readonly AccessoryType[];
   colourLeanings: Partial<Record<Colour, readonly StyleTag[]>>;
   accessories: Record<AccessoryType, AccessoryInfo>;
   opposingPairs: readonly (readonly [StyleTag, StyleTag])[];
@@ -187,7 +190,10 @@ const opposingPairs = [
 export const dataV1: GameData = {
   version: DATA_VERSION,
   tagWeights,
+  styleTags,
+  fabricTypes,
   colours,
+  accessoryTypes,
   fabrics,
   colourLeanings,
   accessories,
