@@ -20,28 +20,28 @@ describe("clientFromSeed", () => {
     expect(clientFromSeed("abc23456")).toEqual({
       name: "Noor Ibarra",
       human: true,
-      personality: "gushing",
+      personality: "grand",
     });
     expect(clientFromSeed("2026-10-16")).toEqual({
       name: "Cecily Oakhurst",
       human: true,
-      personality: "gushing",
+      personality: "grand",
     });
     expect(clientFromSeed("k7m2qx9a")).toEqual({
       name: "Freya Lindqvist",
       human: true,
-      personality: "gushing",
+      personality: "brisk",
     });
     expect(clientFromSeed("w9x8y7v6")).toEqual({
       name: "Winnie Hollowmere",
       human: false,
       kind: "friendly ghost",
-      personality: "gushing",
+      personality: "grand",
     });
     expect(clientFromSeed("hello")).toEqual({
       name: "Gwendolyn Nakamura",
       human: true,
-      personality: "brisk",
+      personality: "anxious",
     });
     expect(clientFromSeed("zzzzzzzz")).toEqual({
       name: "Philippa Tremaine",
