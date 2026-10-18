@@ -1,9 +1,20 @@
-import { describe, expect, it } from "vitest";
+import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 
 import { dailyChallenge } from "@/domain/daily";
 import { nextUtcMidnight, utcDateOf } from "./utc-date";
 
 describe("utcDateOf", () => {
+  beforeAll(() => {
+    vi.stubEnv("TZ", "Pacific/Auckland");
+  });
+  afterAll(() => {
+    vi.unstubAllEnvs();
+  });
+
+  it("runs in a zone that is not UTC", () => {
+    expect(new Date("2026-10-16T20:00:00Z").getDate()).toBe(17);
+  });
+
   it("gives the same date and challenge for any moment on one UTC day", () => {
     const early = new Date("2026-10-16T00:30:00Z");
     const late = new Date("2026-10-16T23:30:00Z");
