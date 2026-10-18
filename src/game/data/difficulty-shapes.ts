@@ -18,10 +18,14 @@ export type ShapeDirectionType =
 
 export type DifficultyName = "easy" | "medium" | "hard" | "chaos";
 
+export type PairRule = "never" | "noBothStyles" | "oneStylePair";
+
 export interface DifficultyShape {
   directionCount: { min: number; max: number };
   types: readonly { type: ShapeDirectionType; weight: number }[];
   limits: readonly { types: readonly ShapeDirectionType[]; min: number; max: number }[];
+  pairs: PairRule;
+  pullApartChance?: number;
 }
 
 const avoids = [
@@ -73,6 +77,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
     directionCount: { min: 2, max: 3 },
     types: easyTypes,
     limits: [],
+    pairs: "never",
   },
   medium: {
     directionCount: { min: 3, max: 4 },
@@ -81,6 +86,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: avoids, min: 1, max: 1 },
       { types: atLeastCounts, min: 1, max: 1 },
     ],
+    pairs: "never",
   },
   hard: {
     directionCount: { min: 4, max: 5 },
@@ -90,6 +96,8 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: atLeastCounts, min: 0, max: 2 },
       { types: onlyLists, min: 0, max: 1 },
     ],
+    pairs: "noBothStyles",
+    pullApartChance: 0.5,
   },
   chaos: {
     directionCount: { min: 5, max: 6 },
@@ -99,7 +107,9 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: [...atLeastCounts, "accessoryExact"], min: 0, max: 3 },
       { types: onlyLists, min: 1, max: 1 },
       { types: ["accessoryExact"], min: 1, max: 3 },
+      { types: ["style"], min: 2, max: 4 },
     ],
+    pairs: "oneStylePair",
   },
 };
 

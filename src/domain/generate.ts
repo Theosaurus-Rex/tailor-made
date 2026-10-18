@@ -1,4 +1,5 @@
 import { dataVersions } from "@/game/data";
+import type { PairRule } from "@/game/data/difficulty-shapes";
 import type { GameData } from "@/game/data/v1";
 import type { Challenge, Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
@@ -28,6 +29,7 @@ export interface DrawInput {
   slot: number;
   rerollCount: number;
   others: readonly Direction[];
+  pairs: PairRule;
   data: GameData;
 }
 
@@ -139,6 +141,7 @@ export function drawDirection({
   slot,
   rerollCount,
   others,
+  pairs,
   data,
 }: DrawInput): Direction | null {
   const type = plan[slot];
@@ -146,7 +149,7 @@ export function drawDirection({
   const random = randomFromSeed(deriveSeed(seed, "direction", slot, rerollCount));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
     const candidate = drawCandidate(type, random, data, others);
-    if (!conflictsWithAny(candidate, others, { data })) return candidate;
+    if (!conflictsWithAny(candidate, others, { data, pairs })) return candidate;
   }
   return null;
 }
@@ -158,11 +161,22 @@ export function generate(
   if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");
-  const plan = drawPlan(seed, shapeFor(data, difficulty), data.kindsNeverTogether);
+  const shape = shapeFor(data, difficulty);
+  const plan = drawPlan(seed, shape, data.kindsNeverTogether);
   const directions: (Direction | null)[] = [];
   plan.forEach((_, slot) => {
     const placed = directions.filter((direction) => direction !== null);
-    directions.push(drawDirection({ seed, plan, slot, rerollCount: 0, others: placed, data }));
+    directions.push(
+      drawDirection({
+        seed,
+        plan,
+        slot,
+        rerollCount: 0,
+        others: placed,
+        pairs: shape.pairs,
+        data,
+      }),
+    );
   });
   return {
     seed,

@@ -88,7 +88,7 @@ describe("generate", () => {
     for (const seed of samples) {
       const challenge = generate(input(seed));
       const directions = placedDirections(challenge);
-      expect(findConflicts(directions, { data: dataV1 })).toEqual([]);
+      expect(findConflicts(directions, { data: dataV1, pairs: "never" })).toEqual([]);
       expect(challenge.directions).toHaveLength(challenge.plan.length);
       expect(challenge.plan.length).toBeGreaterThanOrEqual(3);
       expect(challenge.plan.length).toBeLessThanOrEqual(4);
@@ -122,6 +122,7 @@ describe("generate", () => {
         slot,
         rerollCount,
         others: others(slot),
+        pairs: "never",
         data: dataV1,
       });
     expect(redraw(0, 0)).toEqual(challenge.directions[0]);
@@ -163,6 +164,7 @@ describe("generate", () => {
       directionCount: { min: 3, max: 3 },
       types: [{ type: "colourOnly", weight: 1 }],
       limits: [],
+      pairs: "never",
     };
     const challenge = generate(input("k7m2qx9a"), withMedium(stuck));
     expect(challenge.plan).toEqual(["colourOnly", "colourOnly", "colourOnly"]);
@@ -182,6 +184,7 @@ describe("generate", () => {
         { type: "fabricsOnly", weight: 1 },
       ],
       limits: [],
+      pairs: "never",
     };
     const sizes = new Set<number>();
     for (const seed of samples.slice(0, 100)) {

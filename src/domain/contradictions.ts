@@ -1,4 +1,5 @@
-import type { GameData } from "@/game/data/v1";
+import type { PairRule } from "@/game/data/difficulty-shapes";
+import type { GameData, StyleTag } from "@/game/data/v1";
 import type { Direction } from "./direction";
 
 export type ConflictReason =
@@ -20,7 +21,8 @@ export interface Conflict {
 
 export interface ConflictOptions {
   data: GameData;
-  allowOpposingPair?: boolean;
+  pairs: PairRule;
+  allowedPair?: readonly [StyleTag, StyleTag];
 }
 
 type Rule = (directions: readonly Direction[], options: ConflictOptions) => Conflict[];
@@ -175,15 +177,21 @@ const moreThanOneCount: Rule = (directions) =>
     (a, b) => isCount(a) && isCount(b) && askedFor(a) === askedFor(b),
   );
 
-const opposingPair: Rule = (directions, options) => {
-  if (options.allowOpposingPair) return [];
-  return eachPair(directions, "opposingPair", (a, b) => {
-    if (a.type !== "style" || b.type !== "style") return false;
-    return options.data.opposingPairs.some(
-      ([x, y]) => (a.tag === x && b.tag === y) || (a.tag === y && b.tag === x),
-    );
+const styleTag = (d: Direction): StyleTag | undefined =>
+  d.type === "style" || d.type === "styleAvoid" ? d.tag : undefined;
+
+const isPair = (a: StyleTag, b: StyleTag, [x, y]: readonly [StyleTag, StyleTag]) =>
+  (a === x && b === y) || (a === y && b === x);
+
+const opposingPair: Rule = (directions, { data, pairs, allowedPair }) =>
+  eachPair(directions, "opposingPair", (a, b) => {
+    if (pairs !== "never" && (a.type !== "style" || b.type !== "style")) return false;
+    const x = styleTag(a);
+    const y = styleTag(b);
+    if (x === undefined || y === undefined) return false;
+    if (pairs === "oneStylePair" && allowedPair && isPair(x, y, allowedPair)) return false;
+    return data.opposingPairs.some((pair) => isPair(x, y, pair));
   });
-};
 
 const askedTwice: Rule = (directions) =>
   eachPair(directions, "askedTwice", (a, b) => {

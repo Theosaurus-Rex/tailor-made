@@ -51,7 +51,7 @@ describe.each(difficulties)("%s", (difficulty) => {
         expect(used).toBeLessThanOrEqual(limit.max);
       }
       const placed = placedDirections(challenge);
-      expect(findConflicts(placed, { data: dataV1 })).toEqual([]);
+      expect(findConflicts(placed, { data: dataV1, pairs: shape.pairs })).toEqual([]);
       expect(placed.map((d) => d.type)).not.toContain("burlapOnly");
       challenge.directions.forEach((d, i) => {
         if (d) expect(d.type).toBe(challenge.plan[i]);
@@ -122,8 +122,12 @@ describe("kinds that never share a card", () => {
   it.each(neverTogether)("%s and %s always conflict", (a, b) => {
     for (const first of examples[a]) {
       for (const second of examples[b]) {
-        expect(findConflicts([first, second], { data: dataV1 })).not.toEqual([]);
-        expect(findConflicts([second, first], { data: dataV1 })).not.toEqual([]);
+        expect(findConflicts([first, second], { data: dataV1, pairs: "noBothStyles" })).not.toEqual(
+          [],
+        );
+        expect(findConflicts([second, first], { data: dataV1, pairs: "noBothStyles" })).not.toEqual(
+          [],
+        );
       }
     }
   });
@@ -176,6 +180,65 @@ describe("chaos", () => {
   });
 });
 
+const pairSamples = Array.from({ length: 500 }, (_, i) => deriveSeed("pair-sample", i));
+
+const sides = (placed: readonly Direction[], kind: "style" | "any") => {
+  const tags = placed.flatMap((d) =>
+    d.type === "style" || (kind === "any" && d.type === "styleAvoid") ? [d.tag] : [],
+  );
+  const found: [number, number][] = [];
+  tags.forEach((a, i) =>
+    tags.forEach((b, j) => {
+      if (
+        i < j &&
+        dataV1.opposingPairs.some(([x, y]) => (a === x && b === y) || (a === y && b === x))
+      )
+        found.push([i, j]);
+    }),
+  );
+  return found;
+};
+
+describe("pair rules in the game data", () => {
+  it("gives each difficulty its own rule", () => {
+    expect(dataV1.difficulties.easy.pairs).toBe("never");
+    expect(dataV1.difficulties.medium.pairs).toBe("never");
+    expect(dataV1.difficulties.hard.pairs).toBe("noBothStyles");
+    expect(dataV1.difficulties.chaos.pairs).toBe("oneStylePair");
+    expect(dataV1.difficulties.hard.pullApartChance).toBe(0.5);
+  });
+
+  it.each(["easy", "medium"] as const)("%s never touches a pair, in any form", (difficulty) => {
+    for (const seed of pairSamples) {
+      const placed = placedDirections(generate(input(seed, difficulty)));
+      expect(sides(placed, "any")).toEqual([]);
+    }
+  });
+
+  it("hard never has two style directions on opposite sides of a pair", () => {
+    for (const seed of pairSamples) {
+      const placed = placedDirections(generate(input(seed, "hard")));
+      expect(sides(placed, "style")).toEqual([]);
+    }
+  });
+
+  it("takes the rule from the shape, not from the difficulty name", () => {
+    const loose: GameData = {
+      ...dataV1,
+      difficulties: {
+        ...dataV1.difficulties,
+        medium: { ...dataV1.difficulties.medium, pairs: "noBothStyles" },
+      },
+    };
+    let touched = 0;
+    for (const seed of pairSamples) {
+      const placed = placedDirections(generate(input(seed, "medium"), loose));
+      if (sides(placed, "any").length > 0) touched++;
+    }
+    expect(touched).toBeGreaterThan(0);
+  });
+});
+
 describe("shapes come from the game data", () => {
   it("deals what a changed easy shape says", () => {
     const data: GameData = {
@@ -186,6 +249,7 @@ describe("shapes come from the game data", () => {
           directionCount: { min: 2, max: 2 },
           types: [{ type: "colour", weight: 1 }],
           limits: [],
+          pairs: "never",
         },
       },
     };
@@ -230,6 +294,7 @@ describe("a colour or fabric beside an only list", () => {
       slot: 0,
       rerollCount: 0,
       others: [other],
+      pairs: "never",
       data: dataV1,
     });
 

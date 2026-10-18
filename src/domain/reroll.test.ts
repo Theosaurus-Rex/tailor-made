@@ -57,7 +57,7 @@ describe("reroll", () => {
     samples.forEach((seed, i) => {
       const start = generate(inputFor(seed));
       const end = playLive(start, randomSlots(seed, start.plan, 1 + (i % 6)));
-      expect(findConflicts(placedDirections(end), { data: dataV1 })).toEqual([]);
+      expect(findConflicts(placedDirections(end), { data: dataV1, pairs: "never" })).toEqual([]);
     });
   });
 
@@ -74,6 +74,7 @@ describe("reroll", () => {
         slot: 1,
         rerollCount: 2,
         others,
+        pairs: "never",
         data: dataV1,
       }),
     );
