@@ -12,13 +12,14 @@ function daysInMonth(year: number, month: number): number {
   return [4, 6, 9, 11].includes(month) ? 30 : 31;
 }
 
-function isDailySeed(seed: string): boolean {
+export function parseDailySeed(seed: string): { year: number; month: number; day: number } | null {
   const match = DAILY_SEED.exec(seed);
-  if (!match) return false;
+  if (!match) return null;
   const [year, month, day] = [Number(match[1]), Number(match[2]), Number(match[3])];
-  return month >= 1 && month <= 12 && day >= 1 && day <= daysInMonth(year, month);
+  const real = month >= 1 && month <= 12 && day >= 1 && day <= daysInMonth(year, month);
+  return real ? { year, month, day } : null;
 }
 
 export function isValidSeed(seed: string): boolean {
-  return RANDOM_SEED.test(seed) || isDailySeed(seed);
+  return RANDOM_SEED.test(seed) || parseDailySeed(seed) !== null;
 }

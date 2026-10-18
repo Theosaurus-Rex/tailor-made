@@ -3,11 +3,13 @@
 
 import {
   burlapDifficultyShapes,
+  dailyDifficultyByWeekday,
   difficultyShapes,
   kindsNeverTogether,
   type ShapeDirectionType,
   type DifficultyName,
   type DifficultyShape,
+  type Weekday,
 } from "./difficulty-shapes";
 
 export const DATA_VERSION = 1;
@@ -94,6 +96,7 @@ export interface AccessoryInfo {
 export interface GameData {
   difficulties: Record<DifficultyName, DifficultyShape>;
   burlapDifficulties: Record<DifficultyName, DifficultyShape>;
+  dailyDifficulties: Record<Weekday, DifficultyName>;
   kindsNeverTogether: readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];
   version: number;
   tagWeights: Record<StyleTag, number>;
@@ -202,6 +205,7 @@ const opposingPairs = [
 export const dataV1: GameData = {
   difficulties: difficultyShapes,
   burlapDifficulties: burlapDifficultyShapes,
+  dailyDifficulties: dailyDifficultyByWeekday,
   kindsNeverTogether,
   version: DATA_VERSION,
   tagWeights,
