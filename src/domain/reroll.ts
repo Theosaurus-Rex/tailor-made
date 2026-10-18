@@ -2,7 +2,7 @@ import { dataVersions } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import { rerollCountOf, type Challenge } from "./challenge";
 import type { Direction } from "./direction";
-import { drawDirection } from "./generate";
+import { drawDirection, generate, type GenerateInput } from "./generate";
 
 export function reroll(
   challenge: Challenge,
@@ -32,4 +32,18 @@ export function reroll(
     history: [...challenge.history, slot],
     directions: challenge.directions.map((direction, i) => (i === slot ? redrawn : direction)),
   };
+}
+
+export function rebuild(
+  input: GenerateInput & { history: readonly number[] },
+  data?: GameData,
+): Challenge {
+  const { history, ...generateInput } = input;
+  const start = generate(generateInput, undefined, data);
+  for (const slot of history) {
+    if (!Number.isInteger(slot) || slot < 0 || slot >= start.plan.length) {
+      throw new RangeError(`reroll ${slot} is not a slot in the plan`);
+    }
+  }
+  return history.reduce((challenge, slot) => reroll(challenge, slot, data), start);
 }
