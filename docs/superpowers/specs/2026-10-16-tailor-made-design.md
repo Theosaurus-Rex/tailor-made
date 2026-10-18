@@ -178,15 +178,20 @@ card free of other fabric and colour directions.
 
 ### Reroll
 
-Rerolling direction *i* draws from a sub-seed of `seed`, `i` and that direction's reroll count.
-The rest of the challenge stays the same. Reroll counts are part of the share link, so a rerolled
-challenge still shares exactly.
+Rerolling direction *i* draws from a sub-seed of `seed`, `i` and that direction's reroll count,
+and keeps its kind. The new draw is checked against every other direction on the card. The rest
+of the challenge stays the same. A challenge keeps its reroll history, the slots in the order they
+were rerolled. A slot's count is how many times it appears. Burlap only cannot be rerolled.
 
 ### Share link format
 
 ```
-/c?v=1&s=<seed>&d=<difficulty>&m=<modifiers>&r=<reroll counts>
+/c?v=1&s=<seed>&d=<difficulty>&m=<modifiers>&r=<reroll history>
 ```
+
+`r` is the reroll history in order, for example `r=1.3.1` for direction 1, then 3, then 1 again.
+Counts alone cannot rebuild a card when two rerolled directions affect each other. Replaying the
+history in order always matches, so a link rebuilds by generating the card and then rerolling.
 
 `v` is required. A link with an unknown `v`, or an unparsable parameter, shows a friendly error
 with a "make a new one" button, never a blank page.

@@ -38,7 +38,7 @@ describe("generate", () => {
       modifiers: [],
       dataVersion: 1,
     });
-    expect(challenge.rerolls).toEqual(challenge.plan.map(() => 0));
+    expect(challenge.history).toEqual([]);
   });
 
   it("pins fixed seeds", () => {
@@ -47,7 +47,7 @@ describe("generate", () => {
       ...base,
       seed: "k7m2qx9a",
       plan: ["accessoryAvoid", "style", "coloursMin", "style"],
-      rerolls: [0, 0, 0, 0],
+      history: [],
       directions: [
         { type: "accessoryAvoid", accessory: "Feather" },
         { type: "style", tag: "Warm" },
@@ -59,7 +59,7 @@ describe("generate", () => {
       ...base,
       seed: "2026-10-16",
       plan: ["colourAvoid", "colour", "accessory"],
-      rerolls: [0, 0, 0],
+      history: [],
       directions: [
         { type: "colourAvoid", colour: "White" },
         { type: "colour", colour: "Yellow" },
@@ -70,7 +70,7 @@ describe("generate", () => {
       ...base,
       seed: "23456789",
       plan: ["colourAvoid", "colour", "accessory"],
-      rerolls: [0, 0, 0],
+      history: [],
       directions: [
         { type: "colourAvoid", colour: "Black" },
         { type: "colour", colour: "White" },
@@ -164,7 +164,7 @@ describe("generate", () => {
     expect(challenge.directions[0]?.type).toBe("colourOnly");
     expect(challenge.directions[1]).toBeNull();
     expect(challenge.directions[2]).toBeNull();
-    expect(challenge.rerolls).toEqual([0, 0, 0]);
+    expect(challenge.history).toEqual([]);
     expect(generate(input("k7m2qx9a"), stuck)).toEqual(challenge);
     expect(MAX_TRIES).toBe(25);
   });
