@@ -4,7 +4,13 @@ import { dataV1, type GameData } from "@/game/data/v1";
 import { placedDirections, type Challenge } from "./challenge";
 import { findConflicts, type ConflictOptions } from "./contradictions";
 import type { Direction } from "./direction";
-import { AT_LEAST_TYPES, AVOID_TYPES, shapeFor, type Difficulty } from "./difficulty";
+import {
+  AT_LEAST_TYPES,
+  AVOID_TYPES,
+  shapeFor,
+  type Difficulty,
+  type DifficultyShape,
+} from "./difficulty";
 import { drawDirection, generate } from "./generate";
 import { deriveSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
@@ -92,6 +98,43 @@ describe.each(difficulties)("%s", (difficulty) => {
   it("does not always put the same kind first", () => {
     const firsts = new Set(samples.map((seed) => generate(input(seed, difficulty)).plan[0]));
     expect(firsts.size).toBeGreaterThan(1);
+  });
+});
+
+describe.each(difficulties)("%s burlap shape", (difficulty) => {
+  const shape = dataV1.burlapDifficulties[difficulty];
+  const normal = dataV1.difficulties[difficulty];
+  const allowed = shape.types.map(({ type }) => type);
+  const accessoryWeight = (types: DifficultyShape["types"]) =>
+    types.filter(({ type }) => type.startsWith("accessory")).reduce((sum, t) => sum + t.weight, 0);
+  const share = (types: DifficultyShape["types"]) =>
+    accessoryWeight(types) / types.reduce((sum, t) => sum + t.weight, 0);
+
+  it("satisfies its own shape", () => {
+    const requiredTotal = shape.limits.reduce((sum, limit) => sum + limit.min, 0);
+    expect(requiredTotal).toBeLessThanOrEqual(shape.directionCount.min);
+    for (const limit of shape.limits) {
+      expect(limit.min).toBeLessThanOrEqual(limit.max);
+      for (const type of limit.types) expect(allowed).toContain(type);
+    }
+  });
+
+  it("names no fabric or colour kinds", () => {
+    const banned = /^(fabric|colour)/;
+    for (const type of allowed) expect(type).not.toMatch(banned);
+    for (const limit of shape.limits)
+      for (const type of limit.types) expect(type).not.toMatch(banned);
+  });
+
+  it("keeps the count, pair rule and pull apart chance of the normal shape", () => {
+    expect(shape.directionCount).toEqual(normal.directionCount);
+    expect(shape.pairs).toBe(normal.pairs);
+    expect(shape.pullApartChance).toBe(normal.pullApartChance);
+  });
+
+  it("weights accessories more than the normal shape does without fabrics and colours", () => {
+    const withoutThem = normal.types.filter(({ type }) => !/^(fabric|colour)/.test(type));
+    expect(share(shape.types)).toBeGreaterThan(share(withoutThem) + 0.1);
   });
 });
 

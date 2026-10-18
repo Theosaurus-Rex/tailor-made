@@ -2,6 +2,7 @@
 // (docs/notes/build-443-check.md). Where each value came from: docs/notes/data-v1-leanings.md.
 
 import {
+  burlapDifficultyShapes,
   difficultyShapes,
   kindsNeverTogether,
   type ShapeDirectionType,
@@ -92,6 +93,7 @@ export interface AccessoryInfo {
 
 export interface GameData {
   difficulties: Record<DifficultyName, DifficultyShape>;
+  burlapDifficulties: Record<DifficultyName, DifficultyShape>;
   kindsNeverTogether: readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];
   version: number;
   tagWeights: Record<StyleTag, number>;
@@ -199,6 +201,7 @@ const opposingPairs = [
 
 export const dataV1: GameData = {
   difficulties: difficultyShapes,
+  burlapDifficulties: burlapDifficultyShapes,
   kindsNeverTogether,
   version: DATA_VERSION,
   tagWeights,

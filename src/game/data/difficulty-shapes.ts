@@ -113,6 +113,69 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
   },
 };
 
+const burlapEasyTypes = [
+  { type: "style", weight: 4 },
+  { type: "accessory", weight: 4 },
+] as const satisfies DifficultyShape["types"];
+
+const burlapMediumTypes = [
+  { type: "style", weight: 4 },
+  { type: "accessory", weight: 6 },
+  { type: "styleAvoid", weight: 1 },
+  { type: "accessoryAvoid", weight: 2 },
+  { type: "accessoryMin", weight: 3 },
+] as const satisfies DifficultyShape["types"];
+
+const burlapChaosTypes = [
+  ...burlapMediumTypes,
+  { type: "accessoryExact", weight: 3 },
+] as const satisfies DifficultyShape["types"];
+
+const burlapAvoids = [
+  "styleAvoid",
+  "accessoryAvoid",
+] as const satisfies readonly ShapeDirectionType[];
+
+// The Burlap only shapes: the normal ones without fabric and colour kinds, heavier on accessories.
+export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
+  easy: {
+    directionCount: { min: 2, max: 3 },
+    types: burlapEasyTypes,
+    limits: [],
+    pairs: "never",
+  },
+  medium: {
+    directionCount: { min: 3, max: 4 },
+    types: burlapMediumTypes,
+    limits: [
+      { types: burlapAvoids, min: 1, max: 1 },
+      { types: ["accessoryMin"], min: 1, max: 1 },
+    ],
+    pairs: "never",
+  },
+  hard: {
+    directionCount: { min: 4, max: 5 },
+    types: burlapMediumTypes,
+    limits: [
+      { types: burlapAvoids, min: 0, max: 2 },
+      { types: ["accessoryMin"], min: 0, max: 2 },
+    ],
+    pairs: "noBothStyles",
+    pullApartChance: 0.5,
+  },
+  chaos: {
+    directionCount: { min: 5, max: 6 },
+    types: burlapChaosTypes,
+    limits: [
+      { types: burlapAvoids, min: 0, max: 2 },
+      { types: ["accessoryMin", "accessoryExact"], min: 0, max: 3 },
+      { types: ["accessoryExact"], min: 1, max: 3 },
+      { types: ["style"], min: 2, max: 4 },
+    ],
+    pairs: "oneStylePair",
+  },
+};
+
 export const kindsNeverTogether = [
   ["colourOnly", "colourAvoid"],
   ["colourOnly", "coloursMin"],

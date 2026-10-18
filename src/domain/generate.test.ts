@@ -160,8 +160,7 @@ describe("generate", () => {
     expect(styles).toBeGreaterThan(0);
   });
 
-  it("refuses the burlap modifier and unknown data versions", () => {
-    expect(() => generate({ ...input("k7m2qx9a"), modifiers: ["burlap"] })).toThrow(/burlap/i);
+  it("refuses unknown data versions", () => {
     expect(() => generate({ ...input("k7m2qx9a"), dataVersion: 99 })).toThrow(RangeError);
   });
 

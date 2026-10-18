@@ -2,7 +2,7 @@ import { dataVersions } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import { rerollCountOf, type Challenge } from "./challenge";
 import type { Direction } from "./direction";
-import { shapeFor } from "./difficulty";
+import { burlapShapeFor, shapeFor } from "./difficulty";
 import { drawDirection, generate, type GenerateInput } from "./generate";
 
 export function reroll(
@@ -27,7 +27,10 @@ export function reroll(
     slot,
     rerollCount: rerollCountOf(challenge, slot) + 1,
     others,
-    pairs: shapeFor(data, challenge.difficulty).pairs,
+    pairs: (challenge.modifiers.includes("burlap") ? burlapShapeFor : shapeFor)(
+      data,
+      challenge.difficulty,
+    ).pairs,
     pullApartSlot: challenge.pullApartSlot,
     data,
   });
