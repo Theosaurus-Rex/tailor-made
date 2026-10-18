@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { dataV1 } from "@/game/data/v1";
 import { placedDirections, rerollCountOf, type Challenge } from "./challenge";
 import { findConflicts } from "./contradictions";
+import type { Direction } from "./direction";
 import { drawDirection, generate, type GenerateInput } from "./generate";
 import { deriveSeed, randomFromSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
@@ -24,13 +25,7 @@ const playLive = (start: Challenge, slots: readonly number[]) =>
   slots.reduce((challenge, slot) => reroll(challenge, slot), start);
 
 const rebuildFrom = (challenge: Challenge, history: number[]) =>
-  rebuild({
-    seed: challenge.seed,
-    difficulty: challenge.difficulty,
-    modifiers: challenge.modifiers,
-    dataVersion: challenge.dataVersion,
-    history,
-  });
+  rebuild({ ...inputFor(challenge.seed), dataVersion: challenge.dataVersion, history });
 
 describe("reroll", () => {
   it("changes only the chosen slot", () => {
@@ -71,7 +66,7 @@ describe("reroll", () => {
     const end = playLive(start, [1, 1]);
     expect(rerollCountOf(end, 1)).toBe(2);
     expect(rerollCountOf(end, 0)).toBe(0);
-    const others = end.directions.filter((d, i) => i !== 1 && d !== null);
+    const others = end.directions.filter((d, i): d is Direction => i !== 1 && d !== null);
     expect(end.directions[1]).toEqual(
       drawDirection({
         seed: end.seed,
