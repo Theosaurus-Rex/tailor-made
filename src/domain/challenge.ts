@@ -14,6 +14,7 @@ export interface Challenge {
   history: number[];
   directions: (Direction | null)[];
   pairSlots: [number, number] | null;
+  pullApartSlot: number | null;
 }
 
 export const placedDirections = (challenge: Challenge): Direction[] =>

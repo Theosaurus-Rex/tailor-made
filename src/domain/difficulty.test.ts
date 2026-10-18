@@ -324,6 +324,121 @@ describe("chaos pair", () => {
   });
 });
 
+describe("hard pull apart", () => {
+  const hardSamples = Array.from({ length: 2500 }, (_, i) => deriveSeed("pull-apart-sample", i));
+  const hard = (seed: string) => generate(input(seed, "hard"));
+  const canPullApart = (plan: readonly string[]) =>
+    plan.includes("styleAvoid") && plan.some((type) => type === "fabric" || type === "accessory");
+
+  const leans = (direction: Direction | null | undefined, tag: string) => {
+    if (direction?.type === "fabric")
+      return (dataV1.fabrics[direction.fabric].leansTowards as readonly string[]).includes(tag);
+    if (direction?.type === "accessory")
+      return (dataV1.accessories[direction.accessory].leansTowards as readonly string[]).includes(
+        tag,
+      );
+    return false;
+  };
+
+  const avoidedTag = (challenge: Challenge) => {
+    const avoid = challenge.directions.find((d) => d?.type === "styleAvoid");
+    return avoid?.type === "styleAvoid" ? avoid.tag : undefined;
+  };
+
+  const hasLeaningItem = (challenge: Challenge, slot: number, tag: string) => {
+    if (challenge.plan[slot] === "fabric") {
+      const only = challenge.directions.find((d) => d?.type === "fabricsOnly");
+      const pool = only?.type === "fabricsOnly" ? only.fabrics : dataV1.fabricTypes;
+      return pool.some(
+        (f) =>
+          !dataV1.fabrics[f].modifierOnly &&
+          (dataV1.fabrics[f].leansTowards as readonly string[]).includes(tag),
+      );
+    }
+    return dataV1.accessoryTypes.some((a) =>
+      (dataV1.accessories[a].leansTowards as readonly string[]).includes(tag),
+    );
+  };
+
+  it("marks about the chosen share of the plans that can pull apart", () => {
+    const chance = dataV1.difficulties.hard.pullApartChance ?? 0;
+    let eligible = 0;
+    let marked = 0;
+    for (const seed of hardSamples) {
+      const { plan, pullApartSlot } = hard(seed);
+      if (!canPullApart(plan)) {
+        expect(pullApartSlot).toBeNull();
+        continue;
+      }
+      eligible++;
+      if (pullApartSlot === null) continue;
+      marked++;
+      expect(pullApartSlot).toBe(plan.findIndex((t) => t === "fabric" || t === "accessory"));
+    }
+    expect(eligible).toBeGreaterThan(100);
+    expect(Math.abs(marked / eligible - chance)).toBeLessThanOrEqual(0.08);
+  });
+
+  it("never marks a slot on easy, medium or chaos", () => {
+    for (const difficulty of ["easy", "medium", "chaos"] as const) {
+      for (const seed of pairSamples.slice(0, 100)) {
+        expect(generate(input(seed, difficulty)).pullApartSlot).toBeNull();
+      }
+    }
+  });
+
+  it("picks an item that leans towards the avoided style", () => {
+    let checked = 0;
+    for (const seed of hardSamples) {
+      const challenge = hard(seed);
+      const slot = challenge.pullApartSlot;
+      const tag = avoidedTag(challenge);
+      if (slot === null || tag === undefined || !challenge.directions[slot]) continue;
+      if (!hasLeaningItem(challenge, slot, tag)) continue;
+      checked++;
+      expect(leans(challenge.directions[slot], tag)).toBe(true);
+    }
+    expect(checked).toBeGreaterThan(50);
+  });
+
+  it("keeps the item leaning when the marked slot is rerolled", () => {
+    let checked = 0;
+    for (const seed of hardSamples) {
+      const challenge = hard(seed);
+      const slot = challenge.pullApartSlot;
+      const tag = avoidedTag(challenge);
+      if (slot === null || tag === undefined || !hasLeaningItem(challenge, slot, tag)) continue;
+      const again = reroll(reroll(challenge, slot), slot);
+      for (const result of [again, reroll(challenge, slot)]) {
+        if (!result.directions[slot]) continue;
+        checked++;
+        expect(leans(result.directions[slot], tag)).toBe(true);
+      }
+    }
+    expect(checked).toBeGreaterThan(50);
+  });
+
+  it("leaves the marked slot alone when its avoid is rerolled", () => {
+    let checked = 0;
+    for (const seed of hardSamples) {
+      const challenge = hard(seed);
+      const avoidSlot = challenge.plan.indexOf("styleAvoid");
+      if (challenge.pullApartSlot === null || avoidSlot < 0) continue;
+      const after = reroll(challenge, avoidSlot);
+      expect(after.directions[challenge.pullApartSlot]).toEqual(
+        challenge.directions[challenge.pullApartSlot],
+      );
+      expect(after.pullApartSlot).toBe(challenge.pullApartSlot);
+      checked++;
+    }
+    expect(checked).toBeGreaterThan(50);
+  });
+
+  it("is the same for the same seed", () => {
+    for (const seed of pairSamples.slice(0, 50)) expect(hard(seed)).toEqual(hard(seed));
+  });
+});
+
 describe("shapes come from the game data", () => {
   it("deals what a changed easy shape says", () => {
     const data: GameData = {

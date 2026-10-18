@@ -27,6 +27,7 @@ export function reroll(
     rerollCount: rerollCountOf(challenge, slot) + 1,
     others,
     pairs: shapeFor(data, challenge.difficulty).pairs,
+    pullApartSlot: challenge.pullApartSlot,
     data,
   });
   return {

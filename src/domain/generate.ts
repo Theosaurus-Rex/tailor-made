@@ -31,6 +31,7 @@ export interface DrawInput {
   others: readonly Direction[];
   pairs: PairRule;
   allowedPair?: readonly [StyleTag, StyleTag];
+  pullApartSlot?: number | null;
   data: GameData;
 }
 
@@ -45,11 +46,22 @@ function someOf<T>(random: Random, items: readonly T[], count: number): T[] {
   return chosen;
 }
 
+function leaning<T>(
+  items: readonly T[],
+  towards: StyleTag | undefined,
+  leansOf: (item: T) => readonly StyleTag[],
+) {
+  if (towards === undefined) return items;
+  const matching = items.filter((item) => leansOf(item).includes(towards));
+  return matching.length > 0 ? matching : items;
+}
+
 function drawCandidate(
   type: PlannedType,
   random: Random,
   data: GameData,
   others: readonly Direction[],
+  towards: StyleTag | undefined,
 ): Direction {
   const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
   const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
@@ -70,7 +82,12 @@ function drawCandidate(
     case "styleAvoid":
       return { type, tag: tag() };
     case "fabric":
-      return { type, fabric: random.pick(onlyFabrics ?? generalFabrics) };
+      return {
+        type,
+        fabric: random.pick(
+          leaning(onlyFabrics ?? generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
+        ),
+      };
     case "fabricAvoid":
       return { type, fabric: random.pick(generalFabrics) };
     case "fabricsOnly":
@@ -85,6 +102,12 @@ function drawCandidate(
     case "colourOnly":
       return { type, colours: someOf(random, data.colours, onlyCount()) };
     case "accessory":
+      return {
+        type,
+        accessory: random.pick(
+          leaning(data.accessoryTypes, towards, (a) => data.accessories[a].leansTowards),
+        ),
+      };
     case "accessoryAvoid":
       return { type, accessory: random.pick(data.accessoryTypes) };
     case "accessoryMin":
@@ -97,11 +120,11 @@ function drawCandidate(
   }
 }
 
-export function drawPlan(
+export function planFor(
   seed: string,
   shape: DifficultyShape,
   neverTogether: GameData["kindsNeverTogether"],
-): PlannedType[] {
+): { plan: PlannedType[]; pullApartSlot: number | null } {
   const random = randomFromSeed(deriveSeed(seed, "plan"));
   const total = random.between(shape.directionCount.min, shape.directionCount.max);
   const plan: PlannedType[] = [];
@@ -133,7 +156,31 @@ export function drawPlan(
     const j = random.between(0, i);
     [plan[i], plan[j]] = [plan[j], plan[i]];
   }
-  return plan;
+  const target = plan.findIndex((type) => type === "fabric" || type === "accessory");
+  const canPullApart =
+    shape.pullApartChance !== undefined && target >= 0 && plan.includes("styleAvoid");
+  const pullApart = canPullApart && random.fraction() < (shape.pullApartChance ?? 0);
+  return { plan, pullApartSlot: pullApart ? target : null };
+}
+
+export const drawPlan = (
+  seed: string,
+  shape: DifficultyShape,
+  neverTogether: GameData["kindsNeverTogether"],
+): PlannedType[] => planFor(seed, shape, neverTogether).plan;
+
+function fillOrder(
+  plan: readonly PlannedType[],
+  pairSlots: readonly number[],
+  pullApartSlot: number | null,
+): number[] {
+  const order = plan.map((_, slot) => slot).filter((slot) => !pairSlots.includes(slot));
+  const avoid = plan.indexOf("styleAvoid");
+  if (pullApartSlot !== null && pullApartSlot < avoid) {
+    order.splice(order.indexOf(pullApartSlot), 1);
+    order.splice(order.indexOf(avoid) + 1, 0, pullApartSlot);
+  }
+  return [...pairSlots, ...order];
 }
 
 export function drawDirection({
@@ -144,13 +191,19 @@ export function drawDirection({
   others,
   pairs,
   allowedPair,
+  pullApartSlot,
   data,
 }: DrawInput): Direction | null {
   const type = plan[slot];
   if (type === undefined) throw new RangeError(`slot ${slot} is not in the plan`);
   const random = randomFromSeed(deriveSeed(seed, "direction", slot, rerollCount));
+  const towards =
+    slot === pullApartSlot
+      ? others.find((d): d is Extract<Direction, { type: "styleAvoid" }> => d.type === "styleAvoid")
+          ?.tag
+      : undefined;
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(type, random, data, others);
+    const candidate = drawCandidate(type, random, data, others, towards);
     if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }
   return null;
@@ -176,7 +229,7 @@ export function generate(
   if (modifiers.includes("burlap"))
     throw new RangeError("the burlap modifier is not supported yet");
   const shape = shapeFor(data, difficulty);
-  const plan = drawPlan(seed, shape, data.kindsNeverTogether);
+  const { plan, pullApartSlot } = planFor(seed, shape, data.kindsNeverTogether);
   const directions: (Direction | null | undefined)[] = plan.map(() => undefined);
   const chosenPair = shape.pairs === "oneStylePair" ? drawChaosPair(seed, data) : null;
   const pairSlots = chosenPair ? pairSlotsIn(plan) : null;
@@ -185,8 +238,8 @@ export function generate(
     directions[pairSlots[0]] = { type: "style", tag: chosenPair[0] };
     directions[pairSlots[1]] = { type: "style", tag: chosenPair[1] };
   }
-  plan.forEach((_, slot) => {
-    if (directions[slot] !== undefined) return;
+  for (const slot of fillOrder(plan, pairSlots ?? [], pullApartSlot)) {
+    if (directions[slot] !== undefined) continue;
     const placed = directions.filter((direction) => direction != null);
     directions[slot] = drawDirection({
       seed,
@@ -196,9 +249,10 @@ export function generate(
       others: placed,
       pairs: shape.pairs,
       allowedPair,
+      pullApartSlot,
       data,
     });
-  });
+  }
   return {
     seed,
     difficulty,
@@ -208,5 +262,6 @@ export function generate(
     history: [],
     directions: directions.map((direction) => direction ?? null),
     pairSlots,
+    pullApartSlot,
   };
 }

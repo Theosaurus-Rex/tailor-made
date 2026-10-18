@@ -54,6 +54,7 @@ describe("generate", () => {
       plan: ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       history: [],
       pairSlots: null,
+      pullApartSlot: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Feather" },
         { type: "style", tag: "Warm" },
@@ -67,6 +68,7 @@ describe("generate", () => {
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       pairSlots: null,
+      pullApartSlot: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Tassel" },
         { type: "colour", colour: "Yellow" },
@@ -79,6 +81,7 @@ describe("generate", () => {
       plan: ["accessoryAvoid", "colour", "coloursMin"],
       history: [],
       pairSlots: null,
+      pullApartSlot: null,
       directions: [
         { type: "accessoryAvoid", accessory: "Bell" },
         { type: "colour", colour: "White" },
