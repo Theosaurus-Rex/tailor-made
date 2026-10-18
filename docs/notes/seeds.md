@@ -82,8 +82,10 @@ direction is being rerolled and how many times. For example, the first reroll of
 could use a sub-seed built from the seed, `2` and `1`. Each reroll gets its own run of numbers. Nothing else in
 the challenge changes, because the main seed and its numbers stay the same.
 
-A share link records how many times each direction was rerolled. Whoever opens it builds the same
-sub-seeds and gets the same rerolled directions.
+A share link records the rerolls in order, such as `1.3.1` for direction 1, then 3, then 1 again.
+Counts alone are not enough, because a rerolled direction is checked against the others, so the
+order can change the result. Whoever opens the link generates the card and replays each reroll in
+order, and gets the same directions.
 
 The parts are joined with an invisible separator character before hashing. Without it,
 `("a", 1, 2)` and `("a", 12)` would both become `a12` and collide.
