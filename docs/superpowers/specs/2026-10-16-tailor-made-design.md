@@ -349,7 +349,11 @@ Clients get a monogram, never game art. The mark is a 64px circle with the clien
 in Instrument Serif italic, on a deep rosewood fill with a thin rose border.
 
 **Copy as text** produces plain text that reads well pasted into Discord or Reddit: client name,
-brief, directions as a list, and the link.
+occasion, brief, the short lines as a list (one per line), and the link. Decided 2026-10-20: a
+list, not the short lines joined with dots as the hi-fi frame shows.
+
+Burlap only shows a quiet "Fixed" label where other directions have a reroll button, so players
+can see it cannot be rerolled.
 
 ## 12. Layering
 

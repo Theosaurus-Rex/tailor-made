@@ -48,7 +48,7 @@ TODO (Theo): add a few lines on why this direction beat the other directions you
 | ink | `#EBD7BF` | Headings, names, row titles, button labels. The main text |
 | ink, soft | `#E2CCB8` | The brief on a card. The About body |
 | muted | `#D2B9A6` | Body copy, client lines, labels, inactive nav, hints, status lines |
-| done | `#A58A86` | The title of a ticked direction, with a line through it |
+| done | `#A88D89` | The title of a ticked direction, with a line through it. Lightened from the canvas's `#A58A86` to pass contrast (Theo, 2026-10-20) |
 | accent | `#D9A796` | Primary button and selected fills. Tick fill and tick box border. Links. Small caps labels. Tags. The reroll icon. The active nav underline. The client mark border |
 | on accent | `#33161E` | Text on an accent fill. Same value as ground |
 | disabled | `#8A6A6C` | The Generate button while generating |
@@ -70,9 +70,9 @@ The canvas page `#160A0E` is not the app ground. The app ground is `#33161E`.
 | State | How it looks |
 |---|---|
 | Selected (dial, Burlap only, tick) | Accent fill `#D9A796`, with `#33161E` text or check mark |
-| Ticked direction | Tick box filled accent with a check. Row fill removed. Title `#A58A86` with a line through it. The client line stays `#D2B9A6` |
+| Ticked direction | Tick box filled accent with a check. Row fill removed. Title `#A88D89` with a line through it. The client line stays `#D2B9A6` |
 | Just rerolled | Row `#5A2C38`, `1.5px dashed #D9A796` outline pulled in 1px, and a "New direction" tag |
-| Modifier (Burlap only) | An outlined "Modifier" pill in accent, plus a quiet "Fixed" label where the reroll button would be |
+| Modifier (Burlap only) | An outlined "Modifier" pill in accent, plus a quiet "Fixed" label where the reroll button would be. Kept so players can see it cannot be rerolled (Theo, 2026-10-20) |
 | Copied | The button fill becomes raised `#4C2631`. The label reads "Link copied ✓" or "Text copied ✓" |
 | Copy failed | The button label reads "Couldn't copy". A box with a `1.5px solid #D9A796` border and `#220D13` fill shows the text to select. There is no red |
 | Generating | Button fill `#8A6A6C`. A loading card with raised-tone skeleton shapes |
@@ -128,14 +128,13 @@ control that show its state.
 
 ### What to do about it
 
-- **Ticked title, 4.47.** One shade lighter fixes it. `#A88D89` is 4.65 on surface. The ticked row
+- **Ticked title, 4.47.** One shade lighter fixes it. **Accepted by Theo, 2026-10-20.** `#A88D89` is 4.65 on surface. The ticked row
   has no fill, so surface is the background it sits on. If a ticked row ever gets a raised fill,
   it needs about `#B09590` (4.63 on raised).
 - **Outlined buttons and the dial.** "Copy link", "Copy as text", "Keep current client" and "Go
   to the generator" are told apart by their label, so axe will not flag them. A person who needs
   the edge will not see it at 1.8:1. `#966670` is 3.48 on ground and 3.01 on surface. Try it for
-  these borders only and leave `line, strong` for cards. This is a change to the design, so it is
-  Theo's call.
+  these borders only and leave `line, strong` for cards. **Accepted by Theo, 2026-10-20.**
 - **Disabled.** Exempt. Keep the label legible anyway.
 - **Decorative edges.** The panel and card edges and the row fills are decoration. The content
   inside carries the structure. Leave them.
@@ -243,10 +242,10 @@ What the markup does change between the two:
 | Generator layout | controls panel 380px wide beside the card | one column. The panel collapses to a summary row once a client exists |
 | Card inner padding | 32px | 16px |
 
-Each of those has to switch at the same width. **Proposed breakpoint: 768px (`md`)**, so a
-portrait tablet gets the desktop layout and everything below gets mobile. This is a proposal. The
-canvas gives no value, and the generator wraps on its own at about 852px (380 controls, 40 gap,
-320 card minimum, 112 of gutter). Theo to confirm.
+Each of those has to switch at the same width. **Breakpoint: 768px (`md`)**, so a
+portrait tablet gets the desktop layout and everything below gets mobile. **Confirmed by Theo,
+2026-10-20.** The canvas gives no value, and the generator wraps on its own at about 852px (380
+controls, 40 gap, 320 card minimum, 112 of gutter).
 
 ### Measurements
 
@@ -296,7 +295,7 @@ screen.
 - Fill raised `#4C2631`, radius 6px. A ticked row has no fill.
 - Tick box: 22px square, radius 5px, border `1.5px #D9A796`. Ticked, the fill is accent and a
   13px check in `#33161E` shows. The box is 22px, so the row around it supplies the 44px target.
-- Short line (title): Sans 500, 16px, ink. Ticked: `#A58A86` with a line through.
+- Short line (title): Sans 500, 16px, ink. Ticked: `#A88D89` with a line through.
 - Client line: Serif italic 18px, muted, in curly quotes. Burlap only has none.
 - Reroll button: 44 by 44px, radius 8px, fill `#33161E`, an accent "↻" at 17px. Tooltip and
   accessible name: "Reroll direction".
@@ -418,7 +417,8 @@ role, so utilities such as `bg-ground`, `text-ink` and `border-line` exist.
   --color-ink: #ebd7bf;
   --color-ink-soft: #e2ccb8;
   --color-muted: #d2b9a6;
-  --color-done: #a58a86;
+  --color-done: #a88d89;
+  --color-control-edge: #966670;
   --color-accent: #d9a796;
   --color-on-accent: #33161e;
   --color-disabled: #8a6a6c;
@@ -476,8 +476,8 @@ Notes for the build:
   components, as the table under Type lists, so a screen does not hand-write a size.
 - **Small caps labels.** One shared class for uppercase, `600`, `--tracking-label`. Size and
   colour vary by use.
-- **Breakpoint.** Use `md` (768px) for the desktop and mobile switch, unless Theo says otherwise.
+- **Breakpoint.** Use `md` (768px) for the desktop and mobile switch.
   Playwright already runs both projects.
-- **Contrast fixes.** If Theo accepts them, they are two token values: `--color-done: #a88d89`
-  and a new `--color-control-edge: #966670` for outlined buttons and the dial.
+- **Contrast fixes** (accepted 2026-10-20) are two token values: `--color-done: #a88d89` and a
+  new `--color-control-edge: #966670` for outlined buttons and the dial.
 - **Tick and reroll targets** stay 44px on mobile. The tick box is 22px inside a 44px row.
