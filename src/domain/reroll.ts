@@ -21,17 +21,19 @@ export function reroll(
   const others = challenge.directions.filter(
     (direction, i): direction is Direction => i !== slot && direction !== null,
   );
+  const shape = (challenge.modifiers.includes("burlap") ? burlapShapeFor : shapeFor)(
+    data,
+    challenge.difficulty,
+  );
   const redrawn = drawDirection({
     seed: challenge.seed,
     plan: challenge.plan,
     slot,
     rerollCount: rerollCountOf(challenge, slot) + 1,
     others,
-    pairs: (challenge.modifiers.includes("burlap") ? burlapShapeFor : shapeFor)(
-      data,
-      challenge.difficulty,
-    ).pairs,
+    pairs: shape.pairs,
     pullApartSlot: challenge.pullApartSlot,
+    ignoreTheme: shape.ignoreTheme,
     data,
   });
   return {

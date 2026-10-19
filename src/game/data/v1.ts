@@ -11,6 +11,7 @@ import {
   type DifficultyShape,
   type Weekday,
 } from "./difficulty-shapes";
+import { themeBoosts, themes, type Theme, type ThemeBoosts } from "@/game/briefs/v1/themes";
 
 export const DATA_VERSION = 1;
 
@@ -108,6 +109,8 @@ export interface GameData {
   colourLeanings: Partial<Record<Colour, readonly StyleTag[]>>;
   accessories: Record<AccessoryType, AccessoryInfo>;
   opposingPairs: readonly (readonly [StyleTag, StyleTag])[];
+  themes: readonly Theme[];
+  themeBoosts: ThemeBoosts;
 }
 
 const tagWeights = {
@@ -217,4 +220,6 @@ export const dataV1: GameData = {
   colourLeanings,
   accessories,
   opposingPairs,
+  themes,
+  themeBoosts,
 };

@@ -233,6 +233,8 @@ describe("chaos", () => {
 
 const pairSamples = Array.from({ length: 500 }, (_, i) => deriveSeed("pair-sample", i));
 
+const looseSamples = Array.from({ length: 3000 }, (_, i) => deriveSeed("pair-sample", i));
+
 const sides = (placed: readonly Direction[], kind: "style" | "any") => {
   const tags = placed.flatMap((d) =>
     d.type === "style" || (kind === "any" && d.type === "styleAvoid") ? [d.tag] : [],
@@ -282,7 +284,7 @@ describe("pair rules in the game data", () => {
       },
     };
     let touched = 0;
-    for (const seed of pairSamples) {
+    for (const seed of looseSamples) {
       const placed = placedDirections(generate(input(seed, "medium"), loose));
       if (sides(placed, "any").length > 0) touched++;
     }
