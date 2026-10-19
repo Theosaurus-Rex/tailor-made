@@ -197,6 +197,16 @@ were rerolled. A slot's count is how many times it appears. Burlap only cannot b
 Counts alone cannot rebuild a card when two rerolled directions affect each other. Replaying the
 history in order always matches, so a link rebuilds by generating the card and then rerolling.
 
+Lists are dot-separated, as in `m=burlap` and `r=1.3.1`. `m` is left out when there are no
+modifiers and `r` is left out when nothing was rerolled. Unknown keys are ignored, so the format
+can grow. A key given twice is a bad link. Parameters are always written in the order shown.
+
+A worked example, a Hard card with Burlap only, rerolled at slots 2, 3 and 2 again:
+
+```
+/c?v=1&s=2026-10-19&d=hard&m=burlap&r=2.3.2
+```
+
 `v` is required. A link with an unknown `v`, or an unparsable parameter, shows a friendly error
 with a "make a new one" button, never a blank page.
 
