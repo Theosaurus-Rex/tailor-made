@@ -18,6 +18,19 @@ export type ShapeDirectionType =
 
 export type DifficultyName = "easy" | "medium" | "hard" | "chaos";
 
+export type Weekday =
+  "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday";
+
+export const dailyDifficultyByWeekday: Record<Weekday, DifficultyName> = {
+  monday: "easy",
+  tuesday: "medium",
+  wednesday: "medium",
+  thursday: "hard",
+  friday: "hard",
+  saturday: "hard",
+  sunday: "chaos",
+};
+
 export type PairRule = "never" | "noBothStyles" | "oneStylePair";
 
 export interface DifficultyShape {

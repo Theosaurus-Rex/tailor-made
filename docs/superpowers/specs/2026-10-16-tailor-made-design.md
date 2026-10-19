@@ -304,6 +304,9 @@ This is most of the writing effort. If it runs long, cut themes before cutting a
   Sun Chaos.
 - No modifiers. Always the latest data version on the day, recorded in its share link.
 - Countdown to the next UTC midnight.
+- The weekday table lives in the game data (`dailyDifficulties`), beside the difficulty shapes, so a
+  retune is versioned like the rest. The date comes into `src/domain/` as text, so domain never reads
+  the clock. The UTC date is worked out in `src/lib/`.
 
 ## 11. Screens
 
