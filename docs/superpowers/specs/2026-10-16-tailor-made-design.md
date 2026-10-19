@@ -331,6 +331,8 @@ This is most of the writing effort. If it runs long, cut themes before cutting a
 
 ## 11. Screens
 
+The visual direction is Rosewood Atelier, written up in `docs/design/rosewood-atelier.md`.
+
 | Route | Screen |
 |---|---|
 | `/` | Generator: difficulty, modifiers, Generate, client card, per-direction reroll, copy link, copy text |
@@ -343,8 +345,8 @@ Ticks are component state and reset on reload.
 
 Desktop and mobile are designed and tested as equals.
 
-Clients get a monogram or simple mark, never game art. The visual direction in M0 decides its
-form.
+Clients get a monogram, never game art. The mark is a 64px circle with the client's two initials
+in Instrument Serif italic, on a deep rosewood fill with a thin rose border.
 
 **Copy as text** produces plain text that reads well pasted into Discord or Reddit: client name,
 brief, directions as a list, and the link.
