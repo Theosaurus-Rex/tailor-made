@@ -12,11 +12,13 @@ It is a public tool, for the Dressmaker community first. There is no backend and
 `docs/superpowers/specs/2026-10-16-tailor-made-design.md` for the design this is built to. It is
 the source of truth for scope, directions, the generator, the link format and the milestones.
 
-**Wireframes live in `docs/wireframes/`.** The lo-fi set is the canvas
-`tailor-made-wireframes.html`, with one PNG per frame in `docs/wireframes/frames/` (`<id>-desktop`
-and `<id>-mobile`). `docs/wireframes/README.md` indexes every frame, lists the open questions and
-lists what was not drawn. Every Linear issue names its frames in a `**Wireframe:**` line. `—` means
-none were drawn. Build to the hi-fi frames when they exist. They win over the lo-fi set.
+**Wireframes live in `docs/wireframes/`.** Build to the hi-fi frames in
+`docs/wireframes/hifi/frames/` (`<id>-desktop` and `<id>-mobile`, from the canvas
+`hifi/tailor-made-hifi.html`). They win over the lo-fi set in `docs/wireframes/frames/`, which
+stays for history and flow detail. The visual direction is Rosewood Atelier, written up in
+`docs/design/rosewood-atelier.md`. `docs/wireframes/README.md` indexes every frame, lists the open
+questions, the places where a frame is wrong and what was not drawn. Every Linear issue names its
+frames in a `**Wireframe:**` line. `—` means none were drawn.
 
 ---
 
