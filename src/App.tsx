@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router";
 
+import { AppShell } from "@/components/AppShell";
 import { AboutScreen } from "@/features/about/AboutScreen";
 import { DailyScreen } from "@/features/daily/DailyScreen";
 import { GeneratorScreen } from "@/features/generator/GeneratorScreen";
@@ -16,21 +17,23 @@ const DebugScreen = import.meta.env.DEV
 export function App() {
   return (
     <Routes>
-      <Route path="/" element={<GeneratorScreen />} />
-      <Route path="/daily" element={<DailyScreen />} />
-      <Route path="/c" element={<SharedChallengeScreen />} />
-      <Route path="/about" element={<AboutScreen />} />
-      {DebugScreen && (
-        <Route
-          path="/debug"
-          element={
-            <Suspense fallback={null}>
-              <DebugScreen />
-            </Suspense>
-          }
-        />
-      )}
-      <Route path="*" element={<NotFoundScreen />} />
+      <Route element={<AppShell />}>
+        <Route path="/" element={<GeneratorScreen />} />
+        <Route path="/daily" element={<DailyScreen />} />
+        <Route path="/c" element={<SharedChallengeScreen />} />
+        <Route path="/about" element={<AboutScreen />} />
+        {DebugScreen && (
+          <Route
+            path="/debug"
+            element={
+              <Suspense fallback={null}>
+                <DebugScreen />
+              </Suspense>
+            }
+          />
+        )}
+        <Route path="*" element={<NotFoundScreen />} />
+      </Route>
     </Routes>
   );
 }
