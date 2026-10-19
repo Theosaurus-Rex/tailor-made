@@ -33,20 +33,20 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Orange",
-        "client": "Oh, orange, darling! I'm glowing at the thought."
+        "client": "Orange. That's it."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "Blue",
-        "client": "Oh, blue, darling! I'm glowing at the thought."
+        "client": "Blue. That's it."
       }
     ]
   },
@@ -87,7 +87,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -95,15 +95,15 @@
       },
       {
         "short": "Trim",
-        "client": "Oh, trim! Add as many as you like, darling."
+        "client": "Trim. Keep it tidy."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -146,24 +146,24 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "No feathers",
-        "client": "Oh, no feathers, darling! They make me sneeze terribly."
+        "client": "No feathers."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "At least 4 bells",
-        "client": "Oh, four bells at the very least, darling!"
+        "client": "At least four bells."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -209,7 +209,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -217,19 +217,19 @@
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 7 brooches",
-        "client": "Please, at least seven brooches, dear! Oh, the joy."
+        "client": "Seven brooches, minimum. Thanks."
       },
       {
         "short": "Appliqués",
-        "client": "Do add appliqués, dear. What a treat!"
+        "client": "Add appliqués."
       }
     ]
   },
@@ -276,28 +276,28 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Feathers",
-        "client": "Oh, feathers! Add as many as you like, darling."
+        "client": "Feathers. Keep it tidy."
       },
       {
         "short": "At least 3 tassels",
-        "client": "Oh, three tassels at the very least, darling!"
+        "client": "At least three tassels."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 3 fabrics",
-        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+        "client": "Three fabrics, minimum. Thanks."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       }
     ]
   },
@@ -347,7 +347,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -355,23 +355,23 @@
       },
       {
         "short": "Not warm",
-        "client": "Oh, not warm, darling. I couldn't bear it."
+        "client": "Not warm."
       },
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells."
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear, please! I can't wait to see it."
+        "client": "Go eveningwear. Keep it practical."
       },
       {
         "short": "At least 6 appliqués",
-        "client": "Please, at least six appliqués, dear! Oh, the joy."
+        "client": "Six appliqués, minimum. Thanks."
       },
       {
         "short": "Cute",
-        "client": "I'm dreaming of cute, darling. Truly dreaming."
+        "client": "Make it cute."
       }
     ]
   },
@@ -422,32 +422,32 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Casual",
-        "client": "I'm dreaming of casual, darling. Truly dreaming."
+        "client": "Make it casual."
       },
       {
         "short": "Exactly 3 tassels",
-        "client": "Exactly three tassels, darling. Perfection!"
+        "client": "Exactly three tassels."
       },
       {
         "short": "Bells",
-        "client": "Oh, bells! Add as many as you like, darling."
+        "client": "Bells. Keep it tidy."
       },
       {
         "short": "Only velvet and cotton",
-        "client": "Just velvet or cotton, dear. Only those, and I'll be delighted."
+        "client": "Nothing but velvet or cotton. That's all."
       },
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, please. Thanks."
       },
       {
         "short": "Formal",
-        "client": "I'm dreaming of formal, darling. Truly dreaming."
+        "client": "Make it formal."
       }
     ]
   },
@@ -509,7 +509,7 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -517,27 +517,27 @@
       },
       {
         "short": "Casual",
-        "client": "Oh, casual! That's exactly what I'm after, darling."
+        "client": "Casual. No fuss."
       },
       {
         "short": "Formal",
-        "client": "I'm dreaming of formal, darling. Truly dreaming."
+        "client": "Make it formal."
       },
       {
         "short": "No buttons",
-        "client": "Please keep the buttons away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the buttons."
       },
       {
         "short": "Exactly 6 appliqués",
-        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Six appliqués. No more, no fewer."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "Flowers. Keep it tidy."
       },
       {
         "short": "Elegant",
-        "client": "Oh, elegant, please! I can't wait to see it."
+        "client": "Go elegant. Keep it practical."
       }
     ]
   },
@@ -571,16 +571,16 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Black",
-        "client": "Oh, black, darling! I'm glowing at the thought."
+        "client": "Black, naturally. It has always suited me."
       },
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, naturally. I could not possibly wear anything else."
       }
     ]
   },
@@ -617,7 +617,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -625,11 +625,11 @@
       },
       {
         "short": "Tassels",
-        "client": "Do add tassels, dear. What a treat!"
+        "client": "One expects tassels. It is a matter of form."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       }
     ]
   },
@@ -667,20 +667,20 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "White",
-        "client": "Make it white, dear! It's my favourite today."
+        "client": "One expects white. I have worn it for years."
       },
       {
         "short": "At least 3 colours",
-        "client": "Oh, at least three colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least three, I think."
       }
     ]
   },
@@ -722,7 +722,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -730,15 +730,15 @@
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
         "short": "At least 6 buttons",
-        "client": "Oh, six buttons at the very least, darling!"
+        "client": "I shall require at least six buttons. A lady must be noticed."
       }
     ]
   },
@@ -781,24 +781,24 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 6 appliqués",
-        "client": "Oh, six appliqués at the very least, darling!"
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
-        "client": "Oh, flowers! Add as many as you like, darling."
+        "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
         "short": "Not gothic",
-        "client": "Oh, not gothic, darling. I couldn't bear it."
+        "client": "One cannot abide gothic. Kindly avoid it."
       }
     ]
   },
@@ -843,7 +843,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -851,19 +851,19 @@
       },
       {
         "short": "No tassels",
-        "client": "Please keep the tassels away, dear. It's just not me, I'm afraid."
+        "client": "One finds tassels rather tiresome. Leave it off."
       },
       {
         "short": "No flowers",
-        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+        "client": "No flowers, please. It is not for me."
       },
       {
         "short": "Jewels",
-        "client": "Oh, jewels! Add as many as you like, darling."
+        "client": "A touch of jewels, I think. Tastefully, of course."
       },
       {
         "short": "Appliqués",
-        "client": "Do add appliqués, dear. What a treat!"
+        "client": "One expects appliqués. It is a matter of form."
       }
     ]
   },
@@ -911,28 +911,28 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Only silk",
-        "client": "Oh, nothing but silk, please, darling!"
+        "client": "One will accept only silk. I trust that is not too taxing."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute, please! I can't wait to see it."
+        "client": "I shall require cute. Do try to rise to it."
       },
       {
         "short": "At least 5 feathers",
-        "client": "Oh, five feathers at the very least, darling!"
+        "client": "I shall require at least five feathers. A lady must be noticed."
       },
       {
         "short": "Gothic",
-        "client": "Oh, something gothic, darling! Dark and dreamy."
+        "client": "Something gothic, I think. One does favour a little gloom."
       },
       {
         "short": "Exactly 6 appliqués",
-        "client": "Six appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Six appliqués, precisely. I shall be counting."
       }
     ]
   },
@@ -983,7 +983,7 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -991,23 +991,23 @@
       },
       {
         "short": "Exactly 6 jewels",
-        "client": "Six jewels, dear, no more, no fewer. I just know it's right."
+        "client": "Six jewels, precisely. I shall be counting."
       },
       {
         "short": "Not romantic",
-        "client": "Oh, not romantic, darling. I couldn't bear it."
+        "client": "One cannot abide romantic. Kindly avoid it."
       },
       {
         "short": "Exactly 6 buttons",
-        "client": "Exactly six buttons, darling. Perfection!"
+        "client": "Exactly six buttons, no more, no fewer. One is particular."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute, please! I can't wait to see it."
+        "client": "I shall require cute. Do try to rise to it."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -2051,16 +2051,16 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Velvet",
-        "client": "Velvet, dear? Oh, you've read my mind!"
+        "client": "Velvet, naturally. I could not possibly wear anything else."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -2097,7 +2097,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2105,11 +2105,11 @@
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That's exactly what I'm after, darling."
+        "client": "One expects cute. I trust that is clear."
       }
     ]
   },
@@ -2148,20 +2148,20 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Piping",
-        "client": "Do add piping, dear. What a treat!"
+        "client": "One expects piping. It is a matter of form."
       },
       {
         "short": "At least 4 feathers",
-        "client": "Please, at least four feathers, dear! Oh, the joy."
+        "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
         "short": "No black",
-        "client": "Oh, no black, darling! I'm feeling far too sunny."
+        "client": "No black, please. One is not in mourning today."
       }
     ]
   },
@@ -2203,7 +2203,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2211,15 +2211,15 @@
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       },
       {
         "short": "At least 5 appliqués",
-        "client": "Oh, five appliqués at the very least, darling!"
+        "client": "I shall require at least five appliqués. A lady must be noticed."
       },
       {
         "short": "No lace trim",
-        "client": "Please keep the lace trim away, dear. It's just not me, I'm afraid."
+        "client": "One finds lace trim rather tiresome. Leave it off."
       }
     ]
   },
@@ -2261,24 +2261,24 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 4 colours",
-        "client": "Colour, dear, colour! At the very least, four."
+        "client": "At least four colours, if you please. I do not do plain."
       },
       {
         "short": "No sequins",
-        "client": "Sequins, dear? Lovely on others, but not on me."
+        "client": "Sequins are for lesser occasions. Kindly leave them out."
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That's exactly what I'm after, darling."
+        "client": "One expects cute. I trust that is clear."
       },
       {
         "short": "Professional",
-        "client": "Oh, professional, please! I can't wait to see it."
+        "client": "I shall require professional. Do try to rise to it."
       }
     ]
   },
@@ -2324,7 +2324,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2332,19 +2332,19 @@
       },
       {
         "short": "At least 4 feathers",
-        "client": "Please, at least four feathers, dear! Oh, the joy."
+        "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
         "short": "Not cute",
-        "client": "Oh, not cute, darling! I'm feeling far too grand today."
+        "client": "Nothing cute, please. One is not a kitten."
       },
       {
         "short": "Professional",
-        "client": "Oh, professional, please! I can't wait to see it."
+        "client": "I shall require professional. Do try to rise to it."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2392,28 +2392,28 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 4 flowers",
-        "client": "Please, at least four flowers, dear! Oh, the joy."
+        "client": "At least four flowers, if you please. One does like to be seen."
       },
       {
         "short": "Simple",
-        "client": "I'm dreaming of simple, darling. Truly dreaming."
+        "client": "Make it simple. One has standards, after all."
       },
       {
         "short": "Only sequins",
-        "client": "Oh, nothing but sequins, please, darling!"
+        "client": "One will accept only sequins. I trust that is not too taxing."
       },
       {
         "short": "Exactly 3 appliqués",
-        "client": "Three appliqués, dear, no more, no fewer. I just know it's right."
+        "client": "Three appliqués, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2464,7 +2464,7 @@
     "client": {
       "name": "Thea Ibarra",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2472,23 +2472,23 @@
       },
       {
         "short": "Exactly 4 feathers",
-        "client": "Four feathers, dear, no more, no fewer. I just know it's right."
+        "client": "Four feathers, precisely. I shall be counting."
       },
       {
         "short": "Simple",
-        "client": "Oh, simple! That's exactly what I'm after, darling."
+        "client": "One expects simple. I trust that is clear."
       },
       {
         "short": "Exactly 7 flowers",
-        "client": "Seven flowers, dear, no more, no fewer. I just know it's right."
+        "client": "Seven flowers, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Workwear",
-        "client": "Oh, workwear! That's exactly what I'm after, darling."
+        "client": "One expects workwear. I trust that is clear."
       }
     ]
   },
@@ -2522,16 +2522,16 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       }
     ]
   },
@@ -2568,7 +2568,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2576,11 +2576,11 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2618,20 +2618,20 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 3 colours",
-        "client": "Colour, dear, colour! At the very least, three."
+        "client": "At least three colours, if you please. I do not do plain."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       },
       {
         "short": "No lace",
-        "client": "Oh, no lace, darling. It just isn't me."
+        "client": "No lace, please. It is not done."
       }
     ]
   },
@@ -2673,7 +2673,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2681,15 +2681,15 @@
       },
       {
         "short": "At least 5 flowers",
-        "client": "Please, at least five flowers, dear! Oh, the joy."
+        "client": "At least five flowers, if you please. One does like to be seen."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Not gothic",
-        "client": "Anything but gothic, my dear. Everything else is wonderful!"
+        "client": "Not gothic, I think. It would not be fitting."
       }
     ]
   },
@@ -2731,24 +2731,24 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Playful",
-        "client": "Oh, playful, please! I can't wait to see it."
+        "client": "I shall require playful. Do try to rise to it."
       },
       {
         "short": "Lace",
-        "client": "Oh, lace! What a lovely idea, darling."
+        "client": "One expects lace. Nothing less will do."
       },
       {
         "short": "Flowers",
-        "client": "Do add flowers, dear. What a treat!"
+        "client": "One expects flowers. It is a matter of form."
       }
     ]
   },
@@ -2793,7 +2793,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2801,19 +2801,19 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Elaborate",
-        "client": "Oh, elaborate! That's exactly what I'm after, darling."
+        "client": "One expects elaborate. I trust that is clear."
       },
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
         "short": "Buttons",
-        "client": "Oh, buttons! Add as many as you like, darling."
+        "client": "A touch of buttons, I think. Tastefully, of course."
       }
     ]
   },
@@ -2860,28 +2860,28 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
+        "client": "Make it eveningwear. One has standards, after all."
       },
       {
         "short": "Only orange, grey and blue",
-        "client": "Only orange, grey or blue, dear. Isn't that lovely?"
+        "client": "Orange, grey or blue only. Anything else would be vulgar."
       },
       {
         "short": "Exactly 7 bows",
-        "client": "Exactly seven bows, darling. Perfection!"
+        "client": "Exactly seven bows, no more, no fewer. One is particular."
       },
       {
         "short": "Sequin",
-        "client": "Sequins, please! I'm already imagining it."
+        "client": "I shall wear sequins. It is only proper."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear. One has standards, after all."
       }
     ]
   },
@@ -2931,7 +2931,7 @@
     "client": {
       "name": "Zelda Hollis",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -2939,23 +2939,23 @@
       },
       {
         "short": "Lace trim",
-        "client": "Do add lace trim, dear. What a treat!"
+        "client": "One expects lace trim. It is a matter of form."
       },
       {
         "short": "Exactly 7 bows",
-        "client": "Exactly seven bows, darling. Perfection!"
+        "client": "Exactly seven bows, no more, no fewer. One is particular."
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear, please! I can't wait to see it."
+        "client": "I shall require eveningwear. Do try to rise to it."
       },
       {
         "short": "Buttons",
-        "client": "Oh, buttons! Add as many as you like, darling."
+        "client": "A touch of buttons, I think. Tastefully, of course."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "I shall require daywear. Do try to rise to it."
       }
     ]
   },
@@ -2993,20 +2993,20 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Wool",
-        "client": "Use wool. Thanks."
+        "client": "Give me wool, darling! Let it sweep the stage!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. No fuss."
+        "client": "Daywear! It must be daywear! I can see the curtain rising!"
       }
     ]
   },
@@ -3047,7 +3047,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3055,15 +3055,15 @@
       },
       {
         "short": "Bows",
-        "client": "Bows, please. Neat ones."
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3105,24 +3105,24 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "No white",
-        "client": "Not white. Thanks."
+        "client": "Not a drop of white, darling! The scene cannot bear it!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "At least 2 fabrics",
-        "client": "At least two fabrics."
+        "client": "At least two fabrics! A star needs a full wardrobe!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3168,7 +3168,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3176,19 +3176,19 @@
       },
       {
         "short": "No bows",
-        "client": "Leave off the bows."
+        "client": "Away with the bows, darling! It steals my moment!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "At least 2 jewels",
-        "client": "At least two jewels."
+        "client": "At least two jewels! More, if the drama demands it!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3234,28 +3234,28 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "White",
-        "client": "Make it white."
+        "client": "Make it white, darling! Let it blaze across the stage!"
       },
       {
         "short": "At least 2 colours",
-        "client": "Two colours, minimum. Thanks."
+        "client": "Give me two colours at the very least! A grand finale needs a rainbow!"
       },
       {
         "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "client": "Bells! I must have bells! It is the finishing flourish!"
       },
       {
         "short": "No tassels",
-        "client": "No tassels."
+        "client": "No tassels! I will not be upstaged!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3306,7 +3306,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3314,23 +3314,23 @@
       },
       {
         "short": "Bows",
-        "client": "Bows, please. Neat ones."
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "At least eight bells! More, if the drama demands it!"
       },
       {
         "short": "Tassels",
-        "client": "Tassels. Keep it tidy."
+        "client": "Tassels! I must have tassels! It is the finishing flourish!"
       },
       {
         "short": "At least 4 jewels",
-        "client": "At least four jewels."
+        "client": "At least four jewels! More, if the drama demands it!"
       },
       {
         "short": "Simple",
-        "client": "Make it simple."
+        "client": "I demand simple, darling! The stage is set!"
       }
     ]
   },
@@ -3381,32 +3381,32 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Formal",
-        "client": "Go formal. Keep it practical."
+        "client": "Make it formal! Let the whole world gasp!"
       },
       {
         "short": "Brown",
-        "client": "Make it brown."
+        "client": "Make it brown, darling! Let it blaze across the stage!"
       },
       {
         "short": "Exactly 8 bells",
-        "client": "Exactly eight bells."
+        "client": "Exactly eight bells! Not one more, or the whole act collapses!"
       },
       {
         "short": "Casual",
-        "client": "Casual. No fuss."
+        "client": "Casual! It must be casual! I can see the curtain rising!"
       },
       {
         "short": "Only linen, velvet and sequins",
-        "client": "Linen, velvet or sequins only."
+        "client": "Linen, velvet or sequins only! Let those be my entire cast!"
       },
       {
         "short": "Yellow",
-        "client": "Yellow. That's it."
+        "client": "Yellow! Pure, glorious yellow! Light the spotlights!"
       }
     ]
   },
@@ -3469,7 +3469,7 @@
     "client": {
       "name": "Beatrix Garrow",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -3477,27 +3477,27 @@
       },
       {
         "short": "At least 7 bells",
-        "client": "Seven bells, minimum. Thanks."
+        "client": "Give me seven bells at the very least, darling! I want to dazzle!"
       },
       {
         "short": "Trim",
-        "client": "Trim. Keep it tidy."
+        "client": "Trim! I must have trim! It is the finishing flourish!"
       },
       {
         "short": "Formal",
-        "client": "Formal. No fuss."
+        "client": "Formal! It must be formal! I can see the curtain rising!"
       },
       {
         "short": "Casual",
-        "client": "Casual. No fuss."
+        "client": "Casual! It must be casual! I can see the curtain rising!"
       },
       {
         "short": "Exactly 5 tassels",
-        "client": "Exactly five tassels."
+        "client": "Exactly five tassels! Not one more, or the whole act collapses!"
       },
       {
         "short": "Flowers",
-        "client": "Flowers. Keep it tidy."
+        "client": "Flowers! I must have flowers! It is the finishing flourish!"
       }
     ]
   },
@@ -3531,16 +3531,16 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. Nothing flimsy."
       },
       {
         "short": "Sequin",
-        "client": "Oh, sequins! What a lovely idea, darling."
+        "client": "Sequins, please. Keep it simple."
       }
     ]
   },
@@ -3577,7 +3577,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3585,11 +3585,11 @@
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3628,20 +3628,20 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "At least 2 buttons",
-        "client": "Please, at least two buttons, dear! Oh, the joy."
+        "client": "Two buttons, minimum. Thanks."
       },
       {
         "short": "No sequins",
-        "client": "Oh, no sequins, darling. They make me itch dreadfully."
+        "client": "No sequins."
       },
       {
         "short": "Daywear",
-        "client": "Oh, daywear, please! I can't wait to see it."
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3683,7 +3683,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3691,15 +3691,15 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "Oh, four buttons at the very least, darling!"
+        "client": "At least four buttons."
       },
       {
         "short": "No bells",
-        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the bells."
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       }
     ]
   },
@@ -3741,24 +3741,24 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Gothic",
-        "client": "Gothic, please, dear! Moody and magnificent."
+        "client": "Gothic. Nothing flimsy."
       },
       {
         "short": "No flowers",
-        "client": "Oh, no flowers, darling. I'm so sorry to be fussy!"
+        "client": "No flowers."
       },
       {
         "short": "Cotton",
-        "client": "Cotton, please! I'm already imagining it."
+        "client": "Use cotton. Thanks."
       },
       {
         "short": "Orange",
-        "client": "Oh, orange, darling! I'm glowing at the thought."
+        "client": "Orange. That's it."
       }
     ]
   },
@@ -3803,7 +3803,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3811,19 +3811,19 @@
       },
       {
         "short": "Glamour",
-        "client": "Oh, glamour! That's exactly what I'm after, darling."
+        "client": "Glamour. No fuss."
       },
       {
         "short": "No bells",
-        "client": "Please keep the bells away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the bells."
       },
       {
         "short": "Gothic",
-        "client": "Oh, something gothic, darling! Dark and dreamy."
+        "client": "Gothic. Dark, simple, done."
       },
       {
         "short": "Brooches",
-        "client": "Oh, brooches! Add as many as you like, darling."
+        "client": "Brooches. Keep it tidy."
       }
     ]
   },
@@ -3870,28 +3870,28 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Warm",
-        "client": "I'm dreaming of warm, darling. Truly dreaming."
+        "client": "Make it warm."
       },
       {
         "short": "Only green and grey",
-        "client": "Oh, nothing but green or grey, please, darling!"
+        "client": "Green or grey only."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       },
       {
         "short": "Exactly 5 buttons",
-        "client": "Exactly five buttons, darling. Perfection!"
+        "client": "Exactly five buttons."
       },
       {
         "short": "Elegant",
-        "client": "Oh, elegant! That's exactly what I'm after, darling."
+        "client": "Elegant. No fuss."
       }
     ]
   },
@@ -3942,7 +3942,7 @@
     "client": {
       "name": "Lavinia Fairweather",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
@@ -3950,23 +3950,23 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "Oh, four buttons at the very least, darling!"
+        "client": "At least four buttons."
       },
       {
         "short": "Exactly 7 bells",
-        "client": "Seven bells, dear, no more, no fewer. I just know it's right."
+        "client": "Seven bells. No more, no fewer."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm! That's exactly what I'm after, darling."
+        "client": "Warm. No fuss."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool! That's exactly what I'm after, darling."
+        "client": "Cool. No fuss."
       },
       {
         "short": "Workwear",
-        "client": "I'm dreaming of workwear, darling. Truly dreaming."
+        "client": "Make it workwear."
       }
     ]
   },
@@ -4000,16 +4000,16 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "Velvet",
-        "client": "I adore velvet. Don't tell anyone."
+        "client": "Oh, velvet! I simply adore it, darling."
       },
       {
         "short": "Glamour",
-        "client": "Think glamour. I'll know it when I see it."
+        "client": "Oh, glamour! That's exactly what I'm after, darling."
       }
     ]
   },
@@ -4046,7 +4046,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4054,11 +4054,11 @@
       },
       {
         "short": "Feathers",
-        "client": "Feathers. Somewhere on there."
+        "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
         "short": "Warm",
-        "client": "Warm. That's the whole request."
+        "client": "I'm dreaming of warm, darling. Truly dreaming."
       }
     ]
   },
@@ -4097,20 +4097,20 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "At least 3 jewels",
-        "client": "Three jewels, at the very least."
+        "client": "Oh, three jewels at the very least, darling!"
       },
       {
         "short": "No orange",
-        "client": "No orange. We've fallen out."
+        "client": "Oh, not orange, darling! It isn't my day for it."
       },
       {
         "short": "Yellow",
-        "client": "Yellow, please. It matches my mood."
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
       }
     ]
   },
@@ -4152,7 +4152,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4160,15 +4160,15 @@
       },
       {
         "short": "At least 5 buttons",
-        "client": "Five buttons, at the very least."
+        "client": "Oh, five buttons at the very least, darling!"
       },
       {
         "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       }
     ]
   },
@@ -4210,24 +4210,24 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "No white",
-        "client": "No white. We've fallen out."
+        "client": "Oh, not white, darling! It isn't my day for it."
       },
       {
         "short": "Feathers",
-        "client": "Feathers. Somewhere on there."
+        "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
         "short": "Not warm",
-        "client": "Anything but warm. I'll be fine."
+        "client": "Oh, not warm, darling. I couldn't bear it."
       },
       {
         "short": "Silk",
-        "client": "Silk. It'll do nicely."
+        "client": "Oh, silk! What a lovely idea, darling."
       }
     ]
   },
@@ -4272,7 +4272,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4280,19 +4280,19 @@
       },
       {
         "short": "Not glamour",
-        "client": "Anything but glamour. I'll be fine."
+        "client": "Oh, not glamour, darling. I couldn't bear it."
       },
       {
         "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       },
       {
         "short": "Bells",
-        "client": "Bells. Somewhere on there."
+        "client": "Oh, bells! Add as many as you like, darling."
       }
     ]
   },
@@ -4339,28 +4339,28 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
         "short": "Only lace, cotton and wool",
-        "client": "Nothing but honest fabrics, please. Only lace, cotton or wool."
+        "client": "Oh, nothing but lace, cotton or wool, please, darling!"
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Oh, eveningwear! That's exactly what I'm after, darling."
       },
       {
         "short": "Yellow",
-        "client": "Yellow, please. It matches my mood."
+        "client": "Oh, yellow, darling! I'm glowing at the thought."
       },
       {
         "short": "Daywear",
-        "client": "Daywear. That's the whole request."
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
       },
       {
         "short": "Exactly 7 appliqués",
-        "client": "Exactly seven appliqués. Not one more."
+        "client": "Exactly seven appliqués, darling. Perfection!"
       }
     ]
   },
@@ -4411,7 +4411,7 @@
     "client": {
       "name": "Odette Underhill",
       "human": true,
-      "personality": "deadpan"
+      "personality": "gushing"
     },
     "lines": [
       {
@@ -4419,23 +4419,23 @@
       },
       {
         "short": "Exactly 5 buttons",
-        "client": "Exactly five buttons. Not one more."
+        "client": "Exactly five buttons, darling. Perfection!"
       },
       {
         "short": "Eveningwear",
-        "client": "Eveningwear. That's the whole request."
+        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
       },
       {
         "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "client": "Oh, jewels! Add as many as you like, darling."
       },
       {
         "short": "At least 7 appliqués",
-        "client": "Seven appliqués, at the very least."
+        "client": "Oh, seven appliqués at the very least, darling!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. That's the whole request."
+        "client": "I'm dreaming of daywear, darling. Truly dreaming."
       }
     ]
   },
@@ -4469,16 +4469,16 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Simple",
-        "client": "Go simple. Keep it practical."
+        "client": "Make it simple! Let the whole world gasp!"
       },
       {
         "short": "Playful",
-        "client": "Make it playful."
+        "client": "I demand playful, darling! The stage is set!"
       }
     ]
   },
@@ -4515,7 +4515,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4523,11 +4523,11 @@
       },
       {
         "short": "Playful",
-        "client": "Make it playful."
+        "client": "I demand playful, darling! The stage is set!"
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Make it cool! Let the whole world gasp!"
       }
     ]
   },
@@ -4566,20 +4566,20 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "No wool",
-        "client": "Skip the wool. Thanks."
+        "client": "Banish the wool, darling! It ruins the whole scene!"
       },
       {
         "short": "Jewels",
-        "client": "Add jewels."
+        "client": "Add jewels, darling! Let it catch the light!"
       },
       {
         "short": "At least 3 appliqués",
-        "client": "Three appliqués, minimum. Thanks."
+        "client": "Give me three appliqués at the very least, darling! I want to dazzle!"
       }
     ]
   },
@@ -4621,7 +4621,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4629,15 +4629,15 @@
       },
       {
         "short": "Not playful",
-        "client": "No playful. Moving on."
+        "client": "Banish playful, darling! It will not play tonight!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "At least 6 jewels",
-        "client": "At least six jewels."
+        "client": "At least six jewels! More, if the drama demands it!"
       }
     ]
   },
@@ -4679,24 +4679,24 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "At least 4 colours",
-        "client": "Four colours, minimum. Thanks."
+        "client": "Give me four colours at the very least! A grand finale needs a rainbow!"
       },
       {
         "short": "Silk",
-        "client": "Use silk. Thanks."
+        "client": "Give me silk, darling! Let it sweep the stage!"
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Make it cool! Let the whole world gasp!"
       },
       {
         "short": "Red",
-        "client": "Red. That's it."
+        "client": "Red! Pure, glorious red! Light the spotlights!"
       }
     ]
   },
@@ -4742,7 +4742,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4750,19 +4750,19 @@
       },
       {
         "short": "At least 6 feathers",
-        "client": "Six feathers, minimum. Thanks."
+        "client": "Give me six feathers at the very least, darling! I want to dazzle!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "Risqué",
-        "client": "Risqué. No fuss."
+        "client": "Risqué! It must be risqué! I can see the curtain rising!"
       },
       {
         "short": "Lace trim",
-        "client": "Lace trim. Keep it tidy."
+        "client": "Lace trim! I must have lace trim! It is the finishing flourish!"
       }
     ]
   },
@@ -4810,28 +4810,28 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "Go eveningwear. Keep it practical."
+        "client": "Make it eveningwear! Let the whole world gasp!"
       },
       {
         "short": "Daywear",
-        "client": "Make it daywear."
+        "client": "I demand daywear, darling! The stage is set!"
       },
       {
         "short": "Only brown",
-        "client": "Nothing but brown. Quick as you can."
+        "client": "Brown only, darling! Let those be my whole palette!"
       },
       {
         "short": "At least 6 jewels",
-        "client": "At least six jewels."
+        "client": "At least six jewels! More, if the drama demands it!"
       },
       {
         "short": "Exactly 3 flowers",
-        "client": "Exactly three flowers."
+        "client": "Exactly three flowers! Not one more, or the whole act collapses!"
       }
     ]
   },
@@ -4882,7 +4882,7 @@
     "client": {
       "name": "Imogen Kettleby",
       "human": true,
-      "personality": "brisk"
+      "personality": "theatrical"
     },
     "lines": [
       {
@@ -4890,23 +4890,23 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Make it eveningwear."
+        "client": "I demand eveningwear, darling! The stage is set!"
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués."
+        "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
         "short": "Exactly 6 jewels",
-        "client": "Exactly six jewels."
+        "client": "Exactly six jewels! Not one more, or the whole act collapses!"
       },
       {
         "short": "Exactly 3 flowers",
-        "client": "Exactly three flowers."
+        "client": "Exactly three flowers! Not one more, or the whole act collapses!"
       },
       {
         "short": "Daywear",
-        "client": "Daywear. No fuss."
+        "client": "Daywear! It must be daywear! I can see the curtain rising!"
       }
     ]
   },
@@ -4940,16 +4940,16 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "White",
-        "client": "Oh, white, darling! I'm glowing at the thought."
+        "client": "White, naturally. It has always suited me."
       },
       {
         "short": "Wool",
-        "client": "Oh, wool! What a lovely idea, darling."
+        "client": "One expects wool. Nothing less will do."
       }
     ]
   },
@@ -4986,7 +4986,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -4994,11 +4994,11 @@
       },
       {
         "short": "Trim",
-        "client": "Oh, trim! Add as many as you like, darling."
+        "client": "A touch of trim, I think. Tastefully, of course."
       },
       {
         "short": "Tassels",
-        "client": "Oh, tassels! Add as many as you like, darling."
+        "client": "A touch of tassels, I think. Tastefully, of course."
       }
     ]
   },
@@ -5036,20 +5036,20 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No tassels",
-        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+        "client": "No tassels, please. It is not for me."
       },
       {
         "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "client": "Yellow, naturally. It has always suited me."
       },
       {
         "short": "At least 4 colours",
-        "client": "Oh, at least four colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least four, I think."
       }
     ]
   },
@@ -5091,7 +5091,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5099,15 +5099,15 @@
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim, please. It is not for me."
       },
       {
         "short": "Tassels",
-        "client": "Oh, tassels! Add as many as you like, darling."
+        "client": "A touch of tassels, I think. Tastefully, of course."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       }
     ]
   },
@@ -5150,24 +5150,24 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No wool",
-        "client": "Oh, no wool, darling. It just isn't me."
+        "client": "No wool, please. It is not done."
       },
       {
         "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "client": "No trim, please. It is not for me."
       },
       {
         "short": "At least 3 tassels",
-        "client": "Oh, three tassels at the very least, darling!"
+        "client": "I shall require at least three tassels. A lady must be noticed."
       },
       {
         "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "client": "Yellow, naturally. It has always suited me."
       }
     ]
   },
@@ -5213,7 +5213,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5221,19 +5221,19 @@
       },
       {
         "short": "Not warm",
-        "client": "Oh, not warm, darling. I couldn't bear it."
+        "client": "One cannot abide warm. Kindly avoid it."
       },
       {
         "short": "No tassels",
-        "client": "Oh, no tassels, darling. I'm so sorry to be fussy!"
+        "client": "No tassels, please. It is not for me."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       },
       {
         "short": "Bows",
-        "client": "Bows, dear! Add every one you can find."
+        "client": "One expects bows. Tastefully placed, of course."
       }
     ]
   },
@@ -5280,28 +5280,28 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "Cool",
-        "client": "Oh, cool! That's exactly what I'm after, darling."
+        "client": "One expects cool. I trust that is clear."
       },
       {
         "short": "Only silk, linen and cotton",
-        "client": "Oh, nothing but silk, linen or cotton, please, darling!"
+        "client": "One will accept only silk, linen or cotton. I trust that is not too taxing."
       },
       {
         "short": "No yellow",
-        "client": "Oh, not yellow, darling! It isn't my day for it."
+        "client": "No yellow, please. One has never trusted it."
       },
       {
         "short": "Exactly 2 tassels",
-        "client": "Exactly two tassels, darling. Perfection!"
+        "client": "Exactly two tassels, no more, no fewer. One is particular."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm, please! I can't wait to see it."
+        "client": "I shall require warm. Do try to rise to it."
       }
     ]
   },
@@ -5352,7 +5352,7 @@
     "client": {
       "name": "Cecily Oakhurst",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
@@ -5360,23 +5360,23 @@
       },
       {
         "short": "Cool",
-        "client": "I'm dreaming of cool, darling. Truly dreaming."
+        "client": "Make it cool. One has standards, after all."
       },
       {
         "short": "Exactly 3 tassels",
-        "client": "Exactly three tassels, darling. Perfection!"
+        "client": "Exactly three tassels, no more, no fewer. One is particular."
       },
       {
         "short": "At least 6 feathers",
-        "client": "Oh, six feathers at the very least, darling!"
+        "client": "I shall require at least six feathers. A lady must be noticed."
       },
       {
         "short": "Warm",
-        "client": "Oh, warm, please! I can't wait to see it."
+        "client": "I shall require warm. Do try to rise to it."
       },
       {
         "short": "Bows",
-        "client": "Oh, bows! I simply adore a bow, darling."
+        "client": "Bows, I think. A lady may indulge in a ribbon or two."
       }
     ]
   },
@@ -5410,16 +5410,16 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Glamour",
-        "client": "Go glamour. Keep it practical."
+        "client": "I was thinking glamour. Sorry, is that silly?"
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       }
     ]
   },
@@ -5456,7 +5456,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5464,11 +5464,11 @@
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       }
     ]
   },
@@ -5507,20 +5507,20 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Not glamour",
-        "client": "No glamour. Moving on."
+        "client": "If possible, maybe not glamour? I'm so sorry to ask."
       },
       {
         "short": "Bows",
-        "client": "Bows. A few."
+        "client": "Might there be a bow? Sorry, I do find them comforting."
       },
       {
         "short": "At least 2 feathers",
-        "client": "Two feathers, minimum. Thanks."
+        "client": "Maybe two feathers, or more? I'm so sorry to ask."
       }
     ]
   },
@@ -5562,7 +5562,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5570,15 +5570,15 @@
       },
       {
         "short": "Not eclectic",
-        "client": "Not eclectic."
+        "client": "Sorry, could it not be eclectic? I'm sure it's lovely, really."
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       },
       {
         "short": "At least 7 bows",
-        "client": "Seven bows at least. Neat."
+        "client": "Sorry, could there be bows? At least seven, if that's all right."
       }
     ]
   },
@@ -5620,24 +5620,24 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "At least 3 colours",
-        "client": "Three colours, minimum. Thanks."
+        "client": "Maybe three colours, or more? I'm so sorry to ask."
       },
       {
         "short": "Eclectic",
-        "client": "Eclectic. No fuss."
+        "client": "If it's not too much trouble, maybe something eclectic?"
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
         "short": "Green",
-        "client": "Green. That's it."
+        "client": "Might it be green? Sorry, I do hope that's all right."
       }
     ]
   },
@@ -5683,7 +5683,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5691,19 +5691,19 @@
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "Sorry, could there be at least eight bells? Only if it's not too much."
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
         "short": "Romantic",
-        "client": "Romantic. No fuss."
+        "client": "If it's not too much trouble, maybe something romantic?"
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       }
     ]
   },
@@ -5751,28 +5751,28 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
         "short": "Only grey and green",
-        "client": "Nothing but grey or green. Quick as you can."
+        "client": "If it's no trouble, grey or green only? I'm so sorry to be fussy."
       },
       {
         "short": "At least 8 bells",
-        "client": "At least eight bells."
+        "client": "Sorry, could there be at least eight bells? Only if it's not too much."
       },
       {
         "short": "Simple",
-        "client": "Go simple. Keep it practical."
+        "client": "I was thinking simple. Sorry, is that silly?"
       },
       {
         "short": "Elaborate",
-        "client": "Elaborate. No fuss."
+        "client": "If it's not too much trouble, maybe something elaborate?"
       },
       {
         "short": "Exactly 4 bows",
-        "client": "Four bows. No more, no fewer."
+        "client": "Exactly four bows, if that's all right. Sorry to be particular."
       }
     ]
   },
@@ -5823,7 +5823,7 @@
     "client": {
       "name": "Linnea Fenwick",
       "human": true,
-      "personality": "brisk"
+      "personality": "anxious"
     },
     "lines": [
       {
@@ -5831,23 +5831,23 @@
       },
       {
         "short": "Exactly 8 bells",
-        "client": "Exactly eight bells."
+        "client": "Sorry, could it be exactly eight bells? I'd be so grateful."
       },
       {
         "short": "Exactly 6 bows",
-        "client": "Six bows. No more, no fewer."
+        "client": "Exactly six bows, if that's all right. Sorry to be particular."
       },
       {
         "short": "Simple",
-        "client": "Simple. No fuss."
+        "client": "If it's not too much trouble, maybe something simple?"
       },
       {
         "short": "Brooches",
-        "client": "Add brooches."
+        "client": "I was hoping for a little brooches. Is that all right?"
       },
       {
         "short": "Elaborate",
-        "client": "Go elaborate. Keep it practical."
+        "client": "I was thinking elaborate. Sorry, is that silly?"
       }
     ]
   },
@@ -6359,24 +6359,24 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "No trim",
-        "client": "Please keep the trim away, dear. It's just not me, I'm afraid."
+        "client": "Leave off the trim."
       },
       {
         "short": "Eclectic",
-        "client": "I'm dreaming of eclectic, darling. Truly dreaming."
+        "client": "Make it eclectic."
       },
       {
         "short": "At least 4 bells",
-        "client": "Oh, four bells at the very least, darling!"
+        "client": "At least four bells."
       },
       {
         "short": "Buttons",
-        "client": "Do add buttons, dear. What a treat!"
+        "client": "Add buttons."
       }
     ]
   },
@@ -6414,20 +6414,20 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "Blue",
-        "client": "Oh, blue, darling! I'm glowing at the thought."
+        "client": "Blue, naturally. It has always suited me."
       },
       {
         "short": "At least 2 colours",
-        "client": "Oh, at least two colours, darling! Make it a rainbow."
+        "client": "One expects colour. At least two, I think."
       }
     ]
   },
@@ -6534,28 +6534,28 @@
     "client": {
       "name": "Freya Lindqvist",
       "human": true,
-      "personality": "gushing"
+      "personality": "brisk"
     },
     "lines": [
       {
         "short": "Trim",
-        "client": "Do add trim, dear. What a treat!"
+        "client": "Add trim."
       },
       {
         "short": "At least 4 bells",
-        "client": "Please, at least four bells, dear! Oh, the joy."
+        "client": "Four bells, minimum. Thanks."
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "Make it daywear."
       },
       {
         "short": "At least 3 fabrics",
-        "client": "Mix it up, dear! At least three fabrics would be heavenly."
+        "client": "Three fabrics, minimum. Thanks."
       },
       {
         "short": "Cool",
-        "client": "Oh, cool, please! I can't wait to see it."
+        "client": "Go cool. Keep it practical."
       }
     ]
   },
@@ -6598,24 +6598,24 @@
     "client": {
       "name": "Ursula Thistlewood",
       "human": true,
-      "personality": "gushing"
+      "personality": "grand"
     },
     "lines": [
       {
         "short": "At least 6 appliqués",
-        "client": "Oh, six appliqués at the very least, darling!"
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
         "short": "No bows",
-        "client": "Oh, no bows, darling. I'm so sorry to be fussy!"
+        "client": "No bows, please. It is not for me."
       },
       {
         "short": "Brooches",
-        "client": "Oh, brooches! Add as many as you like, darling."
+        "client": "A touch of brooches, I think. Tastefully, of course."
       },
       {
         "short": "Not gothic",
-        "client": "Oh, not gothic, darling. I couldn't bear it."
+        "client": "One cannot abide gothic. Kindly avoid it."
       }
     ]
   },
