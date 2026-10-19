@@ -11,13 +11,13 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["colour", "style", "colour"],
       "history": [],
       "directions": [
         {
           "type": "colour",
-          "colour": "Pink"
+          "colour": "Purple"
         },
         {
           "type": "style",
@@ -36,11 +36,11 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "Pink",
-        "client": "Pink. That's it."
+        "short": "Purple",
+        "client": "Purple. That's it."
       },
       {
         "short": "Uncomfortable",
@@ -64,7 +64,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["burlapOnly", "accessory", "style", "accessory"],
       "history": [],
       "directions": [
@@ -77,7 +77,7 @@
         },
         {
           "type": "style",
-          "tag": "Daywear"
+          "tag": "Eclectic"
         },
         {
           "type": "accessory",
@@ -92,7 +92,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -102,8 +102,8 @@
         "client": "Tassels. Keep it tidy."
       },
       {
-        "short": "Daywear",
-        "client": "Make it daywear."
+        "short": "Eclectic",
+        "client": "Make it eclectic."
       },
       {
         "short": "Buttons",
@@ -123,13 +123,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Jewel"
+          "accessory": "Flower"
         },
         {
           "type": "style",
@@ -137,7 +137,7 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Appliqué",
+          "accessory": "Bow",
           "count": 4
         },
         {
@@ -153,19 +153,19 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "No jewels",
-        "client": "No jewels."
+        "short": "No flowers",
+        "client": "No flowers."
       },
       {
         "short": "Uncomfortable",
         "client": "Uncomfortable. No fuss."
       },
       {
-        "short": "At least 4 appliqués",
-        "client": "At least four appliqués."
+        "short": "At least 4 bows",
+        "client": "Four bows at least. Neat."
       },
       {
         "short": "Buttons",
@@ -185,7 +185,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["burlapOnly", "accessoryAvoid", "style", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
@@ -198,11 +198,11 @@
         },
         {
           "type": "style",
-          "tag": "Daywear"
+          "tag": "Eclectic"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Bow",
+          "accessory": "Brooch",
           "count": 7
         },
         {
@@ -218,7 +218,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -228,12 +228,12 @@
         "client": "No trim."
       },
       {
-        "short": "Daywear",
-        "client": "Make it daywear."
+        "short": "Eclectic",
+        "client": "Make it eclectic."
       },
       {
-        "short": "At least 7 bows",
-        "client": "At least seven bows."
+        "short": "At least 7 brooches",
+        "client": "Seven brooches, minimum. Thanks."
       },
       {
         "short": "Appliqués",
@@ -253,22 +253,22 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessory": "Feather"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Jewel",
+          "accessory": "Tassel",
           "count": 3
         },
         {
           "type": "style",
-          "tag": "Daywear"
+          "tag": "Eclectic"
         },
         {
           "type": "fabricsMin",
@@ -287,19 +287,19 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "Buttons",
-        "client": "Buttons. Keep it tidy."
+        "short": "Feathers",
+        "client": "Feathers. Keep it tidy."
       },
       {
-        "short": "At least 3 jewels",
-        "client": "At least three jewels."
+        "short": "At least 3 tassels",
+        "client": "At least three tassels."
       },
       {
-        "short": "Daywear",
-        "client": "Make it daywear."
+        "short": "Eclectic",
+        "client": "Make it eclectic."
       },
       {
         "short": "At least 3 fabrics",
@@ -323,7 +323,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
       "history": [],
       "directions": [
@@ -360,7 +360,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -399,7 +399,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
       "history": [],
       "directions": [
@@ -437,7 +437,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Casual",
@@ -477,7 +477,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": [
         "burlapOnly",
         "style",
@@ -526,7 +526,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -569,7 +569,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["colour", "fabric"],
       "history": [],
       "directions": [
@@ -590,7 +590,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Blue",
@@ -614,7 +614,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessory", "accessory"],
       "history": [],
       "directions": [
@@ -623,7 +623,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Lace Trim"
+          "accessory": "Trim"
         },
         {
           "type": "accessory",
@@ -638,14 +638,14 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Lace trim",
-        "client": "One expects lace trim. It is a matter of form."
+        "short": "Trim",
+        "client": "One expects trim. It is a matter of form."
       },
       {
         "short": "Flowers",
@@ -665,13 +665,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryAvoid", "colour", "coloursMin"],
       "history": [],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         },
         {
           "type": "colour",
@@ -690,11 +690,11 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "No appliqués",
-        "client": "No appliqués, please. It is not for me."
+        "short": "No bells",
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "Yellow",
@@ -718,7 +718,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -727,7 +727,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessory",
@@ -735,7 +735,7 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Feather",
+          "accessory": "Button",
           "count": 6
         }
       ],
@@ -747,22 +747,22 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "No tassels",
-        "client": "One finds tassels rather tiresome. Leave it off."
+        "short": "No piping",
+        "client": "One finds piping rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
         "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
-        "short": "At least 6 feathers",
-        "client": "I shall require at least six feathers. A lady must be noticed."
+        "short": "At least 6 buttons",
+        "client": "I shall require at least six buttons. A lady must be noticed."
       }
     ]
   },
@@ -778,18 +778,18 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
       "history": [],
       "directions": [
         {
           "type": "accessoryMin",
-          "accessory": "Bell",
+          "accessory": "Appliqué",
           "count": 6
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessory",
@@ -797,7 +797,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Gothic"
+          "tag": "Glamour"
         }
       ],
       "pairSlots": null,
@@ -808,23 +808,23 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "At least 6 bells",
-        "client": "I shall require at least six bells. A lady must be noticed."
+        "short": "At least 6 appliqués",
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
-        "short": "No tassels",
-        "client": "One finds tassels rather tiresome. Leave it off."
+        "short": "No piping",
+        "client": "One finds piping rather tiresome. Leave it off."
       },
       {
         "short": "Flowers",
         "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
-        "short": "Not gothic",
-        "client": "One cannot abide gothic. Kindly avoid it."
+        "short": "Not glamour",
+        "client": "One cannot abide glamour. Kindly avoid it."
       }
     ]
   },
@@ -840,7 +840,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryAvoid", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
@@ -849,7 +849,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryAvoid",
@@ -857,7 +857,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessory": "Flower"
         },
         {
           "type": "accessory",
@@ -872,22 +872,22 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "No tassels",
-        "client": "One finds tassels rather tiresome. Leave it off."
+        "short": "No piping",
+        "client": "One finds piping rather tiresome. Leave it off."
       },
       {
         "short": "No jewels",
         "client": "No jewels, please. It is not for me."
       },
       {
-        "short": "Feathers",
-        "client": "A touch of feathers, I think. Tastefully, of course."
+        "short": "Flowers",
+        "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
         "short": "Appliqués",
@@ -907,7 +907,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
       "history": [],
       "directions": [
@@ -942,7 +942,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Only silk",
@@ -978,7 +978,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryExact", "styleAvoid", "accessoryExact", "style", "style"],
       "history": [],
       "directions": [
@@ -1016,7 +1016,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -1055,7 +1055,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["style", "colour", "style"],
       "history": [],
       "directions": [
@@ -1069,7 +1069,7 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Eveningwear"
         }
       ],
       "pairSlots": null,
@@ -1080,7 +1080,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Playful",
@@ -1091,8 +1091,8 @@
         "client": "Make it yellow. Don't ask me why."
       },
       {
-        "short": "Elaborate",
-        "client": "Think elaborate. I'll know it when I see it."
+        "short": "Eveningwear",
+        "client": "Think eveningwear. I'll know it when I see it."
       }
     ]
   },
@@ -1108,7 +1108,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["burlapOnly", "style", "accessory", "style"],
       "history": [],
       "directions": [
@@ -1117,15 +1117,15 @@
         },
         {
           "type": "style",
-          "tag": "Romantic"
+          "tag": "Warm"
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Bow"
         },
         {
           "type": "style",
-          "tag": "Simple"
+          "tag": "Playful"
         }
       ],
       "pairSlots": null,
@@ -1136,22 +1136,22 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Romantic",
-        "client": "Make it romantic. I've had a long week."
+        "short": "Warm",
+        "client": "Make it warm. I've had a long week."
       },
       {
-        "short": "Brooches",
-        "client": "Brooches. Somewhere on there."
+        "short": "Bows",
+        "client": "Bows, please. Don't look so surprised."
       },
       {
-        "short": "Simple",
-        "client": "Simple. That's the whole request."
+        "short": "Playful",
+        "client": "Playful. That's the whole request."
       }
     ]
   },
@@ -1167,7 +1167,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
@@ -1197,7 +1197,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Playful",
@@ -1229,7 +1229,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["burlapOnly", "style", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
@@ -1238,11 +1238,11 @@
         },
         {
           "type": "style",
-          "tag": "Romantic"
+          "tag": "Warm"
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Bow"
         },
         {
           "type": "accessoryMin",
@@ -1251,7 +1251,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessory": "Trim"
         }
       ],
       "pairSlots": null,
@@ -1262,26 +1262,26 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Romantic",
-        "client": "Make it romantic. I've had a long week."
+        "short": "Warm",
+        "client": "Make it warm. I've had a long week."
       },
       {
-        "short": "Brooches",
-        "client": "Brooches. Somewhere on there."
+        "short": "Bows",
+        "client": "Bows, please. Don't look so surprised."
       },
       {
         "short": "At least 6 tassels",
         "client": "Six tassels, at the very least."
       },
       {
-        "short": "No piping",
-        "client": "Keep the piping off me."
+        "short": "No trim",
+        "client": "Keep the trim off me."
       }
     ]
   },
@@ -1297,21 +1297,21 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessory": "Lace Trim"
         },
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabric": "Wool"
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Eveningwear"
         },
         {
           "type": "coloursMin",
@@ -1319,7 +1319,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Wool"
+          "fabric": "Velvet"
         }
       ],
       "pairSlots": null,
@@ -1330,27 +1330,27 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "No piping",
-        "client": "No piping. I've had my fill."
+        "short": "No lace trim",
+        "client": "No lace trim. I've had my fill."
       },
       {
-        "short": "Velvet",
-        "client": "Velvet. It's the only thing that's ever understood me."
+        "short": "Wool",
+        "client": "I'd like wool. Don't read into it."
       },
       {
-        "short": "Elaborate",
-        "client": "Think elaborate. I'll know it when I see it."
+        "short": "Eveningwear",
+        "client": "Think eveningwear. I'll know it when I see it."
       },
       {
         "short": "At least 4 colours",
         "client": "I want colour, and lots of it. At least four."
       },
       {
-        "short": "Wool",
-        "client": "I'd like wool. Don't read into it."
+        "short": "Velvet",
+        "client": "Velvet. It's the only thing that's ever understood me."
       }
     ]
   },
@@ -1366,7 +1366,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
@@ -1380,19 +1380,19 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Eveningwear"
         },
         {
           "type": "style",
-          "tag": "Playful"
+          "tag": "Warm"
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessory": "Trim"
         },
         {
           "type": "style",
-          "tag": "Eclectic"
+          "tag": "Professional"
         }
       ],
       "pairSlots": null,
@@ -1403,7 +1403,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Burlap only"
@@ -1413,20 +1413,20 @@
         "client": "At least eight tassels. Subtlety is not the goal."
       },
       {
-        "short": "Elaborate",
-        "client": "Think elaborate. I'll know it when I see it."
+        "short": "Eveningwear",
+        "client": "Think eveningwear. I'll know it when I see it."
       },
       {
-        "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "short": "Warm",
+        "client": "Warm. That's the whole request."
       },
       {
-        "short": "No piping",
-        "client": "Keep the piping off me."
+        "short": "No trim",
+        "client": "Keep the trim off me."
       },
       {
-        "short": "Eclectic",
-        "client": "Make it eclectic. I've had a long week."
+        "short": "Professional",
+        "client": "Make it professional. I've had a long week."
       }
     ]
   },
@@ -1442,7 +1442,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["colour", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
       "history": [],
       "directions": [
@@ -1480,7 +1480,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Purple",
@@ -1520,7 +1520,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": [
         "burlapOnly",
         "styleAvoid",
@@ -1570,7 +1570,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
         "short": "Burlap only"
@@ -1613,13 +1613,13 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["fabric", "colour"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Lace"
+          "fabric": "Cotton"
         },
         {
           "type": "colour",
@@ -1634,11 +1634,11 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "Lace",
-        "client": "I'd like lace. Don't read into it."
+        "short": "Cotton",
+        "client": "I'd like cotton. Don't read into it."
       },
       {
         "short": "Red",
@@ -1658,7 +1658,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["burlapOnly", "style", "accessory"],
       "history": [],
       "directions": [
@@ -1667,11 +1667,11 @@
         },
         {
           "type": "style",
-          "tag": "Romantic"
+          "tag": "Risqué"
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         }
       ],
       "pairSlots": null,
@@ -1682,18 +1682,18 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Romantic",
-        "client": "Make it romantic. I've had a long week."
+        "short": "Risqué",
+        "client": "Make it risqué. I've had a long week."
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués. I'll pretend I'm not excited."
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
       }
     ]
   },
@@ -1709,13 +1709,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["fabricAvoid", "fabric", "fabricsMin"],
       "history": [],
       "directions": [
         {
           "type": "fabricAvoid",
-          "fabric": "Cotton"
+          "fabric": "Lace"
         },
         {
           "type": "fabric",
@@ -1734,11 +1734,11 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "No cotton",
-        "client": "Not cotton. It knows what it did."
+        "short": "No lace",
+        "client": "Not lace. It knows what it did."
       },
       {
         "short": "Velvet",
@@ -1762,7 +1762,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -1775,11 +1775,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Bow",
+          "accessory": "Brooch",
           "count": 5
         }
       ],
@@ -1791,7 +1791,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
         "short": "Burlap only"
@@ -1801,12 +1801,12 @@
         "client": "Keep the tassels off me."
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués. I'll pretend I'm not excited."
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
       },
       {
-        "short": "At least 5 bows",
-        "client": "Bows everywhere. At the very least, five."
+        "short": "At least 5 brooches",
+        "client": "Five brooches, at the very least."
       }
     ]
   },
@@ -1822,13 +1822,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["accessory", "colourAvoid", "accessory", "colour"],
       "history": [],
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Bell"
+          "accessory": "Bow"
         },
         {
           "type": "colourAvoid",
@@ -1836,11 +1836,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         },
         {
           "type": "colour",
-          "colour": "Pink"
+          "colour": "Grey"
         }
       ],
       "pairSlots": null,
@@ -1851,23 +1851,23 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Bows",
+        "client": "A bow, or several. Restraint is overrated."
       },
       {
         "short": "No white",
         "client": "Anything but white. Long story."
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués. I'll pretend I'm not excited."
+        "short": "Bells",
+        "client": "Add bells. I'll pretend I'm not excited."
       },
       {
-        "short": "Pink",
-        "client": "Pink, please. It matches my mood."
+        "short": "Grey",
+        "client": "Grey, please. It matches my mood."
       }
     ]
   },
@@ -1883,7 +1883,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
@@ -1892,7 +1892,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryAvoid",
@@ -1900,7 +1900,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessory": "Button"
         },
         {
           "type": "accessory",
@@ -1915,22 +1915,22 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "short": "Piping",
+        "client": "Add piping. I'll pretend I'm not excited."
       },
       {
         "short": "No appliqués",
         "client": "Keep the appliqués off me."
       },
       {
-        "short": "Feathers",
-        "client": "Feathers. Somewhere on there."
+        "short": "Buttons",
+        "client": "Buttons. Somewhere on there."
       },
       {
         "short": "Bows",
@@ -1950,7 +1950,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["colourOnly", "accessoryExact", "style", "style", "fabricsMin"],
       "history": [],
       "directions": [
@@ -1984,7 +1984,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
         "short": "Only orange",
@@ -2020,7 +2020,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "first-date",
+      "themeId": "in-laws-dinner",
       "plan": ["burlapOnly", "accessoryExact", "style", "style", "accessory", "accessoryExact"],
       "history": [],
       "directions": [
@@ -2058,7 +2058,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Nadia is dressing for a first date and wants something cute but a bit bold.",
+    "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
         "short": "Burlap only"
@@ -2097,17 +2097,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["fabric", "style"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabric": "Silk"
         },
         {
           "type": "style",
-          "tag": "Glamour"
+          "tag": "Gothic"
         }
       ],
       "pairSlots": null,
@@ -2118,15 +2118,15 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "Velvet",
-        "client": "Velvet, naturally. I could not possibly wear anything else."
+        "short": "Silk",
+        "client": "I shall wear silk. It is only proper."
       },
       {
-        "short": "Glamour",
-        "client": "Make it glamour. One has standards, after all."
+        "short": "Gothic",
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -2142,7 +2142,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
@@ -2151,11 +2151,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessory": "Flower"
         },
         {
           "type": "style",
-          "tag": "Cute"
+          "tag": "Casual"
         }
       ],
       "pairSlots": null,
@@ -2166,18 +2166,18 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Feathers",
-        "client": "One expects feathers. It is a matter of form."
+        "short": "Flowers",
+        "client": "One expects flowers. It is a matter of form."
       },
       {
-        "short": "Cute",
-        "client": "One expects cute. I trust that is clear."
+        "short": "Casual",
+        "client": "One expects casual. I trust that is clear."
       }
     ]
   },
@@ -2193,13 +2193,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessory", "accessoryMin", "colourAvoid"],
       "history": [],
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryMin",
@@ -2219,11 +2219,11 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "Jewels",
-        "client": "One expects jewels. It is a matter of form."
+        "short": "Piping",
+        "client": "One expects piping. It is a matter of form."
       },
       {
         "short": "At least 4 feathers",
@@ -2247,7 +2247,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [],
       "directions": [
@@ -2256,7 +2256,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessory": "Flower"
         },
         {
           "type": "accessoryMin",
@@ -2265,7 +2265,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessory": "Lace Trim"
         }
       ],
       "pairSlots": null,
@@ -2276,22 +2276,22 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Feathers",
-        "client": "One expects feathers. It is a matter of form."
+        "short": "Flowers",
+        "client": "One expects flowers. It is a matter of form."
       },
       {
         "short": "At least 5 appliqués",
         "client": "I shall require at least five appliqués. A lady must be noticed."
       },
       {
-        "short": "No piping",
-        "client": "One finds piping rather tiresome. Leave it off."
+        "short": "No lace trim",
+        "client": "One finds lace trim rather tiresome. Leave it off."
       }
     ]
   },
@@ -2307,7 +2307,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["coloursMin", "fabricAvoid", "style", "style"],
       "history": [],
       "directions": [
@@ -2317,11 +2317,11 @@
         },
         {
           "type": "fabricAvoid",
-          "fabric": "Sequin"
+          "fabric": "Silk"
         },
         {
           "type": "style",
-          "tag": "Cute"
+          "tag": "Casual"
         },
         {
           "type": "style",
@@ -2336,19 +2336,19 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "At least 4 colours",
         "client": "At least four colours, if you please. I do not do plain."
       },
       {
-        "short": "No sequins",
-        "client": "Sequins are for lesser occasions. Kindly leave them out."
+        "short": "No silk",
+        "client": "One does not wear silk. I am sure you understand."
       },
       {
-        "short": "Cute",
-        "client": "One expects cute. I trust that is clear."
+        "short": "Casual",
+        "client": "One expects casual. I trust that is clear."
       },
       {
         "short": "Playful",
@@ -2368,7 +2368,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryMin", "styleAvoid", "style", "style"],
       "history": [],
       "directions": [
@@ -2382,7 +2382,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Cool"
+          "tag": "Cute"
         },
         {
           "type": "style",
@@ -2390,7 +2390,7 @@
         },
         {
           "type": "style",
-          "tag": "Elegant"
+          "tag": "Elaborate"
         }
       ],
       "pairSlots": null,
@@ -2401,7 +2401,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "Burlap only"
@@ -2411,16 +2411,16 @@
         "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
-        "short": "Not cool",
-        "client": "One cannot abide cool. Kindly avoid it."
+        "short": "Not cute",
+        "client": "Nothing cute, please. One is not a kitten."
       },
       {
         "short": "Playful",
         "client": "I shall require playful. Do try to rise to it."
       },
       {
-        "short": "Elegant",
-        "client": "One expects elegant. I trust that is clear."
+        "short": "Elaborate",
+        "client": "One expects elaborate. I trust that is clear."
       }
     ]
   },
@@ -2436,7 +2436,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
       "history": [],
       "directions": [
@@ -2471,7 +2471,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "At least 4 flowers",
@@ -2507,7 +2507,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryExact", "style", "accessoryExact", "style", "style"],
       "history": [],
       "directions": [
@@ -2545,7 +2545,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Thea is attending opening night at the opera and wants to look glittering and grand without sitting down in it.",
+    "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
         "short": "Burlap only"
@@ -2584,7 +2584,7 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["fabric", "style"],
       "history": [],
       "directions": [
@@ -2594,7 +2594,7 @@
         },
         {
           "type": "style",
-          "tag": "Risqué"
+          "tag": "Gothic"
         }
       ],
       "pairSlots": null,
@@ -2605,15 +2605,15 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Silk",
         "client": "I shall wear silk. It is only proper."
       },
       {
-        "short": "Risqué",
-        "client": "I shall require risqué. Do try to rise to it."
+        "short": "Gothic",
+        "client": "Gothic. My family has always dressed for a good haunting."
       }
     ]
   },
@@ -2629,7 +2629,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
@@ -2642,7 +2642,7 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Elegant"
         }
       ],
       "pairSlots": null,
@@ -2653,7 +2653,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Burlap only"
@@ -2663,8 +2663,8 @@
         "client": "One expects piping. It is a matter of form."
       },
       {
-        "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "short": "Elegant",
+        "client": "One expects elegant. I trust that is clear."
       }
     ]
   },
@@ -2680,7 +2680,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["coloursMin", "style", "fabricAvoid"],
       "history": [],
       "directions": [
@@ -2690,7 +2690,7 @@
         },
         {
           "type": "style",
-          "tag": "Risqué"
+          "tag": "Gothic"
         },
         {
           "type": "fabricAvoid",
@@ -2705,15 +2705,15 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "At least 3 colours",
         "client": "At least three colours, if you please. I do not do plain."
       },
       {
-        "short": "Risqué",
-        "client": "I shall require risqué. Do try to rise to it."
+        "short": "Gothic",
+        "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
         "short": "No lace",
@@ -2733,7 +2733,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["burlapOnly", "accessoryMin", "style", "styleAvoid"],
       "history": [],
       "directions": [
@@ -2742,16 +2742,16 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Feather",
+          "accessory": "Jewel",
           "count": 5
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Elegant"
         },
         {
           "type": "styleAvoid",
-          "tag": "Gothic"
+          "tag": "Patterned"
         }
       ],
       "pairSlots": null,
@@ -2762,22 +2762,22 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "At least 5 feathers",
-        "client": "At least five feathers, if you please. One does like to be seen."
+        "short": "At least 5 jewels",
+        "client": "At least five jewels, if you please. One does like to be seen."
       },
       {
-        "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "short": "Elegant",
+        "client": "One expects elegant. I trust that is clear."
       },
       {
-        "short": "Not gothic",
-        "client": "Not gothic, I think. It would not be fitting."
+        "short": "Not patterned",
+        "client": "Not patterned, I think. It would not be fitting."
       }
     ]
   },
@@ -2793,7 +2793,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["fabric", "style", "fabric", "accessory"],
       "history": [],
       "directions": [
@@ -2803,15 +2803,15 @@
         },
         {
           "type": "style",
-          "tag": "Risqué"
+          "tag": "Gothic"
         },
         {
           "type": "fabric",
-          "fabric": "Linen"
+          "fabric": "Lace"
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessory": "Jewel"
         }
       ],
       "pairSlots": null,
@@ -2822,23 +2822,23 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Silk",
         "client": "I shall wear silk. It is only proper."
       },
       {
-        "short": "Risqué",
-        "client": "I shall require risqué. Do try to rise to it."
+        "short": "Gothic",
+        "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
-        "short": "Linen",
-        "client": "One expects linen. Nothing less will do."
+        "short": "Lace",
+        "client": "One expects lace. Nothing less will do."
       },
       {
-        "short": "Flowers",
-        "client": "One expects flowers. It is a matter of form."
+        "short": "Jewels",
+        "client": "One expects jewels. It is a matter of form."
       }
     ]
   },
@@ -2854,7 +2854,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["burlapOnly", "accessory", "style", "style", "accessory"],
       "history": [],
       "directions": [
@@ -2867,7 +2867,7 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Elegant"
         },
         {
           "type": "style",
@@ -2875,7 +2875,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessory": "Feather"
         }
       ],
       "pairSlots": null,
@@ -2886,7 +2886,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Burlap only"
@@ -2896,16 +2896,16 @@
         "client": "One expects piping. It is a matter of form."
       },
       {
-        "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "short": "Elegant",
+        "client": "One expects elegant. I trust that is clear."
       },
       {
         "short": "Gothic",
         "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
-        "short": "Buttons",
-        "client": "A touch of buttons, I think. Tastefully, of course."
+        "short": "Feathers",
+        "client": "A touch of feathers, I think. Tastefully, of course."
       }
     ]
   },
@@ -2921,7 +2921,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["style", "colourOnly", "accessoryExact", "fabric", "style"],
       "history": [],
       "directions": [
@@ -2955,7 +2955,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Eveningwear",
@@ -2991,7 +2991,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "harvest-supper",
+      "themeId": "stylish-wake",
       "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "accessory", "style"],
       "history": [],
       "directions": [
@@ -3028,7 +3028,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For the harvest supper, Zelda would like something warm and sturdy. No getting pie on it, please.",
+    "brief": "Zelda will sweep into a very stylish wake looking moody and elegant, and would rather avoid frightening the vicar.",
     "lines": [
       {
         "short": "Burlap only"
@@ -3067,13 +3067,13 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["fabric", "colour", "style"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabric": "Silk"
         },
         {
           "type": "colour",
@@ -3081,7 +3081,7 @@
         },
         {
           "type": "style",
-          "tag": "Cool"
+          "tag": "Cute"
         }
       ],
       "pairSlots": null,
@@ -3092,19 +3092,19 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "Velvet",
-        "client": "Velvet! The curtain, the cloak, the whole grand finale!"
+        "short": "Silk",
+        "client": "Give me silk, darling! Let it sweep the stage!"
       },
       {
         "short": "Blue",
         "client": "Make it blue, darling! Let it blaze across the stage!"
       },
       {
-        "short": "Cool",
-        "client": "Cool! It must be cool! I can see the curtain rising!"
+        "short": "Cute",
+        "client": "Cute! It must be cute! I can see the curtain rising!"
       }
     ]
   },
@@ -3120,7 +3120,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["burlapOnly", "accessory", "accessory", "style"],
       "history": [],
       "directions": [
@@ -3129,11 +3129,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Bow"
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessory": "Trim"
         },
         {
           "type": "style",
@@ -3148,18 +3148,18 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Brooches",
-        "client": "Add brooches, darling! Let it catch the light!"
+        "short": "Bows",
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
-        "short": "Bows",
-        "client": "Bows, darling! Big, bold and gloriously over the top!"
+        "short": "Trim",
+        "client": "Trim! I must have trim! It is the finishing flourish!"
       },
       {
         "short": "Romantic",
@@ -3179,13 +3179,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["colourAvoid", "colour", "fabricsMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "colourAvoid",
-          "colour": "Red"
+          "colour": "Yellow"
         },
         {
           "type": "colour",
@@ -3208,11 +3208,11 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "No red",
-        "client": "Not a drop of red, darling! The scene cannot bear it!"
+        "short": "No yellow",
+        "client": "Not a drop of yellow, darling! The scene cannot bear it!"
       },
       {
         "short": "Blue",
@@ -3240,7 +3240,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
@@ -3262,7 +3262,7 @@
         },
         {
           "type": "style",
-          "tag": "Risqué"
+          "tag": "Romantic"
         }
       ],
       "pairSlots": null,
@@ -3273,7 +3273,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
         "short": "Burlap only"
@@ -3291,8 +3291,8 @@
         "client": "At least two jewels! More, if the drama demands it!"
       },
       {
-        "short": "Risqué",
-        "client": "Risqué! It must be risqué! I can see the curtain rising!"
+        "short": "Romantic",
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3308,13 +3308,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["colour", "coloursMin", "accessory", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colour": "White"
         },
         {
           "type": "coloursMin",
@@ -3330,7 +3330,7 @@
         },
         {
           "type": "style",
-          "tag": "Risqué"
+          "tag": "Romantic"
         }
       ],
       "pairSlots": null,
@@ -3341,11 +3341,11 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "Yellow",
-        "client": "Make it yellow, darling! Let it blaze across the stage!"
+        "short": "White",
+        "client": "Make it white, darling! Let it blaze across the stage!"
       },
       {
         "short": "At least 2 colours",
@@ -3360,8 +3360,8 @@
         "client": "No tassels! I will not be upstaged!"
       },
       {
-        "short": "Risqué",
-        "client": "Risqué! It must be risqué! I can see the curtain rising!"
+        "short": "Romantic",
+        "client": "Romantic! It must be romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3377,7 +3377,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["burlapOnly", "accessory", "accessoryMin", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
@@ -3386,7 +3386,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Bow"
         },
         {
           "type": "accessoryMin",
@@ -3395,7 +3395,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Trim"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryMin",
@@ -3404,7 +3404,7 @@
         },
         {
           "type": "style",
-          "tag": "Shimmering"
+          "tag": "Romantic"
         }
       ],
       "pairSlots": null,
@@ -3415,30 +3415,30 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Brooches",
-        "client": "Add brooches, darling! Let it catch the light!"
+        "short": "Bows",
+        "client": "Add bows! Let every one take a bow of its own!"
       },
       {
         "short": "At least 8 bells",
         "client": "At least eight bells! More, if the drama demands it!"
       },
       {
-        "short": "Trim",
-        "client": "Trim! I must have trim! It is the finishing flourish!"
+        "short": "Piping",
+        "client": "Piping! I must have piping! It is the finishing flourish!"
       },
       {
         "short": "At least 4 flowers",
         "client": "At least four flowers! More, if the drama demands it!"
       },
       {
-        "short": "Shimmering",
-        "client": "I demand shimmering, darling! The stage is set!"
+        "short": "Romantic",
+        "client": "I demand romantic, darling! The stage is set!"
       }
     ]
   },
@@ -3454,7 +3454,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "colour"],
       "history": [],
       "directions": [
@@ -3492,7 +3492,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
         "short": "Formal",
@@ -3532,7 +3532,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "lighthouse-wedding",
       "plan": [
         "burlapOnly",
         "accessoryMin",
@@ -3582,7 +3582,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Beatrix needs something relaxed and cheerful for a day on the pier, without getting sand in the seams.",
+    "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
         "short": "Burlap only"
@@ -3625,17 +3625,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["style", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Glamour"
+          "tag": "Gothic"
         },
         {
           "type": "fabric",
-          "fabric": "Sequin"
+          "fabric": "Linen"
         }
       ],
       "pairSlots": null,
@@ -3646,15 +3646,15 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "Glamour",
-        "client": "Make it glamour."
+        "short": "Gothic",
+        "client": "Gothic. Nothing flimsy."
       },
       {
-        "short": "Sequin",
-        "client": "Sequins, please. Keep it simple."
+        "short": "Linen",
+        "client": "Linen, please. Keep it simple."
       }
     ]
   },
@@ -3670,7 +3670,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
@@ -3683,7 +3683,7 @@
         },
         {
           "type": "style",
-          "tag": "Eclectic"
+          "tag": "Daywear"
         }
       ],
       "pairSlots": null,
@@ -3694,7 +3694,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -3704,8 +3704,8 @@
         "client": "Glamour. No fuss."
       },
       {
-        "short": "Eclectic",
-        "client": "Go eclectic. Keep it practical."
+        "short": "Daywear",
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3721,7 +3721,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryMin", "fabricAvoid", "style"],
       "history": [],
       "directions": [
@@ -3732,11 +3732,11 @@
         },
         {
           "type": "fabricAvoid",
-          "fabric": "Linen"
+          "fabric": "Silk"
         },
         {
           "type": "style",
-          "tag": "Eclectic"
+          "tag": "Daywear"
         }
       ],
       "pairSlots": null,
@@ -3747,19 +3747,19 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "At least 2 feathers",
         "client": "Two feathers, minimum. Thanks."
       },
       {
-        "short": "No linen",
-        "client": "No linen."
+        "short": "No silk",
+        "client": "No silk."
       },
       {
-        "short": "Eclectic",
-        "client": "Go eclectic. Keep it practical."
+        "short": "Daywear",
+        "client": "Go daywear. Keep it practical."
       }
     ]
   },
@@ -3775,7 +3775,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
@@ -3784,16 +3784,16 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Feather",
+          "accessory": "Button",
           "count": 4
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessory": "Bow"
         },
         {
           "type": "style",
-          "tag": "Glamour"
+          "tag": "Formal"
         }
       ],
       "pairSlots": null,
@@ -3804,22 +3804,22 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "At least 4 feathers",
-        "client": "At least four feathers."
+        "short": "At least 4 buttons",
+        "client": "At least four buttons."
       },
       {
-        "short": "No bells",
-        "client": "Leave off the bells."
+        "short": "No bows",
+        "client": "Leave off the bows."
       },
       {
-        "short": "Glamour",
-        "client": "Glamour. No fuss."
+        "short": "Formal",
+        "client": "Formal. No fuss."
       }
     ]
   },
@@ -3835,25 +3835,25 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["style", "accessoryAvoid", "fabric", "colour"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Glamour"
+          "tag": "Gothic"
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Flower"
+          "accessory": "Feather"
         },
         {
           "type": "fabric",
-          "fabric": "Lace"
+          "fabric": "Cotton"
         },
         {
           "type": "colour",
-          "colour": "Purple"
+          "colour": "Pink"
         }
       ],
       "pairSlots": null,
@@ -3864,23 +3864,23 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "Glamour",
-        "client": "Make it glamour."
+        "short": "Gothic",
+        "client": "Gothic. Nothing flimsy."
       },
       {
-        "short": "No flowers",
-        "client": "No flowers."
+        "short": "No feathers",
+        "client": "No feathers."
       },
       {
-        "short": "Lace",
-        "client": "Use lace. Thanks."
+        "short": "Cotton",
+        "client": "Use cotton. Thanks."
       },
       {
-        "short": "Purple",
-        "client": "Purple. That's it."
+        "short": "Pink",
+        "client": "Pink. That's it."
       }
     ]
   },
@@ -3896,7 +3896,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "style", "accessoryAvoid", "style", "accessory"],
       "history": [],
       "directions": [
@@ -3909,11 +3909,11 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessory": "Bow"
         },
         {
           "type": "style",
-          "tag": "Shimmering"
+          "tag": "Formal"
         },
         {
           "type": "accessory",
@@ -3928,7 +3928,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -3938,12 +3938,12 @@
         "client": "Glamour. No fuss."
       },
       {
-        "short": "No bells",
-        "client": "Leave off the bells."
+        "short": "No bows",
+        "client": "Leave off the bows."
       },
       {
-        "short": "Shimmering",
-        "client": "Shimmering. No fuss."
+        "short": "Formal",
+        "client": "Formal. No fuss."
       },
       {
         "short": "Brooches",
@@ -3963,7 +3963,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["style", "colourOnly", "style", "accessoryExact", "style"],
       "history": [],
       "directions": [
@@ -3997,7 +3997,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Warm",
@@ -4033,7 +4033,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryMin", "accessoryExact", "style", "style", "style"],
       "history": [],
       "directions": [
@@ -4071,7 +4071,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Lavinia is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Lavinia has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4110,17 +4110,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["fabric", "style"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabric": "Wool"
         },
         {
           "type": "style",
-          "tag": "Formal"
+          "tag": "Gothic"
         }
       ],
       "pairSlots": null,
@@ -4131,15 +4131,15 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
-        "short": "Velvet",
-        "client": "Oh, velvet! I simply adore it, darling."
+        "short": "Wool",
+        "client": "Oh, wool! What a lovely idea, darling."
       },
       {
-        "short": "Formal",
-        "client": "Oh, formal! That's exactly what I'm after, darling."
+        "short": "Gothic",
+        "client": "Oh, something gothic, darling! Dark and dreamy."
       }
     ]
   },
@@ -4155,7 +4155,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
@@ -4168,7 +4168,7 @@
         },
         {
           "type": "style",
-          "tag": "Uncomfortable"
+          "tag": "Warm"
         }
       ],
       "pairSlots": null,
@@ -4179,7 +4179,7 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4189,8 +4189,8 @@
         "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
-        "short": "Uncomfortable",
-        "client": "I'm dreaming of uncomfortable, darling. Truly dreaming."
+        "short": "Warm",
+        "client": "I'm dreaming of warm, darling. Truly dreaming."
       }
     ]
   },
@@ -4206,7 +4206,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["accessoryMin", "colourAvoid", "colour"],
       "history": [],
       "directions": [
@@ -4217,7 +4217,7 @@
         },
         {
           "type": "colourAvoid",
-          "colour": "Grey"
+          "colour": "Pink"
         },
         {
           "type": "colour",
@@ -4232,15 +4232,15 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "At least 3 jewels",
         "client": "Oh, three jewels at the very least, darling!"
       },
       {
-        "short": "No grey",
-        "client": "Oh, not grey, darling! It isn't my day for it."
+        "short": "No pink",
+        "client": "Oh, not pink, darling! It isn't my day for it."
       },
       {
         "short": "Yellow",
@@ -4260,7 +4260,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["burlapOnly", "accessoryMin", "accessoryAvoid", "accessory"],
       "history": [],
       "directions": [
@@ -4278,7 +4278,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessory": "Lace Trim"
         }
       ],
       "pairSlots": null,
@@ -4289,7 +4289,7 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4303,8 +4303,8 @@
         "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
-        "short": "Jewels",
-        "client": "Oh, jewels! Add as many as you like, darling."
+        "short": "Lace trim",
+        "client": "Oh, lace trim! Add as many as you like, darling."
       }
     ]
   },
@@ -4320,13 +4320,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["colourAvoid", "accessory", "styleAvoid", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "colourAvoid",
-          "colour": "Red"
+          "colour": "White"
         },
         {
           "type": "accessory",
@@ -4334,11 +4334,11 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Warm"
+          "tag": "Uncomfortable"
         },
         {
           "type": "fabric",
-          "fabric": "Sequin"
+          "fabric": "Velvet"
         }
       ],
       "pairSlots": null,
@@ -4349,23 +4349,23 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
-        "short": "No red",
-        "client": "Oh, not red, darling! It isn't my day for it."
+        "short": "No white",
+        "client": "Oh, not white, darling! It isn't my day for it."
       },
       {
         "short": "Feathers",
         "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
-        "short": "Not warm",
-        "client": "Oh, not warm, darling. I couldn't bear it."
+        "short": "Not uncomfortable",
+        "client": "Oh, not uncomfortable, darling. I couldn't bear it."
       },
       {
-        "short": "Sequin",
-        "client": "Oh, sequins! What a lovely idea, darling."
+        "short": "Velvet",
+        "client": "Oh, velvet! I simply adore it, darling."
       }
     ]
   },
@@ -4381,7 +4381,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessory", "accessory"],
       "history": [],
       "directions": [
@@ -4398,11 +4398,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessory": "Lace Trim"
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         }
       ],
       "pairSlots": null,
@@ -4413,7 +4413,7 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4427,12 +4427,12 @@
         "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
       },
       {
-        "short": "Jewels",
-        "client": "Oh, jewels! Add as many as you like, darling."
+        "short": "Lace trim",
+        "client": "Oh, lace trim! Add as many as you like, darling."
       },
       {
-        "short": "Appliqués",
-        "client": "Oh, appliqués! Add as many as you like, darling."
+        "short": "Bells",
+        "client": "Oh, bells! Add as many as you like, darling."
       }
     ]
   },
@@ -4448,7 +4448,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
       "history": [],
       "directions": [
@@ -4482,7 +4482,7 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "Only lace, cotton and wool",
@@ -4518,7 +4518,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "rainy-picnic",
       "plan": ["burlapOnly", "accessoryExact", "style", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
@@ -4556,7 +4556,7 @@
       "human": true,
       "personality": "gushing"
     },
-    "brief": "For a fancy dress picnic, Odette would like something bold and silly. No matching the curtains, please.",
+    "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4595,17 +4595,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["style", "style"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Shimmering"
+          "tag": "Romantic"
         },
         {
           "type": "style",
-          "tag": "Gothic"
+          "tag": "Patterned"
         }
       ],
       "pairSlots": null,
@@ -4616,15 +4616,15 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "Shimmering",
-        "client": "Make it shimmering! Let the whole world gasp!"
+        "short": "Romantic",
+        "client": "Make it romantic! Let the whole world gasp!"
       },
       {
-        "short": "Gothic",
-        "client": "Make it gothic! I want to haunt the entire theatre!"
+        "short": "Patterned",
+        "client": "I demand patterned, darling! The stage is set!"
       }
     ]
   },
@@ -4640,7 +4640,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
@@ -4649,11 +4649,11 @@
         },
         {
           "type": "style",
-          "tag": "Gothic"
+          "tag": "Patterned"
         },
         {
           "type": "style",
-          "tag": "Cool"
+          "tag": "Casual"
         }
       ],
       "pairSlots": null,
@@ -4664,18 +4664,18 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Gothic",
-        "client": "Make it gothic! I want to haunt the entire theatre!"
+        "short": "Patterned",
+        "client": "I demand patterned, darling! The stage is set!"
       },
       {
-        "short": "Cool",
-        "client": "Make it cool! Let the whole world gasp!"
+        "short": "Casual",
+        "client": "Make it casual! Let the whole world gasp!"
       }
     ]
   },
@@ -4691,7 +4691,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["fabricAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -4717,7 +4717,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "No wool",
@@ -4745,7 +4745,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -4762,7 +4762,7 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Jewel",
+          "accessory": "Flower",
           "count": 6
         }
       ],
@@ -4774,7 +4774,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -4788,8 +4788,8 @@
         "client": "Add appliqués, darling! Let it catch the light!"
       },
       {
-        "short": "At least 6 jewels",
-        "client": "At least six jewels! More, if the drama demands it!"
+        "short": "At least 6 flowers",
+        "client": "At least six flowers! More, if the drama demands it!"
       }
     ]
   },
@@ -4805,7 +4805,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["coloursMin", "fabric", "style", "colour"],
       "history": [],
       "directions": [
@@ -4815,11 +4815,11 @@
         },
         {
           "type": "fabric",
-          "fabric": "Silk"
+          "fabric": "Sequin"
         },
         {
           "type": "style",
-          "tag": "Cool"
+          "tag": "Casual"
         },
         {
           "type": "colour",
@@ -4834,19 +4834,19 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "At least 4 colours",
         "client": "Give me four colours at the very least! A grand finale needs a rainbow!"
       },
       {
-        "short": "Silk",
-        "client": "Give me silk, darling! Let it sweep the stage!"
+        "short": "Sequin",
+        "client": "Give me sequins, darling! Let it sweep the stage!"
       },
       {
-        "short": "Cool",
-        "client": "Make it cool! Let the whole world gasp!"
+        "short": "Casual",
+        "client": "Make it casual! Let the whole world gasp!"
       },
       {
         "short": "Yellow",
@@ -4866,7 +4866,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "accessory"],
       "history": [],
       "directions": [
@@ -4875,7 +4875,7 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Feather",
+          "accessory": "Flower",
           "count": 6
         },
         {
@@ -4888,7 +4888,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessory": "Piping"
         }
       ],
       "pairSlots": null,
@@ -4899,14 +4899,14 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "At least 6 feathers",
-        "client": "Give me six feathers at the very least, darling! I want to dazzle!"
+        "short": "At least 6 flowers",
+        "client": "Give me six flowers at the very least, darling! I want to dazzle!"
       },
       {
         "short": "Appliqués",
@@ -4917,8 +4917,8 @@
         "client": "Risqué! It must be risqué! I can see the curtain rising!"
       },
       {
-        "short": "Jewels",
-        "client": "Jewels! I must have jewels! It is the finishing flourish!"
+        "short": "Piping",
+        "client": "Piping! I must have piping! It is the finishing flourish!"
       }
     ]
   },
@@ -4934,7 +4934,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
       "history": [],
       "directions": [
@@ -4969,7 +4969,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Eveningwear",
@@ -5005,7 +5005,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["burlapOnly", "style", "accessory", "accessoryExact", "accessoryExact", "style"],
       "history": [],
       "directions": [
@@ -5043,7 +5043,7 @@
       "human": true,
       "personality": "theatrical"
     },
-    "brief": "Imogen is attending opening night at the opera and wants to look dazzling without looking like a disco ball.",
+    "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
         "short": "Burlap only"
@@ -5082,13 +5082,13 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["colour", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colour": "Red"
         },
         {
           "type": "fabric",
@@ -5103,11 +5103,11 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
-        "short": "Yellow",
-        "client": "Yellow, naturally. It has always suited me."
+        "short": "Red",
+        "client": "Red, naturally. It has always suited me."
       },
       {
         "short": "Wool",
@@ -5127,7 +5127,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["burlapOnly", "accessory", "accessory"],
       "history": [],
       "directions": [
@@ -5140,7 +5140,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Tassel"
         }
       ],
       "pairSlots": null,
@@ -5151,7 +5151,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "Burlap only"
@@ -5161,8 +5161,8 @@
         "client": "A touch of trim, I think. Tastefully, of course."
       },
       {
-        "short": "Brooches",
-        "client": "A touch of brooches, I think. Tastefully, of course."
+        "short": "Tassels",
+        "client": "A touch of tassels, I think. Tastefully, of course."
       }
     ]
   },
@@ -5178,7 +5178,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["accessoryAvoid", "colour", "coloursMin"],
       "history": [],
       "directions": [
@@ -5188,7 +5188,7 @@
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colour": "White"
         },
         {
           "type": "coloursMin",
@@ -5203,15 +5203,15 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "No tassels",
         "client": "No tassels, please. It is not for me."
       },
       {
-        "short": "Yellow",
-        "client": "Yellow, naturally. It has always suited me."
+        "short": "White",
+        "client": "White, naturally. It has always suited me."
       },
       {
         "short": "At least 4 colours",
@@ -5231,7 +5231,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["burlapOnly", "accessoryAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -5244,12 +5244,12 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessory": "Tassel"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Tassel",
-          "count": 2
+          "accessory": "Button",
+          "count": 6
         }
       ],
       "pairSlots": null,
@@ -5260,7 +5260,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "Burlap only"
@@ -5270,12 +5270,12 @@
         "client": "No trim, please. It is not for me."
       },
       {
-        "short": "Brooches",
-        "client": "A touch of brooches, I think. Tastefully, of course."
+        "short": "Tassels",
+        "client": "A touch of tassels, I think. Tastefully, of course."
       },
       {
-        "short": "At least 2 tassels",
-        "client": "I shall require at least two tassels. A lady must be noticed."
+        "short": "At least 6 buttons",
+        "client": "I shall require at least six buttons. A lady must be noticed."
       }
     ]
   },
@@ -5291,13 +5291,13 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["fabricAvoid", "accessoryAvoid", "accessoryMin", "colour"],
       "history": [],
       "directions": [
         {
           "type": "fabricAvoid",
-          "fabric": "Wool"
+          "fabric": "Velvet"
         },
         {
           "type": "accessoryAvoid",
@@ -5305,7 +5305,7 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Tassel",
+          "accessory": "Jewel",
           "count": 3
         },
         {
@@ -5321,19 +5321,19 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
-        "short": "No wool",
-        "client": "No wool, please. It is not done."
+        "short": "No velvet",
+        "client": "No velvet, please. It is not done."
       },
       {
         "short": "No trim",
         "client": "No trim, please. It is not for me."
       },
       {
-        "short": "At least 3 tassels",
-        "client": "I shall require at least three tassels. A lady must be noticed."
+        "short": "At least 3 jewels",
+        "client": "I shall require at least three jewels. A lady must be noticed."
       },
       {
         "short": "Yellow",
@@ -5353,7 +5353,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessoryMin", "accessory"],
       "history": [],
       "directions": [
@@ -5362,20 +5362,20 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Warm"
+          "tag": "Simple"
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessory": "Trim"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Feather",
-          "count": 6
+          "accessory": "Tassel",
+          "count": 2
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessory": "Button"
         }
       ],
       "pairSlots": null,
@@ -5386,26 +5386,26 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Not warm",
-        "client": "One cannot abide warm. Kindly avoid it."
+        "short": "Not simple",
+        "client": "One cannot abide simple. Kindly avoid it."
       },
       {
-        "short": "No tassels",
-        "client": "No tassels, please. It is not for me."
+        "short": "No trim",
+        "client": "No trim, please. It is not for me."
       },
       {
-        "short": "At least 6 feathers",
-        "client": "I shall require at least six feathers. A lady must be noticed."
+        "short": "At least 2 tassels",
+        "client": "I shall require at least two tassels. A lady must be noticed."
       },
       {
-        "short": "Bows",
-        "client": "One expects bows. Tastefully placed, of course."
+        "short": "Buttons",
+        "client": "One expects buttons. It is a matter of form."
       }
     ]
   },
@@ -5421,7 +5421,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
       "history": [],
       "directions": [
@@ -5455,7 +5455,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "Cool",
@@ -5491,7 +5491,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "riding-lesson",
       "plan": ["burlapOnly", "style", "accessoryExact", "accessoryMin", "style", "accessory"],
       "history": [],
       "directions": [
@@ -5529,7 +5529,7 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "For a fancy dress picnic, Cecily would like something gloriously odd. No matching the curtains, please.",
+    "brief": "Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something easy to move in, please, and no catching on the saddle.",
     "lines": [
       {
         "short": "Burlap only"
@@ -5568,17 +5568,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["style", "style"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Patterned"
+          "tag": "Formal"
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Daywear"
         }
       ],
       "pairSlots": null,
@@ -5589,15 +5589,15 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
-        "short": "Patterned",
-        "client": "I was thinking patterned. Sorry, is that silly?"
+        "short": "Formal",
+        "client": "I was thinking formal. Sorry, is that silly?"
       },
       {
-        "short": "Elaborate",
-        "client": "If it's not too much trouble, maybe something elaborate?"
+        "short": "Daywear",
+        "client": "If it's not too much trouble, maybe something daywear?"
       }
     ]
   },
@@ -5613,7 +5613,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["burlapOnly", "style", "style"],
       "history": [],
       "directions": [
@@ -5622,11 +5622,11 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Daywear"
         },
         {
           "type": "style",
-          "tag": "Flowers"
+          "tag": "Elegant"
         }
       ],
       "pairSlots": null,
@@ -5637,18 +5637,18 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Elaborate",
-        "client": "If it's not too much trouble, maybe something elaborate?"
+        "short": "Daywear",
+        "client": "If it's not too much trouble, maybe something daywear?"
       },
       {
-        "short": "Flowers",
-        "client": "I was thinking floral. Sorry, is that silly?"
+        "short": "Elegant",
+        "client": "I was thinking elegant. Sorry, is that silly?"
       }
     ]
   },
@@ -5664,13 +5664,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
         {
           "type": "styleAvoid",
-          "tag": "Formal"
+          "tag": "Glamour"
         },
         {
           "type": "accessory",
@@ -5690,11 +5690,11 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
-        "short": "Not formal",
-        "client": "If possible, maybe not formal? I'm so sorry to ask."
+        "short": "Not glamour",
+        "client": "If possible, maybe not glamour? I'm so sorry to ask."
       },
       {
         "short": "Brooches",
@@ -5718,7 +5718,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["burlapOnly", "styleAvoid", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -5727,15 +5727,15 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Eclectic"
+          "tag": "Elaborate"
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessory": "Brooch"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Brooch",
+          "accessory": "Button",
           "count": 7
         }
       ],
@@ -5747,22 +5747,22 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Not eclectic",
-        "client": "Sorry, could it not be eclectic? I'm sure it's lovely, really."
+        "short": "Not elaborate",
+        "client": "Sorry, could it not be elaborate? I'm sure it's lovely, really."
       },
       {
-        "short": "Buttons",
-        "client": "I was hoping for a little buttons. Is that all right?"
+        "short": "Brooches",
+        "client": "I was hoping for a little brooches. Is that all right?"
       },
       {
-        "short": "At least 7 brooches",
-        "client": "Sorry, could there be at least seven brooches? Only if it's not too much."
+        "short": "At least 7 buttons",
+        "client": "Sorry, could there be at least seven buttons? Only if it's not too much."
       }
     ]
   },
@@ -5778,7 +5778,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["coloursMin", "style", "style", "colour"],
       "history": [],
       "directions": [
@@ -5788,11 +5788,11 @@
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Daywear"
         },
         {
           "type": "style",
-          "tag": "Flowers"
+          "tag": "Elegant"
         },
         {
           "type": "colour",
@@ -5807,19 +5807,19 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "At least 3 colours",
         "client": "Maybe three colours, or more? I'm so sorry to ask."
       },
       {
-        "short": "Elaborate",
-        "client": "If it's not too much trouble, maybe something elaborate?"
+        "short": "Daywear",
+        "client": "If it's not too much trouble, maybe something daywear?"
       },
       {
-        "short": "Flowers",
-        "client": "I was thinking floral. Sorry, is that silly?"
+        "short": "Elegant",
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
         "short": "Blue",
@@ -5839,7 +5839,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["burlapOnly", "accessoryMin", "style", "style", "accessory"],
       "history": [],
       "directions": [
@@ -5853,15 +5853,15 @@
         },
         {
           "type": "style",
-          "tag": "Flowers"
+          "tag": "Elegant"
         },
         {
           "type": "style",
-          "tag": "Simple"
+          "tag": "Risqué"
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessory": "Brooch"
         }
       ],
       "pairSlots": null,
@@ -5872,7 +5872,7 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "Burlap only"
@@ -5882,16 +5882,16 @@
         "client": "Sorry, could there be bows? At least eight, if that's all right."
       },
       {
-        "short": "Flowers",
-        "client": "I was thinking floral. Sorry, is that silly?"
+        "short": "Elegant",
+        "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
-        "short": "Simple",
-        "client": "If it's not too much trouble, maybe something simple?"
+        "short": "Risqué",
+        "client": "If it's not too much trouble, maybe something risqué?"
       },
       {
-        "short": "Buttons",
-        "client": "I was hoping for a little buttons. Is that all right?"
+        "short": "Brooches",
+        "client": "I was hoping for a little brooches. Is that all right?"
       }
     ]
   },
@@ -5907,7 +5907,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["colourOnly", "accessoryMin", "style", "style", "accessoryExact"],
       "history": [],
       "directions": [
@@ -5942,7 +5942,7 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "Only grey and green",
@@ -5978,7 +5978,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "job-interview",
+      "themeId": "graduation",
       "plan": ["burlapOnly", "accessoryExact", "accessoryExact", "style", "accessory", "style"],
       "history": [],
       "directions": [
@@ -6016,7 +6016,7 @@
       "human": true,
       "personality": "anxious"
     },
-    "brief": "Linnea is dressing for a final-round interview and wants something crisp and sensible.",
+    "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
         "short": "Burlap only"
@@ -6055,17 +6055,17 @@
       "difficulty": "easy",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["style", "colour"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Cool"
+          "tag": "Daywear"
         },
         {
           "type": "colour",
-          "colour": "White"
+          "colour": "Red"
         }
       ],
       "pairSlots": null,
@@ -6076,15 +6076,15 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
-        "short": "Cool",
-        "client": "Make it cool. I've had a long week."
+        "short": "Daywear",
+        "client": "Make it daywear. I've had a long week."
       },
       {
-        "short": "White",
-        "client": "Make it white. Don't ask me why."
+        "short": "Red",
+        "client": "Make it red. Don't ask me why."
       }
     ]
   },
@@ -6100,7 +6100,7 @@
       "difficulty": "easy",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["burlapOnly", "style", "accessory"],
       "history": [],
       "directions": [
@@ -6109,7 +6109,7 @@
         },
         {
           "type": "style",
-          "tag": "Playful"
+          "tag": "Risqué"
         },
         {
           "type": "accessory",
@@ -6124,14 +6124,14 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "short": "Risqué",
+        "client": "Risqué. That's the whole request."
       },
       {
         "short": "Bells",
@@ -6151,13 +6151,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["fabric", "accessoryAvoid", "accessoryMin"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Cotton"
+          "fabric": "Lace"
         },
         {
           "type": "accessoryAvoid",
@@ -6177,11 +6177,11 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
-        "short": "Cotton",
-        "client": "I'd like cotton. Don't read into it."
+        "short": "Lace",
+        "client": "I'd like lace. Don't read into it."
       },
       {
         "short": "No lace trim",
@@ -6205,7 +6205,7 @@
       "difficulty": "medium",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessoryMin"],
       "history": [],
       "directions": [
@@ -6214,7 +6214,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryAvoid",
@@ -6234,14 +6234,14 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "short": "Piping",
+        "client": "Add piping. I'll pretend I'm not excited."
       },
       {
         "short": "No bells",
@@ -6265,25 +6265,25 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["style", "colour", "colour", "colourOnly"],
       "history": [],
       "directions": [
         {
           "type": "style",
-          "tag": "Cool"
+          "tag": "Daywear"
         },
         {
           "type": "colour",
-          "colour": "White"
+          "colour": "Red"
         },
         {
           "type": "colour",
-          "colour": "Blue"
+          "colour": "Brown"
         },
         {
           "type": "colourOnly",
-          "colours": ["Blue", "White", "Yellow"]
+          "colours": ["Brown", "Red"]
         }
       ],
       "pairSlots": null,
@@ -6294,23 +6294,23 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
-        "short": "Cool",
-        "client": "Make it cool. I've had a long week."
+        "short": "Daywear",
+        "client": "Make it daywear. I've had a long week."
       },
       {
-        "short": "White",
-        "client": "Make it white. Don't ask me why."
+        "short": "Red",
+        "client": "Make it red. Don't ask me why."
       },
       {
-        "short": "Blue",
-        "client": "Make it blue. Don't ask me why."
+        "short": "Brown",
+        "client": "Make it brown. Don't ask me why."
       },
       {
-        "short": "Only blue, white and yellow",
-        "client": "Blue, white or yellow only. Only means only."
+        "short": "Only brown and red",
+        "client": "Brown or red only. Only means only."
       }
     ]
   },
@@ -6326,7 +6326,7 @@
       "difficulty": "hard",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["burlapOnly", "style", "accessory", "accessory", "accessoryMin"],
       "history": [],
       "directions": [
@@ -6335,7 +6335,7 @@
         },
         {
           "type": "style",
-          "tag": "Playful"
+          "tag": "Risqué"
         },
         {
           "type": "accessory",
@@ -6343,7 +6343,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessory": "Piping"
         },
         {
           "type": "accessoryMin",
@@ -6359,22 +6359,22 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
         "short": "Burlap only"
       },
       {
-        "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "short": "Risqué",
+        "client": "Risqué. That's the whole request."
       },
       {
         "short": "Bells",
         "client": "Add bells. I'll pretend I'm not excited."
       },
       {
-        "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "short": "Piping",
+        "client": "Add piping. I'll pretend I'm not excited."
       },
       {
         "short": "At least 4 buttons",
@@ -6394,7 +6394,7 @@
       "difficulty": "chaos",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
       "history": [],
       "directions": [
@@ -6428,7 +6428,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
         "short": "Formal",
@@ -6464,7 +6464,7 @@
       "difficulty": "chaos",
       "modifiers": ["burlap"],
       "dataVersion": 1,
-      "themeId": "seaside-holiday",
+      "themeId": "castle-wedding",
       "plan": ["burlapOnly", "style", "accessory", "accessory", "style", "accessoryExact"],
       "history": [],
       "directions": [
@@ -6501,7 +6501,7 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Lottie needs something relaxed and cheerful for a day on the pier, without blowing away in the wind.",
+    "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
         "short": "Burlap only"
@@ -6540,7 +6540,7 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["accessoryAvoid", "style", "accessoryMin", "accessory"],
       "history": [0, 1, 0],
       "directions": [
@@ -6550,11 +6550,11 @@
         },
         {
           "type": "style",
-          "tag": "Daywear"
+          "tag": "Elaborate"
         },
         {
           "type": "accessoryMin",
-          "accessory": "Appliqué",
+          "accessory": "Bow",
           "count": 4
         },
         {
@@ -6570,19 +6570,19 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "No trim",
         "client": "Leave off the trim."
       },
       {
-        "short": "Daywear",
-        "client": "Make it daywear."
+        "short": "Elaborate",
+        "client": "Make it elaborate."
       },
       {
-        "short": "At least 4 appliqués",
-        "client": "At least four appliqués."
+        "short": "At least 4 bows",
+        "client": "Four bows at least. Neat."
       },
       {
         "short": "Buttons",
@@ -6602,13 +6602,13 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryAvoid", "colour", "coloursMin"],
       "history": [2, 1, 2],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Appliqué"
+          "accessory": "Bell"
         },
         {
           "type": "colour",
@@ -6627,11 +6627,11 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "No appliqués",
-        "client": "No appliqués, please. It is not for me."
+        "short": "No bells",
+        "client": "No bells, please. It is not for me."
       },
       {
         "short": "Green",
@@ -6655,17 +6655,17 @@
       "difficulty": "medium",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["style", "accessory", "accessoryMin", "accessoryAvoid"],
       "history": [1, 0, 1, 0],
       "directions": [
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Elegant"
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessory": "Lace Trim"
         },
         {
           "type": "accessoryMin",
@@ -6685,15 +6685,15 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "Elaborate",
-        "client": "Make it elaborate. I've had a long week."
+        "short": "Elegant",
+        "client": "Make it elegant. I've had a long week."
       },
       {
-        "short": "Jewels",
-        "client": "Jewels. Somewhere on there."
+        "short": "Lace trim",
+        "client": "Lace trim. Somewhere on there."
       },
       {
         "short": "At least 8 bows",
@@ -6717,7 +6717,7 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "garden-party",
+      "themeId": "winter-gala",
       "plan": ["accessory", "accessoryMin", "style", "fabricsMin", "style"],
       "history": [0, 1, 0],
       "directions": [
@@ -6727,12 +6727,12 @@
         },
         {
           "type": "accessoryMin",
-          "accessory": "Appliqué",
+          "accessory": "Brooch",
           "count": 4
         },
         {
           "type": "style",
-          "tag": "Daywear"
+          "tag": "Eclectic"
         },
         {
           "type": "fabricsMin",
@@ -6751,19 +6751,19 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya is attending the flower show and wants to look fresh and pretty without outshining the hostess.",
+    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Tassels",
         "client": "Add tassels."
       },
       {
-        "short": "At least 4 appliqués",
-        "client": "Four appliqués, minimum. Thanks."
+        "short": "At least 4 brooches",
+        "client": "Four brooches, minimum. Thanks."
       },
       {
-        "short": "Daywear",
-        "client": "Make it daywear."
+        "short": "Eclectic",
+        "client": "Make it eclectic."
       },
       {
         "short": "At least 3 fabrics",
@@ -6787,18 +6787,18 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "winter-gala",
+      "themeId": "village-fete",
       "plan": ["accessoryMin", "accessoryAvoid", "accessory", "styleAvoid"],
       "history": [2, 1, 2],
       "directions": [
         {
           "type": "accessoryMin",
-          "accessory": "Bell",
+          "accessory": "Appliqué",
           "count": 6
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Flower"
+          "accessory": "Bow"
         },
         {
           "type": "accessory",
@@ -6806,7 +6806,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Gothic"
+          "tag": "Glamour"
         }
       ],
       "pairSlots": null,
@@ -6817,23 +6817,23 @@
       "human": true,
       "personality": "grand"
     },
-    "brief": "Ursula is attending the grand winter gala and wants to look dazzling without looking like a disco ball.",
+    "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "At least 6 bells",
-        "client": "I shall require at least six bells. A lady must be noticed."
+        "short": "At least 6 appliqués",
+        "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
-        "short": "No flowers",
-        "client": "No flowers, please. It is not for me."
+        "short": "No bows",
+        "client": "No bows, please. It is not for me."
       },
       {
         "short": "Brooches",
         "client": "A touch of brooches, I think. Tastefully, of course."
       },
       {
-        "short": "Not gothic",
-        "client": "One cannot abide gothic. Kindly avoid it."
+        "short": "Not glamour",
+        "client": "One cannot abide glamour. Kindly avoid it."
       }
     ]
   },
@@ -6849,21 +6849,21 @@
       "difficulty": "hard",
       "modifiers": [],
       "dataVersion": 1,
-      "themeId": "costume-party",
+      "themeId": "midnight-feast",
       "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
       "history": [1, 0, 1, 0],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Button"
+          "accessory": "Brooch"
         },
         {
           "type": "fabric",
-          "fabric": "Linen"
+          "fabric": "Lace"
         },
         {
           "type": "style",
-          "tag": "Elaborate"
+          "tag": "Eveningwear"
         },
         {
           "type": "coloursMin",
@@ -6871,7 +6871,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Wool"
+          "fabric": "Velvet"
         }
       ],
       "pairSlots": null,
@@ -6882,27 +6882,27 @@
       "human": true,
       "personality": "deadpan"
     },
-    "brief": "Philippa is going to a fancy dress picnic and wants to look bold and silly without being mistaken for a lampshade.",
+    "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "No buttons",
-        "client": "Keep the buttons off me."
+        "short": "No brooches",
+        "client": "Keep the brooches off me."
       },
       {
-        "short": "Linen",
-        "client": "Linen. It'll do nicely."
+        "short": "Lace",
+        "client": "Lace. It'll do nicely."
       },
       {
-        "short": "Elaborate",
-        "client": "Think elaborate. I'll know it when I see it."
+        "short": "Eveningwear",
+        "client": "Think eveningwear. I'll know it when I see it."
       },
       {
         "short": "At least 4 colours",
         "client": "I want colour, and lots of it. At least four."
       },
       {
-        "short": "Wool",
-        "client": "I'd like wool. Don't read into it."
+        "short": "Velvet",
+        "client": "Velvet. It's the only thing that's ever understood me."
       }
     ]
   }

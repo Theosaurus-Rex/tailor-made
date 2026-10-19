@@ -166,3 +166,32 @@ describe("Chaos", () => {
     expect(challenge.themeId).toBe("test-gothic");
   });
 });
+
+describe("tag coverage", () => {
+  it("has at least one theme favouring every style tag", () => {
+    for (const tag of dataV1.styleTags) {
+      expect(
+        dataV1.themes.some((theme) => theme.favouredTags.includes(tag)),
+        tag,
+      ).toBe(true);
+    }
+  });
+});
+
+describe("template variety", () => {
+  const uses = new Map<string, number>();
+  for (const theme of dataV1.themes) {
+    for (const template of theme.templates) uses.set(template, (uses.get(template) ?? 0) + 1);
+  }
+
+  it("shares no template between more than 5 themes", () => {
+    for (const [template, count] of uses) expect(count, template).toBeLessThanOrEqual(5);
+  });
+
+  it("gives every theme at least 2 templates of its own", () => {
+    for (const theme of dataV1.themes) {
+      const own = theme.templates.filter((template) => uses.get(template) === 1);
+      expect(own.length, theme.id).toBeGreaterThanOrEqual(2);
+    }
+  });
+});
