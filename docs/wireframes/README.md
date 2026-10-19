@@ -124,7 +124,7 @@ off, tap to change") so the card sits near the top. `1h` shows the panel when it
 | `2b-some` | Some ticked | Ticked directions grey out and strike through. |
 | `2b-all` | All ticked | A done line appears under the directions. Nothing is scored. |
 | `2c` | Burlap only | Burlap only is pinned at the top, tagged "Modifier", with no client line and no reroll. No other fabric or colour directions. The rest lean to accessories. |
-| `2d` | Burlap only with Easy | Easy allows no avoids or counts, and Burlap drops fabric and colour. Only styles are left: Burlap only, Romantic and Elegant. Open question: should Burlap unlock accessories on Easy? |
+| `2d` | Burlap only with Easy | Easy allows no avoids or counts, and Burlap drops fabric and colour. Only styles are left: Burlap only, Romantic and Elegant. Settled 2026-10-19: Burlap on Easy also adds accessories, so the built card is styles and accessories. |
 | `2e` | Burlap only with Chaos | 6 directions: Burlap only, the opposing pair Cute and Gothic, an exact count, an avoid and an at-least count. No fabric or colour directions. Accessories fill the rest. |
 
 ### Shared challenge
@@ -190,12 +190,13 @@ Questions the canvas lists:
    "Red" and "No red", or only opposing styles? (Settled: only opposing styles.)
 2. Burlap only on Easy leaves only style directions, since Easy has no avoids or counts and Burlap
    drops fabric and colour. Is a 2-3 style-only card fine, or should Burlap unlock accessories on
-   Easy? (Drawn as `2d`, still open.)
+   Easy? (Settled 2026-10-19: it adds accessories. `2d` predates that.)
 3. "Only white" rules out every other colour direction on the card. The generator needs that check,
    as well as Burlap against fabric and colour. (The meaning of "only" is settled, see above.)
 4. Copy as text now lists short lines only, with no client lines or ticks. Confirm that is the whole
    paste.
-5. Should a reroll change the shared link? Assumed yes: the link encodes the current directions.
+5. Should a reroll change the shared link? (Settled: yes. The link stores the reroll history in
+   order, e.g. `r=1.3.1`. Chaos cards cannot be rerolled at all.)
 6. Can the daily card be shared or copied? Not in the brief, so it is left off.
 7. On mobile, after generating, the controls collapse to one summary row so the card sits near the
    top. This was the designer's call. (Now drawn open in `1h`.)
