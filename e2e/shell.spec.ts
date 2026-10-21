@@ -6,13 +6,17 @@ const LINKS = [
   { name: "About", path: "/about", heading: "Tailor-Made" },
 ];
 
-for (const { name, path, heading } of LINKS) {
-  test(`the ${name} link opens ${path}`, async ({ page }) => {
-    await page.goto(path === "/" ? "/about" : "/");
-    await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name }).click();
-    await expect(page).toHaveURL(path);
-    await expect(page.getByRole("heading", { level: 1, name: heading })).toBeVisible();
-  });
+const STARTS = ["/", "/daily", "/about", "/nope", "/c", "/c?v=1&s=k7m2qx9a&d=medium"];
+
+for (const start of STARTS) {
+  for (const { name, path, heading } of LINKS) {
+    test(`from ${start} the ${name} link opens ${path}`, async ({ page }) => {
+      await page.goto(start);
+      await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name }).click();
+      await expect(page).toHaveURL(path);
+      await expect(page.getByRole("heading", { level: 1, name: heading })).toBeVisible();
+    });
+  }
 }
 
 test("the not found link returns to the generator", async ({ page }) => {

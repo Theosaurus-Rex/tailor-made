@@ -17,9 +17,7 @@ test("a Burlap only card has no serious accessibility issues", async ({ page }) 
   await expectNoSeriousA11yIssues(page, "burlap card");
 });
 
-test("a card with every direction ticked has no serious accessibility issues", async ({
-  page,
-}) => {
+test("a card with every direction ticked has no serious accessibility issues", async ({ page }) => {
   await page.goto("/");
   await generate(page);
   const count = await directionRows(page).count();
