@@ -89,10 +89,6 @@ test("rerolling a ticked direction changes it, clears its tick and keeps the oth
   const reroll = rows.nth(1).getByRole("button", { name: /^reroll/i });
   await reroll.click();
   await expect(ticks.nth(1)).not.toBeChecked();
-  for (let tries = 0; tries < 10; tries++) {
-    if ((await rows.nth(1).locator("label").textContent()) !== before) break;
-    await reroll.click();
-  }
   await expect(rows.nth(1).locator("label")).not.toHaveText(before ?? "");
   await expect(ticks.nth(0)).toBeChecked();
   await expect(

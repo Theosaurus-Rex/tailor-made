@@ -82,6 +82,8 @@ direction is being rerolled and how many times. For example, the first reroll of
 could use a sub-seed built from the seed, `2` and `1`. Each reroll gets its own run of numbers. Nothing else in
 the challenge changes, because the main seed and its numbers stay the same.
 
+A reroll never gives back the direction it replaced. If no other direction fits within the tries, the slot is left empty.
+
 A share link records the rerolls in order, such as `1.3.1` for direction 1, then 3, then 1 again.
 Counts alone are not enough, because a rerolled direction is checked against the others, so the
 order can change the result. Whoever opens the link generates the card and replays each reroll in
