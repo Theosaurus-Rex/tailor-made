@@ -1,10 +1,11 @@
-import { useMemo, useState } from "react";
+import { useId, useMemo } from "react";
 import { Link } from "react-router";
 
 import { ClientCard } from "@/components/ClientCard";
 import { cardFor } from "@/domain/card";
 import { dailyChallenge } from "@/domain/daily";
-import { utcDateOf } from "@/lib/utc-date";
+import { useNow } from "@/lib/use-now";
+import { nextUtcMidnight, utcDateOf } from "@/lib/utc-date";
 import { shareLinkFor } from "@/links/share-link";
 
 const part = (options: Intl.DateTimeFormatOptions, moment: Date) =>
@@ -13,8 +14,35 @@ const part = (options: Intl.DateTimeFormatOptions, moment: Date) =>
 const longDate = (moment: Date) =>
   `${part({ weekday: "long" }, moment)} ${part({ day: "numeric" }, moment)} ${part({ month: "long" }, moment)} ${part({ year: "numeric" }, moment)}`;
 
+const twoDigits = (value: number) => String(value).padStart(2, "0");
+
+function Countdown({ now }: { now: Date }) {
+  const labelId = useId();
+  const seconds = Math.max(0, Math.ceil((nextUtcMidnight(now).getTime() - now.getTime()) / 1000));
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const text = `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds % 60)}`;
+  return (
+    <div
+      aria-live="off"
+      className="flex flex-col items-center gap-1 rounded-panel border border-line bg-surface p-[18px] text-center"
+    >
+      <p id={labelId} className="label-caps text-[11px] text-subtle">
+        Next client in
+      </p>
+      <time
+        aria-labelledby={labelId}
+        dateTime={`PT${String(hours)}H${String(minutes)}M${String(seconds % 60)}S`}
+        className="font-serif text-[40px] leading-[1.1] text-ink tabular-nums"
+      >
+        {text}
+      </time>
+    </div>
+  );
+}
+
 export function DailyScreen() {
-  const [now] = useState(() => new Date());
+  const now = useNow(1000);
   const date = utcDateOf(now);
   const challenge = useMemo(() => dailyChallenge(date), [date]);
 
@@ -36,6 +64,7 @@ export function DailyScreen() {
           Link to today’s client
         </Link>
       </p>
+      <Countdown now={now} />
     </div>
   );
 }
