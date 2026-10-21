@@ -26,25 +26,6 @@ export function AboutScreen() {
         </p>
       </section>
 
-      <section aria-labelledby="directions" className="flex flex-col gap-4">
-        <h2 id="directions" className={sectionTitle}>
-          Directions and commission cards
-        </h2>
-        <p className={body}>
-          In the story, clients hand you a card of requirements. Off-rack dresses have none, so
-          Tailor-Made writes a few directions instead, in the same spirit as the game&rsquo;s cards.
-          A direction might ask for a style, a fabric, a colour to use or avoid, or an accessory to
-          add. Some ask for a small count you can tally by looking.
-        </p>
-        <p className={body}>
-          Off-rack dresses show no scores, no Quality and no running cost, so every direction is
-          something you can judge by eye. &ldquo;Only white and grey&rdquo; means every fabric is
-          white or grey, and &ldquo;Only linen and cotton&rdquo; means no other fabrics. You
-          don&rsquo;t have to use them all. Not keen on a direction? Reroll it. Chaos cards cannot
-          be rerolled, and Burlap only is a modifier that stays put.
-        </p>
-      </section>
-
       <section aria-labelledby="credits" className="flex flex-col gap-4">
         <h2 id="credits" className={sectionTitle}>
           Credits
