@@ -38,10 +38,10 @@ export function AboutScreen() {
         </p>
         <p className={body}>
           Off-rack dresses show no scores, no Quality and no running cost, so every direction is
-          something you can judge by eye. &ldquo;Only white&rdquo; means only those colours, and
-          &ldquo;Only linen&rdquo; means only those fabrics. You don&rsquo;t have to use them all.
-          Not keen on a direction? Reroll it. Chaos cards cannot be rerolled, and Burlap only is a
-          modifier that stays put.
+          something you can judge by eye. &ldquo;Only white and grey&rdquo; means every fabric is
+          white or grey, and &ldquo;Only linen and cotton&rdquo; means no other fabrics. You
+          don&rsquo;t have to use them all. Not keen on a direction? Reroll it. Chaos cards cannot
+          be rerolled, and Burlap only is a modifier that stays put.
         </p>
       </section>
 
