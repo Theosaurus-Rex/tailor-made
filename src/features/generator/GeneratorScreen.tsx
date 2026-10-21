@@ -10,6 +10,8 @@ import { generate } from "@/domain/generate";
 import { LATEST_DATA_VERSION, latestData } from "@/game/data";
 import { newSeed } from "@/lib/new-seed";
 
+import { ShareActions } from "./ShareActions";
+
 const DIFFICULTIES: readonly { value: Difficulty; label: string }[] = [
   { value: "easy", label: "Easy" },
   { value: "medium", label: "Medium" },
@@ -180,6 +182,7 @@ export function GeneratorScreen() {
       </section>
       <div ref={cardRef} className="min-w-0 md:flex-1">
         {challenge ? <ClientCard key={challenge.seed} card={cardFor(challenge)} /> : <EmptyCard />}
+        {challenge && <ShareActions challenge={challenge} />}
       </div>
     </div>
   );
