@@ -114,17 +114,17 @@ nothing is scored, and the player is trusted to call it.
 | Type | Short line | Client line |
 |---|---|---|
 | `style` | Gothic | "Something with a little darkness to it." |
-| `styleAvoid` | Not cute | "Nothing sweet, please. I'm not a cupcake." |
-| `fabric` | Velvet | "I adore velvet." |
-| `fabricAvoid` | No sequins | "Sequins make me itch." |
+| `styleAvoid` | Not cute / Not cute or playful | "Nothing sweet, please. I'm not a cupcake." |
+| `fabric` | Velvet / Cotton and linen | "I adore velvet." |
+| `fabricAvoid` | No sequins / No cotton or velvet | "Sequins make me itch." |
 | `burlapOnly` | Burlap only | Modifier only |
 | `fabricsOnly` | Only linen, cotton and wool | "Nothing but honest fabrics. Linen, cotton and wool." |
 | `fabricsMin` | At least 3 fabrics | "Mix it up. Three fabrics at least." |
-| `colour` | Red | "Red, wherever you can." |
-| `colourAvoid` | No black | "No black. I'm not in mourning." |
+| `colour` | Red / Red and blue | "Red, wherever you can." |
+| `colourAvoid` | No black / No red or blue | "No black. I'm not in mourning." |
 | `colourOnly` | Only white / Only orange, yellow and green | "All white, head to toe." |
-| `accessory` | Bows | "Bows! I love a bow." |
-| `accessoryAvoid` | No feathers | "No feathers, I sneeze." |
+| `accessory` | Bows / Bows and feathers | "Bows! I love a bow." |
+| `accessoryAvoid` | No feathers / No bows or feathers | "No feathers, I sneeze." |
 | `accessoryMin` | At least 5 bows | "Bows everywhere. Five at the very least." |
 | `accessoryExact` | Exactly 3 brooches | "Three brooches. One for each of my ex-husbands." |
 | `coloursMin` | At least 3 colours | "I want colour, and lots of it." |
@@ -137,6 +137,13 @@ on the dress must be one of the listed colours or fabric types. The player need 
 so "Only orange, yellow and green" is met by an all-orange dress. Fabric counts run 2 to 4
 and never count Burlap. `burlapOnly` is a modifier, not a direction to pick or reroll. It is
 pinned on the card and has no client line.
+
+Seven types hold a list of one or two items, so a card says "No cotton or velvet" once instead
+of in two rows: `fabric`, `fabricAvoid`, `colour`, `colourAvoid`, `accessory`, `accessoryAvoid`
+and `styleAvoid`. Avoids join with "or", asks with "and". One list is one row, one tick and one
+reroll, and a reroll redraws the whole list. A card never has two directions of the same list
+type. Asked-for `style` directions stay one tag per row. `accessoryMin` and `accessoryExact`
+stay single-item.
 
 A `Direction` is a tagged union on `type`. Each direction renders to a short line for the
 checklist and a plain-English client line for the brief.
@@ -160,22 +167,24 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 
 ### Contradictions rejected
 
-- The same tag, fabric type, colour or accessory type both asked for and avoided. An only list
-  counts as asking for each item in it
-- A `colourOnly` alongside a `colour` or `colourAvoid` outside its list
-- A `fabricsOnly` alongside a `fabric` or `fabricAvoid` outside its list
+- Any item in a list asked for or avoided in one direction and avoided or asked for in another.
+  Every item is checked, and an only list counts as asking for each item in it
+- A `colourOnly` alongside a `colour` or `colourAvoid` with any item outside its list
+- A `fabricsOnly` alongside a `fabric` or `fabricAvoid` with any item outside its list
 - A `coloursMin` beside a `colourOnly`, or a `fabricsMin` beside a `fabricsOnly`. The list already
   sets which colours or fabrics to use, so a count beside it only repeats or fights it
-- A `coloursMin` higher than the colours left after avoids
-- A `fabricsMin` higher than the general fabrics left after avoids
+- A `coloursMin` higher than the colours left after avoids. Each distinct avoided colour counts once
+- A `fabricsMin` higher than the general fabrics left after avoids, counted the same way
 - More than one `colourOnly`, or more than one `fabricsOnly`. One of each is fine
 - More than one count on the same accessory type
 - Opposing pairs (see §7), by the difficulty's pair rule from the data:
   - `never` (Easy, Medium): any two directions on opposite sides of a pair, whether asked for or
-    avoided, in any mix
+    avoided, in any mix. Every tag of a `styleAvoid` list counts, and one list may not hold both
+    sides of a pair
   - `noBothStyles` (Hard): two `style` directions on opposite sides of a pair
   - `oneStylePair` (Chaos): the same, except the one pair the card was built around
-- The same item asked for twice, including two `coloursMin` or two `fabricsMin`
+- The same item asked for twice, including two `coloursMin` or two `fabricsMin`. Any shared item
+  between two lists counts
 
 Burlap only is a modifier, not a competing direction, so it is never checked here. §8 keeps the
 card free of other fabric and colour directions.
@@ -230,6 +239,13 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 | Medium | 3–4 | Adds accessories, exactly one avoid, exactly one "at least" count |
 | Hard | 4–5 | Up to two avoids and two "at least" counts. One `colourOnly` or `fabricsOnly` possible. |
 | Chaos | 5–6 | Always one "only" list and an exact count. Up to two avoids, three counts. |
+
+**Two-item lists.** Each list direction holds two items with a chance set per difficulty in the
+data (`pairedItemChance`): 0.2 on Easy and 0.35 on Medium, Hard and Chaos. Burlap only shapes use
+the same value as their normal shape. The chance is drawn from the slot's own stream, so a reroll
+redraws it. Items are drawn without repeats from the theme-weighted pools. A `colour` or `fabric`
+beside an "only" list draws from that list, and an "only" list drawn later keeps every item
+already asked for. The plan never holds two of the same list type (`kindsNeverTogether`).
 
 Chaos ignores the theme's leanings (see section 9). Its "only" list is always there for now, and M6
 tuning may make it "likely" again.
