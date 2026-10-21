@@ -90,9 +90,9 @@ describe("briefFor", () => {
       const challenge = challengeFor(deriveSeed("brief-theme", i));
       const theme = dataV1.themes.find(({ id }) => id === challenge.themeId);
       const brief = briefFor(challenge, human);
-      expect(theme?.occasions.some((occasion) => brief.toLowerCase().includes(occasion))).toBe(
-        true,
-      );
+      expect(
+        theme?.occasions.some((occasion) => brief.toLowerCase().includes(occasion.toLowerCase())),
+      ).toBe(true);
     }
   });
 
