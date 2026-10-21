@@ -4,7 +4,7 @@ import { expectNoSeriousA11yIssues } from "./axe";
 
 const ROUTES = [
   { path: "/", heading: "Generator" },
-  { path: "/daily", heading: "Daily challenge" },
+  { path: "/daily", heading: "Today’s client" },
   { path: "/c", heading: "We couldn’t read this link" },
   { path: "/about", heading: "Tailor-Made" },
   { path: "/nope", heading: "Page not found" },
