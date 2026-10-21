@@ -56,7 +56,7 @@ export function SharedChallengeScreen() {
       <ClientCard key={search} card={cardFor(result.challenge)} />
       <div className="flex flex-col gap-4 rounded-panel border border-line-strong bg-surface p-5 md:flex-row md:items-center md:justify-between md:px-8">
         <p className="font-serif text-2xl text-ink italic">Fancy a client of your own?</p>
-        <Link to="/" className={buttonVariants()}>
+        <Link to="/" className={`${buttonVariants()} self-start md:self-auto`}>
           Make your own
         </Link>
       </div>
