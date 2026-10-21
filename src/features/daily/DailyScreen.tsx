@@ -50,7 +50,7 @@ export function DailyScreen() {
     <div className="mx-auto flex max-w-[660px] flex-col gap-6">
       <header className="flex flex-col items-center gap-2 text-center">
         <p className="label-caps text-xs text-rose">{longDate(now)}</p>
-        <h1 className="text-[40px] leading-[1.1]">Today’s client</h1>
+        <h1 className="text-[40px] leading-[1.1]">Today’s client</h1><img src="/favicon.svg" />
         <div className="mt-1 flex flex-wrap items-center justify-center gap-3">
           <span className="label-caps rounded-full bg-rose px-3 py-[5px] text-[11px] text-ground">
             {challenge.difficulty}
