@@ -18,20 +18,25 @@ export function fillBrief(template: string, slots: BriefSlots): string {
   return filled.charAt(0).toUpperCase() + filled.slice(1);
 }
 
-export function briefFor(
+export function briefPartsFor(
   challenge: Challenge,
   client: Client,
   data: GameData | undefined = dataVersions[challenge.dataVersion],
-): string {
+): { text: string; occasion: string } {
   if (!data) throw new RangeError(`unknown data version ${challenge.dataVersion}`);
   const theme = data.themes.find(({ id }) => id === challenge.themeId);
   if (!theme) throw new RangeError(`unknown theme ${challenge.themeId}`);
   const random = randomFromSeed(deriveSeed(challenge.seed, "brief"));
   const template = random.pick(theme.templates);
-  return fillBrief(template, {
-    name: client.human ? client.name.split(" ")[0] : client.name,
-    occasion: random.pick(theme.occasions),
-    adjective: random.pick(theme.adjectives),
-    worry: random.pick(theme.worries),
-  });
+  const name = client.human ? client.name.split(" ")[0] : client.name;
+  const occasion = random.pick(theme.occasions);
+  const adjective = random.pick(theme.adjectives);
+  const worry = random.pick(theme.worries);
+  return { text: fillBrief(template, { name, occasion, adjective, worry }), occasion };
 }
+
+export const briefFor = (
+  challenge: Challenge,
+  client: Client,
+  data: GameData | undefined = dataVersions[challenge.dataVersion],
+): string => briefPartsFor(challenge, client, data).text;
