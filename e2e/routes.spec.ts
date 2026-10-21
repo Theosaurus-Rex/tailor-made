@@ -6,7 +6,7 @@ const ROUTES = [
   { path: "/", heading: "Generator" },
   { path: "/daily", heading: "Daily challenge" },
   { path: "/c", heading: "Shared challenge" },
-  { path: "/about", heading: "About" },
+  { path: "/about", heading: "Tailor-Made" },
   { path: "/nope", heading: "Page not found" },
 ];
 
