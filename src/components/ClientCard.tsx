@@ -94,21 +94,14 @@ function DirectionRow({
 }
 
 export function ClientCard({ card, onReroll, justRerolledSlot }: ClientCardProps) {
-  const [ticks, setTicks] = useState<Record<string, true>>({});
+  const [ticks, setTicks] = useState<Record<string, boolean>>({});
   const total = card.rows.length;
   const count = card.rows.filter((row) => ticks[tickKey(row)]).length;
   const justRerolledPosition = card.rows.findIndex((row) => row.slot === justRerolledSlot);
   const headingId = useId();
 
   const toggle = (row: CardRow) =>
-    setTicks((current) => {
-      const key = tickKey(row);
-      if (current[key]) {
-        const { [key]: _removed, ...rest } = current;
-        return rest;
-      }
-      return { ...current, [key]: true };
-    });
+    setTicks((current) => ({ ...current, [tickKey(row)]: !current[tickKey(row)] }));
 
   return (
     <section

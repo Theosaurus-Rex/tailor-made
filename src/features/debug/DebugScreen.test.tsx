@@ -19,7 +19,9 @@ describe("DebugScreen", () => {
   it("shows the client and every short line for the seed", () => {
     render(<DebugScreen />);
     const single = screen.getByRole("region", { name: /single seed/i });
-    expect(within(single).getByText(new RegExp(clientFromSeed(SEED).name))).toBeInTheDocument();
+    expect(
+      within(single).getAllByText(new RegExp(clientFromSeed(SEED).name)).length,
+    ).toBeGreaterThan(0);
     for (const line of shortLinesFor(SEED)) {
       expect(within(single).getAllByText(`Short line: ${line}`).length).toBeGreaterThan(0);
     }

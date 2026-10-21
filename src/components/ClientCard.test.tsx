@@ -19,6 +19,8 @@ const challenge = (difficulty: "easy" | "medium" | "hard" | "chaos", burlap = fa
 const cardOf = (difficulty: "easy" | "medium" | "hard" | "chaos" = "medium", burlap = false) =>
   cardFor(challenge(difficulty, burlap));
 
+const noop = vi.fn();
+
 const boxes = () => screen.getAllByRole("checkbox");
 
 describe("ticking", () => {
@@ -97,7 +99,7 @@ describe("reroll controls", () => {
 
   it("shows one named button per direction, except Burlap only which says Fixed", () => {
     const card = cardOf("easy", true);
-    render(<ClientCard card={card} onReroll={() => {}} />);
+    render(<ClientCard card={card} onReroll={noop} />);
     expect(screen.getAllByRole("button")).toHaveLength(card.rows.length - 1);
     expect(screen.queryByRole("button", { name: /burlap/i })).not.toBeInTheDocument();
     expect(screen.getByText("Fixed")).toBeInTheDocument();
@@ -135,10 +137,10 @@ describe("reroll controls", () => {
 describe("after a reroll", () => {
   it("clears the rerolled row's tick and keeps the others", () => {
     const before = challenge("medium");
-    const { rerender } = render(<ClientCard card={cardFor(before)} onReroll={() => {}} />);
+    const { rerender } = render(<ClientCard card={cardFor(before)} onReroll={noop} />);
     boxes().forEach((box) => fireEvent.click(box));
     const after = reroll(before, 1);
-    rerender(<ClientCard card={cardFor(after)} onReroll={() => {}} justRerolledSlot={1} />);
+    rerender(<ClientCard card={cardFor(after)} onReroll={noop} justRerolledSlot={1} />);
     const states = boxes().map((box) => (box as HTMLInputElement).checked);
     expect(states[1]).toBe(false);
     expect(states.filter(Boolean)).toHaveLength(states.length - 1);
@@ -147,10 +149,10 @@ describe("after a reroll", () => {
   it("announces the change politely and marks the new row", () => {
     const after = reroll(challenge("medium"), 1);
     const card = cardFor(after);
-    render(<ClientCard card={card} onReroll={() => {}} justRerolledSlot={1} />);
+    render(<ClientCard card={card} onReroll={noop} justRerolledSlot={1} />);
     const status = screen
       .getAllByRole("status")
-      .find((el) => /swapped/.test(el.textContent ?? ""))!;
+      .find((el) => (el.textContent ?? "").includes("swapped"))!;
     expect(status).toHaveTextContent("Direction 2 swapped for a new one.");
     expect(status).toHaveTextContent(`It is now ${card.rows[1].shortLine}.`);
     expect(screen.getByText("New direction")).toBeInTheDocument();
@@ -168,7 +170,7 @@ describe("accessibility", () => {
     for (const withReroll of [false, true]) {
       it(`has no axe violations: ${name}${withReroll ? " with reroll" : ""}`, async () => {
         const { container } = render(
-          <ClientCard card={make()} onReroll={withReroll ? () => {} : undefined} />,
+          <ClientCard card={make()} onReroll={withReroll ? noop : undefined} />,
         );
         fireEvent.click(boxes()[0]);
         const results = await axe.run(container, {
