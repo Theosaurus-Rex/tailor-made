@@ -15,7 +15,7 @@ const ROUTES = [
   ["/", "Generator"],
   ["/daily", "Daily challenge"],
   ["/c", "Shared challenge"],
-  ["/about", "About"],
+  ["/about", "Tailor-Made"],
   ["/nope", "Page not found"],
 ] as const;
 
