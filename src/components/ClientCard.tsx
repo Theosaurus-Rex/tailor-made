@@ -8,6 +8,7 @@ interface ClientCardProps {
   card: Card;
   onReroll?: (slot: number) => void;
   justRerolledSlot?: number;
+  note?: string;
 }
 
 const tickKey = ({ slot, direction }: CardRow) => `${slot}:${JSON.stringify(direction)}`;
@@ -93,12 +94,18 @@ function DirectionRow({
   );
 }
 
-export function ClientCard({ card, onReroll, justRerolledSlot }: ClientCardProps) {
+export function ClientCard({ card, onReroll, justRerolledSlot, note }: ClientCardProps) {
   const [ticks, setTicks] = useState<Record<string, boolean>>({});
   const total = card.rows.length;
   const count = card.rows.filter((row) => ticks[tickKey(row)]).length;
   const justRerolledPosition = card.rows.findIndex((row) => row.slot === justRerolledSlot);
   const headingId = useId();
+
+  const rerollRow = (slot: number) => {
+    const row = card.rows.find((candidate) => candidate.slot === slot);
+    if (row) setTicks((current) => ({ ...current, [tickKey(row)]: false }));
+    onReroll?.(slot);
+  };
 
   const toggle = (row: CardRow) =>
     setTicks((current) => ({ ...current, [tickKey(row)]: !current[tickKey(row)] }));
@@ -143,7 +150,7 @@ export function ClientCard({ card, onReroll, justRerolledSlot }: ClientCardProps
                   row={row}
                   ticked={Boolean(ticks[tickKey(row)])}
                   onToggle={() => toggle(row)}
-                  onReroll={onReroll}
+                  onReroll={onReroll && rerollRow}
                   justRerolled={row.slot === justRerolledSlot}
                 />
               ))}
@@ -154,6 +161,7 @@ export function ClientCard({ card, onReroll, justRerolledSlot }: ClientCardProps
                 justRerolledPosition >= 0 ? "pt-2" : ""
               }`}
             >
+              {justRerolledPosition < 0 && note}
               {justRerolledPosition >= 0 && (
                 <>
                   Direction {justRerolledPosition + 1} swapped for a new one. Its tick was cleared;
