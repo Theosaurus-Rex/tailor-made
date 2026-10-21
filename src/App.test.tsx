@@ -14,7 +14,7 @@ const renderAt = (path: string) =>
 const ROUTES = [
   ["/", "Generator"],
   ["/daily", "Daily challenge"],
-  ["/c", "Shared challenge"],
+  ["/c", "We couldn’t read this link"],
   ["/about", "Tailor-Made"],
   ["/nope", "Page not found"],
 ] as const;
