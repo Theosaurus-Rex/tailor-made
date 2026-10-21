@@ -52,7 +52,7 @@ export function AboutScreen() {
         <p className={body}>
           Tailor-Made is an unofficial fan project. It is not made by, endorsed by or affiliated
           with the makers of Dressmaker. It uses no game art, no client names and no card text. The
-          clients, briefs and monograms are all its own.
+          clients, briefs and monograms are all original content.
         </p>
       </section>
 
