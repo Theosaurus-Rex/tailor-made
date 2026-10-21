@@ -8,10 +8,8 @@ const NAV_ITEMS = [
 
 function Mark() {
   return (
-    <span className="rounded-full border border-rose p-[3px]">
-      <span className="flex h-[30px] w-[42px] items-center justify-center rounded-full border border-rose font-serif text-[17px] leading-none text-ink italic">
-        TM
-      </span>
+    <span className="m-1 flex h-[30px] w-[42px] items-center justify-center rounded-[50%] border border-rose font-serif text-[17px] leading-none text-ink italic outline outline-1 outline-offset-[3px] outline-rose">
+      TM
     </span>
   );
 }
