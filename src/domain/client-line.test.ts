@@ -187,6 +187,57 @@ describe("clientLine", () => {
     }
   });
 
+  it("joins two asked items with and and two avoided items with or", () => {
+    const cases: [Direction, string][] = [
+      [{ type: "fabric", fabrics: ["Cotton", "Linen"] }, "cotton and linen"],
+      [{ type: "fabricAvoid", fabrics: ["Cotton", "Velvet"] }, "cotton or velvet"],
+      [{ type: "colour", colours: ["Red", "Blue"] }, "red and blue"],
+      [{ type: "colourAvoid", colours: ["Red", "Blue"] }, "red or blue"],
+      [{ type: "accessory", accessories: ["Bow", "Feather"] }, "bows and feathers"],
+      [{ type: "accessoryAvoid", accessories: ["Bow", "Feather"] }, "bows or feathers"],
+      [{ type: "styleAvoid", tags: ["Cute", "Playful"] }, "cute or playful"],
+    ];
+    for (const personality of personalities) {
+      for (const [direction, joined] of cases) {
+        for (let n = 0; n < 10; n++) {
+          expect(lineFor(direction, personality, n)?.toLowerCase()).toContain(joined);
+        }
+      }
+    }
+  });
+
+  it("skips the specific line when a list holds two items", () => {
+    for (const personality of personalities) {
+      for (let n = 0; n < 20; n++) {
+        const line = lineFor({ type: "fabric", fabrics: ["Velvet", "Cotton"] }, personality, n);
+        expect(line?.toLowerCase()).toContain("velvet and cotton");
+      }
+    }
+  });
+
+  it("never points back at a list slot with it, that or this", () => {
+    const listTypes = [
+      "styleAvoid",
+      "fabric",
+      "fabricAvoid",
+      "colour",
+      "colourAvoid",
+      "accessory",
+      "accessoryAvoid",
+    ] as const;
+    for (const personality of personalities) {
+      for (const type of listTypes) {
+        for (const line of clientLines[personality].generic[type]) {
+          const first = line.search(/\{(tag|fabric|colour|accessory)\}/);
+          const after = line.slice(first).replace(/^\{\w+\}/, "");
+          expect(after, `${personality} ${type}: ${line}`).not.toMatch(
+            /\b(it|its|it's|it'll|that|that's|that'll|this)\b/i,
+          );
+        }
+      }
+    }
+  });
+
   it("joins an only list with or, never and", () => {
     const direction: Direction = { type: "colourOnly", colours: ["Orange", "Yellow", "Green"] };
     for (const personality of personalities) {

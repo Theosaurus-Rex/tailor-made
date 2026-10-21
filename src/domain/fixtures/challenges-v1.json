@@ -40,7 +40,7 @@
     "lines": [
       {
         "short": "Sequin",
-        "client": "Sequins, please. Keep it simple."
+        "client": "Sequins, please. Keep things simple."
       },
       {
         "short": "Uncomfortable",
@@ -48,7 +48,7 @@
       },
       {
         "short": "Pink and green",
-        "client": "Pink and green. That's it."
+        "client": "Pink and green. Nothing else."
       }
     ]
   },
@@ -291,7 +291,7 @@
     "lines": [
       {
         "short": "Brooches",
-        "client": "Brooches. Keep it tidy."
+        "client": "Brooches. Keep things tidy."
       },
       {
         "short": "At least 3 tassels",
@@ -367,7 +367,7 @@
       },
       {
         "short": "Brooches",
-        "client": "Brooches. Keep it tidy."
+        "client": "Brooches. Keep things tidy."
       },
       {
         "short": "No lace trim",
@@ -449,7 +449,7 @@
       },
       {
         "short": "Brooches and bows",
-        "client": "Brooches and bows. Keep it tidy."
+        "client": "Brooches and bows. Keep things tidy."
       },
       {
         "short": "Only velvet and cotton",
@@ -549,7 +549,7 @@
       },
       {
         "short": "Brooches",
-        "client": "Brooches. Keep it tidy."
+        "client": "Brooches. Keep things tidy."
       },
       {
         "short": "Elegant",
@@ -594,7 +594,7 @@
     "lines": [
       {
         "short": "Purple and yellow",
-        "client": "Purple and yellow, naturally. It has always suited me."
+        "client": "Purple and yellow, naturally. A lady knows what suits her."
       },
       {
         "short": "Risqué",
@@ -645,7 +645,7 @@
       },
       {
         "short": "Lace trim",
-        "client": "One expects lace trim. It is a matter of form."
+        "client": "One expects lace trim. A matter of form."
       },
       {
         "short": "Gothic",
@@ -694,11 +694,11 @@
     "lines": [
       {
         "short": "No lace trim or piping",
-        "client": "No lace trim or piping, please. It is not for me."
+        "client": "No lace trim or piping, please. Not for me."
       },
       {
         "short": "Purple",
-        "client": "One expects purple. I have worn it for years."
+        "client": "One expects purple. I have worn nothing else for years."
       },
       {
         "short": "At least 3 colours",
@@ -754,7 +754,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "One finds lace trim rather tiresome. Leave it off."
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
         "short": "Flowers",
@@ -816,7 +816,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "One finds lace trim rather tiresome. Leave it off."
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
         "short": "Flowers",
@@ -824,7 +824,7 @@
       },
       {
         "short": "Not playful",
-        "client": "One cannot abide playful. Kindly avoid it."
+        "client": "One cannot abide playful. Kindly avoid such things."
       }
     ]
   },
@@ -880,7 +880,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "One finds lace trim rather tiresome. Leave it off."
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
         "short": "At least 5 feathers",
@@ -892,7 +892,7 @@
       },
       {
         "short": "Not playful or professional",
-        "client": "Not playful or professional, I think. It would not be fitting."
+        "client": "Not playful or professional, I think. Quite unfitting."
       }
     ]
   },
@@ -1028,7 +1028,7 @@
       },
       {
         "short": "Not simple",
-        "client": "One cannot abide simple. Kindly avoid it."
+        "client": "One cannot abide simple. Kindly avoid such things."
       },
       {
         "short": "Exactly 6 buttons",
@@ -1498,7 +1498,7 @@
       },
       {
         "short": "Lace",
-        "client": "Lace. It'll do nicely."
+        "client": "Lace. Good enough for me."
       },
       {
         "short": "Simple",
@@ -1641,7 +1641,7 @@
     "lines": [
       {
         "short": "Linen and cotton",
-        "client": "I'd like linen and cotton. Don't read into it."
+        "client": "I'd like linen and cotton. Don't read into the choice."
       },
       {
         "short": "Pink",
@@ -1741,11 +1741,11 @@
     "lines": [
       {
         "short": "No sequins or cotton",
-        "client": "Not sequins or cotton. It knows what it did."
+        "client": "Not sequins or cotton. Some things can't be forgiven."
       },
       {
         "short": "Silk",
-        "client": "I'd like silk. Don't read into it."
+        "client": "I'd like silk. Don't read into the choice."
       },
       {
         "short": "At least 2 fabrics",
@@ -1870,7 +1870,7 @@
       },
       {
         "short": "Linen",
-        "client": "Linen. It'll do nicely."
+        "client": "Linen. Good enough for me."
       }
     ]
   },
@@ -2126,7 +2126,7 @@
     "lines": [
       {
         "short": "Cotton",
-        "client": "I shall wear cotton. It is only proper."
+        "client": "I shall wear cotton. Only proper."
       },
       {
         "short": "Gothic",
@@ -2177,7 +2177,7 @@
       },
       {
         "short": "Brooches",
-        "client": "One expects brooches. It is a matter of form."
+        "client": "One expects brooches. A matter of form."
       },
       {
         "short": "Casual",
@@ -2227,7 +2227,7 @@
     "lines": [
       {
         "short": "Buttons",
-        "client": "One expects buttons. It is a matter of form."
+        "client": "One expects buttons. A matter of form."
       },
       {
         "short": "At least 4 feathers",
@@ -2235,7 +2235,7 @@
       },
       {
         "short": "No orange or grey",
-        "client": "No orange or grey, please. One has never trusted it."
+        "client": "No orange or grey, please. One has never trusted such a palette."
       }
     ]
   },
@@ -2287,7 +2287,7 @@
       },
       {
         "short": "Brooches",
-        "client": "One expects brooches. It is a matter of form."
+        "client": "One expects brooches. A matter of form."
       },
       {
         "short": "At least 5 appliqués",
@@ -2295,7 +2295,7 @@
       },
       {
         "short": "No piping",
-        "client": "One finds piping rather tiresome. Leave it off."
+        "client": "One finds piping rather tiresome. Leave the lot off."
       }
     ]
   },
@@ -2416,7 +2416,7 @@
       },
       {
         "short": "Not glamour or gothic",
-        "client": "One cannot abide glamour or gothic. Kindly avoid it."
+        "client": "One cannot abide glamour or gothic. Kindly avoid such things."
       },
       {
         "short": "Playful",
@@ -2613,7 +2613,7 @@
     "lines": [
       {
         "short": "Silk",
-        "client": "I shall wear silk. It is only proper."
+        "client": "I shall wear silk. Only proper."
       },
       {
         "short": "Gothic",
@@ -2664,7 +2664,7 @@
       },
       {
         "short": "Jewels",
-        "client": "One expects jewels. It is a matter of form."
+        "client": "One expects jewels. A matter of form."
       },
       {
         "short": "Elegant",
@@ -2721,7 +2721,7 @@
       },
       {
         "short": "No wool or velvet",
-        "client": "No wool or velvet, please. It is not done."
+        "client": "No wool or velvet, please. Such things are not done."
       }
     ]
   },
@@ -2781,7 +2781,7 @@
       },
       {
         "short": "Not romantic",
-        "client": "Not romantic, I think. It would not be fitting."
+        "client": "Not romantic, I think. Quite unfitting."
       }
     ]
   },
@@ -2830,7 +2830,7 @@
     "lines": [
       {
         "short": "Silk",
-        "client": "I shall wear silk. It is only proper."
+        "client": "I shall wear silk. Only proper."
       },
       {
         "short": "Gothic",
@@ -2842,7 +2842,7 @@
       },
       {
         "short": "Not romantic",
-        "client": "Not romantic, I think. It would not be fitting."
+        "client": "Not romantic, I think. Quite unfitting."
       }
     ]
   },
@@ -2897,7 +2897,7 @@
       },
       {
         "short": "Jewels",
-        "client": "One expects jewels. It is a matter of form."
+        "client": "One expects jewels. A matter of form."
       },
       {
         "short": "Elegant",
@@ -2909,7 +2909,7 @@
       },
       {
         "short": "No buttons",
-        "client": "No buttons, please. It is not for me."
+        "client": "No buttons, please. Not for me."
       }
     ]
   },
@@ -3039,7 +3039,7 @@
       },
       {
         "short": "Feathers",
-        "client": "One expects feathers. It is a matter of form."
+        "client": "One expects feathers. A matter of form."
       },
       {
         "short": "Exactly 7 bows",
@@ -3051,7 +3051,7 @@
       },
       {
         "short": "Not glamour",
-        "client": "One cannot abide glamour. Kindly avoid it."
+        "client": "One cannot abide glamour. Kindly avoid such things."
       },
       {
         "short": "Daywear",
@@ -3100,11 +3100,11 @@
     "lines": [
       {
         "short": "Lace",
-        "client": "Give me lace, darling! Let it sweep the stage!"
+        "client": "Give me lace, darling! Let the stage tremble!"
       },
       {
         "short": "White",
-        "client": "Make it white, darling! Let it blaze across the stage!"
+        "client": "Make it white, darling! Let the stage blaze!"
       },
       {
         "short": "Cute",
@@ -3159,7 +3159,7 @@
       },
       {
         "short": "Lace trim",
-        "client": "Add lace trim, darling! Let it catch the light!"
+        "client": "Add lace trim, darling! Let the light find every one!"
       },
       {
         "short": "Cute",
@@ -3216,11 +3216,11 @@
     "lines": [
       {
         "short": "No green",
-        "client": "Not a drop of green, darling! The scene cannot bear it!"
+        "client": "Not a drop of green, darling! The scene cannot bear the sight!"
       },
       {
         "short": "White and blue",
-        "client": "Make it white and blue, darling! Let it blaze across the stage!"
+        "client": "Make it white and blue, darling! Let the stage blaze!"
       },
       {
         "short": "At least 2 fabrics",
@@ -3284,11 +3284,11 @@
       },
       {
         "short": "No tassels or bows",
-        "client": "Away with the tassels or bows, darling! It steals my moment!"
+        "client": "Away with the tassels or bows, darling! My moment is mine alone!"
       },
       {
         "short": "Trim and buttons",
-        "client": "Trim and buttons! I must have trim and buttons! It is the finishing flourish!"
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
         "short": "At least 2 jewels",
@@ -3350,7 +3350,7 @@
     "lines": [
       {
         "short": "Grey",
-        "client": "Make it grey, darling! Let it blaze across the stage!"
+        "client": "Make it grey, darling! Let the stage blaze!"
       },
       {
         "short": "At least 2 colours",
@@ -3358,7 +3358,7 @@
       },
       {
         "short": "Trim and buttons",
-        "client": "Trim and buttons! I must have trim and buttons! It is the finishing flourish!"
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
         "short": "At least 2 jewels",
@@ -3505,7 +3505,7 @@
       },
       {
         "short": "Red and brown",
-        "client": "Make it red and brown, darling! Let it blaze across the stage!"
+        "client": "Make it red and brown, darling! Let the stage blaze!"
       },
       {
         "short": "Exactly 8 bells",
@@ -3598,7 +3598,7 @@
       },
       {
         "short": "Trim and buttons",
-        "client": "Trim and buttons! I must have trim and buttons! It is the finishing flourish!"
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
         "short": "Formal",
@@ -3659,7 +3659,7 @@
       },
       {
         "short": "Cotton",
-        "client": "Cotton, please. Keep it simple."
+        "client": "Cotton, please. Keep things simple."
       }
     ]
   },
@@ -3886,7 +3886,7 @@
       },
       {
         "short": "Pink",
-        "client": "Pink. That's it."
+        "client": "Pink. Nothing else."
       }
     ]
   },
@@ -3954,7 +3954,7 @@
       },
       {
         "short": "Flowers",
-        "client": "Flowers. Keep it tidy."
+        "client": "Flowers. Keep things tidy."
       }
     ]
   },
@@ -4247,7 +4247,7 @@
       },
       {
         "short": "No pink",
-        "client": "Oh, not pink, darling! It isn't my day for it."
+        "client": "Oh, not pink, darling! Not today, anyway."
       },
       {
         "short": "Brown",
@@ -4369,7 +4369,7 @@
       },
       {
         "short": "Not elegant",
-        "client": "Oh, not elegant, darling. I couldn't bear it."
+        "client": "Oh, not elegant, darling. I couldn't bear the thought."
       },
       {
         "short": "Linen",
@@ -4734,7 +4734,7 @@
       },
       {
         "short": "Lace trim",
-        "client": "Add lace trim, darling! Let it catch the light!"
+        "client": "Add lace trim, darling! Let the light find every one!"
       },
       {
         "short": "At least 3 appliqués",
@@ -4790,11 +4790,11 @@
       },
       {
         "short": "Not playful",
-        "client": "Banish playful, darling! It will not play tonight!"
+        "client": "Banish playful, darling! Not a hint tonight!"
       },
       {
         "short": "Bows and flowers",
-        "client": "Add bows and flowers, darling! Let it catch the light!"
+        "client": "Add bows and flowers, darling! Let the light find every one!"
       },
       {
         "short": "At least 8 brooches",
@@ -4851,7 +4851,7 @@
       },
       {
         "short": "Sequin",
-        "client": "Give me sequins, darling! Let it sweep the stage!"
+        "client": "Give me sequins, darling! Let the stage tremble!"
       },
       {
         "short": "Casual",
@@ -4919,7 +4919,7 @@
       },
       {
         "short": "Buttons",
-        "client": "Add buttons, darling! Let it catch the light!"
+        "client": "Add buttons, darling! Let the light find every one!"
       },
       {
         "short": "Risqué",
@@ -5063,7 +5063,7 @@
       },
       {
         "short": "Brooches and flowers",
-        "client": "Add brooches and flowers, darling! Let it catch the light!"
+        "client": "Add brooches and flowers, darling! Let the light find every one!"
       },
       {
         "short": "Exactly 6 jewels",
@@ -5116,7 +5116,7 @@
     "lines": [
       {
         "short": "Red",
-        "client": "Red, naturally. It has always suited me."
+        "client": "Red, naturally. A lady knows what suits her."
       },
       {
         "short": "Silk",
@@ -5216,11 +5216,11 @@
     "lines": [
       {
         "short": "No tassels",
-        "client": "No tassels, please. It is not for me."
+        "client": "No tassels, please. Not for me."
       },
       {
         "short": "Grey",
-        "client": "Grey, naturally. It has always suited me."
+        "client": "Grey, naturally. A lady knows what suits her."
       },
       {
         "short": "At least 4 colours",
@@ -5276,7 +5276,7 @@
       },
       {
         "short": "No jewels",
-        "client": "No jewels, please. It is not for me."
+        "client": "No jewels, please. Not for me."
       },
       {
         "short": "Buttons",
@@ -5334,11 +5334,11 @@
     "lines": [
       {
         "short": "No velvet",
-        "client": "No velvet, please. It is not done."
+        "client": "No velvet, please. Such things are not done."
       },
       {
         "short": "No jewels",
-        "client": "No jewels, please. It is not for me."
+        "client": "No jewels, please. Not for me."
       },
       {
         "short": "At least 7 bells",
@@ -5346,7 +5346,7 @@
       },
       {
         "short": "Black",
-        "client": "Black, naturally. It has always suited me."
+        "client": "Black, naturally. A lady knows what suits her."
       }
     ]
   },
@@ -5406,7 +5406,7 @@
       },
       {
         "short": "No bows",
-        "client": "No bows, please. It is not for me."
+        "client": "No bows, please. Not for me."
       },
       {
         "short": "At least 2 tassels",
@@ -5476,7 +5476,7 @@
       },
       {
         "short": "No brown",
-        "client": "No brown, please. One has never trusted it."
+        "client": "No brown, please. One has never trusted such a palette."
       },
       {
         "short": "Exactly 2 tassels",
@@ -5707,7 +5707,7 @@
       },
       {
         "short": "Tassels and trim",
-        "client": "Might there be some tassels and trim? Sorry, only if it's not too much."
+        "client": "Might there be some tassels and trim? Sorry, only if there's room."
       },
       {
         "short": "At least 6 brooches",
@@ -5763,11 +5763,11 @@
       },
       {
         "short": "Not uncomfortable or warm",
-        "client": "Sorry, could it not be uncomfortable or warm? I'm sure it's lovely, really."
+        "client": "Sorry, could it not be uncomfortable or warm? I'm so sorry, really."
       },
       {
         "short": "Jewels and flowers",
-        "client": "I was hoping for a little jewels and flowers. Is that all right?"
+        "client": "I was hoping for some jewels and flowers. Would you mind?"
       },
       {
         "short": "At least 7 brooches",
@@ -5832,7 +5832,7 @@
       },
       {
         "short": "Red and black",
-        "client": "Might it be red and black? Sorry, I do hope that's all right."
+        "client": "Might it be red and black? Sorry, I do hope you don't mind."
       }
     ]
   },
@@ -5900,7 +5900,7 @@
       },
       {
         "short": "Buttons and piping",
-        "client": "I was hoping for a little buttons and piping. Is that all right?"
+        "client": "I was hoping for some buttons and piping. Would you mind?"
       }
     ]
   },
@@ -6044,7 +6044,7 @@
       },
       {
         "short": "Buttons and tassels",
-        "client": "I was hoping for a little buttons and tassels. Is that all right?"
+        "client": "I was hoping for some buttons and tassels. Would you mind?"
       },
       {
         "short": "Elaborate",
@@ -6190,7 +6190,7 @@
     "lines": [
       {
         "short": "Silk and linen",
-        "client": "I'd like silk and linen. Don't read into it."
+        "client": "I'd like silk and linen. Don't read into the choice."
       },
       {
         "short": "No trim",
@@ -6315,7 +6315,7 @@
       },
       {
         "short": "Velvet and lace",
-        "client": "I'd like velvet and lace. Don't read into it."
+        "client": "I'd like velvet and lace. Don't read into the choice."
       },
       {
         "short": "Only white, black and red",
@@ -6445,7 +6445,7 @@
       },
       {
         "short": "Wool",
-        "client": "I'd like wool. Don't read into it."
+        "client": "I'd like wool. Don't read into the choice."
       },
       {
         "short": "Casual",
@@ -6640,11 +6640,11 @@
     "lines": [
       {
         "short": "No lace trim or piping",
-        "client": "No lace trim or piping, please. It is not for me."
+        "client": "No lace trim or piping, please. Not for me."
       },
       {
         "short": "Pink and black",
-        "client": "Pink and black, naturally. It has always suited me."
+        "client": "Pink and black, naturally. A lady knows what suits her."
       },
       {
         "short": "At least 3 colours",
@@ -6834,7 +6834,7 @@
       },
       {
         "short": "No buttons",
-        "client": "No buttons, please. It is not for me."
+        "client": "No buttons, please. Not for me."
       },
       {
         "short": "Bells and flowers",
@@ -6842,7 +6842,7 @@
       },
       {
         "short": "Not playful",
-        "client": "One cannot abide playful. Kindly avoid it."
+        "client": "One cannot abide playful. Kindly avoid such things."
       }
     ]
   },
