@@ -13,7 +13,7 @@ const renderAt = (path: string) =>
 
 const ROUTES = [
   ["/", "Generator"],
-  ["/daily", "Daily challenge"],
+  ["/daily", "Today’s client"],
   ["/c", "We couldn’t read this link"],
   ["/about", "Tailor-Made"],
   ["/nope", "Page not found"],

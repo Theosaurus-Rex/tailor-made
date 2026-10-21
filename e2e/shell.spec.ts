@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 const LINKS = [
   { name: "Generate", path: "/", heading: "Generator" },
-  { name: "Daily", path: "/daily", heading: "Daily challenge" },
+  { name: "Daily", path: "/daily", heading: "Today’s client" },
   { name: "About", path: "/about", heading: "Tailor-Made" },
 ];
 
