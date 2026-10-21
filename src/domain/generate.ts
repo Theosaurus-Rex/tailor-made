@@ -43,6 +43,7 @@ export interface DrawInput {
   allowedPair?: readonly [StyleTag, StyleTag];
   pullApartSlot?: number | null;
   ignoreTheme?: boolean;
+  replacing?: Direction | null;
   data: GameData;
 }
 
@@ -234,6 +235,7 @@ export function drawDirection({
   allowedPair,
   pullApartSlot,
   ignoreTheme,
+  replacing,
   data,
 }: DrawInput): Direction | null {
   const type = plan[slot];
@@ -247,6 +249,7 @@ export function drawDirection({
   const leanings = leaningsFor(data, ignoreTheme ? undefined : themeFor(seed, data));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
     const candidate = drawCandidate(type, random, data, others, towards, leanings);
+    if (replacing && JSON.stringify(candidate) === JSON.stringify(replacing)) continue;
     if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }
   return null;

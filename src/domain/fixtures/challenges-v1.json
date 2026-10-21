@@ -6616,7 +6616,7 @@
         },
         {
           "type": "coloursMin",
-          "count": 2
+          "count": 3
         }
       ],
       "pairSlots": null,
@@ -6638,8 +6638,8 @@
         "client": "Green, naturally. It has always suited me."
       },
       {
-        "short": "At least 2 colours",
-        "client": "One expects colour. At least two, I think."
+        "short": "At least 3 colours",
+        "client": "One expects colour. At least three, I think."
       }
     ]
   },

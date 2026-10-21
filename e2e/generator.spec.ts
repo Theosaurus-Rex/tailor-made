@@ -75,3 +75,32 @@ test("the empty state and a generated card have no serious accessibility issues"
   await generate(page);
   await expectNoSeriousA11yIssues(page, "generated card");
 });
+
+test("rerolling a ticked direction changes it, clears its tick and keeps the other tick", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await generate(page);
+  const rows = page.getByRole("list").getByRole("listitem");
+  const ticks = page.getByRole("list").getByRole("checkbox");
+  await ticks.nth(0).check();
+  await ticks.nth(1).check();
+  const before = await rows.nth(1).locator("label").textContent();
+  const reroll = rows.nth(1).getByRole("button", { name: /^reroll/i });
+  await reroll.click();
+  await expect(ticks.nth(1)).not.toBeChecked();
+  await expect(rows.nth(1).locator("label")).not.toHaveText(before ?? "");
+  await expect(ticks.nth(0)).toBeChecked();
+  await expect(
+    page.getByText("Direction 2 swapped for a new one.", { exact: false }),
+  ).toBeVisible();
+  await expectNoSeriousA11yIssues(page, "after a reroll");
+});
+
+test("a Chaos card has no reroll buttons", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("radio", { name: "Chaos" }).check({ force: true });
+  await generate(page);
+  await expect(page.getByRole("button", { name: /^reroll/i })).toHaveCount(0);
+  await expect(page.getByText("Chaos cards can't be rerolled.")).toBeVisible();
+});

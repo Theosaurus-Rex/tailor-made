@@ -7,6 +7,7 @@ import { cardFor } from "@/domain/card";
 import type { Challenge } from "@/domain/challenge";
 import { shapeFor, type Difficulty } from "@/domain/difficulty";
 import { generate } from "@/domain/generate";
+import { reroll } from "@/domain/reroll";
 import { LATEST_DATA_VERSION, latestData } from "@/game/data";
 import { newSeed } from "@/lib/new-seed";
 
@@ -111,6 +112,7 @@ export function GeneratorScreen() {
   const [difficulty, setDifficulty] = useState<Difficulty>("medium");
   const [burlap, setBurlap] = useState(false);
   const [challenge, setChallenge] = useState<Challenge | null>(null);
+  const [justRerolledSlot, setJustRerolledSlot] = useState<number>();
   const [expanded, setExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -130,7 +132,14 @@ export function GeneratorScreen() {
         dataVersion: LATEST_DATA_VERSION,
       }),
     );
+    setJustRerolledSlot(undefined);
     setExpanded(false);
+  };
+
+  const rerollDirection = (slot: number) => {
+    if (!challenge) return;
+    setChallenge(reroll(challenge, slot));
+    setJustRerolledSlot(slot);
   };
 
   const collapsed = challenge !== null && !expanded;
@@ -181,7 +190,17 @@ export function GeneratorScreen() {
         </div>
       </section>
       <div ref={cardRef} className="min-w-0 md:flex-1">
-        {challenge ? <ClientCard key={challenge.seed} card={cardFor(challenge)} /> : <EmptyCard />}
+        {challenge ? (
+          <ClientCard
+            key={challenge.seed}
+            card={cardFor(challenge)}
+            onReroll={challenge.difficulty === "chaos" ? undefined : rerollDirection}
+            justRerolledSlot={justRerolledSlot}
+            note={challenge.difficulty === "chaos" ? "Chaos cards can't be rerolled." : undefined}
+          />
+        ) : (
+          <EmptyCard />
+        )}
         {challenge && <ShareActions challenge={challenge} />}
       </div>
     </div>
