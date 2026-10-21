@@ -39,7 +39,7 @@ function DirectionRow({
     <li
       className={`relative flex min-h-11 items-center gap-3.5 rounded-row py-3 pr-2.5 pl-3.5 ${fill}`}
     >
-      <span className="relative flex size-[22px] shrink-0">
+      <span className="relative z-10 flex size-[22px] shrink-0">
         <input
           id={id}
           type="checkbox"
@@ -55,7 +55,7 @@ function DirectionRow({
         />
       </span>
       <div className="flex min-w-0 flex-1 flex-col gap-px">
-        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <label
             htmlFor={id}
             className={`cursor-pointer text-base font-medium after:absolute after:inset-0 ${
@@ -75,7 +75,7 @@ function DirectionRow({
       </div>
       {onReroll &&
         (row.isModifier ? (
-          <span className="label-caps relative px-3 text-[10px] font-medium tracking-[0.24em] text-subtle">
+          <span className="label-caps relative px-1.5 text-[10px] font-medium tracking-[0.24em] text-subtle">
             Fixed
           </span>
         ) : (
