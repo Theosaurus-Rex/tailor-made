@@ -34,6 +34,7 @@ export function reroll(
     pairs: shape.pairs,
     pullApartSlot: challenge.pullApartSlot,
     ignoreTheme: shape.ignoreTheme,
+    replacing: challenge.directions[slot],
     data,
   });
   return {

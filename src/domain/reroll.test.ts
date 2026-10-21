@@ -128,6 +128,23 @@ describe("reroll", () => {
   });
 });
 
+describe("reroll never gives back the direction it replaced", () => {
+  for (const difficulty of ["easy", "medium", "hard"] as const) {
+    it(`holds on ${difficulty} over 500 seeds`, () => {
+      for (let i = 0; i < 500; i++) {
+        const seed = deriveSeed("no-repeat", difficulty, i);
+        const before = generate({ ...inputFor(seed), difficulty });
+        before.plan.forEach((_, slot) => {
+          const old = before.directions[slot];
+          if (old === null || old?.type === "burlapOnly") return;
+          const redrawn = reroll(before, slot).directions[slot];
+          if (redrawn !== null) expect(redrawn).not.toEqual(old);
+        });
+      }
+    });
+  }
+});
+
 describe("chaos", () => {
   const chaosInput = (seed: string): GenerateInput => ({ ...inputFor(seed), difficulty: "chaos" });
 
