@@ -11,6 +11,8 @@ import { reroll } from "@/domain/reroll";
 import { LATEST_DATA_VERSION, latestData } from "@/game/data";
 import { newSeed } from "@/lib/new-seed";
 
+import { ShareActions } from "./ShareActions";
+
 const DIFFICULTIES: readonly { value: Difficulty; label: string }[] = [
   { value: "easy", label: "Easy" },
   { value: "medium", label: "Medium" },
@@ -199,6 +201,7 @@ export function GeneratorScreen() {
         ) : (
           <EmptyCard />
         )}
+        {challenge && <ShareActions challenge={challenge} />}
       </div>
     </div>
   );
