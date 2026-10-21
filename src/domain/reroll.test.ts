@@ -75,6 +75,7 @@ describe("reroll", () => {
         rerollCount: 2,
         others,
         pairs: "never",
+        pairedItemChance: dataV1.difficulties.medium.pairedItemChance,
         data: dataV1,
       }),
     );
@@ -128,6 +129,11 @@ describe("reroll", () => {
   });
 });
 
+const withSortedLists = (direction: Direction) =>
+  JSON.stringify(direction, (_key, value: unknown) =>
+    Array.isArray(value) ? [...(value as string[])].sort() : value,
+  );
+
 describe("reroll never gives back the direction it replaced", () => {
   for (const difficulty of ["easy", "medium", "hard"] as const) {
     it(`holds on ${difficulty} over 500 seeds`, () => {
@@ -138,7 +144,7 @@ describe("reroll never gives back the direction it replaced", () => {
           const old = before.directions[slot];
           if (old === null || old?.type === "burlapOnly") return;
           const redrawn = reroll(before, slot).directions[slot];
-          if (redrawn !== null) expect(redrawn).not.toEqual(old);
+          if (redrawn !== null) expect(withSortedLists(redrawn)).not.toBe(withSortedLists(old));
         });
       }
     });

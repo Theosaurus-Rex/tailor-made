@@ -27,35 +27,36 @@ export interface ConflictOptions {
 
 type Rule = (directions: readonly Direction[], options: ConflictOptions) => Conflict[];
 
-const askedFor = (d: Direction): string | undefined => {
+const askedFor = (d: Direction): readonly string[] => {
   switch (d.type) {
     case "style":
-      return `style:${d.tag}`;
+      return [`style:${d.tag}`];
     case "fabric":
-      return `fabric:${d.fabric}`;
+      return d.fabrics.map((fabric) => `fabric:${fabric}`);
     case "colour":
-      return `colour:${d.colour}`;
+      return d.colours.map((colour) => `colour:${colour}`);
     case "accessory":
+      return d.accessories.map((accessory) => `accessory:${accessory}`);
     case "accessoryMin":
     case "accessoryExact":
-      return `accessory:${d.accessory}`;
+      return [`accessory:${d.accessory}`];
     default:
-      return undefined;
+      return [];
   }
 };
 
-const avoided = (d: Direction): string | undefined => {
+const avoided = (d: Direction): readonly string[] => {
   switch (d.type) {
     case "styleAvoid":
-      return `style:${d.tag}`;
+      return d.tags.map((tag) => `style:${tag}`);
     case "fabricAvoid":
-      return `fabric:${d.fabric}`;
+      return d.fabrics.map((fabric) => `fabric:${fabric}`);
     case "colourAvoid":
-      return `colour:${d.colour}`;
+      return d.colours.map((colour) => `colour:${colour}`);
     case "accessoryAvoid":
-      return `accessory:${d.accessory}`;
+      return d.accessories.map((accessory) => `accessory:${accessory}`);
     default:
-      return undefined;
+      return [];
   }
 };
 
@@ -69,6 +70,8 @@ const listed = (d: Direction): readonly string[] => {
       return [];
   }
 };
+
+const shareAny = (a: readonly string[], b: readonly string[]) => a.some((key) => b.includes(key));
 
 const isCount = (d: Direction) => d.type === "accessoryMin" || d.type === "accessoryExact";
 
@@ -97,9 +100,7 @@ const askedAndAvoided: Rule = (directions) =>
     directions,
     "askedAndAvoided",
     eitherWay((a, b) => {
-      const avoid = avoided(b);
-      if (avoid === undefined) return false;
-      return askedFor(a) === avoid || listed(a).includes(avoid);
+      return shareAny(avoided(b), askedFor(a)) || shareAny(avoided(b), listed(a));
     }),
   );
 
@@ -113,8 +114,10 @@ const onlyListClash = (reason: ConflictReason, onlyType: "colourOnly" | "fabrics
       eitherWay((only, other) => {
         if (only.type !== onlyType) return false;
         if (other.type === minType) return true;
-        const key = askedFor(other) ?? avoided(other);
-        return key !== undefined && key.startsWith(prefix) && !listed(only).includes(key);
+        const outside = [...askedFor(other), ...avoided(other)].filter((key) =>
+          key.startsWith(prefix),
+        );
+        return outside.some((key) => !listed(only).includes(key));
       }),
     );
 };
@@ -126,7 +129,7 @@ const onlyFabricClash = onlyListClash("onlyFabricClash", "fabricsOnly");
 const tooFewLeft = (
   reason: ConflictReason,
   minType: "coloursMin" | "fabricsMin",
-  avoidKey: (d: Direction) => string | undefined,
+  avoidKeys: (d: Direction) => readonly string[],
   available: (data: GameData) => number,
 ): Rule => {
   return (directions, { data }) => {
@@ -137,9 +140,9 @@ const tooFewLeft = (
       let lastAvoidIndex: number | undefined;
       for (let index = 0; index < directions.length; index++) {
         const current = directions[index];
-        const key = current && avoidKey(current);
-        if (key !== undefined) {
-          avoidedItems.add(key);
+        const keys = current ? avoidKeys(current) : [];
+        if (keys.length > 0) {
+          keys.forEach((key) => avoidedItems.add(key));
           if (index !== minimumIndex) lastAvoidIndex = index;
         }
         if (index < minimumIndex || lastAvoidIndex === undefined) continue;
@@ -156,14 +159,14 @@ const tooFewLeft = (
 const tooFewColoursLeft = tooFewLeft(
   "tooFewColoursLeft",
   "coloursMin",
-  (d) => (d.type === "colourAvoid" ? d.colour : undefined),
+  (d) => (d.type === "colourAvoid" ? avoided(d) : []),
   (data) => data.colours.length,
 );
 
 const tooFewFabricsLeft = tooFewLeft(
   "tooFewFabricsLeft",
   "fabricsMin",
-  (d) => (d.type === "fabricAvoid" ? d.fabric : undefined),
+  (d) => (d.type === "fabricAvoid" ? avoided(d) : []),
   (data) => Object.values(data.fabrics).filter((fabric) => !fabric.modifierOnly).length,
 );
 
@@ -174,33 +177,39 @@ const moreThanOneCount: Rule = (directions) =>
   eachPair(
     directions,
     "moreThanOneCount",
-    (a, b) => isCount(a) && isCount(b) && askedFor(a) === askedFor(b),
+    (a, b) => isCount(a) && isCount(b) && shareAny(askedFor(a), askedFor(b)),
   );
 
-const styleTag = (d: Direction): StyleTag | undefined =>
-  d.type === "style" || d.type === "styleAvoid" ? d.tag : undefined;
+const styleTags = (d: Direction): readonly StyleTag[] =>
+  d.type === "style" ? [d.tag] : d.type === "styleAvoid" ? d.tags : [];
 
 const isPair = (a: StyleTag, b: StyleTag, [x, y]: readonly [StyleTag, StyleTag]) =>
   (a === x && b === y) || (a === y && b === x);
 
-const opposingPair: Rule = (directions, { data, pairs, allowedPair }) =>
-  eachPair(directions, "opposingPair", (a, b) => {
-    if (pairs !== "never" && (a.type !== "style" || b.type !== "style")) return false;
-    const x = styleTag(a);
-    const y = styleTag(b);
-    if (x === undefined || y === undefined) return false;
+const opposingPair: Rule = (directions, { data, pairs, allowedPair }) => {
+  const opposes = (x: StyleTag, y: StyleTag) => {
     if (pairs === "oneStylePair" && allowedPair && isPair(x, y, allowedPair)) return false;
     return data.opposingPairs.some((pair) => isPair(x, y, pair));
+  };
+  const between = eachPair(directions, "opposingPair", (a, b) => {
+    if (pairs !== "never" && (a.type !== "style" || b.type !== "style")) return false;
+    return styleTags(a).some((x) => styleTags(b).some((y) => opposes(x, y)));
   });
+  if (pairs !== "never") return between;
+  const within = directions.flatMap((d, index): Conflict[] => {
+    const tags = styleTags(d);
+    const held = tags.some((x, i) => tags.slice(i + 1).some((y) => opposes(x, y)));
+    return held ? [{ index, conflictsWith: index, reason: "opposingPair" }] : [];
+  });
+  return [...between, ...within];
+};
 
 const askedTwice: Rule = (directions) =>
   eachPair(directions, "askedTwice", (a, b) => {
     if (isOnly(a) || isOnly(b)) return false;
     if (isCount(a) && isCount(b)) return false;
     if (a.type === "coloursMin" || a.type === "fabricsMin") return a.type === b.type;
-    const sameAsk = askedFor(a) !== undefined && askedFor(a) === askedFor(b);
-    const sameAvoid = avoided(a) !== undefined && avoided(a) === avoided(b);
-    return sameAsk || sameAvoid;
+    return shareAny(askedFor(a), askedFor(b)) || shareAny(avoided(a), avoided(b));
   });
 
 const rules: readonly Rule[] = [

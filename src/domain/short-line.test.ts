@@ -16,23 +16,23 @@ describe("shortLine", () => {
   });
 
   it("styleAvoid is Not plus the lowercase tag", () => {
-    expect(shortLine({ type: "styleAvoid", tag: "Cute" })).toBe("Not cute");
-    expect(shortLine({ type: "styleAvoid", tag: "Risqué" })).toBe("Not risqué");
+    expect(shortLine({ type: "styleAvoid", tags: ["Cute"] })).toBe("Not cute");
+    expect(shortLine({ type: "styleAvoid", tags: ["Risqué"] })).toBe("Not risqué");
   });
 
   it("styleAvoid on Flowers reads No florals", () => {
-    expect(shortLine({ type: "styleAvoid", tag: "Flowers" })).toBe("No florals");
-    expect(shortLine({ type: "styleAvoid", tag: "Patterned" })).toBe("Not patterned");
+    expect(shortLine({ type: "styleAvoid", tags: ["Flowers"] })).toBe("No florals");
+    expect(shortLine({ type: "styleAvoid", tags: ["Patterned"] })).toBe("Not patterned");
   });
 
   it("fabric is the type as is", () => {
-    expect(shortLine({ type: "fabric", fabric: "Velvet" })).toBe("Velvet");
-    expect(shortLine({ type: "fabric", fabric: "Sequin" })).toBe("Sequin");
+    expect(shortLine({ type: "fabric", fabrics: ["Velvet"] })).toBe("Velvet");
+    expect(shortLine({ type: "fabric", fabrics: ["Sequin"] })).toBe("Sequin");
   });
 
   it("fabricAvoid is No plus the noun", () => {
-    expect(shortLine({ type: "fabricAvoid", fabric: "Sequin" })).toBe("No sequins");
-    expect(shortLine({ type: "fabricAvoid", fabric: "Velvet" })).toBe("No velvet");
+    expect(shortLine({ type: "fabricAvoid", fabrics: ["Sequin"] })).toBe("No sequins");
+    expect(shortLine({ type: "fabricAvoid", fabrics: ["Velvet"] })).toBe("No velvet");
   });
 
   it("burlapOnly is Burlap only", () => {
@@ -54,11 +54,11 @@ describe("shortLine", () => {
   });
 
   it("colour is the colour", () => {
-    expect(shortLine({ type: "colour", colour: "Red" })).toBe("Red");
+    expect(shortLine({ type: "colour", colours: ["Red"] })).toBe("Red");
   });
 
   it("colourAvoid is No plus the lowercase colour", () => {
-    expect(shortLine({ type: "colourAvoid", colour: "Black" })).toBe("No black");
+    expect(shortLine({ type: "colourAvoid", colours: ["Black"] })).toBe("No black");
   });
 
   it("colourOnly is Only plus the lowercase colours", () => {
@@ -72,15 +72,15 @@ describe("shortLine", () => {
   });
 
   it("accessory is the capitalised plural", () => {
-    expect(shortLine({ type: "accessory", accessory: "Bow" })).toBe("Bows");
-    expect(shortLine({ type: "accessory", accessory: "Brooch" })).toBe("Brooches");
-    expect(shortLine({ type: "accessory", accessory: "Lace Trim" })).toBe("Lace trim");
-    expect(shortLine({ type: "accessory", accessory: "Appliqué" })).toBe("Appliqués");
+    expect(shortLine({ type: "accessory", accessories: ["Bow"] })).toBe("Bows");
+    expect(shortLine({ type: "accessory", accessories: ["Brooch"] })).toBe("Brooches");
+    expect(shortLine({ type: "accessory", accessories: ["Lace Trim"] })).toBe("Lace trim");
+    expect(shortLine({ type: "accessory", accessories: ["Appliqué"] })).toBe("Appliqués");
   });
 
   it("accessoryAvoid is No plus the plural", () => {
-    expect(shortLine({ type: "accessoryAvoid", accessory: "Feather" })).toBe("No feathers");
-    expect(shortLine({ type: "accessoryAvoid", accessory: "Piping" })).toBe("No piping");
+    expect(shortLine({ type: "accessoryAvoid", accessories: ["Feather"] })).toBe("No feathers");
+    expect(shortLine({ type: "accessoryAvoid", accessories: ["Piping"] })).toBe("No piping");
   });
 
   it("accessoryMin is At least a count and the noun", () => {
@@ -109,16 +109,43 @@ describe("shortLine", () => {
 
   it("renders every fabric cleanly", () => {
     for (const fabric of generalFabrics) {
-      expect(cleanLine(shortLine({ type: "fabric", fabric }))).toBe(true);
-      expect(cleanLine(shortLine({ type: "fabricAvoid", fabric }))).toBe(true);
+      expect(cleanLine(shortLine({ type: "fabric", fabrics: [fabric] }))).toBe(true);
+      expect(cleanLine(shortLine({ type: "fabricAvoid", fabrics: [fabric] }))).toBe(true);
     }
   });
 
   it("renders every accessory cleanly", () => {
     for (const accessory of accessoryTypes) {
-      expect(cleanLine(shortLine({ type: "accessory", accessory }))).toBe(true);
-      expect(cleanLine(shortLine({ type: "accessoryAvoid", accessory }))).toBe(true);
+      expect(cleanLine(shortLine({ type: "accessory", accessories: [accessory] }))).toBe(true);
+      expect(cleanLine(shortLine({ type: "accessoryAvoid", accessories: [accessory] }))).toBe(true);
     }
+  });
+});
+
+describe("shortLine for directions that hold two items", () => {
+  it("joins avoided items with or", () => {
+    expect(shortLine({ type: "fabricAvoid", fabrics: ["Cotton", "Velvet"] })).toBe(
+      "No cotton or velvet",
+    );
+    expect(shortLine({ type: "colourAvoid", colours: ["Red", "Blue"] })).toBe("No red or blue");
+    expect(shortLine({ type: "accessoryAvoid", accessories: ["Bow", "Feather"] })).toBe(
+      "No bows or feathers",
+    );
+    expect(shortLine({ type: "styleAvoid", tags: ["Cute", "Playful"] })).toBe(
+      "Not cute or playful",
+    );
+    expect(shortLine({ type: "styleAvoid", tags: ["Cute", "Flowers"] })).toBe("Not cute or floral");
+  });
+
+  it("joins asked items with and", () => {
+    expect(shortLine({ type: "fabric", fabrics: ["Cotton", "Linen"] })).toBe("Cotton and linen");
+    expect(shortLine({ type: "colour", colours: ["Red", "Blue"] })).toBe("Red and blue");
+    expect(shortLine({ type: "accessory", accessories: ["Bow", "Feather"] })).toBe(
+      "Bows and feathers",
+    );
+    expect(shortLine({ type: "accessory", accessories: ["Lace Trim", "Bow"] })).toBe(
+      "Lace trim and bows",
+    );
   });
 });
 

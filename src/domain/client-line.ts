@@ -8,7 +8,7 @@ import { accessoryNouns, countWords, fabricNouns, tagWords } from "@/game/briefs
 import type { AccessoryType } from "@/game/data/v1";
 import type { Direction, DirectionType } from "./direction";
 import { deriveSeed, randomFromSeed, type Random } from "./random";
-import { joinWithOr } from "./short-line";
+import { joinWithAnd, joinWithOr } from "./short-line";
 
 type SameKeys<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false;
 
@@ -28,23 +28,37 @@ const countSlots = (count: number): Slots => ({
   countWord: countWords[count] ?? String(count),
 });
 
+const onlyItem = <T>(items: readonly T[]): T | undefined =>
+  items.length === 1 ? items[0] : undefined;
+
 function slotsFor(direction: Exclude<Direction, { type: "burlapOnly" }>): {
   specificKey?: SpecificClientLineKey;
   slots: Slots;
 } {
   switch (direction.type) {
     case "style":
-    case "styleAvoid":
       return {
-        specificKey: `${direction.type}:${direction.tag}`,
+        specificKey: `style:${direction.tag}`,
         slots: { tag: tagWords[direction.tag] ?? direction.tag.toLowerCase() },
       };
-    case "fabric":
-    case "fabricAvoid":
+    case "styleAvoid": {
+      const one = onlyItem(direction.tags);
       return {
-        specificKey: `${direction.type}:${direction.fabric}`,
-        slots: { fabric: fabricNouns[direction.fabric] },
+        specificKey: one && `styleAvoid:${one}`,
+        slots: {
+          tag: joinWithOr(direction.tags.map((tag) => tagWords[tag] ?? tag.toLowerCase())),
+        },
       };
+    }
+    case "fabric":
+    case "fabricAvoid": {
+      const one = onlyItem(direction.fabrics);
+      const join = direction.type === "fabric" ? joinWithAnd : joinWithOr;
+      return {
+        specificKey: one && `${direction.type}:${one}`,
+        slots: { fabric: join(direction.fabrics.map((fabric) => fabricNouns[fabric])) },
+      };
+    }
     case "fabricsOnly":
       return {
         slots: { list: joinWithOr(direction.fabrics.map((fabric) => fabricNouns[fabric])) },
@@ -53,21 +67,29 @@ function slotsFor(direction: Exclude<Direction, { type: "burlapOnly" }>): {
     case "coloursMin":
       return { slots: countSlots(direction.count) };
     case "colour":
-    case "colourAvoid":
+    case "colourAvoid": {
+      const one = onlyItem(direction.colours);
+      const join = direction.type === "colour" ? joinWithAnd : joinWithOr;
       return {
-        specificKey: `${direction.type}:${direction.colour}`,
-        slots: { colour: direction.colour.toLowerCase() },
+        specificKey: one && `${direction.type}:${one}`,
+        slots: { colour: join(direction.colours.map((colour) => colour.toLowerCase())) },
       };
+    }
     case "colourOnly":
       return {
         slots: { list: joinWithOr(direction.colours.map((colour) => colour.toLowerCase())) },
       };
     case "accessory":
-    case "accessoryAvoid":
+    case "accessoryAvoid": {
+      const one = onlyItem(direction.accessories);
+      const join = direction.type === "accessory" ? joinWithAnd : joinWithOr;
       return {
-        specificKey: `${direction.type}:${direction.accessory}`,
-        slots: { accessory: accessoryNouns[direction.accessory].plural },
+        specificKey: one && `${direction.type}:${one}`,
+        slots: {
+          accessory: join(direction.accessories.map((item) => accessoryNouns[item].plural)),
+        },
       };
+    }
     case "accessoryMin":
     case "accessoryExact":
       return {

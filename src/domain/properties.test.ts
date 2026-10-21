@@ -8,7 +8,7 @@ import { clientFromSeed } from "./client";
 import { clientLine, lineRandomFor } from "./client-line";
 import { findConflicts } from "./contradictions";
 import { burlapShapeFor, shapeFor, type Difficulty } from "./difficulty";
-import type { Direction } from "./direction";
+import { SAME_KIND_LIST_SIZE, type Direction, type DirectionType } from "./direction";
 import { generate } from "./generate";
 import { rebuild, reroll } from "./reroll";
 import { isValidSeed, SEED_ALPHABET, SEED_LENGTH } from "./seed";
@@ -80,11 +80,33 @@ const conflictsIn = (challenge: Challenge) =>
 const check = <T>(arbitrary: fc.Arbitrary<T>, test: (value: T) => void, numRuns = NUM_RUNS) =>
   fc.assert(fc.property(arbitrary, test), { seed: FAST_CHECK_SEED, numRuns });
 
+const LIST_TYPES: readonly DirectionType[] = [
+  "fabric",
+  "fabricAvoid",
+  "colour",
+  "colourAvoid",
+  "accessory",
+  "accessoryAvoid",
+  "styleAvoid",
+];
+
+const itemsOf = (d: Direction): readonly string[] | undefined => {
+  if (!LIST_TYPES.includes(d.type)) return undefined;
+  if ("fabrics" in d) return d.fabrics;
+  if ("colours" in d) return d.colours;
+  if ("accessories" in d) return d.accessories;
+  if ("tags" in d) return d.tags;
+  return undefined;
+};
+
 const isOpposing = (a: string, b: string) =>
   dataV1.opposingPairs.some(([x, y]) => (a === x && b === y) || (a === y && b === x));
 
+const tagsOf = (d: Direction) =>
+  d.type === "style" ? [d.tag] : d.type === "styleAvoid" ? d.tags : [];
+
 const opposingStyleTags = (directions: Direction[], types: string[]) => {
-  const tags = directions.flatMap((d) => (types.includes(d.type) && "tag" in d ? [d.tag] : []));
+  const tags = directions.flatMap((d) => (types.includes(d.type) ? tagsOf(d) : []));
   return tags.flatMap((a, i) => tags.slice(i + 1).filter((b) => isOpposing(a, b)));
 };
 
@@ -146,6 +168,37 @@ describe("generated challenges", () => {
           expect(list.length).toBeGreaterThanOrEqual(1);
           expect(list.length).toBeLessThanOrEqual(3);
           expect(new Set(list).size).toBe(list.length);
+        }
+      }
+    });
+  });
+
+  it("never deal two directions of the same list type", () => {
+    check(caseOf(anyDifficulty), (input) => {
+      const { plan } = generateCase(input);
+      for (const type of LIST_TYPES)
+        expect(plan.filter((planned) => planned === type).length).toBeLessThanOrEqual(1);
+    });
+  });
+
+  it("hold one or two distinct items in every list type", () => {
+    check(caseOf(anyDifficulty), (input) => {
+      for (const direction of placedDirections(generateCase(input))) {
+        const items = itemsOf(direction);
+        if (!items) continue;
+        expect(items.length).toBeGreaterThanOrEqual(SAME_KIND_LIST_SIZE.min);
+        expect(items.length).toBeLessThanOrEqual(SAME_KIND_LIST_SIZE.max);
+        expect(new Set(items).size).toBe(items.length);
+      }
+    });
+  });
+
+  it("keep asked-for styles to one tag each", () => {
+    check(caseOf(anyDifficulty), (input) => {
+      for (const direction of placedDirections(generateCase(input))) {
+        if (direction.type === "style") {
+          expect(direction.tag).toBeTypeOf("string");
+          expect(Object.keys(direction).sort()).toEqual(["tag", "type"]);
         }
       }
     });

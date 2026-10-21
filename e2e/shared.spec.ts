@@ -15,7 +15,7 @@ test("a shared link opens to its card and passes axe", async ({ page }) => {
     page.getByRole("heading", { level: 1, name: "Someone sent you a client" }),
   ).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Freya Lindqvist" })).toBeVisible();
-  await expect(page.getByText("No flowers", { exact: true })).toBeVisible();
+  await expect(page.getByText("No brooches", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /reroll/i })).toHaveCount(0);
   await expectNoSeriousA11yIssues(page, GOOD_LINK);
 });
@@ -25,7 +25,7 @@ test("a shared link with Burlap only and a reroll shows the rerolled direction",
 }) => {
   await page.goto("/c?v=1&s=k7m2qx9a&d=medium&m=burlap&r=1");
   await expect(page.getByText("Burlap only")).toBeVisible();
-  await expect(page.getByText("No bells")).toBeVisible();
+  await expect(page.getByText("No tassels or bows")).toBeVisible();
 });
 
 test("make your own goes to the generator", async ({ page }) => {

@@ -32,24 +32,26 @@ function onlyLists<T>(items: readonly T[]): T[][] {
   return lists;
 }
 
+function pairsAndSingles<T>(items: readonly T[]): T[][] {
+  return onlyLists(items).filter((list) => list.length < 3);
+}
+
 const everyDirection: Direction[] = [
-  ...styleTags.flatMap((tag): Direction[] => [
-    { type: "style", tag },
-    { type: "styleAvoid", tag },
-  ]),
-  ...generalFabrics.flatMap((fabric): Direction[] => [
-    { type: "fabric", fabric },
-    { type: "fabricAvoid", fabric },
+  ...styleTags.map((tag): Direction => ({ type: "style", tag })),
+  ...pairsAndSingles(styleTags).map((tags): Direction => ({ type: "styleAvoid", tags })),
+  ...pairsAndSingles(generalFabrics).flatMap((fabrics): Direction[] => [
+    { type: "fabric", fabrics },
+    { type: "fabricAvoid", fabrics },
   ]),
   ...onlyLists(generalFabrics).map((list): Direction => ({ type: "fabricsOnly", fabrics: list })),
-  ...colours.flatMap((colour): Direction[] => [
-    { type: "colour", colour },
-    { type: "colourAvoid", colour },
+  ...pairsAndSingles(colours).flatMap((list): Direction[] => [
+    { type: "colour", colours: list },
+    { type: "colourAvoid", colours: list },
   ]),
   ...onlyLists(colours).map((list): Direction => ({ type: "colourOnly", colours: list })),
-  ...accessoryTypes.flatMap((accessory): Direction[] => [
-    { type: "accessory", accessory },
-    { type: "accessoryAvoid", accessory },
+  ...pairsAndSingles(accessoryTypes).flatMap((list): Direction[] => [
+    { type: "accessory", accessories: list },
+    { type: "accessoryAvoid", accessories: list },
   ]),
   ...perPiece.flatMap((accessory) =>
     counts.flatMap((count): Direction[] => [
@@ -159,7 +161,7 @@ describe("clientLine", () => {
       const specific = clientLines[personality].specific["fabric:Velvet"] ?? [];
       const seen = new Set<string>();
       for (let n = 0; n < 200; n++) {
-        const line = lineFor({ type: "fabric", fabric: "Velvet" }, personality, n);
+        const line = lineFor({ type: "fabric", fabrics: ["Velvet"] }, personality, n);
         expect(specific.map((s) => s.charAt(0).toUpperCase() + s.slice(1))).toContain(line);
         seen.add(line ?? "");
       }
@@ -180,7 +182,7 @@ describe("clientLine", () => {
 
   it("falls back to generic lines when there is no specific line", () => {
     for (const personality of personalities) {
-      const line = lineFor({ type: "fabricAvoid", fabric: "Wool" }, personality);
+      const line = lineFor({ type: "fabricAvoid", fabrics: ["Wool"] }, personality);
       expect(line).toMatch(/wool/i);
     }
   });

@@ -144,8 +144,8 @@ const examples: Record<string, Direction[]> = {
     { type: "colourOnly", colours: ["Green"] },
   ],
   colourAvoid: [
-    { type: "colourAvoid", colour: "Red" },
-    { type: "colourAvoid", colour: "Yellow" },
+    { type: "colourAvoid", colours: ["Red"] },
+    { type: "colourAvoid", colours: ["Yellow"] },
   ],
   coloursMin: [
     { type: "coloursMin", count: 2 },
@@ -156,8 +156,8 @@ const examples: Record<string, Direction[]> = {
     { type: "fabricsOnly", fabrics: ["Wool"] },
   ],
   fabricAvoid: [
-    { type: "fabricAvoid", fabric: "Cotton" },
-    { type: "fabricAvoid", fabric: "Velvet" },
+    { type: "fabricAvoid", fabrics: ["Cotton"] },
+    { type: "fabricAvoid", fabrics: ["Velvet"] },
   ],
   fabricsMin: [
     { type: "fabricsMin", count: 2 },
@@ -237,7 +237,7 @@ const looseSamples = Array.from({ length: 3000 }, (_, i) => deriveSeed("pair-sam
 
 const sides = (placed: readonly Direction[], kind: "style" | "any") => {
   const tags = placed.flatMap((d) =>
-    d.type === "style" || (kind === "any" && d.type === "styleAvoid") ? [d.tag] : [],
+    d.type === "style" ? [d.tag] : kind === "any" && d.type === "styleAvoid" ? d.tags : [],
   );
   const found: [number, number][] = [];
   tags.forEach((a, i) =>
@@ -377,17 +377,19 @@ describe("hard pull apart", () => {
 
   const leans = (direction: Direction | null | undefined, tag: string) => {
     if (direction?.type === "fabric")
-      return (dataV1.fabrics[direction.fabric].leansTowards as readonly string[]).includes(tag);
+      return direction.fabrics.every((fabric) =>
+        (dataV1.fabrics[fabric].leansTowards as readonly string[]).includes(tag),
+      );
     if (direction?.type === "accessory")
-      return (dataV1.accessories[direction.accessory].leansTowards as readonly string[]).includes(
-        tag,
+      return direction.accessories.every((accessory) =>
+        (dataV1.accessories[accessory].leansTowards as readonly string[]).includes(tag),
       );
     return false;
   };
 
   const avoidedTag = (challenge: Challenge) => {
     const avoid = challenge.directions.find((d) => d?.type === "styleAvoid");
-    return avoid?.type === "styleAvoid" ? avoid.tag : undefined;
+    return avoid?.type === "styleAvoid" ? avoid.tags[0] : undefined;
   };
 
   const hasLeaningItem = (challenge: Challenge, slot: number, tag: string) => {
@@ -488,6 +490,7 @@ describe("shapes come from the game data", () => {
   it("deals what a changed easy shape says", () => {
     const data: GameData = {
       ...dataV1,
+      kindsNeverTogether: [],
       difficulties: {
         ...dataV1.difficulties,
         easy: {
@@ -495,6 +498,7 @@ describe("shapes come from the game data", () => {
           types: [{ type: "colour", weight: 1 }],
           limits: [],
           pairs: "never",
+          pairedItemChance: 0,
         },
       },
     };
@@ -532,7 +536,7 @@ describe.each(["hard"] as const)("reroll and rebuild on %s", (difficulty) => {
 });
 
 describe("a colour or fabric beside an only list", () => {
-  const draw = (plan: "colour" | "fabric", other: Direction, seed: string) =>
+  const draw = (plan: "colour" | "fabric", other: Direction, seed: string, chance = 0) =>
     drawDirection({
       seed,
       plan: [plan],
@@ -540,6 +544,7 @@ describe("a colour or fabric beside an only list", () => {
       rerollCount: 0,
       others: [other],
       pairs: "never",
+      pairedItemChance: chance,
       data: dataV1,
     });
 
@@ -547,12 +552,39 @@ describe("a colour or fabric beside an only list", () => {
     for (const seed of samples) {
       expect(draw("colour", { type: "colourOnly", colours: ["Red"] }, seed)).toEqual({
         type: "colour",
-        colour: "Red",
+        colours: ["Red"],
       });
       expect(draw("fabric", { type: "fabricsOnly", fabrics: ["Wool"] }, seed)).toEqual({
         type: "fabric",
-        fabric: "Wool",
+        fabrics: ["Wool"],
       });
+    }
+  });
+
+  it("draws an only list that holds every colour already asked for", () => {
+    for (const seed of samples) {
+      const only = drawDirection({
+        seed,
+        plan: ["colourOnly"],
+        slot: 0,
+        rerollCount: 0,
+        others: [{ type: "colour", colours: ["Red", "Blue"] }],
+        pairs: "never",
+        pairedItemChance: 0,
+        data: dataV1,
+      });
+      expect(only?.type === "colourOnly" && only.colours).toEqual(
+        expect.arrayContaining(["Red", "Blue"]),
+      );
+    }
+  });
+
+  it("draws both items from a list of two, and never more than the list holds", () => {
+    for (const seed of samples) {
+      const two = draw("colour", { type: "colourOnly", colours: ["Red", "Blue"] }, seed, 1);
+      expect(two?.type === "colour" && [...two.colours].sort()).toEqual(["Blue", "Red"]);
+      const one = draw("fabric", { type: "fabricsOnly", fabrics: ["Wool"] }, seed, 1);
+      expect(one).toEqual({ type: "fabric", fabrics: ["Wool"] });
     }
   });
 });
