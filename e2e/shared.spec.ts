@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { expectNoSeriousA11yIssues } from "./axe";
+import { sharedCardFor } from "./domain";
 
 const GOOD_LINK = "/c?v=1&s=k7m2qx9a&d=medium";
 const BAD_LINKS = [
@@ -14,8 +15,9 @@ test("a shared link opens to its card and passes axe", async ({ page }) => {
   await expect(
     page.getByRole("heading", { level: 1, name: "Someone sent you a client" }),
   ).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: "Freya Lindqvist" })).toBeVisible();
-  await expect(page.getByText("No flowers", { exact: true })).toBeVisible();
+  const card = sharedCardFor(GOOD_LINK);
+  await expect(page.getByRole("heading", { level: 2, name: card.client.name })).toBeVisible();
+  await expect(page.getByText(card.rows[0]?.shortLine ?? "", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /reroll/i })).toHaveCount(0);
   await expectNoSeriousA11yIssues(page, GOOD_LINK);
 });
@@ -23,9 +25,13 @@ test("a shared link opens to its card and passes axe", async ({ page }) => {
 test("a shared link with Burlap only and a reroll shows the rerolled direction", async ({
   page,
 }) => {
-  await page.goto("/c?v=1&s=k7m2qx9a&d=medium&m=burlap&r=1");
-  await expect(page.getByText("Burlap only")).toBeVisible();
-  await expect(page.getByText("No bells")).toBeVisible();
+  const link = "/c?v=1&s=k7m2qx9a&d=medium&m=burlap&r=1";
+  await page.goto(link);
+  const rows = sharedCardFor(link).rows;
+  expect(rows[0]?.isModifier).toBe(true);
+  for (const row of rows) {
+    await expect(page.getByText(row.shortLine, { exact: true })).toBeVisible();
+  }
 });
 
 test("make your own goes to the generator", async ({ page }) => {
