@@ -40,7 +40,7 @@ export const themes: readonly Theme[] = [
     worries: ["looking like a scarecrow", "getting pie on it", "shivering in the evening air"],
     templates: [
       "{name} has been baking all week and is off to {occasion}. She wants something {adjective}.",
-      "{name} will take {occasion} in something {adjective}, if she can manage it without {worry}.",
+      "{name} will turn up to {occasion} in something {adjective}, if she can manage it without {worry}.",
       "Fresh from the orchard, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },

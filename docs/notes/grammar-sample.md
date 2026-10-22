@@ -1138,7 +1138,7 @@ Daphne has hidden the biscuits for a cocoa party after lights out. She wants som
 
 Ottilie Castellano · harvest supper
 
-Ottilie will take the harvest supper in something warm and sturdy, if she can manage it without shivering in the evening air.
+Ottilie will turn up to the harvest supper in something warm and sturdy, if she can manage it without shivering in the evening air.
 
 - At least 8 brooches — At least eight brooches! More, if the drama demands it!
 - Wool and linen — Give me wool and linen, darling! Let the stage tremble!
@@ -2829,7 +2829,7 @@ Lavinia is making an entrance at a moonlit seance. She wants something mysteriou
 
 Bridget Hargreaves · harvest supper
 
-Bridget will take the harvest supper in something plain and cheerful, if she can manage it without shivering in the evening air.
+Bridget will turn up to the harvest supper in something plain and cheerful, if she can manage it without shivering in the evening air.
 
 - Burlap only
 - No bows — Keep bows off the dress.
@@ -2984,9 +2984,9 @@ Template 1
 
 Template 2
 
-- Cecily will take the harvest supper in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
-- Cecily will take the village apple fair in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
-- Cecily will take the barn dance in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
+- Cecily will turn up to the harvest supper in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
+- Cecily will turn up to the village apple fair in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
+- Cecily will turn up to the barn dance in something honest and hard-wearing, if she can manage it without looking like a scarecrow.
 
 Template 3
 
