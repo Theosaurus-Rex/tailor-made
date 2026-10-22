@@ -9,8 +9,9 @@ There is no backend and no account. Nothing is stored.
 **Unofficial and unaffiliated.** Tailor-Made is a fan project. It uses no game art, client names
 or card text.
 
-**Status:** milestone M1 in progress. Scaffold, gate and CI are in. The generator core is next.
-The design is in `docs/superpowers/specs/2026-10-16-tailor-made-design.md`.
+**Status:** the generator and every screen are built. Milestone M6 (tune and launch) is underway.
+The Netlify deploy waits for two content fixes, then the game gets playtested. The design is in
+`docs/superpowers/specs/2026-10-16-tailor-made-design.md`.
 
 ## Credits
 
@@ -75,15 +76,31 @@ CI runs the same gate on every pull request and on main.
 
 ```
 src/
-  game/        data and brief content, versioned        (no logic)
-  domain/      directions, PRNG, generate, reroll, validate (pure)
+  game/        versioned data and brief content, six client voices   (no logic)
+  domain/      directions, PRNG, generate, reroll, validate, daily   (pure)
+  domain/fixtures/  the pinned challenges that guard old share links
   links/       share link encode and decode
   features/    screens, one directory each
-  components/  shared UI, including the client card
+  components/  shared UI: the app shell, the client card, shadcn primitives
   lib/         helpers
-docs/          the design spec and the wireframes
+docs/          the design spec, the wireframes, the visual direction, notes and case study
 e2e/           Playwright tests
+scripts/       the snapshot writer
 ```
 
 Dependencies point one way: `features → links → domain → game`. Lint enforces it. It also bans
 `Math.random` and `Date` in `domain/` and `game/`.
+
+---
+
+## Design
+
+The look is Rosewood Atelier: a dark rosewood ground, cream type and one dusty rose accent. Fonts
+are self-hosted through `@fontsource`, so the app loads nothing from a font CDN. The palette, type
+and component shapes are in `docs/design/rosewood-atelier.md`.
+
+Build to the hi-fi frames in `docs/wireframes/hifi/frames/`. `docs/wireframes/README.md` indexes
+them. Desktop and mobile switch at 768px.
+
+In development only, `/debug` shows a batch of generated challenges. It is not in the production
+build.

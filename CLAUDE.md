@@ -8,7 +8,9 @@ daily challenge, the same for everyone.
 
 It is a public tool, for the Dressmaker community first. There is no backend and no storage in v1.
 
-**Status: M1 in progress.** Scaffold, gate and CI are in. Generator core is next. See
+**Status: M6 (tune and launch) is underway.** The generator, the visual direction, the app shell
+and every screen are built. The Netlify deploy waits for the content fixes, then Theo playtests.
+See
 `docs/superpowers/specs/2026-10-16-tailor-made-design.md` for the design this is built to. It is
 the source of truth for scope, directions, the generator, the link format and the milestones.
 
@@ -81,8 +83,8 @@ that prints the real number instead.
 If you think one of these needs revisiting, say so once with your reasoning and move on. Do not
 quietly introduce an alternative.
 
-**Netlify.** Hosting is Netlify static, but the deploy waits for PER-172 (43, M6, after the
-screens) to save Netlify build minutes. Do not add Netlify config before then.
+**Netlify.** Hosting is Netlify static. The deploy (43, M6) waits until the content fixes (46 and
+47) land, then Theo playtests (35). It saves build minutes. Do not add Netlify config before then.
 
 ### Versions as built
 
@@ -97,11 +99,41 @@ These are the facts as installed. Check `package.json` before quoting a version 
 | Tailwind | 4, via `@tailwindcss/vite` | CSS-first. There is no `tailwind.config.js` and should not be |
 | shadcn/ui | CLI 4, `base-nova` | Ships **Base UI** (`@base-ui/react`), not Radix |
 | ESLint / Vitest | 10 / 5 | |
+| Fonts | `@fontsource` | Instrument Serif and Instrument Sans Variable, self-hosted. No font CDN |
+| fast-check | 4 | Property tests in `src/domain/properties.test.ts` |
+| axe-core | 4.14, via `@axe-core/playwright` | Accessibility checks in `e2e/a11y.spec.ts` |
+| tsx | 4 | Runs `scripts/write-challenge-snapshots.ts` |
 
 The shadcn CLI reads path aliases from `tsconfig.json` only, but the Vite template splits
 tsconfigs. `@/` is therefore declared in **both** `tsconfig.json` and `tsconfig.app.json`. Keep
 them in sync. Do not add `baseUrl` to either. `paths` resolves relative to the tsconfig's own
 directory.
+
+---
+
+## Decisions made while building
+
+Short, long-lived choices. The spec has the reasoning. Each line carries its date.
+
+- **A reroll keeps the kind** of the direction it replaces (2026-10-17). The new one is checked
+  against every other direction, and is never the same as the old one.
+- **The link stores the reroll history**, in order, as `r=` (2026-10-17). A link replays it on the
+  seed. Never sort it.
+- **Chaos cards cannot be rerolled**, to keep the difficulty (2026-10-19). A Chaos link with a
+  history is invalid.
+- **Burlap only is a pinned modifier** (2026-10-17). It cannot be rerolled, and shows a quiet
+  "Fixed" label where a reroll button would be (2026-10-20). On Easy it also allows accessories
+  (2026-10-19).
+- **"Only" means only those colours or fabrics**, and the player need not use them all
+  (2026-10-17). An "only" list never sits beside a count of the same kind (2026-10-17) or a plain
+  ask of the same kind, such as "White" beside "Only white" (2026-10-23).
+- **Same-kind directions hold one or two items**, so a card says "No cotton or velvet" once
+  (2026-10-22).
+- **Client names are women's names**, or names anyone can have (2026-10-17). Six client voices
+  vary the lines (2026-10-19).
+- **Mobile is below 768px** (`md`). One breakpoint switches every layout (2026-10-20).
+- **The look is Rosewood Atelier**, dark only (2026-10-20). See `docs/design/rosewood-atelier.md`.
+- **`/debug` exists in development only.** The production build drops it (2026-10-18).
 
 ---
 
