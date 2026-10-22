@@ -90,6 +90,28 @@ const pickingIndex = (index: number): Random => ({
 });
 
 describe("client lines content", () => {
+  it("has no straight apostrophe or quote in any client line or short line", () => {
+    const straight = /['"]/;
+    for (const { generic, specific } of Object.values(clientLines)) {
+      const groups: (readonly string[] | undefined)[] = [
+        ...Object.values<readonly string[]>({ ...generic }),
+        ...Object.values<readonly string[] | undefined>(specific),
+      ];
+      for (const template of groups.flatMap((lines) => lines ?? [])) {
+        expect(template, template).not.toMatch(straight);
+      }
+    }
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(line, line).not.toMatch(straight);
+        }
+        expect(shortLine(direction)).not.toMatch(straight);
+      }
+    }
+  });
+
   it("never repeats the short line, for every direction, voice and line", () => {
     for (const personality of personalities) {
       for (const direction of everyDirection) {
@@ -258,7 +280,7 @@ describe("clientLine", () => {
           const first = line.search(/\{(tag|fabric|colour|accessory)\}/);
           const after = line.slice(first).replace(/^\{\w+\}/, "");
           expect(after, `${personality} ${type}: ${line}`).not.toMatch(
-            /\b(it|its|it's|it'll|that|that's|that'll|this)\b/i,
+            /\b(it|its|it’s|it’ll|that|that’s|that’ll|this)\b/i,
           );
         }
       }

@@ -1,5 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
+import { firstNames, nonHumanClients, surnames } from "@/game/briefs/v1/names";
 import { dataV1 } from "@/game/data/v1";
 import { briefFor, fillBrief } from "./brief";
 import { generate } from "./generate";
@@ -40,6 +41,28 @@ describe("every template, filled with every phrase", () => {
       }
     }
     expect(filled).toBeGreaterThan(1000);
+  });
+
+  it("has no straight apostrophe or quote in any filled brief or name", () => {
+    const straight = /['"]/;
+    const names = [
+      ...firstNames,
+      ...surnames,
+      ...nonHumanClients.flatMap(({ name, kind }) => [name, kind]),
+    ];
+    for (const name of names) expect(name, name).not.toMatch(straight);
+    for (const theme of dataV1.themes) {
+      for (const template of theme.templates) {
+        for (const occasion of theme.occasions) {
+          for (const adjective of theme.adjectives) {
+            for (const worry of theme.worries) {
+              const brief = fillBrief(template, { name: "Freya", occasion, adjective, worry });
+              expect(brief, `${theme.id}: ${brief}`).not.toMatch(straight);
+            }
+          }
+        }
+      }
+    }
   });
 
   it("uses each slot a template names", () => {

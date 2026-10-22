@@ -36,7 +36,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Sequin",
@@ -92,7 +92,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -153,7 +153,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "No brooches",
@@ -218,7 +218,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -287,7 +287,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Brooches",
@@ -360,7 +360,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -437,7 +437,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Casual",
@@ -453,7 +453,7 @@
       },
       {
         "short": "Only velvet and cotton",
-        "client": "Nothing but velvet or cotton. That's all."
+        "client": "Nothing but velvet or cotton. That’s all."
       },
       {
         "short": "Purple and white",
@@ -526,7 +526,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Burlap only"
@@ -1084,15 +1084,15 @@
     "lines": [
       {
         "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "client": "Playful. That’s the whole request."
       },
       {
         "short": "Yellow",
-        "client": "Make it yellow. Don't ask me why."
+        "client": "Make it yellow. Don’t ask me why."
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Think eveningwear. I’ll know it when I see it."
       }
     ]
   },
@@ -1143,7 +1143,7 @@
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I've had a long week."
+        "client": "Make it warm. I’ve had a long week."
       },
       {
         "short": "Tassels",
@@ -1151,7 +1151,7 @@
       },
       {
         "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "client": "Playful. That’s the whole request."
       }
     ]
   },
@@ -1201,11 +1201,11 @@
     "lines": [
       {
         "short": "Playful",
-        "client": "Playful. That's the whole request."
+        "client": "Playful. That’s the whole request."
       },
       {
         "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "client": "Add tassels. I’ll pretend I’m not excited."
       },
       {
         "short": "At least 8 bows",
@@ -1213,7 +1213,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "No lace trim. I've had my fill."
+        "client": "No lace trim. I’ve had my fill."
       }
     ]
   },
@@ -1269,7 +1269,7 @@
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I've had a long week."
+        "client": "Make it warm. I’ve had a long week."
       },
       {
         "short": "Tassels and lace trim",
@@ -1334,15 +1334,15 @@
     "lines": [
       {
         "short": "No flowers",
-        "client": "No flowers. I've had my fill."
+        "client": "No flowers. I’ve had my fill."
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I've had a long week."
+        "client": "Make it warm. I’ve had a long week."
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Think eveningwear. I’ll know it when I see it."
       },
       {
         "short": "At least 4 colours",
@@ -1350,7 +1350,7 @@
       },
       {
         "short": "Velvet",
-        "client": "Velvet. It's the only thing that's ever understood me."
+        "client": "Velvet. It’s the only thing that’s ever understood me."
       }
     ]
   },
@@ -1414,11 +1414,11 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Think eveningwear. I’ll know it when I see it."
       },
       {
         "short": "Warm",
-        "client": "Warm. That's the whole request."
+        "client": "Warm. That’s the whole request."
       },
       {
         "short": "No jewels",
@@ -1426,7 +1426,7 @@
       },
       {
         "short": "Professional",
-        "client": "Make it professional. I've had a long week."
+        "client": "Make it professional. I’ve had a long week."
       }
     ]
   },
@@ -1492,15 +1492,15 @@
       },
       {
         "short": "Elaborate",
-        "client": "Think elaborate. I'll know it when I see it."
+        "client": "Think elaborate. I’ll know it when I see it."
       },
       {
         "short": "Simple",
-        "client": "Simple. That's the whole request."
+        "client": "Simple. That’s the whole request."
       },
       {
         "short": "Playful",
-        "client": "Make it playful. I've had a long week."
+        "client": "Make it playful. I’ve had a long week."
       },
       {
         "short": "Exactly 2 bells",
@@ -1586,11 +1586,11 @@
       },
       {
         "short": "Elaborate",
-        "client": "Elaborate. That's the whole request."
+        "client": "Elaborate. That’s the whole request."
       },
       {
         "short": "Jewels",
-        "client": "Add jewels. I'll pretend I'm not excited."
+        "client": "Add jewels. I’ll pretend I’m not excited."
       },
       {
         "short": "At least 6 flowers",
@@ -1598,7 +1598,7 @@
       },
       {
         "short": "Simple",
-        "client": "Think simple. I'll know it when I see it."
+        "client": "Think simple. I’ll know it when I see it."
       }
     ]
   },
@@ -1639,11 +1639,11 @@
     "lines": [
       {
         "short": "Linen and cotton",
-        "client": "I'd like linen and cotton. Don't read into the choice."
+        "client": "I’d like linen and cotton. Don’t read into the choice."
       },
       {
         "short": "Pink",
-        "client": "Make it pink. Don't ask me why."
+        "client": "Make it pink. Don’t ask me why."
       }
     ]
   },
@@ -1690,11 +1690,11 @@
       },
       {
         "short": "Risqué",
-        "client": "Make it risqué. I've had a long week."
+        "client": "Make it risqué. I’ve had a long week."
       },
       {
         "short": "Flowers and appliqués",
-        "client": "Add flowers and appliqués. I'll pretend I'm not excited."
+        "client": "Add flowers and appliqués. I’ll pretend I’m not excited."
       }
     ]
   },
@@ -1739,11 +1739,11 @@
     "lines": [
       {
         "short": "No sequins or cotton",
-        "client": "Not sequins or cotton. Some things can't be forgiven."
+        "client": "Not sequins or cotton. Some things can’t be forgiven."
       },
       {
         "short": "Silk",
-        "client": "I'd like silk. Don't read into the choice."
+        "client": "I’d like silk. Don’t read into the choice."
       },
       {
         "short": "At least 2 fabrics",
@@ -1803,7 +1803,7 @@
       },
       {
         "short": "Flowers and appliqués",
-        "client": "Add flowers and appliqués. I'll pretend I'm not excited."
+        "client": "Add flowers and appliqués. I’ll pretend I’m not excited."
       },
       {
         "short": "At least 5 brooches",
@@ -1856,7 +1856,7 @@
     "lines": [
       {
         "short": "Flowers and bells",
-        "client": "Add flowers and bells. I'll pretend I'm not excited."
+        "client": "Add flowers and bells. I’ll pretend I’m not excited."
       },
       {
         "short": "No piping",
@@ -1864,7 +1864,7 @@
       },
       {
         "short": "Grey and black",
-        "client": "Make it grey and black. Don't ask me why."
+        "client": "Make it grey and black. Don’t ask me why."
       },
       {
         "short": "Linen",
@@ -1924,7 +1924,7 @@
       },
       {
         "short": "Lace trim",
-        "client": "Add lace trim. I'll pretend I'm not excited."
+        "client": "Add lace trim. I’ll pretend I’m not excited."
       },
       {
         "short": "At least 5 appliqués",
@@ -1936,7 +1936,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I've had a long week."
+        "client": "Make it cute. I’ve had a long week."
       }
     ]
   },
@@ -1998,7 +1998,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I've had a long week."
+        "client": "Make it cute. I’ve had a long week."
       },
       {
         "short": "Gothic",
@@ -2071,7 +2071,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I've had a long week."
+        "client": "Make it cute. I’ve had a long week."
       },
       {
         "short": "Gothic",
@@ -2079,7 +2079,7 @@
       },
       {
         "short": "Bells and trim",
-        "client": "Add bells and trim. I'll pretend I'm not excited."
+        "client": "Add bells and trim. I’ll pretend I’m not excited."
       },
       {
         "short": "Exactly 4 buttons",
@@ -4193,7 +4193,7 @@
       },
       {
         "short": "Warm",
-        "client": "I'm dreaming of warm, darling. Truly dreaming."
+        "client": "I’m dreaming of warm, darling. Truly dreaming."
       }
     ]
   },
@@ -4247,7 +4247,7 @@
       },
       {
         "short": "Brown",
-        "client": "Oh, brown, darling! I'm glowing at the thought."
+        "client": "Oh, brown, darling! I’m glowing at the thought."
       }
     ]
   },
@@ -4303,7 +4303,7 @@
       },
       {
         "short": "No brooches",
-        "client": "Oh, no brooches, darling. I'm so sorry to be fussy!"
+        "client": "Oh, no brooches, darling. I’m so sorry to be fussy!"
       },
       {
         "short": "Piping",
@@ -4364,7 +4364,7 @@
       },
       {
         "short": "Not elegant",
-        "client": "Oh, not elegant, darling. I couldn't bear the thought."
+        "client": "Oh, not elegant, darling. I couldn’t bear the thought."
       },
       {
         "short": "Linen",
@@ -4436,7 +4436,7 @@
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That's exactly what I'm after, darling."
+        "client": "Oh, cute! That’s exactly what I’m after, darling."
       }
     ]
   },
@@ -4494,7 +4494,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear! That's exactly what I'm after, darling."
+        "client": "Oh, eveningwear! That’s exactly what I’m after, darling."
       },
       {
         "short": "Brooches",
@@ -4502,7 +4502,7 @@
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "I’m dreaming of daywear, darling. Truly dreaming."
       },
       {
         "short": "Exactly 7 appliqués",
@@ -4571,7 +4571,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
+        "client": "I’m dreaming of eveningwear, darling. Truly dreaming."
       },
       {
         "short": "Brooches",
@@ -4583,7 +4583,7 @@
       },
       {
         "short": "Daywear",
-        "client": "I'm dreaming of daywear, darling. Truly dreaming."
+        "client": "I’m dreaming of daywear, darling. Truly dreaming."
       }
     ]
   },
@@ -5600,7 +5600,7 @@
       },
       {
         "short": "Daywear",
-        "client": "If it's not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something daywear?"
       }
     ]
   },
@@ -5647,7 +5647,7 @@
       },
       {
         "short": "Daywear",
-        "client": "If it's not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something daywear?"
       },
       {
         "short": "Elegant",
@@ -5697,15 +5697,15 @@
     "lines": [
       {
         "short": "No florals",
-        "client": "If possible, maybe not floral? I'm so sorry to ask."
+        "client": "If possible, maybe not floral? I’m so sorry to ask."
       },
       {
         "short": "Tassels and trim",
-        "client": "Might there be some tassels and trim? Sorry, only if there's room."
+        "client": "Might there be some tassels and trim? Sorry, only if there’s room."
       },
       {
         "short": "At least 6 brooches",
-        "client": "Maybe six brooches, or more? I'm so sorry to ask."
+        "client": "Maybe six brooches, or more? I’m so sorry to ask."
       }
     ]
   },
@@ -5757,7 +5757,7 @@
       },
       {
         "short": "Not uncomfortable or warm",
-        "client": "Sorry, could it not be uncomfortable or warm? I'm so sorry, really."
+        "client": "Sorry, could it not be uncomfortable or warm? I’m so sorry, really."
       },
       {
         "short": "Jewels and flowers",
@@ -5765,7 +5765,7 @@
       },
       {
         "short": "At least 7 brooches",
-        "client": "Sorry, could there be at least seven brooches? Only if it's not too much."
+        "client": "Sorry, could there be at least seven brooches? Only if it’s not too much."
       }
     ]
   },
@@ -5814,11 +5814,11 @@
     "lines": [
       {
         "short": "At least 3 colours",
-        "client": "Maybe three colours, or more? I'm so sorry to ask."
+        "client": "Maybe three colours, or more? I’m so sorry to ask."
       },
       {
         "short": "Daywear",
-        "client": "If it's not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something daywear?"
       },
       {
         "short": "Elegant",
@@ -5826,7 +5826,7 @@
       },
       {
         "short": "Red and black",
-        "client": "Might it be red and black? Sorry, I do hope you don't mind."
+        "client": "Might it be red and black? Sorry, I do hope you don’t mind."
       }
     ]
   },
@@ -5882,7 +5882,7 @@
       },
       {
         "short": "At least 8 bows",
-        "client": "Sorry, could there be bows? At least eight, if that's all right."
+        "client": "Sorry, could there be bows? At least eight, if that’s all right."
       },
       {
         "short": "Elegant",
@@ -5890,7 +5890,7 @@
       },
       {
         "short": "Risqué",
-        "client": "If it's not too much trouble, maybe something risqué?"
+        "client": "If it’s not too much trouble, maybe something risqué?"
       },
       {
         "short": "Buttons and piping",
@@ -5949,11 +5949,11 @@
     "lines": [
       {
         "short": "Only grey and green",
-        "client": "If it's no trouble, grey or green only? I'm so sorry to be fussy."
+        "client": "If it’s no trouble, grey or green only? I’m so sorry to be fussy."
       },
       {
         "short": "At least 8 bells",
-        "client": "Sorry, could there be at least eight bells? Only if it's not too much."
+        "client": "Sorry, could there be at least eight bells? Only if it’s not too much."
       },
       {
         "short": "Simple",
@@ -5961,11 +5961,11 @@
       },
       {
         "short": "Elaborate",
-        "client": "If it's not too much trouble, maybe something elaborate?"
+        "client": "If it’s not too much trouble, maybe something elaborate?"
       },
       {
         "short": "Exactly 4 bows",
-        "client": "Exactly four bows, if that's all right. Sorry to be particular."
+        "client": "Exactly four bows, if that’s all right. Sorry to be particular."
       }
     ]
   },
@@ -6026,15 +6026,15 @@
       },
       {
         "short": "Exactly 8 bells",
-        "client": "Sorry, could it be exactly eight bells? I'd be so grateful."
+        "client": "Sorry, could it be exactly eight bells? I’d be so grateful."
       },
       {
         "short": "Exactly 6 bows",
-        "client": "Exactly six bows, if that's all right. Sorry to be particular."
+        "client": "Exactly six bows, if that’s all right. Sorry to be particular."
       },
       {
         "short": "Simple",
-        "client": "If it's not too much trouble, maybe something simple?"
+        "client": "If it’s not too much trouble, maybe something simple?"
       },
       {
         "short": "Buttons and tassels",
@@ -6083,11 +6083,11 @@
     "lines": [
       {
         "short": "Daywear",
-        "client": "Make it daywear. I've had a long week."
+        "client": "Make it daywear. I’ve had a long week."
       },
       {
         "short": "White",
-        "client": "Make it white. Don't ask me why."
+        "client": "Make it white. Don’t ask me why."
       }
     ]
   },
@@ -6134,11 +6134,11 @@
       },
       {
         "short": "Risqué",
-        "client": "Risqué. That's the whole request."
+        "client": "Risqué. That’s the whole request."
       },
       {
         "short": "Jewels and bows",
-        "client": "Add jewels and bows. I'll pretend I'm not excited."
+        "client": "Add jewels and bows. I’ll pretend I’m not excited."
       }
     ]
   },
@@ -6184,7 +6184,7 @@
     "lines": [
       {
         "short": "Silk and linen",
-        "client": "I'd like silk and linen. Don't read into the choice."
+        "client": "I’d like silk and linen. Don’t read into the choice."
       },
       {
         "short": "No trim",
@@ -6244,7 +6244,7 @@
       },
       {
         "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "client": "Add tassels. I’ll pretend I’m not excited."
       },
       {
         "short": "No jewels or bells",
@@ -6301,15 +6301,15 @@
     "lines": [
       {
         "short": "Daywear",
-        "client": "Make it daywear. I've had a long week."
+        "client": "Make it daywear. I’ve had a long week."
       },
       {
         "short": "Wool",
-        "client": "I'd like wool. Don't read into the choice."
+        "client": "I’d like wool. Don’t read into the choice."
       },
       {
         "short": "Jewels and bows",
-        "client": "Add jewels and bows. I'll pretend I'm not excited."
+        "client": "Add jewels and bows. I’ll pretend I’m not excited."
       },
       {
         "short": "Only blue, white and yellow",
@@ -6369,15 +6369,15 @@
       },
       {
         "short": "Risqué",
-        "client": "Risqué. That's the whole request."
+        "client": "Risqué. That’s the whole request."
       },
       {
         "short": "Lace trim and bells",
-        "client": "Add lace trim and bells. I'll pretend I'm not excited."
+        "client": "Add lace trim and bells. I’ll pretend I’m not excited."
       },
       {
         "short": "Not cute",
-        "client": "Not cute. I'm not a kitten."
+        "client": "Not cute. I’m not a kitten."
       },
       {
         "short": "At least 4 buttons",
@@ -6435,15 +6435,15 @@
     "lines": [
       {
         "short": "Formal",
-        "client": "Make it formal. I've had a long week."
+        "client": "Make it formal. I’ve had a long week."
       },
       {
         "short": "Casual",
-        "client": "Casual. That's the whole request."
+        "client": "Casual. That’s the whole request."
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I've had a long week."
+        "client": "Make it cute. I’ve had a long week."
       },
       {
         "short": "Exactly 2 flowers",
@@ -6511,19 +6511,19 @@
       },
       {
         "short": "Formal",
-        "client": "Formal. That's the whole request."
+        "client": "Formal. That’s the whole request."
       },
       {
         "short": "Casual",
-        "client": "Make it casual. I've had a long week."
+        "client": "Make it casual. I’ve had a long week."
       },
       {
         "short": "Appliqués",
-        "client": "Add appliqués. I'll pretend I'm not excited."
+        "client": "Add appliqués. I’ll pretend I’m not excited."
       },
       {
         "short": "Patterned",
-        "client": "Make it patterned. I've had a long week."
+        "client": "Make it patterned. I’ve had a long week."
       },
       {
         "short": "Exactly 3 bows",
@@ -6573,7 +6573,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "No tassels",
@@ -6692,7 +6692,7 @@
     "lines": [
       {
         "short": "Elegant",
-        "client": "Make it elegant. I've had a long week."
+        "client": "Make it elegant. I’ve had a long week."
       },
       {
         "short": "Brooches and bells",
@@ -6704,7 +6704,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "No lace trim. I've had my fill."
+        "client": "No lace trim. I’ve had my fill."
       }
     ]
   },
@@ -6754,7 +6754,7 @@
       "human": true,
       "personality": "brisk"
     },
-    "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
+    "brief": "Freya has been counting the days to the mayor’s charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
         "short": "Piping",
@@ -6893,11 +6893,11 @@
       },
       {
         "short": "Elegant",
-        "client": "Elegant. That's the whole request."
+        "client": "Elegant. That’s the whole request."
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I'll know it when I see it."
+        "client": "Think eveningwear. I’ll know it when I see it."
       },
       {
         "short": "At least 4 colours",
@@ -6905,7 +6905,7 @@
       },
       {
         "short": "Velvet",
-        "client": "Velvet. It's the only thing that's ever understood me."
+        "client": "Velvet. It’s the only thing that’s ever understood me."
       }
     ]
   }

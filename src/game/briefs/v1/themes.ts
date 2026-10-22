@@ -80,7 +80,7 @@ export const themes: readonly Theme[] = [
     favouredColours: ["Red", "Purple", "Yellow"],
     favouredFabrics: ["Sequin", "Silk", "Velvet"],
     favouredAccessories: ["Jewel", "Feather"],
-    occasions: ["the grand winter gala", "opening night at the opera", "the mayor's charity ball"],
+    occasions: ["the grand winter gala", "opening night at the opera", "the mayor’s charity ball"],
     adjectives: ["dazzling", "glittering and grand", "sleek and sparkling"],
     worries: ["looking like a disco ball", "snagging a sequin on the buffet", "sitting down in it"],
     templates: [
@@ -180,7 +180,7 @@ export const themes: readonly Theme[] = [
     occasions: [
       "a book launch",
       "a reading at the corner bookshop",
-      "the literary society's spring supper",
+      "the literary society’s spring supper",
     ],
     adjectives: ["clever and a little quirky", "inky and interesting", "calm and well read"],
     worries: [
@@ -231,7 +231,7 @@ export const themes: readonly Theme[] = [
     adjectives: ["smooth and a little sultry", "cool as a muted trumpet", "swaying and stylish"],
     worries: [
       "being too stiff to sway",
-      "getting in the drummer's way",
+      "getting in the drummer’s way",
       "looking like the cloakroom",
     ],
     templates: [
@@ -264,7 +264,7 @@ export const themes: readonly Theme[] = [
     occasions: [
       "a graduation ceremony",
       "the degree day photographs",
-      "the dean's garden reception",
+      "the dean’s garden reception",
     ],
     adjectives: ["proud and polished", "smart and ready for photos", "dignified but delighted"],
     worries: ["disappearing under the gown", "tripping on the stage steps", "squinting in the sun"],
@@ -334,7 +334,7 @@ export const themes: readonly Theme[] = [
     adjectives: ["snug and cheerful", "cosy and unbothered", "warm and stubborn"],
     worries: ["getting soggy sandwiches", "squelching in the grass", "looking like a wet sheep"],
     templates: [
-      "{name} is braving {occasion}. She'd like something {adjective}, without {worry}.",
+      "{name} is braving {occasion}. She’d like something {adjective}, without {worry}.",
       "The forecast says rain, and {name} is off to {occasion} anyway. She wants something {adjective}.",
       "Flask in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
     ],
