@@ -43,4 +43,7 @@ export const styleAvoidLines: Partial<Record<StyleTag, string>> = {
 
 export const tagWords: Partial<Record<StyleTag, string>> = {
   Flowers: "floral",
+  Daywear: "for daytime",
+  Eveningwear: "for the evening",
+  Workwear: "for work",
 };

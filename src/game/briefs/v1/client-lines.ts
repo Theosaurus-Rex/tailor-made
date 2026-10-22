@@ -42,11 +42,11 @@ export const clientLines: Record<Personality, PersonalityLines> = {
   deadpan: {
     generic: {
       style: [
-        "Think {tag}. I’ll know it when I see it.",
-        "{tag}. That’s the whole request.",
-        "Make it {tag}. I’ve had a long week.",
+        "Something {tag}. I’ll know it when I see it.",
+        "Something {tag}. That’s the whole request.",
+        "Something {tag}, please. I’ve had a long week.",
       ],
-      styleAvoid: ["Anything but {tag}. I’ll be fine.", "Not {tag}. I have my reasons."],
+      styleAvoid: ["Nothing {tag}. I’ll be fine.", "Nothing {tag}. I have my reasons."],
       fabric: ["{fabric}. Good enough for me.", "I’d like {fabric}. Don’t read into the choice."],
       fabricAvoid: [
         "No {fabric}. We don’t discuss the matter.",
@@ -117,13 +117,13 @@ export const clientLines: Record<Personality, PersonalityLines> = {
   gushing: {
     generic: {
       style: [
-        "Oh, {tag}! That’s exactly what I’m after, darling.",
-        "I’m dreaming of {tag}, darling. Truly dreaming.",
-        "Oh, {tag}, please! I can’t wait to see it.",
+        "Oh, something {tag}! That’s exactly what I’m after, darling.",
+        "I’m dreaming of something {tag}, darling. Truly dreaming.",
+        "Oh, something {tag}, please! I can’t wait to see it.",
       ],
       styleAvoid: [
-        "Oh, not {tag}, darling. I couldn’t bear the thought.",
-        "Anything but {tag}, my dear. Everything else is wonderful!",
+        "Oh, nothing {tag}, darling. I couldn’t bear the thought.",
+        "Nothing {tag}, my dear. Everything else is wonderful!",
       ],
       fabric: [
         "Oh, {fabric}! What a lovely idea, darling.",
@@ -215,8 +215,12 @@ export const clientLines: Record<Personality, PersonalityLines> = {
   },
   brisk: {
     generic: {
-      style: ["{tag}. No fuss.", "Make it {tag}.", "Go {tag}. Keep it practical."],
-      styleAvoid: ["Not {tag}. Not my thing.", "No {tag}. Moving on."],
+      style: [
+        "Something {tag}. No fuss.",
+        "Something {tag}, please.",
+        "Something {tag}. Keep it practical.",
+      ],
+      styleAvoid: ["Nothing {tag}. Not my thing.", "Nothing {tag}. Moving on."],
       fabric: ["{fabric}, please. Keep things simple.", "Use {fabric}. Thanks."],
       fabricAvoid: ["No {fabric}. Too fussy.", "Skip the {fabric}. Thanks."],
       fabricsOnly: ["{list} only. Keep it tight.", "Nothing but {list}. That’s all."],
@@ -263,13 +267,13 @@ export const clientLines: Record<Personality, PersonalityLines> = {
   grand: {
     generic: {
       style: [
-        "One expects {tag}. I trust that is clear.",
-        "Make it {tag}. One has standards, after all.",
-        "I shall require {tag}. Do try to rise to it.",
+        "One expects something {tag}. I trust that is clear.",
+        "Something {tag}. One has standards, after all.",
+        "I shall require something {tag}. Do try to rise to the occasion.",
       ],
       styleAvoid: [
-        "One cannot abide {tag}. Kindly avoid such things.",
-        "Not {tag}, I think. Quite unfitting.",
+        "One cannot abide anything {tag}. Kindly avoid such things.",
+        "Nothing {tag}, I think. Quite unfitting.",
       ],
       fabric: [
         "One expects {fabric}. Nothing less will do.",
@@ -363,12 +367,12 @@ export const clientLines: Record<Personality, PersonalityLines> = {
     generic: {
       style: [
         "If it’s not too much trouble, maybe something {tag}?",
-        "Could it be {tag}, perhaps? Only if that’s all right.",
-        "I was thinking {tag}. Sorry, is that silly?",
+        "Could it be something {tag}, perhaps? Only if that’s all right.",
+        "I was thinking something {tag}. Sorry, is that silly?",
       ],
       styleAvoid: [
-        "Sorry, could it not be {tag}? I’m so sorry, really.",
-        "If possible, maybe not {tag}? I’m so sorry to ask.",
+        "Sorry, could we skip anything {tag}? I’m so sorry, really.",
+        "If possible, maybe nothing {tag}? I’m so sorry to ask.",
       ],
       fabric: [
         "Might it be {fabric}? Sorry, only if the work is easy.",
@@ -461,13 +465,13 @@ export const clientLines: Record<Personality, PersonalityLines> = {
   theatrical: {
     generic: {
       style: [
-        "{tag}! It must be {tag}! I can see the curtain rising!",
-        "I demand {tag}, darling! The stage is set!",
-        "Make it {tag}! Let the whole world gasp!",
+        "Something {tag}! It must be something {tag}! I can see the curtain rising!",
+        "I demand something {tag}, darling! The stage is set!",
+        "Something {tag}! Let the whole world gasp!",
       ],
       styleAvoid: [
-        "Not {tag}! I would simply perish on the spot!",
-        "Banish {tag}, darling! Not a hint tonight!",
+        "Nothing {tag}! I would simply perish on the spot!",
+        "Banish anything {tag}, darling! Not a hint tonight!",
       ],
       fabric: [
         "{fabric}! I must have {fabric}! Nothing else will do!",

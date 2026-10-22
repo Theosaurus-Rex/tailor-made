@@ -125,6 +125,28 @@ describe("client lines content", () => {
     }
   });
 
+  it("puts something, nothing or anything before the tag in every generic style line", () => {
+    for (const personality of personalities) {
+      const { style, styleAvoid } = clientLines[personality].generic;
+      for (const template of [...style, ...styleAvoid]) {
+        expect(template, `${personality} ${template}`).toMatch(
+          /\b(something|nothing|anything) \{tag\}/i,
+        );
+      }
+    }
+  });
+
+  it("never says daywear, eveningwear or workwear as a bare word in a client line", () => {
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(line, `${personality} ${line}`).not.toMatch(/daywear|eveningwear|workwear/i);
+        }
+      }
+    }
+  });
+
   it("gives every personality at least two generic lines for every direction type", () => {
     for (const personality of personalities) {
       const { generic } = clientLines[personality];

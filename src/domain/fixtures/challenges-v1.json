@@ -44,7 +44,7 @@
       },
       {
         "short": "Uncomfortable",
-        "client": "Uncomfortable. No fuss."
+        "client": "Something uncomfortable. No fuss."
       },
       {
         "short": "Pink and green",
@@ -99,11 +99,11 @@
       },
       {
         "short": "Uncomfortable",
-        "client": "Uncomfortable. No fuss."
+        "client": "Something uncomfortable. No fuss."
       },
       {
         "short": "Eclectic",
-        "client": "Make it eclectic."
+        "client": "Something eclectic, please."
       },
       {
         "short": "Lace trim",
@@ -161,7 +161,7 @@
       },
       {
         "short": "Uncomfortable",
-        "client": "Uncomfortable. No fuss."
+        "client": "Something uncomfortable. No fuss."
       },
       {
         "short": "At least 4 bows",
@@ -229,7 +229,7 @@
       },
       {
         "short": "Eclectic",
-        "client": "Make it eclectic."
+        "client": "Something eclectic, please."
       },
       {
         "short": "At least 7 brooches",
@@ -299,7 +299,7 @@
       },
       {
         "short": "Eclectic",
-        "client": "Make it eclectic."
+        "client": "Something eclectic, please."
       },
       {
         "short": "At least 3 fabrics",
@@ -307,7 +307,7 @@
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Something cool. Keep it practical."
       }
     ]
   },
@@ -375,7 +375,7 @@
       },
       {
         "short": "Flowers",
-        "client": "Go floral. Keep it practical."
+        "client": "Something floral. Keep it practical."
       },
       {
         "short": "At least 6 appliqués",
@@ -383,7 +383,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute."
+        "client": "Something cute, please."
       }
     ]
   },
@@ -441,7 +441,7 @@
     "lines": [
       {
         "short": "Casual",
-        "client": "Make it casual."
+        "client": "Something casual, please."
       },
       {
         "short": "Exactly 3 tassels",
@@ -449,7 +449,7 @@
       },
       {
         "short": "Not elegant or eclectic",
-        "client": "Not elegant or eclectic. Not my thing."
+        "client": "Nothing elegant or eclectic. Not my thing."
       },
       {
         "short": "Only velvet and cotton",
@@ -461,7 +461,7 @@
       },
       {
         "short": "Formal",
-        "client": "Make it formal."
+        "client": "Something formal, please."
       }
     ]
   },
@@ -533,11 +533,11 @@
       },
       {
         "short": "Casual",
-        "client": "Casual. No fuss."
+        "client": "Something casual. No fuss."
       },
       {
         "short": "Formal",
-        "client": "Make it formal."
+        "client": "Something formal, please."
       },
       {
         "short": "No tassels",
@@ -553,7 +553,7 @@
       },
       {
         "short": "Elegant",
-        "client": "Go elegant. Keep it practical."
+        "client": "Something elegant. Keep it practical."
       }
     ]
   },
@@ -598,7 +598,7 @@
       },
       {
         "short": "Risqué",
-        "client": "I shall require risqué. Do try to rise to it."
+        "client": "I shall require something risqué. Do try to rise to the occasion."
       }
     ]
   },
@@ -824,7 +824,7 @@
       },
       {
         "short": "Not playful",
-        "client": "One cannot abide playful. Kindly avoid such things."
+        "client": "One cannot abide anything playful. Kindly avoid such things."
       }
     ]
   },
@@ -892,7 +892,7 @@
       },
       {
         "short": "Not playful or professional",
-        "client": "Not playful or professional, I think. Quite unfitting."
+        "client": "Nothing playful or professional, I think. Quite unfitting."
       }
     ]
   },
@@ -950,7 +950,7 @@
       },
       {
         "short": "Cute",
-        "client": "I shall require cute. Do try to rise to it."
+        "client": "I shall require something cute. Do try to rise to the occasion."
       },
       {
         "short": "At least 3 colours",
@@ -1027,7 +1027,7 @@
       },
       {
         "short": "Not simple",
-        "client": "One cannot abide simple. Kindly avoid such things."
+        "client": "One cannot abide anything simple. Kindly avoid such things."
       },
       {
         "short": "Exactly 6 buttons",
@@ -1035,7 +1035,7 @@
       },
       {
         "short": "Cute",
-        "client": "I shall require cute. Do try to rise to it."
+        "client": "I shall require something cute. Do try to rise to the occasion."
       },
       {
         "short": "Gothic",
@@ -1084,7 +1084,7 @@
     "lines": [
       {
         "short": "Playful",
-        "client": "Playful. That’s the whole request."
+        "client": "Something playful. That’s the whole request."
       },
       {
         "short": "Yellow",
@@ -1092,7 +1092,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I’ll know it when I see it."
+        "client": "Something for the evening. I’ll know it when I see it."
       }
     ]
   },
@@ -1143,7 +1143,7 @@
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I’ve had a long week."
+        "client": "Something warm, please. I’ve had a long week."
       },
       {
         "short": "Tassels",
@@ -1151,7 +1151,7 @@
       },
       {
         "short": "Playful",
-        "client": "Playful. That’s the whole request."
+        "client": "Something playful. That’s the whole request."
       }
     ]
   },
@@ -1201,7 +1201,7 @@
     "lines": [
       {
         "short": "Playful",
-        "client": "Playful. That’s the whole request."
+        "client": "Something playful. That’s the whole request."
       },
       {
         "short": "Tassels",
@@ -1269,7 +1269,7 @@
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I’ve had a long week."
+        "client": "Something warm, please. I’ve had a long week."
       },
       {
         "short": "Tassels and lace trim",
@@ -1338,11 +1338,11 @@
       },
       {
         "short": "Warm",
-        "client": "Make it warm. I’ve had a long week."
+        "client": "Something warm, please. I’ve had a long week."
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I’ll know it when I see it."
+        "client": "Something for the evening. I’ll know it when I see it."
       },
       {
         "short": "At least 4 colours",
@@ -1414,11 +1414,11 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I’ll know it when I see it."
+        "client": "Something for the evening. I’ll know it when I see it."
       },
       {
         "short": "Warm",
-        "client": "Warm. That’s the whole request."
+        "client": "Something warm. That’s the whole request."
       },
       {
         "short": "No jewels",
@@ -1426,7 +1426,7 @@
       },
       {
         "short": "Professional",
-        "client": "Make it professional. I’ve had a long week."
+        "client": "Something professional, please. I’ve had a long week."
       }
     ]
   },
@@ -1492,15 +1492,15 @@
       },
       {
         "short": "Elaborate",
-        "client": "Think elaborate. I’ll know it when I see it."
+        "client": "Something elaborate. I’ll know it when I see it."
       },
       {
         "short": "Simple",
-        "client": "Simple. That’s the whole request."
+        "client": "Something simple. That’s the whole request."
       },
       {
         "short": "Playful",
-        "client": "Make it playful. I’ve had a long week."
+        "client": "Something playful, please. I’ve had a long week."
       },
       {
         "short": "Exactly 2 bells",
@@ -1586,7 +1586,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "Elaborate. That’s the whole request."
+        "client": "Something elaborate. That’s the whole request."
       },
       {
         "short": "Jewels",
@@ -1598,7 +1598,7 @@
       },
       {
         "short": "Simple",
-        "client": "Think simple. I’ll know it when I see it."
+        "client": "Something simple. I’ll know it when I see it."
       }
     ]
   },
@@ -1690,7 +1690,7 @@
       },
       {
         "short": "Risqué",
-        "client": "Make it risqué. I’ve had a long week."
+        "client": "Something risqué, please. I’ve had a long week."
       },
       {
         "short": "Flowers and appliqués",
@@ -1936,7 +1936,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I’ve had a long week."
+        "client": "Something cute, please. I’ve had a long week."
       }
     ]
   },
@@ -1998,7 +1998,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I’ve had a long week."
+        "client": "Something cute, please. I’ve had a long week."
       },
       {
         "short": "Gothic",
@@ -2071,7 +2071,7 @@
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I’ve had a long week."
+        "client": "Something cute, please. I’ve had a long week."
       },
       {
         "short": "Gothic",
@@ -2179,7 +2179,7 @@
       },
       {
         "short": "Casual",
-        "client": "One expects casual. I trust that is clear."
+        "client": "One expects something casual. I trust that is clear."
       }
     ]
   },
@@ -2350,11 +2350,11 @@
       },
       {
         "short": "Casual",
-        "client": "One expects casual. I trust that is clear."
+        "client": "One expects something casual. I trust that is clear."
       },
       {
         "short": "Playful",
-        "client": "I shall require playful. Do try to rise to it."
+        "client": "I shall require something playful. Do try to rise to the occasion."
       }
     ]
   },
@@ -2414,15 +2414,15 @@
       },
       {
         "short": "Not glamour or gothic",
-        "client": "One cannot abide glamour or gothic. Kindly avoid such things."
+        "client": "One cannot abide anything glamour or gothic. Kindly avoid such things."
       },
       {
         "short": "Playful",
-        "client": "I shall require playful. Do try to rise to it."
+        "client": "I shall require something playful. Do try to rise to the occasion."
       },
       {
         "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "client": "One expects something elaborate. I trust that is clear."
       }
     ]
   },
@@ -2480,7 +2480,7 @@
       },
       {
         "short": "Simple",
-        "client": "Make it simple. One has standards, after all."
+        "client": "Something simple. One has standards, after all."
       },
       {
         "short": "Only sequins",
@@ -2492,7 +2492,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "client": "One expects something elaborate. I trust that is clear."
       }
     ]
   },
@@ -2557,7 +2557,7 @@
       },
       {
         "short": "Simple",
-        "client": "One expects simple. I trust that is clear."
+        "client": "One expects something simple. I trust that is clear."
       },
       {
         "short": "Exactly 7 flowers",
@@ -2565,11 +2565,11 @@
       },
       {
         "short": "Elaborate",
-        "client": "One expects elaborate. I trust that is clear."
+        "client": "One expects something elaborate. I trust that is clear."
       },
       {
         "short": "Workwear",
-        "client": "One expects workwear. I trust that is clear."
+        "client": "One expects something for work. I trust that is clear."
       }
     ]
   },
@@ -2665,7 +2665,7 @@
       },
       {
         "short": "Elegant",
-        "client": "One expects elegant. I trust that is clear."
+        "client": "One expects something elegant. I trust that is clear."
       }
     ]
   },
@@ -2774,11 +2774,11 @@
       },
       {
         "short": "Elegant",
-        "client": "One expects elegant. I trust that is clear."
+        "client": "One expects something elegant. I trust that is clear."
       },
       {
         "short": "Not romantic",
-        "client": "Not romantic, I think. Quite unfitting."
+        "client": "Nothing romantic, I think. Quite unfitting."
       }
     ]
   },
@@ -2835,7 +2835,7 @@
       },
       {
         "short": "Elegant",
-        "client": "One expects elegant. I trust that is clear."
+        "client": "One expects something elegant. I trust that is clear."
       },
       {
         "short": "Tassels",
@@ -2898,7 +2898,7 @@
       },
       {
         "short": "Elegant",
-        "client": "One expects elegant. I trust that is clear."
+        "client": "One expects something elegant. I trust that is clear."
       },
       {
         "short": "Gothic",
@@ -2960,7 +2960,7 @@
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "Make it eveningwear. One has standards, after all."
+        "client": "Something for the evening. One has standards, after all."
       },
       {
         "short": "Only orange, grey and blue",
@@ -2976,7 +2976,7 @@
       },
       {
         "short": "Daywear",
-        "client": "Make it daywear. One has standards, after all."
+        "client": "Something for daytime. One has standards, after all."
       }
     ]
   },
@@ -3044,15 +3044,15 @@
       },
       {
         "short": "Eveningwear",
-        "client": "I shall require eveningwear. Do try to rise to it."
+        "client": "I shall require something for the evening. Do try to rise to the occasion."
       },
       {
         "short": "Not glamour",
-        "client": "One cannot abide glamour. Kindly avoid such things."
+        "client": "One cannot abide anything glamour. Kindly avoid such things."
       },
       {
         "short": "Daywear",
-        "client": "I shall require daywear. Do try to rise to it."
+        "client": "I shall require something for daytime. Do try to rise to the occasion."
       }
     ]
   },
@@ -3105,7 +3105,7 @@
       },
       {
         "short": "Cute",
-        "client": "Cute! It must be cute! I can see the curtain rising!"
+        "client": "Something cute! It must be something cute! I can see the curtain rising!"
       }
     ]
   },
@@ -3160,11 +3160,11 @@
       },
       {
         "short": "Cute",
-        "client": "Cute! It must be cute! I can see the curtain rising!"
+        "client": "Something cute! It must be something cute! I can see the curtain rising!"
       },
       {
         "short": "Romantic",
-        "client": "Romantic! It must be romantic! I can see the curtain rising!"
+        "client": "Something romantic! It must be something romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3225,7 +3225,7 @@
       },
       {
         "short": "Romantic",
-        "client": "Romantic! It must be romantic! I can see the curtain rising!"
+        "client": "Something romantic! It must be something romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3293,7 +3293,7 @@
       },
       {
         "short": "Romantic",
-        "client": "Romantic! It must be romantic! I can see the curtain rising!"
+        "client": "Something romantic! It must be something romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3363,7 +3363,7 @@
       },
       {
         "short": "Romantic",
-        "client": "Romantic! It must be romantic! I can see the curtain rising!"
+        "client": "Something romantic! It must be something romantic! I can see the curtain rising!"
       }
     ]
   },
@@ -3424,7 +3424,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "Make it elaborate! Let the whole world gasp!"
+        "client": "Something elaborate! Let the whole world gasp!"
       },
       {
         "short": "At least 8 bells",
@@ -3440,7 +3440,7 @@
       },
       {
         "short": "Romantic",
-        "client": "I demand romantic, darling! The stage is set!"
+        "client": "I demand something romantic, darling! The stage is set!"
       }
     ]
   },
@@ -3498,7 +3498,7 @@
     "lines": [
       {
         "short": "Formal",
-        "client": "Make it formal! Let the whole world gasp!"
+        "client": "Something formal! Let the whole world gasp!"
       },
       {
         "short": "Piping and bows",
@@ -3510,7 +3510,7 @@
       },
       {
         "short": "Casual",
-        "client": "Casual! It must be casual! I can see the curtain rising!"
+        "client": "Something casual! It must be something casual! I can see the curtain rising!"
       },
       {
         "short": "Only linen, velvet and sequins",
@@ -3599,11 +3599,11 @@
       },
       {
         "short": "Formal",
-        "client": "Formal! It must be formal! I can see the curtain rising!"
+        "client": "Something formal! It must be something formal! I can see the curtain rising!"
       },
       {
         "short": "Casual",
-        "client": "Casual! It must be casual! I can see the curtain rising!"
+        "client": "Something casual! It must be something casual! I can see the curtain rising!"
       },
       {
         "short": "Exactly 5 tassels",
@@ -3703,11 +3703,11 @@
       },
       {
         "short": "Glamour",
-        "client": "Glamour. No fuss."
+        "client": "Something glamour. No fuss."
       },
       {
         "short": "Daywear",
-        "client": "Go daywear. Keep it practical."
+        "client": "Something for daytime. Keep it practical."
       }
     ]
   },
@@ -3761,7 +3761,7 @@
       },
       {
         "short": "Daywear",
-        "client": "Go daywear. Keep it practical."
+        "client": "Something for daytime. Keep it practical."
       }
     ]
   },
@@ -3821,7 +3821,7 @@
       },
       {
         "short": "Formal",
-        "client": "Formal. No fuss."
+        "client": "Something formal. No fuss."
       }
     ]
   },
@@ -3878,7 +3878,7 @@
       },
       {
         "short": "Daywear",
-        "client": "Go daywear. Keep it practical."
+        "client": "Something for daytime. Keep it practical."
       },
       {
         "short": "Pink",
@@ -3938,7 +3938,7 @@
       },
       {
         "short": "Glamour",
-        "client": "Glamour. No fuss."
+        "client": "Something glamour. No fuss."
       },
       {
         "short": "At least 7 appliqués",
@@ -3946,7 +3946,7 @@
       },
       {
         "short": "Formal",
-        "client": "Formal. No fuss."
+        "client": "Something formal. No fuss."
       },
       {
         "short": "Flowers",
@@ -4004,7 +4004,7 @@
     "lines": [
       {
         "short": "Warm",
-        "client": "Make it warm."
+        "client": "Something warm, please."
       },
       {
         "short": "Only green and grey",
@@ -4012,7 +4012,7 @@
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Something cool. Keep it practical."
       },
       {
         "short": "Exactly 5 buttons",
@@ -4020,7 +4020,7 @@
       },
       {
         "short": "Elegant",
-        "client": "Elegant. No fuss."
+        "client": "Something elegant. No fuss."
       }
     ]
   },
@@ -4089,15 +4089,15 @@
       },
       {
         "short": "Warm",
-        "client": "Warm. No fuss."
+        "client": "Something warm. No fuss."
       },
       {
         "short": "Cool",
-        "client": "Cool. No fuss."
+        "client": "Something cool. No fuss."
       },
       {
         "short": "Workwear",
-        "client": "Make it workwear."
+        "client": "Something for work, please."
       }
     ]
   },
@@ -4193,7 +4193,7 @@
       },
       {
         "short": "Warm",
-        "client": "I’m dreaming of warm, darling. Truly dreaming."
+        "client": "I’m dreaming of something warm, darling. Truly dreaming."
       }
     ]
   },
@@ -4364,7 +4364,7 @@
       },
       {
         "short": "Not elegant",
-        "client": "Oh, not elegant, darling. I couldn’t bear the thought."
+        "client": "Oh, nothing elegant, darling. I couldn’t bear the thought."
       },
       {
         "short": "Linen",
@@ -4436,7 +4436,7 @@
       },
       {
         "short": "Cute",
-        "client": "Oh, cute! That’s exactly what I’m after, darling."
+        "client": "Oh, something cute! That’s exactly what I’m after, darling."
       }
     ]
   },
@@ -4494,7 +4494,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "Oh, eveningwear! That’s exactly what I’m after, darling."
+        "client": "Oh, something for the evening! That’s exactly what I’m after, darling."
       },
       {
         "short": "Brooches",
@@ -4502,7 +4502,7 @@
       },
       {
         "short": "Daywear",
-        "client": "I’m dreaming of daywear, darling. Truly dreaming."
+        "client": "I’m dreaming of something for daytime, darling. Truly dreaming."
       },
       {
         "short": "Exactly 7 appliqués",
@@ -4571,7 +4571,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "I’m dreaming of eveningwear, darling. Truly dreaming."
+        "client": "I’m dreaming of something for the evening, darling. Truly dreaming."
       },
       {
         "short": "Brooches",
@@ -4583,7 +4583,7 @@
       },
       {
         "short": "Daywear",
-        "client": "I’m dreaming of daywear, darling. Truly dreaming."
+        "client": "I’m dreaming of something for daytime, darling. Truly dreaming."
       }
     ]
   },
@@ -4624,11 +4624,11 @@
     "lines": [
       {
         "short": "Romantic",
-        "client": "Make it romantic! Let the whole world gasp!"
+        "client": "Something romantic! Let the whole world gasp!"
       },
       {
         "short": "Patterned",
-        "client": "I demand patterned, darling! The stage is set!"
+        "client": "I demand something patterned, darling! The stage is set!"
       }
     ]
   },
@@ -4675,11 +4675,11 @@
       },
       {
         "short": "Patterned",
-        "client": "I demand patterned, darling! The stage is set!"
+        "client": "I demand something patterned, darling! The stage is set!"
       },
       {
         "short": "Casual",
-        "client": "Make it casual! Let the whole world gasp!"
+        "client": "Something casual! Let the whole world gasp!"
       }
     ]
   },
@@ -4785,7 +4785,7 @@
       },
       {
         "short": "Not playful",
-        "client": "Banish playful, darling! Not a hint tonight!"
+        "client": "Banish anything playful, darling! Not a hint tonight!"
       },
       {
         "short": "Bows and flowers",
@@ -4850,7 +4850,7 @@
       },
       {
         "short": "Casual",
-        "client": "Make it casual! Let the whole world gasp!"
+        "client": "Something casual! Let the whole world gasp!"
       },
       {
         "short": "Pink",
@@ -4918,11 +4918,11 @@
       },
       {
         "short": "Risqué",
-        "client": "Risqué! It must be risqué! I can see the curtain rising!"
+        "client": "Something risqué! It must be something risqué! I can see the curtain rising!"
       },
       {
         "short": "Not daywear",
-        "client": "Not daywear! I would simply perish on the spot!"
+        "client": "Nothing for daytime! I would simply perish on the spot!"
       }
     ]
   },
@@ -4976,11 +4976,11 @@
     "lines": [
       {
         "short": "Eveningwear",
-        "client": "Make it eveningwear! Let the whole world gasp!"
+        "client": "Something for the evening! Let the whole world gasp!"
       },
       {
         "short": "Daywear",
-        "client": "I demand daywear, darling! The stage is set!"
+        "client": "I demand something for daytime, darling! The stage is set!"
       },
       {
         "short": "Only brown",
@@ -5053,7 +5053,7 @@
       },
       {
         "short": "Eveningwear",
-        "client": "I demand eveningwear, darling! The stage is set!"
+        "client": "I demand something for the evening, darling! The stage is set!"
       },
       {
         "short": "Brooches and flowers",
@@ -5069,7 +5069,7 @@
       },
       {
         "short": "Daywear",
-        "client": "Daywear! It must be daywear! I can see the curtain rising!"
+        "client": "Something for daytime! It must be something for daytime! I can see the curtain rising!"
       }
     ]
   },
@@ -5165,7 +5165,7 @@
       },
       {
         "short": "Workwear",
-        "client": "Make it workwear. One has standards, after all."
+        "client": "Something for work. One has standards, after all."
       }
     ]
   },
@@ -5408,7 +5408,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "I shall require elaborate. Do try to rise to it."
+        "client": "I shall require something elaborate. Do try to rise to the occasion."
       }
     ]
   },
@@ -5462,7 +5462,7 @@
     "lines": [
       {
         "short": "Cool",
-        "client": "One expects cool. I trust that is clear."
+        "client": "One expects something cool. I trust that is clear."
       },
       {
         "short": "Only silk, linen and cotton",
@@ -5478,7 +5478,7 @@
       },
       {
         "short": "Warm",
-        "client": "I shall require warm. Do try to rise to it."
+        "client": "I shall require something warm. Do try to rise to the occasion."
       }
     ]
   },
@@ -5539,7 +5539,7 @@
       },
       {
         "short": "Cool",
-        "client": "Make it cool. One has standards, after all."
+        "client": "Something cool. One has standards, after all."
       },
       {
         "short": "Exactly 3 tassels",
@@ -5551,7 +5551,7 @@
       },
       {
         "short": "Warm",
-        "client": "I shall require warm. Do try to rise to it."
+        "client": "I shall require something warm. Do try to rise to the occasion."
       },
       {
         "short": "Brooches and bells",
@@ -5596,11 +5596,11 @@
     "lines": [
       {
         "short": "Formal",
-        "client": "I was thinking formal. Sorry, is that silly?"
+        "client": "I was thinking something formal. Sorry, is that silly?"
       },
       {
         "short": "Daywear",
-        "client": "If it’s not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something for daytime?"
       }
     ]
   },
@@ -5647,11 +5647,11 @@
       },
       {
         "short": "Daywear",
-        "client": "If it’s not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something for daytime?"
       },
       {
         "short": "Elegant",
-        "client": "I was thinking elegant. Sorry, is that silly?"
+        "client": "I was thinking something elegant. Sorry, is that silly?"
       }
     ]
   },
@@ -5697,7 +5697,7 @@
     "lines": [
       {
         "short": "No florals",
-        "client": "If possible, maybe not floral? I’m so sorry to ask."
+        "client": "If possible, maybe nothing floral? I’m so sorry to ask."
       },
       {
         "short": "Tassels and trim",
@@ -5757,7 +5757,7 @@
       },
       {
         "short": "Not uncomfortable or warm",
-        "client": "Sorry, could it not be uncomfortable or warm? I’m so sorry, really."
+        "client": "Sorry, could we skip anything uncomfortable or warm? I’m so sorry, really."
       },
       {
         "short": "Jewels and flowers",
@@ -5818,11 +5818,11 @@
       },
       {
         "short": "Daywear",
-        "client": "If it’s not too much trouble, maybe something daywear?"
+        "client": "If it’s not too much trouble, maybe something for daytime?"
       },
       {
         "short": "Elegant",
-        "client": "I was thinking elegant. Sorry, is that silly?"
+        "client": "I was thinking something elegant. Sorry, is that silly?"
       },
       {
         "short": "Red and black",
@@ -5886,7 +5886,7 @@
       },
       {
         "short": "Elegant",
-        "client": "I was thinking elegant. Sorry, is that silly?"
+        "client": "I was thinking something elegant. Sorry, is that silly?"
       },
       {
         "short": "Risqué",
@@ -5957,7 +5957,7 @@
       },
       {
         "short": "Simple",
-        "client": "I was thinking simple. Sorry, is that silly?"
+        "client": "I was thinking something simple. Sorry, is that silly?"
       },
       {
         "short": "Elaborate",
@@ -6042,7 +6042,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "I was thinking elaborate. Sorry, is that silly?"
+        "client": "I was thinking something elaborate. Sorry, is that silly?"
       }
     ]
   },
@@ -6083,7 +6083,7 @@
     "lines": [
       {
         "short": "Daywear",
-        "client": "Make it daywear. I’ve had a long week."
+        "client": "Something for daytime, please. I’ve had a long week."
       },
       {
         "short": "White",
@@ -6134,7 +6134,7 @@
       },
       {
         "short": "Risqué",
-        "client": "Risqué. That’s the whole request."
+        "client": "Something risqué. That’s the whole request."
       },
       {
         "short": "Jewels and bows",
@@ -6301,7 +6301,7 @@
     "lines": [
       {
         "short": "Daywear",
-        "client": "Make it daywear. I’ve had a long week."
+        "client": "Something for daytime, please. I’ve had a long week."
       },
       {
         "short": "Wool",
@@ -6369,7 +6369,7 @@
       },
       {
         "short": "Risqué",
-        "client": "Risqué. That’s the whole request."
+        "client": "Something risqué. That’s the whole request."
       },
       {
         "short": "Lace trim and bells",
@@ -6435,15 +6435,15 @@
     "lines": [
       {
         "short": "Formal",
-        "client": "Make it formal. I’ve had a long week."
+        "client": "Something formal, please. I’ve had a long week."
       },
       {
         "short": "Casual",
-        "client": "Casual. That’s the whole request."
+        "client": "Something casual. That’s the whole request."
       },
       {
         "short": "Cute",
-        "client": "Make it cute. I’ve had a long week."
+        "client": "Something cute, please. I’ve had a long week."
       },
       {
         "short": "Exactly 2 flowers",
@@ -6511,11 +6511,11 @@
       },
       {
         "short": "Formal",
-        "client": "Formal. That’s the whole request."
+        "client": "Something formal. That’s the whole request."
       },
       {
         "short": "Casual",
-        "client": "Make it casual. I’ve had a long week."
+        "client": "Something casual, please. I’ve had a long week."
       },
       {
         "short": "Appliqués",
@@ -6523,7 +6523,7 @@
       },
       {
         "short": "Patterned",
-        "client": "Make it patterned. I’ve had a long week."
+        "client": "Something patterned, please. I’ve had a long week."
       },
       {
         "short": "Exactly 3 bows",
@@ -6581,7 +6581,7 @@
       },
       {
         "short": "Elaborate",
-        "client": "Make it elaborate."
+        "client": "Something elaborate, please."
       },
       {
         "short": "At least 4 bows",
@@ -6692,7 +6692,7 @@
     "lines": [
       {
         "short": "Elegant",
-        "client": "Make it elegant. I’ve had a long week."
+        "client": "Something elegant, please. I’ve had a long week."
       },
       {
         "short": "Brooches and bells",
@@ -6766,7 +6766,7 @@
       },
       {
         "short": "Eclectic",
-        "client": "Make it eclectic."
+        "client": "Something eclectic, please."
       },
       {
         "short": "At least 3 fabrics",
@@ -6774,7 +6774,7 @@
       },
       {
         "short": "Cool",
-        "client": "Go cool. Keep it practical."
+        "client": "Something cool. Keep it practical."
       }
     ]
   },
@@ -6836,7 +6836,7 @@
       },
       {
         "short": "Not playful",
-        "client": "One cannot abide playful. Kindly avoid such things."
+        "client": "One cannot abide anything playful. Kindly avoid such things."
       }
     ]
   },
@@ -6893,11 +6893,11 @@
       },
       {
         "short": "Elegant",
-        "client": "Elegant. That’s the whole request."
+        "client": "Something elegant. That’s the whole request."
       },
       {
         "short": "Eveningwear",
-        "client": "Think eveningwear. I’ll know it when I see it."
+        "client": "Something for the evening. I’ll know it when I see it."
       },
       {
         "short": "At least 4 colours",
