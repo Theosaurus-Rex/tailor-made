@@ -115,23 +115,25 @@ directory.
 
 Short, long-lived choices. The spec has the reasoning. Each line carries its date.
 
-- **A reroll keeps the kind** of the direction it replaces (2026-10-18). The new one is checked
-  against every other direction.
-- **The link stores the reroll history**, in order, as `r=` (2026-10-18). A link replays it on the
+- **A reroll keeps the kind** of the direction it replaces (2026-10-17). The new one is checked
+  against every other direction, and is never the same as the old one.
+- **The link stores the reroll history**, in order, as `r=` (2026-10-17). A link replays it on the
   seed. Never sort it.
 - **Chaos cards cannot be rerolled**, to keep the difficulty (2026-10-19). A Chaos link with a
   history is invalid.
-- **Burlap only is a pinned modifier** (2026-10-19). It shows a quiet "Fixed" label where a reroll
-  button would be, and it cannot be rerolled.
-- **"Only" means only those colours or fabrics** (2026-10-23). An "only" list never sits beside an
-  ask of the same kind, such as a colour count beside a colour list.
+- **Burlap only is a pinned modifier** (2026-10-17). It cannot be rerolled, and shows a quiet
+  "Fixed" label where a reroll button would be (2026-10-20). On Easy it also allows accessories
+  (2026-10-19).
+- **"Only" means only those colours or fabrics**, and the player need not use them all
+  (2026-10-17). An "only" list never sits beside a count of the same kind (2026-10-17) or a plain
+  ask of the same kind, such as "White" beside "Only white" (2026-10-23).
 - **Same-kind directions hold one or two items**, so a card says "No cotton or velvet" once
   (2026-10-22).
-- **Client names are women's names**, or names anyone can have (2026-10-16). Six client voices
-  vary the lines.
+- **Client names are women's names**, or names anyone can have (2026-10-17). Six client voices
+  vary the lines (2026-10-19).
 - **Mobile is below 768px** (`md`). One breakpoint switches every layout (2026-10-20).
 - **The look is Rosewood Atelier**, dark only (2026-10-20). See `docs/design/rosewood-atelier.md`.
-- **`/debug` exists in development only.** The production build drops it (2026-10-19).
+- **`/debug` exists in development only.** The production build drops it (2026-10-18).
 
 ---
 
