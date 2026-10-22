@@ -14,6 +14,7 @@ import {
   COUNT_RANGE,
   FABRICS_MIN_RANGE,
   ONLY_LIST_SIZE,
+  SAME_KIND_LIST_SIZE,
   type Direction,
   type DirectionType,
   type GeneralFabric,
@@ -40,6 +41,7 @@ export interface DrawInput {
   rerollCount: number;
   others: readonly Direction[];
   pairs: PairRule;
+  pairedItemChance: number;
   allowedPair?: readonly [StyleTag, StyleTag];
   pullApartSlot?: number | null;
   ignoreTheme?: boolean;
@@ -85,12 +87,10 @@ function drawCandidate(
   type: DirectionType,
   random: Random,
   data: GameData,
-  others: readonly Direction[],
   towards: StyleTag | undefined,
   leanings: Leanings,
+  pairedItemChance: number,
 ): Direction {
-  const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
-  const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
   const generalFabrics = data.fabricTypes.filter(
     (fabric) => !data.fabrics[fabric].modifierOnly,
   ) as GeneralFabric[];
@@ -100,28 +100,34 @@ function drawCandidate(
   const tag = (avoid: boolean) =>
     weighted(random, data.styleTags, (value) => leanings.tag(value, avoid));
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
+  const onlyList = <T>(pool: readonly T[], weight: (item: T) => number) =>
+    someOf(random, pool, onlyCount(), weight);
+  const pick = <T>(items: readonly T[], weight: (item: T) => number): T[] => {
+    const size =
+      random.fraction() < pairedItemChance ? SAME_KIND_LIST_SIZE.max : SAME_KIND_LIST_SIZE.min;
+    return someOf(random, items, Math.min(size, items.length), weight);
+  };
   switch (type) {
     case "burlapOnly":
       return { type };
     case "style":
       return { type, tag: tag(false) };
     case "styleAvoid":
-      return { type, tag: tag(true) };
+      return { type, tags: pick(data.styleTags, (value) => leanings.tag(value, true)) };
     case "fabric":
       return {
         type,
-        fabric: weighted(
-          random,
-          leaning(onlyFabrics ?? generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
+        fabrics: pick(
+          leaning(generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
           (f) => leanings.fabric(f, false),
         ),
       };
     case "fabricAvoid":
-      return { type, fabric: weighted(random, generalFabrics, (f) => leanings.fabric(f, true)) };
+      return { type, fabrics: pick(generalFabrics, (f) => leanings.fabric(f, true)) };
     case "fabricsOnly":
       return {
         type,
-        fabrics: someOf(random, generalFabrics, onlyCount(), (f) => leanings.fabric(f, false)),
+        fabrics: onlyList(generalFabrics, (f) => leanings.fabric(f, false)),
       };
     case "fabricsMin":
     case "coloursMin":
@@ -129,20 +135,19 @@ function drawCandidate(
     case "colour":
       return {
         type,
-        colour: weighted(random, onlyColours ?? data.colours, (c) => leanings.colour(c, false)),
+        colours: pick(data.colours, (c) => leanings.colour(c, false)),
       };
     case "colourAvoid":
-      return { type, colour: weighted(random, data.colours, (c) => leanings.colour(c, true)) };
+      return { type, colours: pick(data.colours, (c) => leanings.colour(c, true)) };
     case "colourOnly":
       return {
         type,
-        colours: someOf(random, data.colours, onlyCount(), (c) => leanings.colour(c, false)),
+        colours: onlyList(data.colours, (c) => leanings.colour(c, false)),
       };
     case "accessory":
       return {
         type,
-        accessory: weighted(
-          random,
+        accessories: pick(
           leaning(data.accessoryTypes, towards, (a) => data.accessories[a].leansTowards),
           (a) => leanings.accessory(a, false),
         ),
@@ -150,7 +155,7 @@ function drawCandidate(
     case "accessoryAvoid":
       return {
         type,
-        accessory: weighted(random, data.accessoryTypes, (a) => leanings.accessory(a, true)),
+        accessories: pick(data.accessoryTypes, (a) => leanings.accessory(a, true)),
       };
     case "accessoryMin":
     case "accessoryExact":
@@ -225,6 +230,13 @@ function fillOrder(
   return [...pairSlots, ...order];
 }
 
+const withSortedLists = (direction: Direction) =>
+  JSON.stringify(direction, (_key, value: unknown) =>
+    Array.isArray(value) ? [...(value as string[])].sort() : value,
+  );
+
+const sameDirection = (a: Direction, b: Direction) => withSortedLists(a) === withSortedLists(b);
+
 export function drawDirection({
   seed,
   plan,
@@ -232,6 +244,7 @@ export function drawDirection({
   rerollCount,
   others,
   pairs,
+  pairedItemChance,
   allowedPair,
   pullApartSlot,
   ignoreTheme,
@@ -244,12 +257,12 @@ export function drawDirection({
   const towards =
     slot === pullApartSlot
       ? others.find((d): d is Extract<Direction, { type: "styleAvoid" }> => d.type === "styleAvoid")
-          ?.tag
+          ?.tags[0]
       : undefined;
   const leanings = leaningsFor(data, ignoreTheme ? undefined : themeFor(seed, data));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(type, random, data, others, towards, leanings);
-    if (replacing && JSON.stringify(candidate) === JSON.stringify(replacing)) continue;
+    const candidate = drawCandidate(type, random, data, towards, leanings, pairedItemChance);
+    if (replacing && sameDirection(candidate, replacing)) continue;
     if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }
   return null;
@@ -303,6 +316,7 @@ export function generate(
       rerollCount: 0,
       others: placed,
       pairs: shape.pairs,
+      pairedItemChance: shape.pairedItemChance,
       allowedPair,
       pullApartSlot,
       ignoreTheme: shape.ignoreTheme,

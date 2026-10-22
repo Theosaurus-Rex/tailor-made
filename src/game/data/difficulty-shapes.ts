@@ -38,6 +38,7 @@ export interface DifficultyShape {
   types: readonly { type: ShapeDirectionType; weight: number }[];
   limits: readonly { types: readonly ShapeDirectionType[]; min: number; max: number }[];
   pairs: PairRule;
+  pairedItemChance: number;
   pullApartChance?: number;
   ignoreTheme?: true;
 }
@@ -92,6 +93,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
     types: easyTypes,
     limits: [],
     pairs: "never",
+    pairedItemChance: 0.2,
   },
   medium: {
     directionCount: { min: 3, max: 4 },
@@ -101,6 +103,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: atLeastCounts, min: 1, max: 1 },
     ],
     pairs: "never",
+    pairedItemChance: 0.35,
   },
   hard: {
     directionCount: { min: 4, max: 5 },
@@ -111,6 +114,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: onlyLists, min: 0, max: 1 },
     ],
     pairs: "noBothStyles",
+    pairedItemChance: 0.35,
     pullApartChance: 0.5,
   },
   chaos: {
@@ -124,6 +128,7 @@ export const difficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["style"], min: 2, max: 4 },
     ],
     pairs: "oneStylePair",
+    pairedItemChance: 0.35,
     ignoreTheme: true,
   },
 };
@@ -158,6 +163,7 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
     types: burlapEasyTypes,
     limits: [],
     pairs: "never",
+    pairedItemChance: 0.2,
   },
   medium: {
     directionCount: { min: 3, max: 4 },
@@ -167,6 +173,7 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["accessoryMin"], min: 1, max: 1 },
     ],
     pairs: "never",
+    pairedItemChance: 0.35,
   },
   hard: {
     directionCount: { min: 4, max: 5 },
@@ -176,6 +183,7 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["accessoryMin"], min: 0, max: 2 },
     ],
     pairs: "noBothStyles",
+    pairedItemChance: 0.35,
     pullApartChance: 0.5,
   },
   chaos: {
@@ -188,6 +196,7 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
       { types: ["style"], min: 2, max: 4 },
     ],
     pairs: "oneStylePair",
+    pairedItemChance: 0.35,
     ignoreTheme: true,
   },
 };
@@ -195,8 +204,17 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
 export const kindsNeverTogether = [
   ["colourOnly", "colourAvoid"],
   ["colourOnly", "coloursMin"],
+  ["colourOnly", "colour"],
   ["fabricsOnly", "fabricAvoid"],
   ["fabricsOnly", "fabricsMin"],
+  ["fabricsOnly", "fabric"],
   ["coloursMin", "coloursMin"],
   ["fabricsMin", "fabricsMin"],
+  ["fabric", "fabric"],
+  ["fabricAvoid", "fabricAvoid"],
+  ["colour", "colour"],
+  ["colourAvoid", "colourAvoid"],
+  ["accessory", "accessory"],
+  ["accessoryAvoid", "accessoryAvoid"],
+  ["styleAvoid", "styleAvoid"],
 ] as const satisfies readonly (readonly [ShapeDirectionType, ShapeDirectionType])[];

@@ -53,13 +53,13 @@ describe("direction types", () => {
 
   it("rejects Burlap in a fabric direction", () => {
     // @ts-expect-error Burlap is a modifier, not a general fabric
-    const burlap: Direction = { type: "fabric", fabric: "Burlap" };
+    const burlap: Direction = { type: "fabric", fabrics: ["Burlap"] };
     expect(burlap.type).toBe("fabric");
   });
 
   it("rejects Burlap in a fabricAvoid direction", () => {
     // @ts-expect-error Burlap is a modifier, not a general fabric
-    const burlap: Direction = { type: "fabricAvoid", fabric: "Burlap" };
+    const burlap: Direction = { type: "fabricAvoid", fabrics: ["Burlap"] };
     expect(burlap.type).toBe("fabricAvoid");
   });
 

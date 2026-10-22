@@ -47,8 +47,11 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "Make it {tag}. I've had a long week.",
       ],
       styleAvoid: ["Anything but {tag}. I'll be fine.", "Not {tag}. I have my reasons."],
-      fabric: ["{fabric}. It'll do nicely.", "I'd like {fabric}. Don't read into it."],
-      fabricAvoid: ["No {fabric}. We don't talk about it.", "Not {fabric}. It knows what it did."],
+      fabric: ["{fabric}. Good enough for me.", "I'd like {fabric}. Don't read into the choice."],
+      fabricAvoid: [
+        "No {fabric}. We don't discuss the matter.",
+        "Not {fabric}. Some things can't be forgiven.",
+      ],
       fabricsOnly: [
         "Nothing but honest fabrics, please. Only {list}.",
         "{list} only. Surprise me within that.",
@@ -57,7 +60,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "I get bored easily. At least {countWord} fabrics.",
         "At least {countWord} fabrics. I like options.",
       ],
-      colour: ["{colour}, please. It matches my mood.", "Make it {colour}. Don't ask me why."],
+      colour: ["{colour}, please. Matches my mood.", "Make it {colour}. Don't ask me why."],
       colourAvoid: ["No {colour}. We've fallen out.", "Anything but {colour}. Long story."],
       colourOnly: ["Nothing but {list}, please. I'm not fussy.", "{list} only. Only means only."],
       accessory: [
@@ -119,16 +122,16 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "Oh, {tag}, please! I can't wait to see it.",
       ],
       styleAvoid: [
-        "Oh, not {tag}, darling. I couldn't bear it.",
+        "Oh, not {tag}, darling. I couldn't bear the thought.",
         "Anything but {tag}, my dear. Everything else is wonderful!",
       ],
       fabric: [
         "Oh, {fabric}! What a lovely idea, darling.",
-        "{fabric}, please! I'm already imagining it.",
+        "{fabric}, please! I'm already imagining the result.",
       ],
       fabricAvoid: [
-        "Oh, no {fabric}, darling. It just isn't me.",
-        "I'm afraid {fabric} and I don't get along, dear.",
+        "Oh, no {fabric}, darling. Not for me, I'm afraid.",
+        "I'm afraid I can't wear {fabric}, dear.",
       ],
       fabricsOnly: [
         "Oh, nothing but {list}, please, darling!",
@@ -140,10 +143,10 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       colour: [
         "Oh, {colour}, darling! I'm glowing at the thought.",
-        "Make it {colour}, dear! It's my favourite today.",
+        "Make it {colour}, dear! I'm in love today.",
       ],
       colourAvoid: [
-        "Oh, not {colour}, darling! It isn't my day for it.",
+        "Oh, not {colour}, darling! Not today, anyway.",
         "No {colour} for me, dear. Everything else is gorgeous!",
       ],
       colourOnly: [
@@ -156,7 +159,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       accessoryAvoid: [
         "Oh, no {accessory}, darling. I'm so sorry to be fussy!",
-        "Please keep the {accessory} away, dear. It's just not me, I'm afraid.",
+        "Please keep the {accessory} away, dear. Just not for me, I'm afraid.",
       ],
       accessoryMin: [
         "Oh, {countWord} {accessory} at the very least, darling!",
@@ -214,14 +217,14 @@ export const clientLines: Record<Personality, PersonalityLines> = {
     generic: {
       style: ["{tag}. No fuss.", "Make it {tag}.", "Go {tag}. Keep it practical."],
       styleAvoid: ["Not {tag}.", "No {tag}. Moving on."],
-      fabric: ["{fabric}, please. Keep it simple.", "Use {fabric}. Thanks."],
+      fabric: ["{fabric}, please. Keep things simple.", "Use {fabric}. Thanks."],
       fabricAvoid: ["No {fabric}.", "Skip the {fabric}. Thanks."],
       fabricsOnly: ["{list} only.", "Nothing but {list}. That's all."],
       fabricsMin: ["At least {countWord} fabrics.", "{countWord} fabrics, minimum. Thanks."],
-      colour: ["{colour}. That's it.", "Make it {colour}."],
+      colour: ["{colour}. Nothing else.", "Make it {colour}."],
       colourAvoid: ["No {colour}.", "Not {colour}. Thanks."],
       colourOnly: ["{list} only.", "Nothing but {list}. Quick as you can."],
-      accessory: ["{accessory}. Keep it tidy.", "Add {accessory}."],
+      accessory: ["{accessory}. Keep things tidy.", "Add {accessory}."],
       accessoryAvoid: ["No {accessory}.", "Leave off the {accessory}."],
       accessoryMin: [
         "At least {countWord} {accessory}.",
@@ -259,15 +262,15 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "I shall require {tag}. Do try to rise to it.",
       ],
       styleAvoid: [
-        "One cannot abide {tag}. Kindly avoid it.",
-        "Not {tag}, I think. It would not be fitting.",
+        "One cannot abide {tag}. Kindly avoid such things.",
+        "Not {tag}, I think. Quite unfitting.",
       ],
       fabric: [
         "One expects {fabric}. Nothing less will do.",
-        "I shall wear {fabric}. It is only proper.",
+        "I shall wear {fabric}. Only proper.",
       ],
       fabricAvoid: [
-        "No {fabric}, please. It is not done.",
+        "No {fabric}, please. Such things are not done.",
         "One does not wear {fabric}. I am sure you understand.",
       ],
       fabricsOnly: [
@@ -279,12 +282,12 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "At least {countWord} fabrics. A single cloth is so provincial.",
       ],
       colour: [
-        "{colour}, naturally. It has always suited me.",
-        "One expects {colour}. I have worn it for years.",
+        "{colour}, naturally. A lady knows what suits her.",
+        "One expects {colour}. I have worn nothing else for years.",
       ],
       colourAvoid: [
-        "No {colour}, please. One has never trusted it.",
-        "I will not wear {colour}. Do not take it personally.",
+        "No {colour}, please. One has never trusted such a palette.",
+        "I will not wear {colour}. Do not be offended.",
       ],
       colourOnly: [
         "One will wear nothing but {list}. I am quite decided.",
@@ -292,11 +295,11 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       accessory: [
         "A touch of {accessory}, I think. Tastefully, of course.",
-        "One expects {accessory}. It is a matter of form.",
+        "One expects {accessory}. A matter of form.",
       ],
       accessoryAvoid: [
-        "No {accessory}, please. It is not for me.",
-        "One finds {accessory} rather tiresome. Leave it off.",
+        "No {accessory}, please. Not for me.",
+        "One finds {accessory} rather tiresome. Leave the lot off.",
       ],
       accessoryMin: [
         "I shall require at least {countWord} {accessory}. A lady must be noticed.",
@@ -358,16 +361,16 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "I was thinking {tag}. Sorry, is that silly?",
       ],
       styleAvoid: [
-        "Sorry, could it not be {tag}? I'm sure it's lovely, really.",
+        "Sorry, could it not be {tag}? I'm so sorry, really.",
         "If possible, maybe not {tag}? I'm so sorry to ask.",
       ],
       fabric: [
-        "Might it be {fabric}? Sorry, only if it's easy.",
-        "I was wondering about {fabric}. Is that all right?",
+        "Might it be {fabric}? Sorry, only if the work is easy.",
+        "I was wondering about {fabric}. Would you mind?",
       ],
       fabricAvoid: [
         "Sorry, but could we skip the {fabric}? I'm so sorry.",
-        "Please, no {fabric}. I'm sure it's lovely, I just can't.",
+        "Please, no {fabric}. I'm so sorry, I just can't.",
       ],
       fabricsOnly: [
         "Sorry, could it be only {list}? I'd be so grateful.",
@@ -378,20 +381,20 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "Maybe at least {countWord} fabrics? Sorry, I do like a choice.",
       ],
       colour: [
-        "Might it be {colour}? Sorry, I do hope that's all right.",
-        "I was hoping for {colour}. If that's not too much trouble.",
+        "Might it be {colour}? Sorry, I do hope you don't mind.",
+        "I was hoping for {colour}. If you don't mind.",
       ],
       colourAvoid: [
         "Sorry, could we avoid {colour}? I'm so sorry to be difficult.",
-        "Maybe not {colour}? I hope that's all right.",
+        "Maybe not {colour}? I hope you don't mind.",
       ],
       colourOnly: [
         "Sorry, could it be nothing but {list}? I'd be so grateful.",
         "If it's no trouble, {list} only? I'm so sorry to be fussy.",
       ],
       accessory: [
-        "Might there be some {accessory}? Sorry, only if it's not too much.",
-        "I was hoping for a little {accessory}. Is that all right?",
+        "Might there be some {accessory}? Sorry, only if there's room.",
+        "I was hoping for some {accessory}. Would you mind?",
       ],
       accessoryAvoid: [
         "Sorry, but could we leave off the {accessory}? I'm so sorry.",
@@ -458,15 +461,15 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       styleAvoid: [
         "Not {tag}! I would simply perish on the spot!",
-        "Banish {tag}, darling! It will not play tonight!",
+        "Banish {tag}, darling! Not a hint tonight!",
       ],
       fabric: [
         "{fabric}! I must have {fabric}! Nothing else will do!",
-        "Give me {fabric}, darling! Let it sweep the stage!",
+        "Give me {fabric}, darling! Let the stage tremble!",
       ],
       fabricAvoid: [
         "No {fabric}! The audience would riot!",
-        "Banish the {fabric}, darling! It ruins the whole scene!",
+        "Banish the {fabric}, darling! The whole scene would be ruined!",
       ],
       fabricsOnly: [
         "{list} only! Let those be my entire cast!",
@@ -478,23 +481,23 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       colour: [
         "{colour}! Pure, glorious {colour}! Light the spotlights!",
-        "Make it {colour}, darling! Let it blaze across the stage!",
+        "Make it {colour}, darling! Let the stage blaze!",
       ],
       colourAvoid: [
-        "No {colour}! It clashes with my destiny!",
-        "Not a drop of {colour}, darling! The scene cannot bear it!",
+        "No {colour}! My destiny would clash!",
+        "Not a drop of {colour}, darling! The scene cannot bear the sight!",
       ],
       colourOnly: [
         "Nothing but {list}! Not a thread of anything else!",
         "{list} only, darling! Let those be my whole palette!",
       ],
       accessory: [
-        "{accessory}! I must have {accessory}! It is the finishing flourish!",
-        "Add {accessory}, darling! Let it catch the light!",
+        "{accessory}! I must have {accessory}! The finishing flourish!",
+        "Add {accessory}, darling! Let the light find every one!",
       ],
       accessoryAvoid: [
         "No {accessory}! I will not be upstaged!",
-        "Away with the {accessory}, darling! It steals my moment!",
+        "Away with the {accessory}, darling! My moment is mine alone!",
       ],
       accessoryMin: [
         "At least {countWord} {accessory}! More, if the drama demands it!",

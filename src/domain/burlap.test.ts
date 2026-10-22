@@ -85,6 +85,7 @@ describe("burlap shapes come from the game data", () => {
   it("deals what a changed burlap easy shape says", () => {
     const data: GameData = {
       ...dataV1,
+      kindsNeverTogether: [],
       burlapDifficulties: {
         ...dataV1.burlapDifficulties,
         easy: {
@@ -92,6 +93,7 @@ describe("burlap shapes come from the game data", () => {
           types: [{ type: "accessoryAvoid", weight: 1 }],
           limits: [],
           pairs: "never",
+          pairedItemChance: 0,
         },
       },
     };
@@ -176,12 +178,12 @@ describe("pinned burlap challenges", () => {
   it("deals the same easy card for a fixed seed", () => {
     expect(dealt("easy")).toEqual(
       pinned("easy", {
-        plan: ["burlapOnly", "accessory", "style", "accessory"],
+        plan: ["burlapOnly", "style", "style", "accessory"],
         directions: [
           { type: "burlapOnly" },
-          { type: "accessory", accessory: "Tassel" },
+          { type: "style", tag: "Uncomfortable" },
           { type: "style", tag: "Eclectic" },
-          { type: "accessory", accessory: "Button" },
+          { type: "accessory", accessories: ["Lace Trim"] },
         ],
       }),
     );
@@ -193,10 +195,10 @@ describe("pinned burlap challenges", () => {
         plan: ["burlapOnly", "accessoryAvoid", "style", "accessoryMin", "accessory"],
         directions: [
           { type: "burlapOnly" },
-          { type: "accessoryAvoid", accessory: "Trim" },
+          { type: "accessoryAvoid", accessories: ["Bell"] },
           { type: "style", tag: "Eclectic" },
           { type: "accessoryMin", accessory: "Brooch", count: 7 },
-          { type: "accessory", accessory: "Appliqué" },
+          { type: "accessory", accessories: ["Jewel", "Piping"] },
         ],
       }),
     );
@@ -205,11 +207,11 @@ describe("pinned burlap challenges", () => {
   it("deals the same hard card for a fixed seed", () => {
     expect(dealt("hard")).toEqual(
       pinned("hard", {
-        plan: ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
+        plan: ["burlapOnly", "accessory", "accessoryAvoid", "style", "accessoryMin", "style"],
         directions: [
           { type: "burlapOnly" },
-          { type: "styleAvoid", tag: "Warm" },
-          { type: "accessoryAvoid", accessory: "Bell" },
+          { type: "accessory", accessories: ["Brooch"] },
+          { type: "accessoryAvoid", accessories: ["Lace Trim"] },
           { type: "style", tag: "Flowers" },
           { type: "accessoryMin", accessory: "Appliqué", count: 6 },
           { type: "style", tag: "Cute" },
@@ -235,9 +237,9 @@ describe("pinned burlap challenges", () => {
           { type: "burlapOnly" },
           { type: "style", tag: "Casual" },
           { type: "style", tag: "Formal" },
-          { type: "accessoryAvoid", accessory: "Button" },
+          { type: "accessoryAvoid", accessories: ["Tassel"] },
           { type: "accessoryExact", accessory: "Appliqué", count: 6 },
-          { type: "accessory", accessory: "Flower" },
+          { type: "accessory", accessories: ["Brooch"] },
           { type: "style", tag: "Elegant" },
         ],
       }),

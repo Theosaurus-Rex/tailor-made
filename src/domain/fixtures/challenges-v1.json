@@ -12,12 +12,12 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "winter-gala",
-      "plan": ["colour", "style", "colour"],
+      "plan": ["fabric", "style", "colour"],
       "history": [],
       "directions": [
         {
-          "type": "colour",
-          "colour": "Purple"
+          "type": "fabric",
+          "fabrics": ["Sequin"]
         },
         {
           "type": "style",
@@ -25,7 +25,7 @@
         },
         {
           "type": "colour",
-          "colour": "Brown"
+          "colours": ["Pink", "Green"]
         }
       ],
       "pairSlots": null,
@@ -39,16 +39,16 @@
     "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "Purple",
-        "client": "Purple. That's it."
+        "short": "Sequin",
+        "client": "Sequins, please. Keep things simple."
       },
       {
         "short": "Uncomfortable",
         "client": "Uncomfortable. No fuss."
       },
       {
-        "short": "Brown",
-        "client": "Brown. That's it."
+        "short": "Pink and green",
+        "client": "Pink and green. Nothing else."
       }
     ]
   },
@@ -65,15 +65,15 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "winter-gala",
-      "plan": ["burlapOnly", "accessory", "style", "accessory"],
+      "plan": ["burlapOnly", "style", "style", "accessory"],
       "history": [],
       "directions": [
         {
           "type": "burlapOnly"
         },
         {
-          "type": "accessory",
-          "accessory": "Tassel"
+          "type": "style",
+          "tag": "Uncomfortable"
         },
         {
           "type": "style",
@@ -81,7 +81,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessories": ["Lace Trim"]
         }
       ],
       "pairSlots": null,
@@ -98,16 +98,16 @@
         "short": "Burlap only"
       },
       {
-        "short": "Tassels",
-        "client": "Tassels. Keep it tidy."
+        "short": "Uncomfortable",
+        "client": "Uncomfortable. No fuss."
       },
       {
         "short": "Eclectic",
         "client": "Make it eclectic."
       },
       {
-        "short": "Buttons",
-        "client": "Add buttons."
+        "short": "Lace trim",
+        "client": "Add lace trim."
       }
     ]
   },
@@ -129,7 +129,7 @@
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Flower"
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -142,7 +142,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessories": ["Lace Trim"]
         }
       ],
       "pairSlots": null,
@@ -156,8 +156,8 @@
     "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "No flowers",
-        "client": "No flowers."
+        "short": "No brooches",
+        "client": "No brooches."
       },
       {
         "short": "Uncomfortable",
@@ -168,8 +168,8 @@
         "client": "Four bows at least. Neat."
       },
       {
-        "short": "Buttons",
-        "client": "Add buttons."
+        "short": "Lace trim",
+        "client": "Add lace trim."
       }
     ]
   },
@@ -194,7 +194,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Bell"]
         },
         {
           "type": "style",
@@ -207,7 +207,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessories": ["Jewel", "Piping"]
         }
       ],
       "pairSlots": null,
@@ -224,8 +224,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "No trim",
-        "client": "No trim."
+        "short": "No bells",
+        "client": "No bells."
       },
       {
         "short": "Eclectic",
@@ -236,8 +236,8 @@
         "client": "Seven brooches, minimum. Thanks."
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués."
+        "short": "Jewels and piping",
+        "client": "Add jewels and piping."
       }
     ]
   },
@@ -259,7 +259,7 @@
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryMin",
@@ -290,8 +290,8 @@
     "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "Feathers",
-        "client": "Feathers. Keep it tidy."
+        "short": "Brooches",
+        "client": "Brooches. Keep things tidy."
       },
       {
         "short": "At least 3 tassels",
@@ -324,19 +324,19 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "winter-gala",
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "style", "accessoryMin", "style"],
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "style", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "burlapOnly"
         },
         {
-          "type": "styleAvoid",
-          "tag": "Warm"
+          "type": "accessory",
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessories": ["Lace Trim"]
         },
         {
           "type": "style",
@@ -366,12 +366,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "Not warm",
-        "client": "Not warm."
+        "short": "Brooches",
+        "client": "Brooches. Keep things tidy."
       },
       {
-        "short": "No bells",
-        "client": "No bells."
+        "short": "No lace trim",
+        "client": "No lace trim."
       },
       {
         "short": "Flowers",
@@ -400,7 +400,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "winter-gala",
-      "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
+      "plan": ["style", "accessoryExact", "styleAvoid", "fabricsOnly", "colour", "style"],
       "history": [],
       "directions": [
         {
@@ -413,16 +413,16 @@
           "count": 3
         },
         {
-          "type": "accessory",
-          "accessory": "Bell"
+          "type": "styleAvoid",
+          "tags": ["Elegant", "Eclectic"]
         },
         {
           "type": "fabricsOnly",
           "fabrics": ["Velvet", "Cotton"]
         },
         {
-          "type": "fabric",
-          "fabric": "Velvet"
+          "type": "colour",
+          "colours": ["Purple", "White"]
         },
         {
           "type": "style",
@@ -448,16 +448,16 @@
         "client": "Exactly three tassels."
       },
       {
-        "short": "Bells",
-        "client": "Bells. Keep it tidy."
+        "short": "Not elegant or eclectic",
+        "client": "Not elegant or eclectic."
       },
       {
         "short": "Only velvet and cotton",
         "client": "Nothing but velvet or cotton. That's all."
       },
       {
-        "short": "Velvet",
-        "client": "Velvet, please. Thanks."
+        "short": "Purple and white",
+        "client": "Make it purple and white."
       },
       {
         "short": "Formal",
@@ -502,7 +502,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Button"
+          "accessories": ["Tassel"]
         },
         {
           "type": "accessoryExact",
@@ -511,7 +511,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -540,16 +540,16 @@
         "client": "Make it formal."
       },
       {
-        "short": "No buttons",
-        "client": "Leave off the buttons."
+        "short": "No tassels",
+        "client": "Leave off the tassels."
       },
       {
         "short": "Exactly 6 appliqués",
         "client": "Six appliqués. No more, no fewer."
       },
       {
-        "short": "Flowers",
-        "client": "Flowers. Keep it tidy."
+        "short": "Brooches",
+        "client": "Brooches. Keep things tidy."
       },
       {
         "short": "Elegant",
@@ -570,16 +570,16 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["colour", "fabric"],
+      "plan": ["colour", "style"],
       "history": [],
       "directions": [
         {
           "type": "colour",
-          "colour": "Blue"
+          "colours": ["Purple", "Yellow"]
         },
         {
-          "type": "fabric",
-          "fabric": "Velvet"
+          "type": "style",
+          "tag": "Risqué"
         }
       ],
       "pairSlots": null,
@@ -593,12 +593,12 @@
     "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "Blue",
-        "client": "Blue, naturally. It has always suited me."
+        "short": "Purple and yellow",
+        "client": "Purple and yellow, naturally. A lady knows what suits her."
       },
       {
-        "short": "Velvet",
-        "client": "Velvet, naturally. I could not possibly wear anything else."
+        "short": "Risqué",
+        "client": "I shall require risqué. Do try to rise to it."
       }
     ]
   },
@@ -615,7 +615,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["burlapOnly", "accessory", "accessory"],
+      "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -623,11 +623,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Trim"
+          "accessories": ["Lace Trim"]
         },
         {
-          "type": "accessory",
-          "accessory": "Flower"
+          "type": "style",
+          "tag": "Gothic"
         }
       ],
       "pairSlots": null,
@@ -644,12 +644,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "Trim",
-        "client": "One expects trim. It is a matter of form."
+        "short": "Lace trim",
+        "client": "One expects lace trim. A matter of form."
       },
       {
-        "short": "Flowers",
-        "client": "A touch of flowers, I think. Tastefully, of course."
+        "short": "Gothic",
+        "client": "Something gothic, I think. One does favour a little gloom."
       }
     ]
   },
@@ -671,11 +671,11 @@
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessories": ["Lace Trim", "Piping"]
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Purple"]
         },
         {
           "type": "coloursMin",
@@ -693,12 +693,12 @@
     "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "No bells",
-        "client": "No bells, please. It is not for me."
+        "short": "No lace trim or piping",
+        "client": "No lace trim or piping, please. Not for me."
       },
       {
-        "short": "Yellow",
-        "client": "One expects yellow. I have worn it for years."
+        "short": "Purple",
+        "client": "One expects purple. I have worn nothing else for years."
       },
       {
         "short": "At least 3 colours",
@@ -727,11 +727,11 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessories": ["Lace Trim"]
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessories": ["Flower"]
         },
         {
           "type": "accessoryMin",
@@ -753,8 +753,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "No piping",
-        "client": "One finds piping rather tiresome. Leave it off."
+        "short": "No lace trim",
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
         "short": "Flowers",
@@ -789,15 +789,15 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessories": ["Lace Trim"]
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessories": ["Flower"]
         },
         {
           "type": "styleAvoid",
-          "tag": "Glamour"
+          "tags": ["Playful"]
         }
       ],
       "pairSlots": null,
@@ -815,16 +815,16 @@
         "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
-        "short": "No piping",
-        "client": "One finds piping rather tiresome. Leave it off."
+        "short": "No lace trim",
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
         "short": "Flowers",
         "client": "A touch of flowers, I think. Tastefully, of course."
       },
       {
-        "short": "Not glamour",
-        "client": "One cannot abide glamour. Kindly avoid it."
+        "short": "Not playful",
+        "client": "One cannot abide playful. Kindly avoid such things."
       }
     ]
   },
@@ -841,7 +841,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["burlapOnly", "accessoryAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessoryMin", "accessory", "styleAvoid"],
       "history": [],
       "directions": [
         {
@@ -849,19 +849,20 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Piping"
+          "accessories": ["Lace Trim"]
         },
         {
-          "type": "accessoryAvoid",
-          "accessory": "Jewel"
-        },
-        {
-          "type": "accessory",
-          "accessory": "Flower"
+          "type": "accessoryMin",
+          "accessory": "Feather",
+          "count": 5
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessories": ["Jewel"]
+        },
+        {
+          "type": "styleAvoid",
+          "tags": ["Playful", "Professional"]
         }
       ],
       "pairSlots": null,
@@ -878,20 +879,20 @@
         "short": "Burlap only"
       },
       {
-        "short": "No piping",
-        "client": "One finds piping rather tiresome. Leave it off."
+        "short": "No lace trim",
+        "client": "One finds lace trim rather tiresome. Leave the lot off."
       },
       {
-        "short": "No jewels",
-        "client": "No jewels, please. It is not for me."
+        "short": "At least 5 feathers",
+        "client": "I shall require at least five feathers. A lady must be noticed."
       },
       {
-        "short": "Flowers",
-        "client": "A touch of flowers, I think. Tastefully, of course."
+        "short": "Jewels",
+        "client": "A touch of jewels, I think. Tastefully, of course."
       },
       {
-        "short": "Appliqués",
-        "client": "One expects appliqués. It is a matter of form."
+        "short": "Not playful or professional",
+        "client": "Not playful or professional, I think. Quite unfitting."
       }
     ]
   },
@@ -908,7 +909,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
+      "plan": ["fabricsOnly", "style", "coloursMin", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -920,9 +921,8 @@
           "tag": "Cute"
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Feather",
-          "count": 5
+          "type": "coloursMin",
+          "count": 3
         },
         {
           "type": "style",
@@ -953,8 +953,8 @@
         "client": "I shall require cute. Do try to rise to it."
       },
       {
-        "short": "At least 5 feathers",
-        "client": "I shall require at least five feathers. A lady must be noticed."
+        "short": "At least 3 colours",
+        "client": "One expects colour. At least three, I think."
       },
       {
         "short": "Gothic",
@@ -992,7 +992,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Romantic"
+          "tags": ["Simple"]
         },
         {
           "type": "accessoryExact",
@@ -1026,8 +1026,8 @@
         "client": "Six jewels, precisely. I shall be counting."
       },
       {
-        "short": "Not romantic",
-        "client": "One cannot abide romantic. Kindly avoid it."
+        "short": "Not simple",
+        "client": "One cannot abide simple. Kindly avoid such things."
       },
       {
         "short": "Exactly 6 buttons",
@@ -1065,7 +1065,7 @@
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Yellow"]
         },
         {
           "type": "style",
@@ -1121,7 +1121,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Tassel"]
         },
         {
           "type": "style",
@@ -1146,8 +1146,8 @@
         "client": "Make it warm. I've had a long week."
       },
       {
-        "short": "Bows",
-        "client": "Bows, please. Don't look so surprised."
+        "short": "Tassels",
+        "client": "Tassels. Somewhere on there."
       },
       {
         "short": "Playful",
@@ -1177,7 +1177,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessories": ["Tassel"]
         },
         {
           "type": "accessoryMin",
@@ -1186,7 +1186,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Lace Trim"]
         }
       ],
       "pairSlots": null,
@@ -1212,8 +1212,8 @@
         "client": "Bows everywhere. At the very least, eight."
       },
       {
-        "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "short": "No lace trim",
+        "client": "No lace trim. I've had my fill."
       }
     ]
   },
@@ -1242,16 +1242,16 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Tassel", "Lace Trim"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Tassel",
-          "count": 6
+          "accessory": "Flower",
+          "count": 4
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Jewel"]
         }
       ],
       "pairSlots": null,
@@ -1272,16 +1272,16 @@
         "client": "Make it warm. I've had a long week."
       },
       {
-        "short": "Bows",
-        "client": "Bows, please. Don't look so surprised."
+        "short": "Tassels and lace trim",
+        "client": "Tassels and lace trim. Somewhere on there."
       },
       {
-        "short": "At least 6 tassels",
-        "client": "Six tassels, at the very least."
+        "short": "At least 4 flowers",
+        "client": "Four flowers, at the very least."
       },
       {
-        "short": "No trim",
-        "client": "Keep the trim off me."
+        "short": "No jewels",
+        "client": "Keep the jewels off me."
       }
     ]
   },
@@ -1298,16 +1298,16 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "plan": ["accessoryAvoid", "style", "style", "coloursMin", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Lace Trim"
+          "accessories": ["Flower"]
         },
         {
-          "type": "fabric",
-          "fabric": "Wool"
+          "type": "style",
+          "tag": "Warm"
         },
         {
           "type": "style",
@@ -1319,7 +1319,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabrics": ["Velvet"]
         }
       ],
       "pairSlots": null,
@@ -1333,12 +1333,12 @@
     "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "No lace trim",
-        "client": "No lace trim. I've had my fill."
+        "short": "No flowers",
+        "client": "No flowers. I've had my fill."
       },
       {
-        "short": "Wool",
-        "client": "I'd like wool. Don't read into it."
+        "short": "Warm",
+        "client": "Make it warm. I've had a long week."
       },
       {
         "short": "Eveningwear",
@@ -1388,7 +1388,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Jewel"]
         },
         {
           "type": "style",
@@ -1421,8 +1421,8 @@
         "client": "Warm. That's the whole request."
       },
       {
-        "short": "No trim",
-        "client": "Keep the trim off me."
+        "short": "No jewels",
+        "client": "Keep the jewels off me."
       },
       {
         "short": "Professional",
@@ -1443,12 +1443,12 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["colour", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
+      "plan": ["accessory", "fabricsOnly", "style", "style", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
-          "type": "colour",
-          "colour": "Purple"
+          "type": "accessory",
+          "accessories": ["Flower"]
         },
         {
           "type": "fabricsOnly",
@@ -1459,20 +1459,20 @@
           "tag": "Elaborate"
         },
         {
-          "type": "fabric",
-          "fabric": "Lace"
-        },
-        {
           "type": "style",
           "tag": "Simple"
         },
         {
+          "type": "style",
+          "tag": "Playful"
+        },
+        {
           "type": "accessoryExact",
-          "accessory": "Flower",
-          "count": 6
+          "accessory": "Bell",
+          "count": 2
         }
       ],
-      "pairSlots": [2, 4],
+      "pairSlots": [2, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -1483,8 +1483,8 @@
     "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "Purple",
-        "client": "Purple, please. It matches my mood."
+        "short": "Flowers",
+        "client": "Flowers. Somewhere on there."
       },
       {
         "short": "Only wool, sequins and lace",
@@ -1495,16 +1495,16 @@
         "client": "Think elaborate. I'll know it when I see it."
       },
       {
-        "short": "Lace",
-        "client": "Lace. It'll do nicely."
-      },
-      {
         "short": "Simple",
-        "client": "Make it simple. I've had a long week."
+        "client": "Simple. That's the whole request."
       },
       {
-        "short": "Exactly 6 flowers",
-        "client": "Six flowers. I counted."
+        "short": "Playful",
+        "client": "Make it playful. I've had a long week."
+      },
+      {
+        "short": "Exactly 2 bells",
+        "client": "Two bells. I counted."
       }
     ]
   },
@@ -1523,7 +1523,7 @@
       "themeId": "midnight-feast",
       "plan": [
         "burlapOnly",
-        "styleAvoid",
+        "accessoryMin",
         "accessoryExact",
         "style",
         "accessory",
@@ -1536,8 +1536,9 @@
           "type": "burlapOnly"
         },
         {
-          "type": "styleAvoid",
-          "tag": "Warm"
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 8
         },
         {
           "type": "accessoryExact",
@@ -1550,7 +1551,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessories": ["Jewel"]
         },
         {
           "type": "accessoryMin",
@@ -1576,8 +1577,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "Not warm",
-        "client": "Not warm. I have my reasons."
+        "short": "At least 8 tassels",
+        "client": "At least eight tassels. Subtlety is not the goal."
       },
       {
         "short": "Exactly 8 bows",
@@ -1588,8 +1589,8 @@
         "client": "Elaborate. That's the whole request."
       },
       {
-        "short": "Tassels",
-        "client": "Add tassels. I'll pretend I'm not excited."
+        "short": "Jewels",
+        "client": "Add jewels. I'll pretend I'm not excited."
       },
       {
         "short": "At least 6 flowers",
@@ -1619,11 +1620,11 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Cotton"
+          "fabrics": ["Linen", "Cotton"]
         },
         {
           "type": "colour",
-          "colour": "Red"
+          "colours": ["Pink"]
         }
       ],
       "pairSlots": null,
@@ -1637,12 +1638,12 @@
     "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "Cotton",
-        "client": "I'd like cotton. Don't read into it."
+        "short": "Linen and cotton",
+        "client": "I'd like linen and cotton. Don't read into the choice."
       },
       {
-        "short": "Red",
-        "client": "Make it red. Don't ask me why."
+        "short": "Pink",
+        "client": "Make it pink. Don't ask me why."
       }
     ]
   },
@@ -1671,7 +1672,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bell"
+          "accessories": ["Flower", "Appliqué"]
         }
       ],
       "pairSlots": null,
@@ -1692,8 +1693,8 @@
         "client": "Make it risqué. I've had a long week."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Flowers and appliqués",
+        "client": "Add flowers and appliqués. I'll pretend I'm not excited."
       }
     ]
   },
@@ -1715,11 +1716,11 @@
       "directions": [
         {
           "type": "fabricAvoid",
-          "fabric": "Lace"
+          "fabrics": ["Sequin", "Cotton"]
         },
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabrics": ["Silk"]
         },
         {
           "type": "fabricsMin",
@@ -1737,12 +1738,12 @@
     "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "No lace",
-        "client": "Not lace. It knows what it did."
+        "short": "No sequins or cotton",
+        "client": "Not sequins or cotton. Some things can't be forgiven."
       },
       {
-        "short": "Velvet",
-        "client": "Velvet. It's the only thing that's ever understood me."
+        "short": "Silk",
+        "client": "I'd like silk. Don't read into the choice."
       },
       {
         "short": "At least 2 fabrics",
@@ -1771,11 +1772,11 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessories": ["Piping"]
         },
         {
           "type": "accessory",
-          "accessory": "Bell"
+          "accessories": ["Flower", "Appliqué"]
         },
         {
           "type": "accessoryMin",
@@ -1797,12 +1798,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "No tassels",
-        "client": "Keep the tassels off me."
+        "short": "No piping",
+        "client": "Keep the piping off me."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Flowers and appliqués",
+        "client": "Add flowers and appliqués. I'll pretend I'm not excited."
       },
       {
         "short": "At least 5 brooches",
@@ -1823,24 +1824,24 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "in-laws-dinner",
-      "plan": ["accessory", "colourAvoid", "accessory", "colour"],
+      "plan": ["accessory", "accessoryAvoid", "colour", "fabric"],
       "history": [],
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Flower", "Bell"]
         },
         {
-          "type": "colourAvoid",
-          "colour": "White"
-        },
-        {
-          "type": "accessory",
-          "accessory": "Bell"
+          "type": "accessoryAvoid",
+          "accessories": ["Piping"]
         },
         {
           "type": "colour",
-          "colour": "Grey"
+          "colours": ["Grey", "Black"]
+        },
+        {
+          "type": "fabric",
+          "fabrics": ["Linen"]
         }
       ],
       "pairSlots": null,
@@ -1854,20 +1855,20 @@
     "brief": "Nadia will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no being compared to the cousins.",
     "lines": [
       {
-        "short": "Bows",
-        "client": "A bow, or several. Restraint is overrated."
+        "short": "Flowers and bells",
+        "client": "Add flowers and bells. I'll pretend I'm not excited."
       },
       {
-        "short": "No white",
-        "client": "Anything but white. Long story."
+        "short": "No piping",
+        "client": "Keep the piping off me."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Grey and black",
+        "client": "Make it grey and black. Don't ask me why."
       },
       {
-        "short": "Grey",
-        "client": "Grey, please. It matches my mood."
+        "short": "Linen",
+        "client": "Linen. Good enough for me."
       }
     ]
   },
@@ -1884,7 +1885,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "in-laws-dinner",
-      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessory", "accessory"],
+      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessoryAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -1892,19 +1893,20 @@
         },
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Lace Trim"]
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 5
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Appliqué"
+          "accessories": ["Feather"]
         },
         {
-          "type": "accessory",
-          "accessory": "Button"
-        },
-        {
-          "type": "accessory",
-          "accessory": "Bow"
+          "type": "style",
+          "tag": "Cute"
         }
       ],
       "pairSlots": null,
@@ -1921,20 +1923,20 @@
         "short": "Burlap only"
       },
       {
-        "short": "Piping",
-        "client": "Add piping. I'll pretend I'm not excited."
+        "short": "Lace trim",
+        "client": "Add lace trim. I'll pretend I'm not excited."
       },
       {
-        "short": "No appliqués",
-        "client": "Keep the appliqués off me."
+        "short": "At least 5 appliqués",
+        "client": "At least five appliqués. Subtlety is not the goal."
       },
       {
-        "short": "Buttons",
-        "client": "Buttons. Somewhere on there."
+        "short": "No feathers",
+        "client": "No feathers, I sneeze."
       },
       {
-        "short": "Bows",
-        "client": "A bow, or several. Restraint is overrated."
+        "short": "Cute",
+        "client": "Make it cute. I've had a long week."
       }
     ]
   },
@@ -2042,7 +2044,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Bell", "Trim"]
         },
         {
           "type": "accessoryExact",
@@ -2076,8 +2078,8 @@
         "client": "Something with a little darkness to it."
       },
       {
-        "short": "Bows",
-        "client": "A bow, or several. Restraint is overrated."
+        "short": "Bells and trim",
+        "client": "Add bells and trim. I'll pretend I'm not excited."
       },
       {
         "short": "Exactly 4 buttons",
@@ -2103,7 +2105,7 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Silk"
+          "fabrics": ["Cotton"]
         },
         {
           "type": "style",
@@ -2121,8 +2123,8 @@
     "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "Silk",
-        "client": "I shall wear silk. It is only proper."
+        "short": "Cotton",
+        "client": "I shall wear cotton. Only proper."
       },
       {
         "short": "Gothic",
@@ -2151,7 +2153,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -2172,8 +2174,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "Flowers",
-        "client": "One expects flowers. It is a matter of form."
+        "short": "Brooches",
+        "client": "One expects brooches. A matter of form."
       },
       {
         "short": "Casual",
@@ -2199,7 +2201,7 @@
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Button"]
         },
         {
           "type": "accessoryMin",
@@ -2208,7 +2210,7 @@
         },
         {
           "type": "colourAvoid",
-          "colour": "Black"
+          "colours": ["Orange", "Grey"]
         }
       ],
       "pairSlots": null,
@@ -2222,16 +2224,16 @@
     "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "Piping",
-        "client": "One expects piping. It is a matter of form."
+        "short": "Buttons",
+        "client": "One expects buttons. A matter of form."
       },
       {
         "short": "At least 4 feathers",
         "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
-        "short": "No black",
-        "client": "No black, please. One is not in mourning today."
+        "short": "No orange or grey",
+        "client": "No orange or grey, please. One has never trusted such a palette."
       }
     ]
   },
@@ -2256,7 +2258,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Flower"
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryMin",
@@ -2265,7 +2267,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Lace Trim"
+          "accessories": ["Piping"]
         }
       ],
       "pairSlots": null,
@@ -2282,16 +2284,16 @@
         "short": "Burlap only"
       },
       {
-        "short": "Flowers",
-        "client": "One expects flowers. It is a matter of form."
+        "short": "Brooches",
+        "client": "One expects brooches. A matter of form."
       },
       {
         "short": "At least 5 appliqués",
         "client": "I shall require at least five appliqués. A lady must be noticed."
       },
       {
-        "short": "No lace trim",
-        "client": "One finds lace trim rather tiresome. Leave it off."
+        "short": "No piping",
+        "client": "One finds piping rather tiresome. Leave the lot off."
       }
     ]
   },
@@ -2317,7 +2319,7 @@
         },
         {
           "type": "fabricAvoid",
-          "fabric": "Silk"
+          "fabrics": ["Linen"]
         },
         {
           "type": "style",
@@ -2343,8 +2345,8 @@
         "client": "At least four colours, if you please. I do not do plain."
       },
       {
-        "short": "No silk",
-        "client": "One does not wear silk. I am sure you understand."
+        "short": "No linen",
+        "client": "One does not wear linen. I am sure you understand."
       },
       {
         "short": "Casual",
@@ -2382,7 +2384,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Cute"
+          "tags": ["Glamour", "Gothic"]
         },
         {
           "type": "style",
@@ -2411,8 +2413,8 @@
         "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
-        "short": "Not cute",
-        "client": "Nothing cute, please. One is not a kitten."
+        "short": "Not glamour or gothic",
+        "client": "One cannot abide glamour or gothic. Kindly avoid such things."
       },
       {
         "short": "Playful",
@@ -2437,12 +2439,11 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
+      "plan": ["coloursMin", "style", "fabricsOnly", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
-          "type": "accessoryMin",
-          "accessory": "Flower",
+          "type": "coloursMin",
           "count": 4
         },
         {
@@ -2455,8 +2456,8 @@
         },
         {
           "type": "accessoryExact",
-          "accessory": "Appliqué",
-          "count": 3
+          "accessory": "Flower",
+          "count": 7
         },
         {
           "type": "style",
@@ -2474,8 +2475,8 @@
     "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "At least 4 flowers",
-        "client": "At least four flowers, if you please. One does like to be seen."
+        "short": "At least 4 colours",
+        "client": "At least four colours, if you please. I do not do plain."
       },
       {
         "short": "Simple",
@@ -2486,8 +2487,8 @@
         "client": "One will accept only sequins. I trust that is not too taxing."
       },
       {
-        "short": "Exactly 3 appliqués",
-        "client": "Three appliqués, precisely. I shall be counting."
+        "short": "Exactly 7 flowers",
+        "client": "Seven flowers, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
@@ -2590,7 +2591,7 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Silk"
+          "fabrics": ["Silk"]
         },
         {
           "type": "style",
@@ -2609,7 +2610,7 @@
     "lines": [
       {
         "short": "Silk",
-        "client": "I shall wear silk. It is only proper."
+        "client": "I shall wear silk. Only proper."
       },
       {
         "short": "Gothic",
@@ -2638,7 +2639,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Jewel"]
         },
         {
           "type": "style",
@@ -2659,8 +2660,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "Piping",
-        "client": "One expects piping. It is a matter of form."
+        "short": "Jewels",
+        "client": "One expects jewels. A matter of form."
       },
       {
         "short": "Elegant",
@@ -2694,7 +2695,7 @@
         },
         {
           "type": "fabricAvoid",
-          "fabric": "Lace"
+          "fabrics": ["Wool", "Velvet"]
         }
       ],
       "pairSlots": null,
@@ -2716,8 +2717,8 @@
         "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
-        "short": "No lace",
-        "client": "No lace, please. It is not done."
+        "short": "No wool or velvet",
+        "client": "No wool or velvet, please. Such things are not done."
       }
     ]
   },
@@ -2751,7 +2752,7 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Patterned"
+          "tags": ["Romantic"]
         }
       ],
       "pairSlots": null,
@@ -2776,8 +2777,8 @@
         "client": "One expects elegant. I trust that is clear."
       },
       {
-        "short": "Not patterned",
-        "client": "Not patterned, I think. It would not be fitting."
+        "short": "Not romantic",
+        "client": "Not romantic, I think. Quite unfitting."
       }
     ]
   },
@@ -2794,24 +2795,24 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "stylish-wake",
-      "plan": ["fabric", "style", "fabric", "accessory"],
+      "plan": ["fabric", "style", "style", "accessory"],
       "history": [],
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Silk"
+          "fabrics": ["Silk"]
         },
         {
           "type": "style",
           "tag": "Gothic"
         },
         {
-          "type": "fabric",
-          "fabric": "Lace"
+          "type": "style",
+          "tag": "Elegant"
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessories": ["Tassel"]
         }
       ],
       "pairSlots": null,
@@ -2826,19 +2827,19 @@
     "lines": [
       {
         "short": "Silk",
-        "client": "I shall wear silk. It is only proper."
+        "client": "I shall wear silk. Only proper."
       },
       {
         "short": "Gothic",
         "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
-        "short": "Lace",
-        "client": "One expects lace. Nothing less will do."
+        "short": "Elegant",
+        "client": "One expects elegant. I trust that is clear."
       },
       {
-        "short": "Jewels",
-        "client": "One expects jewels. It is a matter of form."
+        "short": "Tassels",
+        "client": "One expects tassels. A matter of form."
       }
     ]
   },
@@ -2855,7 +2856,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "stylish-wake",
-      "plan": ["burlapOnly", "accessory", "style", "style", "accessory"],
+      "plan": ["burlapOnly", "accessory", "style", "style", "accessoryAvoid"],
       "history": [],
       "directions": [
         {
@@ -2863,7 +2864,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Jewel"]
         },
         {
           "type": "style",
@@ -2874,8 +2875,8 @@
           "tag": "Gothic"
         },
         {
-          "type": "accessory",
-          "accessory": "Feather"
+          "type": "accessoryAvoid",
+          "accessories": ["Button"]
         }
       ],
       "pairSlots": null,
@@ -2892,8 +2893,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "Piping",
-        "client": "One expects piping. It is a matter of form."
+        "short": "Jewels",
+        "client": "One expects jewels. A matter of form."
       },
       {
         "short": "Elegant",
@@ -2904,8 +2905,8 @@
         "client": "Gothic. My family has always dressed for a good haunting."
       },
       {
-        "short": "Feathers",
-        "client": "A touch of feathers, I think. Tastefully, of course."
+        "short": "No buttons",
+        "client": "No buttons, please. Not for me."
       }
     ]
   },
@@ -2940,7 +2941,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Sequin"
+          "fabrics": ["Velvet"]
         },
         {
           "type": "style",
@@ -2970,8 +2971,8 @@
         "client": "Exactly seven bows, no more, no fewer. One is particular."
       },
       {
-        "short": "Sequin",
-        "client": "I shall wear sequins. It is only proper."
+        "short": "Velvet",
+        "client": "Velvet, naturally. I could not possibly wear anything else."
       },
       {
         "short": "Daywear",
@@ -2992,7 +2993,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "stylish-wake",
-      "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "accessory", "style"],
+      "plan": ["burlapOnly", "accessory", "accessoryExact", "style", "styleAvoid", "style"],
       "history": [],
       "directions": [
         {
@@ -3000,7 +3001,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Lace Trim"
+          "accessories": ["Feather"]
         },
         {
           "type": "accessoryExact",
@@ -3012,8 +3013,8 @@
           "tag": "Eveningwear"
         },
         {
-          "type": "accessory",
-          "accessory": "Button"
+          "type": "styleAvoid",
+          "tags": ["Glamour"]
         },
         {
           "type": "style",
@@ -3034,8 +3035,8 @@
         "short": "Burlap only"
       },
       {
-        "short": "Lace trim",
-        "client": "One expects lace trim. It is a matter of form."
+        "short": "Feathers",
+        "client": "One expects feathers. A matter of form."
       },
       {
         "short": "Exactly 7 bows",
@@ -3046,8 +3047,8 @@
         "client": "I shall require eveningwear. Do try to rise to it."
       },
       {
-        "short": "Buttons",
-        "client": "A touch of buttons, I think. Tastefully, of course."
+        "short": "Not glamour",
+        "client": "One cannot abide glamour. Kindly avoid such things."
       },
       {
         "short": "Daywear",
@@ -3073,11 +3074,11 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Silk"
+          "fabrics": ["Lace"]
         },
         {
           "type": "colour",
-          "colour": "Blue"
+          "colours": ["White"]
         },
         {
           "type": "style",
@@ -3095,12 +3096,12 @@
     "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "Silk",
-        "client": "Give me silk, darling! Let it sweep the stage!"
+        "short": "Lace",
+        "client": "Give me lace, darling! Let the stage tremble!"
       },
       {
-        "short": "Blue",
-        "client": "Make it blue, darling! Let it blaze across the stage!"
+        "short": "White",
+        "client": "Make it white, darling! Let the stage blaze!"
       },
       {
         "short": "Cute",
@@ -3121,7 +3122,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "lighthouse-wedding",
-      "plan": ["burlapOnly", "accessory", "accessory", "style"],
+      "plan": ["burlapOnly", "accessory", "style", "style"],
       "history": [],
       "directions": [
         {
@@ -3129,11 +3130,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Lace Trim"]
         },
         {
-          "type": "accessory",
-          "accessory": "Trim"
+          "type": "style",
+          "tag": "Cute"
         },
         {
           "type": "style",
@@ -3154,12 +3155,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "Bows",
-        "client": "Add bows! Let every one take a bow of its own!"
+        "short": "Lace trim",
+        "client": "Add lace trim, darling! Let the light find every one!"
       },
       {
-        "short": "Trim",
-        "client": "Trim! I must have trim! It is the finishing flourish!"
+        "short": "Cute",
+        "client": "Cute! It must be cute! I can see the curtain rising!"
       },
       {
         "short": "Romantic",
@@ -3185,11 +3186,11 @@
       "directions": [
         {
           "type": "colourAvoid",
-          "colour": "Yellow"
+          "colours": ["Green"]
         },
         {
           "type": "colour",
-          "colour": "Blue"
+          "colours": ["White", "Blue"]
         },
         {
           "type": "fabricsMin",
@@ -3211,12 +3212,12 @@
     "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "No yellow",
-        "client": "Not a drop of yellow, darling! The scene cannot bear it!"
+        "short": "No green",
+        "client": "Not a drop of green, darling! The scene cannot bear the sight!"
       },
       {
-        "short": "Blue",
-        "client": "Make it blue, darling! Let it blaze across the stage!"
+        "short": "White and blue",
+        "client": "Make it white and blue, darling! Let the stage blaze!"
       },
       {
         "short": "At least 2 fabrics",
@@ -3249,11 +3250,11 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bow"
+          "accessories": ["Tassel", "Bow"]
         },
         {
           "type": "accessory",
-          "accessory": "Trim"
+          "accessories": ["Trim", "Button"]
         },
         {
           "type": "accessoryMin",
@@ -3279,12 +3280,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "No bows",
-        "client": "Away with the bows, darling! It steals my moment!"
+        "short": "No tassels or bows",
+        "client": "Away with the tassels or bows, darling! My moment is mine alone!"
       },
       {
-        "short": "Trim",
-        "client": "Trim! I must have trim! It is the finishing flourish!"
+        "short": "Trim and buttons",
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
         "short": "At least 2 jewels",
@@ -3309,12 +3310,12 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "lighthouse-wedding",
-      "plan": ["colour", "coloursMin", "accessory", "accessoryAvoid", "style"],
+      "plan": ["colour", "coloursMin", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "colour",
-          "colour": "White"
+          "colours": ["Grey"]
         },
         {
           "type": "coloursMin",
@@ -3322,11 +3323,12 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Trim", "Button"]
         },
         {
-          "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "type": "accessoryMin",
+          "accessory": "Jewel",
+          "count": 2
         },
         {
           "type": "style",
@@ -3344,20 +3346,20 @@
     "brief": "Hat pinned down tight, Beatrix is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.",
     "lines": [
       {
-        "short": "White",
-        "client": "Make it white, darling! Let it blaze across the stage!"
+        "short": "Grey",
+        "client": "Make it grey, darling! Let the stage blaze!"
       },
       {
         "short": "At least 2 colours",
         "client": "Give me two colours at the very least! A grand finale needs a rainbow!"
       },
       {
-        "short": "Bows",
-        "client": "Bows, darling! Big, bold and gloriously over the top!"
+        "short": "Trim and buttons",
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
-        "short": "No tassels",
-        "client": "No tassels! I will not be upstaged!"
+        "short": "At least 2 jewels",
+        "client": "At least two jewels! More, if the drama demands it!"
       },
       {
         "short": "Romantic",
@@ -3378,15 +3380,15 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "lighthouse-wedding",
-      "plan": ["burlapOnly", "accessory", "accessoryMin", "accessory", "accessoryMin", "style"],
+      "plan": ["burlapOnly", "style", "accessoryMin", "accessory", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "burlapOnly"
         },
         {
-          "type": "accessory",
-          "accessory": "Bow"
+          "type": "style",
+          "tag": "Elaborate"
         },
         {
           "type": "accessoryMin",
@@ -3395,7 +3397,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Bow"]
         },
         {
           "type": "accessoryMin",
@@ -3421,16 +3423,16 @@
         "short": "Burlap only"
       },
       {
-        "short": "Bows",
-        "client": "Add bows! Let every one take a bow of its own!"
+        "short": "Elaborate",
+        "client": "Make it elaborate! Let the whole world gasp!"
       },
       {
         "short": "At least 8 bells",
         "client": "At least eight bells! More, if the drama demands it!"
       },
       {
-        "short": "Piping",
-        "client": "Piping! I must have piping! It is the finishing flourish!"
+        "short": "Bows",
+        "client": "Bows, darling! Big, bold and gloriously over the top!"
       },
       {
         "short": "At least 4 flowers",
@@ -3455,7 +3457,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "lighthouse-wedding",
-      "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "colour"],
+      "plan": ["style", "accessory", "accessoryExact", "style", "fabricsOnly", "colour"],
       "history": [],
       "directions": [
         {
@@ -3463,8 +3465,8 @@
           "tag": "Formal"
         },
         {
-          "type": "colour",
-          "colour": "Brown"
+          "type": "accessory",
+          "accessories": ["Piping", "Bow"]
         },
         {
           "type": "accessoryExact",
@@ -3481,7 +3483,7 @@
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Orange"]
         }
       ],
       "pairSlots": [0, 3],
@@ -3499,8 +3501,8 @@
         "client": "Make it formal! Let the whole world gasp!"
       },
       {
-        "short": "Brown",
-        "client": "Make it brown, darling! Let it blaze across the stage!"
+        "short": "Piping and bows",
+        "client": "Add piping and bows, darling! Let the light find every one!"
       },
       {
         "short": "Exactly 8 bells",
@@ -3515,8 +3517,8 @@
         "client": "Linen, velvet or sequins only! Let those be my entire cast!"
       },
       {
-        "short": "Yellow",
-        "client": "Yellow! Pure, glorious yellow! Light the spotlights!"
+        "short": "Orange",
+        "client": "Orange! Pure, glorious orange! Light the spotlights!"
       }
     ]
   },
@@ -3540,7 +3542,7 @@
         "style",
         "style",
         "accessoryExact",
-        "accessory"
+        "accessoryAvoid"
       ],
       "history": [],
       "directions": [
@@ -3554,7 +3556,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Trim"
+          "accessories": ["Trim", "Button"]
         },
         {
           "type": "style",
@@ -3570,8 +3572,8 @@
           "count": 5
         },
         {
-          "type": "accessory",
-          "accessory": "Flower"
+          "type": "accessoryAvoid",
+          "accessories": ["Feather"]
         }
       ],
       "pairSlots": [3, 4],
@@ -3592,8 +3594,8 @@
         "client": "Give me seven bells at the very least, darling! I want to dazzle!"
       },
       {
-        "short": "Trim",
-        "client": "Trim! I must have trim! It is the finishing flourish!"
+        "short": "Trim and buttons",
+        "client": "Trim and buttons! I must have trim and buttons! The finishing flourish!"
       },
       {
         "short": "Formal",
@@ -3608,8 +3610,8 @@
         "client": "Exactly five tassels! Not one more, or the whole act collapses!"
       },
       {
-        "short": "Flowers",
-        "client": "Flowers! I must have flowers! It is the finishing flourish!"
+        "short": "No feathers",
+        "client": "No feathers! Last time, one flew into the orchestra!"
       }
     ]
   },
@@ -3635,7 +3637,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Linen"
+          "fabrics": ["Cotton"]
         }
       ],
       "pairSlots": null,
@@ -3653,8 +3655,8 @@
         "client": "Gothic. Nothing flimsy."
       },
       {
-        "short": "Linen",
-        "client": "Linen, please. Keep it simple."
+        "short": "Cotton",
+        "client": "Cotton, please. Keep things simple."
       }
     ]
   },
@@ -3732,7 +3734,7 @@
         },
         {
           "type": "fabricAvoid",
-          "fabric": "Silk"
+          "fabrics": ["Linen"]
         },
         {
           "type": "style",
@@ -3754,8 +3756,8 @@
         "client": "Two feathers, minimum. Thanks."
       },
       {
-        "short": "No silk",
-        "client": "No silk."
+        "short": "No linen",
+        "client": "No linen."
       },
       {
         "short": "Daywear",
@@ -3789,7 +3791,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bow"
+          "accessories": ["Piping", "Brooch"]
         },
         {
           "type": "style",
@@ -3814,8 +3816,8 @@
         "client": "At least four buttons."
       },
       {
-        "short": "No bows",
-        "client": "Leave off the bows."
+        "short": "No piping or brooches",
+        "client": "Leave off the piping or brooches."
       },
       {
         "short": "Formal",
@@ -3836,7 +3838,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["style", "accessoryAvoid", "fabric", "colour"],
+      "plan": ["style", "accessoryAvoid", "style", "colour"],
       "history": [],
       "directions": [
         {
@@ -3845,15 +3847,15 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Feather"
+          "accessories": ["Brooch"]
         },
         {
-          "type": "fabric",
-          "fabric": "Cotton"
+          "type": "style",
+          "tag": "Daywear"
         },
         {
           "type": "colour",
-          "colour": "Pink"
+          "colours": ["Pink"]
         }
       ],
       "pairSlots": null,
@@ -3871,16 +3873,16 @@
         "client": "Gothic. Nothing flimsy."
       },
       {
-        "short": "No feathers",
-        "client": "No feathers."
+        "short": "No brooches",
+        "client": "No brooches."
       },
       {
-        "short": "Cotton",
-        "client": "Use cotton. Thanks."
+        "short": "Daywear",
+        "client": "Go daywear. Keep it practical."
       },
       {
         "short": "Pink",
-        "client": "Pink. That's it."
+        "client": "Pink. Nothing else."
       }
     ]
   },
@@ -3897,7 +3899,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["burlapOnly", "style", "accessoryAvoid", "style", "accessory"],
+      "plan": ["burlapOnly", "style", "accessoryMin", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -3908,8 +3910,9 @@
           "tag": "Glamour"
         },
         {
-          "type": "accessoryAvoid",
-          "accessory": "Bow"
+          "type": "accessoryMin",
+          "accessory": "Appliqué",
+          "count": 7
         },
         {
           "type": "style",
@@ -3917,7 +3920,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Flower"]
         }
       ],
       "pairSlots": null,
@@ -3938,16 +3941,16 @@
         "client": "Glamour. No fuss."
       },
       {
-        "short": "No bows",
-        "client": "Leave off the bows."
+        "short": "At least 7 appliqués",
+        "client": "Seven appliqués, minimum. Thanks."
       },
       {
         "short": "Formal",
         "client": "Formal. No fuss."
       },
       {
-        "short": "Brooches",
-        "client": "Brooches. Keep it tidy."
+        "short": "Flowers",
+        "client": "Flowers. Keep things tidy."
       }
     ]
   },
@@ -4116,7 +4119,7 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Wool"
+          "fabrics": ["Cotton"]
         },
         {
           "type": "style",
@@ -4134,8 +4137,8 @@
     "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
-        "short": "Wool",
-        "client": "Oh, wool! What a lovely idea, darling."
+        "short": "Cotton",
+        "client": "Oh, cotton! What a lovely idea, darling."
       },
       {
         "short": "Gothic",
@@ -4164,7 +4167,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessories": ["Feather"]
         },
         {
           "type": "style",
@@ -4217,11 +4220,11 @@
         },
         {
           "type": "colourAvoid",
-          "colour": "Pink"
+          "colours": ["Pink"]
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Brown"]
         }
       ],
       "pairSlots": null,
@@ -4240,11 +4243,11 @@
       },
       {
         "short": "No pink",
-        "client": "Oh, not pink, darling! It isn't my day for it."
+        "client": "Oh, not pink, darling! Not today, anyway."
       },
       {
-        "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "short": "Brown",
+        "client": "Oh, brown, darling! I'm glowing at the thought."
       }
     ]
   },
@@ -4274,11 +4277,11 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessory",
-          "accessory": "Lace Trim"
+          "accessories": ["Piping"]
         }
       ],
       "pairSlots": null,
@@ -4299,12 +4302,12 @@
         "client": "Oh, five buttons at the very least, darling!"
       },
       {
-        "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "short": "No brooches",
+        "client": "Oh, no brooches, darling. I'm so sorry to be fussy!"
       },
       {
-        "short": "Lace trim",
-        "client": "Oh, lace trim! Add as many as you like, darling."
+        "short": "Piping",
+        "client": "Oh, piping! Add as many as you like, darling."
       }
     ]
   },
@@ -4326,19 +4329,19 @@
       "directions": [
         {
           "type": "colourAvoid",
-          "colour": "White"
+          "colours": ["Brown"]
         },
         {
           "type": "accessory",
-          "accessory": "Feather"
+          "accessories": ["Feather"]
         },
         {
           "type": "styleAvoid",
-          "tag": "Uncomfortable"
+          "tags": ["Elegant"]
         },
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabrics": ["Linen"]
         }
       ],
       "pairSlots": null,
@@ -4352,20 +4355,20 @@
     "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
-        "short": "No white",
-        "client": "Oh, not white, darling! It isn't my day for it."
+        "short": "No brown",
+        "client": "Oh, not brown, darling! Not today, anyway."
       },
       {
         "short": "Feathers",
         "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
-        "short": "Not uncomfortable",
-        "client": "Oh, not uncomfortable, darling. I couldn't bear it."
+        "short": "Not elegant",
+        "client": "Oh, not elegant, darling. I couldn't bear the thought."
       },
       {
-        "short": "Velvet",
-        "client": "Oh, velvet! I simply adore it, darling."
+        "short": "Linen",
+        "client": "Oh, linen! What a lovely idea, darling."
       }
     ]
   },
@@ -4382,27 +4385,28 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "rainy-picnic",
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessory", "accessory"],
+      "plan": ["burlapOnly", "accessoryAvoid", "accessoryMin", "accessory", "style"],
       "history": [],
       "directions": [
         {
           "type": "burlapOnly"
         },
         {
-          "type": "styleAvoid",
-          "tag": "Glamour"
-        },
-        {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Feather"]
+        },
+        {
+          "type": "accessoryMin",
+          "accessory": "Tassel",
+          "count": 4
         },
         {
           "type": "accessory",
-          "accessory": "Lace Trim"
+          "accessories": ["Button"]
         },
         {
-          "type": "accessory",
-          "accessory": "Bell"
+          "type": "style",
+          "tag": "Cute"
         }
       ],
       "pairSlots": null,
@@ -4419,20 +4423,20 @@
         "short": "Burlap only"
       },
       {
-        "short": "Not glamour",
-        "client": "Oh, not glamour, darling. I couldn't bear it."
+        "short": "No feathers",
+        "client": "Oh, no feathers, darling! They make me sneeze terribly."
       },
       {
-        "short": "No trim",
-        "client": "Oh, no trim, darling. I'm so sorry to be fussy!"
+        "short": "At least 4 tassels",
+        "client": "Oh, four tassels at the very least, darling!"
       },
       {
-        "short": "Lace trim",
-        "client": "Oh, lace trim! Add as many as you like, darling."
+        "short": "Buttons",
+        "client": "Oh, buttons! Add as many as you like, darling."
       },
       {
-        "short": "Bells",
-        "client": "Oh, bells! Add as many as you like, darling."
+        "short": "Cute",
+        "client": "Oh, cute! That's exactly what I'm after, darling."
       }
     ]
   },
@@ -4449,7 +4453,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "rainy-picnic",
-      "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
+      "plan": ["fabricsOnly", "style", "accessory", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -4461,8 +4465,8 @@
           "tag": "Eveningwear"
         },
         {
-          "type": "colour",
-          "colour": "Yellow"
+          "type": "accessory",
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -4493,8 +4497,8 @@
         "client": "Oh, eveningwear! That's exactly what I'm after, darling."
       },
       {
-        "short": "Yellow",
-        "client": "Oh, yellow, darling! I'm glowing at the thought."
+        "short": "Brooches",
+        "client": "Oh, brooches! Add as many as you like, darling."
       },
       {
         "short": "Daywear",
@@ -4536,7 +4540,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryMin",
@@ -4570,8 +4574,8 @@
         "client": "I'm dreaming of eveningwear, darling. Truly dreaming."
       },
       {
-        "short": "Jewels",
-        "client": "Oh, jewels! Add as many as you like, darling."
+        "short": "Brooches",
+        "client": "Oh, brooches! Add as many as you like, darling."
       },
       {
         "short": "At least 7 appliqués",
@@ -4697,11 +4701,11 @@
       "directions": [
         {
           "type": "fabricAvoid",
-          "fabric": "Wool"
+          "fabrics": ["Sequin"]
         },
         {
           "type": "accessory",
-          "accessory": "Jewel"
+          "accessories": ["Lace Trim"]
         },
         {
           "type": "accessoryMin",
@@ -4720,12 +4724,12 @@
     "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "No wool",
-        "client": "Banish the wool, darling! It ruins the whole scene!"
+        "short": "No sequins",
+        "client": "Sequins? Not tonight, darling! I am the spectacle!"
       },
       {
-        "short": "Jewels",
-        "client": "Add jewels, darling! Let it catch the light!"
+        "short": "Lace trim",
+        "client": "Add lace trim, darling! Let the light find every one!"
       },
       {
         "short": "At least 3 appliqués",
@@ -4754,16 +4758,16 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Playful"
+          "tags": ["Playful"]
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessories": ["Bow", "Flower"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Flower",
-          "count": 6
+          "accessory": "Brooch",
+          "count": 8
         }
       ],
       "pairSlots": null,
@@ -4781,15 +4785,15 @@
       },
       {
         "short": "Not playful",
-        "client": "Banish playful, darling! It will not play tonight!"
+        "client": "Banish playful, darling! Not a hint tonight!"
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués, darling! Let it catch the light!"
+        "short": "Bows and flowers",
+        "client": "Add bows and flowers, darling! Let the light find every one!"
       },
       {
-        "short": "At least 6 flowers",
-        "client": "At least six flowers! More, if the drama demands it!"
+        "short": "At least 8 brooches",
+        "client": "At least eight brooches! More, if the drama demands it!"
       }
     ]
   },
@@ -4815,7 +4819,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Sequin"
+          "fabrics": ["Sequin"]
         },
         {
           "type": "style",
@@ -4823,7 +4827,7 @@
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Pink"]
         }
       ],
       "pairSlots": null,
@@ -4842,15 +4846,15 @@
       },
       {
         "short": "Sequin",
-        "client": "Give me sequins, darling! Let it sweep the stage!"
+        "client": "Give me sequins, darling! Let the stage tremble!"
       },
       {
         "short": "Casual",
         "client": "Make it casual! Let the whole world gasp!"
       },
       {
-        "short": "Yellow",
-        "client": "Yellow! Pure, glorious yellow! Light the spotlights!"
+        "short": "Pink",
+        "client": "Pink! Pure, glorious pink! Light the spotlights!"
       }
     ]
   },
@@ -4867,7 +4871,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "accessory"],
+      "plan": ["burlapOnly", "accessoryMin", "accessory", "style", "styleAvoid"],
       "history": [],
       "directions": [
         {
@@ -4880,19 +4884,19 @@
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessories": ["Button"]
         },
         {
           "type": "style",
           "tag": "Risqué"
         },
         {
-          "type": "accessory",
-          "accessory": "Piping"
+          "type": "styleAvoid",
+          "tags": ["Daywear"]
         }
       ],
       "pairSlots": null,
-      "pullApartSlot": null
+      "pullApartSlot": 2
     },
     "client": {
       "name": "Imogen Kettleby",
@@ -4909,16 +4913,16 @@
         "client": "Give me six flowers at the very least, darling! I want to dazzle!"
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués, darling! Let it catch the light!"
+        "short": "Buttons",
+        "client": "Add buttons, darling! Let the light find every one!"
       },
       {
         "short": "Risqué",
         "client": "Risqué! It must be risqué! I can see the curtain rising!"
       },
       {
-        "short": "Piping",
-        "client": "Piping! I must have piping! It is the finishing flourish!"
+        "short": "Not daywear",
+        "client": "Not daywear! I would simply perish on the spot!"
       }
     ]
   },
@@ -4935,7 +4939,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
+      "plan": ["style", "style", "colourOnly", "fabricsMin", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -4951,9 +4955,8 @@
           "colours": ["Brown"]
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Jewel",
-          "count": 6
+          "type": "fabricsMin",
+          "count": 4
         },
         {
           "type": "accessoryExact",
@@ -4984,8 +4987,8 @@
         "client": "Brown only, darling! Let those be my whole palette!"
       },
       {
-        "short": "At least 6 jewels",
-        "client": "At least six jewels! More, if the drama demands it!"
+        "short": "At least 4 fabrics",
+        "client": "At least four fabrics! A star needs a full wardrobe!"
       },
       {
         "short": "Exactly 3 flowers",
@@ -5018,7 +5021,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Appliqué"
+          "accessories": ["Brooch", "Flower"]
         },
         {
           "type": "accessoryExact",
@@ -5027,8 +5030,8 @@
         },
         {
           "type": "accessoryExact",
-          "accessory": "Flower",
-          "count": 3
+          "accessory": "Bow",
+          "count": 2
         },
         {
           "type": "style",
@@ -5053,16 +5056,16 @@
         "client": "I demand eveningwear, darling! The stage is set!"
       },
       {
-        "short": "Appliqués",
-        "client": "Add appliqués, darling! Let it catch the light!"
+        "short": "Brooches and flowers",
+        "client": "Add brooches and flowers, darling! Let the light find every one!"
       },
       {
         "short": "Exactly 6 jewels",
         "client": "Exactly six jewels! Not one more, or the whole act collapses!"
       },
       {
-        "short": "Exactly 3 flowers",
-        "client": "Exactly three flowers! Not one more, or the whole act collapses!"
+        "short": "Exactly 2 bows",
+        "client": "Exactly two bows! Not one more, or the whole act collapses!"
       },
       {
         "short": "Daywear",
@@ -5088,11 +5091,11 @@
       "directions": [
         {
           "type": "colour",
-          "colour": "Red"
+          "colours": ["Red"]
         },
         {
           "type": "fabric",
-          "fabric": "Wool"
+          "fabrics": ["Silk"]
         }
       ],
       "pairSlots": null,
@@ -5107,11 +5110,11 @@
     "lines": [
       {
         "short": "Red",
-        "client": "Red, naturally. It has always suited me."
+        "client": "Red, naturally. A lady knows what suits her."
       },
       {
-        "short": "Wool",
-        "client": "One expects wool. Nothing less will do."
+        "short": "Silk",
+        "client": "One expects silk. Nothing less will do."
       }
     ]
   },
@@ -5128,7 +5131,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "riding-lesson",
-      "plan": ["burlapOnly", "accessory", "accessory"],
+      "plan": ["burlapOnly", "accessory", "style"],
       "history": [],
       "directions": [
         {
@@ -5136,11 +5139,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Trim"
+          "accessories": ["Lace Trim"]
         },
         {
-          "type": "accessory",
-          "accessory": "Tassel"
+          "type": "style",
+          "tag": "Workwear"
         }
       ],
       "pairSlots": null,
@@ -5157,12 +5160,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "Trim",
-        "client": "A touch of trim, I think. Tastefully, of course."
+        "short": "Lace trim",
+        "client": "A touch of lace trim, I think. Tastefully, of course."
       },
       {
-        "short": "Tassels",
-        "client": "A touch of tassels, I think. Tastefully, of course."
+        "short": "Workwear",
+        "client": "Make it workwear. One has standards, after all."
       }
     ]
   },
@@ -5184,11 +5187,11 @@
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Tassel"
+          "accessories": ["Tassel"]
         },
         {
           "type": "colour",
-          "colour": "White"
+          "colours": ["Grey"]
         },
         {
           "type": "coloursMin",
@@ -5207,11 +5210,11 @@
     "lines": [
       {
         "short": "No tassels",
-        "client": "No tassels, please. It is not for me."
+        "client": "No tassels, please. Not for me."
       },
       {
-        "short": "White",
-        "client": "White, naturally. It has always suited me."
+        "short": "Grey",
+        "client": "Grey, naturally. A lady knows what suits her."
       },
       {
         "short": "At least 4 colours",
@@ -5240,16 +5243,16 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Jewel"]
         },
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessories": ["Button"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Button",
-          "count": 6
+          "accessory": "Tassel",
+          "count": 2
         }
       ],
       "pairSlots": null,
@@ -5266,16 +5269,16 @@
         "short": "Burlap only"
       },
       {
-        "short": "No trim",
-        "client": "No trim, please. It is not for me."
+        "short": "No jewels",
+        "client": "No jewels, please. Not for me."
       },
       {
-        "short": "Tassels",
-        "client": "A touch of tassels, I think. Tastefully, of course."
+        "short": "Buttons",
+        "client": "A touch of buttons, I think. Tastefully, of course."
       },
       {
-        "short": "At least 6 buttons",
-        "client": "I shall require at least six buttons. A lady must be noticed."
+        "short": "At least 2 tassels",
+        "client": "I shall require at least two tassels. A lady must be noticed."
       }
     ]
   },
@@ -5297,20 +5300,20 @@
       "directions": [
         {
           "type": "fabricAvoid",
-          "fabric": "Velvet"
+          "fabrics": ["Velvet"]
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Jewel"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Jewel",
-          "count": 3
+          "accessory": "Bell",
+          "count": 7
         },
         {
           "type": "colour",
-          "colour": "Yellow"
+          "colours": ["Black"]
         }
       ],
       "pairSlots": null,
@@ -5325,19 +5328,19 @@
     "lines": [
       {
         "short": "No velvet",
-        "client": "No velvet, please. It is not done."
+        "client": "No velvet, please. Such things are not done."
       },
       {
-        "short": "No trim",
-        "client": "No trim, please. It is not for me."
+        "short": "No jewels",
+        "client": "No jewels, please. Not for me."
       },
       {
-        "short": "At least 3 jewels",
-        "client": "I shall require at least three jewels. A lady must be noticed."
+        "short": "At least 7 bells",
+        "client": "I shall require at least seven bells. A lady must be noticed."
       },
       {
-        "short": "Yellow",
-        "client": "Yellow, naturally. It has always suited me."
+        "short": "Black",
+        "client": "Black, naturally. A lady knows what suits her."
       }
     ]
   },
@@ -5354,19 +5357,19 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "riding-lesson",
-      "plan": ["burlapOnly", "styleAvoid", "accessoryAvoid", "accessoryMin", "accessory"],
+      "plan": ["burlapOnly", "accessory", "accessoryAvoid", "accessoryMin", "style"],
       "history": [],
       "directions": [
         {
           "type": "burlapOnly"
         },
         {
-          "type": "styleAvoid",
-          "tag": "Simple"
+          "type": "accessory",
+          "accessories": ["Lace Trim"]
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Bow"]
         },
         {
           "type": "accessoryMin",
@@ -5374,8 +5377,8 @@
           "count": 2
         },
         {
-          "type": "accessory",
-          "accessory": "Button"
+          "type": "style",
+          "tag": "Elaborate"
         }
       ],
       "pairSlots": null,
@@ -5392,20 +5395,20 @@
         "short": "Burlap only"
       },
       {
-        "short": "Not simple",
-        "client": "One cannot abide simple. Kindly avoid it."
+        "short": "Lace trim",
+        "client": "A touch of lace trim, I think. Tastefully, of course."
       },
       {
-        "short": "No trim",
-        "client": "No trim, please. It is not for me."
+        "short": "No bows",
+        "client": "No bows, please. Not for me."
       },
       {
         "short": "At least 2 tassels",
         "client": "I shall require at least two tassels. A lady must be noticed."
       },
       {
-        "short": "Buttons",
-        "client": "One expects buttons. It is a matter of form."
+        "short": "Elaborate",
+        "client": "I shall require elaborate. Do try to rise to it."
       }
     ]
   },
@@ -5422,7 +5425,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "riding-lesson",
-      "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
+      "plan": ["style", "fabricsOnly", "accessoryAvoid", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -5434,8 +5437,8 @@
           "fabrics": ["Silk", "Linen", "Cotton"]
         },
         {
-          "type": "colourAvoid",
-          "colour": "Yellow"
+          "type": "accessoryAvoid",
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryExact",
@@ -5466,8 +5469,8 @@
         "client": "One will accept only silk, linen or cotton. I trust that is not too taxing."
       },
       {
-        "short": "No yellow",
-        "client": "No yellow, please. One has never trusted it."
+        "short": "No brooches",
+        "client": "No brooches, please. Not for me."
       },
       {
         "short": "Exactly 2 tassels",
@@ -5518,7 +5521,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bow"
+          "accessories": ["Brooch", "Bell"]
         }
       ],
       "pairSlots": [1, 4],
@@ -5551,8 +5554,8 @@
         "client": "I shall require warm. Do try to rise to it."
       },
       {
-        "short": "Bows",
-        "client": "Bows, I think. A lady may indulge in a ribbon or two."
+        "short": "Brooches and bells",
+        "client": "A touch of brooches and bells, I think. Tastefully, of course."
       }
     ]
   },
@@ -5670,16 +5673,16 @@
       "directions": [
         {
           "type": "styleAvoid",
-          "tag": "Glamour"
+          "tags": ["Flowers"]
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Tassel", "Trim"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Button",
-          "count": 2
+          "accessory": "Brooch",
+          "count": 6
         }
       ],
       "pairSlots": null,
@@ -5693,16 +5696,16 @@
     "brief": "Linnea has finally made it to a graduation ceremony. She wants something smart and ready for photos.",
     "lines": [
       {
-        "short": "Not glamour",
-        "client": "If possible, maybe not glamour? I'm so sorry to ask."
+        "short": "No florals",
+        "client": "If possible, maybe not floral? I'm so sorry to ask."
       },
       {
-        "short": "Brooches",
-        "client": "Might there be some brooches? Sorry, only if it's not too much."
+        "short": "Tassels and trim",
+        "client": "Might there be some tassels and trim? Sorry, only if there's room."
       },
       {
-        "short": "At least 2 buttons",
-        "client": "Maybe two buttons, or more? I'm so sorry to ask."
+        "short": "At least 6 brooches",
+        "client": "Maybe six brooches, or more? I'm so sorry to ask."
       }
     ]
   },
@@ -5727,15 +5730,15 @@
         },
         {
           "type": "styleAvoid",
-          "tag": "Elaborate"
+          "tags": ["Uncomfortable", "Warm"]
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Jewel", "Flower"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Button",
+          "accessory": "Brooch",
           "count": 7
         }
       ],
@@ -5753,16 +5756,16 @@
         "short": "Burlap only"
       },
       {
-        "short": "Not elaborate",
-        "client": "Sorry, could it not be elaborate? I'm sure it's lovely, really."
+        "short": "Not uncomfortable or warm",
+        "client": "Sorry, could it not be uncomfortable or warm? I'm so sorry, really."
       },
       {
-        "short": "Brooches",
-        "client": "I was hoping for a little brooches. Is that all right?"
+        "short": "Jewels and flowers",
+        "client": "I was hoping for some jewels and flowers. Would you mind?"
       },
       {
-        "short": "At least 7 buttons",
-        "client": "Sorry, could there be at least seven buttons? Only if it's not too much."
+        "short": "At least 7 brooches",
+        "client": "Sorry, could there be at least seven brooches? Only if it's not too much."
       }
     ]
   },
@@ -5796,7 +5799,7 @@
         },
         {
           "type": "colour",
-          "colour": "Blue"
+          "colours": ["Red", "Black"]
         }
       ],
       "pairSlots": null,
@@ -5822,8 +5825,8 @@
         "client": "I was thinking elegant. Sorry, is that silly?"
       },
       {
-        "short": "Blue",
-        "client": "Might it be blue? Sorry, I do hope that's all right."
+        "short": "Red and black",
+        "client": "Might it be red and black? Sorry, I do hope you don't mind."
       }
     ]
   },
@@ -5861,7 +5864,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Button", "Piping"]
         }
       ],
       "pairSlots": null,
@@ -5890,8 +5893,8 @@
         "client": "If it's not too much trouble, maybe something risqué?"
       },
       {
-        "short": "Brooches",
-        "client": "I was hoping for a little brooches. Is that all right?"
+        "short": "Buttons and piping",
+        "client": "I was hoping for some buttons and piping. Would you mind?"
       }
     ]
   },
@@ -6001,7 +6004,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Button", "Tassel"]
         },
         {
           "type": "style",
@@ -6034,8 +6037,8 @@
         "client": "If it's not too much trouble, maybe something simple?"
       },
       {
-        "short": "Brooches",
-        "client": "I was hoping for a little brooches. Is that all right?"
+        "short": "Buttons and tassels",
+        "client": "I was hoping for some buttons and tassels. Would you mind?"
       },
       {
         "short": "Elaborate",
@@ -6065,7 +6068,7 @@
         },
         {
           "type": "colour",
-          "colour": "Red"
+          "colours": ["White"]
         }
       ],
       "pairSlots": null,
@@ -6083,8 +6086,8 @@
         "client": "Make it daywear. I've had a long week."
       },
       {
-        "short": "Red",
-        "client": "Make it red. Don't ask me why."
+        "short": "White",
+        "client": "Make it white. Don't ask me why."
       }
     ]
   },
@@ -6113,7 +6116,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bell"
+          "accessories": ["Jewel", "Bow"]
         }
       ],
       "pairSlots": null,
@@ -6134,8 +6137,8 @@
         "client": "Risqué. That's the whole request."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Jewels and bows",
+        "client": "Add jewels and bows. I'll pretend I'm not excited."
       }
     ]
   },
@@ -6157,11 +6160,11 @@
       "directions": [
         {
           "type": "fabric",
-          "fabric": "Lace"
+          "fabrics": ["Silk", "Linen"]
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Lace Trim"
+          "accessories": ["Trim"]
         },
         {
           "type": "accessoryMin",
@@ -6180,12 +6183,12 @@
     "brief": "Teeth chattering already, Lottie is bound for a formal portrait that takes all day. Something dignified and determined, please, without freezing in the great hall.",
     "lines": [
       {
-        "short": "Lace",
-        "client": "I'd like lace. Don't read into it."
+        "short": "Silk and linen",
+        "client": "I'd like silk and linen. Don't read into the choice."
       },
       {
-        "short": "No lace trim",
-        "client": "Keep the lace trim off me."
+        "short": "No trim",
+        "client": "Keep the trim off me."
       },
       {
         "short": "At least 6 bells",
@@ -6214,11 +6217,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Piping"
+          "accessories": ["Tassel"]
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessories": ["Jewel", "Bell"]
         },
         {
           "type": "accessoryMin",
@@ -6240,12 +6243,12 @@
         "short": "Burlap only"
       },
       {
-        "short": "Piping",
-        "client": "Add piping. I'll pretend I'm not excited."
+        "short": "Tassels",
+        "client": "Add tassels. I'll pretend I'm not excited."
       },
       {
-        "short": "No bells",
-        "client": "Keep the bells off me."
+        "short": "No jewels or bells",
+        "client": "Keep the jewels or bells off me."
       },
       {
         "short": "At least 2 feathers",
@@ -6266,7 +6269,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["style", "colour", "colour", "colourOnly"],
+      "plan": ["style", "fabric", "accessory", "colourOnly"],
       "history": [],
       "directions": [
         {
@@ -6274,16 +6277,16 @@
           "tag": "Daywear"
         },
         {
-          "type": "colour",
-          "colour": "Red"
+          "type": "fabric",
+          "fabrics": ["Wool"]
         },
         {
-          "type": "colour",
-          "colour": "Brown"
+          "type": "accessory",
+          "accessories": ["Jewel", "Bow"]
         },
         {
           "type": "colourOnly",
-          "colours": ["Brown", "Red"]
+          "colours": ["Blue", "White", "Yellow"]
         }
       ],
       "pairSlots": null,
@@ -6301,16 +6304,16 @@
         "client": "Make it daywear. I've had a long week."
       },
       {
-        "short": "Red",
-        "client": "Make it red. Don't ask me why."
+        "short": "Wool",
+        "client": "I'd like wool. Don't read into the choice."
       },
       {
-        "short": "Brown",
-        "client": "Make it brown. Don't ask me why."
+        "short": "Jewels and bows",
+        "client": "Add jewels and bows. I'll pretend I'm not excited."
       },
       {
-        "short": "Only brown and red",
-        "client": "Brown or red only. Only means only."
+        "short": "Only blue, white and yellow",
+        "client": "Blue, white or yellow only. Only means only."
       }
     ]
   },
@@ -6327,7 +6330,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["burlapOnly", "style", "accessory", "accessory", "accessoryMin"],
+      "plan": ["burlapOnly", "style", "accessory", "styleAvoid", "accessoryMin"],
       "history": [],
       "directions": [
         {
@@ -6339,11 +6342,11 @@
         },
         {
           "type": "accessory",
-          "accessory": "Bell"
+          "accessories": ["Lace Trim", "Bell"]
         },
         {
-          "type": "accessory",
-          "accessory": "Piping"
+          "type": "styleAvoid",
+          "tags": ["Cute"]
         },
         {
           "type": "accessoryMin",
@@ -6352,7 +6355,7 @@
         }
       ],
       "pairSlots": null,
-      "pullApartSlot": null
+      "pullApartSlot": 2
     },
     "client": {
       "name": "Lottie Rosales",
@@ -6369,12 +6372,12 @@
         "client": "Risqué. That's the whole request."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
+        "short": "Lace trim and bells",
+        "client": "Add lace trim and bells. I'll pretend I'm not excited."
       },
       {
-        "short": "Piping",
-        "client": "Add piping. I'll pretend I'm not excited."
+        "short": "Not cute",
+        "client": "Not cute. I'm not a kitten."
       },
       {
         "short": "At least 4 buttons",
@@ -6395,7 +6398,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
+      "plan": ["style", "style", "style", "accessoryExact", "fabricsOnly"],
       "history": [],
       "directions": [
         {
@@ -6403,12 +6406,12 @@
           "tag": "Formal"
         },
         {
-          "type": "fabric",
-          "fabric": "Velvet"
+          "type": "style",
+          "tag": "Casual"
         },
         {
           "type": "style",
-          "tag": "Casual"
+          "tag": "Cute"
         },
         {
           "type": "accessoryExact",
@@ -6417,10 +6420,10 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Lace", "Velvet"]
+          "fabrics": ["Linen", "Wool"]
         }
       ],
-      "pairSlots": [0, 2],
+      "pairSlots": [0, 1],
       "pullApartSlot": null
     },
     "client": {
@@ -6435,20 +6438,20 @@
         "client": "Make it formal. I've had a long week."
       },
       {
-        "short": "Velvet",
-        "client": "Velvet. It's the only thing that's ever understood me."
+        "short": "Casual",
+        "client": "Casual. That's the whole request."
       },
       {
-        "short": "Casual",
-        "client": "Make it casual. I've had a long week."
+        "short": "Cute",
+        "client": "Make it cute. I've had a long week."
       },
       {
         "short": "Exactly 2 flowers",
         "client": "Two flowers. I counted."
       },
       {
-        "short": "Only lace and velvet",
-        "client": "Lace or velvet only. Surprise me within that."
+        "short": "Only linen and wool",
+        "client": "Linen or wool only. Surprise me within that."
       }
     ]
   },
@@ -6465,7 +6468,7 @@
       "modifiers": ["burlap"],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["burlapOnly", "style", "accessory", "accessory", "style", "accessoryExact"],
+      "plan": ["burlapOnly", "style", "style", "accessory", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -6476,24 +6479,24 @@
           "tag": "Formal"
         },
         {
-          "type": "accessory",
-          "accessory": "Bell"
-        },
-        {
-          "type": "accessory",
-          "accessory": "Lace Trim"
-        },
-        {
           "type": "style",
           "tag": "Casual"
         },
         {
+          "type": "accessory",
+          "accessories": ["Appliqué"]
+        },
+        {
+          "type": "style",
+          "tag": "Patterned"
+        },
+        {
           "type": "accessoryExact",
-          "accessory": "Appliqué",
-          "count": 7
+          "accessory": "Bow",
+          "count": 3
         }
       ],
-      "pairSlots": [1, 4],
+      "pairSlots": [1, 2],
       "pullApartSlot": null
     },
     "client": {
@@ -6511,20 +6514,20 @@
         "client": "Formal. That's the whole request."
       },
       {
-        "short": "Bells",
-        "client": "Add bells. I'll pretend I'm not excited."
-      },
-      {
-        "short": "Lace trim",
-        "client": "Add lace trim. I'll pretend I'm not excited."
-      },
-      {
         "short": "Casual",
         "client": "Make it casual. I've had a long week."
       },
       {
-        "short": "Exactly 7 appliqués",
-        "client": "Exactly seven appliqués. Not one more."
+        "short": "Appliqués",
+        "client": "Add appliqués. I'll pretend I'm not excited."
+      },
+      {
+        "short": "Patterned",
+        "client": "Make it patterned. I've had a long week."
+      },
+      {
+        "short": "Exactly 3 bows",
+        "client": "Exactly three bows. Not one more."
       }
     ]
   },
@@ -6546,7 +6549,7 @@
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Tassel"]
         },
         {
           "type": "style",
@@ -6559,7 +6562,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Button"
+          "accessories": ["Lace Trim"]
         }
       ],
       "pairSlots": null,
@@ -6573,8 +6576,8 @@
     "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "No trim",
-        "client": "Leave off the trim."
+        "short": "No tassels",
+        "client": "Leave off the tassels."
       },
       {
         "short": "Elaborate",
@@ -6585,8 +6588,8 @@
         "client": "Four bows at least. Neat."
       },
       {
-        "short": "Buttons",
-        "client": "Add buttons."
+        "short": "Lace trim",
+        "client": "Add lace trim."
       }
     ]
   },
@@ -6608,11 +6611,11 @@
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Bell"
+          "accessories": ["Lace Trim", "Piping"]
         },
         {
           "type": "colour",
-          "colour": "Green"
+          "colours": ["Pink", "Black"]
         },
         {
           "type": "coloursMin",
@@ -6630,12 +6633,12 @@
     "brief": "Ursula has a few pennies for the village fete. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "No bells",
-        "client": "No bells, please. It is not for me."
+        "short": "No lace trim or piping",
+        "client": "No lace trim or piping, please. Not for me."
       },
       {
-        "short": "Green",
-        "client": "Green, naturally. It has always suited me."
+        "short": "Pink and black",
+        "client": "Pink and black, naturally. A lady knows what suits her."
       },
       {
         "short": "At least 3 colours",
@@ -6665,7 +6668,7 @@
         },
         {
           "type": "accessory",
-          "accessory": "Lace Trim"
+          "accessories": ["Brooch", "Bell"]
         },
         {
           "type": "accessoryMin",
@@ -6674,7 +6677,7 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Trim"
+          "accessories": ["Lace Trim"]
         }
       ],
       "pairSlots": null,
@@ -6692,16 +6695,16 @@
         "client": "Make it elegant. I've had a long week."
       },
       {
-        "short": "Lace trim",
-        "client": "Lace trim. Somewhere on there."
+        "short": "Brooches and bells",
+        "client": "Brooches and bells. Somewhere on there."
       },
       {
         "short": "At least 8 bows",
         "client": "Bows everywhere. At the very least, eight."
       },
       {
-        "short": "No trim",
-        "client": "No trim. I've had my fill."
+        "short": "No lace trim",
+        "client": "No lace trim. I've had my fill."
       }
     ]
   },
@@ -6723,12 +6726,12 @@
       "directions": [
         {
           "type": "accessory",
-          "accessory": "Tassel"
+          "accessories": ["Piping"]
         },
         {
           "type": "accessoryMin",
-          "accessory": "Brooch",
-          "count": 4
+          "accessory": "Jewel",
+          "count": 3
         },
         {
           "type": "style",
@@ -6754,12 +6757,12 @@
     "brief": "Freya has been counting the days to the mayor's charity ball. She wants something sleek and sparkling.",
     "lines": [
       {
-        "short": "Tassels",
-        "client": "Add tassels."
+        "short": "Piping",
+        "client": "Add piping."
       },
       {
-        "short": "At least 4 brooches",
-        "client": "Four brooches, minimum. Thanks."
+        "short": "At least 3 jewels",
+        "client": "Three jewels, minimum. Thanks."
       },
       {
         "short": "Eclectic",
@@ -6798,15 +6801,15 @@
         },
         {
           "type": "accessoryAvoid",
-          "accessory": "Bow"
+          "accessories": ["Button"]
         },
         {
           "type": "accessory",
-          "accessory": "Brooch"
+          "accessories": ["Bell", "Flower"]
         },
         {
           "type": "styleAvoid",
-          "tag": "Glamour"
+          "tags": ["Playful"]
         }
       ],
       "pairSlots": null,
@@ -6824,16 +6827,16 @@
         "client": "I shall require at least six appliqués. A lady must be noticed."
       },
       {
-        "short": "No bows",
-        "client": "No bows, please. It is not for me."
+        "short": "No buttons",
+        "client": "No buttons, please. Not for me."
       },
       {
-        "short": "Brooches",
-        "client": "A touch of brooches, I think. Tastefully, of course."
+        "short": "Bells and flowers",
+        "client": "A touch of bells and flowers, I think. Tastefully, of course."
       },
       {
-        "short": "Not glamour",
-        "client": "One cannot abide glamour. Kindly avoid it."
+        "short": "Not playful",
+        "client": "One cannot abide playful. Kindly avoid such things."
       }
     ]
   },
@@ -6850,16 +6853,16 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["accessoryAvoid", "fabric", "style", "coloursMin", "fabric"],
+      "plan": ["accessoryAvoid", "style", "style", "coloursMin", "fabric"],
       "history": [1, 0, 1, 0],
       "directions": [
         {
           "type": "accessoryAvoid",
-          "accessory": "Brooch"
+          "accessories": ["Trim", "Feather"]
         },
         {
-          "type": "fabric",
-          "fabric": "Lace"
+          "type": "style",
+          "tag": "Elegant"
         },
         {
           "type": "style",
@@ -6871,7 +6874,7 @@
         },
         {
           "type": "fabric",
-          "fabric": "Velvet"
+          "fabrics": ["Velvet"]
         }
       ],
       "pairSlots": null,
@@ -6885,12 +6888,12 @@
     "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "No brooches",
-        "client": "Keep the brooches off me."
+        "short": "No trim or feathers",
+        "client": "Keep the trim or feathers off me."
       },
       {
-        "short": "Lace",
-        "client": "Lace. It'll do nicely."
+        "short": "Elegant",
+        "client": "Elegant. That's the whole request."
       },
       {
         "short": "Eveningwear",

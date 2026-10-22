@@ -57,10 +57,10 @@ describe("generate", () => {
       pairSlots: null,
       pullApartSlot: null,
       directions: [
-        { type: "accessoryAvoid", accessory: "Flower" },
+        { type: "accessoryAvoid", accessories: ["Brooch"] },
         { type: "style", tag: "Uncomfortable" },
         { type: "accessoryMin", accessory: "Bow", count: 4 },
-        { type: "accessory", accessory: "Button" },
+        { type: "accessory", accessories: ["Lace Trim"] },
       ],
     });
     expect(generate(input("2026-10-16"))).toEqual({
@@ -72,8 +72,8 @@ describe("generate", () => {
       pairSlots: null,
       pullApartSlot: null,
       directions: [
-        { type: "accessoryAvoid", accessory: "Tassel" },
-        { type: "colour", colour: "White" },
+        { type: "accessoryAvoid", accessories: ["Tassel"] },
+        { type: "colour", colours: ["Grey"] },
         { type: "coloursMin", count: 4 },
       ],
     });
@@ -86,8 +86,8 @@ describe("generate", () => {
       pairSlots: null,
       pullApartSlot: null,
       directions: [
-        { type: "accessoryAvoid", accessory: "Bell" },
-        { type: "colour", colour: "Yellow" },
+        { type: "accessoryAvoid", accessories: ["Lace Trim", "Piping"] },
+        { type: "colour", colours: ["Purple"] },
         { type: "coloursMin", count: 3 },
       ],
     });
@@ -114,7 +114,8 @@ describe("generate", () => {
           expect(d.count).toBeGreaterThanOrEqual(FABRICS_MIN_RANGE.min);
           expect(d.count).toBeLessThanOrEqual(FABRICS_MIN_RANGE.max);
         }
-        if (d.type === "fabric" || d.type === "fabricAvoid") expect(d.fabric).not.toBe("Burlap");
+        if (d.type === "fabric" || d.type === "fabricAvoid")
+          expect(d.fabrics).not.toContain("Burlap");
       }
     }
   });
@@ -132,6 +133,7 @@ describe("generate", () => {
         rerollCount,
         others: others(slot),
         pairs: "never",
+        pairedItemChance: dataV1.difficulties.medium.pairedItemChance,
         data: dataV1,
       });
     expect(redraw(0, 0)).toEqual(challenge.directions[0]);
@@ -156,7 +158,7 @@ describe("generate", () => {
     for (const seed of samples.slice(0, 50)) {
       for (const d of placedDirections(generate(input(seed), data))) {
         if (d.type !== "style" && d.type !== "styleAvoid") continue;
-        expect(d.tag).toBe("Gothic");
+        expect(d.type === "style" ? [d.tag] : d.tags).toEqual(["Gothic"]);
         styles++;
       }
     }
@@ -173,6 +175,7 @@ describe("generate", () => {
       types: [{ type: "colourOnly", weight: 1 }],
       limits: [],
       pairs: "never",
+      pairedItemChance: 0,
     };
     const challenge = generate(input("k7m2qx9a"), withMedium(stuck));
     expect(challenge.plan).toEqual(["colourOnly", "colourOnly", "colourOnly"]);
@@ -193,6 +196,7 @@ describe("generate", () => {
       ],
       limits: [],
       pairs: "never",
+      pairedItemChance: 0,
     };
     const sizes = new Set<number>();
     for (const seed of samples.slice(0, 100)) {

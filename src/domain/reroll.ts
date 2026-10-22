@@ -32,6 +32,7 @@ export function reroll(
     rerollCount: rerollCountOf(challenge, slot) + 1,
     others,
     pairs: shape.pairs,
+    pairedItemChance: shape.pairedItemChance,
     pullApartSlot: challenge.pullApartSlot,
     ignoreTheme: shape.ignoreTheme,
     replacing: challenge.directions[slot],

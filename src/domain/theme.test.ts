@@ -45,17 +45,23 @@ const directionsOf = (data: GameData, difficulty: Difficulty) => {
   return directions;
 };
 
-function share(directions: Direction[], pick: (direction: Direction) => string | undefined) {
-  const picked = directions.flatMap((direction) => pick(direction) ?? []);
+function share(directions: Direction[], pick: (direction: Direction) => readonly string[]) {
+  const picked = directions.flatMap(pick);
   const favoured = picked.filter((item) => ["Gothic", "Elegant", "Black"].includes(item));
   return favoured.length / picked.length;
 }
 
 const styleOf = (type: Direction["type"]) => (direction: Direction) =>
-  direction.type === type && "tag" in direction ? direction.tag : undefined;
+  direction.type !== type
+    ? []
+    : "tag" in direction
+      ? [direction.tag]
+      : "tags" in direction
+        ? direction.tags
+        : [];
 
 const colourOf = (type: Direction["type"]) => (direction: Direction) =>
-  direction.type === type && "colour" in direction ? direction.colour : undefined;
+  direction.type === type && "colours" in direction ? direction.colours : [];
 
 describe("themeFor", () => {
   it("reaches every theme, each close to an even share", () => {

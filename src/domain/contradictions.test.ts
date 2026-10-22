@@ -6,7 +6,7 @@ import {
   findConflicts as findConflictsIn,
 } from "./contradictions";
 import type { Direction, GeneralFabric } from "./direction";
-import { dataV1, type Colour, type GameData } from "@/game/data/v1";
+import { dataV1, type Colour, type GameData, type StyleTag } from "@/game/data/v1";
 
 type Options = Partial<Omit<ConflictOptions, "data">>;
 const findConflicts = (directions: readonly Direction[], options: Options = {}) =>
@@ -35,23 +35,26 @@ function expectAllowed(directions: Direction[]) {
 }
 
 const cute: Direction = { type: "style", tag: "Cute" };
-const notCute: Direction = { type: "styleAvoid", tag: "Cute" };
+const notCute: Direction = { type: "styleAvoid", tags: ["Cute"] };
 const gothic: Direction = { type: "style", tag: "Gothic" };
-const notGothic: Direction = { type: "styleAvoid", tag: "Gothic" };
-const silk: Direction = { type: "fabric", fabric: "Silk" };
+const notGothic: Direction = { type: "styleAvoid", tags: ["Gothic"] };
+const silk: Direction = { type: "fabric", fabrics: ["Silk"] };
 const burlapOnly: Direction = { type: "burlapOnly" };
-const noSilk: Direction = { type: "fabricAvoid", fabric: "Silk" };
+const noSilk: Direction = { type: "fabricAvoid", fabrics: ["Silk"] };
 const onlyFabrics = (...fabrics: GeneralFabric[]): Direction => ({ type: "fabricsOnly", fabrics });
 const onlyLinenCotton = onlyFabrics("Linen", "Cotton");
 const atLeastFabrics = (count: number): Direction => ({ type: "fabricsMin", count });
-const avoidFabric = (fabric: GeneralFabric): Direction => ({ type: "fabricAvoid", fabric });
-const red: Direction = { type: "colour", colour: "Red" };
-const noRed: Direction = { type: "colourAvoid", colour: "Red" };
-const noBlue: Direction = { type: "colourAvoid", colour: "Blue" };
+const avoidFabric = (fabric: GeneralFabric): Direction => ({
+  type: "fabricAvoid",
+  fabrics: [fabric],
+});
+const red: Direction = { type: "colour", colours: ["Red"] };
+const noRed: Direction = { type: "colourAvoid", colours: ["Red"] };
+const noBlue: Direction = { type: "colourAvoid", colours: ["Blue"] };
 const onlyColours = (...colours: Colour[]): Direction => ({ type: "colourOnly", colours });
 const onlyWhite = onlyColours("White");
-const bows: Direction = { type: "accessory", accessory: "Bow" };
-const noBows: Direction = { type: "accessoryAvoid", accessory: "Bow" };
+const bows: Direction = { type: "accessory", accessories: ["Bow"] };
+const noBows: Direction = { type: "accessoryAvoid", accessories: ["Bow"] };
 const atLeastBows: Direction = { type: "accessoryMin", accessory: "Bow", count: 3 };
 const exactlyBrooches: Direction = { type: "accessoryExact", accessory: "Brooch", count: 3 };
 const atLeastColours = (count: number): Direction => ({ type: "coloursMin", count });
@@ -70,21 +73,25 @@ describe("asked for and avoided", () => {
   it.each<Case>([
     ["style then style avoid", [cute, notCute], conflict(1, 0, "askedAndAvoided")],
     ["style avoid then style", [notCute, cute], conflict(1, 0, "askedAndAvoided")],
-    ["fabric", [silk, { type: "fabricAvoid", fabric: "Silk" }], conflict(1, 0, "askedAndAvoided")],
+    [
+      "fabric",
+      [silk, { type: "fabricAvoid", fabrics: ["Silk"] }],
+      conflict(1, 0, "askedAndAvoided"),
+    ],
     ["colour", [red, noRed], conflict(1, 0, "askedAndAvoided")],
     [
       "colour only and avoid on the same colour",
-      [onlyWhite, { type: "colourAvoid", colour: "White" }],
+      [onlyWhite, { type: "colourAvoid", colours: ["White"] }],
       conflict(1, 0, "askedAndAvoided"),
     ],
     [
       "a colour in an only list",
-      [onlyColours("Orange", "Yellow", "Green"), { type: "colourAvoid", colour: "Yellow" }],
+      [onlyColours("Orange", "Yellow", "Green"), { type: "colourAvoid", colours: ["Yellow"] }],
       conflict(1, 0, "askedAndAvoided"),
     ],
     [
       "a colour avoid then an only list that holds it",
-      [{ type: "colourAvoid", colour: "Yellow" }, onlyColours("Orange", "Yellow")],
+      [{ type: "colourAvoid", colours: ["Yellow"] }, onlyColours("Orange", "Yellow")],
       conflict(1, 0, "askedAndAvoided"),
     ],
     [
@@ -96,7 +103,7 @@ describe("asked for and avoided", () => {
     ["accessory minimum", [atLeastBows, noBows], conflict(1, 0, "askedAndAvoided")],
     [
       "accessory exact",
-      [exactlyBrooches, { type: "accessoryAvoid", accessory: "Brooch" }],
+      [exactlyBrooches, { type: "accessoryAvoid", accessories: ["Brooch"] }],
       conflict(1, 0, "askedAndAvoided"),
     ],
   ])("rejects %s", (_name, directions, expected) => {
@@ -105,15 +112,15 @@ describe("asked for and avoided", () => {
 
   it.each<NearMiss>([
     ["style and a different style avoid", [cute, notGothic]],
-    ["fabric and a different fabric avoid", [silk, { type: "fabricAvoid", fabric: "Wool" }]],
+    ["fabric and a different fabric avoid", [silk, { type: "fabricAvoid", fabrics: ["Wool"] }]],
     ["colour and a different colour avoid", [red, noBlue]],
     [
       "accessory and a different accessory avoid",
-      [bows, { type: "accessoryAvoid", accessory: "Bell" }],
+      [bows, { type: "accessoryAvoid", accessories: ["Bell"] }],
     ],
     [
       "accessory minimum and a different accessory avoid",
-      [atLeastBows, { type: "accessoryAvoid", accessory: "Bell" }],
+      [atLeastBows, { type: "accessoryAvoid", accessories: ["Bell"] }],
     ],
     ["accessory exact and a different accessory avoid", [exactlyBrooches, noBows]],
   ])("allows %s", (_name, directions) => {
@@ -132,6 +139,16 @@ describe("only colour clashes", () => {
     [
       "a colour avoid outside the list",
       [orangeYellowGreen, noRed],
+      conflict(1, 0, "onlyColourClash"),
+    ],
+    [
+      "the same colour",
+      [onlyWhite, { type: "colour", colours: ["White"] }],
+      conflict(1, 0, "onlyColourClash"),
+    ],
+    [
+      "a colour in the list",
+      [orangeYellowGreen, { type: "colour", colours: ["Green"] }],
       conflict(1, 0, "onlyColourClash"),
     ],
     ["a colours minimum", [onlyWhite, atLeastColours(3)], conflict(1, 0, "onlyColourClash")],
@@ -160,8 +177,6 @@ describe("only colour clashes", () => {
   });
 
   it.each<NearMiss>([
-    ["the same colour", [onlyWhite, { type: "colour", colour: "White" }]],
-    ["a colour in the list", [orangeYellowGreen, { type: "colour", colour: "Green" }]],
     ["an accessory", [onlyWhite, bows]],
     ["a colour with no only colour", [red, noBlue, atLeastColours(3)]],
   ])("allows an only colour with %s", (_name, directions) => {
@@ -198,6 +213,11 @@ describe("only fabric clashes", () => {
       conflict(1, 0, "onlyFabricClash"),
     ],
     [
+      "a fabric in the list",
+      [onlyFabrics("Linen", "Cotton", "Wool"), { type: "fabric", fabrics: ["Cotton"] }],
+      conflict(1, 0, "onlyFabricClash"),
+    ],
+    [
       "a fabrics minimum below the list length",
       [onlyFabrics("Linen", "Cotton", "Wool"), atLeastFabrics(2)],
       conflict(1, 0, "onlyFabricClash"),
@@ -207,10 +227,6 @@ describe("only fabric clashes", () => {
   });
 
   it.each<NearMiss>([
-    [
-      "a fabric in the list",
-      [onlyFabrics("Linen", "Cotton", "Wool"), { type: "fabric", fabric: "Cotton" }],
-    ],
     ["a colour", [onlyLinenCotton, red]],
     ["a colours minimum", [onlyLinenCotton, atLeastColours(3)]],
   ])("allows an only fabric with %s", (_name, directions) => {
@@ -232,7 +248,7 @@ describe("burlap only", () => {
 });
 
 describe("too few colours left", () => {
-  const noGreen: Direction = { type: "colourAvoid", colour: "Green" };
+  const noGreen: Direction = { type: "colourAvoid", colours: ["Green"] };
 
   it.each<Case>([
     [
@@ -454,8 +470,8 @@ describe("asked twice", () => {
     [
       "a fabric avoid",
       [
-        { type: "fabricAvoid", fabric: "Silk" },
-        { type: "fabricAvoid", fabric: "Silk" },
+        { type: "fabricAvoid", fabrics: ["Silk"] },
+        { type: "fabricAvoid", fabrics: ["Silk"] },
       ],
       conflict(1, 0, "askedTwice"),
     ],
@@ -468,7 +484,7 @@ describe("asked twice", () => {
     ["an accessory and its minimum", [bows, atLeastBows], conflict(1, 0, "askedTwice")],
     [
       "an exact count and its accessory",
-      [exactlyBrooches, { type: "accessory", accessory: "Brooch" }],
+      [exactlyBrooches, { type: "accessory", accessories: ["Brooch"] }],
       conflict(1, 0, "askedTwice"),
     ],
   ])("rejects %s", (_name, directions, expected) => {
@@ -576,5 +592,112 @@ describe("game data", () => {
       conflict(1, 0, "tooFewFabricsLeft"),
     ]);
     expect(findConflictsIn(directions, { data: dataV1, pairs: "noBothStyles" })).toEqual([]);
+  });
+});
+
+describe("directions that hold two items", () => {
+  const colours = (...items: Colour[]): Direction => ({ type: "colour", colours: items });
+  const avoidColours = (...items: Colour[]): Direction => ({ type: "colourAvoid", colours: items });
+  const fabrics = (...items: GeneralFabric[]): Direction => ({ type: "fabric", fabrics: items });
+  const avoidTags = (...items: StyleTag[]): Direction => ({ type: "styleAvoid", tags: items });
+
+  it.each<Case>([
+    [
+      "the second asked colour is avoided",
+      [colours("Green", "Red"), avoidColours("Blue", "Red")],
+      conflict(1, 0, "askedAndAvoided"),
+    ],
+    [
+      "the second avoided fabric is asked for",
+      [{ type: "fabricAvoid", fabrics: ["Wool", "Silk"] }, fabrics("Linen", "Silk")],
+      conflict(1, 0, "askedAndAvoided"),
+    ],
+    [
+      "a style asked for sits second in a style avoid",
+      [cute, avoidTags("Playful", "Cute")],
+      conflict(1, 0, "askedAndAvoided"),
+    ],
+    [
+      "the second colour of a pair is in an only list",
+      [onlyColours("Green", "Blue", "Red"), avoidColours("Green", "Blue")],
+      conflict(1, 0, "askedAndAvoided"),
+    ],
+    [
+      "a pair of colours leaves the only list on its second item",
+      [onlyColours("Red", "Blue"), colours("Blue", "Green")],
+      conflict(1, 0, "onlyColourClash"),
+    ],
+    [
+      "a pair of fabrics leaves the only list on its second item",
+      [onlyLinenCotton, fabrics("Cotton", "Wool")],
+      conflict(1, 0, "onlyFabricClash"),
+    ],
+    [
+      "the second asked colour repeats another direction",
+      [colours("Red", "Blue"), colours("Green", "Blue")],
+      conflict(1, 0, "askedTwice"),
+    ],
+    [
+      "the second avoided tag repeats another avoid",
+      [avoidTags("Cute", "Simple"), avoidTags("Warm", "Simple")],
+      conflict(1, 0, "askedTwice"),
+    ],
+  ])("rejects when %s", (_name, directions, expected) => {
+    expectConflict(directions, expected);
+  });
+
+  it("rejects a pair of colours that stays inside an only list", () => {
+    expectConflict(
+      [onlyColours("Red", "Blue", "Green"), colours("Green", "Red")],
+      conflict(1, 0, "onlyColourClash"),
+    );
+  });
+
+  it("counts every avoided colour in a pair when checking colours left", () => {
+    expectConflict(
+      [atLeastColours(9), avoidColours("Red", "Blue"), avoidColours("Green")],
+      conflict(2, 0, "tooFewColoursLeft"),
+    );
+    expectAllowed([atLeastColours(9), avoidColours("Red", "Blue")]);
+  });
+
+  it("counts every avoided fabric in a pair when checking fabrics left", () => {
+    const pair: Direction = { type: "fabricAvoid", fabrics: ["Silk", "Wool"] };
+    expect(findConflicts([atLeastFabrics(6), pair]).map((c) => c.reason)).toEqual([
+      "tooFewFabricsLeft",
+    ]);
+    expectAllowed([atLeastFabrics(5), pair]);
+  });
+
+  it("counts a colour avoided in two lists only once", () => {
+    const reasons = findConflicts([
+      atLeastColours(9),
+      avoidColours("Red", "Blue"),
+      avoidColours("Red", "Blue"),
+    ]).map((c) => c.reason);
+    expect(reasons).not.toContain("tooFewColoursLeft");
+  });
+
+  it("checks every tag of a style avoid against opposing styles", () => {
+    const options: Options = { pairs: "never" };
+    expect(findConflicts([avoidTags("Warm", "Cute"), gothic], options)).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+    expect(findConflicts([gothic, avoidTags("Warm", "Cute")], options)).toEqual([
+      conflict(1, 0, "opposingPair"),
+    ]);
+  });
+
+  it("checks every tag of a style avoid against another style avoid when pairs are never", () => {
+    const pairs = [avoidTags("Warm", "Cute"), avoidTags("Simple", "Gothic")];
+    expect(findConflicts(pairs, { pairs: "never" })).toEqual([conflict(1, 0, "opposingPair")]);
+    expect(findConflicts(pairs, { pairs: "noBothStyles" })).toEqual([]);
+  });
+
+  it("rejects one style avoid that holds an opposing pair when pairs are never", () => {
+    expect(findConflicts([avoidTags("Cute", "Gothic")], { pairs: "never" })).toEqual([
+      conflict(0, 0, "opposingPair"),
+    ]);
+    expect(findConflicts([avoidTags("Cute", "Gothic")], { pairs: "noBothStyles" })).toEqual([]);
   });
 });

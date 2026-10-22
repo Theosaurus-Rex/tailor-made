@@ -1,4 +1,4 @@
-import { accessoryNouns, fabricNouns, styleAvoidLines } from "@/game/briefs/v1/words";
+import { accessoryNouns, fabricNouns, styleAvoidLines, tagWords } from "@/game/briefs/v1/words";
 import type { Direction, DirectionType } from "./direction";
 
 type DirectionOf<T extends DirectionType> = Extract<Direction, { type: T }>;
@@ -19,19 +19,29 @@ const countedNoun = (accessory: keyof typeof accessoryNouns, count: number) => {
   return count === 1 ? noun.singular : noun.plural;
 };
 
+const lowerAll = (items: readonly string[]) => items.map((item) => item.toLowerCase());
+
 const writers: Writers = {
   style: (d) => d.tag,
-  styleAvoid: (d) => styleAvoidLines[d.tag] ?? `Not ${d.tag.toLowerCase()}`,
-  fabric: (d) => d.fabric,
-  fabricAvoid: (d) => `No ${fabricNouns[d.fabric]}`,
+  styleAvoid: (d) => {
+    const [only] = d.tags;
+    if (d.tags.length === 1 && only !== undefined) {
+      return styleAvoidLines[only] ?? `Not ${only.toLowerCase()}`;
+    }
+    return `Not ${joinWithOr(d.tags.map((tag) => tagWords[tag] ?? tag.toLowerCase()))}`;
+  },
+  fabric: (d) => capitalise(joinWithAnd(lowerAll(d.fabrics))),
+  fabricAvoid: (d) => `No ${joinWithOr(d.fabrics.map((fabric) => fabricNouns[fabric]))}`,
   burlapOnly: () => "Burlap only",
   fabricsOnly: (d) => `Only ${joinWithAnd(d.fabrics.map((fabric) => fabricNouns[fabric]))}`,
   fabricsMin: (d) => `At least ${d.count} fabrics`,
-  colour: (d) => d.colour,
-  colourAvoid: (d) => `No ${d.colour.toLowerCase()}`,
-  colourOnly: (d) => `Only ${joinWithAnd(d.colours.map((colour) => colour.toLowerCase()))}`,
-  accessory: (d) => capitalise(accessoryNouns[d.accessory].plural),
-  accessoryAvoid: (d) => `No ${accessoryNouns[d.accessory].plural}`,
+  colour: (d) => capitalise(joinWithAnd(lowerAll(d.colours))),
+  colourAvoid: (d) => `No ${joinWithOr(lowerAll(d.colours))}`,
+  colourOnly: (d) => `Only ${joinWithAnd(lowerAll(d.colours))}`,
+  accessory: (d) =>
+    capitalise(joinWithAnd(d.accessories.map((accessory) => accessoryNouns[accessory].plural))),
+  accessoryAvoid: (d) =>
+    `No ${joinWithOr(d.accessories.map((accessory) => accessoryNouns[accessory].plural))}`,
   accessoryMin: (d) => `At least ${d.count} ${countedNoun(d.accessory, d.count)}`,
   accessoryExact: (d) => `Exactly ${d.count} ${countedNoun(d.accessory, d.count)}`,
   coloursMin: (d) => `At least ${d.count} colours`,
