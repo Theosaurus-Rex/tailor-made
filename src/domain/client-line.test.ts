@@ -11,7 +11,8 @@ import {
 } from "@/game/data/v1";
 import { clientLine, lineRandomFor } from "./client-line";
 import type { Direction, GeneralFabric, PerPieceAccessory } from "./direction";
-import { deriveSeed, randomFromSeed } from "./random";
+import { deriveSeed, randomFromSeed, type Random } from "./random";
+import { shortLine } from "./short-line";
 
 const generalFabrics = fabricTypes.filter(
   (fabric): fabric is GeneralFabric => !("modifierOnly" in fabrics[fabric]),
@@ -75,7 +76,79 @@ const isClean = (line: string) =>
 const lineFor = (direction: Direction, personality: (typeof personalities)[number], n = 0) =>
   clientLine(direction, personality, randomFromSeed(deriveSeed("pick", n)));
 
+const plain = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N} ]/gu, "")
+    .replace(/ +/g, " ")
+    .trim();
+
+const pickingIndex = (index: number): Random => ({
+  fraction: () => 0,
+  between: (min) => min,
+  pick: (items) => items[index % items.length],
+});
+
 describe("client lines content", () => {
+  it("has no straight apostrophe or quote in any client line or short line", () => {
+    const straight = /['"]/;
+    for (const { generic, specific } of Object.values(clientLines)) {
+      const groups: (readonly string[] | undefined)[] = [
+        ...Object.values<readonly string[]>({ ...generic }),
+        ...Object.values<readonly string[] | undefined>(specific),
+      ];
+      for (const template of groups.flatMap((lines) => lines ?? [])) {
+        expect(template, template).not.toMatch(straight);
+      }
+    }
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(line, line).not.toMatch(straight);
+        }
+        expect(shortLine(direction)).not.toMatch(straight);
+      }
+    }
+  });
+
+  it("never repeats the short line, for every direction, voice and line", () => {
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(plain(line), `${personality} ${shortLine(direction)} / ${line}`).not.toBe(
+            plain(shortLine(direction)),
+          );
+        }
+      }
+    }
+  });
+
+  it("puts something, nothing or anything before the tag in every generic style line", () => {
+    for (const personality of personalities) {
+      const { style, styleAvoid } = clientLines[personality].generic;
+      for (const template of [...style, ...styleAvoid]) {
+        expect(template, `${personality} ${template}`).toMatch(
+          /\b(something|nothing|anything) \{tag\}/i,
+        );
+      }
+    }
+  });
+
+  it("never says daywear, eveningwear, workwear or glamour as a bare word in a client line", () => {
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(line, `${personality} ${line}`).not.toMatch(
+            /daywear|eveningwear|workwear|\bglamour\b/i,
+          );
+        }
+      }
+    }
+  });
+
   it("gives every personality at least two generic lines for every direction type", () => {
     for (const personality of personalities) {
       const { generic } = clientLines[personality];
@@ -231,7 +304,7 @@ describe("clientLine", () => {
           const first = line.search(/\{(tag|fabric|colour|accessory)\}/);
           const after = line.slice(first).replace(/^\{\w+\}/, "");
           expect(after, `${personality} ${type}: ${line}`).not.toMatch(
-            /\b(it|its|it's|it'll|that|that's|that'll|this)\b/i,
+            /\b(it|its|it’s|it’ll|that|that’s|that’ll|this)\b/i,
           );
         }
       }

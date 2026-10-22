@@ -16,8 +16,8 @@ const challengeOf = (difficulty: "easy" | "chaos", burlap = false) =>
 
 const handMadeCard = {
   client: { name: "Freya Lindqvist", initials: "FL", human: true },
-  occasion: "mayor's charity ball",
-  brief: "Freya has been counting the days to the mayor's charity ball.",
+  occasion: "mayor’s charity ball",
+  brief: "Freya has been counting the days to the mayor’s charity ball.",
   rows: ["Burlap only", "No trim", "Eclectic", "At least 7 brooches"].map((shortLine, slot) => ({
     slot,
     shortLine,
@@ -29,8 +29,8 @@ describe("challengeAsText", () => {
   it("writes the exact text for a card", () => {
     expect(challengeAsText(handMadeCard, LINK)).toBe(
       [
-        "Freya Lindqvist · Mayor's charity ball",
-        `"Freya has been counting the days to the mayor's charity ball."`,
+        "Freya Lindqvist · Mayor’s charity ball",
+        "“Freya has been counting the days to the mayor’s charity ball.”",
         "",
         "- Burlap only",
         "- No trim",
@@ -52,7 +52,7 @@ describe("challengeAsText", () => {
       const lines = challengeAsText(card, LINK).split("\n");
       const listLines = lines.slice(3, 3 + card.rows.length);
       expect(lines[0]).toMatch(new RegExp(`^${card.client.name} · [A-Z]`));
-      expect(lines[1]).toBe(`"${card.brief}"`);
+      expect(lines[1]).toBe(`“${card.brief}”`);
       expect(lines[2]).toBe("");
       expect(listLines).toEqual(card.rows.map((row) => `- ${row.shortLine}`));
       expect(lines.slice(3 + card.rows.length)).toEqual(["", LINK]);
