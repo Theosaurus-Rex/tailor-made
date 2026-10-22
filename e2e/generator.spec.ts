@@ -1,6 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { expectNoSeriousA11yIssues } from "./axe";
+import { directionRows, stubClipboard, tabTo } from "./helpers";
 
 const generate = (page: Page) => page.getByRole("button", { name: /^generate/i }).click();
 
@@ -103,4 +104,33 @@ test("a Chaos card has no reroll buttons", async ({ page }) => {
   await generate(page);
   await expect(page.getByRole("button", { name: /^reroll/i })).toHaveCount(0);
   await expect(page.getByText("Chaos cards can't be rerolled.")).toBeVisible();
+});
+
+test("the whole generator works from the keyboard alone", async ({ page }) => {
+  await stubClipboard(page);
+  await page.goto("/");
+  await tabTo(page, page.getByRole("radio", { name: "Medium" }));
+  await page.keyboard.press("ArrowRight");
+  await expect(page.getByRole("radio", { name: "Hard" })).toBeChecked();
+
+  const burlap = page.getByRole("checkbox", { name: "Burlap only" });
+  await tabTo(page, burlap);
+  await page.keyboard.press("Space");
+  await expect(burlap).toBeChecked();
+
+  await tabTo(page, page.getByRole("button", { name: /^generate/i }));
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("heading", { level: 2 })).toBeFocused();
+  await expect(directionRows(page).first().getByText("Modifier")).toBeVisible();
+
+  const reroll = page.getByRole("button", { name: /^reroll/i }).first();
+  const rerolled = await reroll.getAttribute("aria-label");
+  await tabTo(page, reroll);
+  await page.keyboard.press("Enter");
+  await expect(page.getByText(/swapped for a new one/)).toBeVisible();
+  await expect(page.getByRole("button", { name: rerolled ?? "" })).toHaveCount(0);
+
+  await tabTo(page, page.getByRole("button", { name: "Copy link" }));
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("button", { name: /^Link copied/ })).toBeVisible();
 });
