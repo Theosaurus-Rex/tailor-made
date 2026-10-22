@@ -46,4 +46,5 @@ export const tagWords: Partial<Record<StyleTag, string>> = {
   Daywear: "for daytime",
   Eveningwear: "for the evening",
   Workwear: "for work",
+  Glamour: "glamorous",
 };

@@ -2413,8 +2413,8 @@
         "client": "At least four feathers, if you please. One does like to be seen."
       },
       {
-        "short": "Not glamour or gothic",
-        "client": "One cannot abide anything glamour or gothic. Kindly avoid such things."
+        "short": "Not glamorous or gothic",
+        "client": "One cannot abide anything glamorous or gothic. Kindly avoid such things."
       },
       {
         "short": "Playful",
@@ -3048,7 +3048,7 @@
       },
       {
         "short": "Not glamour",
-        "client": "One cannot abide anything glamour. Kindly avoid such things."
+        "client": "One cannot abide anything glamorous. Kindly avoid such things."
       },
       {
         "short": "Daywear",
@@ -3703,7 +3703,7 @@
       },
       {
         "short": "Glamour",
-        "client": "Something glamour. No fuss."
+        "client": "Something glamorous. No fuss."
       },
       {
         "short": "Daywear",
@@ -3938,7 +3938,7 @@
       },
       {
         "short": "Glamour",
-        "client": "Something glamour. No fuss."
+        "client": "Something glamorous. No fuss."
       },
       {
         "short": "At least 7 appliqués",

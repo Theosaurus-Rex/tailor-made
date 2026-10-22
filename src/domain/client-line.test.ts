@@ -136,12 +136,14 @@ describe("client lines content", () => {
     }
   });
 
-  it("never says daywear, eveningwear or workwear as a bare word in a client line", () => {
+  it("never says daywear, eveningwear, workwear or glamour as a bare word in a client line", () => {
     for (const personality of personalities) {
       for (const direction of everyDirection) {
         for (let index = 0; index < 3; index++) {
           const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
-          expect(line, `${personality} ${line}`).not.toMatch(/daywear|eveningwear|workwear/i);
+          expect(line, `${personality} ${line}`).not.toMatch(
+            /daywear|eveningwear|workwear|\bglamour\b/i,
+          );
         }
       }
     }
