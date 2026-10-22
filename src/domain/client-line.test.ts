@@ -11,7 +11,8 @@ import {
 } from "@/game/data/v1";
 import { clientLine, lineRandomFor } from "./client-line";
 import type { Direction, GeneralFabric, PerPieceAccessory } from "./direction";
-import { deriveSeed, randomFromSeed } from "./random";
+import { deriveSeed, randomFromSeed, type Random } from "./random";
+import { shortLine } from "./short-line";
 
 const generalFabrics = fabricTypes.filter(
   (fabric): fabric is GeneralFabric => !("modifierOnly" in fabrics[fabric]),
@@ -75,7 +76,33 @@ const isClean = (line: string) =>
 const lineFor = (direction: Direction, personality: (typeof personalities)[number], n = 0) =>
   clientLine(direction, personality, randomFromSeed(deriveSeed("pick", n)));
 
+const plain = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N} ]/gu, "")
+    .replace(/ +/g, " ")
+    .trim();
+
+const pickingIndex = (index: number): Random => ({
+  fraction: () => 0,
+  between: (min) => min,
+  pick: (items) => items[index % items.length],
+});
+
 describe("client lines content", () => {
+  it("never repeats the short line, for every direction, voice and line", () => {
+    for (const personality of personalities) {
+      for (const direction of everyDirection) {
+        for (let index = 0; index < 3; index++) {
+          const line = clientLine(direction, personality, pickingIndex(index)) ?? "";
+          expect(plain(line), `${personality} ${shortLine(direction)} / ${line}`).not.toBe(
+            plain(shortLine(direction)),
+          );
+        }
+      }
+    }
+  });
+
   it("gives every personality at least two generic lines for every direction type", () => {
     for (const personality of personalities) {
       const { generic } = clientLines[personality];

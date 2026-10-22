@@ -157,7 +157,7 @@
     "lines": [
       {
         "short": "No brooches",
-        "client": "No brooches."
+        "client": "No brooches. Too busy."
       },
       {
         "short": "Uncomfortable",
@@ -225,7 +225,7 @@
       },
       {
         "short": "No bells",
-        "client": "No bells."
+        "client": "No bells. Too busy."
       },
       {
         "short": "Eclectic",
@@ -295,7 +295,7 @@
       },
       {
         "short": "At least 3 tassels",
-        "client": "At least three tassels."
+        "client": "At least three tassels. Make them count."
       },
       {
         "short": "Eclectic",
@@ -371,7 +371,7 @@
       },
       {
         "short": "No lace trim",
-        "client": "No lace trim."
+        "client": "No lace trim. Too busy."
       },
       {
         "short": "Flowers",
@@ -445,11 +445,11 @@
       },
       {
         "short": "Exactly 3 tassels",
-        "client": "Exactly three tassels."
+        "client": "Exactly three tassels. Not a stitch more."
       },
       {
         "short": "Not elegant or eclectic",
-        "client": "Not elegant or eclectic."
+        "client": "Not elegant or eclectic. Not my thing."
       },
       {
         "short": "Only velvet and cotton",
@@ -3757,7 +3757,7 @@
       },
       {
         "short": "No linen",
-        "client": "No linen."
+        "client": "No linen. Too fussy."
       },
       {
         "short": "Daywear",
@@ -3813,7 +3813,7 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "At least four buttons."
+        "client": "At least four buttons. Make them count."
       },
       {
         "short": "No piping or brooches",
@@ -3874,7 +3874,7 @@
       },
       {
         "short": "No brooches",
-        "client": "No brooches."
+        "client": "No brooches. Too busy."
       },
       {
         "short": "Daywear",
@@ -4008,7 +4008,7 @@
       },
       {
         "short": "Only green and grey",
-        "client": "Green or grey only."
+        "client": "Green or grey only. No extras."
       },
       {
         "short": "Cool",
@@ -4016,7 +4016,7 @@
       },
       {
         "short": "Exactly 5 buttons",
-        "client": "Exactly five buttons."
+        "client": "Exactly five buttons. Not a stitch more."
       },
       {
         "short": "Elegant",
@@ -4081,7 +4081,7 @@
       },
       {
         "short": "At least 4 buttons",
-        "client": "At least four buttons."
+        "client": "At least four buttons. Make them count."
       },
       {
         "short": "Exactly 7 bells",
