@@ -400,7 +400,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "winter-gala",
-      "plan": ["style", "accessoryExact", "accessory", "fabricsOnly", "fabric", "style"],
+      "plan": ["style", "accessoryExact", "styleAvoid", "fabricsOnly", "colour", "style"],
       "history": [],
       "directions": [
         {
@@ -413,16 +413,16 @@
           "count": 3
         },
         {
-          "type": "accessory",
-          "accessories": ["Brooch", "Bow"]
+          "type": "styleAvoid",
+          "tags": ["Elegant", "Eclectic"]
         },
         {
           "type": "fabricsOnly",
           "fabrics": ["Velvet", "Cotton"]
         },
         {
-          "type": "fabric",
-          "fabrics": ["Cotton", "Velvet"]
+          "type": "colour",
+          "colours": ["Purple", "White"]
         },
         {
           "type": "style",
@@ -448,16 +448,16 @@
         "client": "Exactly three tassels."
       },
       {
-        "short": "Brooches and bows",
-        "client": "Brooches and bows. Keep things tidy."
+        "short": "Not elegant or eclectic",
+        "client": "Not elegant or eclectic."
       },
       {
         "short": "Only velvet and cotton",
         "client": "Nothing but velvet or cotton. That's all."
       },
       {
-        "short": "Cotton and velvet",
-        "client": "Use cotton and velvet. Thanks."
+        "short": "Purple and white",
+        "client": "Make it purple and white."
       },
       {
         "short": "Formal",
@@ -909,7 +909,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["fabricsOnly", "style", "accessoryMin", "style", "accessoryExact"],
+      "plan": ["fabricsOnly", "style", "coloursMin", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -921,9 +921,8 @@
           "tag": "Cute"
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Feather",
-          "count": 5
+          "type": "coloursMin",
+          "count": 3
         },
         {
           "type": "style",
@@ -954,8 +953,8 @@
         "client": "I shall require cute. Do try to rise to it."
       },
       {
-        "short": "At least 5 feathers",
-        "client": "I shall require at least five feathers. A lady must be noticed."
+        "short": "At least 3 colours",
+        "client": "One expects colour. At least three, I think."
       },
       {
         "short": "Gothic",
@@ -1299,13 +1298,12 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["accessoryMin", "style", "style", "coloursMin", "fabric"],
+      "plan": ["accessoryAvoid", "style", "style", "coloursMin", "fabric"],
       "history": [],
       "directions": [
         {
-          "type": "accessoryMin",
-          "accessory": "Flower",
-          "count": 5
+          "type": "accessoryAvoid",
+          "accessories": ["Flower"]
         },
         {
           "type": "style",
@@ -1335,8 +1333,8 @@
     "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "At least 5 flowers",
-        "client": "Five flowers, at the very least."
+        "short": "No flowers",
+        "client": "No flowers. I've had my fill."
       },
       {
         "short": "Warm",
@@ -1445,7 +1443,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["accessory", "fabricsOnly", "style", "fabric", "style", "accessoryExact"],
+      "plan": ["accessory", "fabricsOnly", "style", "style", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -1461,12 +1459,12 @@
           "tag": "Elaborate"
         },
         {
-          "type": "fabric",
-          "fabrics": ["Lace"]
+          "type": "style",
+          "tag": "Simple"
         },
         {
           "type": "style",
-          "tag": "Simple"
+          "tag": "Playful"
         },
         {
           "type": "accessoryExact",
@@ -1474,7 +1472,7 @@
           "count": 2
         }
       ],
-      "pairSlots": [2, 4],
+      "pairSlots": [2, 3],
       "pullApartSlot": null
     },
     "client": {
@@ -1497,12 +1495,12 @@
         "client": "Think elaborate. I'll know it when I see it."
       },
       {
-        "short": "Lace",
-        "client": "Lace. Good enough for me."
+        "short": "Simple",
+        "client": "Simple. That's the whole request."
       },
       {
-        "short": "Simple",
-        "client": "Make it simple. I've had a long week."
+        "short": "Playful",
+        "client": "Make it playful. I've had a long week."
       },
       {
         "short": "Exactly 2 bells",
@@ -2441,12 +2439,11 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["accessoryMin", "style", "fabricsOnly", "accessoryExact", "style"],
+      "plan": ["coloursMin", "style", "fabricsOnly", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
-          "type": "accessoryMin",
-          "accessory": "Flower",
+          "type": "coloursMin",
           "count": 4
         },
         {
@@ -2459,8 +2456,8 @@
         },
         {
           "type": "accessoryExact",
-          "accessory": "Appliqué",
-          "count": 3
+          "accessory": "Flower",
+          "count": 7
         },
         {
           "type": "style",
@@ -2478,8 +2475,8 @@
     "brief": "Thea has a few pennies for a day of jam stalls and tombola. She wants something bright and comfortable.",
     "lines": [
       {
-        "short": "At least 4 flowers",
-        "client": "At least four flowers, if you please. One does like to be seen."
+        "short": "At least 4 colours",
+        "client": "At least four colours, if you please. I do not do plain."
       },
       {
         "short": "Simple",
@@ -2490,8 +2487,8 @@
         "client": "One will accept only sequins. I trust that is not too taxing."
       },
       {
-        "short": "Exactly 3 appliqués",
-        "client": "Three appliqués, precisely. I shall be counting."
+        "short": "Exactly 7 flowers",
+        "client": "Seven flowers, precisely. I shall be counting."
       },
       {
         "short": "Elaborate",
@@ -2798,7 +2795,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "stylish-wake",
-      "plan": ["fabric", "style", "style", "styleAvoid"],
+      "plan": ["fabric", "style", "style", "accessory"],
       "history": [],
       "directions": [
         {
@@ -2814,8 +2811,8 @@
           "tag": "Elegant"
         },
         {
-          "type": "styleAvoid",
-          "tags": ["Romantic"]
+          "type": "accessory",
+          "accessories": ["Tassel"]
         }
       ],
       "pairSlots": null,
@@ -2841,8 +2838,8 @@
         "client": "One expects elegant. I trust that is clear."
       },
       {
-        "short": "Not romantic",
-        "client": "Not romantic, I think. Quite unfitting."
+        "short": "Tassels",
+        "client": "One expects tassels. A matter of form."
       }
     ]
   },
@@ -3460,7 +3457,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "lighthouse-wedding",
-      "plan": ["style", "colour", "accessoryExact", "style", "fabricsOnly", "fabric"],
+      "plan": ["style", "accessory", "accessoryExact", "style", "fabricsOnly", "colour"],
       "history": [],
       "directions": [
         {
@@ -3468,8 +3465,8 @@
           "tag": "Formal"
         },
         {
-          "type": "colour",
-          "colours": ["Red", "Brown"]
+          "type": "accessory",
+          "accessories": ["Piping", "Bow"]
         },
         {
           "type": "accessoryExact",
@@ -3485,8 +3482,8 @@
           "fabrics": ["Linen", "Velvet", "Sequin"]
         },
         {
-          "type": "fabric",
-          "fabrics": ["Velvet"]
+          "type": "colour",
+          "colours": ["Orange"]
         }
       ],
       "pairSlots": [0, 3],
@@ -3504,8 +3501,8 @@
         "client": "Make it formal! Let the whole world gasp!"
       },
       {
-        "short": "Red and brown",
-        "client": "Make it red and brown, darling! Let the stage blaze!"
+        "short": "Piping and bows",
+        "client": "Add piping and bows, darling! Let the light find every one!"
       },
       {
         "short": "Exactly 8 bells",
@@ -3520,8 +3517,8 @@
         "client": "Linen, velvet or sequins only! Let those be my entire cast!"
       },
       {
-        "short": "Velvet",
-        "client": "Velvet, darling! I must have velvet!"
+        "short": "Orange",
+        "client": "Orange! Pure, glorious orange! Light the spotlights!"
       }
     ]
   },
@@ -3841,7 +3838,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["style", "accessoryMin", "style", "colour"],
+      "plan": ["style", "accessoryAvoid", "style", "colour"],
       "history": [],
       "directions": [
         {
@@ -3849,9 +3846,8 @@
           "tag": "Gothic"
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Button",
-          "count": 4
+          "type": "accessoryAvoid",
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -3877,8 +3873,8 @@
         "client": "Gothic. Nothing flimsy."
       },
       {
-        "short": "At least 4 buttons",
-        "client": "At least four buttons."
+        "short": "No brooches",
+        "client": "No brooches."
       },
       {
         "short": "Daywear",
@@ -4328,17 +4324,16 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "rainy-picnic",
-      "plan": ["accessoryAvoid", "accessoryMin", "styleAvoid", "fabric"],
+      "plan": ["colourAvoid", "accessory", "styleAvoid", "fabric"],
       "history": [],
       "directions": [
         {
-          "type": "accessoryAvoid",
-          "accessories": ["Bell"]
+          "type": "colourAvoid",
+          "colours": ["Brown"]
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Button",
-          "count": 5
+          "type": "accessory",
+          "accessories": ["Feather"]
         },
         {
           "type": "styleAvoid",
@@ -4360,12 +4355,12 @@
     "brief": "Flask in hand, Odette is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no squelching in the grass.",
     "lines": [
       {
-        "short": "No bells",
-        "client": "Oh, no bells, darling. I'm so sorry to be fussy!"
+        "short": "No brown",
+        "client": "Oh, not brown, darling! Not today, anyway."
       },
       {
-        "short": "At least 5 buttons",
-        "client": "Oh, five buttons at the very least, darling!"
+        "short": "Feathers",
+        "client": "Oh, feathers! Add as many as you like, darling."
       },
       {
         "short": "Not elegant",
@@ -4458,7 +4453,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "rainy-picnic",
-      "plan": ["fabricsOnly", "style", "colour", "style", "accessoryExact"],
+      "plan": ["fabricsOnly", "style", "accessory", "style", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -4470,8 +4465,8 @@
           "tag": "Eveningwear"
         },
         {
-          "type": "colour",
-          "colours": ["Green"]
+          "type": "accessory",
+          "accessories": ["Brooch"]
         },
         {
           "type": "style",
@@ -4502,8 +4497,8 @@
         "client": "Oh, eveningwear! That's exactly what I'm after, darling."
       },
       {
-        "short": "Green",
-        "client": "Oh, green, darling! I'm glowing at the thought."
+        "short": "Brooches",
+        "client": "Oh, brooches! Add as many as you like, darling."
       },
       {
         "short": "Daywear",
@@ -4815,11 +4810,11 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["fabricsMin", "fabric", "style", "colour"],
+      "plan": ["coloursMin", "fabric", "style", "colour"],
       "history": [],
       "directions": [
         {
-          "type": "fabricsMin",
+          "type": "coloursMin",
           "count": 4
         },
         {
@@ -4846,8 +4841,8 @@
     "brief": "Imogen has a few pennies for a day of jam stalls and tombola. She wants something cheerful and practical.",
     "lines": [
       {
-        "short": "At least 4 fabrics",
-        "client": "Give me four fabrics at the very least, darling! Variety is everything!"
+        "short": "At least 4 colours",
+        "client": "Give me four colours at the very least! A grand finale needs a rainbow!"
       },
       {
         "short": "Sequin",
@@ -4944,7 +4939,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "village-fete",
-      "plan": ["style", "style", "colourOnly", "accessoryMin", "accessoryExact"],
+      "plan": ["style", "style", "colourOnly", "fabricsMin", "accessoryExact"],
       "history": [],
       "directions": [
         {
@@ -4960,9 +4955,8 @@
           "colours": ["Brown"]
         },
         {
-          "type": "accessoryMin",
-          "accessory": "Jewel",
-          "count": 6
+          "type": "fabricsMin",
+          "count": 4
         },
         {
           "type": "accessoryExact",
@@ -4993,8 +4987,8 @@
         "client": "Brown only, darling! Let those be my whole palette!"
       },
       {
-        "short": "At least 6 jewels",
-        "client": "At least six jewels! More, if the drama demands it!"
+        "short": "At least 4 fabrics",
+        "client": "At least four fabrics! A star needs a full wardrobe!"
       },
       {
         "short": "Exactly 3 flowers",
@@ -5431,7 +5425,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "riding-lesson",
-      "plan": ["style", "fabricsOnly", "colourAvoid", "accessoryExact", "style"],
+      "plan": ["style", "fabricsOnly", "accessoryAvoid", "accessoryExact", "style"],
       "history": [],
       "directions": [
         {
@@ -5443,8 +5437,8 @@
           "fabrics": ["Silk", "Linen", "Cotton"]
         },
         {
-          "type": "colourAvoid",
-          "colours": ["Brown"]
+          "type": "accessoryAvoid",
+          "accessories": ["Brooch"]
         },
         {
           "type": "accessoryExact",
@@ -5475,8 +5469,8 @@
         "client": "One will accept only silk, linen or cotton. I trust that is not too taxing."
       },
       {
-        "short": "No brown",
-        "client": "No brown, please. One has never trusted such a palette."
+        "short": "No brooches",
+        "client": "No brooches, please. Not for me."
       },
       {
         "short": "Exactly 2 tassels",
@@ -6275,7 +6269,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["style", "colour", "fabric", "colourOnly"],
+      "plan": ["style", "fabric", "accessory", "colourOnly"],
       "history": [],
       "directions": [
         {
@@ -6283,16 +6277,16 @@
           "tag": "Daywear"
         },
         {
-          "type": "colour",
-          "colours": ["White"]
+          "type": "fabric",
+          "fabrics": ["Wool"]
         },
         {
-          "type": "fabric",
-          "fabrics": ["Velvet", "Lace"]
+          "type": "accessory",
+          "accessories": ["Jewel", "Bow"]
         },
         {
           "type": "colourOnly",
-          "colours": ["White", "Black", "Red"]
+          "colours": ["Blue", "White", "Yellow"]
         }
       ],
       "pairSlots": null,
@@ -6310,16 +6304,16 @@
         "client": "Make it daywear. I've had a long week."
       },
       {
-        "short": "White",
-        "client": "Make it white. Don't ask me why."
+        "short": "Wool",
+        "client": "I'd like wool. Don't read into the choice."
       },
       {
-        "short": "Velvet and lace",
-        "client": "I'd like velvet and lace. Don't read into the choice."
+        "short": "Jewels and bows",
+        "client": "Add jewels and bows. I'll pretend I'm not excited."
       },
       {
-        "short": "Only white, black and red",
-        "client": "White, black or red only. Only means only."
+        "short": "Only blue, white and yellow",
+        "client": "Blue, white or yellow only. Only means only."
       }
     ]
   },
@@ -6404,7 +6398,7 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "castle-wedding",
-      "plan": ["style", "fabric", "style", "accessoryExact", "fabricsOnly"],
+      "plan": ["style", "style", "style", "accessoryExact", "fabricsOnly"],
       "history": [],
       "directions": [
         {
@@ -6412,12 +6406,12 @@
           "tag": "Formal"
         },
         {
-          "type": "fabric",
-          "fabrics": ["Wool"]
+          "type": "style",
+          "tag": "Casual"
         },
         {
           "type": "style",
-          "tag": "Casual"
+          "tag": "Cute"
         },
         {
           "type": "accessoryExact",
@@ -6426,10 +6420,10 @@
         },
         {
           "type": "fabricsOnly",
-          "fabrics": ["Wool", "Linen"]
+          "fabrics": ["Linen", "Wool"]
         }
       ],
-      "pairSlots": [0, 2],
+      "pairSlots": [0, 1],
       "pullApartSlot": null
     },
     "client": {
@@ -6444,20 +6438,20 @@
         "client": "Make it formal. I've had a long week."
       },
       {
-        "short": "Wool",
-        "client": "I'd like wool. Don't read into the choice."
+        "short": "Casual",
+        "client": "Casual. That's the whole request."
       },
       {
-        "short": "Casual",
-        "client": "Make it casual. I've had a long week."
+        "short": "Cute",
+        "client": "Make it cute. I've had a long week."
       },
       {
         "short": "Exactly 2 flowers",
         "client": "Two flowers. I counted."
       },
       {
-        "short": "Only wool and linen",
-        "client": "Wool or linen only. Surprise me within that."
+        "short": "Only linen and wool",
+        "client": "Linen or wool only. Surprise me within that."
       }
     ]
   },
@@ -6859,13 +6853,12 @@
       "modifiers": [],
       "dataVersion": 1,
       "themeId": "midnight-feast",
-      "plan": ["accessoryMin", "style", "style", "coloursMin", "fabric"],
+      "plan": ["accessoryAvoid", "style", "style", "coloursMin", "fabric"],
       "history": [1, 0, 1, 0],
       "directions": [
         {
-          "type": "accessoryMin",
-          "accessory": "Bow",
-          "count": 8
+          "type": "accessoryAvoid",
+          "accessories": ["Trim", "Feather"]
         },
         {
           "type": "style",
@@ -6895,8 +6888,8 @@
     "brief": "Philippa has hidden the biscuits for a cocoa party after lights out. She wants something snug and sneaky.",
     "lines": [
       {
-        "short": "At least 8 bows",
-        "client": "Eight bows, minimum. Subtlety is not the goal."
+        "short": "No trim or feathers",
+        "client": "Keep the trim or feathers off me."
       },
       {
         "short": "Elegant",

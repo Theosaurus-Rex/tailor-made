@@ -87,15 +87,10 @@ function drawCandidate(
   type: DirectionType,
   random: Random,
   data: GameData,
-  others: readonly Direction[],
   towards: StyleTag | undefined,
   leanings: Leanings,
   pairedItemChance: number,
 ): Direction {
-  const onlyColours = others.find((d) => d.type === "colourOnly")?.colours;
-  const onlyFabrics = others.find((d) => d.type === "fabricsOnly")?.fabrics;
-  const askedColours = others.flatMap((d) => (d.type === "colour" ? d.colours : []));
-  const askedFabrics = others.flatMap((d) => (d.type === "fabric" ? d.fabrics : []));
   const generalFabrics = data.fabricTypes.filter(
     (fabric) => !data.fabrics[fabric].modifierOnly,
   ) as GeneralFabric[];
@@ -105,11 +100,8 @@ function drawCandidate(
   const tag = (avoid: boolean) =>
     weighted(random, data.styleTags, (value) => leanings.tag(value, avoid));
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
-  const onlyList = <T>(asked: readonly T[], pool: readonly T[], weight: (item: T) => number) => {
-    const wanted = Math.max(onlyCount(), asked.length);
-    const rest = pool.filter((item) => !asked.includes(item));
-    return [...asked, ...someOf(random, rest, wanted - asked.length, weight)];
-  };
+  const onlyList = <T>(pool: readonly T[], weight: (item: T) => number) =>
+    someOf(random, pool, onlyCount(), weight);
   const pick = <T>(items: readonly T[], weight: (item: T) => number): T[] => {
     const size =
       random.fraction() < pairedItemChance ? SAME_KIND_LIST_SIZE.max : SAME_KIND_LIST_SIZE.min;
@@ -126,7 +118,7 @@ function drawCandidate(
       return {
         type,
         fabrics: pick(
-          leaning(onlyFabrics ?? generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
+          leaning(generalFabrics, towards, (f) => data.fabrics[f].leansTowards),
           (f) => leanings.fabric(f, false),
         ),
       };
@@ -135,7 +127,7 @@ function drawCandidate(
     case "fabricsOnly":
       return {
         type,
-        fabrics: onlyList(askedFabrics, generalFabrics, (f) => leanings.fabric(f, false)),
+        fabrics: onlyList(generalFabrics, (f) => leanings.fabric(f, false)),
       };
     case "fabricsMin":
     case "coloursMin":
@@ -143,14 +135,14 @@ function drawCandidate(
     case "colour":
       return {
         type,
-        colours: pick(onlyColours ?? data.colours, (c) => leanings.colour(c, false)),
+        colours: pick(data.colours, (c) => leanings.colour(c, false)),
       };
     case "colourAvoid":
       return { type, colours: pick(data.colours, (c) => leanings.colour(c, true)) };
     case "colourOnly":
       return {
         type,
-        colours: onlyList(askedColours, data.colours, (c) => leanings.colour(c, false)),
+        colours: onlyList(data.colours, (c) => leanings.colour(c, false)),
       };
     case "accessory":
       return {
@@ -269,15 +261,7 @@ export function drawDirection({
       : undefined;
   const leanings = leaningsFor(data, ignoreTheme ? undefined : themeFor(seed, data));
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
-    const candidate = drawCandidate(
-      type,
-      random,
-      data,
-      others,
-      towards,
-      leanings,
-      pairedItemChance,
-    );
+    const candidate = drawCandidate(type, random, data, towards, leanings, pairedItemChance);
     if (replacing && sameDirection(candidate, replacing)) continue;
     if (!conflictsWithAny(candidate, others, { data, pairs, allowedPair })) return candidate;
   }

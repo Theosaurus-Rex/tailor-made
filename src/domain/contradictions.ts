@@ -106,14 +106,15 @@ const askedAndAvoided: Rule = (directions) =>
 
 const onlyListClash = (reason: ConflictReason, onlyType: "colourOnly" | "fabricsOnly"): Rule => {
   const minType = onlyType === "colourOnly" ? "coloursMin" : "fabricsMin";
-  const prefix = onlyType === "colourOnly" ? "colour:" : "fabric:";
+  const askType = onlyType === "colourOnly" ? "colour" : "fabric";
+  const prefix = `${askType}:`;
   return (directions) =>
     eachPair(
       directions,
       reason,
       eitherWay((only, other) => {
         if (only.type !== onlyType) return false;
-        if (other.type === minType) return true;
+        if (other.type === minType || other.type === askType) return true;
         const outside = [...askedFor(other), ...avoided(other)].filter((key) =>
           key.startsWith(prefix),
         );

@@ -169,8 +169,10 @@ Pure functions in `src/domain/`. No I/O, no `Math.random`, no `Date`.
 
 - Any item in a list asked for or avoided in one direction and avoided or asked for in another.
   Every item is checked, and an only list counts as asking for each item in it
-- A `colourOnly` alongside a `colour` or `colourAvoid` with any item outside its list
-- A `fabricsOnly` alongside a `fabric` or `fabricAvoid` with any item outside its list
+- A `colourOnly` alongside a `colour`, or a `colourAvoid` with any item outside its list
+- A `fabricsOnly` alongside a `fabric`, or a `fabricAvoid` with any item outside its list
+- An only list never sits beside a plain ask of the same kind, even inside the list, as it repeats
+  the list
 - A `coloursMin` beside a `colourOnly`, or a `fabricsMin` beside a `fabricsOnly`. The list already
   sets which colours or fabrics to use, so a count beside it only repeats or fights it
 - A `coloursMin` higher than the colours left after avoids. Each distinct avoided colour counts once
@@ -243,9 +245,9 @@ other, and a little from counts. Starting values. M6 playtesting tunes them.
 **Two-item lists.** Each list direction holds two items with a chance set per difficulty in the
 data (`pairedItemChance`): 0.2 on Easy and 0.35 on Medium, Hard and Chaos. Burlap only shapes use
 the same value as their normal shape. The chance is drawn from the slot's own stream, so a reroll
-redraws it. Items are drawn without repeats from the theme-weighted pools. A `colour` or `fabric`
-beside an "only" list draws from that list, and an "only" list drawn later keeps every item
-already asked for. The plan never holds two of the same list type (`kindsNeverTogether`).
+redraws it. Items are drawn without repeats from the theme-weighted pools. The plan never
+holds an "only" list beside a plain ask of the same kind, nor two of the same list type
+(`kindsNeverTogether`).
 
 Chaos ignores the theme's leanings (see section 9). Its "only" list is always there for now, and M6
 tuning may make it "likely" again.

@@ -204,8 +204,10 @@ export const burlapDifficultyShapes: Record<DifficultyName, DifficultyShape> = {
 export const kindsNeverTogether = [
   ["colourOnly", "colourAvoid"],
   ["colourOnly", "coloursMin"],
+  ["colourOnly", "colour"],
   ["fabricsOnly", "fabricAvoid"],
   ["fabricsOnly", "fabricsMin"],
+  ["fabricsOnly", "fabric"],
   ["coloursMin", "coloursMin"],
   ["fabricsMin", "fabricsMin"],
   ["fabric", "fabric"],

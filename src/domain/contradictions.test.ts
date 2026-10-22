@@ -141,6 +141,16 @@ describe("only colour clashes", () => {
       [orangeYellowGreen, noRed],
       conflict(1, 0, "onlyColourClash"),
     ],
+    [
+      "the same colour",
+      [onlyWhite, { type: "colour", colours: ["White"] }],
+      conflict(1, 0, "onlyColourClash"),
+    ],
+    [
+      "a colour in the list",
+      [orangeYellowGreen, { type: "colour", colours: ["Green"] }],
+      conflict(1, 0, "onlyColourClash"),
+    ],
     ["a colours minimum", [onlyWhite, atLeastColours(3)], conflict(1, 0, "onlyColourClash")],
     [
       "a colours minimum above the list length",
@@ -167,8 +177,6 @@ describe("only colour clashes", () => {
   });
 
   it.each<NearMiss>([
-    ["the same colour", [onlyWhite, { type: "colour", colours: ["White"] }]],
-    ["a colour in the list", [orangeYellowGreen, { type: "colour", colours: ["Green"] }]],
     ["an accessory", [onlyWhite, bows]],
     ["a colour with no only colour", [red, noBlue, atLeastColours(3)]],
   ])("allows an only colour with %s", (_name, directions) => {
@@ -205,6 +213,11 @@ describe("only fabric clashes", () => {
       conflict(1, 0, "onlyFabricClash"),
     ],
     [
+      "a fabric in the list",
+      [onlyFabrics("Linen", "Cotton", "Wool"), { type: "fabric", fabrics: ["Cotton"] }],
+      conflict(1, 0, "onlyFabricClash"),
+    ],
+    [
       "a fabrics minimum below the list length",
       [onlyFabrics("Linen", "Cotton", "Wool"), atLeastFabrics(2)],
       conflict(1, 0, "onlyFabricClash"),
@@ -214,10 +227,6 @@ describe("only fabric clashes", () => {
   });
 
   it.each<NearMiss>([
-    [
-      "a fabric in the list",
-      [onlyFabrics("Linen", "Cotton", "Wool"), { type: "fabric", fabrics: ["Cotton"] }],
-    ],
     ["a colour", [onlyLinenCotton, red]],
     ["a colours minimum", [onlyLinenCotton, atLeastColours(3)]],
   ])("allows an only fabric with %s", (_name, directions) => {
@@ -637,8 +646,11 @@ describe("directions that hold two items", () => {
     expectConflict(directions, expected);
   });
 
-  it("allows a pair of colours that stays inside an only list", () => {
-    expectAllowed([onlyColours("Red", "Blue", "Green"), colours("Green", "Red")]);
+  it("rejects a pair of colours that stays inside an only list", () => {
+    expectConflict(
+      [onlyColours("Red", "Blue", "Green"), colours("Green", "Red")],
+      conflict(1, 0, "onlyColourClash"),
+    );
   });
 
   it("counts every avoided colour in a pair when checking colours left", () => {

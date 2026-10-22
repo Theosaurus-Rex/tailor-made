@@ -11,7 +11,7 @@ import {
   type Difficulty,
   type DifficultyShape,
 } from "./difficulty";
-import { drawDirection, generate } from "./generate";
+import { generate } from "./generate";
 import { deriveSeed } from "./random";
 import { rebuild, reroll } from "./reroll";
 
@@ -23,6 +23,8 @@ const neverTogether = [
   ["colourOnly", "coloursMin"],
   ["fabricsOnly", "fabricAvoid"],
   ["fabricsOnly", "fabricsMin"],
+  ["colourOnly", "colour"],
+  ["fabricsOnly", "fabric"],
   ["coloursMin", "coloursMin"],
   ["fabricsMin", "fabricsMin"],
 ] as const;
@@ -139,6 +141,14 @@ describe.each(difficulties)("%s burlap shape", (difficulty) => {
 });
 
 const examples: Record<string, Direction[]> = {
+  colour: [
+    { type: "colour", colours: ["Red"] },
+    { type: "colour", colours: ["Green", "Blue"] },
+  ],
+  fabric: [
+    { type: "fabric", fabrics: ["Cotton"] },
+    { type: "fabric", fabrics: ["Wool", "Silk"] },
+  ],
   colourOnly: [
     { type: "colourOnly", colours: ["Red", "Blue"] },
     { type: "colourOnly", colours: ["Green"] },
@@ -531,60 +541,6 @@ describe.each(["hard"] as const)("reroll and rebuild on %s", (difficulty) => {
       }
       expect(rebuild({ ...input(seed, difficulty), history })).toEqual(live);
       expect(live.plan).toEqual(start.plan);
-    }
-  });
-});
-
-describe("a colour or fabric beside an only list", () => {
-  const draw = (plan: "colour" | "fabric", other: Direction, seed: string, chance = 0) =>
-    drawDirection({
-      seed,
-      plan: [plan],
-      slot: 0,
-      rerollCount: 0,
-      others: [other],
-      pairs: "never",
-      pairedItemChance: chance,
-      data: dataV1,
-    });
-
-  it("always fills from the list", () => {
-    for (const seed of samples) {
-      expect(draw("colour", { type: "colourOnly", colours: ["Red"] }, seed)).toEqual({
-        type: "colour",
-        colours: ["Red"],
-      });
-      expect(draw("fabric", { type: "fabricsOnly", fabrics: ["Wool"] }, seed)).toEqual({
-        type: "fabric",
-        fabrics: ["Wool"],
-      });
-    }
-  });
-
-  it("draws an only list that holds every colour already asked for", () => {
-    for (const seed of samples) {
-      const only = drawDirection({
-        seed,
-        plan: ["colourOnly"],
-        slot: 0,
-        rerollCount: 0,
-        others: [{ type: "colour", colours: ["Red", "Blue"] }],
-        pairs: "never",
-        pairedItemChance: 0,
-        data: dataV1,
-      });
-      expect(only?.type === "colourOnly" && only.colours).toEqual(
-        expect.arrayContaining(["Red", "Blue"]),
-      );
-    }
-  });
-
-  it("draws both items from a list of two, and never more than the list holds", () => {
-    for (const seed of samples) {
-      const two = draw("colour", { type: "colourOnly", colours: ["Red", "Blue"] }, seed, 1);
-      expect(two?.type === "colour" && [...two.colours].sort()).toEqual(["Blue", "Red"]);
-      const one = draw("fabric", { type: "fabricsOnly", fabrics: ["Wool"] }, seed, 1);
-      expect(one).toEqual({ type: "fabric", fabrics: ["Wool"] });
     }
   });
 });
