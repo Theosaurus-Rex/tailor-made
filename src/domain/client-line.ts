@@ -46,7 +46,11 @@ function slotsFor(direction: Exclude<Direction, { type: "burlapOnly" }>): {
       return {
         specificKey: one && `styleAvoid:${one}`,
         slots: {
-          tag: joinWithOr(direction.tags.map((tag) => tagWords[tag] ?? tag.toLowerCase())),
+          tag: joinWithOr(
+            direction.tags
+              .map((tag) => tagWords[tag] ?? tag.toLowerCase())
+              .sort((a, b) => Number(a.startsWith("for ")) - Number(b.startsWith("for "))),
+          ),
         },
       };
     }

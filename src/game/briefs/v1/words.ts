@@ -48,3 +48,7 @@ export const tagWords: Partial<Record<StyleTag, string>> = {
   Workwear: "for work",
   Glamour: "glamorous",
 };
+
+export const shortTagWords: Partial<Record<StyleTag, string>> = {
+  Flowers: "floral",
+};

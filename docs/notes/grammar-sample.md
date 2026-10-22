@@ -52,7 +52,7 @@ Cards per voice:
 
 Octavia Lindqvist · very stylish wake
 
-Octavia is paying her respects at a very stylish wake. She wants something dark and dignified.
+Octavia is making an entrance at a very stylish wake. She wants something dark and dignified.
 
 - Patterned — Something patterned! Let the whole world gasp!
 - Silk — Give me silk, darling! Let the stage tremble!
@@ -61,7 +61,7 @@ Octavia is paying her respects at a very stylish wake. She wants something dark 
 
 Valentina Eastwick · graduation ceremony
 
-Scroll in mind, Valentina is bound for a graduation ceremony. Something proud and polished, please, and no squinting in the sun.
+Scroll in mind, Valentina is bound for a graduation ceremony. Something proud and polished, please, without squinting in the sun.
 
 - Silk — I shall wear silk. Only proper.
 - Workwear — I shall require something for work. Do try to rise to the occasion.
@@ -89,7 +89,7 @@ Eleanor will stamp her boots at a farewell supper before the long voyage looking
 
 Olwen Chandler · ceremony above the harbour
 
-Hat pinned down tight, Olwen is bound for a ceremony above the harbour. Something windswept and lovely, please, and no being blown into the sea.
+Hat pinned down tight, Olwen is bound for a ceremony above the harbour. Something windswept and lovely, please, without being blown into the sea.
 
 - Silk — Use silk. Thanks.
 - Eveningwear — Something for the evening, please.
@@ -98,7 +98,7 @@ Hat pinned down tight, Olwen is bound for a ceremony above the harbour. Somethin
 
 Lottie Novak · very pink weekend away
 
-Lottie will take over a very pink weekend away looking fun and fizzy, and swears there will be no looking like a cocktail umbrella.
+Lottie will take over a very pink weekend away looking fun and fizzy, and swears she can do it without looking like a cocktail umbrella.
 
 - Cute — I shall require something cute. Do try to rise to the occasion.
 - Silk — One expects silk. Nothing less will do.
@@ -107,7 +107,7 @@ Lottie will take over a very pink weekend away looking fun and fizzy, and swears
 
 Bridget Marlowe · ghost tour of the old town
 
-Bridget is haunting a ghost tour of the old town this year. Something delightfully creepy, please, and no catching on a cobweb.
+Bridget is haunting a ghost tour of the old town this year. Something delightfully creepy, please, without catching on a cobweb.
 
 - Cotton — Cotton, please! I’m already imagining the result.
 - Cool — I’m dreaming of something cool, darling. Truly dreaming.
@@ -115,9 +115,9 @@ Bridget is haunting a ghost tour of the old town this year. Something delightful
 
 ### 3dtt3kx3 · easy · Burlap off · castle-wedding · theatrical
 
-Valentina Winterbourne · formal portrait that takes all day
+Valentina Winterbourne · portrait sitting that takes all day
 
-Teeth chattering already, Valentina is bound for a formal portrait that takes all day. Something grand but a bit stiff, please, without fainting before the vows.
+Teeth chattering already, Valentina is bound for a portrait sitting that takes all day. Something grand but a bit stiff, please, without fainting before the vows.
 
 - Gothic — Make it gothic! I want to haunt the entire theatre!
 - Formal — Something formal! Let the whole world gasp!
@@ -127,7 +127,7 @@ Teeth chattering already, Valentina is bound for a formal portrait that takes al
 
 Miss Pudding · sleepover in the attic
 
-Miss Pudding will tiptoe to a sleepover in the attic looking snug and sneaky, and swears there will be no waking the whole house.
+Miss Pudding will tiptoe to a sleepover in the attic looking snug and sneaky, and swears to do it without waking the whole house.
 
 - Elaborate — Something elaborate. That’s the whole request.
 - Wool — Wool. Good enough for me.
@@ -137,7 +137,7 @@ Miss Pudding will tiptoe to a sleepover in the attic looking snug and sneaky, an
 
 Miss Pepper Tuppence · ceremony above the harbour
 
-Hat pinned down tight, Miss Pepper Tuppence is bound for a ceremony above the harbour. Something airy and elegant, please, and no being blown into the sea.
+Hat pinned down tight, Miss Pepper Tuppence is bound for a ceremony above the harbour. Something airy and elegant, please, without being blown into the sea.
 
 - Simple — Something simple. That’s the whole request.
 - Pink — Pink, please. Matches my mood.
@@ -175,7 +175,7 @@ By candlelight, Lady Pearl Whiskers will arrive at a ghost tour of the old town 
 
 Amara Lockwood · fancy dinner with the in-laws
 
-Amara will face a fancy dinner with the in-laws looking charming and well behaved, and prays for no being compared to the cousins.
+Amara will face a fancy dinner with the in-laws looking charming and well behaved, and prays to avoid being compared to the cousins.
 
 - Wool — Use wool. Thanks.
 - Cute — Something cute. No fuss.
@@ -184,7 +184,7 @@ Amara will face a fancy dinner with the in-laws looking charming and well behave
 
 Nell Underhill · dramatic poetry reading
 
-The invitation said black, so Nell is bound for a dramatic poetry reading. Something mysterious, please, and no frightening the vicar.
+The invitation said black, so Nell is bound for a dramatic poetry reading. Something mysterious, please, without frightening the vicar.
 
 - Blue — Make it blue. Don’t ask me why.
 - Elegant — Something elegant. That’s the whole request.
@@ -201,9 +201,9 @@ Miss Pepper Tuppence will burst into the masquerade at the old mill looking glor
 
 ### n6sgv73n · easy · Burlap off · halloween-ball · deadpan
 
-Aurelia Applegarth · haunted house party
+Aurelia Applegarth · midnight party at the old manor
 
-By candlelight, Aurelia will arrive at a haunted house party looking delightfully creepy, and fears only frightening the guests too well.
+By candlelight, Aurelia will arrive at a midnight party at the old manor looking delightfully creepy, and fears only frightening the guests too well.
 
 - Cute — Something cute. I’ll know it when I see it.
 - Lace and linen — Lace and linen. Good enough for me.
@@ -212,7 +212,7 @@ By candlelight, Aurelia will arrive at a haunted house party looking delightfull
 
 Ottilie Beaumont · very stylish wake
 
-The invitation said black, so Ottilie is bound for a very stylish wake. Something moody and elegant, please, and no frightening the vicar.
+The invitation said black, so Ottilie is bound for a very stylish wake. Something moody and elegant, please, without frightening the vicar.
 
 - Eveningwear — Something for the evening, please. I’ve had a long week.
 - Cool — Something cool. I’ll know it when I see it.
@@ -222,7 +222,7 @@ The invitation said black, so Ottilie is bound for a very stylish wake. Somethin
 
 Olwen Tillerman · moonlit seance
 
-The invitation said black, so Olwen is bound for a moonlit seance. Something moody and elegant, please, and no frightening the vicar.
+The invitation said black, so Olwen is bound for a moonlit seance. Something moody and elegant, please, without frightening the vicar.
 
 - Cute — Something cute. No fuss.
 - Brown — Make it brown.
@@ -232,7 +232,7 @@ The invitation said black, so Olwen is bound for a moonlit seance. Something moo
 
 Duchess Marigold Quackenbush · seaside holiday
 
-Ice cream in hand, Duchess Marigold Quackenbush is bound for a seaside holiday. Something relaxed and cheerful, please, and no blowing away in the wind.
+Ice cream in hand, Duchess Marigold Quackenbush is bound for a seaside holiday. Something relaxed and cheerful, please, without blowing away in the wind.
 
 - White and purple — Make it white and purple. Don’t ask me why.
 - Eclectic — Something eclectic. That’s the whole request.
@@ -240,9 +240,9 @@ Ice cream in hand, Duchess Marigold Quackenbush is bound for a seaside holiday. 
 
 ### 3mxb2qs3 · easy · Burlap off · halloween-ball · gushing
 
-Philippa Rosales · haunted house party
+Philippa Rosales · midnight party at the old manor
 
-By candlelight, Philippa will arrive at a haunted house party looking spooky and splendid, and fears only frightening the guests too well.
+By candlelight, Philippa will arrive at a midnight party at the old manor looking spooky and splendid, and fears only frightening the guests too well.
 
 - Orange — Oh, orange, darling! I’m glowing at the thought.
 - Playful — Oh, something playful, please! I can’t wait to see it.
@@ -260,9 +260,9 @@ Mabel has packed a bucket and spade for a day on the pier. She wants something l
 
 ### 3jspwr63 · easy · Burlap off · polar-send-off · theatrical
 
-Marisol Chandler · toast at the icy quayside
+Marisol Chandler · icy quayside toast
 
-Breath steaming, Marisol is bound for a toast at the icy quayside. Something sturdy and merry, please, and no looking like a snowman.
+Breath steaming, Marisol is bound for an icy quayside toast. Something sturdy and merry, please, without looking like a snowman.
 
 - Glamour — I demand something glamorous, darling! The stage is set!
 - Wool and linen — Wool and linen! I must have wool and linen! Nothing else will do!
@@ -310,7 +310,7 @@ Florence will arrive at a sunset picnic date looking charming and daring, and fe
 
 Kezia Fairweather · seaside holiday
 
-Kezia will stroll along a seaside holiday looking relaxed and cheerful, and would rather avoid attracting seagulls.
+Kezia will make the most of a seaside holiday looking relaxed and cheerful, and would rather avoid attracting seagulls.
 
 - Black — Make it black. Don’t ask me why.
 - Elaborate — Something elaborate. That’s the whole request.
@@ -319,16 +319,16 @@ Kezia will stroll along a seaside holiday looking relaxed and cheerful, and woul
 
 Hazel Finch · wedding in a castle with no heating
 
-Hazel has been asked to a wedding in a castle with no heating. She wants to look grand but a bit stiff, and would rather not end up not being able to sit down.
+Hazel has been asked to a wedding in a castle with no heating. She wants to look grand but a bit stiff, and would rather not end up aching from standing.
 
 - Sequin — Sequins, please. Keep things simple.
 - Yellow — Yellow. Nothing else.
 
 ### 3z88h923 · easy · Burlap off · christening · deadpan
 
-Imogen Tillerman · christening tea afterwards
+Imogen Tillerman · tea after the christening
 
-With a gift tucked in her bag, Imogen is bound for the christening tea afterwards. Something sweet and dignified, please, and no being upstaged by the baby.
+With a gift tucked in her bag, Imogen is bound for the tea after the christening. Something sweet and dignified, please, without being upstaged by the baby.
 
 - Linen — Linen. Good enough for me.
 - Green and blue — Green and blue, please. Matches my mood.
@@ -356,7 +356,7 @@ Cecily will burst into a fancy dress picnic looking bold and silly, with no risk
 
 Celia Underhill · mayor’s charity ball
 
-Gloves on, Celia is bound for the mayor’s charity ball. Something dazzling, please, and no looking like a disco ball.
+Gloves on, Celia is bound for the mayor’s charity ball. Something dazzling, please, without looking like a disco ball.
 
 - Black — Might it be black? Sorry, I do hope you don’t mind.
 - Cute — Could it be something cute, perhaps? Only if that’s all right.
@@ -375,16 +375,16 @@ Gwendolyn will cross the lawn at the dean’s garden reception looking dignified
 
 Josefina Hargreaves · opening night at the opera
 
-Gloves on, Josefina is bound for opening night at the opera. Something sleek and sparkling, please, and no snagging a sequin on the buffet.
+Gloves on, Josefina is bound for the opening night at the opera. Something sleek and sparkling, please, without snagging a sequin on the buffet.
 
 - Velvet — If it’s not too much trouble, maybe some velvet?
 - Orange — Might it be orange? Sorry, I do hope you don’t mind.
 
 ### 68h2vdaz · easy · Burlap off · graduation · theatrical
 
-Sunniva Bramble · degree day photographs
+Sunniva Bramble · degree day photos
 
-Scroll in mind, Sunniva is bound for the degree day photographs. Something proud and polished, please, and no disappearing under the gown.
+Scroll in mind, Sunniva is bound for the degree day photos. Something proud and polished, please, without disappearing under the gown.
 
 - Formal — I demand something formal, darling! The stage is set!
 - Linen — Linen! I must have linen! Nothing else will do!
@@ -393,7 +393,7 @@ Scroll in mind, Sunniva is bound for the degree day photographs. Something proud
 
 Ximena Yarrow · morning at the stables
 
-Ximena will take on a morning at the stables looking neat and sensible, and would rather avoid catching on the saddle.
+Ximena will take on a morning at the stables looking neat and sensible, and would rather avoid snagging on the stirrups.
 
 - Green — Make it green.
 - Glamour — Something glamorous, please.
@@ -419,9 +419,9 @@ Ximena has booked in for an afternoon of cucumber slices and quiet. She wants so
 
 ### 3e482aa7 · easy · Burlap off · graduation · brisk
 
-Lavinia Ibarra · degree day photographs
+Lavinia Ibarra · degree day photos
 
-Lavinia has finally made it to the degree day photographs. She wants something smart and ready for photos.
+Lavinia has finally made it to the degree day photos. She wants something smart and ready for photos.
 
 - Cotton — Use cotton. Thanks.
 - Red — Make it red.
@@ -430,7 +430,7 @@ Lavinia has finally made it to the degree day photographs. She wants something s
 
 Madame Pomme · spa weekend
 
-Slippers on, Madame Pomme is bound for a spa weekend. Something relaxed and airy, please, and no getting mud mask on it.
+Slippers on, Madame Pomme is bound for a spa weekend. Something relaxed and airy, please, without getting mud mask on it.
 
 - Elegant — I demand something elegant, darling! The stage is set!
 - Pink and white — Make it pink and white, darling! Let the stage blaze!
@@ -468,7 +468,7 @@ Bettina is nervously off to a Sunday lunch at the big house. She wants something
 
 Nadia Winterbourne · very long service in a cold church
 
-Teeth chattering already, Nadia is bound for a very long service in a cold church. Something grand but a bit stiff, please, without not being able to sit down.
+Teeth chattering already, Nadia is bound for a very long service in a cold church. Something grand but a bit stiff, please, without aching from standing.
 
 - Silk — Silk, please. Keep things simple.
 - Patterned — Something patterned. Keep it practical.
@@ -478,7 +478,7 @@ Teeth chattering already, Nadia is bound for a very long service in a cold churc
 
 Tamsin Jellicoe · gentle hack across the fields
 
-Tamsin will take on a gentle hack across the fields looking hard-working and tidy, and would rather avoid catching on the saddle.
+Tamsin will take on a gentle hack across the fields looking hard-working and tidy, and would rather avoid snagging on the stirrups.
 
 - Elegant — Something elegant. One has standards, after all.
 - Cotton — One expects cotton. Nothing less will do.
@@ -488,7 +488,7 @@ Tamsin will take on a gentle hack across the fields looking hard-working and tid
 
 Gladys the Gargoyle · farewell supper before the long voyage
 
-Breath steaming, Gladys the Gargoyle is bound for a farewell supper before the long voyage. Something wrapped up and wonderful, please, and no looking like a snowman.
+Breath steaming, Gladys the Gargoyle is bound for a farewell supper before the long voyage. Something wrapped up and wonderful, please, without looking like a snowman.
 
 - Professional — I demand something professional, darling! The stage is set!
 - Warm — Something warm! It must be something warm! I can see the curtain rising!
@@ -497,7 +497,7 @@ Breath steaming, Gladys the Gargoyle is bound for a farewell supper before the l
 
 Lady Hortensia Puddlewick · village fete
 
-Basket on her arm, Lady Hortensia Puddlewick is bound for the village fete. Something cheerful and practical, please, and no losing a sleeve to the coconut shy.
+Basket on her arm, Lady Hortensia Puddlewick is bound for the village fete. Something cheerful and practical, please, without losing a sleeve to the coconut shy.
 
 - Simple — Something simple, please.
 - Green — Make it green.
@@ -516,7 +516,7 @@ Hattie has a few pennies for the village fete. She wants something cheerful and 
 
 Nell Nakamura · sleepover in the attic
 
-Nell will tiptoe to a sleepover in the attic looking giggly and comfortable, and swears there will be no rustling too loudly.
+Nell will tiptoe to a sleepover in the attic looking giggly and comfortable, and swears to do it without rustling too loudly.
 
 - Purple — Make it purple, darling! Let the stage blaze!
 - Cotton — Cotton! I must have cotton! Nothing else will do!
@@ -565,9 +565,9 @@ Wilhelmina is nervously off to a Sunday lunch at the big house. She wants someth
 
 ### 3268nrw3 · easy · Burlap on · christening · brisk
 
-Delphine Ashdown · christening tea afterwards
+Delphine Ashdown · tea after the christening
 
-Delphine will cuddle the guest of honour at the christening tea afterwards and hopes to look sweet and dignified, without getting milk on it.
+Delphine will cuddle the guest of honour at the tea after the christening and hopes to look sweet and dignified, without getting milk on it.
 
 - Burlap only
 - Formal — Something formal. No fuss.
@@ -578,11 +578,11 @@ Delphine will cuddle the guest of honour at the christening tea afterwards and h
 
 Freya Marlowe · harvest supper
 
-Fresh from the orchard, Freya is bound for the harvest supper. Something honest and hard-wearing, please, and no shivering in the barn.
+Fresh from the orchard, Freya is bound for the harvest supper. Something honest and hard-wearing, please, without shivering in the evening air.
 
 - Burlap only
 - Daywear — One expects something for daytime. I trust that is clear.
-- Tassels — A touch of tassels, I think. Tastefully, of course.
+- Tassels — Some tassels, I think. Tastefully, of course.
 
 ### 6b2w4x3c · easy · Burlap on · spa-weekend · deadpan
 
@@ -596,12 +596,12 @@ Saskia has booked in for a spa weekend. She wants something calm and soft.
 
 ### 3b9hhavk · easy · Burlap on · halloween-ball · gushing
 
-Imogen Fenwick · haunted house party
+Imogen Fenwick · midnight party at the old manor
 
-By candlelight, Imogen will arrive at a haunted house party looking spooky and splendid, and fears only catching on a cobweb.
+By candlelight, Imogen will arrive at a midnight party at the old manor looking spooky and splendid, and fears only catching on a cobweb.
 
 - Burlap only
-- Feathers — Oh, feathers! Add as many as you like, darling.
+- Feathers — Oh, feathers! Add plenty, darling.
 - Gothic — Oh, something gothic, darling! Dark and dreamy.
 - Playful — I’m dreaming of something playful, darling. Truly dreaming.
 
@@ -609,7 +609,7 @@ By candlelight, Imogen will arrive at a haunted house party looking spooky and s
 
 Mabel Ravenscroft · tour of the new workshop
 
-Folder under her arm, Mabel is bound for a tour of the new workshop. Something smart but friendly, please, and no looking like a mannequin.
+Folder under her arm, Mabel is bound for a tour of the new workshop. Something smart but friendly, please, without looking like a mannequin.
 
 - Burlap only
 - Professional — I was thinking something professional. Sorry, is that silly?
@@ -631,7 +631,7 @@ Thea will sweep into a dramatic poetry reading looking dark and dignified, and w
 
 Gwendolyn Tremaine · damp afternoon by the lake
 
-Flask in hand, Gwendolyn is bound for a damp afternoon by the lake. Something cosy and unbothered, please, and no getting soggy sandwiches.
+Flask in hand, Gwendolyn is bound for a damp afternoon by the lake. Something cosy and unbothered, please, without getting soaked to the bone.
 
 - Burlap only
 - Romantic — Something romantic. One has standards, after all.
@@ -640,9 +640,9 @@ Flask in hand, Gwendolyn is bound for a damp afternoon by the lake. Something co
 
 ### 3p3dd4jx · easy · Burlap on · jazz-night · deadpan
 
-Niamh Delacroix · saxophone solo by the river
+Niamh Delacroix · jam session by the river
 
-Niamh has her dancing shoes ready for a saxophone solo by the river. She wants something smooth and a little sultry.
+Niamh has her dancing shoes ready for a jam session by the river. She wants something smooth and a little sultry.
 
 - Burlap only
 - Feathers — Feathers. Somewhere on there.
@@ -652,10 +652,10 @@ Niamh has her dancing shoes ready for a saxophone solo by the river. She wants s
 
 Niamh Novak · graduation ceremony
 
-Scroll in mind, Niamh is bound for a graduation ceremony. Something proud and polished, please, and no tripping on the stage steps.
+Scroll in mind, Niamh is bound for a graduation ceremony. Something proud and polished, please, without tripping on the steps.
 
 - Burlap only
-- Tassels — Oh, tassels! Add as many as you like, darling.
+- Tassels — Oh, tassels! Add plenty, darling.
 - Gothic — Gothic, please, dear! Moody and magnificent.
 - Glamour — I’m dreaming of something glamorous, darling. Truly dreaming.
 
@@ -676,14 +676,14 @@ Baroness Dandelion Fluff · cocoa party after lights out
 Baroness Dandelion Fluff has hidden the biscuits for a cocoa party after lights out. She wants something cosy and a bit silly.
 
 - Burlap only
-- Buttons — A touch of buttons, I think. Tastefully, of course.
+- Buttons — Some buttons, I think. Tastefully, of course.
 - Playful — Something playful. One has standards, after all.
 
 ### j4fu7j65 · medium · Burlap off · midnight-feast · grand
 
 Zora Kowalski · midnight feast
 
-Zora will tiptoe to a midnight feast looking giggly and comfortable, and swears there will be no rustling too loudly.
+Zora will tiptoe to a midnight feast looking giggly and comfortable, and swears to do it without rustling too loudly.
 
 - Orange and purple — One expects orange and purple. I have worn nothing else for years.
 - No red — No red, please. One has never trusted such a palette.
@@ -694,7 +694,7 @@ Zora will tiptoe to a midnight feast looking giggly and comfortable, and swears 
 
 Bridget Sorensen · private view of the new gallery
 
-Bridget will wander through a private view of the new gallery looking graceful with a twist, without setting off the alarms.
+Bridget will arrive at a private view of the new gallery looking graceful with a twist, without setting off the alarms.
 
 - Lace — I’d like lace. Don’t read into the choice.
 - At least 4 tassels — Four tassels, at the very least.
@@ -703,9 +703,9 @@ Bridget will wander through a private view of the new gallery looking graceful w
 
 ### 323sbcr3 · medium · Burlap off · book-launch · brisk
 
-Hazel Cobblestone · reading at the corner bookshop
+Hazel Cobblestone · bookshop reading
 
-Hazel has been asked to a reading at the corner bookshop, and she wants something calm and well read.
+Hazel has been asked to a bookshop reading, and she wants something calm and well read.
 
 - At least 2 fabrics — Two fabrics, minimum. Thanks.
 - Risqué — Something risqué, please.
@@ -714,9 +714,9 @@ Hazel has been asked to a reading at the corner bookshop, and she wants somethin
 
 ### 3b5tu33s · medium · Burlap off · rainy-picnic · theatrical
 
-Thea Merriweather · brave picnic under one big umbrella
+Thea Merriweather · picnic under one big umbrella
 
-Thea is braving a brave picnic under one big umbrella. She’d like something cosy and unbothered, without looking like a wet sheep.
+Thea is braving a picnic under one big umbrella. She’d like something cosy and unbothered, without looking like a wet sheep.
 
 - At least 3 fabrics — Give me three fabrics at the very least, darling! Variety is everything!
 - Purple and green — Make it purple and green, darling! Let the stage blaze!
@@ -727,9 +727,9 @@ Thea is braving a brave picnic under one big umbrella. She’d like something co
 
 Odette Garrow · hen do
 
-Tiara slightly crooked, Odette is bound for a hen do. Something sparkly and silly, please, and no losing the sash.
+Tiara slightly crooked, Odette is bound for a hen do. Something sparkly and silly, please, without losing the sash.
 
-- No lace trim or flowers — Leave off the lace trim or flowers.
+- No lace trim or flowers — Leave lace trim or flowers off.
 - At least 4 colours — At least four colours. Make it lively.
 - Bells — Bells. Keep things tidy.
 
@@ -752,7 +752,7 @@ Ines has her boots by the door for a riding lesson. She wants something neat and
 
 - At least 3 colours — At least three colours, if you please. I do not do plain.
 - Wool — One expects wool. Nothing less will do.
-- Bells — A touch of bells, I think. Tastefully, of course.
+- Bells — Some bells, I think. Tastefully, of course.
 - No appliqués — No appliqués, please. Not for me.
 
 ### 34kkt453 · medium · Burlap off · stylish-wake · theatrical
@@ -767,9 +767,9 @@ Bettina will sweep into a moonlit seance looking moody and elegant, and would ra
 
 ### 9m3rh63y · medium · Burlap off · christening · anxious
 
-Ottilie Merriweather · christening tea afterwards
+Ottilie Merriweather · tea after the christening
 
-Ottilie will cuddle the guest of honour at the christening tea afterwards and hopes to look sweet and dignified, without looking like a doily.
+Ottilie will cuddle the guest of honour at the tea after the christening and hopes to look sweet and dignified, without looking like a doily.
 
 - Not floral or cool — Sorry, could we skip anything floral or cool? I’m so sorry, really.
 - Daywear — If it’s not too much trouble, maybe something for daytime?
@@ -789,9 +789,9 @@ Linnea has a few pennies for a day of jam stalls and tombola. She wants somethin
 
 ### g53ykg36 · medium · Burlap off · castle-wedding · anxious
 
-Clementine Goodfellow · formal portrait that takes all day
+Clementine Goodfellow · portrait sitting that takes all day
 
-Teeth chattering already, Clementine is bound for a formal portrait that takes all day. Something heavy and splendid, please, without fainting before the vows.
+Teeth chattering already, Clementine is bound for a portrait sitting that takes all day. Something heavy and splendid, please, without fainting before the vows.
 
 - No pink or yellow — Maybe not pink or yellow? I hope you don’t mind.
 - Velvet — Might it be velvet? Sorry, it’s just so soft and comforting.
@@ -801,7 +801,7 @@ Teeth chattering already, Clementine is bound for a formal portrait that takes a
 
 Vesna Wadsworth · literary society’s spring supper
 
-With a pen in her pocket, Vesna is bound for the literary society’s spring supper. Something clever and a little quirky, please, and no spilling wine on the author.
+With a pen in her pocket, Vesna is bound for the literary society’s spring supper. Something clever and a little quirky, please, without spilling wine on the author.
 
 - Eclectic — One expects something eclectic. I trust that is clear.
 - At least 2 buttons — I shall require at least two buttons. A lady must be noticed.
@@ -835,7 +835,7 @@ Mabel Nakamura · summer tea on the lawn
 
 Mabel has a hat picked out and is off to a summer tea on the lawn. She wants to look romantic.
 
-- No feathers or buttons — Leave off the feathers or buttons.
+- No feathers or buttons — Leave feathers or buttons off.
 - Green — Green. Nothing else.
 - At least 2 colours — Two colours, minimum. Thanks.
 
@@ -854,11 +854,11 @@ Josefina is strolling into the flower show and hopes to look fresh and pretty wi
 
 Lottie Nakamura · fancy dinner with the in-laws
 
-Lottie will face a fancy dinner with the in-laws looking charming and well behaved, and prays for no being compared to the cousins.
+Lottie will face a fancy dinner with the in-laws looking charming and well behaved, and prays to avoid being compared to the cousins.
 
 - At least 2 bows — Two bows at least, dear! I can’t have too many.
 - Velvet — Oh, velvet! I simply adore it, darling.
-- Tassels — Oh, tassels! Add as many as you like, darling.
+- Tassels — Oh, tassels! Add plenty, darling.
 - Not professional — Nothing professional, my dear. Everything else is wonderful!
 
 ### qpuzqm3d · medium · Burlap off · christening · grand
@@ -876,7 +876,7 @@ Lavinia has been invited to a christening. She wants something soft and proper.
 
 Celia Zimmerman · graduation ceremony
 
-Scroll in mind, Celia is bound for a graduation ceremony. Something smart and ready for photos, please, and no squinting in the sun.
+Scroll in mind, Celia is bound for a graduation ceremony. Something smart and ready for photos, please, without squinting in the sun.
 
 - Cool — Something cool! Let the whole world gasp!
 - At least 4 colours — Give me four colours at the very least! A grand finale needs a rainbow!
@@ -884,9 +884,9 @@ Scroll in mind, Celia is bound for a graduation ceremony. Something smart and re
 
 ### 3ae5mt23 · medium · Burlap off · graduation · anxious
 
-Clementine Zimmerman · degree day photographs
+Clementine Zimmerman · degree day photos
 
-Clementine has finally made it to the degree day photographs. She wants something dignified but delighted.
+Clementine has finally made it to the degree day photos. She wants something dignified but delighted.
 
 - Black — Might it be black? Sorry, I do hope you don’t mind.
 - No red — Maybe not red? I hope you don’t mind.
@@ -896,7 +896,7 @@ Clementine has finally made it to the degree day photographs. She wants somethin
 
 Philippa Ravenscroft · morning at the stables
 
-Carrot in pocket, Philippa is bound for a morning at the stables. Something easy to move in, please, and no catching on the saddle.
+Carrot in pocket, Philippa is bound for a morning at the stables. Something smart and ready for the saddle, please, without snagging on the stirrups.
 
 - No pink — No pink. We’ve fallen out.
 - At least 2 buttons — Two buttons, at the very least.
@@ -907,7 +907,7 @@ Carrot in pocket, Philippa is bound for a morning at the stables. Something easy
 
 Dame Cornelia Bumbleford · fancy dress picnic
 
-Mask at the ready, Dame Cornelia Bumbleford is bound for a fancy dress picnic. Something gloriously odd, please, and no being mistaken for a lampshade.
+Mask at the ready, Dame Cornelia Bumbleford is bound for a fancy dress picnic. Something gloriously odd, please, without being mistaken for a lampshade.
 
 - At least 2 colours — Give me two colours at the very least! A grand finale needs a rainbow!
 - Not uncomfortable or cool — Banish anything uncomfortable or cool, darling! Not a hint tonight!
@@ -919,7 +919,7 @@ Hattie Marlowe · Sunday lunch at the big house
 
 Hattie is nervously off to a Sunday lunch at the big house. She wants something polite and pretty.
 
-- No bows — Keep the bows off me.
+- No bows — Keep bows off the dress.
 - Elegant — Something elegant. I’ll know it when I see it.
 - At least 3 fabrics — I get bored easily. At least three fabrics.
 
@@ -936,9 +936,9 @@ Ximena has been counting the days to the mayor’s charity ball. She wants somet
 
 ### 3ubjk493 · medium · Burlap off · halloween-ball · anxious
 
-Clementine Petrov · haunted house party
+Clementine Petrov · midnight party at the old manor
 
-By candlelight, Clementine will arrive at a haunted house party looking spooky and splendid, and fears only catching on a cobweb.
+By candlelight, Clementine will arrive at a midnight party at the old manor looking spooky and splendid, and fears only catching on a cobweb.
 
 - At least 2 colours — If it’s not too much, at least two colours? Sorry, I do love variety.
 - No silk — Please, no silk. I’m so sorry, I just can’t.
@@ -948,7 +948,7 @@ By candlelight, Clementine will arrive at a haunted house party looking spooky a
 
 Captain Olive Bramblecoat · wedding on the cliff top
 
-Hat pinned down tight, Captain Olive Bramblecoat is bound for a wedding on the cliff top. Something airy and elegant, please, and no tripping on the spiral stairs.
+Hat pinned down tight, Captain Olive Bramblecoat is bound for a wedding on the cliff top. Something airy and elegant, please, without tripping on the steps.
 
 - Not playful — Banish anything playful, darling! Not a hint tonight!
 - Piping and lace trim — Piping and lace trim! I must have piping and lace trim! The finishing flourish!
@@ -960,7 +960,7 @@ Juniper Jellicoe · village apple fair
 
 Juniper has been baking all week and is off to the village apple fair. She wants something honest and hard-wearing.
 
-- Piping and buttons — A touch of piping and buttons, I think. Tastefully, of course.
+- Piping and buttons — Some piping and buttons, I think. Tastefully, of course.
 - No sequins or lace — One does not wear sequins or lace. I am sure you understand.
 - At least 2 fabrics — At least two fabrics. A single cloth is so provincial.
 - Brown — One expects brown. I have worn nothing else for years.
@@ -969,7 +969,7 @@ Juniper has been baking all week and is off to the village apple fair. She wants
 
 Ines Fenwick · church hall bring-and-buy
 
-Ines will wander through the church hall bring-and-buy looking pretty but practical, with luck and no losing a sleeve to the coconut shy.
+Ines will wander through the church hall bring-and-buy looking pretty but practical, and with any luck will avoid losing a sleeve to the coconut shy.
 
 - Pink — Might it be pink? Sorry, I do hope you don’t mind.
 - Warm — Could it be something warm, perhaps? Only if that’s all right.
@@ -980,7 +980,7 @@ Ines will wander through the church hall bring-and-buy looking pretty but practi
 
 Ffion Bellweather · picnic on the beach
 
-Ice cream in hand, Ffion is bound for a picnic on the beach. Something light and breezy, please, and no blowing away in the wind.
+Ice cream in hand, Ffion is bound for a picnic on the beach. Something light and breezy, please, without blowing away in the wind.
 
 - Lace — Oh, lace! What a lovely idea, darling.
 - At least 3 fabrics — Mix it up, dear! At least three fabrics would be heavenly.
@@ -991,7 +991,7 @@ Ice cream in hand, Ffion is bound for a picnic on the beach. Something light and
 
 Odette Larkspur · masquerade at the old mill
 
-Mask at the ready, Odette is bound for the masquerade at the old mill. Something wonderfully over the top, please, and no matching the curtains.
+Mask at the ready, Odette is bound for the masquerade at the old mill. Something wonderfully over the top, please, without matching the curtains.
 
 - No lace — Please, no lace. I’m so sorry, I just can’t.
 - At least 4 colours — If it’s not too much, at least four colours? Sorry, I do love variety.
@@ -1032,9 +1032,9 @@ Freya has been baking all week and is off to the harvest supper. She wants somet
 
 Bridget Nakamura · wedding on the cliff top
 
-Hat pinned down tight, Bridget is bound for a wedding on the cliff top. Something airy and elegant, please, and no being blown into the sea.
+Hat pinned down tight, Bridget is bound for a wedding on the cliff top. Something airy and elegant, please, without being blown into the sea.
 
-- No buttons — Sorry, but could we leave off the buttons? I’m so sorry.
+- No buttons — Sorry, but could we leave buttons off? I’m so sorry.
 - At least 2 fabrics — Maybe at least two fabrics? Sorry, I do like a choice.
 - Lace trim — I was hoping for some lace trim. Would you mind?
 
@@ -1042,7 +1042,7 @@ Hat pinned down tight, Bridget is bound for a wedding on the cliff top. Somethin
 
 Professor Fennel Tumblewick · dramatic poetry reading
 
-The invitation said black, so Professor Fennel Tumblewick is bound for a dramatic poetry reading. Something dark and dignified, please, and no frightening the vicar.
+The invitation said black, so Professor Fennel Tumblewick is bound for a dramatic poetry reading. Something dark and dignified, please, without frightening the vicar.
 
 - No linen or wool — One does not wear linen or wool. I am sure you understand.
 - Workwear — I shall require something for work. Do try to rise to the occasion.
@@ -1053,18 +1053,18 @@ The invitation said black, so Professor Fennel Tumblewick is bound for a dramati
 
 Olwen Ashdown · tea dance
 
-Olwen will whirl through a tea dance looking light on its feet, and hopes to avoid stepping on the hem.
+Olwen will whirl through a tea dance looking airy and light-footed, and hopes to avoid stepping on the hem.
 
 - At least 2 fabrics — At least two fabrics! A star needs a full wardrobe!
 - Not professional — Nothing professional! I would simply perish on the spot!
-- Lace trim — Add lace trim, darling! Let the light find every one!
+- Lace trim — Add lace trim, darling! Let the light find them all!
 - Cotton — Cotton! I must have cotton! Nothing else will do!
 
 ### sj94ex3h · medium · Burlap off · hen-do · deadpan
 
 Lady Hortensia Puddlewick · night of cocktails and karaoke
 
-Tiara slightly crooked, Lady Hortensia Puddlewick is bound for a night of cocktails and karaoke. Something bubbly and bright, please, and no losing the sash.
+Tiara slightly crooked, Lady Hortensia Puddlewick is bound for a night of cocktails and karaoke. Something bubbly and bright, please, without losing the sash.
 
 - At least 4 colours — At least four colours. I’m tired of beige.
 - No silk or lace — No silk or lace. We don’t discuss the matter.
@@ -1085,10 +1085,10 @@ Thea has her best handshake ready for a final-round interview. She wants somethi
 
 Linnea Whitlock · seaside holiday
 
-Ice cream in hand, Linnea is bound for a seaside holiday. Something bright as a postcard, please, and no getting sand in the seams.
+Ice cream in hand, Linnea is bound for a seaside holiday. Something bright as a postcard, please, without getting sand in the seams.
 
 - At least 7 buttons — At least seven buttons. Subtlety is not the goal.
-- Not for daytime or playful — Nothing for daytime or playful. I’ll be fine.
+- Not daywear or playful — Nothing playful or for daytime. I’ll be fine.
 - Bows — Bows, please. Don’t look so surprised.
 - Red — Red, please. Matches my mood.
 
@@ -1096,9 +1096,9 @@ Ice cream in hand, Linnea is bound for a seaside holiday. Something bright as a 
 
 Nell Van Dijk · afternoon of cucumber slices and quiet
 
-Slippers on, Nell is bound for an afternoon of cucumber slices and quiet. Something calm and soft, please, and no getting mud mask on it.
+Slippers on, Nell is bound for an afternoon of cucumber slices and quiet. Something calm and soft, please, without getting mud mask on it.
 
-- Appliqués and tassels — Oh, appliqués and tassels! Add as many as you like, darling.
+- Appliqués and tassels — Oh, appliqués and tassels! Add plenty, darling.
 - No silk — I’m afraid I can’t wear silk, dear.
 - At least 4 fabrics — Oh, four fabrics at least, darling! The more, the merrier.
 
@@ -1106,7 +1106,7 @@ Slippers on, Nell is bound for an afternoon of cucumber slices and quiet. Someth
 
 Noor Quill · dramatic poetry reading
 
-Noor is paying her respects at a dramatic poetry reading. She wants something dark and dignified.
+Noor is making an entrance at a dramatic poetry reading. She wants something dark and dignified.
 
 - Gothic — Make it gothic! I want to haunt the entire theatre!
 - At least 2 colours — At least two colours! Paint the whole stage, darling!
@@ -1116,7 +1116,7 @@ Noor is paying her respects at a dramatic poetry reading. She wants something da
 
 Thea Rosales · final-round interview
 
-Thea will walk into a final-round interview looking crisp and sensible, and hopes to dodge looking like a mannequin.
+Thea will turn up for a final-round interview looking crisp and sensible, and hopes to dodge looking like a mannequin.
 
 - Not eveningwear — Nothing for the evening. I have my reasons.
 - At least 7 buttons — At least seven buttons. Subtlety is not the goal.
@@ -1138,7 +1138,7 @@ Daphne has hidden the biscuits for a cocoa party after lights out. She wants som
 
 Ottilie Castellano · harvest supper
 
-Ottilie will take the harvest supper in something warm and sturdy, if she can manage it without shivering in the barn.
+Ottilie will take the harvest supper in something warm and sturdy, if she can manage it without shivering in the evening air.
 
 - At least 8 brooches — At least eight brooches! More, if the drama demands it!
 - Wool and linen — Give me wool and linen, darling! Let the stage tremble!
@@ -1148,7 +1148,7 @@ Ottilie will take the harvest supper in something warm and sturdy, if she can ma
 
 Beatrix Cobblestone · very long service in a cold church
 
-Beatrix has accepted her fate at a very long service in a cold church. She wants something dignified and determined, and no not being able to sit down.
+Beatrix has accepted her fate at a very long service in a cold church. She wants something dignified and determined, and hopes to avoid aching from standing.
 
 - Daywear — Something for daytime. I’ll know it when I see it.
 - At least 4 brooches — At least four brooches. Subtlety is not the goal.
@@ -1161,7 +1161,7 @@ Odette Hargreaves · tea dance
 
 Odette has pinned up her hair for a tea dance. She wants something swirly and graceful.
 
-- Not risqué or glamorous — Nothing risqué or glamorous. Moving on.
+- Not risqué or glamour — Nothing risqué or glamorous. Moving on.
 - At least 2 bows — At least two bows. Tidy ones.
 - Linen — Linen, please. Keep things simple.
 
@@ -1171,7 +1171,7 @@ Niamh Kowalski · moonlit seance
 
 Niamh will sweep into a moonlit seance looking moody and elegant, and would rather avoid looking too cheerful.
 
-- No trim — Sorry, but could we leave off the trim? I’m so sorry.
+- No trim — Sorry, but could we leave trim off? I’m so sorry.
 - Velvet — If it’s not too much trouble, maybe some velvet?
 - At least 5 jewels — Sorry, could there be at least five jewels? Only if it’s not too much.
 - Purple — I was hoping for purple. If you don’t mind.
@@ -1190,10 +1190,10 @@ Linnea has a sash and a plan for a hen do. She wants something bubbly and bright
 
 Ottilie Larkspur · fancy dinner with the in-laws
 
-Ottilie will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays for no saying the wrong thing in it.
+Ottilie will face a fancy dinner with the in-laws looking tidy with a hint of sparkle, and prays to avoid saying something silly over the soup.
 
 - Grey — Make it grey, darling! Let the stage blaze!
-- No lace trim — Away with the lace trim, darling! My moment is mine alone!
+- No lace trim — Away with lace trim, darling! My moment is mine alone!
 - Simple — Something simple! Let the whole world gasp!
 - At least 2 fabrics — Give me two fabrics at the very least, darling! Variety is everything!
 
@@ -1212,7 +1212,7 @@ Olwen will cuddle the guest of honour at a naming day in the village church and 
 
 Ottilie Lockwood · flower show
 
-Parasol in hand, Ottilie is bound for the flower show. Something romantic, please, and no outshining the hostess.
+Parasol in hand, Ottilie is bound for the flower show. Something romantic, please, without outshining the hostess.
 
 - Burlap only
 - Not eveningwear — One cannot abide anything for the evening. Kindly avoid such things.
@@ -1224,7 +1224,7 @@ Parasol in hand, Ottilie is bound for the flower show. Something romantic, pleas
 
 Ines Lindqvist · wedding on the cliff top
 
-Hat pinned down tight, Ines is bound for a wedding on the cliff top. Something windswept and lovely, please, and no being blown into the sea.
+Hat pinned down tight, Ines is bound for a wedding on the cliff top. Something windswept and lovely, please, without being blown into the sea.
 
 - Burlap only
 - Cute — I shall require something cute. Do try to rise to the occasion.
@@ -1247,7 +1247,7 @@ Olwen has hidden the biscuits for a cocoa party after lights out. She wants some
 
 Lady Pearl Whiskers · very long service in a cold church
 
-Lady Pearl Whiskers has accepted her fate at a very long service in a cold church. She wants something dignified and determined, and no not being able to sit down.
+Lady Pearl Whiskers has accepted her fate at a very long service in a cold church. She wants something dignified and determined, and hopes to avoid aching from standing.
 
 - Burlap only
 - At least 6 bells — Give me six bells at the very least, darling! I want to dazzle!
@@ -1264,19 +1264,19 @@ Hattie has a hat picked out and is off to the flower show. She wants to look sof
 - Burlap only
 - At least 8 appliqués — At least eight appliqués, if you please. One does like to be seen.
 - Daywear — One expects something for daytime. I trust that is clear.
-- Bells and buttons — A touch of bells and buttons, I think. Tastefully, of course.
+- Bells and buttons — Some bells and buttons, I think. Tastefully, of course.
 - No trim — One finds trim rather tiresome. Leave the lot off.
 
 ### 37dg8h23 · medium · Burlap on · first-date · gushing
 
 Sunniva Applegarth · sunset picnic date
 
-Heart fluttering, Sunniva is bound for a sunset picnic date. Something charming and daring, please, and no spilling soup on it.
+Heart fluttering, Sunniva is bound for a sunset picnic date. Something charming and daring, please, without spilling soup on it.
 
 - Burlap only
 - Gothic — Gothic, please, dear! Moody and magnificent.
 - At least 5 bells — Oh, five bells at the very least, darling!
-- No buttons — Please keep the buttons away, dear. Just not for me, I’m afraid.
+- No buttons — Please keep buttons away, dear. Just not for me, I’m afraid.
 
 ### 3p23eska · medium · Burlap on · christening · grand
 
@@ -1304,7 +1304,7 @@ Nadia will drift through an afternoon of cucumber slices and quiet looking relax
 
 Sabine Finch · private view of the new gallery
 
-Catalogue in hand, Sabine is bound for a private view of the new gallery. Something refined and thoughtful, please, and no setting off the alarms.
+Catalogue in hand, Sabine is bound for a private view of the new gallery. Something refined and thoughtful, please, without setting off the alarms.
 
 - Burlap only
 - At least 5 bows — Bows everywhere. At the very least, five.
@@ -1314,9 +1314,9 @@ Catalogue in hand, Sabine is bound for a private view of the new gallery. Someth
 
 ### q4d69wez · medium · Burlap on · graduation · grand
 
-Orla Eastwick · degree day photographs
+Orla Eastwick · degree day photos
 
-Scroll in mind, Orla is bound for the degree day photographs. Something dignified but delighted, please, and no disappearing under the gown.
+Scroll in mind, Orla is bound for the degree day photos. Something dignified but delighted, please, without disappearing under the gown.
 
 - Burlap only
 - Elaborate — Something elaborate. One has standards, after all.
@@ -1328,11 +1328,11 @@ Scroll in mind, Orla is bound for the degree day photographs. Something dignifie
 
 Zora Novak · picnic on the beach
 
-Ice cream in hand, Zora is bound for a picnic on the beach. Something light and breezy, please, and no blowing away in the wind.
+Ice cream in hand, Zora is bound for a picnic on the beach. Something light and breezy, please, without blowing away in the wind.
 
 - Burlap only
 - At least 2 flowers — At least two flowers! More, if the drama demands it!
-- Feathers — Add feathers, darling! Let the light find every one!
+- Feathers — Add feathers, darling! Let the light find them all!
 - Not elaborate or cute — Banish anything elaborate or cute, darling! Not a hint tonight!
 
 ### 3555y93r · medium · Burlap on · halloween-ball · brisk
@@ -1349,12 +1349,12 @@ By candlelight, Ursula will arrive at the Halloween ball looking dramatic and da
 
 ### 4r2w7qsg · medium · Burlap on · graduation · grand
 
-Florence Novak · degree day photographs
+Florence Novak · degree day photos
 
-Florence has finally made it to the degree day photographs. She wants something proud and polished.
+Florence has finally made it to the degree day photos. She wants something proud and polished.
 
 - Burlap only
-- Bells — A touch of bells, I think. Tastefully, of course.
+- Bells — Some bells, I think. Tastefully, of course.
 - At least 5 appliqués — I shall require at least five appliqués. A lady must be noticed.
 - Daywear — Something for daytime. One has standards, after all.
 - No flowers — No flowers, please. Not for me.
@@ -1363,7 +1363,7 @@ Florence has finally made it to the degree day photographs. She wants something 
 
 Imogen Bramble · graduation ceremony
 
-Scroll in mind, Imogen is bound for a graduation ceremony. Something smart and ready for photos, please, and no disappearing under the gown.
+Scroll in mind, Imogen is bound for a graduation ceremony. Something smart and ready for photos, please, without disappearing under the gown.
 
 - Burlap only
 - Brooches and buttons — One expects brooches and buttons. A matter of form.
@@ -1372,9 +1372,9 @@ Scroll in mind, Imogen is bound for a graduation ceremony. Something smart and r
 
 ### rnw6pz3b · medium · Burlap on · book-launch · deadpan
 
-Greta Beaumont · reading at the corner bookshop
+Greta Beaumont · bookshop reading
 
-With a pen in her pocket, Greta is bound for a reading at the corner bookshop. Something clever and a little quirky, please, and no blending in with the shelves.
+With a pen in her pocket, Greta is bound for a bookshop reading. Something clever and a little quirky, please, without blending in with the shelves.
 
 - Burlap only
 - Elaborate — Something elaborate, please. I’ve had a long week.
@@ -1386,7 +1386,7 @@ With a pen in her pocket, Greta is bound for a reading at the corner bookshop. S
 
 Linnea Lockwood · dance on the seafront bandstand
 
-Toes tapping, Linnea is bound for a dance on the seafront bandstand. Something pretty with a lovely twirl, please, and no spilling tea on a partner.
+Toes tapping, Linnea is bound for a dance on the seafront bandstand. Something pretty with a lovely twirl, please, without spilling tea on a partner.
 
 - No black — Maybe not black? It’s a bit gloomy for me, I’m sorry.
 - Lace trim — I was hoping for some lace trim. Would you mind?
@@ -1396,9 +1396,9 @@ Toes tapping, Linnea is bound for a dance on the seafront bandstand. Something p
 
 ### 3d4zqh63 · hard · Burlap off · christening · brisk
 
-Noor Vance · christening tea afterwards
+Noor Vance · tea after the christening
 
-Noor has been invited to the christening tea afterwards. She wants something sweet and dignified.
+Noor has been invited to the tea after the christening. She wants something sweet and dignified.
 
 - Romantic — Something romantic, please.
 - No yellow — No yellow. Not today.
@@ -1410,7 +1410,7 @@ Noor has been invited to the christening tea afterwards. She wants something swe
 
 Kezia Finch · picnic on the beach
 
-Ice cream in hand, Kezia is bound for a picnic on the beach. Something relaxed and cheerful, please, and no getting sand in the seams.
+Ice cream in hand, Kezia is bound for a picnic on the beach. Something relaxed and cheerful, please, without getting sand in the seams.
 
 - Cotton and lace — I’d like cotton and lace. Don’t read into the choice.
 - Shimmering — Something shimmering, please. I’ve had a long week.
@@ -1419,20 +1419,20 @@ Ice cream in hand, Kezia is bound for a picnic on the beach. Something relaxed a
 
 ### 3k86egg3 · hard · Burlap off · jazz-night · gushing
 
-Marisol Okonkwo · smoky late set downstairs
+Marisol Okonkwo · late set in the smoky cellar
 
-Humming a tune, Marisol is bound for a smoky late set downstairs. Something smooth and a little sultry, please, and no being too stiff to sway.
+Humming a tune, Marisol is bound for a late set in the smoky cellar. Something smooth and a little sultry, please, without being too stiff to sway.
 
 - Brooches — Do add brooches, dear. What a treat!
 - Risqué — Oh, something risqué, please! I can’t wait to see it.
-- Only velvet — Just velvet, dear. Only those, and I’ll be delighted.
+- Only velvet — Just velvet, dear. Nothing else, and I’ll be delighted.
 - Playful — Oh, something playful! That’s exactly what I’m after, darling.
 
 ### 62z2nrkf · hard · Burlap off · midnight-feast · anxious
 
 Olwen Underhill · cocoa party after lights out
 
-Torch in hand, Olwen is bound for a cocoa party after lights out. Something giggly and comfortable, please, and no getting cocoa on it.
+Torch in hand, Olwen is bound for a cocoa party after lights out. Something giggly and comfortable, please, without getting cocoa on it.
 
 - Wool — Might it be wool? Sorry, only if the work is easy.
 - Romantic — Could it be something romantic, perhaps? Only if that’s all right.
@@ -1458,7 +1458,7 @@ Iris Wadsworth · morning by the thermal pool
 
 Iris has booked in for a morning by the thermal pool. She wants something relaxed and airy.
 
-- Not for the evening or eclectic — Sorry, could we skip anything for the evening or eclectic? I’m so sorry, really.
+- Not eveningwear or eclectic — Sorry, could we skip anything eclectic or for the evening? I’m so sorry, really.
 - Cotton — I was wondering about cotton. Would you mind?
 - Pink — Might it be pink? Sorry, I do hope you don’t mind.
 - Cool — Could it be something cool, perhaps? Only if that’s all right.
@@ -1478,7 +1478,7 @@ Delphine has booked in for an afternoon of cucumber slices and quiet. She wants 
 
 Zora Jellicoe · fancy dinner with the in-laws
 
-Flowers in hand, Zora is bound for a fancy dinner with the in-laws. Something tidy with a hint of sparkle, please, and no saying the wrong thing in it.
+Flowers in hand, Zora is bound for a fancy dinner with the in-laws. Something tidy with a hint of sparkle, please, without saying something silly over the soup.
 
 - Cool — Something cool. I’ll know it when I see it.
 - Pink — Pink, please. Matches my mood.
@@ -1500,7 +1500,7 @@ Miss Pepper Tuppence has changed her mind three times about a sunset picnic date
 
 Iris Applegarth · final-round interview
 
-Iris will walk into a final-round interview looking smart but friendly, and hopes to dodge looking stiff.
+Iris will turn up for a final-round interview looking smart but friendly, and hopes to dodge looking stiff.
 
 - Flowers and buttons — Flowers and buttons. Somewhere on there.
 - Wool — Wool. Good enough for me.
@@ -1531,9 +1531,9 @@ Noor will arrive at a sunset picnic date looking sweet with a little spark, and 
 
 ### 33x26fs8 · hard · Burlap off · rainy-picnic · brisk
 
-Amara Singh · brave picnic under one big umbrella
+Amara Singh · picnic under one big umbrella
 
-Flask in hand, Amara is bound for a brave picnic under one big umbrella. Something cosy and unbothered, please, and no getting soggy sandwiches.
+Flask in hand, Amara is bound for a picnic under one big umbrella. Something cosy and unbothered, please, without getting soaked to the bone.
 
 - Blue — Blue. Nothing else.
 - Eveningwear — Something for the evening. No fuss.
@@ -1554,9 +1554,9 @@ Kezia has been baking all week and is off to the village apple fair. She wants s
 
 ### qcpmdtbm · hard · Burlap off · christening · theatrical
 
-Ursula Quimby · christening tea afterwards
+Ursula Quimby · tea after the christening
 
-Ursula has been invited to the christening tea afterwards. She wants something sweet and dignified.
+Ursula has been invited to the tea after the christening. She wants something sweet and dignified.
 
 - Brooches — Brooches! I must have brooches! The finishing flourish!
 - At least 3 colours — At least three colours! Paint the whole stage, darling!
@@ -1567,7 +1567,7 @@ Ursula has been invited to the christening tea afterwards. She wants something s
 
 Ada Tillerman · lecture on lost lace
 
-Catalogue in hand, Ada is bound for a lecture on lost lace. Something graceful with a twist, please, and no being mistaken for an exhibit.
+Catalogue in hand, Ada is bound for a lecture on lost lace. Something graceful with a twist, please, without being mistaken for an exhibit.
 
 - Gothic — Make it gothic! I want to haunt the entire theatre!
 - Only brown — Nothing but brown! Not a thread of anything else!
@@ -1578,7 +1578,7 @@ Catalogue in hand, Ada is bound for a lecture on lost lace. Something graceful w
 
 Professor Fennel Tumblewick · very long service in a cold church
 
-Professor Fennel Tumblewick has been asked to a very long service in a cold church. She wants to look heavy and splendid, and would rather not end up freezing in the great hall.
+Professor Fennel Tumblewick has been asked to a very long service in a cold church. She wants to look heavy and splendid, and would rather not end up freezing solid.
 
 - Piping — Do add piping, dear. What a treat!
 - Brown — Make it brown, dear! I’m in love today.
@@ -1624,7 +1624,7 @@ Matilda has a sash and a plan for a hen do. She wants something sparkly and sill
 
 Olwen Fairweather · tea dance
 
-Toes tapping, Olwen is bound for a tea dance. Something swirly and graceful, please, and no stepping on the hem.
+Toes tapping, Olwen is bound for a tea dance. Something swirly and graceful, please, without stepping on the hem.
 
 - Only linen — Sorry, could it be only linen? I’d be so grateful.
 - Jewels and flowers — I was hoping for some jewels and flowers. Would you mind?
@@ -1635,7 +1635,7 @@ Toes tapping, Olwen is bound for a tea dance. Something swirly and graceful, ple
 
 Ada Petrov · dramatic poetry reading
 
-Ada is paying her respects at a dramatic poetry reading. She wants something moody and elegant.
+Ada is making an entrance at a dramatic poetry reading. She wants something moody and elegant.
 
 - At least 3 colours — One expects colour. At least three, I think.
 - Black — One expects black. I have worn nothing else for years.
@@ -1647,7 +1647,7 @@ Ada is paying her respects at a dramatic poetry reading. She wants something moo
 
 Odette Singh · riding lesson
 
-Carrot in pocket, Odette is bound for a riding lesson. Something hard-working and tidy, please, and no being sat on by a pony.
+Carrot in pocket, Odette is bound for a riding lesson. Something hard-working and tidy, please, without being sat on by a pony.
 
 - Not romantic — Nothing romantic. Moving on.
 - At least 3 fabrics — Three fabrics, minimum. Thanks.
@@ -1696,7 +1696,7 @@ Lottie Zimmerman · christening
 
 Lottie has been invited to a christening. She wants something soft and proper.
 
-- Trim and lace trim — Add trim and lace trim, darling! Let the light find every one!
+- Trim and lace trim — Add trim and lace trim, darling! Let the light find them all!
 - Linen — Give me linen, darling! Let the stage tremble!
 - No sequins — No sequins! I refuse to compete with the lighting!
 - At least 7 bows — Bows! At least seven of them, darling! A full ovation!
@@ -1706,7 +1706,7 @@ Lottie has been invited to a christening. She wants something soft and proper.
 
 Sunniva Ravenscroft · Sunday waltz at the assembly rooms
 
-Toes tapping, Sunniva is bound for the Sunday waltz at the assembly rooms. Something swirly and graceful, please, and no spilling tea on a partner.
+Toes tapping, Sunniva is bound for the Sunday waltz at the assembly rooms. Something swirly and graceful, please, without spilling tea on a partner.
 
 - Elaborate — Something elaborate. I’ll know it when I see it.
 - Orange — Orange, please. Matches my mood.
@@ -1717,13 +1717,13 @@ Toes tapping, Sunniva is bound for the Sunday waltz at the assembly rooms. Somet
 
 Lady Hortensia Puddlewick · night at the jazz club
 
-Humming a tune, Lady Hortensia Puddlewick is bound for a night at the jazz club. Something smooth and a little sultry, please, and no looking like the cloakroom.
+Humming a tune, Lady Hortensia Puddlewick is bound for a night at the jazz club. Something smooth and a little sultry, please, without getting lost among the coats.
 
 - No wool — Banish the wool, darling! The whole scene would be ruined!
-- Feathers and brooches — Add feathers and brooches, darling! Let the light find every one!
+- Feathers and brooches — Add feathers and brooches, darling! Let the light find them all!
 - No tassels or trim — No tassels or trim! I will not be upstaged!
 - Simple — Something simple! It must be something simple! I can see the curtain rising!
-- Only orange — Orange only, darling! Let those be my whole palette!
+- Only orange — Orange only, darling! Nothing else touches my palette!
 
 ### y9p4f5pb · hard · Burlap off · spa-weekend · brisk
 
@@ -1745,15 +1745,15 @@ Celia has her best handshake ready for a meeting with the bank manager. She want
 
 - No red or yellow — Not a drop of red or yellow, darling! The scene cannot bear the sight!
 - Not eclectic — Banish anything eclectic, darling! Not a hint tonight!
-- Buttons — Add buttons, darling! Let the light find every one!
+- Buttons — Add buttons, darling! Let the light find them all!
 - At least 3 feathers — Give me three feathers at the very least, darling! I want to dazzle!
-- Only cotton and silk — Cotton or silk only! Let those be my entire cast!
+- Only cotton and silk — Cotton or silk only! Let nothing else take the stage!
 
 ### 3zx4f643 · hard · Burlap off · museum-opening · theatrical
 
 Iris Nightingale · private view of the new gallery
 
-Catalogue in hand, Iris is bound for a private view of the new gallery. Something graceful with a twist, please, and no setting off the alarms.
+Catalogue in hand, Iris is bound for a private view of the new gallery. Something graceful with a twist, please, without setting off the alarms.
 
 - Not gothic — Nothing gothic! I would simply perish on the spot!
 - Black — Make it black, darling! Let the stage blaze!
@@ -1764,7 +1764,7 @@ Catalogue in hand, Iris is bound for a private view of the new gallery. Somethin
 
 Rafaela Abernathy · graduation ceremony
 
-Scroll in mind, Rafaela is bound for a graduation ceremony. Something smart and ready for photos, please, and no disappearing under the gown.
+Scroll in mind, Rafaela is bound for a graduation ceremony. Something smart and ready for photos, please, without disappearing under the gown.
 
 - Yellow — Yellow, please. Matches my mood.
 - Formal — Something formal. I’ll know it when I see it.
@@ -1776,7 +1776,7 @@ Scroll in mind, Rafaela is bound for a graduation ceremony. Something smart and 
 
 Amara Ibarra · moonlit seance
 
-Amara is paying her respects at a moonlit seance. She wants something dark and dignified.
+Amara is making an entrance at a moonlit seance. She wants something dark and dignified.
 
 - Not risqué — Sorry, could we skip anything risqué? I’m so sorry, really.
 - Gothic — Might it be a little gothic? Sorry, I do like a quiet sort of gloom.
@@ -1787,7 +1787,7 @@ Amara is paying her respects at a moonlit seance. She wants something dark and d
 
 Sunniva Finch · opening night at the opera
 
-Gloves on, Sunniva is bound for opening night at the opera. Something sleek and sparkling, please, and no looking like a disco ball.
+Gloves on, Sunniva is bound for the opening night at the opera. Something sleek and sparkling, please, without looking like a disco ball.
 
 - At least 2 feathers — Give me two feathers at the very least, darling! I want to dazzle!
 - Sequin — Sequins! I must have sequins! Nothing else will do!
@@ -1798,7 +1798,7 @@ Gloves on, Sunniva is bound for opening night at the opera. Something sleek and 
 
 Kezia Fairweather · ceremony above the harbour
 
-Hat pinned down tight, Kezia is bound for a ceremony above the harbour. Something windswept and lovely, please, and no tripping on the spiral stairs.
+Hat pinned down tight, Kezia is bound for a ceremony above the harbour. Something windswept and lovely, please, without tripping on the steps.
 
 - Red — I was hoping for red. If you don’t mind.
 - No bells or lace trim — No bells or lace trim, please? I’m sorry to be a bother.
@@ -1810,7 +1810,7 @@ Hat pinned down tight, Kezia is bound for a ceremony above the harbour. Somethin
 
 Linnea Larkspur · village fete
 
-Basket on her arm, Linnea is bound for the village fete. Something bright and comfortable, please, and no getting jam on it.
+Basket on her arm, Linnea is bound for the village fete. Something bright and comfortable, please, without getting jam on it.
 
 - No linen — Sorry, but could we skip the linen? I’m so sorry.
 - Flowers — I was thinking something floral. Sorry, is that silly?
@@ -1832,7 +1832,7 @@ Marisol will drift through a morning by the thermal pool looking relaxed and air
 
 Yara Bramble · grand winter gala
 
-Gloves on, Yara is bound for the grand winter gala. Something sleek and sparkling, please, and no sitting down in it.
+Gloves on, Yara is bound for the grand winter gala. Something sleek and sparkling, please, without sitting down in it.
 
 - Workwear — I demand something for work, darling! The stage is set!
 - Not patterned or romantic — Banish anything patterned or romantic, darling! Not a hint tonight!
@@ -1844,7 +1844,7 @@ Gloves on, Yara is bound for the grand winter gala. Something sleek and sparklin
 
 Nell Okonkwo · meeting with the bank manager
 
-Folder under her arm, Nell is bound for a meeting with the bank manager. Something crisp and sensible, please, and no creasing on the bus.
+Folder under her arm, Nell is bound for a meeting with the bank manager. Something crisp and sensible, please, without creasing on the bus.
 
 - Flowers — Something floral. That’s the whole request.
 - Professional — Something professional. That’s the whole request.
@@ -1856,7 +1856,7 @@ Folder under her arm, Nell is bound for a meeting with the bank manager. Somethi
 
 Uma Bellweather · church hall bring-and-buy
 
-Uma will wander through the church hall bring-and-buy looking cheerful and practical, with luck and no losing a sleeve to the coconut shy.
+Uma will wander through the church hall bring-and-buy looking cheerful and practical, and with any luck will avoid losing a sleeve to the coconut shy.
 
 - At least 4 colours — If it’s not too much, at least four colours? Sorry, I do love variety.
 - Cotton — Might it be cotton? Sorry, only if the work is easy.
@@ -1880,7 +1880,7 @@ Sunniva has been asked to the literary society’s spring supper, and she wants 
 
 Matilda Garrow · dean’s garden reception
 
-Scroll in mind, Matilda is bound for the dean’s garden reception. Something smart and ready for photos, please, and no disappearing under the gown.
+Scroll in mind, Matilda is bound for the dean’s garden reception. Something smart and ready for photos, please, without disappearing under the gown.
 
 - Romantic — Something romantic! It must be something romantic! I can see the curtain rising!
 - At least 2 feathers — At least two feathers! More, if the drama demands it!
@@ -1896,7 +1896,7 @@ Iris will sweep into a very stylish wake looking mysterious, and would rather av
 
 - At least 3 fabrics — Oh, three fabrics at least, darling! The more, the merrier.
 - Cool — Oh, something cool! That’s exactly what I’m after, darling.
-- Appliqués — Oh, appliqués! Add as many as you like, darling.
+- Appliqués — Oh, appliqués! Add plenty, darling.
 - Cotton — Oh, cotton! What a lovely idea, darling.
 - No brown or pink — No brown or pink for me, dear. Everything else is gorgeous!
 
@@ -1904,7 +1904,7 @@ Iris will sweep into a very stylish wake looking mysterious, and would rather av
 
 Nadia Zimmerman · lecture on lost lace
 
-Catalogue in hand, Nadia is bound for a lecture on lost lace. Something quietly striking, please, and no setting off the alarms.
+Catalogue in hand, Nadia is bound for a lecture on lost lace. Something quietly striking, please, without setting off the alarms.
 
 - At least 4 colours — If it’s not too much, at least four colours? Sorry, I do love variety.
 - Grey — I was hoping for grey. If you don’t mind.
@@ -1916,7 +1916,7 @@ Catalogue in hand, Nadia is bound for a lecture on lost lace. Something quietly 
 
 Wilhelmina Ashdown · opening night at the opera
 
-Wilhelmina has been counting the days to opening night at the opera. She wants something dazzling.
+Wilhelmina has been counting the days to the opening night at the opera. She wants something dazzling.
 
 - At least 4 fabrics — One expects a variety. At least four fabrics, I think.
 - Sequin — One expects sequins. Nothing less will do.
@@ -1939,7 +1939,7 @@ Matilda has been asked to a book launch, and she wants something calm and well r
 
 Bettina Moreau · picnic on the beach
 
-Bettina will stroll along a picnic on the beach looking bright as a postcard, and would rather avoid blowing away in the wind.
+Bettina will make the most of a picnic on the beach looking bright as a postcard, and would rather avoid blowing away in the wind.
 
 - Not risqué — Nothing risqué, my dear. Everything else is wonderful!
 - Lace — Oh, lace! What a lovely idea, darling.
@@ -1968,7 +1968,7 @@ Amara is strolling into a midsummer garden party and hopes to look fresh and pre
 - Burlap only
 - Not elaborate — Nothing elaborate, I think. Quite unfitting.
 - Glamour — One expects something glamorous. I trust that is clear.
-- Appliqués — A touch of appliqués, I think. Tastefully, of course.
+- Appliqués — Some appliqués, I think. Tastefully, of course.
 - Daywear — I shall require something for daytime. Do try to rise to the occasion.
 
 ### x6h4483j · hard · Burlap on · seaside-holiday · deadpan
@@ -1985,9 +1985,9 @@ Celia has packed a bucket and spade for a picnic on the beach. She wants somethi
 
 ### btvu6h3z · hard · Burlap on · jazz-night · anxious
 
-Vesna Goodfellow · saxophone solo by the river
+Vesna Goodfellow · jam session by the river
 
-Humming a tune, Vesna is bound for a saxophone solo by the river. Something cool as a muted trumpet, please, and no getting in the drummer’s way.
+Humming a tune, Vesna is bound for a jam session by the river. Something cool as a muted trumpet, please, without getting in the drummer’s way.
 
 - Burlap only
 - Feathers — Might there be some feathers? Sorry, only if there’s room.
@@ -1999,25 +1999,25 @@ Humming a tune, Vesna is bound for a saxophone solo by the river. Something cool
 
 Juno Hollis · midnight feast
 
-Juno will tiptoe to a midnight feast looking giggly and comfortable, and swears there will be no rustling too loudly.
+Juno will tiptoe to a midnight feast looking giggly and comfortable, and swears to do it without rustling too loudly.
 
 - Burlap only
 - Risqué — Oh, something risqué! That’s exactly what I’m after, darling.
 - At least 4 bells — Please, at least four bells, dear! Oh, the joy.
 - No feathers — Oh, no feathers, darling! They make me sneeze terribly.
 - Elegant — Oh, something elegant! That’s exactly what I’m after, darling.
-- Brooches and flowers — Oh, brooches and flowers! Add as many as you like, darling.
+- Brooches and flowers — Oh, brooches and flowers! Add plenty, darling.
 
 ### 35a7jd6c · hard · Burlap on · jazz-night · grand
 
 Sunniva Larkspur · night at the jazz club
 
-Humming a tune, Sunniva is bound for a night at the jazz club. Something swaying and stylish, please, and no being too stiff to sway.
+Humming a tune, Sunniva is bound for a night at the jazz club. Something swaying and stylish, please, without being too stiff to sway.
 
 - Burlap only
 - No buttons — One finds buttons rather tiresome. Leave the lot off.
 - Professional — One expects something professional. I trust that is clear.
-- Jewels and feathers — A touch of jewels and feathers, I think. Tastefully, of course.
+- Jewels and feathers — Some jewels and feathers, I think. Tastefully, of course.
 - At least 8 bells — I shall require at least eight bells. A lady must be noticed.
 - At least 8 brooches — At least eight brooches, if you please. One does like to be seen.
 
@@ -2025,7 +2025,7 @@ Humming a tune, Sunniva is bound for a night at the jazz club. Something swaying
 
 Valentina Hollis · museum opening
 
-Valentina will wander through the museum opening looking quietly striking, without setting off the alarms.
+Valentina will arrive at the museum opening looking quietly striking, without setting off the alarms.
 
 - Burlap only
 - Risqué — Something risqué. No fuss.
@@ -2038,7 +2038,7 @@ Valentina will wander through the museum opening looking quietly striking, witho
 
 Sunniva Castellano · picnic on the beach
 
-Sunniva will stroll along a picnic on the beach looking light and breezy, and would rather avoid getting sand in the seams.
+Sunniva will make the most of a picnic on the beach looking light and breezy, and would rather avoid getting sand in the seams.
 
 - Burlap only
 - At least 8 bells — Give me eight bells at the very least, darling! I want to dazzle!
@@ -2051,7 +2051,7 @@ Sunniva will stroll along a picnic on the beach looking light and breezy, and wo
 
 Beatrix Bellweather · wedding at the lighthouse
 
-Beatrix will climb up to a wedding at the lighthouse looking salty and sweet, and hopes to avoid tripping on the spiral stairs.
+Beatrix will climb up to a wedding at the lighthouse looking salty and sweet, and hopes to avoid tripping on the steps.
 
 - Burlap only
 - Warm — Something warm. That’s the whole request.
@@ -2077,7 +2077,7 @@ Kezia has pinned up her hair for the Sunday waltz at the assembly rooms. She wan
 
 Ffion Fenwick · literary society’s spring supper
 
-With a pen in her pocket, Ffion is bound for the literary society’s spring supper. Something calm and well read, please, and no spilling wine on the author.
+With a pen in her pocket, Ffion is bound for the literary society’s spring supper. Something calm and well read, please, without spilling wine on the author.
 
 - Burlap only
 - At least 7 buttons — Maybe seven buttons, or more? I’m so sorry to ask.
@@ -2090,13 +2090,13 @@ With a pen in her pocket, Ffion is bound for the literary society’s spring sup
 
 Nadia Beaumont · very long service in a cold church
 
-Nadia has accepted her fate at a very long service in a cold church. She wants something grand but a bit stiff, and no not being able to sit down.
+Nadia has accepted her fate at a very long service in a cold church. She wants something grand but a bit stiff, and hopes to avoid aching from standing.
 
 - Burlap only
 - At least 4 flowers — Please, at least four flowers, dear! Oh, the joy.
 - Uncomfortable — I’m dreaming of something uncomfortable, darling. Truly dreaming.
-- No bells — Please keep the bells away, dear. Just not for me, I’m afraid.
-- Tassels — Oh, tassels! Add as many as you like, darling.
+- No bells — Please keep bells away, dear. Just not for me, I’m afraid.
+- Tassels — Oh, tassels! Add plenty, darling.
 - At least 8 brooches — Please, at least eight brooches, dear! Oh, the joy.
 
 ### 386kggae · hard · Burlap on · costume-party · deadpan
@@ -2140,7 +2140,7 @@ Thea has waved off many a brave soul at a polar expedition send-off. She wants s
 
 Bettina Nakamura · final-round interview
 
-Folder under her arm, Bettina is bound for a final-round interview. Something smart but friendly, please, and no looking like a mannequin.
+Folder under her arm, Bettina is bound for a final-round interview. Something smart but friendly, please, without looking like a mannequin.
 
 - Burlap only
 - At least 4 flowers — Maybe four flowers, or more? I’m so sorry to ask.
@@ -2153,7 +2153,7 @@ Folder under her arm, Bettina is bound for a final-round interview. Something sm
 
 Zelda Jellicoe · midsummer garden party
 
-Parasol in hand, Zelda is bound for a midsummer garden party. Something fresh and pretty, please, and no outshining the hostess.
+Parasol in hand, Zelda is bound for a midsummer garden party. Something fresh and pretty, please, without outshining the hostess.
 
 - Formal — Could it be something formal, perhaps? Only if that’s all right.
 - Only cotton, silk and linen — If it’s not too much, just cotton, silk or linen? Nothing else, I think.
@@ -2163,9 +2163,9 @@ Parasol in hand, Zelda is bound for a midsummer garden party. Something fresh an
 
 ### sb94r53k · chaos · Burlap off · christening · brisk
 
-Marisol Ravenscroft · christening tea afterwards
+Marisol Ravenscroft · tea after the christening
 
-With a gift tucked in her bag, Marisol is bound for the christening tea afterwards. Something soft and proper, please, and no getting milk on it.
+With a gift tucked in her bag, Marisol is bound for the tea after the christening. Something soft and proper, please, without getting milk on it.
 
 - Exactly 3 jewels — Exactly three jewels. Not a stitch more.
 - Bells — Add bells.
@@ -2202,7 +2202,7 @@ The forecast says rain, and Ffion is off to a damp afternoon by the lake anyway.
 
 Niamh Ibarra · gentle hack across the fields
 
-Carrot in pocket, Niamh is bound for a gentle hack across the fields. Something hard-working and tidy, please, and no catching on the saddle.
+Carrot in pocket, Niamh is bound for a gentle hack across the fields. Something hard-working and tidy, please, without snagging on the stirrups.
 
 - Cute — Something cute. Keep it practical.
 - Gothic — Gothic. Nothing flimsy.
@@ -2215,7 +2215,7 @@ Carrot in pocket, Niamh is bound for a gentle hack across the fields. Something 
 
 Zora Haverford · final-round interview
 
-Zora will walk into a final-round interview looking smart but friendly, and hopes to dodge looking like a mannequin.
+Zora will turn up for a final-round interview looking smart but friendly, and hopes to dodge looking like a mannequin.
 
 - Warm — I shall require something warm. Do try to rise to the occasion.
 - Only lace — Lace only. I have never needed more.
@@ -2240,7 +2240,7 @@ Aurelia has been planning for weeks and is off to the masquerade at the old mill
 
 Orla Garrow · book launch
 
-With a pen in her pocket, Orla is bound for a book launch. Something calm and well read, please, and no looking like a footnote.
+With a pen in her pocket, Orla is bound for a book launch. Something calm and well read, please, without looking like a footnote.
 
 - Exactly 4 tassels — Exactly four tassels! Not one more, or the whole act collapses!
 - Eveningwear — Something for the evening! It must be something for the evening! I can see the curtain rising!
@@ -2259,7 +2259,7 @@ Tamsin has been counting the days to the mayor’s charity ball. She wants somet
 - Cute — Something cute! It must be something cute! I can see the curtain rising!
 - Exactly 8 appliqués — Eight appliqués, darling! Precisely, for the final bow!
 - Formal — Something formal! Let the whole world gasp!
-- Only pink and purple — Pink or purple only, darling! Let those be my whole palette!
+- Only pink and purple — Pink or purple only, darling! Nothing else touches my palette!
 
 ### 22w6ta38 · chaos · Burlap off · first-date · gushing
 
@@ -2277,7 +2277,7 @@ Cecily has changed her mind three times about a first date. She wants something 
 
 Eleanor Sutcliffe · church hall bring-and-buy
 
-Basket on her arm, Eleanor is bound for the church hall bring-and-buy. Something bright and comfortable, please, and no getting jam on it.
+Basket on her arm, Eleanor is bound for the church hall bring-and-buy. Something bright and comfortable, please, without getting jam on it.
 
 - Only silk — Silk only. Surprise me within that.
 - At least 3 colours — I want colour, and lots of it. At least three.
@@ -2289,11 +2289,11 @@ Basket on her arm, Eleanor is bound for the church hall bring-and-buy. Something
 
 Baroness Dandelion Fluff · night of cocktails and karaoke
 
-Baroness Dandelion Fluff will take over a night of cocktails and karaoke looking bubbly and bright, and swears there will be no leaving a trail of glitter.
+Baroness Dandelion Fluff will take over a night of cocktails and karaoke looking bubbly and bright, and swears she can do it without leaving a trail of glitter.
 
 - Exactly 3 feathers — Exactly three feathers, darling. Perfection!
-- Only velvet — Just velvet, dear. Only those, and I’ll be delighted.
-- Tassels — Oh, tassels! Add as many as you like, darling.
+- Only velvet — Just velvet, dear. Nothing else, and I’ll be delighted.
+- Tassels — Oh, tassels! Add plenty, darling.
 - Formal — Oh, something formal, please! I can’t wait to see it.
 - Casual — Oh, something casual, please! I can’t wait to see it.
 
@@ -2313,7 +2313,7 @@ Lavinia will burst into the masquerade at the old mill looking bold and silly, w
 
 Mirela Abernathy · dramatic poetry reading
 
-Mirela is paying her respects at a dramatic poetry reading. She wants something moody and elegant.
+Mirela is making an entrance at a dramatic poetry reading. She wants something moody and elegant.
 
 - Exactly 3 brooches — Three brooches, dear, no more, no fewer. Isn’t that sweet?
 - Cool — Oh, something cool, please! I can’t wait to see it.
@@ -2326,7 +2326,7 @@ Mirela is paying her respects at a dramatic poetry reading. She wants something 
 
 Miss Pudding · polar expedition send-off
 
-Breath steaming, Miss Pudding is bound for a polar expedition send-off. Something snug and heroic, please, and no overheating at the supper.
+Breath steaming, Miss Pudding is bound for a polar expedition send-off. Something snug and heroic, please, without overheating indoors.
 
 - Orange and black — Make it orange and black, dear! I’m in love today.
 - Exactly 8 bows — Eight bows, dear, no more, no fewer. I just know it’s right.
@@ -2351,7 +2351,7 @@ Thea is nervously off to a Sunday lunch at the big house. She wants something ch
 
 Ximena Petrov · flower show
 
-Parasol in hand, Ximena is bound for the flower show. Something romantic, please, and no getting grass stains.
+Parasol in hand, Ximena is bound for the flower show. Something romantic, please, without getting grass stains.
 
 - Exactly 7 jewels — Exactly seven jewels! Not one more, or the whole act collapses!
 - Daywear — I demand something for daytime, darling! The stage is set!
@@ -2363,7 +2363,7 @@ Parasol in hand, Ximena is bound for the flower show. Something romantic, please
 
 Celia Yarrow · village fete
 
-Basket on her arm, Celia is bound for the village fete. Something pretty but practical, please, and no losing a sleeve to the coconut shy.
+Basket on her arm, Celia is bound for the village fete. Something pretty but practical, please, without losing a sleeve to the coconut shy.
 
 - Only linen, silk and wool — Nothing but linen, silk or wool. That’s all.
 - Feathers — Feathers. Keep things tidy.
@@ -2374,15 +2374,15 @@ Basket on her arm, Celia is bound for the village fete. Something pretty but pra
 
 ### v93675sh · chaos · Burlap off · halloween-ball · theatrical
 
-Lavinia Bellweather · haunted house party
+Lavinia Bellweather · midnight party at the old manor
 
-By candlelight, Lavinia will arrive at a haunted house party looking dramatic and daft, and fears only catching on a cobweb.
+By candlelight, Lavinia will arrive at a midnight party at the old manor looking dramatic and daft, and fears only catching on a cobweb.
 
 - Daywear — Something for daytime! It must be something for daytime! I can see the curtain rising!
 - Only white — Nothing but white! Not a thread of anything else!
 - Exactly 8 bells — Exactly eight bells! Not one more, or the whole act collapses!
 - Eveningwear — Something for the evening! Let the whole world gasp!
-- No buttons — Away with the buttons, darling! My moment is mine alone!
+- No buttons — Away with buttons, darling! My moment is mine alone!
 
 ### e34bm2uf · chaos · Burlap off · christening · brisk
 
@@ -2390,7 +2390,7 @@ Eleanor Moreau · naming day in the village church
 
 Eleanor will cuddle the guest of honour at a naming day in the village church and hopes to look soft and proper, without getting milk on it.
 
-- No flowers or piping — Leave off the flowers or piping.
+- No flowers or piping — Leave flowers or piping off.
 - Elaborate — Something elaborate, please.
 - No brown — No brown. Not today.
 - Only cotton, wool and lace — Cotton, wool or lace only. Keep it tight.
@@ -2399,9 +2399,9 @@ Eleanor will cuddle the guest of honour at a naming day in the village church an
 
 ### 3q2zxa9f · chaos · Burlap off · rainy-picnic · brisk
 
-Nadia Sorensen · brave picnic under one big umbrella
+Nadia Sorensen · picnic under one big umbrella
 
-Flask in hand, Nadia is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no looking like a wet sheep.
+Flask in hand, Nadia is bound for a picnic under one big umbrella. Something snug and cheerful, please, without looking like a wet sheep.
 
 - No feathers — No feathers. They get everywhere.
 - At least 6 brooches — Six brooches, minimum. Thanks.
@@ -2424,9 +2424,9 @@ Lady Hortensia Puddlewick has been asked to a wedding on the cliff top. She want
 
 ### 35j95k33 · chaos · Burlap off · halloween-ball · deadpan
 
-Niamh Thistlewood · haunted house party
+Niamh Thistlewood · midnight party at the old manor
 
-By candlelight, Niamh will arrive at a haunted house party looking delightfully creepy, and fears only being mistaken for a bat.
+By candlelight, Niamh will arrive at a midnight party at the old manor looking delightfully creepy, and fears only being mistaken for a bat.
 
 - Exactly 6 jewels — Exactly six jewels. Not one more.
 - Only black and brown — Nothing but black or brown, please. I’m not fussy.
@@ -2439,7 +2439,7 @@ By candlelight, Niamh will arrive at a haunted house party looking delightfully 
 
 Ines Marlowe · cocoa party after lights out
 
-Torch in hand, Ines is bound for a cocoa party after lights out. Something cosy and a bit silly, please, and no waking the whole house.
+Torch in hand, Ines is bound for a cocoa party after lights out. Something cosy and a bit silly, please, without waking the whole house.
 
 - Simple — I shall require something simple. Do try to rise to the occasion.
 - Only brown and orange — Brown or orange only. Anything else would be vulgar.
@@ -2451,7 +2451,7 @@ Torch in hand, Ines is bound for a cocoa party after lights out. Something cosy 
 
 Octavia Marlowe · family anniversary supper
 
-Flowers in hand, Octavia is bound for the family anniversary supper. Something polite and pretty, please, and no being compared to the cousins.
+Flowers in hand, Octavia is bound for the family anniversary supper. Something polite and pretty, please, without being compared to the cousins.
 
 - Warm — Oh, something warm, please! I can’t wait to see it.
 - Cool — Oh, something cool, please! I can’t wait to see it.
@@ -2463,7 +2463,7 @@ Flowers in hand, Octavia is bound for the family anniversary supper. Something p
 
 Matilda Tillerman · tour of the new workshop
 
-Matilda will walk into a tour of the new workshop looking crisp and sensible, and hopes to dodge creasing on the bus.
+Matilda will turn up for a tour of the new workshop looking crisp and sensible, and hopes to dodge creasing on the bus.
 
 - Formal — Could it be something formal, perhaps? Only if that’s all right.
 - At least 4 bells — Maybe four bells, or more? I’m so sorry to ask.
@@ -2474,9 +2474,9 @@ Matilda will walk into a tour of the new workshop looking crisp and sensible, an
 
 ### w564g337 · chaos · Burlap off · jazz-night · grand
 
-Rafaela Pemberton · smoky late set downstairs
+Rafaela Pemberton · late set in the smoky cellar
 
-Rafaela will slip into a smoky late set downstairs looking smooth and a little sultry, without getting in the drummer’s way.
+Rafaela will slip into a late set in the smoky cellar looking smooth and a little sultry, without getting in the drummer’s way.
 
 - No green — No green, please. One has never trusted such a palette.
 - Piping and bows — One expects piping and bows. A matter of form.
@@ -2524,9 +2524,9 @@ Sabine will sweep into a moonlit seance looking mysterious, and would rather avo
 
 ### r32z9q3v · chaos · Burlap off · christening · deadpan
 
-Nadia Chandler · christening tea afterwards
+Nadia Chandler · tea after the christening
 
-Nadia has been invited to the christening tea afterwards. She wants something soft and proper.
+Nadia has been invited to the tea after the christening. She wants something soft and proper.
 
 - Only brown — Nothing but brown, please. I’m not fussy.
 - Exactly 2 feathers — Two feathers. I counted.
@@ -2538,14 +2538,14 @@ Nadia has been invited to the christening tea afterwards. She wants something so
 
 Greta Kowalski · candlelit dinner for two
 
-Heart fluttering, Greta is bound for a candlelit dinner for two. Something charming and daring, please, and no trying too hard.
+Heart fluttering, Greta is bound for a candlelit dinner for two. Something charming and daring, please, without trying too hard.
 
 - Elaborate — I’m dreaming of something elaborate, darling. Truly dreaming.
 - Simple — I’m dreaming of something simple, darling. Truly dreaming.
 - At least 3 colours — Colour, dear, colour! At the very least, three.
 - Exactly 6 brooches — Oh, exactly six brooches, darling! Each one a little treasure.
 - Risqué — Oh, something risqué! That’s exactly what I’m after, darling.
-- Only sequins and linen — Just sequins or linen, dear. Only those, and I’ll be delighted.
+- Only sequins and linen — Just sequins or linen, dear. Nothing else, and I’ll be delighted.
 
 ### q5kypv6k · chaos · Burlap off · job-interview · anxious
 
@@ -2587,10 +2587,10 @@ Wilhelmina has packed a bucket and spade for a seaside holiday. She wants someth
 
 Freya Sorensen · first date
 
-Heart fluttering, Freya is bound for a first date. Something charming and daring, please, and no trying too hard.
+Heart fluttering, Freya is bound for a first date. Something charming and daring, please, without trying too hard.
 
 - Velvet — Velvet! The curtain, the cloak, the whole grand finale!
-- Only brown — Brown only, darling! Let those be my whole palette!
+- Only brown — Brown only, darling! Nothing else touches my palette!
 - Exactly 5 buttons — Exactly five buttons! Not one more, or the whole act collapses!
 - Bows — Bows, darling! Big, bold and gloriously over the top!
 - Elaborate — Something elaborate! Let the whole world gasp!
@@ -2600,7 +2600,7 @@ Heart fluttering, Freya is bound for a first date. Something charming and daring
 
 Ada Penhallow · hen do
 
-Ada will take over a hen do looking bubbly and bright, and swears there will be no losing the sash.
+Ada will take over a hen do looking bubbly and bright, and swears she can do it without losing the sash.
 
 - Only pink — Pink only. No extras.
 - Appliqués — Appliqués. Keep things tidy.
@@ -2613,7 +2613,7 @@ Ada will take over a hen do looking bubbly and bright, and swears there will be 
 
 Amara Eastwick · dance on the seafront bandstand
 
-Amara has pinned up her hair for a dance on the seafront bandstand. She wants something light on its feet.
+Amara has pinned up her hair for a dance on the seafront bandstand. She wants something airy and light-footed.
 
 - Exactly 3 brooches — Exactly three brooches. Pinned neatly.
 - Simple — Something simple, please.
@@ -2639,9 +2639,9 @@ Nadia will mingle at a book launch looking clever and a little quirky, and would
 
 Iris Nakamura · farewell supper before the long voyage
 
-Breath steaming, Iris is bound for a farewell supper before the long voyage. Something wrapped up and wonderful, please, and no looking like a snowman.
+Breath steaming, Iris is bound for a farewell supper before the long voyage. Something wrapped up and wonderful, please, without looking like a snowman.
 
-- Only lace, silk and velvet — Lace, silk or velvet only! Let those be my entire cast!
+- Only lace, silk and velvet — Lace, silk or velvet only! Let nothing else take the stage!
 - Elaborate — Something elaborate! Let the whole world gasp!
 - Simple — I demand something simple, darling! The stage is set!
 - Exactly 4 bells — Exactly four bells! Not one more, or the whole act collapses!
@@ -2649,9 +2649,9 @@ Breath steaming, Iris is bound for a farewell supper before the long voyage. Som
 
 ### 5cx9p3sh · chaos · Burlap off · jazz-night · brisk
 
-Florence Beaumont · smoky late set downstairs
+Florence Beaumont · late set in the smoky cellar
 
-Florence will slip into a smoky late set downstairs looking swaying and stylish, without getting in the drummer’s way.
+Florence will slip into a late set in the smoky cellar looking swaying and stylish, without getting in the drummer’s way.
 
 - Exactly 2 tassels — Two tassels. No more, no fewer.
 - Only wool — Nothing but wool. That’s all.
@@ -2676,7 +2676,7 @@ Yara has packed a bucket and spade for a day on the pier. She wants something br
 
 Tamsin Dunmore · wedding in a castle with no heating
 
-Tamsin has accepted her fate at a wedding in a castle with no heating. She wants something dignified and determined, and no freezing in the great hall.
+Tamsin has accepted her fate at a wedding in a castle with no heating. She wants something dignified and determined, and hopes to avoid freezing solid.
 
 - Exactly 6 feathers — Exactly six feathers. Not one more.
 - Cool — Something cool. That’s the whole request.
@@ -2692,8 +2692,8 @@ Nadia has a sash and a plan for a very pink weekend away. She wants something fu
 
 - Elaborate — Something elaborate! It must be something elaborate! I can see the curtain rising!
 - Exactly 6 buttons — Exactly six buttons! Not one more, or the whole act collapses!
-- Lace trim — Add lace trim, darling! Let the light find every one!
-- Only purple, grey and green — Purple, grey or green only, darling! Let those be my whole palette!
+- Lace trim — Add lace trim, darling! Let the light find them all!
+- Only purple, grey and green — Purple, grey or green only, darling! Nothing else touches my palette!
 - Simple — Something simple! It must be something simple! I can see the curtain rising!
 - Cotton and velvet — Cotton and velvet! I must have cotton and velvet! Nothing else will do!
 
@@ -2707,7 +2707,7 @@ Lady Regina Crumpet has booked in for a spa weekend. She wants something relaxed
 - Exactly 7 bows — Exactly seven bows, darling. Perfection!
 - Formal — I’m dreaming of something formal, darling. Truly dreaming.
 - At least 4 colours — Colour, dear, colour! At the very least, four.
-- Only silk, linen and lace — Just silk, linen or lace, dear. Only those, and I’ll be delighted.
+- Only silk, linen and lace — Just silk, linen or lace, dear. Nothing else, and I’ll be delighted.
 - Not eclectic — Oh, nothing eclectic, darling. I couldn’t bear the thought.
 
 ### z2jss93m · chaos · Burlap off · graduation · deadpan
@@ -2724,9 +2724,9 @@ Philippa has finally made it to the dean’s garden reception. She wants somethi
 
 ### 73r8g434 · chaos · Burlap off · christening · anxious
 
-Ffion Rosales · christening tea afterwards
+Ffion Rosales · tea after the christening
 
-Ffion has been invited to the christening tea afterwards. She wants something tidy but tender.
+Ffion has been invited to the tea after the christening. She wants something tidy but tender.
 
 - Warm — If it’s not too much trouble, maybe something warm?
 - Only brown — If it’s no trouble, brown only? I’m so sorry to be fussy.
@@ -2738,7 +2738,7 @@ Ffion has been invited to the christening tea afterwards. She wants something ti
 
 Ada Underhill · meeting with the bank manager
 
-Ada will walk into a meeting with the bank manager looking smart but friendly, and hopes to dodge looking like a mannequin.
+Ada will turn up for a meeting with the bank manager looking smart but friendly, and hopes to dodge looking like a mannequin.
 
 - Exactly 7 buttons — Exactly seven buttons! Not one more, or the whole act collapses!
 - Exactly 4 appliqués — Four appliqués, darling! Precisely, for the final bow!
@@ -2762,7 +2762,7 @@ Saskia has waved off many a brave soul at a farewell supper before the long voya
 
 Yara Marlowe · Sunday lunch at the big house
 
-Flowers in hand, Yara is bound for a Sunday lunch at the big house. Something polite and pretty, please, and no being compared to the cousins.
+Flowers in hand, Yara is bound for a Sunday lunch at the big house. Something polite and pretty, please, without being compared to the cousins.
 
 - Exactly 3 bells — Exactly three bells. Not one more.
 - Not floral or eclectic — Nothing floral or eclectic. I have my reasons.
@@ -2789,20 +2789,20 @@ Bridget has been asked to a wedding at the lighthouse. She wants something airy 
 
 Lottie Yarrow · seaside holiday
 
-Ice cream in hand, Lottie is bound for a seaside holiday. Something relaxed and cheerful, please, and no getting sand in the seams.
+Ice cream in hand, Lottie is bound for a seaside holiday. Something relaxed and cheerful, please, without getting sand in the seams.
 
 - Burlap only
 - Exactly 7 buttons — Seven buttons, darling! Precisely, for the final bow!
 - Gothic — Make it gothic! I want to haunt the entire theatre!
 - Cute — I demand something cute, darling! The stage is set!
-- No tassels — Away with the tassels, darling! My moment is mine alone!
+- No tassels — Away with tassels, darling! My moment is mine alone!
 - Not romantic — Banish anything romantic, darling! Not a hint tonight!
 
 ### 3zmf26y7 · chaos · Burlap on · jazz-night · brisk
 
-Linnea Rosales · smoky late set downstairs
+Linnea Rosales · late set in the smoky cellar
 
-Linnea will slip into a smoky late set downstairs looking smooth and a little sultry, without looking like the cloakroom.
+Linnea will slip into a late set in the smoky cellar looking smooth and a little sultry, without getting lost among the coats.
 
 - Burlap only
 - Trim — Trim. Keep things tidy.
@@ -2815,24 +2815,24 @@ Linnea will slip into a smoky late set downstairs looking smooth and a little su
 
 Lavinia Winterbourne · moonlit seance
 
-Lavinia is paying her respects at a moonlit seance. She wants something mysterious.
+Lavinia is making an entrance at a moonlit seance. She wants something mysterious.
 
 - Burlap only
 - Exactly 6 bows — Exactly six bows! Not one more, or the whole act collapses!
 - Elaborate — Something elaborate! It must be something elaborate! I can see the curtain rising!
 - Simple — I demand something simple, darling! The stage is set!
 - Exactly 2 feathers — Two feathers, darling! Precisely, for the final bow!
-- Trim — Add trim, darling! Let the light find every one!
+- Trim — Add trim, darling! Let the light find them all!
 - Playful — Something playful! Let the whole world gasp!
 
 ### 27sutz39 · chaos · Burlap on · harvest-supper · deadpan
 
 Bridget Hargreaves · harvest supper
 
-Bridget will take the harvest supper in something plain and cheerful, if she can manage it without shivering in the barn.
+Bridget will take the harvest supper in something plain and cheerful, if she can manage it without shivering in the evening air.
 
 - Burlap only
-- No bows — Keep the bows off me.
+- No bows — Keep bows off the dress.
 - Elaborate — Something elaborate. I’ll know it when I see it.
 - Exactly 4 appliqués — Four appliqués. I counted.
 - Simple — Something simple. I’ll know it when I see it.
@@ -2843,7 +2843,7 @@ Bridget will take the harvest supper in something plain and cheerful, if she can
 
 Uma Nightingale · midnight feast
 
-Torch in hand, Uma is bound for a midnight feast. Something cosy and a bit silly, please, and no rustling too loudly.
+Torch in hand, Uma is bound for a midnight feast. Something cosy and a bit silly, please, without rustling too loudly.
 
 - Burlap only
 - Exactly 5 jewels — Exactly five jewels, no more, no fewer. One is particular.
@@ -2854,9 +2854,9 @@ Torch in hand, Uma is bound for a midnight feast. Something cosy and a bit silly
 
 ### 4f34zrj9 · chaos · Burlap on · jazz-night · anxious
 
-Greta Fairweather · smoky late set downstairs
+Greta Fairweather · late set in the smoky cellar
 
-Greta has her dancing shoes ready for a smoky late set downstairs. She wants something swaying and stylish.
+Greta has her dancing shoes ready for a late set in the smoky cellar. She wants something swaying and stylish.
 
 - Burlap only
 - Exactly 5 jewels — Sorry, could it be exactly five jewels? I’d be so grateful.
@@ -2893,9 +2893,9 @@ Matilda will whirl through a dance on the seafront bandstand looking swirly and 
 
 ### 3gq9zp44 · chaos · Burlap on · graduation · gushing
 
-Hattie Marlowe · degree day photographs
+Hattie Marlowe · degree day photos
 
-Hattie will cross the lawn at the degree day photographs looking dignified but delighted, and hopes to avoid tripping on the stage steps.
+Hattie will cross the lawn at the degree day photos looking dignified but delighted, and hopes to avoid tripping on the steps.
 
 - Burlap only
 - Daywear — Oh, something for daytime, please! I can’t wait to see it.
@@ -2925,7 +2925,7 @@ Freya has been invited to the museum opening. She wants something graceful with 
 
 - Burlap only
 - Eveningwear — One expects something for the evening. I trust that is clear.
-- Flowers — A touch of flowers, I think. Tastefully, of course.
+- Flowers — Some flowers, I think. Tastefully, of course.
 - Exactly 3 jewels — Three jewels, precisely. I shall be counting.
 - Exactly 6 bells — Exactly six bells, no more, no fewer. One is particular.
 - Daywear — One expects something for daytime. I trust that is clear.
@@ -2934,7 +2934,7 @@ Freya has been invited to the museum opening. She wants something graceful with 
 
 Lady Pearl Whiskers · very pink weekend away
 
-Tiara slightly crooked, Lady Pearl Whiskers is bound for a very pink weekend away. Something fun and fizzy, please, and no losing the sash.
+Tiara slightly crooked, Lady Pearl Whiskers is bound for a very pink weekend away. Something fun and fizzy, please, without losing the sash.
 
 - Burlap only
 - Eveningwear — I demand something for the evening, darling! The stage is set!
@@ -2948,7 +2948,7 @@ Tiara slightly crooked, Lady Pearl Whiskers is bound for a very pink weekend awa
 
 Amara Singh · day on the pier
 
-Amara will stroll along a day on the pier looking relaxed and cheerful, and would rather avoid blowing away in the wind.
+Amara will make the most of a day on the pier looking relaxed and cheerful, and would rather avoid blowing away in the wind.
 
 - Burlap only
 - Elaborate — Something elaborate. Keep it practical.
@@ -2964,7 +2964,7 @@ Greta Garrow · night of cocktails and karaoke
 Greta has a sash and a plan for a night of cocktails and karaoke. She wants something fun and fizzy.
 
 - Burlap only
-- No tassels — Sorry, but could we leave off the tassels? I’m so sorry.
+- No tassels — Sorry, but could we leave tassels off? I’m so sorry.
 - Warm — Could it be something warm, perhaps? Only if that’s all right.
 - Bows — Might there be a bow? Sorry, I do find them comforting.
 - Cool — Could it be something cool, perhaps? Only if that’s all right.
@@ -2990,9 +2990,9 @@ Template 2
 
 Template 3
 
-- Fresh from the orchard, Cecily is bound for the harvest supper. Something honest and hard-wearing, please, and no looking like a scarecrow.
-- Fresh from the orchard, Cecily is bound for the village apple fair. Something honest and hard-wearing, please, and no looking like a scarecrow.
-- Fresh from the orchard, Cecily is bound for the barn dance. Something honest and hard-wearing, please, and no looking like a scarecrow.
+- Fresh from the orchard, Cecily is bound for the harvest supper. Something honest and hard-wearing, please, without looking like a scarecrow.
+- Fresh from the orchard, Cecily is bound for the village apple fair. Something honest and hard-wearing, please, without looking like a scarecrow.
+- Fresh from the orchard, Cecily is bound for the barn dance. Something honest and hard-wearing, please, without looking like a scarecrow.
 
 ### garden-party
 
@@ -3010,17 +3010,17 @@ Template 2
 
 Template 3
 
-- Parasol in hand, Cecily is bound for a midsummer garden party. Something romantic, please, and no outshining the hostess.
-- Parasol in hand, Cecily is bound for a summer tea on the lawn. Something romantic, please, and no outshining the hostess.
-- Parasol in hand, Cecily is bound for the flower show. Something romantic, please, and no outshining the hostess.
+- Parasol in hand, Cecily is bound for a midsummer garden party. Something romantic, please, without outshining the hostess.
+- Parasol in hand, Cecily is bound for a summer tea on the lawn. Something romantic, please, without outshining the hostess.
+- Parasol in hand, Cecily is bound for the flower show. Something romantic, please, without outshining the hostess.
 
 ### stylish-wake
 
 Template 1
 
-- Cecily is paying her respects at a very stylish wake. She wants something dark and dignified.
-- Cecily is paying her respects at a moonlit seance. She wants something dark and dignified.
-- Cecily is paying her respects at a dramatic poetry reading. She wants something dark and dignified.
+- Cecily is making an entrance at a very stylish wake. She wants something dark and dignified.
+- Cecily is making an entrance at a moonlit seance. She wants something dark and dignified.
+- Cecily is making an entrance at a dramatic poetry reading. She wants something dark and dignified.
 
 Template 2
 
@@ -3030,29 +3030,29 @@ Template 2
 
 Template 3
 
-- The invitation said black, so Cecily is bound for a very stylish wake. Something dark and dignified, please, and no looking too cheerful.
-- The invitation said black, so Cecily is bound for a moonlit seance. Something dark and dignified, please, and no looking too cheerful.
-- The invitation said black, so Cecily is bound for a dramatic poetry reading. Something dark and dignified, please, and no looking too cheerful.
+- The invitation said black, so Cecily is bound for a very stylish wake. Something dark and dignified, please, without looking too cheerful.
+- The invitation said black, so Cecily is bound for a moonlit seance. Something dark and dignified, please, without looking too cheerful.
+- The invitation said black, so Cecily is bound for a dramatic poetry reading. Something dark and dignified, please, without looking too cheerful.
 
 ### winter-gala
 
 Template 1
 
 - Cecily has been counting the days to the grand winter gala. She wants something dazzling.
-- Cecily has been counting the days to opening night at the opera. She wants something dazzling.
+- Cecily has been counting the days to the opening night at the opera. She wants something dazzling.
 - Cecily has been counting the days to the mayor’s charity ball. She wants something dazzling.
 
 Template 2
 
 - Cecily will glide into the grand winter gala looking dazzling, as long as she avoids looking like a disco ball.
-- Cecily will glide into opening night at the opera looking dazzling, as long as she avoids looking like a disco ball.
+- Cecily will glide into the opening night at the opera looking dazzling, as long as she avoids looking like a disco ball.
 - Cecily will glide into the mayor’s charity ball looking dazzling, as long as she avoids looking like a disco ball.
 
 Template 3
 
-- Gloves on, Cecily is bound for the grand winter gala. Something dazzling, please, and no looking like a disco ball.
-- Gloves on, Cecily is bound for opening night at the opera. Something dazzling, please, and no looking like a disco ball.
-- Gloves on, Cecily is bound for the mayor’s charity ball. Something dazzling, please, and no looking like a disco ball.
+- Gloves on, Cecily is bound for the grand winter gala. Something dazzling, please, without looking like a disco ball.
+- Gloves on, Cecily is bound for the opening night at the opera. Something dazzling, please, without looking like a disco ball.
+- Gloves on, Cecily is bound for the mayor’s charity ball. Something dazzling, please, without looking like a disco ball.
 
 ### job-interview
 
@@ -3064,15 +3064,15 @@ Template 1
 
 Template 2
 
-- Cecily will walk into a final-round interview looking capable and calm, and hopes to dodge looking stiff.
-- Cecily will walk into a meeting with the bank manager looking capable and calm, and hopes to dodge looking stiff.
-- Cecily will walk into a tour of the new workshop looking capable and calm, and hopes to dodge looking stiff.
+- Cecily will turn up for a final-round interview looking capable and calm, and hopes to dodge looking stiff.
+- Cecily will turn up for a meeting with the bank manager looking capable and calm, and hopes to dodge looking stiff.
+- Cecily will turn up for a tour of the new workshop looking capable and calm, and hopes to dodge looking stiff.
 
 Template 3
 
-- Folder under her arm, Cecily is bound for a final-round interview. Something capable and calm, please, and no looking stiff.
-- Folder under her arm, Cecily is bound for a meeting with the bank manager. Something capable and calm, please, and no looking stiff.
-- Folder under her arm, Cecily is bound for a tour of the new workshop. Something capable and calm, please, and no looking stiff.
+- Folder under her arm, Cecily is bound for a final-round interview. Something capable and calm, please, without looking stiff.
+- Folder under her arm, Cecily is bound for a meeting with the bank manager. Something capable and calm, please, without looking stiff.
+- Folder under her arm, Cecily is bound for a tour of the new workshop. Something capable and calm, please, without looking stiff.
 
 ### costume-party
 
@@ -3090,9 +3090,9 @@ Template 2
 
 Template 3
 
-- Mask at the ready, Cecily is bound for a costume party. Something bold and silly, please, and no being mistaken for a lampshade.
-- Mask at the ready, Cecily is bound for the masquerade at the old mill. Something bold and silly, please, and no being mistaken for a lampshade.
-- Mask at the ready, Cecily is bound for a fancy dress picnic. Something bold and silly, please, and no being mistaken for a lampshade.
+- Mask at the ready, Cecily is bound for a costume party. Something bold and silly, please, without being mistaken for a lampshade.
+- Mask at the ready, Cecily is bound for the masquerade at the old mill. Something bold and silly, please, without being mistaken for a lampshade.
+- Mask at the ready, Cecily is bound for a fancy dress picnic. Something bold and silly, please, without being mistaken for a lampshade.
 
 ### seaside-holiday
 
@@ -3104,15 +3104,15 @@ Template 1
 
 Template 2
 
-- Cecily will stroll along a seaside holiday looking light and breezy, and would rather avoid blowing away in the wind.
-- Cecily will stroll along a day on the pier looking light and breezy, and would rather avoid blowing away in the wind.
-- Cecily will stroll along a picnic on the beach looking light and breezy, and would rather avoid blowing away in the wind.
+- Cecily will make the most of a seaside holiday looking light and breezy, and would rather avoid blowing away in the wind.
+- Cecily will make the most of a day on the pier looking light and breezy, and would rather avoid blowing away in the wind.
+- Cecily will make the most of a picnic on the beach looking light and breezy, and would rather avoid blowing away in the wind.
 
 Template 3
 
-- Ice cream in hand, Cecily is bound for a seaside holiday. Something light and breezy, please, and no blowing away in the wind.
-- Ice cream in hand, Cecily is bound for a day on the pier. Something light and breezy, please, and no blowing away in the wind.
-- Ice cream in hand, Cecily is bound for a picnic on the beach. Something light and breezy, please, and no blowing away in the wind.
+- Ice cream in hand, Cecily is bound for a seaside holiday. Something light and breezy, please, without blowing away in the wind.
+- Ice cream in hand, Cecily is bound for a day on the pier. Something light and breezy, please, without blowing away in the wind.
+- Ice cream in hand, Cecily is bound for a picnic on the beach. Something light and breezy, please, without blowing away in the wind.
 
 ### first-date
 
@@ -3130,49 +3130,49 @@ Template 2
 
 Template 3
 
-- Heart fluttering, Cecily is bound for a first date. Something sweet with a little spark, please, and no trying too hard.
-- Heart fluttering, Cecily is bound for a candlelit dinner for two. Something sweet with a little spark, please, and no trying too hard.
-- Heart fluttering, Cecily is bound for a sunset picnic date. Something sweet with a little spark, please, and no trying too hard.
+- Heart fluttering, Cecily is bound for a first date. Something sweet with a little spark, please, without trying too hard.
+- Heart fluttering, Cecily is bound for a candlelit dinner for two. Something sweet with a little spark, please, without trying too hard.
+- Heart fluttering, Cecily is bound for a sunset picnic date. Something sweet with a little spark, please, without trying too hard.
 
 ### christening
 
 Template 1
 
 - Cecily has been invited to a christening. She wants something sweet and dignified.
-- Cecily has been invited to the christening tea afterwards. She wants something sweet and dignified.
+- Cecily has been invited to the tea after the christening. She wants something sweet and dignified.
 - Cecily has been invited to a naming day in the village church. She wants something sweet and dignified.
 
 Template 2
 
 - Cecily will cuddle the guest of honour at a christening and hopes to look sweet and dignified, without being upstaged by the baby.
-- Cecily will cuddle the guest of honour at the christening tea afterwards and hopes to look sweet and dignified, without being upstaged by the baby.
+- Cecily will cuddle the guest of honour at the tea after the christening and hopes to look sweet and dignified, without being upstaged by the baby.
 - Cecily will cuddle the guest of honour at a naming day in the village church and hopes to look sweet and dignified, without being upstaged by the baby.
 
 Template 3
 
-- With a gift tucked in her bag, Cecily is bound for a christening. Something sweet and dignified, please, and no being upstaged by the baby.
-- With a gift tucked in her bag, Cecily is bound for the christening tea afterwards. Something sweet and dignified, please, and no being upstaged by the baby.
-- With a gift tucked in her bag, Cecily is bound for a naming day in the village church. Something sweet and dignified, please, and no being upstaged by the baby.
+- With a gift tucked in her bag, Cecily is bound for a christening. Something sweet and dignified, please, without being upstaged by the baby.
+- With a gift tucked in her bag, Cecily is bound for the tea after the christening. Something sweet and dignified, please, without being upstaged by the baby.
+- With a gift tucked in her bag, Cecily is bound for a naming day in the village church. Something sweet and dignified, please, without being upstaged by the baby.
 
 ### book-launch
 
 Template 1
 
 - Cecily has been asked to a book launch, and she wants something clever and a little quirky.
-- Cecily has been asked to a reading at the corner bookshop, and she wants something clever and a little quirky.
+- Cecily has been asked to a bookshop reading, and she wants something clever and a little quirky.
 - Cecily has been asked to the literary society’s spring supper, and she wants something clever and a little quirky.
 
 Template 2
 
 - Cecily will mingle at a book launch looking clever and a little quirky, and would rather avoid looking like a footnote.
-- Cecily will mingle at a reading at the corner bookshop looking clever and a little quirky, and would rather avoid looking like a footnote.
+- Cecily will mingle at a bookshop reading looking clever and a little quirky, and would rather avoid looking like a footnote.
 - Cecily will mingle at the literary society’s spring supper looking clever and a little quirky, and would rather avoid looking like a footnote.
 
 Template 3
 
-- With a pen in her pocket, Cecily is bound for a book launch. Something clever and a little quirky, please, and no looking like a footnote.
-- With a pen in her pocket, Cecily is bound for a reading at the corner bookshop. Something clever and a little quirky, please, and no looking like a footnote.
-- With a pen in her pocket, Cecily is bound for the literary society’s spring supper. Something clever and a little quirky, please, and no looking like a footnote.
+- With a pen in her pocket, Cecily is bound for a book launch. Something clever and a little quirky, please, without looking like a footnote.
+- With a pen in her pocket, Cecily is bound for a bookshop reading. Something clever and a little quirky, please, without looking like a footnote.
+- With a pen in her pocket, Cecily is bound for the literary society’s spring supper. Something clever and a little quirky, please, without looking like a footnote.
 
 ### village-fete
 
@@ -3184,35 +3184,35 @@ Template 1
 
 Template 2
 
-- Cecily will wander through the village fete looking cheerful and practical, with luck and no losing a sleeve to the coconut shy.
-- Cecily will wander through a day of jam stalls and tombola looking cheerful and practical, with luck and no losing a sleeve to the coconut shy.
-- Cecily will wander through the church hall bring-and-buy looking cheerful and practical, with luck and no losing a sleeve to the coconut shy.
+- Cecily will wander through the village fete looking cheerful and practical, and with any luck will avoid losing a sleeve to the coconut shy.
+- Cecily will wander through a day of jam stalls and tombola looking cheerful and practical, and with any luck will avoid losing a sleeve to the coconut shy.
+- Cecily will wander through the church hall bring-and-buy looking cheerful and practical, and with any luck will avoid losing a sleeve to the coconut shy.
 
 Template 3
 
-- Basket on her arm, Cecily is bound for the village fete. Something cheerful and practical, please, and no losing a sleeve to the coconut shy.
-- Basket on her arm, Cecily is bound for a day of jam stalls and tombola. Something cheerful and practical, please, and no losing a sleeve to the coconut shy.
-- Basket on her arm, Cecily is bound for the church hall bring-and-buy. Something cheerful and practical, please, and no losing a sleeve to the coconut shy.
+- Basket on her arm, Cecily is bound for the village fete. Something cheerful and practical, please, without losing a sleeve to the coconut shy.
+- Basket on her arm, Cecily is bound for a day of jam stalls and tombola. Something cheerful and practical, please, without losing a sleeve to the coconut shy.
+- Basket on her arm, Cecily is bound for the church hall bring-and-buy. Something cheerful and practical, please, without losing a sleeve to the coconut shy.
 
 ### jazz-night
 
 Template 1
 
 - Cecily has her dancing shoes ready for a night at the jazz club. She wants something smooth and a little sultry.
-- Cecily has her dancing shoes ready for a smoky late set downstairs. She wants something smooth and a little sultry.
-- Cecily has her dancing shoes ready for a saxophone solo by the river. She wants something smooth and a little sultry.
+- Cecily has her dancing shoes ready for a late set in the smoky cellar. She wants something smooth and a little sultry.
+- Cecily has her dancing shoes ready for a jam session by the river. She wants something smooth and a little sultry.
 
 Template 2
 
 - Cecily will slip into a night at the jazz club looking smooth and a little sultry, without being too stiff to sway.
-- Cecily will slip into a smoky late set downstairs looking smooth and a little sultry, without being too stiff to sway.
-- Cecily will slip into a saxophone solo by the river looking smooth and a little sultry, without being too stiff to sway.
+- Cecily will slip into a late set in the smoky cellar looking smooth and a little sultry, without being too stiff to sway.
+- Cecily will slip into a jam session by the river looking smooth and a little sultry, without being too stiff to sway.
 
 Template 3
 
-- Humming a tune, Cecily is bound for a night at the jazz club. Something smooth and a little sultry, please, and no being too stiff to sway.
-- Humming a tune, Cecily is bound for a smoky late set downstairs. Something smooth and a little sultry, please, and no being too stiff to sway.
-- Humming a tune, Cecily is bound for a saxophone solo by the river. Something smooth and a little sultry, please, and no being too stiff to sway.
+- Humming a tune, Cecily is bound for a night at the jazz club. Something smooth and a little sultry, please, without being too stiff to sway.
+- Humming a tune, Cecily is bound for a late set in the smoky cellar. Something smooth and a little sultry, please, without being too stiff to sway.
+- Humming a tune, Cecily is bound for a jam session by the river. Something smooth and a little sultry, please, without being too stiff to sway.
 
 ### hen-do
 
@@ -3224,35 +3224,35 @@ Template 1
 
 Template 2
 
-- Cecily will take over a hen do looking sparkly and silly, and swears there will be no looking like a cocktail umbrella.
-- Cecily will take over a very pink weekend away looking sparkly and silly, and swears there will be no looking like a cocktail umbrella.
-- Cecily will take over a night of cocktails and karaoke looking sparkly and silly, and swears there will be no looking like a cocktail umbrella.
+- Cecily will take over a hen do looking sparkly and silly, and swears she can do it without looking like a cocktail umbrella.
+- Cecily will take over a very pink weekend away looking sparkly and silly, and swears she can do it without looking like a cocktail umbrella.
+- Cecily will take over a night of cocktails and karaoke looking sparkly and silly, and swears she can do it without looking like a cocktail umbrella.
 
 Template 3
 
-- Tiara slightly crooked, Cecily is bound for a hen do. Something sparkly and silly, please, and no looking like a cocktail umbrella.
-- Tiara slightly crooked, Cecily is bound for a very pink weekend away. Something sparkly and silly, please, and no looking like a cocktail umbrella.
-- Tiara slightly crooked, Cecily is bound for a night of cocktails and karaoke. Something sparkly and silly, please, and no looking like a cocktail umbrella.
+- Tiara slightly crooked, Cecily is bound for a hen do. Something sparkly and silly, please, without looking like a cocktail umbrella.
+- Tiara slightly crooked, Cecily is bound for a very pink weekend away. Something sparkly and silly, please, without looking like a cocktail umbrella.
+- Tiara slightly crooked, Cecily is bound for a night of cocktails and karaoke. Something sparkly and silly, please, without looking like a cocktail umbrella.
 
 ### graduation
 
 Template 1
 
 - Cecily has finally made it to a graduation ceremony. She wants something proud and polished.
-- Cecily has finally made it to the degree day photographs. She wants something proud and polished.
+- Cecily has finally made it to the degree day photos. She wants something proud and polished.
 - Cecily has finally made it to the dean’s garden reception. She wants something proud and polished.
 
 Template 2
 
 - Cecily will cross the lawn at a graduation ceremony looking proud and polished, and hopes to avoid disappearing under the gown.
-- Cecily will cross the lawn at the degree day photographs looking proud and polished, and hopes to avoid disappearing under the gown.
+- Cecily will cross the lawn at the degree day photos looking proud and polished, and hopes to avoid disappearing under the gown.
 - Cecily will cross the lawn at the dean’s garden reception looking proud and polished, and hopes to avoid disappearing under the gown.
 
 Template 3
 
-- Scroll in mind, Cecily is bound for a graduation ceremony. Something proud and polished, please, and no disappearing under the gown.
-- Scroll in mind, Cecily is bound for the degree day photographs. Something proud and polished, please, and no disappearing under the gown.
-- Scroll in mind, Cecily is bound for the dean’s garden reception. Something proud and polished, please, and no disappearing under the gown.
+- Scroll in mind, Cecily is bound for a graduation ceremony. Something proud and polished, please, without disappearing under the gown.
+- Scroll in mind, Cecily is bound for the degree day photos. Something proud and polished, please, without disappearing under the gown.
+- Scroll in mind, Cecily is bound for the dean’s garden reception. Something proud and polished, please, without disappearing under the gown.
 
 ### museum-opening
 
@@ -3264,15 +3264,15 @@ Template 1
 
 Template 2
 
-- Cecily will wander through the museum opening looking refined and thoughtful, without being mistaken for an exhibit.
-- Cecily will wander through a private view of the new gallery looking refined and thoughtful, without being mistaken for an exhibit.
-- Cecily will wander through a lecture on lost lace looking refined and thoughtful, without being mistaken for an exhibit.
+- Cecily will arrive at the museum opening looking refined and thoughtful, without being mistaken for an exhibit.
+- Cecily will arrive at a private view of the new gallery looking refined and thoughtful, without being mistaken for an exhibit.
+- Cecily will arrive at a lecture on lost lace looking refined and thoughtful, without being mistaken for an exhibit.
 
 Template 3
 
-- Catalogue in hand, Cecily is bound for the museum opening. Something refined and thoughtful, please, and no being mistaken for an exhibit.
-- Catalogue in hand, Cecily is bound for a private view of the new gallery. Something refined and thoughtful, please, and no being mistaken for an exhibit.
-- Catalogue in hand, Cecily is bound for a lecture on lost lace. Something refined and thoughtful, please, and no being mistaken for an exhibit.
+- Catalogue in hand, Cecily is bound for the museum opening. Something refined and thoughtful, please, without being mistaken for an exhibit.
+- Catalogue in hand, Cecily is bound for a private view of the new gallery. Something refined and thoughtful, please, without being mistaken for an exhibit.
+- Catalogue in hand, Cecily is bound for a lecture on lost lace. Something refined and thoughtful, please, without being mistaken for an exhibit.
 
 ### tea-dance
 
@@ -3290,29 +3290,29 @@ Template 2
 
 Template 3
 
-- Toes tapping, Cecily is bound for a tea dance. Something swirly and graceful, please, and no stepping on the hem.
-- Toes tapping, Cecily is bound for the Sunday waltz at the assembly rooms. Something swirly and graceful, please, and no stepping on the hem.
-- Toes tapping, Cecily is bound for a dance on the seafront bandstand. Something swirly and graceful, please, and no stepping on the hem.
+- Toes tapping, Cecily is bound for a tea dance. Something swirly and graceful, please, without stepping on the hem.
+- Toes tapping, Cecily is bound for the Sunday waltz at the assembly rooms. Something swirly and graceful, please, without stepping on the hem.
+- Toes tapping, Cecily is bound for a dance on the seafront bandstand. Something swirly and graceful, please, without stepping on the hem.
 
 ### rainy-picnic
 
 Template 1
 
-- Cecily is braving a picnic in the drizzle. She’d like something snug and cheerful, without getting soggy sandwiches.
-- Cecily is braving a damp afternoon by the lake. She’d like something snug and cheerful, without getting soggy sandwiches.
-- Cecily is braving a brave picnic under one big umbrella. She’d like something snug and cheerful, without getting soggy sandwiches.
+- Cecily is braving a picnic in the drizzle. She’d like something snug and cheerful, without getting soaked to the bone.
+- Cecily is braving a damp afternoon by the lake. She’d like something snug and cheerful, without getting soaked to the bone.
+- Cecily is braving a picnic under one big umbrella. She’d like something snug and cheerful, without getting soaked to the bone.
 
 Template 2
 
 - The forecast says rain, and Cecily is off to a picnic in the drizzle anyway. She wants something snug and cheerful.
 - The forecast says rain, and Cecily is off to a damp afternoon by the lake anyway. She wants something snug and cheerful.
-- The forecast says rain, and Cecily is off to a brave picnic under one big umbrella anyway. She wants something snug and cheerful.
+- The forecast says rain, and Cecily is off to a picnic under one big umbrella anyway. She wants something snug and cheerful.
 
 Template 3
 
-- Flask in hand, Cecily is bound for a picnic in the drizzle. Something snug and cheerful, please, and no getting soggy sandwiches.
-- Flask in hand, Cecily is bound for a damp afternoon by the lake. Something snug and cheerful, please, and no getting soggy sandwiches.
-- Flask in hand, Cecily is bound for a brave picnic under one big umbrella. Something snug and cheerful, please, and no getting soggy sandwiches.
+- Flask in hand, Cecily is bound for a picnic in the drizzle. Something snug and cheerful, please, without getting soaked to the bone.
+- Flask in hand, Cecily is bound for a damp afternoon by the lake. Something snug and cheerful, please, without getting soaked to the bone.
+- Flask in hand, Cecily is bound for a picnic under one big umbrella. Something snug and cheerful, please, without getting soaked to the bone.
 
 ### riding-lesson
 
@@ -3330,9 +3330,9 @@ Template 2
 
 Template 3
 
-- Carrot in pocket, Cecily is bound for a riding lesson. Something neat and sensible, please, and no being sat on by a pony.
-- Carrot in pocket, Cecily is bound for a morning at the stables. Something neat and sensible, please, and no being sat on by a pony.
-- Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something neat and sensible, please, and no being sat on by a pony.
+- Carrot in pocket, Cecily is bound for a riding lesson. Something neat and sensible, please, without being sat on by a pony.
+- Carrot in pocket, Cecily is bound for a morning at the stables. Something neat and sensible, please, without being sat on by a pony.
+- Carrot in pocket, Cecily is bound for a gentle hack across the fields. Something neat and sensible, please, without being sat on by a pony.
 
 ### midnight-feast
 
@@ -3344,15 +3344,15 @@ Template 1
 
 Template 2
 
-- Cecily will tiptoe to a midnight feast looking snug and sneaky, and swears there will be no rustling too loudly.
-- Cecily will tiptoe to a sleepover in the attic looking snug and sneaky, and swears there will be no rustling too loudly.
-- Cecily will tiptoe to a cocoa party after lights out looking snug and sneaky, and swears there will be no rustling too loudly.
+- Cecily will tiptoe to a midnight feast looking snug and sneaky, and swears to do it without rustling too loudly.
+- Cecily will tiptoe to a sleepover in the attic looking snug and sneaky, and swears to do it without rustling too loudly.
+- Cecily will tiptoe to a cocoa party after lights out looking snug and sneaky, and swears to do it without rustling too loudly.
 
 Template 3
 
-- Torch in hand, Cecily is bound for a midnight feast. Something snug and sneaky, please, and no rustling too loudly.
-- Torch in hand, Cecily is bound for a sleepover in the attic. Something snug and sneaky, please, and no rustling too loudly.
-- Torch in hand, Cecily is bound for a cocoa party after lights out. Something snug and sneaky, please, and no rustling too loudly.
+- Torch in hand, Cecily is bound for a midnight feast. Something snug and sneaky, please, without rustling too loudly.
+- Torch in hand, Cecily is bound for a sleepover in the attic. Something snug and sneaky, please, without rustling too loudly.
+- Torch in hand, Cecily is bound for a cocoa party after lights out. Something snug and sneaky, please, without rustling too loudly.
 
 ### lighthouse-wedding
 
@@ -3370,49 +3370,49 @@ Template 2
 
 Template 3
 
-- Hat pinned down tight, Cecily is bound for a wedding at the lighthouse. Something windswept and lovely, please, and no being blown into the sea.
-- Hat pinned down tight, Cecily is bound for a wedding on the cliff top. Something windswept and lovely, please, and no being blown into the sea.
-- Hat pinned down tight, Cecily is bound for a ceremony above the harbour. Something windswept and lovely, please, and no being blown into the sea.
+- Hat pinned down tight, Cecily is bound for a wedding at the lighthouse. Something windswept and lovely, please, without being blown into the sea.
+- Hat pinned down tight, Cecily is bound for a wedding on the cliff top. Something windswept and lovely, please, without being blown into the sea.
+- Hat pinned down tight, Cecily is bound for a ceremony above the harbour. Something windswept and lovely, please, without being blown into the sea.
 
 ### castle-wedding
 
 Template 1
 
-- Cecily has been asked to a wedding in a castle with no heating. She wants to look grand but a bit stiff, and would rather not end up freezing in the great hall.
-- Cecily has been asked to a formal portrait that takes all day. She wants to look grand but a bit stiff, and would rather not end up freezing in the great hall.
-- Cecily has been asked to a very long service in a cold church. She wants to look grand but a bit stiff, and would rather not end up freezing in the great hall.
+- Cecily has been asked to a wedding in a castle with no heating. She wants to look grand but a bit stiff, and would rather not end up freezing solid.
+- Cecily has been asked to a portrait sitting that takes all day. She wants to look grand but a bit stiff, and would rather not end up freezing solid.
+- Cecily has been asked to a very long service in a cold church. She wants to look grand but a bit stiff, and would rather not end up freezing solid.
 
 Template 2
 
-- Cecily has accepted her fate at a wedding in a castle with no heating. She wants something grand but a bit stiff, and no freezing in the great hall.
-- Cecily has accepted her fate at a formal portrait that takes all day. She wants something grand but a bit stiff, and no freezing in the great hall.
-- Cecily has accepted her fate at a very long service in a cold church. She wants something grand but a bit stiff, and no freezing in the great hall.
+- Cecily has accepted her fate at a wedding in a castle with no heating. She wants something grand but a bit stiff, and hopes to avoid freezing solid.
+- Cecily has accepted her fate at a portrait sitting that takes all day. She wants something grand but a bit stiff, and hopes to avoid freezing solid.
+- Cecily has accepted her fate at a very long service in a cold church. She wants something grand but a bit stiff, and hopes to avoid freezing solid.
 
 Template 3
 
-- Teeth chattering already, Cecily is bound for a wedding in a castle with no heating. Something grand but a bit stiff, please, without freezing in the great hall.
-- Teeth chattering already, Cecily is bound for a formal portrait that takes all day. Something grand but a bit stiff, please, without freezing in the great hall.
-- Teeth chattering already, Cecily is bound for a very long service in a cold church. Something grand but a bit stiff, please, without freezing in the great hall.
+- Teeth chattering already, Cecily is bound for a wedding in a castle with no heating. Something grand but a bit stiff, please, without freezing solid.
+- Teeth chattering already, Cecily is bound for a portrait sitting that takes all day. Something grand but a bit stiff, please, without freezing solid.
+- Teeth chattering already, Cecily is bound for a very long service in a cold church. Something grand but a bit stiff, please, without freezing solid.
 
 ### halloween-ball
 
 Template 1
 
-- Cecily is haunting the Halloween ball this year. Something spooky and splendid, please, and no frightening the guests too well.
-- Cecily is haunting a ghost tour of the old town this year. Something spooky and splendid, please, and no frightening the guests too well.
-- Cecily is haunting a haunted house party this year. Something spooky and splendid, please, and no frightening the guests too well.
+- Cecily is haunting the Halloween ball this year. Something spooky and splendid, please, without frightening the guests too well.
+- Cecily is haunting a ghost tour of the old town this year. Something spooky and splendid, please, without frightening the guests too well.
+- Cecily is haunting a midnight party at the old manor this year. Something spooky and splendid, please, without frightening the guests too well.
 
 Template 2
 
 - Cecily has been practising her cackle for the Halloween ball. She wants something spooky and splendid.
 - Cecily has been practising her cackle for a ghost tour of the old town. She wants something spooky and splendid.
-- Cecily has been practising her cackle for a haunted house party. She wants something spooky and splendid.
+- Cecily has been practising her cackle for a midnight party at the old manor. She wants something spooky and splendid.
 
 Template 3
 
 - By candlelight, Cecily will arrive at the Halloween ball looking spooky and splendid, and fears only frightening the guests too well.
 - By candlelight, Cecily will arrive at a ghost tour of the old town looking spooky and splendid, and fears only frightening the guests too well.
-- By candlelight, Cecily will arrive at a haunted house party looking spooky and splendid, and fears only frightening the guests too well.
+- By candlelight, Cecily will arrive at a midnight party at the old manor looking spooky and splendid, and fears only frightening the guests too well.
 
 ### polar-send-off
 
@@ -3420,19 +3420,19 @@ Template 1
 
 - Cecily has waved off many a brave soul at a polar expedition send-off. She wants something snug and heroic.
 - Cecily has waved off many a brave soul at a farewell supper before the long voyage. She wants something snug and heroic.
-- Cecily has waved off many a brave soul at a toast at the icy quayside. She wants something snug and heroic.
+- Cecily has waved off many a brave soul at an icy quayside toast. She wants something snug and heroic.
 
 Template 2
 
 - Cecily will stamp her boots at a polar expedition send-off looking snug and heroic, and would rather avoid looking like a snowman.
 - Cecily will stamp her boots at a farewell supper before the long voyage looking snug and heroic, and would rather avoid looking like a snowman.
-- Cecily will stamp her boots at a toast at the icy quayside looking snug and heroic, and would rather avoid looking like a snowman.
+- Cecily will stamp her boots at an icy quayside toast looking snug and heroic, and would rather avoid looking like a snowman.
 
 Template 3
 
-- Breath steaming, Cecily is bound for a polar expedition send-off. Something snug and heroic, please, and no looking like a snowman.
-- Breath steaming, Cecily is bound for a farewell supper before the long voyage. Something snug and heroic, please, and no looking like a snowman.
-- Breath steaming, Cecily is bound for a toast at the icy quayside. Something snug and heroic, please, and no looking like a snowman.
+- Breath steaming, Cecily is bound for a polar expedition send-off. Something snug and heroic, please, without looking like a snowman.
+- Breath steaming, Cecily is bound for a farewell supper before the long voyage. Something snug and heroic, please, without looking like a snowman.
+- Breath steaming, Cecily is bound for an icy quayside toast. Something snug and heroic, please, without looking like a snowman.
 
 ### spa-weekend
 
@@ -3450,9 +3450,9 @@ Template 2
 
 Template 3
 
-- Slippers on, Cecily is bound for a spa weekend. Something calm and soft, please, and no falling asleep in it.
-- Slippers on, Cecily is bound for a morning by the thermal pool. Something calm and soft, please, and no falling asleep in it.
-- Slippers on, Cecily is bound for an afternoon of cucumber slices and quiet. Something calm and soft, please, and no falling asleep in it.
+- Slippers on, Cecily is bound for a spa weekend. Something calm and soft, please, without falling asleep in it.
+- Slippers on, Cecily is bound for a morning by the thermal pool. Something calm and soft, please, without falling asleep in it.
+- Slippers on, Cecily is bound for an afternoon of cucumber slices and quiet. Something calm and soft, please, without falling asleep in it.
 
 ### in-laws-dinner
 
@@ -3464,12 +3464,12 @@ Template 1
 
 Template 2
 
-- Cecily will face a fancy dinner with the in-laws looking polite and pretty, and prays for no saying the wrong thing in it.
-- Cecily will face a Sunday lunch at the big house looking polite and pretty, and prays for no saying the wrong thing in it.
-- Cecily will face the family anniversary supper looking polite and pretty, and prays for no saying the wrong thing in it.
+- Cecily will face a fancy dinner with the in-laws looking polite and pretty, and prays to avoid saying something silly over the soup.
+- Cecily will face a Sunday lunch at the big house looking polite and pretty, and prays to avoid saying something silly over the soup.
+- Cecily will face the family anniversary supper looking polite and pretty, and prays to avoid saying something silly over the soup.
 
 Template 3
 
-- Flowers in hand, Cecily is bound for a fancy dinner with the in-laws. Something polite and pretty, please, and no saying the wrong thing in it.
-- Flowers in hand, Cecily is bound for a Sunday lunch at the big house. Something polite and pretty, please, and no saying the wrong thing in it.
-- Flowers in hand, Cecily is bound for the family anniversary supper. Something polite and pretty, please, and no saying the wrong thing in it.
+- Flowers in hand, Cecily is bound for a fancy dinner with the in-laws. Something polite and pretty, please, without saying something silly over the soup.
+- Flowers in hand, Cecily is bound for a Sunday lunch at the big house. Something polite and pretty, please, without saying something silly over the soup.
+- Flowers in hand, Cecily is bound for the family anniversary supper. Something polite and pretty, please, without saying something silly over the soup.

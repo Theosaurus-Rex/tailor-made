@@ -136,6 +136,23 @@ describe("client lines content", () => {
     }
   });
 
+  it("never puts the before an accessory list in a client line", () => {
+    for (const personality of personalities) {
+      for (const template of Object.values(clientLines[personality].generic).flat()) {
+        expect(template, `${personality} ${template}`).not.toMatch(/\bthe \{accessory\}/i);
+      }
+    }
+  });
+
+  it("puts for-phrases after plain tags when avoiding two styles", () => {
+    const line = clientLine(
+      { type: "styleAvoid", tags: ["Daywear", "Playful"] },
+      "brisk",
+      pickingIndex(0),
+    );
+    expect(line).toBe("Nothing playful or for daytime. Not my thing.");
+  });
+
   it("never says daywear, eveningwear, workwear or glamour as a bare word in a client line", () => {
     for (const personality of personalities) {
       for (const direction of everyDirection) {

@@ -67,7 +67,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "{accessory}. Somewhere on there.",
         "Add {accessory}. I’ll pretend I’m not excited.",
       ],
-      accessoryAvoid: ["No {accessory}. I’ve had my fill.", "Keep the {accessory} off me."],
+      accessoryAvoid: ["No {accessory}. I’ve had my fill.", "Keep {accessory} off the dress."],
       accessoryMin: [
         "{countWord} {accessory}, at the very least.",
         "At least {countWord} {accessory}. Subtlety is not the goal.",
@@ -135,7 +135,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       fabricsOnly: [
         "Oh, nothing but {list}, please, darling!",
-        "Just {list}, dear. Only those, and I’ll be delighted.",
+        "Just {list}, dear. Nothing else, and I’ll be delighted.",
       ],
       fabricsMin: [
         "Oh, {countWord} fabrics at least, darling! The more, the merrier.",
@@ -154,12 +154,12 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "Only {list}, dear. Isn’t that lovely?",
       ],
       accessory: [
-        "Oh, {accessory}! Add as many as you like, darling.",
+        "Oh, {accessory}! Add plenty, darling.",
         "Do add {accessory}, dear. What a treat!",
       ],
       accessoryAvoid: [
         "Oh, no {accessory}, darling. I’m so sorry to be fussy!",
-        "Please keep the {accessory} away, dear. Just not for me, I’m afraid.",
+        "Please keep {accessory} away, dear. Just not for me, I’m afraid.",
       ],
       accessoryMin: [
         "Oh, {countWord} {accessory} at the very least, darling!",
@@ -232,7 +232,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       colourAvoid: ["No {colour}. Not today.", "Not {colour}. Thanks."],
       colourOnly: ["{list} only. No extras.", "Nothing but {list}. Quick as you can."],
       accessory: ["{accessory}. Keep things tidy.", "Add {accessory}."],
-      accessoryAvoid: ["No {accessory}. Too busy.", "Leave off the {accessory}."],
+      accessoryAvoid: ["No {accessory}. Too busy.", "Leave {accessory} off."],
       accessoryMin: [
         "At least {countWord} {accessory}. Make them count.",
         "{countWord} {accessory}, minimum. Thanks.",
@@ -304,7 +304,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "{list} only. Anything else would be vulgar.",
       ],
       accessory: [
-        "A touch of {accessory}, I think. Tastefully, of course.",
+        "Some {accessory}, I think. Tastefully, of course.",
         "One expects {accessory}. A matter of form.",
       ],
       accessoryAvoid: [
@@ -407,7 +407,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "I was hoping for some {accessory}. Would you mind?",
       ],
       accessoryAvoid: [
-        "Sorry, but could we leave off the {accessory}? I’m so sorry.",
+        "Sorry, but could we leave {accessory} off? I’m so sorry.",
         "No {accessory}, please? I’m sorry to be a bother.",
       ],
       accessoryMin: [
@@ -482,7 +482,7 @@ export const clientLines: Record<Personality, PersonalityLines> = {
         "Banish the {fabric}, darling! The whole scene would be ruined!",
       ],
       fabricsOnly: [
-        "{list} only! Let those be my entire cast!",
+        "{list} only! Let nothing else take the stage!",
         "Nothing but {list}, darling! This is my final word!",
       ],
       fabricsMin: [
@@ -499,15 +499,15 @@ export const clientLines: Record<Personality, PersonalityLines> = {
       ],
       colourOnly: [
         "Nothing but {list}! Not a thread of anything else!",
-        "{list} only, darling! Let those be my whole palette!",
+        "{list} only, darling! Nothing else touches my palette!",
       ],
       accessory: [
         "{accessory}! I must have {accessory}! The finishing flourish!",
-        "Add {accessory}, darling! Let the light find every one!",
+        "Add {accessory}, darling! Let the light find them all!",
       ],
       accessoryAvoid: [
         "No {accessory}! I will not be upstaged!",
-        "Away with the {accessory}, darling! My moment is mine alone!",
+        "Away with {accessory}, darling! My moment is mine alone!",
       ],
       accessoryMin: [
         "At least {countWord} {accessory}! More, if the drama demands it!",

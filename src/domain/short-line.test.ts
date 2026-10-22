@@ -135,6 +135,9 @@ describe("shortLine for directions that hold two items", () => {
       "Not cute or playful",
     );
     expect(shortLine({ type: "styleAvoid", tags: ["Cute", "Flowers"] })).toBe("Not cute or floral");
+    expect(shortLine({ type: "styleAvoid", tags: ["Daywear", "Playful"] })).toBe(
+      "Not daywear or playful",
+    );
   });
 
   it("joins asked items with and", () => {

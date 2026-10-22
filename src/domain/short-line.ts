@@ -1,4 +1,9 @@
-import { accessoryNouns, fabricNouns, styleAvoidLines, tagWords } from "@/game/briefs/v1/words";
+import {
+  accessoryNouns,
+  fabricNouns,
+  shortTagWords,
+  styleAvoidLines,
+} from "@/game/briefs/v1/words";
 import type { Direction, DirectionType } from "./direction";
 
 type DirectionOf<T extends DirectionType> = Extract<Direction, { type: T }>;
@@ -28,7 +33,7 @@ const writers: Writers = {
     if (d.tags.length === 1 && only !== undefined) {
       return styleAvoidLines[only] ?? `Not ${only.toLowerCase()}`;
     }
-    return `Not ${joinWithOr(d.tags.map((tag) => tagWords[tag] ?? tag.toLowerCase()))}`;
+    return `Not ${joinWithOr(d.tags.map((tag) => shortTagWords[tag] ?? tag.toLowerCase()))}`;
   },
   fabric: (d) => capitalise(joinWithAnd(lowerAll(d.fabrics))),
   fabricAvoid: (d) => `No ${joinWithOr(d.fabrics.map((fabric) => fabricNouns[fabric]))}`,

@@ -37,11 +37,11 @@ export const themes: readonly Theme[] = [
     favouredAccessories: ["Button", "Piping"],
     occasions: ["the harvest supper", "the village apple fair", "the barn dance"],
     adjectives: ["honest and hard-wearing", "warm and sturdy", "plain and cheerful"],
-    worries: ["looking like a scarecrow", "getting pie on it", "shivering in the barn"],
+    worries: ["looking like a scarecrow", "getting pie on it", "shivering in the evening air"],
     templates: [
       "{name} has been baking all week and is off to {occasion}. She wants something {adjective}.",
       "{name} will take {occasion} in something {adjective}, if she can manage it without {worry}.",
-      "Fresh from the orchard, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Fresh from the orchard, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -56,7 +56,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has a hat picked out and is off to {occasion}. She wants to look {adjective}.",
       "{name} is strolling into {occasion} and hopes to look {adjective} without {worry}.",
-      "Parasol in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Parasol in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -69,9 +69,9 @@ export const themes: readonly Theme[] = [
     adjectives: ["dark and dignified", "moody and elegant", "mysterious"],
     worries: ["looking too cheerful", "frightening the vicar", "tripping on the hem"],
     templates: [
-      "{name} is paying her respects at {occasion}. She wants something {adjective}.",
+      "{name} is making an entrance at {occasion}. She wants something {adjective}.",
       "{name} will sweep into {occasion} looking {adjective}, and would rather avoid {worry}.",
-      "The invitation said black, so {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "The invitation said black, so {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -80,13 +80,17 @@ export const themes: readonly Theme[] = [
     favouredColours: ["Red", "Purple", "Yellow"],
     favouredFabrics: ["Sequin", "Silk", "Velvet"],
     favouredAccessories: ["Jewel", "Feather"],
-    occasions: ["the grand winter gala", "opening night at the opera", "the mayor’s charity ball"],
+    occasions: [
+      "the grand winter gala",
+      "the opening night at the opera",
+      "the mayor’s charity ball",
+    ],
     adjectives: ["dazzling", "glittering and grand", "sleek and sparkling"],
     worries: ["looking like a disco ball", "snagging a sequin on the buffet", "sitting down in it"],
     templates: [
       "{name} has been counting the days to {occasion}. She wants something {adjective}.",
       "{name} will glide into {occasion} looking {adjective}, as long as she avoids {worry}.",
-      "Gloves on, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Gloves on, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -104,8 +108,8 @@ export const themes: readonly Theme[] = [
     worries: ["looking stiff", "creasing on the bus", "looking like a mannequin"],
     templates: [
       "{name} has her best handshake ready for {occasion}. She wants something {adjective}.",
-      "{name} will walk into {occasion} looking {adjective}, and hopes to dodge {worry}.",
-      "Folder under her arm, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will turn up for {occasion} looking {adjective}, and hopes to dodge {worry}.",
+      "Folder under her arm, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -119,7 +123,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has been planning for weeks and is off to {occasion}. She wants something {adjective}.",
       "{name} will burst into {occasion} looking {adjective}, with no risk of {worry}.",
-      "Mask at the ready, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Mask at the ready, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -133,8 +137,8 @@ export const themes: readonly Theme[] = [
     worries: ["blowing away in the wind", "getting sand in the seams", "attracting seagulls"],
     templates: [
       "{name} has packed a bucket and spade for {occasion}. She wants something {adjective}.",
-      "{name} will stroll along {occasion} looking {adjective}, and would rather avoid {worry}.",
-      "Ice cream in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will make the most of {occasion} looking {adjective}, and would rather avoid {worry}.",
+      "Ice cream in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -149,7 +153,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has changed her mind three times about {occasion}. She wants something {adjective}.",
       "{name} will arrive at {occasion} looking {adjective}, and fears only {worry}.",
-      "Heart fluttering, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Heart fluttering, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -160,7 +164,7 @@ export const themes: readonly Theme[] = [
     favouredAccessories: ["Bow", "Lace Trim"],
     occasions: [
       "a christening",
-      "the christening tea afterwards",
+      "the tea after the christening",
       "a naming day in the village church",
     ],
     adjectives: ["sweet and dignified", "soft and proper", "tidy but tender"],
@@ -168,7 +172,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has been invited to {occasion}. She wants something {adjective}.",
       "{name} will cuddle the guest of honour at {occasion} and hopes to look {adjective}, without {worry}.",
-      "With a gift tucked in her bag, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "With a gift tucked in her bag, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -177,11 +181,7 @@ export const themes: readonly Theme[] = [
     favouredColours: ["Green", "Purple", "Brown"],
     favouredFabrics: ["Linen", "Wool"],
     favouredAccessories: ["Brooch", "Button"],
-    occasions: [
-      "a book launch",
-      "a reading at the corner bookshop",
-      "the literary society’s spring supper",
-    ],
+    occasions: ["a book launch", "a bookshop reading", "the literary society’s spring supper"],
     adjectives: ["clever and a little quirky", "inky and interesting", "calm and well read"],
     worries: [
       "looking like a footnote",
@@ -191,7 +191,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has been asked to {occasion}, and she wants something {adjective}.",
       "{name} will mingle at {occasion} looking {adjective}, and would rather avoid {worry}.",
-      "With a pen in her pocket, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "With a pen in her pocket, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -213,8 +213,8 @@ export const themes: readonly Theme[] = [
     ],
     templates: [
       "{name} has a few pennies for {occasion}. She wants something {adjective}.",
-      "{name} will wander through {occasion} looking {adjective}, with luck and no {worry}.",
-      "Basket on her arm, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will wander through {occasion} looking {adjective}, and with any luck will avoid {worry}.",
+      "Basket on her arm, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -225,19 +225,19 @@ export const themes: readonly Theme[] = [
     favouredAccessories: ["Feather", "Jewel"],
     occasions: [
       "a night at the jazz club",
-      "a smoky late set downstairs",
-      "a saxophone solo by the river",
+      "a late set in the smoky cellar",
+      "a jam session by the river",
     ],
     adjectives: ["smooth and a little sultry", "cool as a muted trumpet", "swaying and stylish"],
     worries: [
       "being too stiff to sway",
       "getting in the drummer’s way",
-      "looking like the cloakroom",
+      "getting lost among the coats",
     ],
     templates: [
       "{name} has her dancing shoes ready for {occasion}. She wants something {adjective}.",
       "{name} will slip into {occasion} looking {adjective}, without {worry}.",
-      "Humming a tune, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Humming a tune, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -251,8 +251,8 @@ export const themes: readonly Theme[] = [
     worries: ["looking like a cocktail umbrella", "leaving a trail of glitter", "losing the sash"],
     templates: [
       "{name} has a sash and a plan for {occasion}. She wants something {adjective}.",
-      "{name} will take over {occasion} looking {adjective}, and swears there will be no {worry}.",
-      "Tiara slightly crooked, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will take over {occasion} looking {adjective}, and swears she can do it without {worry}.",
+      "Tiara slightly crooked, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -261,17 +261,13 @@ export const themes: readonly Theme[] = [
     favouredColours: ["Blue", "Black", "Red"],
     favouredFabrics: ["Wool", "Silk"],
     favouredAccessories: ["Piping", "Brooch"],
-    occasions: [
-      "a graduation ceremony",
-      "the degree day photographs",
-      "the dean’s garden reception",
-    ],
+    occasions: ["a graduation ceremony", "the degree day photos", "the dean’s garden reception"],
     adjectives: ["proud and polished", "smart and ready for photos", "dignified but delighted"],
-    worries: ["disappearing under the gown", "tripping on the stage steps", "squinting in the sun"],
+    worries: ["disappearing under the gown", "tripping on the steps", "squinting in the sun"],
     templates: [
       "{name} has finally made it to {occasion}. She wants something {adjective}.",
       "{name} will cross the lawn at {occasion} looking {adjective}, and hopes to avoid {worry}.",
-      "Scroll in mind, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Scroll in mind, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -293,8 +289,8 @@ export const themes: readonly Theme[] = [
     ],
     templates: [
       "{name} has been invited to {occasion}. She wants something {adjective}.",
-      "{name} will wander through {occasion} looking {adjective}, without {worry}.",
-      "Catalogue in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will arrive at {occasion} looking {adjective}, without {worry}.",
+      "Catalogue in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -308,7 +304,7 @@ export const themes: readonly Theme[] = [
       "the Sunday waltz at the assembly rooms",
       "a dance on the seafront bandstand",
     ],
-    adjectives: ["swirly and graceful", "light on its feet", "pretty with a lovely twirl"],
+    adjectives: ["swirly and graceful", "airy and light-footed", "pretty with a lovely twirl"],
     worries: [
       "stepping on the hem",
       "running out of puff before the foxtrot",
@@ -317,7 +313,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has pinned up her hair for {occasion}. She wants something {adjective}.",
       "{name} will whirl through {occasion} looking {adjective}, and hopes to avoid {worry}.",
-      "Toes tapping, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Toes tapping, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -329,14 +325,14 @@ export const themes: readonly Theme[] = [
     occasions: [
       "a picnic in the drizzle",
       "a damp afternoon by the lake",
-      "a brave picnic under one big umbrella",
+      "a picnic under one big umbrella",
     ],
     adjectives: ["snug and cheerful", "cosy and unbothered", "warm and stubborn"],
-    worries: ["getting soggy sandwiches", "squelching in the grass", "looking like a wet sheep"],
+    worries: ["getting soaked to the bone", "squelching in the grass", "looking like a wet sheep"],
     templates: [
       "{name} is braving {occasion}. She’d like something {adjective}, without {worry}.",
       "The forecast says rain, and {name} is off to {occasion} anyway. She wants something {adjective}.",
-      "Flask in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Flask in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -346,12 +342,12 @@ export const themes: readonly Theme[] = [
     favouredFabrics: ["Linen", "Wool"],
     favouredAccessories: ["Button", "Piping"],
     occasions: ["a riding lesson", "a morning at the stables", "a gentle hack across the fields"],
-    adjectives: ["neat and sensible", "hard-working and tidy", "easy to move in"],
-    worries: ["being sat on by a pony", "catching on the saddle", "getting hay in the seams"],
+    adjectives: ["neat and sensible", "hard-working and tidy", "smart and ready for the saddle"],
+    worries: ["being sat on by a pony", "snagging on the stirrups", "getting hay in the seams"],
     templates: [
       "{name} has her boots by the door for {occasion}. She wants something {adjective}.",
       "{name} will take on {occasion} looking {adjective}, and would rather avoid {worry}.",
-      "Carrot in pocket, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Carrot in pocket, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -365,8 +361,8 @@ export const themes: readonly Theme[] = [
     worries: ["rustling too loudly", "waking the whole house", "getting cocoa on it"],
     templates: [
       "{name} has hidden the biscuits for {occasion}. She wants something {adjective}.",
-      "{name} will tiptoe to {occasion} looking {adjective}, and swears there will be no {worry}.",
-      "Torch in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will tiptoe to {occasion} looking {adjective}, and swears to do it without {worry}.",
+      "Torch in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -381,11 +377,11 @@ export const themes: readonly Theme[] = [
       "a ceremony above the harbour",
     ],
     adjectives: ["windswept and lovely", "airy and elegant", "salty and sweet"],
-    worries: ["being blown into the sea", "tripping on the spiral stairs", "upstaging the bride"],
+    worries: ["being blown into the sea", "tripping on the steps", "upstaging the bride"],
     templates: [
       "{name} has been asked to {occasion}. She wants something {adjective}.",
       "{name} will climb up to {occasion} looking {adjective}, and hopes to avoid {worry}.",
-      "Hat pinned down tight, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Hat pinned down tight, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -396,18 +392,14 @@ export const themes: readonly Theme[] = [
     favouredAccessories: ["Piping", "Brooch"],
     occasions: [
       "a wedding in a castle with no heating",
-      "a formal portrait that takes all day",
+      "a portrait sitting that takes all day",
       "a very long service in a cold church",
     ],
     adjectives: ["grand but a bit stiff", "dignified and determined", "heavy and splendid"],
-    worries: [
-      "freezing in the great hall",
-      "not being able to sit down",
-      "fainting before the vows",
-    ],
+    worries: ["freezing solid", "aching from standing", "fainting before the vows"],
     templates: [
       "{name} has been asked to {occasion}. She wants to look {adjective}, and would rather not end up {worry}.",
-      "{name} has accepted her fate at {occasion}. She wants something {adjective}, and no {worry}.",
+      "{name} has accepted her fate at {occasion}. She wants something {adjective}, and hopes to avoid {worry}.",
       "Teeth chattering already, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
@@ -417,7 +409,11 @@ export const themes: readonly Theme[] = [
     favouredColours: ["Orange", "Black", "Purple"],
     favouredFabrics: ["Velvet", "Lace"],
     favouredAccessories: ["Tassel", "Appliqué"],
-    occasions: ["the Halloween ball", "a ghost tour of the old town", "a haunted house party"],
+    occasions: [
+      "the Halloween ball",
+      "a ghost tour of the old town",
+      "a midnight party at the old manor",
+    ],
     adjectives: ["spooky and splendid", "delightfully creepy", "dramatic and daft"],
     worries: [
       "frightening the guests too well",
@@ -425,7 +421,7 @@ export const themes: readonly Theme[] = [
       "being mistaken for a bat",
     ],
     templates: [
-      "{name} is haunting {occasion} this year. Something {adjective}, please, and no {worry}.",
+      "{name} is haunting {occasion} this year. Something {adjective}, please, without {worry}.",
       "{name} has been practising her cackle for {occasion}. She wants something {adjective}.",
       "By candlelight, {name} will arrive at {occasion} looking {adjective}, and fears only {worry}.",
     ],
@@ -439,14 +435,14 @@ export const themes: readonly Theme[] = [
     occasions: [
       "a polar expedition send-off",
       "a farewell supper before the long voyage",
-      "a toast at the icy quayside",
+      "an icy quayside toast",
     ],
     adjectives: ["snug and heroic", "sturdy and merry", "wrapped up and wonderful"],
-    worries: ["looking like a snowman", "overheating at the supper", "getting lost in the scarf"],
+    worries: ["looking like a snowman", "overheating indoors", "getting lost in the scarf"],
     templates: [
       "{name} has waved off many a brave soul at {occasion}. She wants something {adjective}.",
       "{name} will stamp her boots at {occasion} looking {adjective}, and would rather avoid {worry}.",
-      "Breath steaming, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Breath steaming, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -465,7 +461,7 @@ export const themes: readonly Theme[] = [
     templates: [
       "{name} has booked in for {occasion}. She wants something {adjective}.",
       "{name} will drift through {occasion} looking {adjective}, without {worry}.",
-      "Slippers on, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "Slippers on, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
   {
@@ -481,14 +477,14 @@ export const themes: readonly Theme[] = [
     ],
     adjectives: ["polite and pretty", "charming and well behaved", "tidy with a hint of sparkle"],
     worries: [
-      "saying the wrong thing in it",
+      "saying something silly over the soup",
       "spilling gravy on the good tablecloth",
       "being compared to the cousins",
     ],
     templates: [
       "{name} is nervously off to {occasion}. She wants something {adjective}.",
-      "{name} will face {occasion} looking {adjective}, and prays for no {worry}.",
-      "Flowers in hand, {name} is bound for {occasion}. Something {adjective}, please, and no {worry}.",
+      "{name} will face {occasion} looking {adjective}, and prays to avoid {worry}.",
+      "Flowers in hand, {name} is bound for {occasion}. Something {adjective}, please, without {worry}.",
     ],
   },
 ];
