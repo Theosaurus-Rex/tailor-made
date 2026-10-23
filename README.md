@@ -10,7 +10,7 @@ There is no backend and no account. Nothing is stored.
 or card text.
 
 **Status:** the generator and every screen are built. Milestone M6 (tune and launch) is underway.
-The Netlify deploy waits for two content fixes, then the game gets playtested. The design is in
+The site deploys to Netlify from CI, and the game gets playtested. The design is in
 `docs/superpowers/specs/2026-10-16-tailor-made-design.md`.
 
 ## Credits
@@ -93,6 +93,36 @@ Dependencies point one way: `features → links → domain → game`. Lint enfor
 `Math.random` and `Date` in `domain/` and `game/`.
 
 ---
+
+## Deploy
+
+The site lives at `https://<site>.netlify.app`. Replace this with the real address once the site
+exists.
+
+GitHub Actions deploys `main` after the `gate` job passes. It builds the site and uploads `dist/`
+with the Netlify CLI. Netlify builds nothing, so no Netlify build minutes are used. Deploy previews
+are off, and pull requests are never deployed. `public/_redirects` sends every path to the app, so
+`/daily`, `/about` and share links load on a hard refresh.
+
+Two repo secrets drive it:
+
+| Secret | What it is |
+|---|---|
+| `NETLIFY_SITE_ID` | The site's ID, from Site configuration in Netlify |
+| `NETLIFY_AUTH_TOKEN` | A personal access token, from User settings, then Applications |
+
+Until both are set, the deploy job skips itself with a notice and CI stays green.
+
+One-time setup:
+
+1. Create the site without linking Git. Run `pnpm dlx netlify-cli@27.14.2 login`, then
+   `pnpm dlx netlify-cli@27.14.2 sites:create --name <name>`. Or in Netlify, choose Add new site,
+   then Deploy manually.
+2. Copy the Site ID from Site configuration.
+3. Create a personal access token in Netlify under User settings, then Applications.
+4. Run `gh secret set NETLIFY_SITE_ID` and `gh secret set NETLIFY_AUTH_TOKEN`, and paste each value.
+5. Re-run the latest `main` CI run, or push to `main`.
+6. Replace `https://<site>.netlify.app` in this file and in `CLAUDE.md` with the real address.
 
 ## Design
 

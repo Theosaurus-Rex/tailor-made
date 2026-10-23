@@ -9,7 +9,7 @@ daily challenge, the same for everyone.
 It is a public tool, for the Dressmaker community first. There is no backend and no storage in v1.
 
 **Status: M6 (tune and launch) is underway.** The generator, the visual direction, the app shell
-and every screen are built. The Netlify deploy waits for the content fixes, then Theo playtests.
+and every screen are built. The site deploys to Netlify from CI, and Theo playtests.
 See
 `docs/superpowers/specs/2026-10-16-tailor-made-design.md` for the design this is built to. It is
 the source of truth for scope, directions, the generator, the link format and the milestones.
@@ -84,8 +84,16 @@ that prints the real number instead.
 If you think one of these needs revisiting, say so once with your reasoning and move on. Do not
 quietly introduce an alternative.
 
-**Netlify.** Hosting is Netlify static. The deploy (43, M6) waits until the content fixes (46 and
-47) land, then Theo playtests (35). It saves build minutes. Do not add Netlify config before then.
+**Netlify.** The site lives at `https://<site>.netlify.app`. Replace this with the real address
+once Theo creates the site. GitHub Actions deploys `main` after the `gate` job passes: the `deploy`
+job builds the site and uploads `dist/` with the Netlify CLI, pinned in `ci.yml`. Netlify builds
+nothing, so do not add a build command or a Git link on the Netlify side. Deploy previews are off,
+and pull requests are never deployed. `public/_redirects` sends every path to the app, and a
+Vitest test guards it. Do not add a `netlify.toml`.
+
+Two repo secrets drive the deploy. `NETLIFY_SITE_ID` is the site's ID. `NETLIFY_AUTH_TOKEN` is a
+personal access token. While either is missing, the deploy job skips with a notice and CI stays
+green. Theo's one-time setup steps are in the README under Deploy.
 
 ### Versions as built
 
