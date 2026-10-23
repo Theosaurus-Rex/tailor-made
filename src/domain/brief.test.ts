@@ -18,6 +18,32 @@ const hedgehog: Client = {
 const challengeFor = (seed: string, difficulty: "easy" | "chaos" = "easy") =>
   generate({ seed, difficulty, modifiers: [], dataVersion: 1 });
 
+describe("the shape of a theme's phrases", () => {
+  it("starts every occasion with an article, so every template can hold it", () => {
+    for (const theme of dataV1.themes) {
+      for (const occasion of theme.occasions) {
+        expect(occasion, `${theme.id}: ${occasion}`).toMatch(/^(a|an|the) /);
+      }
+    }
+  });
+
+  it("starts every worry with an -ing word, since templates say without or avoid", () => {
+    for (const theme of dataV1.themes) {
+      for (const worry of theme.worries) {
+        expect(worry, `${theme.id}: ${worry}`).toMatch(/^[a-z]+ing /);
+      }
+    }
+  });
+
+  it("never puts no or a plain and straight before a worry", () => {
+    for (const theme of dataV1.themes) {
+      for (const template of theme.templates) {
+        expect(template, `${theme.id}: ${template}`).not.toMatch(/\b(no|and) \{worry\}/);
+      }
+    }
+  });
+});
+
 describe("every template, filled with every phrase", () => {
   it("leaves no slot, no double space, and reads as a sentence", () => {
     let filled = 0;
@@ -33,6 +59,7 @@ describe("every template, filled with every phrase", () => {
                 expect(brief, where).not.toMatch(/ {2}/);
                 expect(brief, where).toMatch(/^\p{Lu}/u);
                 expect(brief, where).toMatch(/[.!?]$/);
+                expect(brief, where).not.toMatch(/\b(\p{L}+) \1\b/iu);
                 filled++;
               }
             }
