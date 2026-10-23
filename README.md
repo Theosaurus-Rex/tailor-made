@@ -96,8 +96,7 @@ Dependencies point one way: `features → links → domain → game`. Lint enfor
 
 ## Deploy
 
-The site lives at `https://<site>.netlify.app`. Replace this with the real address once the site
-exists.
+The site lives at https://tailor-made-dressmaker.netlify.app.
 
 GitHub Actions deploys `main` after the `gate` job passes. It builds the site and uploads `dist/`
 with the Netlify CLI. Netlify builds nothing, so no Netlify build minutes are used. Deploy previews
@@ -113,16 +112,15 @@ Two repo secrets drive it:
 
 Until both are set, the deploy job skips itself with a notice and CI stays green.
 
-One-time setup:
+One-time setup, already done. Kept here in case the site is ever recreated:
 
-1. Create the site without linking Git. Run `pnpm dlx netlify-cli@27.14.2 login`, then
-   `pnpm dlx netlify-cli@27.14.2 sites:create --name <name>`. Or in Netlify, choose Add new site,
-   then Deploy manually.
+1. Create the site without linking Git, either with Netlify Drop (https://app.netlify.com/drop)
+   and a freshly built `dist/`, or with `pnpm dlx netlify-cli@27.14.2 sites:create --name <name>`
+   after `pnpm dlx netlify-cli@27.14.2 login`. Never use Import from Git.
 2. Copy the Site ID from Site configuration.
 3. Create a personal access token in Netlify under User settings, then Applications.
 4. Run `gh secret set NETLIFY_SITE_ID` and `gh secret set NETLIFY_AUTH_TOKEN`, and paste each value.
 5. Re-run the latest `main` CI run, or push to `main`.
-6. Replace `https://<site>.netlify.app` in this file and in `CLAUDE.md` with the real address.
 
 ## Design
 
