@@ -88,11 +88,13 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
         run: |
           subject=$(git log -1 --format=%s)
-          pnpm dlx netlify-cli@27.14.2 deploy --prod --dir=dist --json \
+          pnpm --silent dlx netlify-cli@27.14.2 deploy --prod --dir=dist --json \
             --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN" \
             --message "${COMMIT_SHA::7} $subject" > deploy.json
           cat deploy.json
-          echo "url=$(jq -r '.url' deploy.json)" >> "$GITHUB_OUTPUT"
+          url=$(jq -r '.url // .deploy_url // empty' deploy.json)
+          [ -n "$url" ] || { echo "::error::Netlify did not report a site URL"; exit 1; }
+          echo "url=$url" >> "$GITHUB_OUTPUT"
       - name: Check the live site
         if: steps.secrets.outputs.present == 'true'
         env:
