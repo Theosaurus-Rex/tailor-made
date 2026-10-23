@@ -81,6 +81,9 @@ jobs:
       - name: Check redirects are built
         if: steps.secrets.outputs.present == 'true'
         run: grep -qE '^/\*\s+/index\.html\s+200' dist/_redirects
+      - name: Install the Netlify CLI
+        if: steps.secrets.outputs.present == 'true'
+        run: npm install --global netlify-cli@27.14.2
       - name: Deploy to Netlify
         id: netlify
         if: steps.secrets.outputs.present == 'true'
@@ -88,10 +91,12 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
         run: |
           subject=$(git log -1 --format=%s)
-          pnpm --silent dlx netlify-cli@27.14.2 deploy --prod --dir=dist --json \
+          status=0
+          netlify deploy --prod --dir=dist --json \
             --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN" \
-            --message "${COMMIT_SHA::7} $subject" > deploy.json
+            --message "${COMMIT_SHA::7} $subject" > deploy.json || status=$?
           cat deploy.json
+          [ "$status" -eq 0 ] || { echo "::error::netlify deploy exited with $status"; exit "$status"; }
           url=$(jq -r '.url // .deploy_url // empty' deploy.json)
           [ -n "$url" ] || { echo "::error::Netlify did not report a site URL"; exit 1; }
           echo "url=$url" >> "$GITHUB_OUTPUT"
