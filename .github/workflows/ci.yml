@@ -39,3 +39,66 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
+
+  deploy:
+    name: deploy
+    needs: gate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: netlify-production
+      cancel-in-progress: false
+    env:
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    steps:
+      - name: Check Netlify secrets
+        id: secrets
+        # Secrets are empty until the site exists. Skip the deploy then, so CI stays green.
+        run: |
+          if [ -n "$NETLIFY_SITE_ID" ] && [ -n "$NETLIFY_AUTH_TOKEN" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Netlify deploy skipped. NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN are not set yet."
+          fi
+      - uses: actions/checkout@v7
+        if: steps.secrets.outputs.present == 'true'
+      - uses: pnpm/action-setup@v6
+        if: steps.secrets.outputs.present == 'true'
+      - uses: actions/setup-node@v7
+        if: steps.secrets.outputs.present == 'true'
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install
+        if: steps.secrets.outputs.present == 'true'
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        if: steps.secrets.outputs.present == 'true'
+        run: pnpm build
+      - name: Check redirects are built
+        if: steps.secrets.outputs.present == 'true'
+        run: grep -qE '^/\*\s+/index\.html\s+200' dist/_redirects
+      - name: Deploy to Netlify
+        id: netlify
+        if: steps.secrets.outputs.present == 'true'
+        env:
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          subject=$(git log -1 --format=%s)
+          pnpm dlx netlify-cli@27.14.2 deploy --prod --dir=dist --json \
+            --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN" \
+            --message "${COMMIT_SHA::7} $subject" > deploy.json
+          cat deploy.json
+          echo "url=$(jq -r '.url' deploy.json)" >> "$GITHUB_OUTPUT"
+      - name: Check the live site
+        if: steps.secrets.outputs.present == 'true'
+        env:
+          SITE_URL: ${{ steps.netlify.outputs.url }}
+        run: |
+          for path in "/about" "/c?v=1&s=k7m2qx9a&d=medium"; do
+            body=$(curl -fsS "$SITE_URL$path")
+            echo "$body" | grep -q '<div id="root">' || { echo "::error::$path did not return the app"; exit 1; }
+          done
