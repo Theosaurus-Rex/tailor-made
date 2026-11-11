@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: deps
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+    ignore:
+      # typescript-eslint peers typescript <6.1. See "Versions as built" in CLAUDE.md.
+      - dependency-name: typescript
+        versions: [">=6.1.0"]
+      # Tracks the Node major CI runs on.
+      - dependency-name: "@types/node"
+        update-types: [version-update:semver-major]
+      # The installed corepack cannot run a newer pnpm major.
+      - dependency-name: pnpm
+        update-types: [version-update:semver-major]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: ci
+    groups:
+      actions:
+        patterns: ["*"]
