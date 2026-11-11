@@ -86,9 +86,10 @@ quietly introduce an alternative.
 
 **Netlify.** The site lives at https://tailor-made-dressmaker.netlify.app. GitHub Actions deploys `main` after the `gate` job passes: the `deploy`
 job builds the site and uploads `dist/` with the Netlify CLI, pinned in `ci.yml`. Netlify builds
-nothing, so do not add a build command or a Git link on the Netlify side. Deploy previews are off,
-and pull requests are never deployed. `public/_redirects` sends every path to the app, and a
-Vitest test guards it. Do not add a `netlify.toml`.
+nothing, so do not add a build command or a Git link on the Netlify side. The `preview` job does
+the same for each pull request from this repo, under the alias `pr-<number>`, and comments the
+link on the pull request. Netlify's own deploy previews stay off. `public/_redirects` sends every
+path to the app, and a Vitest test guards it. Do not add a `netlify.toml`.
 
 Two repo secrets drive the deploy. `NETLIFY_SITE_ID` is the site's ID. `NETLIFY_AUTH_TOKEN` is a
 personal access token. While either is missing, the deploy job skips with a notice and CI stays
