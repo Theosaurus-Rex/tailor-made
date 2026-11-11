@@ -113,10 +113,10 @@ These are the facts as installed. Check `package.json` before quoting a version 
 | axe-core | 4.14, via `@axe-core/playwright` | Accessibility checks in `e2e/a11y.spec.ts` |
 | tsx | 4 | Runs `scripts/write-challenge-snapshots.ts` |
 
-The shadcn CLI reads path aliases from `tsconfig.json` only, but the Vite template splits
-tsconfigs. `@/` is therefore declared in **both** `tsconfig.json` and `tsconfig.app.json`. Keep
-them in sync. Do not add `baseUrl` to either. `paths` resolves relative to the tsconfig's own
-directory.
+The four project configs (`app`, `e2e`, `node`, `scripts`) extend `tsconfig.base.json`, which holds
+the shared options and the `@/` alias. The shadcn CLI reads path aliases from `tsconfig.json` only,
+so `@/` is also declared in `tsconfig.json`. Keep the two in sync.
+Do not add `baseUrl` to either. `paths` resolves relative to the tsconfig's own directory.
 
 ---
 
