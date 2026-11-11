@@ -1,4 +1,4 @@
-import { LATEST_DATA_VERSION, dataVersions, latestData } from "@/game/data";
+import { LATEST_DATA_VERSION, dataFor, latestData } from "@/game/data";
 import type { Weekday } from "@/game/data/difficulty-shapes";
 import type { GameData } from "@/game/data/v1";
 import type { Challenge } from "./challenge";
@@ -33,8 +33,7 @@ export function dailyDifficulty(date: string, data: GameData = latestData): Diff
 }
 
 export function dailyChallenge(date: string, dataVersion = LATEST_DATA_VERSION): Challenge {
-  const data = dataVersions[dataVersion];
-  if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
+  const data = dataFor(dataVersion);
   return generate(
     { seed: date, difficulty: dailyDifficulty(date, data), modifiers: [], dataVersion },
     data,

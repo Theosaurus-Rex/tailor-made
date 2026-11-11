@@ -1,5 +1,5 @@
-import type { Challenge, Modifier } from "@/domain/challenge";
-import type { Difficulty } from "@/domain/difficulty";
+import { isModifier, isSlotIn, type Challenge } from "@/domain/challenge";
+import { isDifficulty } from "@/domain/difficulty";
 import { generate } from "@/domain/generate";
 import { rebuild } from "@/domain/reroll";
 import { isValidSeed } from "@/domain/seed";
@@ -20,8 +20,6 @@ export type ShareLinkResult =
   { ok: true; challenge: Challenge } | { ok: false; problem: ShareLinkProblem };
 
 const PARAMETERS = ["v", "s", "d", "m", "r"];
-const DIFFICULTIES: readonly string[] = ["easy", "medium", "hard", "chaos"];
-const MODIFIERS: readonly string[] = ["burlap"];
 const WHOLE_NUMBER = /^(0|[1-9]\d*)$/;
 
 export function shareLinkFor(challenge: Challenge): string {
@@ -47,14 +45,15 @@ export function readShareLink(search: string | URLSearchParams): ShareLinkResult
   if (seed === null || !isValidSeed(seed)) return fail("badSeed");
 
   const difficulty = params.get("d");
-  if (difficulty === null || !DIFFICULTIES.includes(difficulty)) {
+  if (difficulty === null || !isDifficulty(difficulty)) {
     return fail("unknownDifficulty");
   }
 
   const modifierText = params.get("m");
   const modifiers = modifierText === null ? [] : modifierText.split(".");
-  if (!modifiers.every((item) => MODIFIERS.includes(item))) return fail("unknownModifier");
-  if (new Set(modifiers).size !== modifiers.length) return fail("repeatedModifier");
+  const knownModifiers = modifiers.filter(isModifier);
+  if (knownModifiers.length !== modifiers.length) return fail("unknownModifier");
+  if (new Set(knownModifiers).size !== knownModifiers.length) return fail("repeatedModifier");
 
   const historyText = params.get("r");
   const history = historyText === null ? [] : historyText.split(".");
@@ -64,13 +63,13 @@ export function readShareLink(search: string | URLSearchParams): ShareLinkResult
 
   const input = {
     seed,
-    difficulty: difficulty as Difficulty,
-    modifiers: modifiers as Modifier[],
+    difficulty,
+    modifiers: knownModifiers,
     dataVersion: Number(version),
   };
   const start = generate(input);
   const allInRange = slots.every(
-    (slot) => slot < start.plan.length && start.directions[slot]?.type !== "burlapOnly",
+    (slot) => isSlotIn(start.plan, slot) && start.directions[slot]?.type !== "burlapOnly",
   );
   if (!allInRange) return fail("badRerolls");
 

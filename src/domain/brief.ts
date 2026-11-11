@@ -1,8 +1,9 @@
-import { dataVersions } from "@/game/data";
+import { dataFor } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import type { Challenge } from "./challenge";
 import type { Client } from "./client";
 import { deriveSeed, randomFromSeed } from "./random";
+import { capitalise } from "./text";
 
 export interface BriefSlots {
   name: string;
@@ -15,15 +16,14 @@ export function fillBrief(template: string, slots: BriefSlots): string {
   const filled = template.replace(/\{(\w+)\}/g, (slot, key: string) =>
     Object.hasOwn(slots, key) ? slots[key as keyof BriefSlots] : slot,
   );
-  return filled.charAt(0).toUpperCase() + filled.slice(1);
+  return capitalise(filled);
 }
 
 export function briefPartsFor(
   challenge: Challenge,
   client: Client,
-  data: GameData | undefined = dataVersions[challenge.dataVersion],
+  data: GameData = dataFor(challenge.dataVersion),
 ): { text: string; occasion: string } {
-  if (!data) throw new RangeError(`unknown data version ${challenge.dataVersion}`);
   const theme = data.themes.find(({ id }) => id === challenge.themeId);
   if (!theme) throw new RangeError(`unknown theme ${challenge.themeId}`);
   const random = randomFromSeed(deriveSeed(challenge.seed, "brief"));
@@ -38,5 +38,5 @@ export function briefPartsFor(
 export const briefFor = (
   challenge: Challenge,
   client: Client,
-  data: GameData | undefined = dataVersions[challenge.dataVersion],
+  data: GameData = dataFor(challenge.dataVersion),
 ): string => briefPartsFor(challenge, client, data).text;

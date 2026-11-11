@@ -1,7 +1,7 @@
-import { dataVersions } from "@/game/data";
+import { dataFor } from "@/game/data";
 import type { PairRule } from "@/game/data/difficulty-shapes";
 import type { GameData, StyleTag } from "@/game/data/v1";
-import type { Challenge, Modifier } from "./challenge";
+import { isModifier, type Challenge, type Modifier } from "./challenge";
 import { conflictsWithAny } from "./contradictions";
 import {
   burlapShapeFor,
@@ -24,8 +24,6 @@ import { deriveSeed, randomFromSeed, weightedPick, type Random } from "./random"
 import { leaningsFor, themeFor, type Leanings } from "./theme";
 
 const MAX_TRIES = 25;
-
-const MODIFIERS: readonly Modifier[] = ["burlap"];
 
 export interface GenerateInput {
   seed: string;
@@ -92,11 +90,11 @@ function drawCandidate(
   pairedItemChance: number,
 ): Direction {
   const generalFabrics = data.fabricTypes.filter(
-    (fabric) => !data.fabrics[fabric].modifierOnly,
-  ) as GeneralFabric[];
+    (fabric): fabric is GeneralFabric => !data.fabrics[fabric].modifierOnly,
+  );
   const perPiece = data.accessoryTypes.filter(
-    (accessory) => data.accessories[accessory].unit === "piece",
-  ) as PerPieceAccessory[];
+    (accessory): accessory is PerPieceAccessory => data.accessories[accessory].unit === "piece",
+  );
   const tag = (avoid: boolean) =>
     weighted(random, data.styleTags, (value) => leanings.tag(value, avoid));
   const onlyCount = () => random.between(ONLY_LIST_SIZE.min, ONLY_LIST_SIZE.max);
@@ -276,11 +274,10 @@ function pairSlotsIn(plan: readonly DirectionType[]): [number, number] | null {
 
 export function generate(
   { seed, difficulty, modifiers, dataVersion }: GenerateInput,
-  data: GameData | undefined = dataVersions[dataVersion],
+  data: GameData = dataFor(dataVersion),
 ): Challenge {
-  if (!data) throw new RangeError(`unknown data version ${dataVersion}`);
   for (const modifier of modifiers) {
-    if (!MODIFIERS.includes(modifier)) throw new RangeError(`unknown modifier ${modifier}`);
+    if (!isModifier(modifier)) throw new RangeError(`unknown modifier ${String(modifier)}`);
   }
   if (new Set(modifiers).size !== modifiers.length) {
     throw new RangeError("a modifier can only be used once");
