@@ -1,15 +1,11 @@
-import { fireEvent, render, screen, within } from "@testing-library/react";
-import { MemoryRouter } from "react-router";
+import { fireEvent, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+
+import { renderWithRouter } from "@/test/render";
 
 import { App } from "./App";
 
-const renderAt = (path: string) =>
-  render(
-    <MemoryRouter initialEntries={[path]}>
-      <App />
-    </MemoryRouter>,
-  );
+const renderAt = (path: string) => renderWithRouter(<App />, path);
 
 const ROUTES = [
   ["/", "Generator"],

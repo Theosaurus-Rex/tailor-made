@@ -3,15 +3,15 @@ import { describe, expect, it } from "vitest";
 
 import { briefFor } from "@/domain/brief";
 import { clientFromSeed } from "@/domain/client";
-import { generate } from "@/domain/generate";
 import { shortLine } from "@/domain/short-line";
+import { challengeFor } from "@/test/builders";
 
 import { DebugScreen } from "./DebugScreen";
 
 const SEED = "k7m2qx9a";
 
 const shortLinesFor = (seed: string) =>
-  generate({ seed, difficulty: "medium", modifiers: [], dataVersion: 1 })
+  challengeFor({ seed })
     .directions.filter((direction) => direction !== null)
     .map((direction) => shortLine(direction));
 
@@ -29,7 +29,7 @@ describe("DebugScreen", () => {
 
   it("shows the brief for the seed", () => {
     render(<DebugScreen />);
-    const challenge = generate({ seed: SEED, difficulty: "medium", modifiers: [], dataVersion: 1 });
+    const challenge = challengeFor({ seed: SEED });
     const brief = briefFor(challenge, clientFromSeed(SEED));
     expect(screen.getByText(`Brief: ${brief}`)).toBeInTheDocument();
   });

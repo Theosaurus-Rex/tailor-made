@@ -3,11 +3,11 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { cardFor } from "@/domain/card";
 import { clientFromSeed } from "@/domain/client";
-import { generate } from "@/domain/generate";
 import { reroll } from "@/domain/reroll";
 import { latestData } from "@/game/data";
 import { shareLinkFor, readShareLink } from "@/links/share-link";
 import { newSeed } from "@/lib/new-seed";
+import { challengeFor } from "@/test/builders";
 
 import { GeneratorScreen } from "./GeneratorScreen";
 
@@ -167,12 +167,7 @@ describe("GeneratorScreen", () => {
       render(<GeneratorScreen />);
       fireEvent.click(generateButton());
       fireEvent.click(rerollButtons()[2]);
-      const start = generate({
-        seed: SEEDS[0],
-        difficulty: "medium",
-        modifiers: [],
-        dataVersion: 1,
-      });
+      const start = challengeFor({ seed: SEEDS[0] });
       const rerolled = reroll(start, 2);
       const link = readShareLink(shareLinkFor(rerolled).split("?")[1]);
       if (!link.ok) throw new Error(link.problem);

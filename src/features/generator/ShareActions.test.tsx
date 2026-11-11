@@ -3,16 +3,13 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { cardFor } from "@/domain/card";
 import { challengeAsText } from "@/domain/card-text";
-import { generate } from "@/domain/generate";
 import { shareLinkFor } from "@/links/share-link";
+import { challengeFor } from "@/test/builders";
 
 import { ShareActions } from "./ShareActions";
 
-const challengeFor = (seed: string) =>
-  generate({ seed, difficulty: "medium", modifiers: [], dataVersion: 1 });
-
-const first = challengeFor("k7m2qx9a");
-const second = challengeFor("p3n8vd4w");
+const first = challengeFor({ seed: "k7m2qx9a" });
+const second = challengeFor({ seed: "p3n8vd4w" });
 const linkOf = (challenge: typeof first) => window.location.origin + shareLinkFor(challenge);
 
 function setClipboard(value: unknown) {
