@@ -23,7 +23,7 @@ import {
 import { deriveSeed, randomFromSeed, weightedPick, type Random } from "./random";
 import { leaningsFor, themeFor, type Leanings } from "./theme";
 
-export const MAX_TRIES = 25;
+const MAX_TRIES = 25;
 
 const MODIFIERS: readonly Modifier[] = ["burlap"];
 
@@ -209,12 +209,6 @@ export function planFor(
   const pullApart = canPullApart && random.fraction() < (shape.pullApartChance ?? 0);
   return { plan, pullApartSlot: pullApart ? target : null };
 }
-
-export const drawPlan = (
-  seed: string,
-  shape: DifficultyShape,
-  neverTogether: GameData["kindsNeverTogether"],
-): PlannedType[] => planFor(seed, shape, neverTogether).plan;
 
 function fillOrder(
   plan: readonly DirectionType[],

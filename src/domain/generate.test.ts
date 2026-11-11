@@ -4,7 +4,7 @@ import { placedDirections } from "./challenge";
 import { findConflicts } from "./contradictions";
 import { AT_LEAST_TYPES, AVOID_TYPES, type DifficultyShape } from "./difficulty";
 import { COUNT_RANGE, FABRICS_MIN_RANGE, ONLY_LIST_SIZE, type Direction } from "./direction";
-import { drawDirection, drawPlan, generate, MAX_TRIES } from "./generate";
+import { drawDirection, generate, planFor } from "./generate";
 import { deriveSeed } from "./random";
 import { shortLine } from "./short-line";
 
@@ -142,7 +142,7 @@ describe("generate", () => {
       rerolled.some((d) => JSON.stringify(d) !== JSON.stringify(challenge.directions[0])),
     ).toBe(true);
     for (const d of rerolled) expect(d?.type).toBe(challenge.plan[0]);
-    expect(drawPlan(seed, dataV1.difficulties.medium, dataV1.kindsNeverTogether)).toEqual(
+    expect(planFor(seed, dataV1.difficulties.medium, dataV1.kindsNeverTogether).plan).toEqual(
       challenge.plan,
     );
     expect(redraw(2, 0)).toEqual(challenge.directions[2]);
@@ -184,7 +184,6 @@ describe("generate", () => {
     expect(challenge.directions[2]).toBeNull();
     expect(challenge.history).toEqual([]);
     expect(generate(input("k7m2qx9a"), withMedium(stuck))).toEqual(challenge);
-    expect(MAX_TRIES).toBe(25);
   });
 
   it("draws list sizes within range", () => {

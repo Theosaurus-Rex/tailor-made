@@ -1,5 +1,5 @@
 import { Check, RotateCw } from "lucide-react";
-import { useId, useState } from "react";
+import { type Ref, useId, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import type { Card, CardRow } from "@/domain/card";
@@ -9,6 +9,7 @@ interface ClientCardProps {
   onReroll?: (slot: number) => void;
   justRerolledSlot?: number;
   note?: string;
+  headingRef?: Ref<HTMLHeadingElement>;
 }
 
 const tickKey = ({ slot, direction }: CardRow) => `${slot}:${JSON.stringify(direction)}`;
@@ -94,7 +95,13 @@ function DirectionRow({
   );
 }
 
-export function ClientCard({ card, onReroll, justRerolledSlot, note }: ClientCardProps) {
+export function ClientCard({
+  card,
+  onReroll,
+  justRerolledSlot,
+  note,
+  headingRef,
+}: ClientCardProps) {
   const [ticks, setTicks] = useState<Record<string, boolean>>({});
   const total = card.rows.length;
   const count = card.rows.filter((row) => ticks[tickKey(row)]).length;
@@ -123,7 +130,12 @@ export function ClientCard({ card, onReroll, justRerolledSlot, note }: ClientCar
           >
             {card.client.initials}
           </span>
-          <h2 id={headingId} className="font-serif text-[34px] leading-[1.1] text-balance text-ink">
+          <h2
+            id={headingId}
+            ref={headingRef}
+            tabIndex={-1}
+            className="font-serif text-[34px] leading-[1.1] text-balance text-ink"
+          >
             {card.client.name}
           </h2>
           <p className="text-xs font-medium tracking-occasion text-rose uppercase">
@@ -146,7 +158,7 @@ export function ClientCard({ card, onReroll, justRerolledSlot, note }: ClientCar
             <ul aria-labelledby={`${headingId}-directions`} className="flex flex-col gap-1.5">
               {card.rows.map((row) => (
                 <DirectionRow
-                  key={tickKey(row)}
+                  key={row.slot}
                   row={row}
                   ticked={Boolean(ticks[tickKey(row)])}
                   onToggle={() => toggle(row)}

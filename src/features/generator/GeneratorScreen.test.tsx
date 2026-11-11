@@ -113,6 +113,16 @@ describe("GeneratorScreen", () => {
       expect(within(directionRows()[1]).getByText("New direction")).toBeInTheDocument();
     });
 
+    it("keeps focus on the reroll button after a reroll", () => {
+      render(<GeneratorScreen />);
+      fireEvent.click(generateButton());
+      const button = rerollButtons()[1];
+      button.focus();
+      fireEvent.click(button);
+      expect(rerollButtons()[1]).toHaveFocus();
+      expect(screen.getByRole("heading", { level: 2 })).not.toHaveFocus();
+    });
+
     it("clears the swapped note when a new client is generated", () => {
       render(<GeneratorScreen />);
       fireEvent.click(generateButton());

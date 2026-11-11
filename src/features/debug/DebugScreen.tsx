@@ -148,7 +148,7 @@ export function DebugScreen() {
   const [burlap, setBurlap] = useState(false);
 
   return (
-    <main className="space-y-6 p-4">
+    <div className="space-y-6 p-4">
       <h1 className="text-xl font-semibold">Generator debug</h1>
       <section aria-labelledby="single-heading" className="space-y-3">
         <h2 id="single-heading" className="font-semibold">
@@ -209,6 +209,6 @@ export function DebugScreen() {
         </label>
         <BatchView start={batchStart} onPick={setSeed} />
       </section>
-    </main>
+    </div>
   );
 }
