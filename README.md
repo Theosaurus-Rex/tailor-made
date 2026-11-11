@@ -94,6 +94,18 @@ Dependencies point one way: `features → links → domain → game`. Lint enfor
 
 ---
 
+## Dependency updates
+
+Dependabot opens PRs every Monday, set up in `.github/dependabot.yml`. Minor and patch npm updates
+come as one grouped PR. Each major comes on its own. GitHub Actions updates come as one PR. Each PR
+runs the full gate, and Theo merges it like any other.
+
+It skips TypeScript 6.1 and up, Node type majors and pnpm majors, for the reasons under Versions in
+`CLAUDE.md`. It does not see the Netlify CLI version pinned in `ci.yml` or the README. Bump that
+by hand.
+
+---
+
 ## Deploy
 
 The site lives at https://tailor-made-dressmaker.netlify.app.
