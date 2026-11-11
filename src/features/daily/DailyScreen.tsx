@@ -23,10 +23,7 @@ function Countdown({ now }: { now: Date }) {
   const minutes = Math.floor((seconds % 3600) / 60);
   const text = `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds % 60)}`;
   return (
-    <div
-      aria-live="off"
-      className="flex flex-col items-center gap-1 rounded-panel border border-line bg-surface p-[18px] text-center"
-    >
+    <div className="flex flex-col items-center gap-1 rounded-panel border border-line bg-surface p-[18px] text-center">
       <p id={labelId} className="label-caps text-[11px] text-subtle">
         Next client in
       </p>
@@ -45,6 +42,7 @@ export function DailyScreen() {
   const now = useNow(1000);
   const date = utcDateOf(now);
   const challenge = useMemo(() => dailyChallenge(date), [date]);
+  const card = useMemo(() => cardFor(challenge), [challenge]);
 
   return (
     <div className="mx-auto flex max-w-[660px] flex-col gap-6">
@@ -52,13 +50,13 @@ export function DailyScreen() {
         <p className="label-caps text-xs text-rose">{longDate(now)}</p>
         <h1 className="text-[40px] leading-[1.1]">Today’s client</h1>
         <div className="mt-1 flex flex-wrap items-center justify-center gap-3">
-          <span className="label-caps rounded-full bg-rose px-3 py-[5px] text-[11px] text-ground">
+          <span className="label-caps rounded-full bg-rose px-3 py-[5px] text-[11px] text-on-rose">
             {challenge.difficulty}
           </span>
           <p className="text-[15px] text-subtle">The same client for everyone today.</p>
         </div>
       </header>
-      <ClientCard key={date} card={cardFor(challenge)} />
+      <ClientCard key={date} card={card} />
       <p className="text-center text-sm">
         <Link to={shareLinkFor(challenge)} className="text-rose underline underline-offset-4">
           Link to today’s client

@@ -77,6 +77,18 @@ describe("GeneratorScreen", () => {
     expect(screen.getByRole("heading", { level: 2 })).toHaveFocus();
   });
 
+  it("marks Tap to change as collapsed and points it at the Controls region", () => {
+    render(<GeneratorScreen />);
+    fireEvent.click(generateButton());
+    const toggle = screen.getByRole("button", { name: "Tap to change" });
+    const controls = screen.getByRole("region", { name: "Controls" });
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(toggle).toHaveAttribute("aria-controls", controls.id);
+    expect(controls.id).not.toBe("");
+    fireEvent.click(toggle);
+    expect(screen.queryByRole("button", { name: "Tap to change" })).not.toBeInTheDocument();
+  });
+
   it("updates the line under the dial with the selected difficulty", () => {
     render(<GeneratorScreen />);
     for (const [label, key] of DIFFICULTIES) {

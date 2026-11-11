@@ -92,6 +92,6 @@ describe("DailyScreen", () => {
     const time = screen.getByText("14:00:00");
     expect(time.tagName).toBe("TIME");
     expect(time).toHaveAccessibleName("Next client in");
-    expect(time.closest("[aria-live]")).toHaveAttribute("aria-live", "off");
+    expect(time.closest("[aria-live], [role=status], [role=alert], [role=timer]")).toBeNull();
   });
 });

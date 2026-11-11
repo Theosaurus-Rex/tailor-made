@@ -1,8 +1,10 @@
-import { Check, RotateCw } from "lucide-react";
+import { RotateCw } from "lucide-react";
 import { type Ref, useId, useState } from "react";
 
+import { TickBox } from "@/components/TickBox";
 import { Button } from "@/components/ui/button";
 import type { Card, CardRow } from "@/domain/card";
+import { cn } from "@/lib/utils";
 
 interface ClientCardProps {
   card: Card;
@@ -32,37 +34,30 @@ function DirectionRow({
 }) {
   const id = useId();
   const lineId = `${id}-line`;
-  const fill = justRerolled
-    ? "bg-raised-new outline-[1.5px] -outline-offset-1 outline-rose outline-dashed"
-    : ticked
-      ? ""
-      : "bg-raised";
   return (
     <li
-      className={`relative flex min-h-11 items-center gap-3.5 rounded-row py-3 pr-2.5 pl-3.5 ${fill}`}
+      className={cn(
+        "relative flex min-h-11 items-center gap-3.5 rounded-row py-3 pr-2.5 pl-3.5",
+        justRerolled
+          ? "bg-raised-new outline-[1.5px] -outline-offset-1 outline-rose outline-dashed"
+          : !ticked && "bg-raised",
+      )}
     >
-      <span className="relative z-10 flex size-[22px] shrink-0">
-        <input
-          id={id}
-          type="checkbox"
-          checked={ticked}
-          onChange={onToggle}
-          aria-describedby={row.clientLine ? lineId : undefined}
-          className="peer size-[22px] cursor-pointer appearance-none rounded-box border-[1.5px] border-rose checked:bg-rose focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose"
-        />
-        <Check
-          aria-hidden
-          strokeWidth={3}
-          className="pointer-events-none absolute inset-0 m-auto hidden size-3.5 text-on-rose peer-checked:block"
-        />
-      </span>
+      <TickBox
+        id={id}
+        checked={ticked}
+        onChange={onToggle}
+        aria-describedby={row.clientLine ? lineId : undefined}
+        className="relative z-10"
+      />
       <div className="flex min-w-0 flex-1 flex-col gap-px">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <label
             htmlFor={id}
-            className={`cursor-pointer text-base font-medium after:absolute after:inset-0 ${
-              ticked ? "text-done line-through" : "text-ink"
-            }`}
+            className={cn(
+              "cursor-pointer text-base font-medium after:absolute after:inset-0",
+              ticked ? "text-done line-through" : "text-ink",
+            )}
           >
             {row.shortLine}
           </label>
@@ -77,7 +72,7 @@ function DirectionRow({
       </div>
       {onReroll &&
         (row.isModifier ? (
-          <span className="label-caps relative px-1.5 text-[10px] font-medium tracking-[0.24em] text-subtle">
+          <span className="label-caps relative px-1.5 text-[10px] font-medium text-subtle">
             Fixed
           </span>
         ) : (
@@ -169,9 +164,10 @@ export function ClientCard({
             </ul>
             <p
               role="status"
-              className={`text-center text-sm leading-[1.45] text-subtle ${
-                justRerolledPosition >= 0 ? "pt-2" : ""
-              }`}
+              className={cn(
+                "text-center text-sm leading-[1.45] text-subtle",
+                justRerolledPosition >= 0 && "pt-2",
+              )}
             >
               {justRerolledPosition < 0 && note}
               {justRerolledPosition >= 0 && (
