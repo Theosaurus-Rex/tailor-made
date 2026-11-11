@@ -111,9 +111,12 @@ by hand.
 The site lives at https://tailor-made-dressmaker.netlify.app.
 
 GitHub Actions deploys `main` after the `gate` job passes. It builds the site and uploads `dist/`
-with the Netlify CLI. Netlify builds nothing, so no Netlify build minutes are used. Deploy previews
-are off, and pull requests are never deployed. `public/_redirects` sends every path to the app, so
-`/daily`, `/about` and share links load on a hard refresh.
+with the Netlify CLI. Netlify builds nothing, so no Netlify build minutes are used. `public/_redirects`
+sends every path to the app, so `/daily`, `/about` and share links load on a hard refresh.
+
+Each pull request from this repo also gets a preview. After `gate` passes, the `preview` job uploads
+the build under the alias `pr-<number>` and keeps one comment on the pull request up to date with
+the link. Each new push replaces the preview.
 
 Two repo secrets drive it:
 
