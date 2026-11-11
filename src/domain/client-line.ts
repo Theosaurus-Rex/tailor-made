@@ -5,10 +5,9 @@ import {
 } from "@/game/briefs/v1/client-lines";
 import type { Personality } from "@/game/briefs/v1/personalities";
 import { accessoryNouns, countWords, fabricNouns, tagWords } from "@/game/briefs/v1/words";
-import type { AccessoryType } from "@/game/data/v1";
 import type { Direction, DirectionType } from "./direction";
 import { deriveSeed, randomFromSeed, type Random } from "./random";
-import { joinWithAnd, joinWithOr } from "./short-line";
+import { capitalise, countedNoun, joinWithAnd, joinWithOr } from "./text";
 
 type SameKeys<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false;
 
@@ -19,9 +18,6 @@ export const genericKeysMatchDirections: SameKeys<
 > = true;
 
 type Slots = Record<string, string>;
-
-const countedNoun = (accessory: AccessoryType, count: number) =>
-  count === 1 ? accessoryNouns[accessory].singular : accessoryNouns[accessory].plural;
 
 const countSlots = (count: number): Slots => ({
   count: String(count),
@@ -118,7 +114,7 @@ export function clientLine(
   const filled = random
     .pick(lines)
     .replace(/\{(\w+)\}/g, (slot: string, name: string) => slots[name] ?? slot);
-  return filled.charAt(0).toUpperCase() + filled.slice(1);
+  return capitalise(filled);
 }
 
 export const lineRandomFor = (seed: string, slot: number, rerollCount: number): Random =>

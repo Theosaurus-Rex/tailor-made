@@ -1,4 +1,4 @@
-import { dataVersions } from "@/game/data";
+import { dataFor } from "@/game/data";
 import type { GameData } from "@/game/data/v1";
 import { briefPartsFor } from "./brief";
 import { rerollCountOf, type Challenge } from "./challenge";
@@ -50,7 +50,7 @@ export function initialsOf(name: string): string {
 
 export function cardFor(
   challenge: Challenge,
-  data: GameData | undefined = dataVersions[challenge.dataVersion],
+  data: GameData = dataFor(challenge.dataVersion),
 ): Card {
   const client = clientFromSeed(challenge.seed);
   const { text, occasion } = briefPartsFor(challenge, client, data);

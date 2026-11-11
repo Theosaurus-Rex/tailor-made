@@ -4,13 +4,14 @@ import { fillBrief } from "../src/domain/brief";
 import { cardFor } from "../src/domain/card";
 import { clientFromSeed } from "../src/domain/client";
 import type { Difficulty } from "../src/domain/difficulty";
+import { difficultyNames } from "../src/game/data/difficulty-shapes";
 import { generate } from "../src/domain/generate";
 import { deriveSeed } from "../src/domain/random";
 import { SEED_ALPHABET, SEED_LENGTH } from "../src/domain/seed";
 import { personalities } from "../src/game/briefs/v1/personalities";
-import { dataV1 } from "../src/game/data/v1";
+import { DATA_VERSION, dataV1 } from "../src/game/data/v1";
 
-const difficulties: Difficulty[] = ["easy", "medium", "hard", "chaos"];
+const difficulties = difficultyNames;
 const PLAIN_PER_DIFFICULTY = 50;
 const BURLAP_PER_DIFFICULTY = 15;
 const MIN_PER_THEME_AND_VOICE = 5;
@@ -31,7 +32,7 @@ function buildCard({ seed, difficulty, burlap }: Entry) {
     seed,
     difficulty,
     modifiers: burlap ? ["burlap"] : [],
-    dataVersion: 1,
+    dataVersion: DATA_VERSION,
   });
   return {
     challenge,

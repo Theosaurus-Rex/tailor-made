@@ -16,7 +16,8 @@ export type ShapeDirectionType =
   | "accessoryMin"
   | "accessoryExact";
 
-export type DifficultyName = "easy" | "medium" | "hard" | "chaos";
+export const difficultyNames = ["easy", "medium", "hard", "chaos"] as const;
+export type DifficultyName = (typeof difficultyNames)[number];
 
 export type Weekday =
   "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday";
@@ -43,14 +44,14 @@ export interface DifficultyShape {
   ignoreTheme?: true;
 }
 
-const avoids = [
+export const avoids = [
   "styleAvoid",
   "fabricAvoid",
   "colourAvoid",
   "accessoryAvoid",
 ] as const satisfies readonly ShapeDirectionType[];
 
-const atLeastCounts = [
+export const atLeastCounts = [
   "accessoryMin",
   "coloursMin",
   "fabricsMin",

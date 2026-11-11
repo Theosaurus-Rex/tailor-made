@@ -1,7 +1,14 @@
 import type { Difficulty } from "./difficulty";
 import type { Direction, DirectionType } from "./direction";
 
-export type Modifier = "burlap";
+export const modifierNames = ["burlap"] as const;
+export type Modifier = (typeof modifierNames)[number];
+
+export const isModifier = (value: string): value is Modifier =>
+  (modifierNames as readonly string[]).includes(value);
+
+export const isSlotIn = (plan: readonly unknown[], slot: number): boolean =>
+  Number.isInteger(slot) && slot >= 0 && slot < plan.length;
 
 // plan and directions have one entry per slot. A null direction is a slot that
 // could not be filled.

@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { accessoryTypes, fabricTypes, fabrics } from "@/game/data/v1";
 import type { GeneralFabric } from "./direction";
-import { joinWithAnd, joinWithOr, shortLine } from "./short-line";
+import { shortLine } from "./short-line";
+import { joinWithAnd, joinWithOr } from "./text";
 
 const generalFabrics = fabricTypes.filter(
   (fabric): fabric is GeneralFabric => !("modifierOnly" in fabrics[fabric]),
