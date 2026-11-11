@@ -1,27 +1,22 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { MemoryRouter, Route, Routes, useNavigate } from "react-router";
+import { fireEvent, screen } from "@testing-library/react";
+import { Route, Routes, useNavigate } from "react-router";
 import { describe, expect, it } from "vitest";
 
 import { cardFor } from "@/domain/card";
-import { generate } from "@/domain/generate";
 import { reroll } from "@/domain/reroll";
 import { shareLinkFor, type ShareLinkProblem } from "@/links/share-link";
+import { challengeFor } from "@/test/builders";
+import { renderWithRouter } from "@/test/render";
 
 import { SharedChallengeScreen } from "./SharedChallengeScreen";
 
-const SEED = "k7m2qx9a";
-
-const challengeFor = (modifiers: "burlap"[] = []) =>
-  generate({ seed: SEED, difficulty: "medium", modifiers, dataVersion: 1 });
-
 function renderAt(url: string) {
-  return render(
-    <MemoryRouter initialEntries={[url]}>
-      <Routes>
-        <Route path="/c" element={<SharedChallengeScreen />} />
-        <Route path="/" element={<p>Generator page</p>} />
-      </Routes>
-    </MemoryRouter>,
+  return renderWithRouter(
+    <Routes>
+      <Route path="/c" element={<SharedChallengeScreen />} />
+      <Route path="/" element={<p>Generator page</p>} />
+    </Routes>,
+    url,
   );
 }
 
@@ -54,7 +49,7 @@ describe("SharedChallengeScreen", () => {
   });
 
   it("shows the Modifier row for a Burlap only link and no Fixed label", () => {
-    renderAt(shareLinkFor(challengeFor(["burlap"])));
+    renderAt(shareLinkFor(challengeFor({ modifiers: ["burlap"] })));
     expect(screen.getByText("Burlap only")).toBeVisible();
     expect(screen.getByText("Modifier")).toBeVisible();
     expect(screen.queryByText("Fixed")).not.toBeInTheDocument();
@@ -102,13 +97,14 @@ describe("SharedChallengeScreen", () => {
         </button>
       );
     }
-    render(
-      <MemoryRouter initialEntries={["/c?v=9"]}>
+    renderWithRouter(
+      <>
         <Jump />
         <Routes>
           <Route path="/c" element={<SharedChallengeScreen />} />
         </Routes>
-      </MemoryRouter>,
+      </>,
+      "/c?v=9",
     );
     expect(screen.getByText("Link problem")).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: "Jump" }));

@@ -1,9 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { expectNoSeriousA11yIssues } from "./axe";
-import { directionRows, stubClipboard, tabTo } from "./helpers";
-
-const generate = (page: Page) => page.getByRole("button", { name: /^generate/i }).click();
+import { directionRows, generate, stubClipboard, tabTo } from "./helpers";
 
 async function tabToDial(page: Page) {
   const medium = page.getByRole("radio", { name: "Medium" });

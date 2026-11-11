@@ -1,10 +1,10 @@
-import { act, render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router";
+import { act, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { cardFor } from "@/domain/card";
 import { dailyChallenge } from "@/domain/daily";
 import { shareLinkFor } from "@/links/share-link";
+import { renderWithRouter } from "@/test/render";
 
 import { DailyScreen } from "./DailyScreen";
 
@@ -12,11 +12,7 @@ const DAY = "2026-10-21";
 
 function renderAt(moment: string) {
   vi.setSystemTime(new Date(moment));
-  return render(
-    <MemoryRouter>
-      <DailyScreen />
-    </MemoryRouter>,
-  );
+  return renderWithRouter(<DailyScreen />);
 }
 
 const nameOf = (date: string) => cardFor(dailyChallenge(date)).client.name;

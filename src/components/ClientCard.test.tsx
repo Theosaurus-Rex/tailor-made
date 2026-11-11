@@ -3,18 +3,13 @@ import axe from "axe-core";
 import { describe, expect, it, vi } from "vitest";
 
 import { cardFor } from "@/domain/card";
-import { generate } from "@/domain/generate";
 import { reroll } from "@/domain/reroll";
+import { challengeFor } from "@/test/builders";
 
 import { ClientCard } from "./ClientCard";
 
 const challenge = (difficulty: "easy" | "medium" | "hard" | "chaos", burlap = false) =>
-  generate({
-    seed: "k7m2qx9a",
-    difficulty,
-    modifiers: burlap ? ["burlap"] : [],
-    dataVersion: 1,
-  });
+  challengeFor({ difficulty, modifiers: burlap ? ["burlap"] : [] });
 
 const cardOf = (difficulty: "easy" | "medium" | "hard" | "chaos" = "medium", burlap = false) =>
   cardFor(challenge(difficulty, burlap));
