@@ -129,6 +129,7 @@ test("the whole generator works from the keyboard alone", async ({ page }) => {
   await page.keyboard.press("Enter");
   await expect(page.getByText(/swapped for a new one/)).toBeVisible();
   await expect(page.getByRole("button", { name: rerolled ?? "" })).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /^reroll/i }).first()).toBeFocused();
 
   await tabTo(page, page.getByRole("button", { name: "Copy link" }));
   await page.keyboard.press("Enter");

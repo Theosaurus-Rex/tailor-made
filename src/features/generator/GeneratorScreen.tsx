@@ -114,14 +114,12 @@ export function GeneratorScreen() {
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [justRerolledSlot, setJustRerolledSlot] = useState<number>();
   const [expanded, setExpanded] = useState(false);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const seed = challenge?.seed;
 
   useEffect(() => {
-    const heading = cardRef.current?.querySelector("h2");
-    if (!heading) return;
-    heading.tabIndex = -1;
-    heading.focus();
-  }, [challenge]);
+    if (seed) headingRef.current?.focus();
+  }, [seed]);
 
   const generateClient = () => {
     setChallenge(
@@ -189,10 +187,11 @@ export function GeneratorScreen() {
           )}
         </div>
       </section>
-      <div ref={cardRef} className="min-w-0 md:flex-1">
+      <div className="min-w-0 md:flex-1">
         {challenge ? (
           <ClientCard
             key={challenge.seed}
+            headingRef={headingRef}
             card={cardFor(challenge)}
             onReroll={challenge.difficulty === "chaos" ? undefined : rerollDirection}
             justRerolledSlot={justRerolledSlot}
