@@ -143,6 +143,8 @@ Short, long-lived choices. The spec has the reasoning. Each line carries its dat
 - **Mobile is below 768px** (`md`). One breakpoint switches every layout (2026-10-20).
 - **The look is Rosewood Atelier**, dark only (2026-10-20). See `docs/design/rosewood-atelier.md`.
 - **`/debug` exists in development only.** The production build drops it (2026-10-18).
+- **shadcn components keep only the variants and sizes the app uses** (2026-11-11). Trim the rest
+  after `shadcn add`. Add one back when a screen needs it.
 
 ---
 

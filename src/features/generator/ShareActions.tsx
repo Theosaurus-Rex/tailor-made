@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { cardFor } from "@/domain/card";
 import { challengeAsText } from "@/domain/card-text";
 import type { Challenge } from "@/domain/challenge";
+import { cn } from "@/lib/utils";
 import { shareLinkFor } from "@/links/share-link";
 
 type Kind = "link" | "text";
@@ -41,11 +42,12 @@ function CopyBox({ kind, value, failed }: { kind: Kind; value: string; failed: b
       rows={kind === "text" ? value.split("\n").length : 2}
       aria-label={failed ? `Copy the ${kind} by hand` : "Copied text"}
       onFocus={(event) => event.currentTarget.select()}
-      className={`w-full resize-none rounded-row p-4 font-mono text-[13px] leading-[1.6] text-ink ${
+      className={cn(
+        "w-full resize-none rounded-row p-4 font-mono text-[13px] leading-[1.6] text-ink",
         failed
           ? "border-[1.5px] border-rose bg-inset break-all"
-          : "border border-line bg-inset-quiet"
-      }`}
+          : "border border-line bg-inset-quiet",
+      )}
     />
   );
 }
@@ -66,7 +68,7 @@ export function ShareActions({ challenge }: { challenge: Challenge }) {
     return (
       <Button
         variant="outline"
-        className={shown?.worked ? "bg-raised" : ""}
+        className={cn(shown?.worked && "bg-raised")}
         onClick={() => void copy(kind)}
       >
         {!shown && IDLE_LABEL[kind]}

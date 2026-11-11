@@ -1,7 +1,8 @@
-import { Check } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 import { ClientCard } from "@/components/ClientCard";
+import { Monogram } from "@/components/Monogram";
+import { TickBox } from "@/components/TickBox";
 import { Button } from "@/components/ui/button";
 import { cardFor } from "@/domain/card";
 import type { Challenge } from "@/domain/challenge";
@@ -10,6 +11,7 @@ import { generate } from "@/domain/generate";
 import { reroll } from "@/domain/reroll";
 import { LATEST_DATA_VERSION, latestData } from "@/game/data";
 import { newSeed } from "@/lib/new-seed";
+import { cn } from "@/lib/utils";
 
 import { ShareActions } from "./ShareActions";
 
@@ -62,28 +64,22 @@ function Dial({
 }
 
 function BurlapOnly({ checked, onChange }: { checked: boolean; onChange: (on: boolean) => void }) {
+  const id = useId();
+  const helpId = `${id}-help`;
   return (
     <div className="flex gap-3.5 border-t border-line pt-[22px]">
-      <span className="relative flex size-[22px] shrink-0">
-        <input
-          id="burlap-only"
-          type="checkbox"
-          checked={checked}
-          onChange={(event) => onChange(event.target.checked)}
-          aria-describedby="burlap-only-help"
-          className="peer size-[22px] cursor-pointer appearance-none rounded-box border-[1.5px] border-rose checked:bg-rose focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose"
-        />
-        <Check
-          aria-hidden
-          strokeWidth={3}
-          className="pointer-events-none absolute inset-0 m-auto hidden size-3.5 text-on-rose peer-checked:block"
-        />
-      </span>
+      <TickBox
+        id={id}
+        checked={checked}
+        onChange={(event) => onChange(event.target.checked)}
+        aria-describedby={helpId}
+        className="relative"
+      />
       <div className="flex flex-col">
-        <label htmlFor="burlap-only" className="cursor-pointer text-base font-medium text-ink">
+        <label htmlFor={id} className="cursor-pointer text-base font-medium text-ink">
           Burlap only
         </label>
-        <p id="burlap-only-help" className="text-sm leading-normal text-subtle">
+        <p id={helpId} className="text-sm leading-normal text-subtle">
           Every fabric must be burlap. Other fabric and colour directions are left out.
         </p>
       </div>
@@ -94,12 +90,7 @@ function BurlapOnly({ checked, onChange }: { checked: boolean; onChange: (on: bo
 function EmptyCard() {
   return (
     <div className="flex min-h-[520px] flex-col items-center justify-center gap-3.5 rounded-panel border-[1.5px] border-dashed border-line-strong px-6 text-center">
-      <span
-        aria-hidden
-        className="flex h-11 w-[61.6px] items-center justify-center rounded-[50%] border border-rose/55 font-serif text-2xl text-done italic outline outline-1 outline-offset-[3px] outline-rose/55"
-      >
-        TM
-      </span>
+      <Monogram size="md" muted />
       <h2 className="font-serif text-[34px] leading-[1.1] text-ink">No client yet</h2>
       <p className="max-w-[400px] text-subtle">
         Choose a difficulty and press Generate client. Someone will be along shortly.
@@ -114,6 +105,7 @@ export function GeneratorScreen() {
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [justRerolledSlot, setJustRerolledSlot] = useState<number>();
   const [expanded, setExpanded] = useState(false);
+  const controlsId = useId();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const seed = challenge?.seed;
 
@@ -154,6 +146,8 @@ export function GeneratorScreen() {
             <button
               type="button"
               onClick={() => setExpanded(true)}
+              aria-expanded={expanded}
+              aria-controls={controlsId}
               className="w-fit text-[13px] leading-[1.3] text-rose underline underline-offset-[3px]"
             >
               Tap to change
@@ -165,10 +159,12 @@ export function GeneratorScreen() {
         </div>
       )}
       <section
+        id={controlsId}
         aria-label="Controls"
-        className={`flex-col gap-[26px] rounded-panel border border-line bg-surface p-7 md:w-[380px] md:shrink-0 ${
-          collapsed ? "hidden md:flex" : "flex"
-        }`}
+        className={cn(
+          "flex-col gap-[26px] rounded-panel border border-line bg-surface p-7 md:w-[380px] md:shrink-0",
+          collapsed ? "hidden md:flex" : "flex",
+        )}
       >
         <div>
           <p className="label-caps text-xs text-rose">The atelier</p>

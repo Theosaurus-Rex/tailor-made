@@ -126,9 +126,13 @@ function BatchView({ start, onPick }: { start: number; onPick: (seed: string) =>
           return (
             <tr key={seed} className="border-t">
               <td>
-                <Button variant="link" size="sm" onClick={() => onPick(seed)}>
+                <button
+                  type="button"
+                  onClick={() => onPick(seed)}
+                  className="text-rose underline-offset-4 hover:underline"
+                >
                   {seed}
-                </Button>
+                </button>
               </td>
               <td>{row.name}</td>
               <td>{row.personality}</td>

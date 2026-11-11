@@ -32,8 +32,8 @@ test("the wordmark text shows from the desktop breakpoint up", async ({ page }, 
     await expect(wordmark).toBeVisible();
   } else {
     await expect(wordmark).toBeHidden();
-    await expect(page.getByRole("link", { name: "Tailor-Made" })).toBeVisible();
   }
+  await expect(page.getByRole("link", { name: "Tailor-Made", exact: true })).toBeVisible();
   await expect(
     page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "About" }),
   ).toBeVisible();
